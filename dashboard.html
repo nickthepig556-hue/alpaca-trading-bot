@@ -3,113 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trading bot dashboard</title>
+<title>Prometheus Investments</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:system-ui,sans-serif;background:#f4f3ef;color:#0b0b0b;font-size:14px;padding:24px;min-height:100vh}
-@media(prefers-color-scheme:dark){body{background:#141413;color:#f0efe8}}
+body{font-family:system-ui,sans-serif;background:#000000;color:#f0f0ff;font-size:14px;padding:24px;min-height:100vh}
 
 .top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
 .top-bar h1{font-size:18px;font-weight:500}
 .top-right{display:flex;gap:8px;align-items:center}
 
 .badge{font-size:11px;padding:3px 10px;border-radius:99px;font-weight:500;border:none}
-.badge-paper{background:#faeeda;color:#633806}
-.badge-live{background:#eaf3de;color:#27500a}
-.badge-offline{background:#f7c1c1;color:#791f1f}
-.badge-connecting{background:#e6f1fb;color:#0c447c}
+.badge-paper{background:#2a1800;color:#ff9944}
+.badge-live{background:#002a10;color:#44ff88}
+.badge-offline{background:#2a0000;color:#ff6666}
+.badge-connecting{background:#001a2a;color:#44aaff}
 
-.btn{border:0.5px solid #c3c2b7;background:transparent;color:inherit;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
-.btn:hover{background:rgba(0,0,0,.05)}
-.btn-accent{background:#185fa5;color:#fff;border-color:transparent}
-.btn-accent:hover{background:#0c447c}
-@media(prefers-color-scheme:dark){.btn{border-color:#444441}.btn:hover{background:rgba(255,255,255,.07)}}
+.btn{border:0.5px solid #333330;background:transparent;color:#f0f0ff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(255,255,255,.07)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;border-color:transparent}
+.btn-accent:hover{background:linear-gradient(135deg,#cc3300,#dd6600)}
 
 .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
-.metric-card{background:#fff;border-radius:8px;padding:1rem;border:0.5px solid #e1e0d9}
-@media(prefers-color-scheme:dark){.metric-card{background:#1a1a19;border-color:#2c2c2a}}
-.metric-label{font-size:12px;color:#898781;margin-bottom:6px}
+.metric-card{background:#111114;border-radius:8px;padding:1rem;border:0.5px solid #2a2a2e}
+.metric-label{font-size:12px;color:#666688;margin-bottom:6px}
 .metric-value{font-size:22px;font-weight:500;font-variant-numeric:tabular-nums}
-.metric-delta{font-size:12px;margin-top:4px;color:#898781}
-.up{color:#3b6d11}.down{color:#a32d2d}
-@media(prefers-color-scheme:dark){.up{color:#97c459}.down{color:#f09595}}
+.metric-delta{font-size:12px;margin-top:4px;color:#666688}
+.up{color:#44cc66}.down{color:#ff4455}
 
 .main-grid{display:grid;grid-template-columns:1fr 300px;gap:12px;margin-bottom:12px}
-.card{background:#fff;border:0.5px solid #e1e0d9;border-radius:12px;padding:1rem 1.25rem}
-@media(prefers-color-scheme:dark){.card{background:#1a1a19;border-color:#2c2c2a}}
+.card{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:12px;padding:1rem 1.25rem}
 .card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
-.card-title{font-size:13px;font-weight:500;color:#52514e}
-@media(prefers-color-scheme:dark){.card-title{color:#c3c2b7}}
+.card-title{font-size:13px;font-weight:500;color:#aaaacc}
 
 .conn-dot{width:8px;height:8px;border-radius:50%;background:#fab219;display:inline-block;margin-right:6px;transition:background .3s}
 .conn-dot.ok{background:#0ca30c}
 .conn-dot.err{background:#e24b4a}
 
 .bots-list{display:grid;gap:6px}
-.bot-row{background:#f4f3ef;border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;border:0.5px solid transparent;transition:border-color .15s}
-.bot-row:hover{border-color:#c3c2b7}
-.bot-row.active{border-color:#185fa5;background:#e6f1fb}
-@media(prefers-color-scheme:dark){.bot-row{background:#222221}.bot-row.active{background:#0c447c22;border-color:#378add}}
+.bot-row{background:#111114;border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;border:0.5px solid transparent;transition:border-color .15s}
+.bot-row:hover{border-color:#444448}
+.bot-row.active{border-color:#ff6600;background:#1a0d00}
 .bot-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.dot-running{background:#0ca30c}.dot-paused{background:#fab219}.dot-stopped{background:#898781}
-.bot-name{font-size:13px;font-weight:500;flex:1}
-.bot-ticker{font-size:11px;color:#898781;margin-top:1px}
-.icon-btn{background:transparent;border:none;cursor:pointer;color:#898781;padding:4px;border-radius:4px;display:flex;align-items:center;font-size:15px}
-.icon-btn:hover{color:#0b0b0b;background:rgba(0,0,0,.06)}
-@media(prefers-color-scheme:dark){.icon-btn:hover{color:#f0efe8;background:rgba(255,255,255,.08)}}
+.dot-running{background:#0ca30c}.dot-paused{background:#fab219}.dot-stopped{background:#555560}
+.bot-name{font-size:13px;font-weight:500;flex:1;color:#f0f0ff}
+.bot-ticker{font-size:11px;color:#666688;margin-top:1px}
+.icon-btn{background:transparent;border:none;cursor:pointer;color:#555568;padding:4px;border-radius:4px;display:flex;align-items:center;font-size:15px}
+.icon-btn:hover{color:#f0f0ff;background:rgba(255,255,255,.08)}
 
-.tab-row{display:flex;gap:0;margin-bottom:1rem;border-bottom:0.5px solid #e1e0d9}
-@media(prefers-color-scheme:dark){.tab-row{border-color:#2c2c2a}}
-.tab{font-size:12px;padding:6px 12px;cursor:pointer;color:#898781;border-bottom:2px solid transparent;margin-bottom:-0.5px}
-.tab.active{color:#185fa5;border-bottom-color:#185fa5;font-weight:500}
+.tab-row{display:flex;gap:0;margin-bottom:1rem;border-bottom:0.5px solid #2a2a2e}
+.tab{font-size:12px;padding:6px 12px;cursor:pointer;color:#666688;border-bottom:2px solid transparent;margin-bottom:-0.5px}
+.tab.active{color:#ff6600;border-bottom-color:#ff6600;font-weight:500}
 
-.stat-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:0.5px solid #e1e0d9;font-size:13px}
+.stat-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:0.5px solid #1e1e24;font-size:13px}
 .stat-row:last-child{border-bottom:none}
-@media(prefers-color-scheme:dark){.stat-row{border-color:#2c2c2a}}
-.stat-key{color:#898781}
-.stat-val{font-weight:500;font-variant-numeric:tabular-nums}
+.stat-key{color:#666688}
+.stat-val{font-weight:500;font-variant-numeric:tabular-nums;color:#f0f0ff}
 
 .bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .log-list{font-size:12px;font-family:monospace;display:grid;gap:2px;max-height:180px;overflow-y:auto}
-.log-item{display:flex;gap:8px;padding:5px 0;border-bottom:0.5px solid #e1e0d9}
-@media(prefers-color-scheme:dark){.log-item{border-color:#2c2c2a}}
-.log-time{color:#898781;flex-shrink:0;width:40px}
-.log-info{color:#52514e}.log-buy{color:#3b6d11}.log-sell{color:#a32d2d}.log-warn{color:#854f0b}
-@media(prefers-color-scheme:dark){.log-info{color:#c3c2b7}.log-buy{color:#97c459}.log-sell{color:#f09595}.log-warn{color:#ef9f27}}
+.log-item{display:flex;gap:8px;padding:5px 0;border-bottom:0.5px solid #1e1e24}
+.log-time{color:#555568;flex-shrink:0;width:40px}
+.log-info{color:#aaaacc}.log-buy{color:#44cc66}.log-sell{color:#ff4455}.log-warn{color:#ffaa33}
 
-.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:50;align-items:center;justify-content:center}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:50;align-items:center;justify-content:center}
 .modal-bg.open{display:flex}
-.modal{background:#fff;border:0.5px solid #e1e0d9;border-radius:12px;width:440px;padding:1.5rem;max-height:90vh;overflow-y:auto}
-@media(prefers-color-scheme:dark){.modal{background:#1a1a19;border-color:#2c2c2a}}
-.modal-title{font-size:16px;font-weight:500;margin-bottom:1.25rem}
+.modal{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:12px;width:440px;padding:1.5rem;max-height:90vh;overflow-y:auto}
+.modal-title{font-size:16px;font-weight:500;margin-bottom:1.25rem;color:#f0f0ff}
 .form-group{margin-bottom:1rem}
-.form-label{font-size:12px;color:#898781;margin-bottom:5px;display:block}
+.form-label{font-size:12px;color:#666688;margin-bottom:5px;display:block}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-input,select{width:100%;padding:8px 10px;border:0.5px solid #c3c2b7;border-radius:8px;background:#f4f3ef;color:inherit;font-size:13px}
-input:focus,select:focus{outline:none;border-color:#185fa5}
-@media(prefers-color-scheme:dark){input,select{background:#222221;border-color:#444441}}
+input,select{width:100%;padding:8px 10px;border:0.5px solid #333338;border-radius:8px;background:#111114;color:#f0f0ff;font-size:13px}
+input:focus,select:focus{outline:none;border-color:#ff6600}
 .modal-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:1.25rem}
 
-.spinner{display:inline-block;width:14px;height:14px;border:2px solid #e1e0d9;border-top-color:#185fa5;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #333338;border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle}
 .ticker-result{padding:8px 12px;cursor:pointer;font-size:13px;display:flex;justify-content:space-between;align-items:center}
-.ticker-result:hover{background:#f4f3ef}
-.ticker-result .sym{font-weight:500}
-.ticker-result .name{color:#898781;font-size:11px}
-.ticker-result .tag{font-size:10px;padding:2px 6px;border-radius:99px;background:#e1e0d9}
+.ticker-result:hover{background:#111114}
+.ticker-result .sym{font-weight:500;color:#f0f0ff}
+.ticker-result .name{color:#666688;font-size:11px}
+.ticker-result .tag{font-size:10px;padding:2px 6px;border-radius:99px;background:#1e1e24;color:#aaaacc}
+#ticker-results{background:#0d0d12 !important;border-color:#333338 !important}
 @keyframes spin{to{transform:rotate(360deg)}}
-.refresh-hint{font-size:11px;color:#898781;text-align:right;margin-top:6px}
+.refresh-hint{font-size:11px;color:#555568;text-align:right;margin-top:6px}
 </style>
 </head>
 <body>
 
 <div class="top-bar">
-  <h1>Trading bots</h1>
+  <div style="display:flex;align-items:center;gap:12px">
+    <span style="font-family:'Courier New',monospace;font-size:16px;font-weight:700;
+      background:linear-gradient(135deg,#ff6600,#ffaa00);-webkit-background-clip:text;
+      -webkit-text-fill-color:transparent">PROMETHEUS</span>
+    <span style="font-size:11px;color:#898781;font-family:'Courier New',monospace;letter-spacing:1px">INVESTMENTS</span>
+  </div>
   <div class="top-right">
     <span><span class="conn-dot" id="conn-dot"></span><span id="conn-label" style="font-size:12px;color:#898781">Connecting...</span></span>
     <span class="badge badge-paper" id="mode-badge">Paper mode</span>
+    <span id="user-greeting" style="font-size:12px;color:#898781"></span>
     <button class="btn" onclick="openModal()"><i class="ti ti-plus"></i> New bot</button>
+    <button class="btn" onclick="doLogout()" title="Sign out"><i class="ti ti-logout"></i></button>
   </div>
 </div>
 
@@ -241,6 +235,39 @@ let selectedBotId = null;
 let bots = [];
 let chart = null;
 let positions = [];
+
+// ── Auth ──────────────────────────────────────────────────────────────────────
+const SESSION_TOKEN = localStorage.getItem('session_token');
+const USERNAME      = localStorage.getItem('username') || 'trader';
+
+// Redirect to login if no session
+if (!SESSION_TOKEN) {
+  window.location.href = 'login.html';
+}
+
+// Show username in top bar
+document.addEventListener('DOMContentLoaded', () => {
+  const el = document.getElementById('user-greeting');
+  if (el) el.textContent = USERNAME;
+});
+
+// Add auth header to all API calls
+const _origFetch = window.fetch;
+window.fetch = (url, opts={}) => {
+  if (typeof url === 'string' && url.includes('localhost:5000')) {
+    opts.headers = { ...(opts.headers||{}), 'Authorization': `Bearer ${SESSION_TOKEN}` };
+  }
+  return _origFetch(url, opts);
+};
+
+async function doLogout() {
+  try {
+    await fetch(`${API}/auth/logout`, {method:'POST'});
+  } catch {}
+  localStorage.removeItem('session_token');
+  localStorage.removeItem('username');
+  window.location.href = 'login.html';
+}
 
 let selectedTicker = null;
 let searchDebounce = null;
@@ -711,8 +738,12 @@ async function fullRefresh() {
   }
 }
 
-fullRefresh();
-setInterval(fullRefresh, 30_000);   // refresh every 30 seconds
+// Verify session is still valid before loading data
+fetch(`${API}/auth/me`)
+  .then(r => { if(!r.ok) { doLogout(); } else { fullRefresh(); } })
+  .catch(() => { fullRefresh(); }); // if API offline, still show dashboard
+
+setInterval(fullRefresh, 30_000);
 </script>
 </body>
 </html>

@@ -6604,3 +6604,147 @@
 2026-07-05 16:03:27,996  INFO      Open position   : None
 2026-07-05 16:03:27,996  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
 2026-07-05 16:03:27,997  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:08:27,997  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:08:27,997  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:08:27,997  INFO      =======================================================
+2026-07-05 16:08:27,997  INFO      Daily signal run  [2026-07-05 16:08]
+2026-07-05 16:08:27,998  INFO      =======================================================
+2026-07-05 16:08:28,472  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:08:28,700  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:08:28,815  INFO      Portfolio value : $100,298.83
+2026-07-05 16:08:28,816  INFO      Current price   : $62986.03
+2026-07-05 16:08:28,816  INFO      Open position   : None
+2026-07-05 16:08:28,816  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:08:28,816  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:13:28,816  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:13:28,817  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:13:28,817  INFO      =======================================================
+2026-07-05 16:13:28,817  INFO      Daily signal run  [2026-07-05 16:13]
+2026-07-05 16:13:28,817  INFO      =======================================================
+2026-07-05 16:13:29,335  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:13:29,558  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:13:29,681  INFO      Portfolio value : $100,298.83
+2026-07-05 16:13:29,681  INFO      Current price   : $63104.11
+2026-07-05 16:13:29,681  INFO      Open position   : None
+2026-07-05 16:13:29,681  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:13:29,681  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:18:29,681  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:18:29,682  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:18:29,682  INFO      =======================================================
+2026-07-05 16:18:29,682  INFO      Daily signal run  [2026-07-05 16:18]
+2026-07-05 16:18:29,682  INFO      =======================================================
+2026-07-05 16:18:30,160  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:18:30,377  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:18:30,495  INFO      Portfolio value : $100,298.83
+2026-07-05 16:18:30,496  INFO      Current price   : $63281.05
+2026-07-05 16:18:30,496  INFO      Open position   : None
+2026-07-05 16:18:30,496  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:18:30,496  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:23:30,497  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:23:30,497  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:23:30,497  INFO      =======================================================
+2026-07-05 16:23:30,497  INFO      Daily signal run  [2026-07-05 16:23]
+2026-07-05 16:23:30,497  INFO      =======================================================
+2026-07-05 16:23:30,934  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:23:31,205  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:23:31,322  INFO      Portfolio value : $100,298.83
+2026-07-05 16:23:31,323  INFO      Current price   : $63490.72
+2026-07-05 16:23:31,323  INFO      Open position   : None
+2026-07-05 16:23:31,323  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:23:31,323  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:28:31,323  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:28:31,323  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:28:31,324  INFO      =======================================================
+2026-07-05 16:28:31,324  INFO      Daily signal run  [2026-07-05 16:28]
+2026-07-05 16:28:31,324  INFO      =======================================================
+2026-07-05 16:28:31,792  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:28:31,988  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:28:32,107  INFO      Portfolio value : $100,298.83
+2026-07-05 16:28:32,107  INFO      Current price   : $63525.09
+2026-07-05 16:28:32,107  INFO      Open position   : None
+2026-07-05 16:28:32,107  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:28:32,107  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:33:32,108  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:33:32,108  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:33:32,108  INFO      =======================================================
+2026-07-05 16:33:32,108  INFO      Daily signal run  [2026-07-05 16:33]
+2026-07-05 16:33:32,108  INFO      =======================================================
+2026-07-05 16:33:32,621  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:33:32,798  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:33:32,918  INFO      Portfolio value : $100,298.83
+2026-07-05 16:33:32,919  INFO      Current price   : $63669.75
+2026-07-05 16:33:32,919  INFO      Open position   : None
+2026-07-05 16:33:32,919  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:33:32,919  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:38:32,920  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:38:32,920  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:38:32,920  INFO      =======================================================
+2026-07-05 16:38:32,920  INFO      Daily signal run  [2026-07-05 16:38]
+2026-07-05 16:38:32,920  INFO      =======================================================
+2026-07-05 16:38:33,417  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:38:33,633  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:38:33,763  INFO      Portfolio value : $100,298.83
+2026-07-05 16:38:33,764  INFO      Current price   : $63581.04
+2026-07-05 16:38:33,764  INFO      Open position   : None
+2026-07-05 16:38:33,764  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:38:33,764  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:43:33,765  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:43:33,765  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:43:33,765  INFO      =======================================================
+2026-07-05 16:43:33,765  INFO      Daily signal run  [2026-07-05 16:43]
+2026-07-05 16:43:33,765  INFO      =======================================================
+2026-07-05 16:43:34,239  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:43:34,460  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:43:34,579  INFO      Portfolio value : $100,298.83
+2026-07-05 16:43:34,579  INFO      Current price   : $63502.29
+2026-07-05 16:43:34,579  INFO      Open position   : None
+2026-07-05 16:43:34,579  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:43:34,579  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:48:34,580  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:48:34,580  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:48:34,580  INFO      =======================================================
+2026-07-05 16:48:34,580  INFO      Daily signal run  [2026-07-05 16:48]
+2026-07-05 16:48:34,580  INFO      =======================================================
+2026-07-05 16:48:35,147  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:48:35,358  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:48:35,488  INFO      Portfolio value : $100,298.83
+2026-07-05 16:48:35,488  INFO      Current price   : $63626.05
+2026-07-05 16:48:35,489  INFO      Open position   : None
+2026-07-05 16:48:35,489  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:48:35,489  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:53:35,489  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:53:35,489  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:53:35,489  INFO      =======================================================
+2026-07-05 16:53:35,489  INFO      Daily signal run  [2026-07-05 16:53]
+2026-07-05 16:53:35,490  INFO      =======================================================
+2026-07-05 16:53:35,965  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:53:36,144  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:53:36,268  INFO      Portfolio value : $100,298.83
+2026-07-05 16:53:36,268  INFO      Current price   : $63559.97
+2026-07-05 16:53:36,268  INFO      Open position   : None
+2026-07-05 16:53:36,268  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:53:36,268  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 16:58:36,269  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 16:58:36,269  INFO      Market open — waiting 0s before first signal...
+2026-07-05 16:58:36,269  INFO      =======================================================
+2026-07-05 16:58:36,269  INFO      Daily signal run  [2026-07-05 16:58]
+2026-07-05 16:58:36,269  INFO      =======================================================
+2026-07-05 16:58:36,761  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 16:58:37,023  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 16:58:37,161  INFO      Portfolio value : $100,298.83
+2026-07-05 16:58:37,162  INFO      Current price   : $63572.54
+2026-07-05 16:58:37,162  INFO      Open position   : None
+2026-07-05 16:58:37,162  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 16:58:37,162  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:03:37,162  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:03:37,163  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:03:37,163  INFO      =======================================================
+2026-07-05 17:03:37,163  INFO      Daily signal run  [2026-07-05 17:03]
+2026-07-05 17:03:37,163  INFO      =======================================================
+2026-07-05 17:03:37,643  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:03:37,841  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:03:37,964  INFO      Portfolio value : $100,298.83
+2026-07-05 17:03:37,964  INFO      Current price   : $63717.45
+2026-07-05 17:03:37,964  INFO      Open position   : None
+2026-07-05 17:03:37,964  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:03:37,964  INFO      Signal check complete. Sleeping 5 minutes until next check.
