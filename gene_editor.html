@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Gene Editor</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#000;color:#f0f0ff;font-size:14px;padding:24px;min-height:100vh}
+.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.logo{font-family:'Courier New',monospace;font-size:16px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.btn{border:0.5px solid #333;background:transparent;color:#f0f0ff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(255,255,255,.07)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;border-color:transparent}
+.btn-accent:hover{background:linear-gradient(135deg,#cc3300,#dd6600)}
+.btn-green{background:#0a2a10;color:#44cc66;border-color:#44cc66}
+.btn-green:hover{background:#0f3a18}
+
+select{background:#111114;border:0.5px solid #333;border-radius:8px;color:#f0f0ff;padding:8px 12px;font-size:13px;outline:none}
+select:focus{border-color:#ff6600}
+
+.card{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:12px;padding:1.25rem;margin-bottom:16px}
+.card-title{font-size:13px;font-weight:500;color:#aaaacc;margin-bottom:16px}
+
+.gene-row{display:grid;grid-template-columns:120px 1fr 60px 1fr 60px;align-items:center;gap:12px;padding:10px 0;border-bottom:0.5px solid #1a1a1e}
+.gene-row:last-child{border-bottom:none}
+.gene-name{font-size:12px;color:#aaaacc;font-weight:500}
+.gene-label{font-size:11px;color:#666688;margin-bottom:4px}
+.slider-wrap{display:flex;flex-direction:column}
+.val-display{font-size:12px;font-family:monospace;color:#ff8800;text-align:center;background:#1a0d00;border-radius:4px;padding:3px 6px}
+
+input[type=range]{width:100%;height:4px;border-radius:2px;outline:none;cursor:pointer;
+  -webkit-appearance:none;background:#333}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;
+  border-radius:50%;background:#ff6600;cursor:pointer}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px}
+
+.confidence-bar{height:8px;background:#1a1a1e;border-radius:4px;overflow:hidden;margin-top:8px}
+.confidence-fill{height:100%;background:linear-gradient(90deg,#ff4400,#ff8800,#44cc66);border-radius:4px;transition:width .3s}
+
+.info-box{background:#1a1a00;border:0.5px solid #444400;border-radius:8px;padding:10px 14px;font-size:12px;color:#aaaa66;margin-bottom:16px}
+.warning-box{background:#1a0000;border:0.5px solid #440000;border-radius:8px;padding:10px 14px;font-size:12px;color:#aa6666;margin-bottom:16px;display:none}
+
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #333;border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div style="display:flex;align-items:center;gap:12px">
+    <span class="logo">PROMETHEUS</span>
+    <span style="font-size:12px;color:#666688;font-family:'Courier New',monospace">GENE EDITOR</span>
+  </div>
+  <div style="display:flex;gap:8px">
+    <select id="ticker-select" onchange="loadGenes()">
+      <option value="">Select a bot...</option>
+    </select>
+    <button class="btn" onclick="window.location.href='dashboard.html'">
+      <i class="ti ti-arrow-left"></i> Back
+    </button>
+  </div>
+</div>
+
+<div class="info-box">
+  <i class="ti ti-dna" style="color:#aaaa66"></i>
+  Each bot's strategy is encoded as 12 genes. <strong>Weight</strong> controls how much each indicator influences the decision (higher = more important). <strong>Threshold</strong> sets how strongly the indicator must signal before it counts as a buy/sell trigger. Changes take effect on the next signal check.
+</div>
+
+<div class="warning-box" id="warning-box">
+  <i class="ti ti-alert-triangle"></i> <span id="warning-msg"></span>
+</div>
+
+<div class="card" id="gene-card" style="display:none">
+  <div class="card-title" style="display:flex;align-items:center;justify-content:space-between">
+    <span>Chromosome genes — <span id="editor-ticker" style="color:#ff8800"></span></span>
+    <div style="display:flex;gap:8px;align-items:center">
+      <span id="confidence-label" style="font-size:12px;color:#666688"></span>
+      <button class="btn" onclick="resetGenes()" title="Reset to last saved"><i class="ti ti-refresh"></i> Reset</button>
+      <button class="btn btn-green" onclick="saveGenes()"><i class="ti ti-device-floppy"></i> Save genes</button>
+      <button class="btn btn-accent" onclick="duplicateBot()"><i class="ti ti-copy"></i> Clone bot</button>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:120px 1fr 60px 1fr 60px;gap:12px;padding:0 0 8px;border-bottom:0.5px solid #2a2a2e;margin-bottom:4px">
+    <div style="font-size:11px;color:#666688;text-transform:uppercase;letter-spacing:0.5px">Feature</div>
+    <div style="font-size:11px;color:#666688;text-transform:uppercase;letter-spacing:0.5px">Weight (importance)</div>
+    <div style="font-size:11px;color:#666688;text-align:center">Val</div>
+    <div style="font-size:11px;color:#666688;text-transform:uppercase;letter-spacing:0.5px">Threshold (sensitivity)</div>
+    <div style="font-size:11px;color:#666688;text-align:center">Val</div>
+  </div>
+
+  <div id="genes-container"></div>
+
+  <div style="margin-top:16px">
+    <div style="font-size:12px;color:#666688;margin-bottom:6px">Estimated signal confidence based on current genes:</div>
+    <div class="confidence-bar"><div class="confidence-fill" id="confidence-fill" style="width:0%"></div></div>
+    <div style="font-size:11px;color:#666688;margin-top:4px" id="confidence-text">Adjust genes to see estimated confidence</div>
+  </div>
+</div>
+
+<div id="empty-state" style="text-align:center;padding:60px 0;color:#666688">
+  <i class="ti ti-dna" style="font-size:48px;display:block;margin-bottom:12px"></i>
+  Select a bot above to edit its genes
+</div>
+
+<script>
+const API = 'http://localhost:5000/api';
+const TOKEN = localStorage.getItem('session_token');
+if (!TOKEN) window.location.href = 'login.html';
+const headers = {'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json'};
+
+let originalGenes = [];
+let currentTicker = '';
+
+const FEATURE_DESCRIPTIONS = {
+  'Close'       : 'Current price level',
+  'Volume'      : 'Trading volume activity',
+  'SMA_20'      : '20-day moving average trend',
+  'SMA_50'      : '50-day moving average trend',
+  'SMA_200'     : '200-day long-term trend',
+  'RSI'         : 'Momentum — overbought/oversold',
+  'MACD'        : 'Trend momentum convergence',
+  'Signal'      : 'MACD signal line crossover',
+  'BB_Upper'    : 'Bollinger upper band',
+  'BB_Lower'    : 'Bollinger lower band',
+  'Daily_Return': 'Recent daily price change',
+  'Volume_Change': 'Volume vs average change',
+};
+
+async function loadTickers() {
+  try {
+    const r = await fetch(`${API}/bots/all`, {headers});
+    const bots = await r.json();
+    const sel = document.getElementById('ticker-select');
+    bots.forEach(b => {
+      if (b.status === 'running') {
+        const opt = document.createElement('option');
+        opt.value = b.ticker;
+        opt.textContent = `${b.name} (${b.ticker})`;
+        sel.appendChild(opt);
+      }
+    });
+  } catch(e) {}
+}
+
+async function loadGenes() {
+  currentTicker = document.getElementById('ticker-select').value;
+  if (!currentTicker) {
+    document.getElementById('gene-card').style.display = 'none';
+    document.getElementById('empty-state').style.display = 'block';
+    return;
+  }
+
+  try {
+    const r = await fetch(`${API}/bots/genes?ticker=${encodeURIComponent(currentTicker)}`, {headers});
+    if (!r.ok) {
+      showWarning(`No chromosome found for ${currentTicker}. Train the bot first.`);
+      return;
+    }
+    const d = await r.json();
+    originalGenes = JSON.parse(JSON.stringify(d.genes));
+    renderGenes(d.genes);
+    document.getElementById('editor-ticker').textContent = currentTicker;
+    document.getElementById('gene-card').style.display = 'block';
+    document.getElementById('empty-state').style.display = 'none';
+    document.getElementById('warning-box').style.display = 'none';
+    updateConfidence();
+  } catch(e) {
+    showWarning('Failed to load genes: ' + e.message);
+  }
+}
+
+function renderGenes(genes) {
+  const container = document.getElementById('genes-container');
+  container.innerHTML = genes.map((g, i) => `
+    <div class="gene-row">
+      <div>
+        <div class="gene-name">${g.feature}</div>
+        <div style="font-size:10px;color:#555568;margin-top:2px">${FEATURE_DESCRIPTIONS[g.feature] || ''}</div>
+      </div>
+      <div class="slider-wrap">
+        <input type="range" min="0" max="1" step="0.01" value="${g.weight}"
+          id="w-${i}" oninput="onSlider(${i},'weight',this.value)">
+      </div>
+      <div class="val-display" id="wv-${i}">${(+g.weight).toFixed(2)}</div>
+      <div class="slider-wrap">
+        <input type="range" min="0" max="1" step="0.01" value="${g.threshold}"
+          id="t-${i}" oninput="onSlider(${i},'threshold',this.value)">
+      </div>
+      <div class="val-display" id="tv-${i}">${(+g.threshold).toFixed(2)}</div>
+    </div>`).join('');
+}
+
+function onSlider(idx, field, value) {
+  const displayId = field === 'weight' ? `wv-${idx}` : `tv-${idx}`;
+  document.getElementById(displayId).textContent = (+value).toFixed(2);
+  updateConfidence();
+}
+
+function updateConfidence() {
+  // Estimate confidence: avg weight of features above threshold
+  const genes = getCurrentGenes();
+  const triggered = genes.filter(g => g.weight > g.threshold);
+  const totalWeight = genes.reduce((s, g) => s + g.weight, 0);
+  const trigWeight  = triggered.reduce((s, g) => s + g.weight, 0);
+  const confidence  = totalWeight > 0 ? trigWeight / totalWeight : 0;
+
+  const pct = Math.round(confidence * 100);
+  document.getElementById('confidence-fill').style.width = pct + '%';
+  document.getElementById('confidence-text').textContent =
+    `Estimated confidence: ${pct}% — ${pct >= 35 ? 'Will trade when signal fires' : 'Below threshold — bot will skip trades'}`;
+  document.getElementById('confidence-label').textContent = `~${pct}% confidence`;
+}
+
+function getCurrentGenes() {
+  const genes = [];
+  const rows = document.querySelectorAll('.gene-row');
+  rows.forEach((row, i) => {
+    const w = document.getElementById(`w-${i}`);
+    const t = document.getElementById(`t-${i}`);
+    const nameEl = row.querySelector('.gene-name');
+    if (w && t && nameEl) {
+      genes.push({
+        feature  : nameEl.textContent,
+        weight   : parseFloat(w.value),
+        threshold: parseFloat(t.value),
+      });
+    }
+  });
+  return genes;
+}
+
+async function saveGenes() {
+  const genes = getCurrentGenes();
+  if (!genes.length) { alert('No genes to save'); return; }
+
+  try {
+    const r = await fetch(`${API}/bots/genes`, {
+      method: 'POST', headers,
+      body: JSON.stringify({ticker: currentTicker, genes})
+    });
+    const d = await r.json();
+    if (d.ok) {
+      originalGenes = JSON.parse(JSON.stringify(genes));
+      alert(`Saved ${d.saved} genes for ${currentTicker}. Changes take effect on next signal check.`);
+    } else {
+      alert('Error: ' + d.error);
+    }
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+function resetGenes() {
+  if (!originalGenes.length) return;
+  renderGenes(originalGenes);
+  updateConfidence();
+}
+
+async function duplicateBot() {
+  if (!currentTicker) return;
+  const mutation = parseFloat(prompt('Mutation rate (0.01 = tiny changes, 0.2 = big changes):', '0.05') || '0.05');
+  try {
+    const r = await fetch(`${API}/bots/duplicate`, {
+      method: 'POST', headers,
+      body: JSON.stringify({ticker: currentTicker, mutation_rate: mutation})
+    });
+    const d = await r.json();
+    if (d.ok) {
+      alert(`Bot cloned with ${d.mutations_applied} mutations applied. Check your dashboard for the new bot.`);
+    } else {
+      alert('Error: ' + d.error);
+    }
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+function showWarning(msg) {
+  document.getElementById('warning-msg').textContent = msg;
+  document.getElementById('warning-box').style.display = 'block';
+  document.getElementById('gene-card').style.display = 'none';
+  document.getElementById('empty-state').style.display = 'none';
+}
+
+loadTickers();
+</script>
+</body>
+</html>

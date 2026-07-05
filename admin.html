@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Admin</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#000;color:#f0f0ff;font-size:14px;padding:24px;min-height:100vh}
+.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.logo{font-family:'Courier New',monospace;font-size:16px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.admin-badge{background:#2a0d00;color:#ff6600;font-size:11px;padding:3px 10px;border-radius:99px;border:0.5px solid #ff6600}
+.btn{border:0.5px solid #333;background:transparent;color:#f0f0ff;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(255,255,255,.07)}
+.btn-danger{border-color:#ff4455;color:#ff4455}
+.btn-danger:hover{background:rgba(255,68,85,.1)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;border-color:transparent}
+
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.stat-card{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:10px;padding:1rem}
+.stat-label{font-size:11px;color:#666688;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px}
+.stat-value{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.stat-sub{font-size:11px;color:#666688;margin-top:4px}
+.up{color:#44cc66}.down{color:#ff4455}.orange{color:#ff8800}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.card{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:12px;padding:1rem 1.25rem}
+.card-title{font-size:13px;font-weight:500;color:#aaaacc;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:#666688;font-weight:400;padding:8px 10px;border-bottom:0.5px solid #2a2a2e;font-size:11px;text-transform:uppercase;letter-spacing:0.5px}
+td{padding:10px 10px;border-bottom:0.5px solid #1a1a1e;color:#f0f0ff}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#111118}
+.username{font-weight:500;color:#ffaa44}
+.status-active{color:#44cc66;font-size:11px}
+.status-banned{color:#ff4455;font-size:11px}
+
+.announce-bar{background:#1a0d00;border:0.5px solid #ff6600;border-radius:8px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+#announce-msg{flex:1;background:transparent;border:none;color:#f0f0ff;font-size:13px;outline:none}
+#announce-msg::placeholder{color:#555}
+
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #333;border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.medal{font-size:16px}
+.search-box{background:#111114;border:0.5px solid #333;border-radius:8px;padding:8px 12px;color:#f0f0ff;font-size:13px;width:200px;outline:none}
+.search-box:focus{border-color:#ff6600}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div style="display:flex;align-items:center;gap:12px">
+    <span class="logo">PROMETHEUS</span>
+    <span class="admin-badge">Admin Panel</span>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <span id="admin-name" style="font-size:12px;color:#666688"></span>
+    <a href="dashboard.html" class="btn"><i class="ti ti-layout-dashboard"></i> Dashboard</a>
+    <button class="btn" onclick="doLogout()"><i class="ti ti-logout"></i></button>
+  </div>
+</div>
+
+<!-- Announcement bar -->
+<div class="announce-bar">
+  <i class="ti ti-speakerphone" style="color:#ff6600;font-size:18px"></i>
+  <input id="announce-msg" placeholder="Send announcement to all users...">
+  <button class="btn btn-accent" onclick="sendAnnouncement()">Broadcast</button>
+</div>
+
+<!-- Global stats -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-label">Total users</div>
+    <div class="stat-value orange" id="s-users">—</div>
+    <div class="stat-sub" id="s-users-sub">Loading...</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total bots</div>
+    <div class="stat-value orange" id="s-bots">—</div>
+    <div class="stat-sub">Across all users</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total trades</div>
+    <div class="stat-value orange" id="s-trades">—</div>
+    <div class="stat-sub">Platform-wide</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total P&L</div>
+    <div class="stat-value" id="s-pnl">—</div>
+    <div class="stat-sub">All users combined</div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <!-- Leaderboard -->
+  <div class="card">
+    <div class="card-title">Top earners</div>
+    <table>
+      <thead><tr><th>#</th><th>User</th><th>Trades</th><th>P&L</th></tr></thead>
+      <tbody id="leaderboard-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Recent signups -->
+  <div class="card">
+    <div class="card-title">Recent signups</div>
+    <table>
+      <thead><tr><th>Username</th><th>Joined</th></tr></thead>
+      <tbody id="recent-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- All users -->
+<div class="card">
+  <div class="card-title">
+    All users
+    <input class="search-box" placeholder="Search username..." oninput="filterUsers(this.value)" id="user-search">
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th><th>Email</th><th>Balance</th>
+        <th>Bots</th><th>Trades</th><th>P&L</th>
+        <th>Joined</th><th>Last login</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="users-body"></tbody>
+  </table>
+</div>
+
+<script>
+const API = 'http://localhost:5000/api';
+const TOKEN = localStorage.getItem('session_token');
+const USERNAME = localStorage.getItem('username') || '';
+
+if (!TOKEN) window.location.href = 'login.html';
+document.getElementById('admin-name').textContent = USERNAME;
+
+const headers = {'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json'};
+
+let allUsers = [];
+
+async function loadStats() {
+  try {
+    const r = await fetch(`${API}/admin/stats`, {headers});
+    if (r.status === 403) {
+      alert('Admin access required');
+      window.location.href = 'dashboard.html';
+      return;
+    }
+    const d = await r.json();
+
+    // Totals
+    const t = d.totals;
+    document.getElementById('s-users').textContent  = t.total_users || 0;
+    document.getElementById('s-bots').textContent   = t.total_bots  || 0;
+    document.getElementById('s-trades').textContent = t.total_trades || 0;
+    const pnl = t.total_pnl || 0;
+    const pnlEl = document.getElementById('s-pnl');
+    pnlEl.textContent  = (pnl >= 0 ? '+$' : '-$') + Math.abs(pnl).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+    pnlEl.className    = 'stat-value ' + (pnl >= 0 ? 'up' : 'down');
+
+    // Leaderboard
+    const medals = ['🥇','🥈','🥉'];
+    document.getElementById('leaderboard-body').innerHTML = (d.leaderboard || []).map((u,i) => `
+      <tr>
+        <td>${medals[i] || (i+1)}</td>
+        <td class="username">${u.username}</td>
+        <td>${u.trades || 0}</td>
+        <td class="${(u.total_pnl||0)>=0?'up':'down'}">
+          ${(u.total_pnl||0)>=0?'+$':'-$'}${Math.abs(u.total_pnl||0).toFixed(2)}
+        </td>
+      </tr>`).join('') || '<tr><td colspan="4" style="color:#666688;text-align:center">No trades yet</td></tr>';
+
+    // Recent signups
+    document.getElementById('recent-body').innerHTML = (d.recent || []).map(u => `
+      <tr>
+        <td class="username">${u.username}</td>
+        <td style="color:#666688">${new Date(u.created_at).toLocaleDateString()}</td>
+      </tr>`).join('');
+
+    // Users table
+    allUsers = d.users || [];
+    renderUsers(allUsers);
+
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+function renderUsers(users) {
+  document.getElementById('users-body').innerHTML = users.map(u => `
+    <tr>
+      <td class="username">${u.username}</td>
+      <td style="color:#666688">${u.email || '—'}</td>
+      <td>$${(u.paper_balance||100000).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}</td>
+      <td>${u.bot_count || 0}</td>
+      <td>${u.trade_count || 0}</td>
+      <td class="${(u.total_pnl||0)>=0?'up':'down'}">
+        ${(u.total_pnl||0)>=0?'+':'-'}$${Math.abs(u.total_pnl||0).toFixed(2)}
+      </td>
+      <td style="color:#666688">${u.created_at ? new Date(u.created_at).toLocaleDateString() : '—'}</td>
+      <td style="color:#666688">${u.last_login ? new Date(u.last_login).toLocaleDateString() : 'Never'}</td>
+      <td>
+        ${u.is_admin ? '<span style="color:#ff8800;font-size:11px">Admin</span>' : `
+        <button class="btn btn-danger" style="font-size:11px;padding:3px 8px"
+          onclick="banUser(${u.id}, ${!u.is_active})">
+          ${u.is_active ? 'Ban' : 'Unban'}
+        </button>`}
+      </td>
+    </tr>`).join('') || '<tr><td colspan="9" style="color:#666688;text-align:center">No users yet</td></tr>';
+}
+
+function filterUsers(query) {
+  const q = query.toLowerCase();
+  renderUsers(q ? allUsers.filter(u => u.username.toLowerCase().includes(q)) : allUsers);
+}
+
+async function banUser(userId, ban) {
+  const action = ban ? 'ban' : 'unban';
+  if (!confirm(`${action.charAt(0).toUpperCase()+action.slice(1)} this user?`)) return;
+  await fetch(`${API}/admin/user/${userId}/ban`, {
+    method: 'POST', headers,
+    body: JSON.stringify({banned: ban})
+  });
+  loadStats();
+}
+
+async function sendAnnouncement() {
+  const msg = document.getElementById('announce-msg').value.trim();
+  if (!msg) return;
+  await fetch(`${API}/admin/announce`, {
+    method: 'POST', headers,
+    body: JSON.stringify({message: msg})
+  });
+  document.getElementById('announce-msg').value = '';
+  alert('Announcement sent to all users!');
+}
+
+function doLogout() {
+  fetch(`${API}/auth/logout`, {method:'POST', headers});
+  localStorage.clear();
+  window.location.href = 'login.html';
+}
+
+loadStats();
+setInterval(loadStats, 30000);
+</script>
+</body>
+</html>

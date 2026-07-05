@@ -64,6 +64,7 @@ from ticker_manager import (
     update_bot_status, POPULAR_TICKERS
 
 )
+from user_features import register_user_routes
 # ──────────────────────────────────────────────────────────────────────────────
 # CONFIG
 # ──────────────────────────────────────────────────────────────────────────────
@@ -796,6 +797,7 @@ def api_user_add_bot():
     bot_id = add_user_bot(g.current_user["id"], bot_config_id, ticker, name)
     return jsonify({"ok": True, "id": bot_id})
 
+register_user_routes(app)
 
 if __name__ == "__main__":
     print("\n" + "="*55)

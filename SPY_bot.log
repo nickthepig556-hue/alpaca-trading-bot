@@ -2784,3 +2784,23 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.
 2026-07-05 14:49:49,800  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-05 15:49:50,004  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-05 16:49:50,201  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:14:27,960  INFO      [SPY] Process started  PID=55156
+2026-07-05 17:14:29,951  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 17:14:29,951  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:14:29,952  INFO         Mode    : PAPER
+2026-07-05 17:14:29,952  INFO         Ticker  : SPY
+2026-07-05 17:14:29,952  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-05 17:14:29,954  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:14:29,961  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-05 17:14:30,194  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:17:25,021  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-05 17:17:25,025  INFO      [SPY] Process exiting
+2026-07-05 17:18:51,063  INFO      [SPY] Process started  PID=24600
+2026-07-05 17:18:52,188  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 17:18:52,188  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:52,188  INFO         Mode    : PAPER
+2026-07-05 17:18:52,188  INFO         Ticker  : SPY
+2026-07-05 17:18:52,189  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-05 17:18:52,190  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:52,192  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:52,381  INFO      Market closed. Next open in 60 min. Sleeping...

@@ -6748,3 +6748,81 @@
 2026-07-05 17:03:37,964  INFO      Open position   : None
 2026-07-05 17:03:37,964  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
 2026-07-05 17:03:37,964  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:08:37,965  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:08:37,965  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:08:37,965  INFO      =======================================================
+2026-07-05 17:08:37,966  INFO      Daily signal run  [2026-07-05 17:08]
+2026-07-05 17:08:37,966  INFO      =======================================================
+2026-07-05 17:08:38,448  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:08:38,624  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:08:38,761  INFO      Portfolio value : $100,298.83
+2026-07-05 17:08:38,762  INFO      Current price   : $63732.43
+2026-07-05 17:08:38,762  INFO      Open position   : None
+2026-07-05 17:08:38,762  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:08:38,762  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:14:31,968  INFO      [BTC/USD] Process started  PID=14936
+2026-07-05 17:14:33,119  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 17:14:33,120  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:14:33,120  INFO         Mode    : PAPER
+2026-07-05 17:14:33,120  INFO         Ticker  : BTC/USD
+2026-07-05 17:14:33,120  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-05 17:14:33,122  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:14:33,129  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-05 17:14:33,129  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:14:33,130  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:14:33,130  INFO      =======================================================
+2026-07-05 17:14:33,130  INFO      Daily signal run  [2026-07-05 17:14]
+2026-07-05 17:14:33,130  INFO      =======================================================
+2026-07-05 17:14:33,531  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:14:33,894  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:14:34,011  INFO      Portfolio value : $100,298.83
+2026-07-05 17:14:34,011  INFO      Current price   : $63871.43
+2026-07-05 17:14:34,011  INFO      Open position   : None
+2026-07-05 17:14:34,011  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:14:34,011  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:17:25,021  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-05 17:17:25,025  INFO      [BTC/USD] Process exiting
+2026-07-05 17:18:55,074  INFO      [BTC/USD] Process started  PID=37424
+2026-07-05 17:18:56,176  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 17:18:56,176  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:56,176  INFO         Mode    : PAPER
+2026-07-05 17:18:56,176  INFO         Ticker  : BTC/USD
+2026-07-05 17:18:56,176  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-05 17:18:56,178  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:56,179  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:56,179  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:18:56,179  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:18:56,179  INFO      =======================================================
+2026-07-05 17:18:56,179  INFO      Daily signal run  [2026-07-05 17:18]
+2026-07-05 17:18:56,179  INFO      =======================================================
+2026-07-05 17:18:56,638  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:18:57,005  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:18:57,132  INFO      Portfolio value : $100,298.83
+2026-07-05 17:18:57,132  INFO      Current price   : $63868.93
+2026-07-05 17:18:57,132  INFO      Open position   : None
+2026-07-05 17:18:57,132  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:18:57,132  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:23:57,133  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:23:57,133  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:23:57,133  INFO      =======================================================
+2026-07-05 17:23:57,133  INFO      Daily signal run  [2026-07-05 17:23]
+2026-07-05 17:23:57,134  INFO      =======================================================
+2026-07-05 17:23:57,586  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:23:57,806  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:23:57,924  INFO      Portfolio value : $100,298.83
+2026-07-05 17:23:57,924  INFO      Current price   : $63785.42
+2026-07-05 17:23:57,924  INFO      Open position   : None
+2026-07-05 17:23:57,924  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:23:57,925  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:28:57,925  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:28:57,926  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:28:57,926  INFO      =======================================================
+2026-07-05 17:28:57,926  INFO      Daily signal run  [2026-07-05 17:28]
+2026-07-05 17:28:57,926  INFO      =======================================================
+2026-07-05 17:28:58,517  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:28:58,698  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:28:58,825  INFO      Portfolio value : $100,298.83
+2026-07-05 17:28:58,826  INFO      Current price   : $63674.04
+2026-07-05 17:28:58,826  INFO      Open position   : None
+2026-07-05 17:28:58,826  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:28:58,826  INFO      Signal check complete. Sleeping 5 minutes until next check.
