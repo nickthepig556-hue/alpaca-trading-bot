@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trading bot dashboard</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f4f3ef;color:#0b0b0b;font-size:14px;padding:24px;min-height:100vh}
+@media(prefers-color-scheme:dark){body{background:#141413;color:#f0efe8}}
+
+.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.top-bar h1{font-size:18px;font-weight:500}
+.top-right{display:flex;gap:8px;align-items:center}
+
+.badge{font-size:11px;padding:3px 10px;border-radius:99px;font-weight:500;border:none}
+.badge-paper{background:#faeeda;color:#633806}
+.badge-live{background:#eaf3de;color:#27500a}
+.badge-offline{background:#f7c1c1;color:#791f1f}
+.badge-connecting{background:#e6f1fb;color:#0c447c}
+
+.btn{border:0.5px solid #c3c2b7;background:transparent;color:inherit;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(0,0,0,.05)}
+.btn-accent{background:#185fa5;color:#fff;border-color:transparent}
+.btn-accent:hover{background:#0c447c}
+@media(prefers-color-scheme:dark){.btn{border-color:#444441}.btn:hover{background:rgba(255,255,255,.07)}}
+
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.metric-card{background:#fff;border-radius:8px;padding:1rem;border:0.5px solid #e1e0d9}
+@media(prefers-color-scheme:dark){.metric-card{background:#1a1a19;border-color:#2c2c2a}}
+.metric-label{font-size:12px;color:#898781;margin-bottom:6px}
+.metric-value{font-size:22px;font-weight:500;font-variant-numeric:tabular-nums}
+.metric-delta{font-size:12px;margin-top:4px;color:#898781}
+.up{color:#3b6d11}.down{color:#a32d2d}
+@media(prefers-color-scheme:dark){.up{color:#97c459}.down{color:#f09595}}
+
+.main-grid{display:grid;grid-template-columns:1fr 300px;gap:12px;margin-bottom:12px}
+.card{background:#fff;border:0.5px solid #e1e0d9;border-radius:12px;padding:1rem 1.25rem}
+@media(prefers-color-scheme:dark){.card{background:#1a1a19;border-color:#2c2c2a}}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}
+.card-title{font-size:13px;font-weight:500;color:#52514e}
+@media(prefers-color-scheme:dark){.card-title{color:#c3c2b7}}
+
+.conn-dot{width:8px;height:8px;border-radius:50%;background:#fab219;display:inline-block;margin-right:6px;transition:background .3s}
+.conn-dot.ok{background:#0ca30c}
+.conn-dot.err{background:#e24b4a}
+
+.bots-list{display:grid;gap:6px}
+.bot-row{background:#f4f3ef;border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;border:0.5px solid transparent;transition:border-color .15s}
+.bot-row:hover{border-color:#c3c2b7}
+.bot-row.active{border-color:#185fa5;background:#e6f1fb}
+@media(prefers-color-scheme:dark){.bot-row{background:#222221}.bot-row.active{background:#0c447c22;border-color:#378add}}
+.bot-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-running{background:#0ca30c}.dot-paused{background:#fab219}.dot-stopped{background:#898781}
+.bot-name{font-size:13px;font-weight:500;flex:1}
+.bot-ticker{font-size:11px;color:#898781;margin-top:1px}
+.icon-btn{background:transparent;border:none;cursor:pointer;color:#898781;padding:4px;border-radius:4px;display:flex;align-items:center;font-size:15px}
+.icon-btn:hover{color:#0b0b0b;background:rgba(0,0,0,.06)}
+@media(prefers-color-scheme:dark){.icon-btn:hover{color:#f0efe8;background:rgba(255,255,255,.08)}}
+
+.tab-row{display:flex;gap:0;margin-bottom:1rem;border-bottom:0.5px solid #e1e0d9}
+@media(prefers-color-scheme:dark){.tab-row{border-color:#2c2c2a}}
+.tab{font-size:12px;padding:6px 12px;cursor:pointer;color:#898781;border-bottom:2px solid transparent;margin-bottom:-0.5px}
+.tab.active{color:#185fa5;border-bottom-color:#185fa5;font-weight:500}
+
+.stat-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:0.5px solid #e1e0d9;font-size:13px}
+.stat-row:last-child{border-bottom:none}
+@media(prefers-color-scheme:dark){.stat-row{border-color:#2c2c2a}}
+.stat-key{color:#898781}
+.stat-val{font-weight:500;font-variant-numeric:tabular-nums}
+
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.log-list{font-size:12px;font-family:monospace;display:grid;gap:2px;max-height:180px;overflow-y:auto}
+.log-item{display:flex;gap:8px;padding:5px 0;border-bottom:0.5px solid #e1e0d9}
+@media(prefers-color-scheme:dark){.log-item{border-color:#2c2c2a}}
+.log-time{color:#898781;flex-shrink:0;width:40px}
+.log-info{color:#52514e}.log-buy{color:#3b6d11}.log-sell{color:#a32d2d}.log-warn{color:#854f0b}
+@media(prefers-color-scheme:dark){.log-info{color:#c3c2b7}.log-buy{color:#97c459}.log-sell{color:#f09595}.log-warn{color:#ef9f27}}
+
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:50;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal{background:#fff;border:0.5px solid #e1e0d9;border-radius:12px;width:440px;padding:1.5rem;max-height:90vh;overflow-y:auto}
+@media(prefers-color-scheme:dark){.modal{background:#1a1a19;border-color:#2c2c2a}}
+.modal-title{font-size:16px;font-weight:500;margin-bottom:1.25rem}
+.form-group{margin-bottom:1rem}
+.form-label{font-size:12px;color:#898781;margin-bottom:5px;display:block}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+input,select{width:100%;padding:8px 10px;border:0.5px solid #c3c2b7;border-radius:8px;background:#f4f3ef;color:inherit;font-size:13px}
+input:focus,select:focus{outline:none;border-color:#185fa5}
+@media(prefers-color-scheme:dark){input,select{background:#222221;border-color:#444441}}
+.modal-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:1.25rem}
+
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid #e1e0d9;border-top-color:#185fa5;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle}
+.ticker-result{padding:8px 12px;cursor:pointer;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+.ticker-result:hover{background:#f4f3ef}
+.ticker-result .sym{font-weight:500}
+.ticker-result .name{color:#898781;font-size:11px}
+.ticker-result .tag{font-size:10px;padding:2px 6px;border-radius:99px;background:#e1e0d9}
+@keyframes spin{to{transform:rotate(360deg)}}
+.refresh-hint{font-size:11px;color:#898781;text-align:right;margin-top:6px}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1>Trading bots</h1>
+  <div class="top-right">
+    <span><span class="conn-dot" id="conn-dot"></span><span id="conn-label" style="font-size:12px;color:#898781">Connecting...</span></span>
+    <span class="badge badge-paper" id="mode-badge">Paper mode</span>
+    <button class="btn" onclick="openModal()"><i class="ti ti-plus"></i> New bot</button>
+  </div>
+</div>
+
+<div class="metrics-grid">
+  <div class="metric-card">
+    <div class="metric-label">Portfolio value</div>
+    <div class="metric-value" id="m-portfolio">—</div>
+    <div class="metric-delta" id="m-pnl-today">Loading...</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">Buying power</div>
+    <div class="metric-value" id="m-buying-power">—</div>
+    <div class="metric-delta" id="m-cash">—</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">Active bots</div>
+    <div class="metric-value" id="m-bots">—</div>
+    <div class="metric-delta" id="m-bots-sub">—</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-label">Open positions</div>
+    <div class="metric-value" id="m-positions">—</div>
+    <div class="metric-delta" id="m-positions-pl">—</div>
+  </div>
+</div>
+
+<div class="main-grid">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Equity curve — <span id="chart-ticker">GLD</span></span>
+      <span style="font-size:12px;color:#898781" id="chart-meta"></span>
+    </div>
+    <div style="position:relative;height:220px">
+      <canvas id="equityChart" role="img" aria-label="Equity curve for selected bot"></canvas>
+    </div>
+    <div class="refresh-hint" id="last-refresh">—</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><span class="card-title">Your bots</span>
+      <span class="spinner" id="bots-spinner" style="display:none"></span>
+    </div>
+    <div class="bots-list" id="bots-list"><div style="color:#898781;font-size:13px">Loading...</div></div>
+  </div>
+</div>
+
+<div class="bottom-grid">
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title" id="detail-title">Bot details</span>
+    </div>
+    <div class="tab-row">
+      <div class="tab active" onclick="switchTab('stats',this)">Stats</div>
+      <div class="tab" onclick="switchTab('positions',this)">Positions</div>
+    </div>
+    <div id="tab-stats"><div style="color:#898781;font-size:13px">Select a bot</div></div>
+    <div id="tab-positions" style="display:none"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="card-title">Trade log — <span id="log-bot-name" style="color:#898781;font-weight:400">select a bot</span></span>
+      <button class="btn" style="font-size:11px;padding:4px 10px" onclick="loadLogs(selectedBotId)">
+        <i class="ti ti-refresh"></i> Refresh
+      </button>
+    </div>
+    <div class="log-list" id="log-list"><div style="color:#898781;font-size:13px">Loading...</div></div>
+  </div>
+</div>
+
+<!-- New bot modal -->
+<div class="modal-bg" id="modal">
+  <div class="modal">
+    <div class="modal-title">Configure new bot</div>
+    <div class="form-group">
+      <label class="form-label">Bot name</label>
+      <input type="text" id="f-name" placeholder="Silver bot">
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Ticker</label>
+        <div style="position:relative">
+  <input type="text" id="f-ticker-search" placeholder="Search any stock, ETF or crypto..."
+         autocomplete="off" oninput="onTickerSearch(this.value)">
+  <div id="ticker-results" style="display:none;position:absolute;top:100%;left:0;right:0;
+       background:#fff;border:0.5px solid #c3c2b7;border-radius:8px;margin-top:4px;
+       max-height:200px;overflow-y:auto;z-index:10;box-shadow:0 4px 12px rgba(0,0,0,.1)"></div>
+  <div id="ticker-preview" style="display:none;margin-top:8px;padding:10px;
+       background:#f4f3ef;border-radius:8px;font-size:12px"></div>
+</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mode</label>
+        <select id="f-mode"><option>Paper</option><option>Live</option></select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">GA generations</label>
+        <input type="number" id="f-gens" value="200" min="50" max="500">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Population size</label>
+        <input type="number" id="f-pop" value="100" min="20" max="500">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Max allocation %</label>
+        <input type="number" id="f-alloc" value="40" min="5" max="100">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Stop-loss %</label>
+        <input type="number" id="f-stop" value="2" min="0.5" max="20" step="0.5">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-accent" onclick="createBot()">
+        <i class="ti ti-player-play"></i> Launch bot
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:5000/api';
+let selectedBotId = null;
+let bots = [];
+let chart = null;
+let positions = [];
+
+let selectedTicker = null;
+let searchDebounce = null;
+
+async function onTickerSearch(query) {
+  clearTimeout(searchDebounce);
+  selectedTicker = null;
+  document.getElementById('ticker-preview').style.display = 'none';
+  if (!query) { document.getElementById('ticker-results').style.display = 'none'; return; }
+  searchDebounce = setTimeout(async () => {
+    const results = await api(`/tickers/search?q=${encodeURIComponent(query)}`);
+    const el = document.getElementById('ticker-results');
+    el.innerHTML = results.length
+      ? results.map(r => `<div class="ticker-result" onclick="pickTicker('${r.symbol}','${(r.name||'').replace(/'/g,'')}')">
+          <div><div class="sym">${r.symbol}</div><div class="name">${r.name||''}</div></div>
+          <span class="tag">${r.type||''}</span></div>`).join('')
+      : '<div class="ticker-result" style="color:#898781">No matches</div>';
+    el.style.display = 'block';
+  }, 300);
+}
+
+async function pickTicker(symbol, name) {
+  selectedTicker = symbol;
+  document.getElementById('f-ticker-search').value = symbol;
+  document.getElementById('ticker-results').style.display = 'none';
+  const preview = document.getElementById('ticker-preview');
+  preview.style.display = 'block';
+  preview.innerHTML = '<span class="spinner"></span> Analysing volatility...';
+  const v = await api(`/tickers/validate?symbol=${encodeURIComponent(symbol)}`);
+  if (!v.valid) { preview.innerHTML = `<span style="color:#a32d2d">${v.error}</span>`; selectedTicker = null; return; }
+  const p = v.preview;
+  preview.innerHTML = `<strong>${v.name}</strong> — ${v.asset_type} — $${v.last_price}<br>
+    <span style="color:#898781;font-size:11px">
+    Volatility: ${(v.volatility*100).toFixed(1)}% (${v.volatility_band}) &nbsp;|&nbsp;
+    Max alloc: ${(p.max_allocation_pct*100).toFixed(0)}% &nbsp;|&nbsp;
+    Stop: ${(p.stop_loss_pct*100).toFixed(1)}% &nbsp;|&nbsp;
+    GA: ${p.ga_generations}gen &nbsp;|&nbsp;
+    ${p.is_24_7 ? 'Trades 24/7' : 'Market hours'}</span>`;
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('#f-ticker-search') && !e.target.closest('#ticker-results'))
+    document.getElementById('ticker-results').style.display = 'none';
+});
+
+// ── Formatters ────────────────────────────────────────────────────────────────
+const fmt$  = v => '$' + Number(v).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+const fmtPct = v => (v >= 0 ? '+' : '') + Number(v).toFixed(2) + '%';
+const clsPct = v => Number(v) >= 0 ? 'up' : 'down';
+
+// ── API helpers ───────────────────────────────────────────────────────────────
+async function api(path, opts={}) {
+  const r = await fetch(API + path, opts);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+  return r.json();
+}
+async function post(path, body) {
+  return api(path, {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(body)
+  });
+}
+
+// ── Connection indicator ──────────────────────────────────────────────────────
+async function checkHealth() {
+  const dot   = document.getElementById('conn-dot');
+  const label = document.getElementById('conn-label');
+  const badge = document.getElementById('mode-badge');
+  try {
+    const h = await api('/health');
+    dot.className   = 'conn-dot ok';
+    label.textContent = h.alpaca ? 'Connected' : 'API offline';
+    badge.textContent = h.mode === 'live' ? 'Live mode' : 'Paper mode';
+    badge.className   = 'badge ' + (h.mode === 'live' ? 'badge-live' : 'badge-paper');
+  } catch {
+    dot.className   = 'conn-dot err';
+    label.textContent = 'Server offline';
+    badge.textContent = 'Offline';
+    badge.className   = 'badge badge-offline';
+  }
+}
+
+// ── Account metrics ───────────────────────────────────────────────────────────
+async function loadAccount() {
+  try {
+    const a = await api('/account');
+    document.getElementById('m-portfolio').textContent = fmt$(a.portfolio_value);
+    const pnlEl = document.getElementById('m-pnl-today');
+    pnlEl.textContent = fmtPct(a.pnl_today_pct) + ' today  (' + (a.pnl_today >= 0 ? '+' : '') + fmt$(a.pnl_today) + ')';
+    pnlEl.className = 'metric-delta ' + clsPct(a.pnl_today);
+    document.getElementById('m-buying-power').textContent = fmt$(a.buying_power);
+    document.getElementById('m-cash').textContent = 'Cash: ' + fmt$(a.cash);
+  } catch(e) {
+    document.getElementById('m-portfolio').textContent = 'Offline';
+  }
+}
+
+// ── Positions ────────────────────────────────────────────────────────────────
+async function loadPositions() {
+  try {
+    positions = await api('/positions');
+    const total_pl = positions.reduce((s,p) => s + p.unrealised_pl, 0);
+    document.getElementById('m-positions').textContent = positions.length;
+    const plEl = document.getElementById('m-positions-pl');
+    plEl.textContent = positions.length
+      ? 'Unrealised: ' + (total_pl >= 0 ? '+' : '') + fmt$(total_pl)
+      : 'No open positions';
+    plEl.className = 'metric-delta ' + clsPct(total_pl);
+    renderPositionsTab();
+  } catch { document.getElementById('m-positions').textContent = '—'; }
+}
+
+function renderPositionsTab() {
+  const el = document.getElementById('tab-positions');
+  if (!positions.length) {
+    el.innerHTML = '<div style="color:#898781;font-size:13px;padding:8px 0">No open positions</div>';
+    return;
+  }
+  el.innerHTML = positions.map(p => `
+    <div class="stat-row">
+      <span class="stat-key">${p.symbol} × ${p.qty}</span>
+      <span class="stat-val">
+        ${fmt$(p.current_price)}
+        <span class="${clsPct(p.unrealised_pl)}" style="font-size:12px;margin-left:8px">
+          ${p.unrealised_pl >= 0 ? '+' : ''}${fmt$(p.unrealised_pl)}
+        </span>
+      </span>
+    </div>`).join('');
+}
+
+// ── Bots ─────────────────────────────────────────────────────────────────────
+async function loadBots() {
+  document.getElementById('bots-spinner').style.display = 'inline-block';
+  try {
+    bots = await api('/bots/all');
+    if (!selectedBotId && bots.length) selectedBotId = bots[0].id;
+    renderBots();
+    const running = bots.filter(b => b.status === 'running').length;
+    document.getElementById('m-bots').textContent = `${running} / ${bots.length}`;
+    document.getElementById('m-bots-sub').textContent =
+      bots.length - running > 0 ? `${bots.length - running} paused` : 'All active';
+  } catch { document.getElementById('m-bots').textContent = '—'; }
+  document.getElementById('bots-spinner').style.display = 'none';
+}
+
+function renderBots() {
+  const el = document.getElementById('bots-list');
+  if (!bots.length) { el.innerHTML = '<div style="color:#898781;font-size:13px">No bots configured</div>'; return; }
+  el.innerHTML = bots.map(b => {
+    const isTraining = b.status === 'training' || b.status === 'pending_training';
+    const dotClass   = isTraining ? 'paused' : (b.status || 'stopped');
+    const conf = (window._botConfidence||{})[b.id];
+    const confStr    = conf != null ? ` · conf ${(conf*100).toFixed(0)}%` : '';
+    const subLine    = isTraining
+      ? '<span class=\'spinner\' style=\'width:9px;height:9px;border-width:1.5px\'></span> Training...'
+      : `${b.ticker} · ${b.status} · ${b.trades} trades${confStr}`;
+    return `<div class="bot-row${b.id === selectedBotId ? ' active' : ''}" onclick="selectBot('${b.id}')">
+      <span class="bot-dot dot-${dotClass}"></span>
+      <div style="flex:1;min-width:0">
+        <div class="bot-name">${b.name}</div>
+        <div class="bot-ticker">${subLine}</div>
+      </div>
+      <div class="bot-actions" style="display:flex;gap:2px">
+        <button class="icon-btn" onclick="event.stopPropagation();toggleBot('${b.id}','${b.status}')" title="${b.status==='running'?'Pause':'Resume'}">
+          <i class="ti ti-${b.status==='running'?'player-pause':'player-play'}"></i>
+        </button>
+        <button class="icon-btn" onclick="event.stopPropagation();deleteBot('${b.id}')" title="Remove">
+          <i class="ti ti-trash"></i>
+        </button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function selectBot(id) {
+  selectedBotId = id;
+  renderBots();
+  const b = bots.find(x => x.id === id);
+  if (b) {
+    document.getElementById('detail-title').textContent = `Bot details — ${b.name}`;
+    document.getElementById('chart-ticker').textContent = b.ticker;
+    await loadLogs(b.id);                    // logs first
+    await loadPerformance(b.ticker);         // then chart with markers
+    loadDetailStats(b);
+  }
+}
+function loadDetailStats(b) {
+  const alloc = b.risk ? (b.risk.max_allocation_pct*100).toFixed(0) : (b.alloc||'—');
+  const stop  = b.risk ? (b.risk.stop_loss_pct*100).toFixed(1)     : (b.stop||'—');
+  const gens  = b.ga   ? b.ga.generations                           : (b.gens||'—');
+  const conf = (window._botConfidence||{})[b.id];
+  const confRow = conf != null
+    ? `<div class="stat-row"><span class="stat-key">Last confidence</span><span class="stat-val">${(conf*100).toFixed(1)}%</span></div>` : '';
+  document.getElementById('tab-stats').innerHTML = `
+    <div class="stat-row"><span class="stat-key">Ticker</span><span class="stat-val">${b.ticker}</span></div>
+    <div class="stat-row"><span class="stat-key">Asset type</span><span class="stat-val">${b.asset_type||'—'}</span></div>
+    <div class="stat-row"><span class="stat-key">Status</span><span class="stat-val">${b.status}</span></div>
+    <div class="stat-row"><span class="stat-key">Volatility band</span><span class="stat-val">${b.volatility_band||'—'}</span></div>
+    <div class="stat-row"><span class="stat-key">Total trades</span><span class="stat-val">${b.trades}</span></div>
+    <div class="stat-row"><span class="stat-key">Win rate</span><span class="stat-val">${b.win_rate}%</span></div>
+    <div class="stat-row"><span class="stat-key">Max allocation</span><span class="stat-val">${alloc}%</span></div>
+    <div class="stat-row"><span class="stat-key">Stop-loss</span><span class="stat-val">${stop}%</span></div>
+    <div class="stat-row"><span class="stat-key">GA generations</span><span class="stat-val">${gens}</span></div>
+    ${confRow}
+    <div class="stat-row"><span class="stat-key">Chromosome</span><span class="stat-val" style="font-size:11px">${b.chromosome_file}</span></div>`;
+}
+
+async function toggleBot(id, status) {
+  const action = status === 'running' ? 'pause' : 'resume';
+  try {
+    // Try dynamic config endpoint first
+    try { await post(`/bots/${action}`, {id}); }
+    catch {
+      // Update dynamic config directly
+      const statusVal = action === 'pause' ? 'paused' : 'running';
+      await post('/bots/update_status', {id, status: statusVal});
+    }
+    await loadBots();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+async function deleteBot(id) {
+  const b = bots.find(x => x.id === id);
+  const name = b ? b.name : id;
+  if (!confirm(`Remove ${name}?\n\nThis stops the bot and removes it from the dashboard.`)) return;
+  try {
+    let deleted = false;
+    // Try dynamic endpoint first
+    try {
+      await post('/bots/delete_dynamic', {id});
+      deleted = true;
+    } catch {}
+    // Fall back to legacy endpoint
+    if (!deleted) {
+      try { await post('/bots/delete', {id}); deleted = true; } catch {}
+    }
+    if (!deleted) { alert('Could not delete bot — check api.py is running'); return; }
+    if (selectedBotId === id) {
+      selectedBotId = null;
+      document.getElementById('log-bot-name').textContent = 'select a bot';
+      document.getElementById('log-list').innerHTML = '<div style="color:#898781;font-size:13px">Select a bot to view logs</div>';
+      document.getElementById('tab-stats').innerHTML = '<div style="color:#898781;font-size:13px">Select a bot</div>';
+      if (chart) { chart.destroy(); chart = null; }
+    }
+    await loadBots();
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+// ── Performance chart ─────────────────────────────────────────────────────────
+async function loadPerformance(ticker) {
+  try {
+    const p = await api(`/performance?ticker=${ticker}&days=90`);
+    document.getElementById('chart-meta').textContent =
+      `${fmtPct(p.total_return)}  Sharpe ${p.sharpe}  Max DD ${p.max_drawdown}%`;
+    buildChart(p.labels || [], p.equity_curve || [], ticker);
+    document.getElementById('last-refresh').textContent =
+      'Updated ' + new Date().toLocaleTimeString();
+  } catch(e) {
+    document.getElementById('chart-meta').textContent = 'Chart unavailable';
+  }
+}
+
+function buildChart(labels, equity, ticker) {
+  const ctx = document.getElementById('equityChart');
+  const dark = window.matchMedia('(prefers-color-scheme:dark)').matches;
+  const gridColor = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.07)';
+  const tickColor = '#898781';
+  if (chart) chart.destroy();
+
+  // Parse trade markers from log
+  const buyPoints  = new Array(labels.length).fill(null);
+  const sellPoints = new Array(labels.length).fill(null);
+
+  if (window._lastLogs && equity.length) {
+    let buyCount  = 0;
+    let sellCount = 0;
+    window._lastLogs.forEach(entry => {
+      if (entry.type === 'buy' && buyCount < labels.length) {
+        const idx = Math.floor(buyCount * labels.length / Math.max(window._lastLogs.filter(l=>l.type==='buy').length, 1));
+        if (idx < labels.length) { buyPoints[idx] = equity[idx]; buyCount++; }
+      }
+      if (entry.type === 'sell' && sellCount < labels.length) {
+        const idx = Math.floor(sellCount * labels.length / Math.max(window._lastLogs.filter(l=>l.type==='sell').length, 1));
+        if (idx < labels.length) { sellPoints[idx] = equity[idx]; sellCount++; }
+      }
+    });
+  }
+
+  const isUp = equity.length >= 2 && equity[equity.length-1] >= equity[0];
+  chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: ticker,
+          data: equity,
+          borderColor: isUp ? '#185fa5' : '#a32d2d',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.3,
+          fill: false,
+          order: 3,
+        },
+        {
+          label: 'Buy',
+          data: buyPoints,
+          type: 'scatter',
+          pointStyle: 'triangle',
+          pointRadius: 8,
+          pointBackgroundColor: '#3b6d11',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 1.5,
+          showLine: false,
+          order: 1,
+        },
+        {
+          label: 'Sell',
+          data: sellPoints,
+          type: 'scatter',
+          pointStyle: 'triangle',
+          rotation: 180,
+          pointRadius: 8,
+          pointBackgroundColor: '#a32d2d',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 1.5,
+          showLine: false,
+          order: 2,
+        },
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      interaction: {mode:'index', intersect:false},
+      plugins: {
+        legend: {
+          display: true,
+          labels: {
+            filter: item => item.text !== ticker,
+            usePointStyle: true,
+            color: tickColor,
+            font: {size: 11},
+          }
+        },
+        tooltip: {
+          callbacks: {
+            label: d => {
+              if (d.dataset.label === 'Buy')  return '▲ BUY';
+              if (d.dataset.label === 'Sell') return '▼ SELL';
+              return `$${d.parsed.y.toLocaleString()}`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {ticks:{maxTicksLimit:6,color:tickColor,font:{size:11}},grid:{display:false},border:{display:false}},
+        y: {ticks:{color:tickColor,font:{size:11},callback:v=>'$'+v.toLocaleString()},grid:{color:gridColor},border:{display:false}}
+      }
+    }
+  });
+}
+// ── Logs ─────────────────────────────────────────────────────────────────────
+async function loadLogs(botId) {
+  const id = botId || selectedBotId;
+  if (!id) {
+    document.getElementById('log-list').innerHTML = '<div style="color:#898781;font-size:13px">Select a bot to view logs</div>';
+    document.getElementById('log-bot-name').textContent = 'select a bot';
+    return;
+  }
+  // Update log title to show which bot
+  const b = bots.find(x => x.id === id);
+  if (b) document.getElementById('log-bot-name').textContent = b.name;
+  try {
+    const logs = await api(`/logs?bot_id=${id}`);
+    window._lastLogs = logs;
+    const el = document.getElementById('log-list');
+    if (!logs.length) {
+      el.innerHTML = '<div style="color:#898781;font-size:13px">No log entries yet for this bot</div>';
+      return;
+    }
+    el.innerHTML = logs.map(l =>
+      `<div class="log-item">
+        <span class="log-time">${l.time}</span>
+        <span class="log-${l.type||'info'}">${l.msg}</span>
+      </div>`
+    ).join('');
+  } catch {
+    document.getElementById('log-list').innerHTML = '<div style="color:#a32d2d;font-size:13px">Log unavailable — is api.py running?</div>';
+  }
+}
+
+// ── Tabs ─────────────────────────────────────────────────────────────────────
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tab-stats').style.display     = tab === 'stats'     ? '' : 'none';
+  document.getElementById('tab-positions').style.display = tab === 'positions' ? '' : 'none';
+}
+
+// ── Modal ─────────────────────────────────────────────────────────────────────
+function openModal() {
+  document.getElementById('modal').classList.add('open');
+  // Reset fields every time modal opens
+  document.getElementById('f-name').value = '';
+  document.getElementById('f-ticker-search').value = '';
+  document.getElementById('ticker-results').style.display = 'none';
+  document.getElementById('ticker-preview').style.display = 'none';
+  selectedTicker = null;
+}
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
+document.getElementById('modal').addEventListener('click', e => { if(e.target===e.currentTarget) closeModal(); });
+
+async function createBot() {
+  if (!selectedTicker) { alert('Please search and select a valid ticker first.'); return; }
+  const name = document.getElementById('f-name').value.trim() || `${selectedTicker} bot`;
+  const btn  = document.querySelector('.btn-accent');
+  const orig = btn.innerHTML;
+  btn.innerHTML = '<span class="spinner"></span> Creating...';
+  btn.disabled = true;
+  try {
+    const r = await post('/bots/create_dynamic', { symbol: selectedTicker, name });
+    if (r.error) { alert('Error: ' + r.error); return; }
+    btn.innerHTML = '<span class="spinner"></span> Starting training...';
+    try { await post('/bots/train', { id: r.id }); } catch {}
+    closeModal();
+    selectedTicker = null;
+    document.getElementById('f-ticker-search').value = '';
+    document.getElementById('f-name').value = '';
+    document.getElementById('ticker-preview').style.display = 'none';
+    await loadBots();
+    alert(`${name} created!\n\nTraining runs in background (3-5 min).\nStatus shows \'training\' then switches to \'running\' automatically.\n\nIf training fails, run:\npython train_all_failed.py`);
+  } catch(e) {
+    alert('Error: ' + e.message);
+  } finally {
+    btn.innerHTML = orig;
+    btn.disabled = false;
+  }
+}
+// ── Auto-refresh loop ─────────────────────────────────────────────────────────
+async function parseConfidenceFromLogs() {
+  window._botConfidence = window._botConfidence || {};
+  for (const b of bots) {
+    try {
+      const logs = await api(`/logs?bot_id=${b.id}`);
+      // Find the most recent confidence entry in THIS bot's own log
+      for (const entry of logs) {
+        const m = (entry.msg || '').match(/Confidence:\s*([\d.]+)/);
+        if (m) {
+          window._botConfidence[b.id] = parseFloat(m[1]);
+          break;
+        }
+      }
+    } catch {}
+  }
+}
+
+async function fullRefresh() {
+  await Promise.all([checkHealth(), loadAccount(), loadPositions(), loadBots()]);
+  await parseConfidenceFromLogs();
+  renderBots();
+  if (selectedBotId) {
+    const b = bots.find(x => x.id === selectedBotId);
+    if (b) {
+      await loadLogs(selectedBotId);
+      await loadPerformance(b.ticker);
+    }
+  }
+}
+
+fullRefresh();
+setInterval(fullRefresh, 30_000);   // refresh every 30 seconds
+</script>
+</body>
+</html>

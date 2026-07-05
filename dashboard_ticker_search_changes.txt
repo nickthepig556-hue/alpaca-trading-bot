@@ -1,0 +1,201 @@
+DASHBOARD.HTML CHANGES — Dynamic Ticker Search
+=================================================
+Make these changes to dashboard.html to replace the fixed ticker
+dropdown with a live search box that works for any stock/ETF/crypto.
+
+────────────────────────────────────────────────────────────────────
+CHANGE 1 — Replace the ticker <select> in the modal with a search input.
+
+FIND:
+────────────────────────────────────────────────────────────────────
+    <div class="form-group">
+        <label class="form-label">Ticker</label>
+        <select id="f-ticker">
+          <option>GLD</option><option>SLV</option><option>SPY</option>
+          <option>QQQ</option><option>BTC-USD</option>
+        </select>
+      </div>
+
+REPLACE WITH:
+────────────────────────────────────────────────────────────────────
+    <div class="form-group" style="position:relative">
+        <label class="form-label">Ticker — search any stock, ETF, or crypto</label>
+        <input type="text" id="f-ticker-search" placeholder="e.g. NVDA, TSLA, ETH/USD"
+               autocomplete="off" oninput="onTickerSearch(this.value)">
+        <div id="ticker-results" style="display:none;position:absolute;top:100%;left:0;right:0;
+             background:#fff;border:0.5px solid #c3c2b7;border-radius:8px;margin-top:4px;
+             max-height:200px;overflow-y:auto;z-index:10;box-shadow:0 4px 12px rgba(0,0,0,.1)"></div>
+        <div id="ticker-preview" style="display:none;margin-top:8px;padding:10px;
+             background:#f4f3ef;border-radius:8px;font-size:12px"></div>
+      </div>
+
+────────────────────────────────────────────────────────────────────
+CHANGE 2 — Add this CSS (anywhere in the <style> block):
+────────────────────────────────────────────────────────────────────
+
+.ticker-result{padding:8px 12px;cursor:pointer;font-size:13px;display:flex;
+  justify-content:space-between;align-items:center}
+.ticker-result:hover{background:#f4f3ef}
+.ticker-result .sym{font-weight:500}
+.ticker-result .name{color:#898781;font-size:11px}
+.ticker-result .tag{font-size:10px;padding:2px 6px;border-radius:99px;background:#e1e0d9}
+@media(prefers-color-scheme:dark){
+  #ticker-results{background:#1a1a19;border-color:#444441}
+  .ticker-result:hover{background:#222221}
+}
+
+────────────────────────────────────────────────────────────────────
+CHANGE 3 — Add this JavaScript (anywhere in the <script> block):
+────────────────────────────────────────────────────────────────────
+
+let selectedTicker = null;
+let searchDebounce  = null;
+
+async function onTickerSearch(query) {
+  clearTimeout(searchDebounce);
+  selectedTicker = null;
+  document.getElementById('ticker-preview').style.display = 'none';
+
+  if (!query || query.length < 1) {
+    document.getElementById('ticker-results').style.display = 'none';
+    return;
+  }
+
+  searchDebounce = setTimeout(async () => {
+    try {
+      const results = await api(`/tickers/search?q=${encodeURIComponent(query)}`);
+      const el = document.getElementById('ticker-results');
+      if (!results.length) {
+        el.innerHTML = '<div class="ticker-result" style="color:#898781">No matches found</div>';
+      } else {
+        el.innerHTML = results.map(r => `
+          <div class="ticker-result" onclick="pickTicker('${r.symbol}', '${(r.name||'').replace(/'/g,"")}')">
+            <div><div class="sym">${r.symbol}</div><div class="name">${r.name||''}</div></div>
+            <span class="tag">${r.type||''}</span>
+          </div>`).join('');
+      }
+      el.style.display = 'block';
+    } catch(e) {
+      console.error('Ticker search failed', e);
+    }
+  }, 300);
+}
+
+async function pickTicker(symbol, name) {
+  selectedTicker = symbol;
+  document.getElementById('f-ticker-search').value = symbol;
+  document.getElementById('ticker-results').style.display = 'none';
+
+  // Show loading state
+  const preview = document.getElementById('ticker-preview');
+  preview.style.display = 'block';
+  preview.innerHTML = '<span class="spinner"></span> Validating and analysing volatility...';
+
+  try {
+    const v = await api(`/tickers/validate?symbol=${encodeURIComponent(symbol)}`);
+    if (!v.valid) {
+      preview.innerHTML = `<span style="color:#a32d2d">${v.error || 'Invalid ticker'}</span>`;
+      selectedTicker = null;
+      return;
+    }
+    const p = v.preview;
+    preview.innerHTML = `
+      <div style="font-weight:500;margin-bottom:6px">${v.name} — ${v.asset_type.toUpperCase()}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:11px;color:#52514e">
+        <div>Last price: $${v.last_price}</div>
+        <div>Volatility: ${(v.volatility*100).toFixed(1)}% (${v.volatility_band})</div>
+        <div>Max allocation: ${(p.max_allocation_pct*100).toFixed(0)}%</div>
+        <div>Stop-loss: ${(p.stop_loss_pct*100).toFixed(1)}%</div>
+        <div>GA: ${p.ga_generations} gen × ${p.ga_population} pop</div>
+        <div>${p.is_24_7 ? 'Trades 24/7' : 'Market hours only'}</div>
+      </div>`;
+  } catch(e) {
+    preview.innerHTML = '<span style="color:#a32d2d">Validation failed — check API connection</span>';
+    selectedTicker = null;
+  }
+}
+
+// Hide results when clicking elsewhere
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#f-ticker-search') && !e.target.closest('#ticker-results')) {
+    document.getElementById('ticker-results').style.display = 'none';
+  }
+});
+
+────────────────────────────────────────────────────────────────────
+CHANGE 4 — Replace the createBot() function entirely:
+────────────────────────────────────────────────────────────────────
+
+FIND the existing createBot() function and REPLACE WITH:
+
+async function createBot() {
+  if (!selectedTicker) {
+    alert('Please search and select a valid ticker first.');
+    return;
+  }
+
+  const name = document.getElementById('f-name').value || `${selectedTicker} bot`;
+  const btn  = event.target.closest('button');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '<span class="spinner"></span> Creating...';
+  btn.disabled = true;
+
+  try {
+    const r = await post('/bots/create_dynamic', { symbol: selectedTicker, name });
+    if (r.error) {
+      alert('Error: ' + r.error);
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+      return;
+    }
+
+    // Kick off training immediately
+    btn.innerHTML = '<span class="spinner"></span> Training (this takes a few min)...';
+    await post('/bots/train', { id: r.id });
+
+    closeModal();
+    selectedTicker = null;
+    document.getElementById('f-ticker-search').value = '';
+    document.getElementById('ticker-preview').style.display = 'none';
+
+    await loadBots();
+    alert(`${name} created! Training is running in the background — ` +
+          `it will appear as "training" then switch to "running" automatically ` +
+          `once the GA finishes (usually 2-5 minutes).`);
+
+  } catch(e) {
+    alert('Error creating bot: ' + e.message);
+  } finally {
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+  }
+}
+
+────────────────────────────────────────────────────────────────────
+CHANGE 5 — Update loadBots() to call the new dynamic endpoint.
+
+FIND:
+────────────────────────────────────────────────────────────────────
+    bots = await api('/bots');
+
+REPLACE WITH:
+────────────────────────────────────────────────────────────────────
+    bots = await api('/bots/all');
+
+────────────────────────────────────────────────────────────────────
+CHANGE 6 — Show training status with a spinner badge in renderBots().
+
+FIND the dot-status classes section in renderBots() (the bot-row template)
+and update the status dot to show training/pending states:
+
+FIND:
+────────────────────────────────────────────────────────────────────
+      <span class="bot-dot dot-${b.status}"></span>
+
+REPLACE WITH:
+────────────────────────────────────────────────────────────────────
+      <span class="bot-dot dot-${b.status==='training'?'paused':b.status==='pending_training'?'stopped':b.status}"
+            title="${b.status}"></span>
+      ${b.status==='training' ? '<span class="spinner" style="width:10px;height:10px"></span>' : ''}
+
+This shows a spinning indicator next to any bot still being trained.

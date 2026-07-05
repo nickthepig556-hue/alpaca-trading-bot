@@ -1,0 +1,208 @@
+2026-07-02 19:45:24,755  INFO      [NVDA] Process started  PID=45488
+2026-07-02 19:45:25,918  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-02 19:45:25,918  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-02 19:45:25,918  INFO         Mode    : PAPER
+2026-07-02 19:45:25,919  INFO         Ticker  : NVDA
+2026-07-02 19:45:25,919  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-02 19:45:25,921  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-02 19:45:25,929  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-02 19:45:26,165  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-02 19:49:25,358  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-02 19:49:25,360  INFO      [NVDA] Process exiting
+2026-07-02 19:49:32,664  INFO      [NVDA] Process started  PID=43880
+2026-07-02 19:49:33,863  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-02 19:49:33,864  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-02 19:49:33,864  INFO         Mode    : PAPER
+2026-07-02 19:49:33,864  INFO         Ticker  : NVDA
+2026-07-02 19:49:33,864  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-02 19:49:33,866  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-02 19:49:33,868  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-02 19:49:34,090  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-02 20:49:34,525  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-02 21:49:55,573  ERROR     Unexpected error: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DDDF8FA3C0>, 'Connection to paper-api.alpaca.markets timed out. (connect timeout=None)'))
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+        (self._dns_host, self.port), self.timeout, **extra_kw
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+    ...<3 lines>...
+    )
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001DDDF8FA3C0>, 'Connection to paper-api.alpaca.markets timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DDDF8FA3C0>, 'Connection to paper-api.alpaca.markets timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 610, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 475, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\adapters.py", line 717, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.markets', port=443): Max retries exceeded with url: /v2/clock (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DDDF8FA3C0>, 'Connection to paper-api.alpaca.markets timed out. (connect timeout=None)'))
+2026-07-02 21:49:55,733  INFO      Retrying in 5 minutes...
+2026-07-02 21:54:55,941  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-02 22:54:56,306  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-02 23:40:15,459  INFO      [NVDA] Process started  PID=28032
+2026-07-02 23:40:16,674  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-02 23:40:16,674  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-02 23:40:16,674  INFO         Mode    : PAPER
+2026-07-02 23:40:16,674  INFO         Ticker  : NVDA
+2026-07-02 23:40:16,674  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-02 23:40:16,676  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-02 23:40:16,687  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-02 23:40:16,885  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 00:00:02,511  INFO      [NVDA] Process started  PID=5464
+2026-07-03 00:00:03,684  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-03 00:00:03,684  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-03 00:00:03,684  INFO         Mode    : PAPER
+2026-07-03 00:00:03,684  INFO         Ticker  : NVDA
+2026-07-03 00:00:03,684  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-03 00:00:03,687  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-03 00:00:03,688  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-03 00:00:03,893  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 00:12:28,966  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-03 00:12:28,970  INFO      [NVDA] Process exiting
+2026-07-03 00:12:52,923  INFO      [NVDA] Process started  PID=27220
+2026-07-03 00:12:54,084  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-03 00:12:54,084  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-03 00:12:54,084  INFO         Mode    : PAPER
+2026-07-03 00:12:54,084  INFO         Ticker  : NVDA
+2026-07-03 00:12:54,084  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-03 00:12:54,086  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-03 00:12:54,088  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-03 00:12:54,306  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 01:17:04,384  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 02:17:04,606  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 03:17:04,810  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 04:17:05,017  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 05:17:06,736  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 06:17:06,935  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 07:17:07,132  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 08:17:07,338  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 09:17:07,609  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 10:17:07,869  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 11:17:08,061  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 12:17:08,261  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 12:25:34,519  INFO      [NVDA] Process started  PID=27916
+2026-07-03 12:25:35,695  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-03 12:25:35,695  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-03 12:25:35,695  INFO         Mode    : PAPER
+2026-07-03 12:25:35,695  INFO         Ticker  : NVDA
+2026-07-03 12:25:35,695  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-03 12:25:35,698  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-03 12:25:35,705  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-03 12:25:35,929  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 13:25:36,130  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 14:25:36,332  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 15:25:36,533  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 16:25:36,727  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 17:25:36,926  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-03 17:56:35,527  INFO      [NVDA] Process started  PID=18204
+2026-07-03 17:56:36,678  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-03 17:56:36,678  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-03 17:56:36,679  INFO         Mode    : PAPER
+2026-07-03 17:56:36,679  INFO         Ticker  : NVDA
+2026-07-03 17:56:36,679  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-03 17:56:36,681  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-03 17:56:36,688  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-03 17:56:36,882  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 17:35:19,570  INFO      [NVDA] Process started  PID=35344
+2026-07-04 17:35:20,718  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-04 17:35:20,718  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-04 17:35:20,718  INFO         Mode    : PAPER
+2026-07-04 17:35:20,719  INFO         Ticker  : NVDA
+2026-07-04 17:35:20,719  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-04 17:35:20,721  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-04 17:35:20,730  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-04 17:35:20,917  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 17:49:37,314  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-04 17:49:37,317  INFO      [NVDA] Process exiting
+2026-07-04 17:49:43,532  INFO      [NVDA] Process started  PID=37752
+2026-07-04 17:49:44,744  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-04 17:49:44,744  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-04 17:49:44,744  INFO         Mode    : PAPER
+2026-07-04 17:49:44,745  INFO         Ticker  : NVDA
+2026-07-04 17:49:44,745  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-04 17:49:44,747  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-04 17:49:44,748  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-04 17:49:45,946  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 18:49:46,139  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 19:49:46,331  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 20:49:46,521  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 21:49:46,717  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 22:49:49,603  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-04 23:49:49,968  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 00:49:50,160  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 01:49:50,445  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 02:49:50,634  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 03:49:50,824  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 04:49:51,030  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 05:49:51,222  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 06:49:51,530  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 07:49:51,715  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 08:49:51,900  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 09:49:52,094  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 10:49:52,290  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 11:49:52,505  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 12:49:52,696  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 13:49:52,882  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 14:49:53,070  INFO      Market closed. Next open in 60 min. Sleeping...

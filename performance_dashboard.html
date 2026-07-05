@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Performance monitor</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#f4f3ef;color:#0b0b0b;font-size:14px;padding:20px;min-height:100vh}
+@media(prefers-color-scheme:dark){body{background:#141413;color:#f0efe8}}
+h1{font-size:18px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#898781;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#fab219;display:inline-block}
+.live-dot.live{background:#0ca30c;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.card{background:#fff;border:0.5px solid #e1e0d9;border-radius:12px;padding:1rem 1.25rem}
+@media(prefers-color-scheme:dark){.card{background:#1a1a19;border-color:#2c2c2a}}
+.card-title{font-size:12px;font-weight:500;color:#52514e;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+@media(prefers-color-scheme:dark){.card-title{color:#c3c2b7}}
+
+.metric{background:#f4f3ef;border-radius:8px;padding:14px}
+@media(prefers-color-scheme:dark){.metric{background:#222221}}
+.metric-label{font-size:11px;color:#898781;margin-bottom:5px}
+.metric-value{font-size:20px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1.2}
+.metric-sub{font-size:11px;color:#898781;margin-top:4px}
+.up{color:#3b6d11}.down{color:#a32d2d}.neutral{color:#898781}
+@media(prefers-color-scheme:dark){.up{color:#97c459}.down{color:#f09595}}
+
+.stat-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:0.5px solid #e1e0d9;font-size:13px}
+.stat-row:last-child{border-bottom:none}
+@media(prefers-color-scheme:dark){.stat-row{border-color:#2c2c2a}}
+.stat-key{color:#898781}
+.stat-val{font-weight:500;font-variant-numeric:tabular-nums}
+
+.streak-bar{display:flex;gap:3px;margin-top:8px}
+.streak-dot{width:14px;height:14px;border-radius:3px;flex-shrink:0}
+.streak-win{background:#97c459}.streak-loss{background:#f09595}.streak-empty{background:#e1e0d9}
+@media(prefers-color-scheme:dark){.streak-empty{background:#2c2c2a}}
+
+.trade-table{width:100%;font-size:12px;border-collapse:collapse}
+.trade-table th{text-align:left;color:#898781;font-weight:400;padding:5px 8px;border-bottom:0.5px solid #e1e0d9}
+.trade-table td{padding:6px 8px;border-bottom:0.5px solid #e1e0d9;font-variant-numeric:tabular-nums}
+@media(prefers-color-scheme:dark){.trade-table th,.trade-table td{border-color:#2c2c2a}}
+.trade-table tr:last-child td{border-bottom:none}
+.badge{font-size:10px;padding:2px 7px;border-radius:99px;font-weight:500}
+.badge-win{background:#eaf3de;color:#27500a}
+.badge-loss{background:#fcebeb;color:#791f1f}
+.badge-open{background:#e6f1fb;color:#0c447c}
+@media(prefers-color-scheme:dark){.badge-win{background:#27500a;color:#c0dd97}.badge-loss{background:#791f1f;color:#f7c1c1}.badge-open{background:#0c447c;color:#b5d4f4}}
+
+.refresh-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.btn{border:0.5px solid #c3c2b7;background:transparent;color:inherit;padding:5px 12px;border-radius:8px;cursor:pointer;font-size:12px;display:inline-flex;align-items:center;gap:5px}
+.btn:hover{background:rgba(0,0,0,.05)}
+@media(prefers-color-scheme:dark){.btn{border-color:#444441}.btn:hover{background:rgba(255,255,255,.07)}}
+select.ticker-sel{padding:5px 10px;border:0.5px solid #c3c2b7;border-radius:8px;background:transparent;color:inherit;font-size:12px}
+@media(prefers-color-scheme:dark){select.ticker-sel{border-color:#444441;background:#1a1a19}}
+.countdown{font-size:12px;color:#898781;font-variant-numeric:tabular-nums}
+
+.progress-bar{height:6px;background:#e1e0d9;border-radius:3px;overflow:hidden;margin-top:6px}
+.progress-fill{height:100%;border-radius:3px;transition:width .5s}
+@media(prefers-color-scheme:dark){.progress-bar{background:#2c2c2a}}
+</style>
+</head>
+<body>
+
+<h1>Performance monitor</h1>
+<div class="subtitle">
+  <span class="live-dot" id="live-dot"></span>
+  <span id="market-status">Checking market hours...</span>
+  <span class="countdown" id="countdown"></span>
+</div>
+
+<div class="refresh-bar">
+  <div style="display:flex;gap:8px;align-items:center">
+    <select class="ticker-sel" id="ticker-sel" onchange="refresh()">
+      <option value="GLD">GLD — Gold ETF</option>
+      <option value="SPY">SPY — S&P 500</option>
+      <option value="SLV">SLV — Silver ETF</option>
+      <option value="QQQ">QQQ — Nasdaq ETF</option>
+    </select>
+    <select class="ticker-sel" id="days-sel" onchange="refresh()">
+      <option value="30">30 days</option>
+      <option value="60">60 days</option>
+      <option value="90" selected>90 days</option>
+      <option value="180">180 days</option>
+    </select>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <span style="font-size:12px;color:#898781" id="last-update">—</span>
+    <button class="btn" onclick="refresh()"><i class="ti ti-refresh"></i> Refresh</button>
+  </div>
+</div>
+
+<!-- Row 1: P&L metrics -->
+<div class="grid-4">
+  <div class="metric">
+    <div class="metric-label">Total return</div>
+    <div class="metric-value" id="m-return">—</div>
+    <div class="metric-sub" id="m-return-sub">—</div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Sharpe ratio</div>
+    <div class="metric-value" id="m-sharpe">—</div>
+    <div class="metric-sub" id="m-sharpe-sub">Annualised</div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Sortino ratio</div>
+    <div class="metric-value" id="m-sortino">—</div>
+    <div class="metric-sub">Downside risk adj.</div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Max drawdown</div>
+    <div class="metric-value down" id="m-drawdown">—</div>
+    <div class="metric-sub" id="m-drawdown-sub">—</div>
+  </div>
+</div>
+
+<!-- Row 2: Trade stats -->
+<div class="grid-4">
+  <div class="metric">
+    <div class="metric-label">Win rate</div>
+    <div class="metric-value" id="m-winrate">—</div>
+    <div class="progress-bar"><div class="progress-fill" id="m-winrate-bar" style="background:#3b6d11"></div></div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Profit factor</div>
+    <div class="metric-value" id="m-pf">—</div>
+    <div class="metric-sub">Gross win / gross loss</div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Expectancy</div>
+    <div class="metric-value" id="m-expect">—</div>
+    <div class="metric-sub">Per trade avg</div>
+  </div>
+  <div class="metric">
+    <div class="metric-label">Total trades</div>
+    <div class="metric-value" id="m-trades">—</div>
+    <div class="metric-sub" id="m-trades-sub">—</div>
+  </div>
+</div>
+
+<!-- Row 3: Charts side by side -->
+<div class="grid-2">
+  <div class="card">
+    <div class="card-title">
+      Equity curve
+      <span style="font-size:11px;font-weight:400;color:#898781" id="equity-meta"></span>
+    </div>
+    <div style="position:relative;height:200px">
+      <canvas id="equityChart" role="img" aria-label="Equity curve chart"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Daily returns distribution</div>
+    <div style="position:relative;height:200px">
+      <canvas id="returnsChart" role="img" aria-label="Daily returns histogram"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Row 4: Streaks + Trade breakdown -->
+<div class="grid-2">
+  <div class="card">
+    <div class="card-title">Win / loss streaks</div>
+    <div class="grid-2" style="margin-bottom:12px;gap:8px">
+      <div>
+        <div style="font-size:11px;color:#898781;margin-bottom:4px">Current streak</div>
+        <div style="font-size:20px;font-weight:500" id="s-current">—</div>
+      </div>
+      <div>
+        <div style="font-size:11px;color:#898781;margin-bottom:4px">Longest win / loss</div>
+        <div style="font-size:20px;font-weight:500" id="s-longest">—</div>
+      </div>
+    </div>
+    <div style="font-size:11px;color:#898781;margin-bottom:6px">Last 20 trades</div>
+    <div class="streak-bar" id="streak-dots"></div>
+    <div style="display:flex;gap:12px;margin-top:8px;font-size:11px;color:#898781">
+      <span><span style="display:inline-block;width:10px;height:10px;background:#97c459;border-radius:2px;margin-right:3px"></span>Win</span>
+      <span><span style="display:inline-block;width:10px;height:10px;background:#f09595;border-radius:2px;margin-right:3px"></span>Loss</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Trade breakdown</div>
+    <div class="stat-row">
+      <span class="stat-key">Avg win</span>
+      <span class="stat-val up" id="t-avg-win">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">Avg loss</span>
+      <span class="stat-val down" id="t-avg-loss">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">Largest win</span>
+      <span class="stat-val up" id="t-best">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">Largest loss</span>
+      <span class="stat-val down" id="t-worst">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">Wins / losses</span>
+      <span class="stat-val" id="t-wl">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">Calmar ratio</span>
+      <span class="stat-val" id="t-calmar">—</span>
+    </div>
+    <div class="stat-row">
+      <span class="stat-key">DD duration</span>
+      <span class="stat-val" id="t-dd-dur">—</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const API  = 'http://localhost:5000/api';
+let eChart = null, rChart = null;
+let refreshTimer = null, countdownTimer = null, countdownSecs = 5;
+let isMarketOpen = false;
+let lastData = null;
+
+const fmtPct = (v, dp=2) => (v >= 0 ? '+' : '') + Number(v).toFixed(dp) + '%';
+const clsPct = v => Number(v) >= 0 ? 'up' : 'down';
+const set = (id, txt, cls='') => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = txt;
+  if (cls) el.className = el.className.replace(/\bup\b|\bdown\b|\bneutral\b/g,'').trim() + ' ' + cls;
+};
+
+async function fetchPerf() {
+  const ticker = document.getElementById('ticker-sel').value;
+  const days   = document.getElementById('days-sel').value;
+  const r = await fetch(`${API}/performance?ticker=${ticker}&days=${days}`);
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+function renderMetrics(d) {
+  // P&L
+  set('m-return', fmtPct(d.total_return_pct), clsPct(d.total_return_pct));
+  set('m-return-sub', `$${(d.equity_start||0).toLocaleString()} → $${(d.equity_end||0).toLocaleString()}`);
+
+  // Risk ratios
+  const sharpeClass = d.sharpe >= 1 ? 'up' : d.sharpe >= 0 ? 'neutral' : 'down';
+  set('m-sharpe', d.sharpe.toFixed(3), sharpeClass);
+  set('m-sharpe-sub', d.sharpe >= 1 ? 'Good (>1)' : d.sharpe >= 0 ? 'Acceptable' : 'Poor (<0)');
+  set('m-sortino', d.sortino.toFixed(3), d.sortino >= 1 ? 'up' : 'neutral');
+  set('m-drawdown', `-${d.max_drawdown_pct.toFixed(2)}%`);
+  set('m-drawdown-sub', `${d.drawdown_duration} day${d.drawdown_duration !== 1 ? 's' : ''} duration`);
+
+  // Trade stats
+  set('m-winrate', d.win_rate.toFixed(1) + '%', d.win_rate >= 50 ? 'up' : 'down');
+  const bar = document.getElementById('m-winrate-bar');
+  if (bar) { bar.style.width = d.win_rate + '%'; bar.style.background = d.win_rate >= 50 ? '#3b6d11' : '#a32d2d'; }
+
+  const pf = d.profit_factor === Infinity ? '∞' : d.profit_factor.toFixed(2);
+  set('m-pf', pf, d.profit_factor >= 1 ? 'up' : 'down');
+  set('m-expect', fmtPct(d.expectancy, 3), clsPct(d.expectancy));
+  set('m-trades', d.n_trades);
+  set('m-trades-sub', `${d.n_wins} wins · ${d.n_losses} losses`);
+
+  // Trade breakdown
+  set('t-avg-win',  fmtPct(d.avg_win,  2));
+  set('t-avg-loss', fmtPct(d.avg_loss, 2));
+  set('t-best',     fmtPct(d.largest_win,  2));
+  set('t-worst',    fmtPct(d.largest_loss, 2));
+  set('t-wl', `${d.n_wins} / ${d.n_losses}`);
+  set('t-calmar', d.calmar.toFixed(3), clsPct(d.calmar));
+  set('t-dd-dur', `${d.drawdown_duration} days`);
+
+  // Streaks
+  const sType = d.current_streak_type;
+  const sCur  = Math.abs(d.current_streak);
+  set('s-current',
+    sCur === 0 ? '—' : `${sCur} ${sType}${sCur !== 1 ? 's' : ''}`,
+    sType === 'win' ? 'up' : sType === 'loss' ? 'down' : ''
+  );
+  set('s-longest', `${d.longest_win_streak}W / ${d.longest_loss_streak}L`);
+
+  // Streak dots (last 20 trades reconstructed)
+  const dotsEl = document.getElementById('streak-dots');
+  const history = Array.from({length: Math.min(d.n_trades, 20)}, (_, i) => {
+    // approximate from win count
+    return i < Math.round(d.n_trades * d.win_rate / 100) ? 'win' : 'loss';
+  });
+  // Show actual streak at end
+  const actualEnd = sType === 'win'
+    ? Array(sCur).fill('win')
+    : Array(sCur).fill('loss');
+  const display = [...history.slice(0, 20 - sCur), ...actualEnd].slice(-20);
+  dotsEl.innerHTML = Array.from({length: 20}, (_, i) => {
+    const t = display[i];
+    const cls = t === 'win' ? 'streak-win' : t === 'loss' ? 'streak-loss' : 'streak-empty';
+    return `<div class="streak-dot ${cls}" title="${t || 'no trade'}"></div>`;
+  }).join('');
+}
+
+function buildEquityChart(labels, equity) {
+  const ctx = document.getElementById('equityChart');
+  const dark = matchMedia('(prefers-color-scheme:dark)').matches;
+  const grid = dark ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.06)';
+  const tick = '#898781';
+  if (eChart) eChart.destroy();
+
+  // Colour line green if up, red if down
+  const isUp = equity.length >= 2 && equity[equity.length-1] >= equity[0];
+  const lineColor = isUp ? '#3b6d11' : '#a32d2d';
+
+  eChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        data: equity,
+        borderColor: lineColor,
+        borderWidth: 2,
+        pointRadius: 0,
+        tension: 0.3,
+        fill: false,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {legend:{display:false}, tooltip:{callbacks:{label:d=>'$'+d.parsed.y.toLocaleString()}}},
+      scales: {
+        x: {ticks:{maxTicksLimit:6,color:tick,font:{size:11}},grid:{display:false},border:{display:false}},
+        y: {ticks:{color:tick,font:{size:11},callback:v=>'$'+v.toLocaleString()},grid:{color:grid},border:{display:false}}
+      }
+    }
+  });
+
+  // Meta label
+  const ret = equity.length >= 2 ? ((equity[equity.length-1]-equity[0])/equity[0]*100).toFixed(2) : 0;
+  document.getElementById('equity-meta').textContent = fmtPct(ret);
+  document.getElementById('equity-meta').className = 'up metric-sub ' + (ret >= 0 ? 'up' : 'down');
+}
+
+function buildReturnsChart(dailyReturns) {
+  const ctx = document.getElementById('returnsChart');
+  const dark = matchMedia('(prefers-color-scheme:dark)').matches;
+  const grid = dark ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.06)';
+  const tick = '#898781';
+  if (rChart) rChart.destroy();
+
+  // Histogram: bucket daily returns into 20 bins
+  if (!dailyReturns || !dailyReturns.length) return;
+  const mn = Math.min(...dailyReturns), mx = Math.max(...dailyReturns);
+  const bins = 20;
+  const step = (mx - mn) / bins || 0.01;
+  const buckets = Array(bins).fill(0);
+  const bLabels = [];
+  for (let i = 0; i < bins; i++) bLabels.push((mn + i * step).toFixed(2) + '%');
+  dailyReturns.forEach(r => {
+    const idx = Math.min(Math.floor((r - mn) / step), bins - 1);
+    buckets[idx]++;
+  });
+  const colors = bLabels.map(l => parseFloat(l) >= 0 ? '#3b6d11' : '#a32d2d');
+
+  rChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: bLabels,
+      datasets: [{data: buckets, backgroundColor: colors, borderWidth: 0, borderRadius: 2}]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {legend:{display:false}, tooltip:{callbacks:{title:t=>t[0].label+' return', label:d=>d.parsed.y+' days'}}},
+      scales: {
+        x: {ticks:{maxTicksLimit:6,color:tick,font:{size:10}},grid:{display:false},border:{display:false}},
+        y: {ticks:{color:tick,font:{size:11},stepSize:1},grid:{color:grid},border:{display:false}}
+      }
+    }
+  });
+}
+
+function updateMarketStatus(isOpen) {
+  isMarketOpen = isOpen;
+  const dot = document.getElementById('live-dot');
+  const status = document.getElementById('market-status');
+  if (isOpen) {
+    dot.classList.add('live');
+    status.textContent = 'Market open — refreshing every 5s';
+    countdownSecs = 5;
+  } else {
+    dot.classList.remove('live');
+    status.textContent = 'Market closed — refreshing every 30s';
+    countdownSecs = 30;
+  }
+}
+
+function startCountdown(secs) {
+  if (countdownTimer) clearInterval(countdownTimer);
+  let remaining = secs;
+  const el = document.getElementById('countdown');
+  el.textContent = `Next refresh in ${remaining}s`;
+  countdownTimer = setInterval(() => {
+    remaining--;
+    if (remaining <= 0) {
+      clearInterval(countdownTimer);
+      el.textContent = 'Refreshing...';
+    } else {
+      el.textContent = `Next refresh in ${remaining}s`;
+    }
+  }, 1000);
+}
+
+async function refresh() {
+  if (refreshTimer) clearTimeout(refreshTimer);
+  try {
+    const d = await fetchPerf();
+    lastData = d;
+    renderMetrics(d);
+    buildEquityChart(d.labels || [], d.equity_curve || []);
+    buildReturnsChart(d.daily_returns || []);
+    updateMarketStatus(d.market_open || false);
+    document.getElementById('last-update').textContent =
+      'Updated ' + new Date().toLocaleTimeString();
+  } catch(e) {
+    document.getElementById('last-update').textContent = 'API offline — is api.py running?';
+    document.getElementById('live-dot').classList.remove('live');
+    document.getElementById('market-status').textContent = 'Cannot connect to localhost:5000';
+  }
+
+  const interval = isMarketOpen ? 5_000 : 30_000;
+  startCountdown(interval / 1000);
+  refreshTimer = setTimeout(refresh, interval);
+}
+
+refresh();
+</script>
+</body>
+</html>

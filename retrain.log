@@ -1,0 +1,65 @@
+2026-06-26 21:28:41,577  INFO      
+=======================================================
+2026-06-26 21:28:41,577  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-06-26 21:28:41,577  INFO        2026-06-26 21:28
+2026-06-26 21:28:41,577  INFO      =======================================================
+2026-06-26 21:28:41,577  INFO      
+=======================================================
+2026-06-26 21:28:41,577  INFO        Retraining: GLD
+2026-06-26 21:28:41,577  INFO        2026-06-26 21:28
+2026-06-26 21:28:41,577  INFO      =======================================================
+2026-06-26 21:28:41,896  INFO      [GLD] Current fitness: 0.9667
+2026-06-26 21:28:41,897  INFO      [GLD] Backed up to GLD_chromosome_20260626_212841.csv
+2026-06-26 21:28:42,700  INFO      [GLD] Downloading fresh data...
+2026-06-26 21:28:43,914  INFO      [GLD] Computing indicators on 1628 rows...
+2026-06-26 21:28:43,931  INFO      [GLD] Running GA (200 gen × 100 pop)...
+2026-06-26 21:28:50,247  INFO      [GLD] New fitness   : 1.0000
+2026-06-26 21:28:50,247  INFO      [GLD] Total return  : +152.17%
+2026-06-26 21:28:50,247  INFO      [GLD] Win rate      : 100.00%
+2026-06-26 21:28:50,247  INFO      [GLD] Trades        : 10
+2026-06-26 21:28:50,247  INFO      [GLD] Max drawdown  : 13.87%
+2026-06-26 21:28:50,247  INFO      [GLD] New fitness 1.0000 >= threshold 0.9183 — accepting
+2026-06-26 21:28:50,251  INFO      [GLD] Chromosome saved — retrain complete
+2026-06-26 21:29:00,251  INFO      
+=======================================================
+2026-06-26 21:29:00,252  INFO        Retraining: SPY
+2026-06-26 21:29:00,252  INFO        2026-06-26 21:29
+2026-06-26 21:29:00,252  INFO      =======================================================
+2026-06-26 21:29:00,262  INFO      [SPY] Current fitness: 1.0000
+2026-06-26 21:29:00,263  INFO      [SPY] Backed up to SPY_chromosome_20260626_212900.csv
+2026-06-26 21:29:00,263  INFO      [SPY] Downloading fresh data...
+2026-06-26 21:29:00,564  INFO      [SPY] Computing indicators on 1628 rows...
+2026-06-26 21:29:00,570  INFO      [SPY] Running GA (250 gen × 120 pop)...
+2026-06-26 21:29:13,626  INFO      [SPY] New fitness   : 1.0000
+2026-06-26 21:29:13,626  INFO      [SPY] Total return  : +145.21%
+2026-06-26 21:29:13,626  INFO      [SPY] Win rate      : 100.00%
+2026-06-26 21:29:13,626  INFO      [SPY] Trades        : 12
+2026-06-26 21:29:13,626  INFO      [SPY] Max drawdown  : 8.41%
+2026-06-26 21:29:13,626  INFO      [SPY] New fitness 1.0000 >= threshold 0.9500 — accepting
+2026-06-26 21:29:13,630  INFO      [SPY] Chromosome saved — retrain complete
+2026-06-26 21:29:23,630  INFO      
+=======================================================
+2026-06-26 21:29:23,631  INFO        Retraining: BTC-USD
+2026-06-26 21:29:23,631  INFO        2026-06-26 21:29
+2026-06-26 21:29:23,631  INFO      =======================================================
+2026-06-26 21:29:23,640  INFO      [BTC-USD] Current fitness: 0.9688
+2026-06-26 21:29:23,641  INFO      [BTC-USD] Backed up to BTC-USD_chromosome_20260626_212923.csv
+2026-06-26 21:29:23,642  INFO      [BTC-USD] Downloading fresh data...
+2026-06-26 21:29:23,881  INFO      [BTC-USD] Computing indicators on 2002 rows...
+2026-06-26 21:29:23,886  INFO      [BTC-USD] Running GA (300 gen × 150 pop)...
+2026-06-26 21:29:39,265  INFO      [BTC-USD] New fitness   : 0.9688
+2026-06-26 21:29:39,265  INFO      [BTC-USD] Total return  : +173.81%
+2026-06-26 21:29:39,265  INFO      [BTC-USD] Win rate      : 93.75%
+2026-06-26 21:29:39,265  INFO      [BTC-USD] Trades        : 16
+2026-06-26 21:29:39,265  INFO      [BTC-USD] Max drawdown  : 9.47%
+2026-06-26 21:29:39,265  INFO      [BTC-USD] New fitness 0.9688 >= threshold 0.9203 — accepting
+2026-06-26 21:29:39,268  INFO      [BTC-USD] Chromosome saved — retrain complete
+2026-06-26 21:29:49,269  INFO      
+=======================================================
+2026-06-26 21:29:49,269  INFO        RETRAIN SUMMARY
+2026-06-26 21:29:49,270  INFO      =======================================================
+2026-06-26 21:29:49,270  INFO        GLD          [OK] Updated
+2026-06-26 21:29:49,270  INFO        SPY          [OK] Updated
+2026-06-26 21:29:49,270  INFO        BTC-USD      [OK] Updated
+2026-06-26 21:29:49,271  INFO        Total time: 1.1 minutes
+2026-06-26 21:29:49,271  INFO      =======================================================
