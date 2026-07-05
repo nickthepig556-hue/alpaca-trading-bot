@@ -86,6 +86,31 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
 .ticker-result .tag{font-size:10px;padding:2px 6px;border-radius:99px;background:#1e1e24;color:#aaaacc}
 #ticker-results{background:#0d0d12 !important;border-color:#333338 !important}
 @keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Mobile responsive ───────────────────────────────────────────────────── */
+@media(max-width:768px){
+  body{padding:12px}
+  .top-bar{flex-wrap:wrap;gap:8px}
+  .top-right{flex-wrap:wrap;gap:6px}
+  .metrics-grid{grid-template-columns:1fr 1fr}
+  .main-grid{grid-template-columns:1fr}
+  .bottom-grid{grid-template-columns:1fr}
+  .modal{width:calc(100vw - 32px);margin:16px}
+  .form-row{grid-template-columns:1fr}
+  .btn{padding:8px 12px;font-size:12px}
+  .metric-value{font-size:18px}
+  .card{padding:0.75rem 1rem}
+  .bots-list{max-height:300px;overflow-y:auto}
+  .log-list{max-height:200px}
+  #chart-ticker{display:none}
+}
+@media(max-width:480px){
+  .metrics-grid{grid-template-columns:1fr}
+  .top-right .badge{display:none}
+  #conn-label{display:none}
+  .metric-label{font-size:11px}
+  .metric-value{font-size:16px}
+}
 .refresh-hint{font-size:11px;color:#555568;text-align:right;margin-top:6px}
 </style>
 </head>

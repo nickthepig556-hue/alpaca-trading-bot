@@ -6838,3 +6838,27 @@
 2026-07-05 17:33:59,664  INFO      Open position   : None
 2026-07-05 17:33:59,664  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
 2026-07-05 17:33:59,664  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:38:59,664  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:38:59,665  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:38:59,665  INFO      =======================================================
+2026-07-05 17:38:59,665  INFO      Daily signal run  [2026-07-05 17:38]
+2026-07-05 17:38:59,665  INFO      =======================================================
+2026-07-05 17:39:00,161  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:39:00,365  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:39:00,498  INFO      Portfolio value : $100,298.83
+2026-07-05 17:39:00,498  INFO      Current price   : $63603.35
+2026-07-05 17:39:00,498  INFO      Open position   : None
+2026-07-05 17:39:00,499  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:39:00,499  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:44:00,500  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:44:00,500  INFO      Market open — waiting 0s before first signal...
+2026-07-05 17:44:00,500  INFO      =======================================================
+2026-07-05 17:44:00,500  INFO      Daily signal run  [2026-07-05 17:44]
+2026-07-05 17:44:00,500  INFO      =======================================================
+2026-07-05 17:44:01,001  INFO      Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:44:01,219  INFO      Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:44:01,361  INFO      Portfolio value : $100,298.83
+2026-07-05 17:44:01,361  INFO      Current price   : $63646.45
+2026-07-05 17:44:01,361  INFO      Open position   : None
+2026-07-05 17:44:01,361  INFO      Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:44:01,361  INFO      Signal check complete. Sleeping 5 minutes until next check.

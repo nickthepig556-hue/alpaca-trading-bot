@@ -48,6 +48,22 @@ tr:hover td{background:#111118}
 .medal{font-size:16px}
 .search-box{background:#111114;border:0.5px solid #333;border-radius:8px;padding:8px 12px;color:#f0f0ff;font-size:13px;width:200px;outline:none}
 .search-box:focus{border-color:#ff6600}
+
+@media(max-width:768px){
+  body{padding:12px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .grid-2{grid-template-columns:1fr}
+  .top-bar{flex-wrap:wrap;gap:8px}
+  table{font-size:12px}
+  th,td{padding:6px 8px}
+  .search-box{width:140px}
+  .admin-badge{display:none}
+}
+@media(max-width:480px){
+  .stats-grid{grid-template-columns:1fr}
+  .stat-value{font-size:20px}
+  th:nth-child(n+4),td:nth-child(n+4){display:none}
+}
 </style>
 </head>
 <body>

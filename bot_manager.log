@@ -39193,3 +39193,26 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 17:30:09,076  INFO      [manager]    AMZN       [RUNNING]  PID=8392  restarts=0
 2026-07-05 17:30:09,076  INFO      [manager]    META       [RUNNING]  PID=38832  restarts=0
 2026-07-05 17:30:09,077  INFO      [manager]    AAPL       [RUNNING]  PID=51648  restarts=0
+2026-07-05 17:33:58,826  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:33:58,827  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 17:33:58,827  INFO      [manager]  =======================================================
+2026-07-05 17:33:58,827  INFO      [manager]  Daily signal run  [2026-07-05 17:33]
+2026-07-05 17:33:58,827  INFO      [manager]  =======================================================
+2026-07-05 17:33:59,317  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:33:59,525  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:33:59,664  INFO      [manager]  Portfolio value : $100,298.83
+2026-07-05 17:33:59,664  INFO      [manager]  Current price   : $63617.21
+2026-07-05 17:33:59,664  INFO      [manager]  Open position   : None
+2026-07-05 17:33:59,664  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:33:59,664  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:35:09,085  INFO      [manager]  --- Status at 17:35:09 ---
+2026-07-05 17:35:09,085  INFO      [manager]    GLD        [RUNNING]  PID=33204  restarts=0
+2026-07-05 17:35:09,085  INFO      [manager]    SPY        [RUNNING]  PID=24600  restarts=0
+2026-07-05 17:35:09,085  INFO      [manager]    NVDA       [RUNNING]  PID=56132  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    BTC/USD    [RUNNING]  PID=37424  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    QQQ        [RUNNING]  PID=50060  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    TSLA       [RUNNING]  PID=56620  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    MSFT       [RUNNING]  PID=48688  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    AMZN       [RUNNING]  PID=8392  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    META       [RUNNING]  PID=38832  restarts=0
+2026-07-05 17:35:09,086  INFO      [manager]    AAPL       [RUNNING]  PID=51648  restarts=0

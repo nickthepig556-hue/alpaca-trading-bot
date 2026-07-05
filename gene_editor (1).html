@@ -45,6 +45,21 @@ input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px}
 
 .spinner{display:inline-block;width:14px;height:14px;border:2px solid #333;border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:768px){
+  body{padding:12px}
+  .top-bar{flex-wrap:wrap;gap:8px}
+  .gene-row{grid-template-columns:90px 1fr 44px 1fr 44px;gap:6px}
+  .gene-name{font-size:11px}
+  .val-display{font-size:11px;padding:2px 4px}
+  .card{padding:0.75rem}
+  select{font-size:12px;padding:6px 8px}
+}
+@media(max-width:480px){
+  .gene-row{grid-template-columns:1fr;gap:4px;padding:12px 0}
+  .val-display{display:inline-block;width:48px}
+  .info-box{font-size:11px}
+}
 </style>
 </head>
 <body>

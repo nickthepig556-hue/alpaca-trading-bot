@@ -165,6 +165,18 @@ canvas#fireCanvas{display:block;image-rendering:pixelated;
 .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.3);
   border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:480px){
+  body{padding:16px}
+  .fire-scene{width:180px;height:180px}
+  .campfire-gif{width:90px;height:90px}
+  .bot-wrap{top:-76px}
+  .title{font-size:16px;letter-spacing:3px}
+  .tagline{font-size:12px}
+  .card{padding:1.25rem}
+  .features{grid-template-columns:1fr}
+  #money{font-size:11px;letter-spacing:1px}
+}
 </style>
 </head>
 <body>
