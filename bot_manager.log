@@ -39000,3 +39000,196 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 17:17:25,185  INFO      [manager]  [META] Stopped
 2026-07-05 17:17:25,185  INFO      [manager]  [AAPL] Stopping PID=38832...
 2026-07-05 17:17:25,201  INFO      [manager]  [AAPL] Stopped
+2026-07-05 17:18:48,990  INFO      [manager]  [GLD] Chromosome found: GLD_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [SPY] Chromosome found: SPY_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [NVDA] Chromosome found: NVDA_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [BTC/USD] Chromosome found: BTC-USD_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [QQQ] Chromosome found: QQQ_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [TSLA] Chromosome found: TSLA_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [MSFT] Chromosome found: MSFT_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [AMZN] Chromosome found: AMZN_best_chromosome.csv
+2026-07-05 17:18:48,991  INFO      [manager]  [META] Chromosome found: META_best_chromosome.csv
+2026-07-05 17:18:48,992  INFO      [manager]  [AAPL] Chromosome found: AAPL_best_chromosome.csv
+2026-07-05 17:18:48,992  INFO      [manager]  =======================================================
+2026-07-05 17:18:48,992  INFO      [manager]    Multi-Bot Manager starting
+2026-07-05 17:18:48,992  INFO      [manager]    Bots: GLD, SPY, NVDA, BTC/USD, QQQ, TSLA, MSFT, AMZN, META, AAPL
+2026-07-05 17:18:48,992  INFO      [manager]  =======================================================
+2026-07-05 17:18:48,999  INFO      [manager]  [GLD] Launched  PID=33204
+2026-07-05 17:18:49,060  INFO      [manager]  [GLD] Process started  PID=33204
+2026-07-05 17:18:49,985  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:18:50,272  INFO      [manager]  [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 17:18:50,273  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:50,273  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:18:50,273  INFO      [manager]     Ticker  : GLD
+2026-07-05 17:18:50,273  INFO      [manager]     Chromosome : GLD_best_chromosome.csv
+2026-07-05 17:18:50,275  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:50,276  INFO      [manager]  Chromosome loaded from GLD_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:50,470  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:18:51,004  INFO      [manager]  [SPY] Launched  PID=24600
+2026-07-05 17:18:51,063  INFO      [manager]  [SPY] Process started  PID=24600
+2026-07-05 17:18:51,925  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:18:52,188  INFO      [manager]  [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 17:18:52,188  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:52,188  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:18:52,188  INFO      [manager]     Ticker  : SPY
+2026-07-05 17:18:52,189  INFO      [manager]     Chromosome : SPY_best_chromosome.csv
+2026-07-05 17:18:52,190  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:52,192  INFO      [manager]  Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:52,381  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:18:53,008  INFO      [manager]  [NVDA] Launched  PID=56132
+2026-07-05 17:18:53,069  INFO      [manager]  [NVDA] Process started  PID=56132
+2026-07-05 17:18:53,924  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:18:54,192  INFO      [manager]  [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 17:18:54,192  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:54,193  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:18:54,193  INFO      [manager]     Ticker  : NVDA
+2026-07-05 17:18:54,193  INFO      [manager]     Chromosome : NVDA_best_chromosome.csv
+2026-07-05 17:18:54,194  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:54,196  INFO      [manager]  Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:54,391  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:18:55,013  INFO      [manager]  [BTC/USD] Launched  PID=37424
+2026-07-05 17:18:55,074  INFO      [manager]  [BTC/USD] Process started  PID=37424
+2026-07-05 17:18:55,914  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:18:56,176  INFO      [manager]  [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 17:18:56,176  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:56,176  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:18:56,176  INFO      [manager]     Ticker  : BTC/USD
+2026-07-05 17:18:56,176  INFO      [manager]     Chromosome : BTC-USD_best_chromosome.csv
+2026-07-05 17:18:56,178  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:56,179  INFO      [manager]  Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:56,179  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:18:56,179  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 17:18:56,179  INFO      [manager]  =======================================================
+2026-07-05 17:18:56,179  INFO      [manager]  Daily signal run  [2026-07-05 17:18]
+2026-07-05 17:18:56,179  INFO      [manager]  =======================================================
+2026-07-05 17:18:56,638  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:18:57,005  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:18:57,018  INFO      [manager]  [QQQ] Launched  PID=50060
+2026-07-05 17:18:57,076  INFO      [manager]  [QQQ] Process started  PID=50060
+2026-07-05 17:18:57,132  INFO      [manager]  Portfolio value : $100,298.83
+2026-07-05 17:18:57,132  INFO      [manager]  Current price   : $63868.93
+2026-07-05 17:18:57,132  INFO      [manager]  Open position   : None
+2026-07-05 17:18:57,132  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:18:57,132  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:18:57,925  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:18:58,196  INFO      [manager]  [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 17:18:58,196  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:18:58,196  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:18:58,196  INFO      [manager]     Ticker  : QQQ
+2026-07-05 17:18:58,196  INFO      [manager]     Chromosome : QQQ_best_chromosome.csv
+2026-07-05 17:18:58,198  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:18:58,200  INFO      [manager]  Chromosome loaded from QQQ_best_chromosome.csv  (24 genes)
+2026-07-05 17:18:58,419  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:18:59,022  INFO      [manager]  [TSLA] Launched  PID=56620
+2026-07-05 17:18:59,084  INFO      [manager]  [TSLA] Process started  PID=56620
+2026-07-05 17:18:59,941  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:19:00,223  INFO      [manager]  [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 17:19:00,223  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:19:00,223  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:19:00,223  INFO      [manager]     Ticker  : TSLA
+2026-07-05 17:19:00,223  INFO      [manager]     Chromosome : TSLA_best_chromosome.csv
+2026-07-05 17:19:00,225  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:19:00,227  INFO      [manager]  Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-05 17:19:00,416  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:19:01,028  INFO      [manager]  [MSFT] Launched  PID=48688
+2026-07-05 17:19:01,087  INFO      [manager]  [MSFT] Process started  PID=48688
+2026-07-05 17:19:01,978  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:19:02,243  INFO      [manager]  [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 17:19:02,243  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:19:02,243  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:19:02,243  INFO      [manager]     Ticker  : MSFT
+2026-07-05 17:19:02,243  INFO      [manager]     Chromosome : MSFT_best_chromosome.csv
+2026-07-05 17:19:02,245  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:19:02,247  INFO      [manager]  Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-05 17:19:02,439  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:19:03,032  INFO      [manager]  [AMZN] Launched  PID=8392
+2026-07-05 17:19:03,095  INFO      [manager]  [AMZN] Process started  PID=8392
+2026-07-05 17:19:03,998  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:19:04,281  INFO      [manager]  [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 17:19:04,281  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:19:04,281  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:19:04,281  INFO      [manager]     Ticker  : AMZN
+2026-07-05 17:19:04,281  INFO      [manager]     Chromosome : AMZN_best_chromosome.csv
+2026-07-05 17:19:04,283  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:19:04,285  INFO      [manager]  Chromosome loaded from AMZN_best_chromosome.csv  (24 genes)
+2026-07-05 17:19:04,496  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:19:05,037  INFO      [manager]  [META] Launched  PID=38832
+2026-07-05 17:19:05,099  INFO      [manager]  [META] Process started  PID=38832
+2026-07-05 17:19:06,011  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:19:06,302  INFO      [manager]  [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 17:19:06,302  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:19:06,302  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:19:06,302  INFO      [manager]     Ticker  : META
+2026-07-05 17:19:06,302  INFO      [manager]     Chromosome : META_best_chromosome.csv
+2026-07-05 17:19:06,304  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:19:06,306  INFO      [manager]  Chromosome loaded from META_best_chromosome.csv  (24 genes)
+2026-07-05 17:19:06,538  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:19:07,042  INFO      [manager]  [AAPL] Launched  PID=51648
+2026-07-05 17:19:07,103  INFO      [manager]  [AAPL] Process started  PID=51648
+2026-07-05 17:19:08,012  INFO      [manager]  Email alerts enabled → nickthepig556@gmail.com
+2026-07-05 17:19:08,278  INFO      [manager]  [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 17:19:08,278  INFO      [manager]  [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 17:19:08,278  INFO      [manager]     Mode    : PAPER
+2026-07-05 17:19:08,278  INFO      [manager]     Ticker  : AAPL
+2026-07-05 17:19:08,278  INFO      [manager]     Chromosome : AAPL_best_chromosome.csv
+2026-07-05 17:19:08,280  INFO      [manager]  Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 17:19:08,281  INFO      [manager]  Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-05 17:19:08,475  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 17:19:09,042  INFO      [manager]  Supervision loop running (Ctrl+C to stop all bots)
+2026-07-05 17:20:09,050  INFO      [manager]  --- Status at 17:20:09 ---
+2026-07-05 17:20:09,058  INFO      [manager]    GLD        [RUNNING]  PID=33204  restarts=0
+2026-07-05 17:20:09,058  INFO      [manager]    SPY        [RUNNING]  PID=24600  restarts=0
+2026-07-05 17:20:09,058  INFO      [manager]    NVDA       [RUNNING]  PID=56132  restarts=0
+2026-07-05 17:20:09,058  INFO      [manager]    BTC/USD    [RUNNING]  PID=37424  restarts=0
+2026-07-05 17:20:09,058  INFO      [manager]    QQQ        [RUNNING]  PID=50060  restarts=0
+2026-07-05 17:20:09,058  INFO      [manager]    TSLA       [RUNNING]  PID=56620  restarts=0
+2026-07-05 17:20:09,059  INFO      [manager]    MSFT       [RUNNING]  PID=48688  restarts=0
+2026-07-05 17:20:09,059  INFO      [manager]    AMZN       [RUNNING]  PID=8392  restarts=0
+2026-07-05 17:20:09,059  INFO      [manager]    META       [RUNNING]  PID=38832  restarts=0
+2026-07-05 17:20:09,059  INFO      [manager]    AAPL       [RUNNING]  PID=51648  restarts=0
+2026-07-05 17:23:57,133  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:23:57,133  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 17:23:57,133  INFO      [manager]  =======================================================
+2026-07-05 17:23:57,133  INFO      [manager]  Daily signal run  [2026-07-05 17:23]
+2026-07-05 17:23:57,134  INFO      [manager]  =======================================================
+2026-07-05 17:23:57,586  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:23:57,806  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:23:57,924  INFO      [manager]  Portfolio value : $100,298.83
+2026-07-05 17:23:57,924  INFO      [manager]  Current price   : $63785.42
+2026-07-05 17:23:57,924  INFO      [manager]  Open position   : None
+2026-07-05 17:23:57,924  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:23:57,925  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:25:09,067  INFO      [manager]  --- Status at 17:25:09 ---
+2026-07-05 17:25:09,068  INFO      [manager]    GLD        [RUNNING]  PID=33204  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    SPY        [RUNNING]  PID=24600  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    NVDA       [RUNNING]  PID=56132  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    BTC/USD    [RUNNING]  PID=37424  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    QQQ        [RUNNING]  PID=50060  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    TSLA       [RUNNING]  PID=56620  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    MSFT       [RUNNING]  PID=48688  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    AMZN       [RUNNING]  PID=8392  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    META       [RUNNING]  PID=38832  restarts=0
+2026-07-05 17:25:09,068  INFO      [manager]    AAPL       [RUNNING]  PID=51648  restarts=0
+2026-07-05 17:28:57,925  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 17:28:57,926  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 17:28:57,926  INFO      [manager]  =======================================================
+2026-07-05 17:28:57,926  INFO      [manager]  Daily signal run  [2026-07-05 17:28]
+2026-07-05 17:28:57,926  INFO      [manager]  =======================================================
+2026-07-05 17:28:58,517  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-28 → 2026-07-05)
+2026-07-05 17:28:58,698  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 17:28:58,825  INFO      [manager]  Portfolio value : $100,298.83
+2026-07-05 17:28:58,826  INFO      [manager]  Current price   : $63674.04
+2026-07-05 17:28:58,826  INFO      [manager]  Open position   : None
+2026-07-05 17:28:58,826  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 17:28:58,826  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 17:30:09,076  INFO      [manager]  --- Status at 17:30:09 ---
+2026-07-05 17:30:09,076  INFO      [manager]    GLD        [RUNNING]  PID=33204  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    SPY        [RUNNING]  PID=24600  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    NVDA       [RUNNING]  PID=56132  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    BTC/USD    [RUNNING]  PID=37424  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    QQQ        [RUNNING]  PID=50060  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    TSLA       [RUNNING]  PID=56620  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    MSFT       [RUNNING]  PID=48688  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    AMZN       [RUNNING]  PID=8392  restarts=0
+2026-07-05 17:30:09,076  INFO      [manager]    META       [RUNNING]  PID=38832  restarts=0
+2026-07-05 17:30:09,077  INFO      [manager]    AAPL       [RUNNING]  PID=51648  restarts=0
