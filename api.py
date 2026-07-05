@@ -41,7 +41,13 @@ from ticker_manager import (validate_ticker, create_bot_config, search_tickers, 
 from dotenv import load_dotenv
 load_dotenv()
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, g
+from auth import (
+    register_user, login_user, get_user_from_token,
+    get_user_profile, get_global_stats, get_all_users,
+    require_auth, require_admin, delete_session,
+    add_user_bot, get_user_bots, record_trade
+)
 from flask_cors import CORS
 
 from alpaca.trading.client import TradingClient
@@ -685,6 +691,110 @@ def api_delete_bot_dynamic():
     if not ok:
         return jsonify({"error": "bot not found"}), 404
     return jsonify({"ok": True})
+# ── /api/auth/register ───────────────────────────────────────────────────────
+@app.route("/api/auth/register", methods=["POST"])
+def api_register():
+    """Register a new user. Body: { username, password, email? }"""
+    data     = request.get_json()
+    username = (data or {}).get("username", "").strip()
+    password = (data or {}).get("password", "")
+    email    = (data or {}).get("email", "").strip() or None
+ 
+    ok, result = register_user(username, password, email)
+    if not ok:
+        return jsonify({"error": result}), 400
+ 
+    # result is the session token
+    return jsonify({
+        "ok"      : True,
+        "token"   : result,
+        "username": username,
+        "message" : "Account created! Welcome to BotFire.",
+        "balance" : 100000.0,
+    })
+ 
+ 
+# ── /api/auth/login ──────────────────────────────────────────────────────────
+@app.route("/api/auth/login", methods=["POST"])
+def api_login():
+    """Login. Body: { username, password }"""
+    data     = request.get_json()
+    username = (data or {}).get("username", "").strip()
+    password = (data or {}).get("password", "")
+ 
+    ok, result = login_user(username, password)
+    if not ok:
+        return jsonify({"error": result}), 401
+ 
+    return jsonify({
+        "ok"      : True,
+        "token"   : result,
+        "username": username,
+        "message" : "Welcome back!",
+    })
+ 
+ 
+# ── /api/auth/logout ─────────────────────────────────────────────────────────
+@app.route("/api/auth/logout", methods=["POST"])
+def api_logout():
+    """Logout — invalidate session token."""
+    token = request.headers.get("Authorization", "").replace("Bearer ", "")
+    if token:
+        delete_session(token)
+    return jsonify({"ok": True})
+ 
+ 
+# ── /api/auth/me ─────────────────────────────────────────────────────────────
+@app.route("/api/auth/me")
+@require_auth
+def api_me():
+    """Get current user's profile."""
+    profile = get_user_profile(g.current_user["id"])
+    return jsonify(profile)
+ 
+ 
+# ── /api/global/stats ────────────────────────────────────────────────────────
+@app.route("/api/global/stats")
+def api_global_stats():
+    """Public — global platform stats for the fire counter."""
+    stats = get_global_stats()
+    return jsonify(stats)
+ 
+ 
+# ── /api/admin/users ─────────────────────────────────────────────────────────
+@app.route("/api/admin/users")
+@require_admin
+def api_admin_users():
+    """Admin only — list all users."""
+    page = int(request.args.get("page", 1))
+    users = get_all_users(page=page)
+    return jsonify(users)
+ 
+ 
+# ── /api/user/bots ───────────────────────────────────────────────────────────
+@app.route("/api/user/bots")
+@require_auth
+def api_user_bots():
+    """Get current user's bots."""
+    bots = get_user_bots(g.current_user["id"])
+    return jsonify(bots)
+ 
+ 
+# ── /api/user/bots/add ───────────────────────────────────────────────────────
+@app.route("/api/user/bots/add", methods=["POST"])
+@require_auth
+def api_user_add_bot():
+    """Add a bot to the current user's account."""
+    data          = request.get_json()
+    bot_config_id = data.get("bot_config_id")
+    ticker        = data.get("ticker")
+    name          = data.get("name", f"{ticker} bot")
+ 
+    if not bot_config_id or not ticker:
+        return jsonify({"error": "bot_config_id and ticker required"}), 400
+ 
+    bot_id = add_user_bot(g.current_user["id"], bot_config_id, ticker, name)
+    return jsonify({"ok": True, "id": bot_id})
 
 
 if __name__ == "__main__":

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus Investments</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --fire1:#ff2200;--fire2:#ff6600;--fire3:#ffaa00;--fire4:#ffdd00;
+  --bg:#000000;--surface:#12121a;--card:#1a1a26;--border:#2a2a3a;
+  --text:#f0f0ff;--muted:#8888aa;--accent:#ff6600;--accent2:#ffaa00;
+  --green:#00cc66;--red:#ff3344;
+}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:20px;overflow-x:hidden}
+
+/* ── Pixel font ── */
+.pixel{font-family:'Press Start 2P',monospace}
+
+/* ── Fire animation ── */
+.fire-container{position:relative;width:100%;max-width:500px;height:160px;
+  margin-bottom:24px;display:flex;justify-content:center;align-items:flex-end}
+
+.money-counter{font-family:'Press Start 2P',monospace;font-size:13px;
+  color:var(--fire4);text-shadow:0 0 10px var(--fire3);
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  white-space:nowrap;animation:glow 2s ease-in-out infinite alternate}
+
+@keyframes glow{from{text-shadow:0 0 5px var(--fire3)}to{text-shadow:0 0 20px var(--fire4),0 0 40px var(--fire2)}}
+
+.fire-scene{position:relative;width:220px;height:220px;display:flex;align-items:center;justify-content:center}
+
+.campfire-gif{width:120px;height:120px;image-rendering:pixelated;position:relative;z-index:2}
+
+.bot-ring{position:absolute;inset:0;z-index:1}
+
+.bot-wrap{
+  position:absolute;
+  top:50%;left:50%;
+  width:0;height:0;
+  transform:rotate(calc(var(--i)*60deg));
+}
+
+.bot{
+  position:absolute;
+  top:-95px;left:-10px;
+  width:20px;
+  display:flex;flex-direction:column;align-items:center;gap:1px;
+  animation:bob 0.8s ease-in-out infinite alternate;
+  animation-delay:calc(var(--i)*0.13s);
+  image-rendering:pixelated;
+}
+
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+
+.bot-body{
+  width:16px;height:20px;
+  background:
+    /* head */
+    linear-gradient(#4af,#4af) 2px 0/12px 8px no-repeat,
+    /* eye left */
+    linear-gradient(#fff,#fff) 4px 2px/3px 2px no-repeat,
+    /* eye right */
+    linear-gradient(#fff,#fff) 9px 2px/3px 2px no-repeat,
+    /* body */
+    linear-gradient(#37d,#37d) 0 9px/16px 8px no-repeat,
+    /* belt */
+    linear-gradient(#25a,#25a) 0 16px/16px 2px no-repeat,
+    /* legs */
+    linear-gradient(#25a,#25a) 1px 18px/5px 4px no-repeat,
+    linear-gradient(#25a,#25a) 10px 18px/5px 4px no-repeat;
+  image-rendering:pixelated;
+}
+
+.torch{
+  width:4px;height:14px;
+  position:absolute;
+  right:-6px;top:2px;
+  background:
+    /* flame */
+    linear-gradient(#ff0,#f80) 0 0/4px 5px no-repeat,
+    /* handle */
+    linear-gradient(#8b5a2f,#6b3a1f) 1px 5px/2px 9px no-repeat;
+  animation:flicker 0.3s ease-in-out infinite alternate;
+  animation-delay:calc(var(--i)*0.07s);
+  image-rendering:pixelated;
+}
+
+@keyframes flicker{
+  from{transform:scaleY(1) scaleX(1)}
+  to{transform:scaleY(1.15) scaleX(0.85)}
+}
+
+canvas#fireCanvas{display:block;image-rendering:pixelated;
+  width:400px;height:100px;border-bottom:3px solid var(--fire2)}
+
+/* ── Bots carrying wood ── */
+.bot-parade{position:absolute;bottom:3px;width:100%;display:flex;
+  justify-content:space-around;align-items:flex-end}
+
+.bot-sprite{font-size:20px;animation:walk 1s steps(2) infinite;
+  filter:drop-shadow(0 0 4px var(--fire2))}
+.bot-sprite:nth-child(2){animation-delay:-.3s}
+.bot-sprite:nth-child(3){animation-delay:-.6s}
+@keyframes walk{0%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+
+/* ── Title ── */
+.title{font-family:'Press Start 2P',monospace;font-size:22px;
+  background:linear-gradient(135deg,var(--fire2),var(--fire4));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  text-align:center;margin-bottom:6px;line-height:1.4}
+
+.tagline{color:var(--muted);font-size:13px;text-align:center;
+  margin-bottom:32px;max-width:340px}
+
+/* ── Card ── */
+.card{background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:32px;width:100%;max-width:420px;
+  box-shadow:0 0 40px rgba(255,102,0,.1)}
+
+/* ── Tabs ── */
+.tabs{display:flex;gap:0;margin-bottom:28px;border-bottom:1px solid var(--border)}
+.tab{flex:1;padding:10px;text-align:center;cursor:pointer;font-size:13px;
+  font-weight:500;color:var(--muted);border-bottom:2px solid transparent;
+  margin-bottom:-1px;transition:all .2s}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* ── Form ── */
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:500}
+.form-input{width:100%;padding:12px 14px;background:#0d0d18;border:1px solid var(--border);
+  border-radius:10px;color:var(--text);font-size:14px;transition:border-color .2s}
+.form-input:focus{outline:none;border-color:var(--accent)}
+.form-input::placeholder{color:#555}
+
+.btn{width:100%;padding:13px;border:none;border-radius:10px;font-size:14px;
+  font-weight:600;cursor:pointer;transition:all .2s;margin-top:8px}
+.btn-primary{background:linear-gradient(135deg,var(--fire1),var(--accent));
+  color:#fff;box-shadow:0 4px 15px rgba(255,102,0,.3)}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,102,0,.4)}
+.btn-primary:active{transform:translateY(0)}
+.btn-primary:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+.error-msg{background:#2a0010;border:1px solid #ff3344;color:#ff6677;
+  border-radius:8px;padding:10px 14px;font-size:13px;margin-top:12px;display:none}
+.success-msg{background:#002a10;border:1px solid #00cc66;color:#00ee77;
+  border-radius:8px;padding:10px 14px;font-size:13px;margin-top:12px;display:none}
+
+.divider{text-align:center;color:var(--muted);font-size:12px;
+  margin:20px 0;position:relative}
+.divider::before,.divider::after{content:'';position:absolute;top:50%;
+  width:40%;height:1px;background:var(--border)}
+.divider::before{left:0}.divider::after{right:0}
+
+.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.feature{background:rgba(255,102,0,.05);border:1px solid rgba(255,102,0,.15);
+  border-radius:10px;padding:12px;text-align:center}
+.feature-icon{font-size:20px;margin-bottom:6px}
+.feature-text{font-size:11px;color:var(--muted)}
+
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<div style="display:flex;flex-direction:column;align-items:center;margin-bottom:8px">
+  <div id="money-counter" style="font-family:'Courier New',monospace;font-size:13px;color:#ffdd00;letter-spacing:2px;margin-bottom:14px;text-shadow:0 0 8px #ff6600">+$0.00 EARNED</div>
+  <div class="fire-scene">
+    <img src="campfire.gif" class="campfire-gif" alt="campfire">
+    <div class="bot-ring">
+      <div class="bot-wrap" style="--i:0"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+      <div class="bot-wrap" style="--i:1"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+      <div class="bot-wrap" style="--i:2"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+      <div class="bot-wrap" style="--i:3"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+      <div class="bot-wrap" style="--i:4"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+      <div class="bot-wrap" style="--i:5"><div class="bot"><div class="bot-body"></div><div class="torch"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<h1 class="title">PROMETHEUS</h1>
+<p class="tagline">Intelligent trading bots. Press a few buttons, let your money work for you.</p>
+
+<div class="card">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('login')">Sign In</div>
+    <div class="tab" onclick="switchTab('register')">Create Account</div>
+  </div>
+
+  <!-- Login form -->
+  <div id="login-form">
+    <div class="form-group">
+      <label class="form-label">Username</label>
+      <input class="form-input" type="text" id="login-username" placeholder="your username" autocomplete="username">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" id="login-password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="btn btn-primary" onclick="doLogin()" id="login-btn">
+      Sign In & Start Trading
+    </button>
+    <div class="error-msg" id="login-error"></div>
+  </div>
+
+  <!-- Register form -->
+  <div id="register-form" style="display:none">
+    <div class="form-group">
+      <label class="form-label">Username</label>
+      <input class="form-input" type="text" id="reg-username" placeholder="choose a username" autocomplete="username">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Email (optional)</label>
+      <input class="form-input" type="email" id="reg-email" placeholder="your@email.com" autocomplete="email">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" id="reg-password" placeholder="at least 6 characters" autocomplete="new-password">
+    </div>
+    <button class="btn btn-primary" onclick="doRegister()" id="reg-btn">
+      Create Account — It's Free!
+    </button>
+    <div class="error-msg" id="reg-error"></div>
+    <div class="success-msg" id="reg-success"></div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-text">Smart bots trade for you 24/7</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📈</div>
+      <div class="feature-text">Start with $100K paper money — no risk</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🧬</div>
+      <div class="feature-text">Self-evolving strategies that adapt to the market</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔥</div>
+      <div class="feature-text">Profitable bots multiply automatically</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:5000/api';
+
+// ── Money counter ───────────────────────────────────────────────────────────
+let displayedMoney = 0;
+async function updateMoneyCounter() {
+  try {
+    const r = await fetch(`${API}/global/stats`);
+    if (r.ok) {
+      const d = await r.json();
+      animateCount(d.total_pnl || 0);
+    }
+  } catch {}
+}
+
+function animateCount(target) {
+  const step = (target - displayedMoney) / 30;
+  const interval = setInterval(() => {
+    displayedMoney += step;
+    if (Math.abs(displayedMoney - target) < 1) {
+      displayedMoney = target;
+      clearInterval(interval);
+    }
+    const sign = displayedMoney >= 0 ? '+$' : '-$';
+    document.getElementById('money-counter').textContent =
+      sign + Math.abs(displayedMoney).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' EARNED';
+  }, 50);
+}
+
+updateMoneyCounter();
+setInterval(updateMoneyCounter, 30000);
+
+// ── Tab switching ───────────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    t.classList.toggle('active', (i === 0) === (tab === 'login'));
+  });
+  document.getElementById('login-form').style.display    = tab === 'login'    ? '' : 'none';
+  document.getElementById('register-form').style.display = tab === 'register' ? '' : 'none';
+}
+
+// ── Login ───────────────────────────────────────────────────────────────────
+async function doLogin() {
+  const username = document.getElementById('login-username').value.trim();
+  const password = document.getElementById('login-password').value;
+  const errEl    = document.getElementById('login-error');
+  const btn      = document.getElementById('login-btn');
+
+  errEl.style.display = 'none';
+  if (!username || !password) { showError(errEl, 'Please fill in all fields'); return; }
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Signing in...';
+
+  try {
+    const r = await fetch(`${API}/auth/login`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({username, password})
+    });
+    const d = await r.json();
+    if (d.token) {
+      localStorage.setItem('session_token', d.token);
+      localStorage.setItem('username', d.username);
+      window.location.href = 'dashboard.html';
+    } else {
+      showError(errEl, d.error || 'Login failed');
+    }
+  } catch(e) {
+    showError(errEl, 'Cannot connect to server — is api.py running?');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Sign In & Start Trading';
+  }
+}
+
+// ── Register ────────────────────────────────────────────────────────────────
+async function doRegister() {
+  const username = document.getElementById('reg-username').value.trim();
+  const email    = document.getElementById('reg-email').value.trim();
+  const password = document.getElementById('reg-password').value;
+  const errEl    = document.getElementById('reg-error');
+  const sucEl    = document.getElementById('reg-success');
+  const btn      = document.getElementById('reg-btn');
+
+  errEl.style.display = 'none';
+  sucEl.style.display = 'none';
+
+  if (!username || !password) { showError(errEl, 'Username and password are required'); return; }
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Creating account...';
+
+  try {
+    const r = await fetch(`${API}/auth/register`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({username, email, password})
+    });
+    const d = await r.json();
+    if (d.token) {
+      localStorage.setItem('session_token', d.token);
+      localStorage.setItem('username', d.username);
+      sucEl.textContent   = 'Account created! Redirecting...';
+      sucEl.style.display = 'block';
+      setTimeout(() => window.location.href = 'dashboard.html', 1000);
+    } else {
+      showError(errEl, d.error || 'Registration failed');
+    }
+  } catch(e) {
+    showError(errEl, 'Cannot connect to server — is api.py running?');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = "Create Account — It's Free!";
+  }
+}
+
+function showError(el, msg) {
+  el.textContent   = msg;
+  el.style.display = 'block';
+}
+
+// Enter key support
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Enter') return;
+  const loginVisible = document.getElementById('login-form').style.display !== 'none';
+  if (loginVisible) doLogin(); else doRegister();
+});
+
+// Redirect if already logged in
+const token = localStorage.getItem('session_token');
+if (token) {
+  fetch(`${API}/auth/me`, {headers:{'Authorization':`Bearer ${token}`}})
+    .then(r => r.ok ? window.location.href = 'dashboard.html' : null)
+    .catch(() => {});
+}
+</script>
+</body>
+</html>
