@@ -127,6 +127,9 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
     <span><span class="conn-dot" id="conn-dot"></span><span id="conn-label" style="font-size:12px;color:#898781">Connecting...</span></span>
     <span class="badge badge-paper" id="mode-badge">Paper mode</span>
     <span id="user-greeting" style="font-size:12px;color:#898781"></span>
+    <a href="futures.html" class="btn" style="border-color:#ff4444;color:#ff4444" title="Futures trading">
+      <i class="ti ti-chart-candle"></i> Futures
+    </a>
     <button class="btn" onclick="openModal()"><i class="ti ti-plus"></i> New bot</button>
     <button class="btn" onclick="doLogout()" title="Sign out"><i class="ti ti-logout"></i></button>
   </div>
@@ -435,13 +438,26 @@ function renderPositionsTab() {
 async function loadBots() {
   document.getElementById('bots-spinner').style.display = 'inline-block';
   try {
-    bots = await api('/bots/all');
+    const [spotBots, futuresList] = await Promise.all([
+      api('/bots/all'),
+      api('/futures/list').catch(() => []),
+    ]);
+    const futuresBots = (futuresList || [])
+      .filter(f => f.trained)
+      .map(f => ({
+        id: 'futures_' + f.ticker.replace('/','_'),
+        name: f.name, ticker: f.ticker, status: 'running',
+        trades: 0, win_rate: 0, asset_type: 'futures',
+        is_futures: true, max_leverage: f.max_leverage,
+        log_file: f.ticker.replace('/','_') + '_futures.log',
+      }));
+    bots = [...spotBots, ...futuresBots];
     if (!selectedBotId && bots.length) selectedBotId = bots[0].id;
     renderBots();
     const running = bots.filter(b => b.status === 'running').length;
-    document.getElementById('m-bots').textContent = `${running} / ${bots.length}`;
+    document.getElementById('m-bots').textContent = running + ' / ' + bots.length;
     document.getElementById('m-bots-sub').textContent =
-      bots.length - running > 0 ? `${bots.length - running} paused` : 'All active';
+      bots.length - running > 0 ? (bots.length - running) + ' paused' : 'All active';
   } catch { document.getElementById('m-bots').textContent = '—'; }
   document.getElementById('bots-spinner').style.display = 'none';
 }
@@ -460,7 +476,7 @@ function renderBots() {
     return `<div class="bot-row${b.id === selectedBotId ? ' active' : ''}" onclick="selectBot('${b.id}')">
       <span class="bot-dot dot-${dotClass}"></span>
       <div style="flex:1;min-width:0">
-        <div class="bot-name">${b.name}</div>
+        <div class="bot-name">${b.name}${b.is_futures ? ' <span style="font-size:9px;background:#2a0000;color:#ff4444;padding:1px 5px;border-radius:3px">FUTURES</span>' : ''}</div>
         <div class="bot-ticker">${subLine}</div>
       </div>
       <div class="bot-actions" style="display:flex;gap:2px">
@@ -479,13 +495,26 @@ async function selectBot(id) {
   selectedBotId = id;
   renderBots();
   const b = bots.find(x => x.id === id);
-  if (b) {
-    document.getElementById('detail-title').textContent = `Bot details — ${b.name}`;
-    document.getElementById('chart-ticker').textContent = b.ticker;
-    await loadLogs(b.id);                    // logs first
-    await loadPerformance(b.ticker);         // then chart with markers
-    loadDetailStats(b);
+  if (!b) return;
+  if (b.is_futures) {
+    document.getElementById('detail-title').textContent = b.name;
+    document.getElementById('tab-stats').innerHTML =
+      '<div class="stat-row"><span class="stat-key">Type</span><span class="stat-val" style="color:#ff4444">Futures (Leveraged)</span></div>' +
+      '<div class="stat-row"><span class="stat-key">Ticker</span><span class="stat-val">' + b.ticker + '</span></div>' +
+      '<div class="stat-row"><span class="stat-key">Max leverage</span><span class="stat-val">' + b.max_leverage + 'x</span></div>' +
+      '<div class="stat-row"><span class="stat-key">Status</span><span class="stat-val up">Running</span></div>' +
+      '<div style="margin-top:12px"><a href="futures.html" class="btn btn-accent" style="width:100%;justify-content:center"><i class="ti ti-chart-candle"></i> Open Futures Dashboard</a></div>';
+    document.getElementById('tab-positions').innerHTML = '';
+    if (chart) { chart.destroy(); chart = null; }
+    document.getElementById('log-bot-name').textContent = b.name;
+    document.getElementById('log-list').innerHTML = '<div style="color:#666688;font-size:13px">View full details in the Futures dashboard</div>';
+    return;
   }
+  document.getElementById('detail-title').textContent = 'Bot details --- ' + b.name;
+  document.getElementById('chart-ticker').textContent = b.ticker;
+  await loadLogs(b.id);
+  await loadPerformance(b.ticker);
+  loadDetailStats(b);
 }
 function loadDetailStats(b) {
   const alloc = b.risk ? (b.risk.max_allocation_pct*100).toFixed(0) : (b.alloc||'—');
@@ -779,6 +808,27 @@ fetch(`${API}/auth/me`, {headers:{'Authorization':`Bearer ${SESSION_TOKEN}`,'ngr
   .catch(() => { fullRefresh(); });
 
 setInterval(fullRefresh, 30_000);
+
+async function updateGlobalMoneyCounter() {
+  try {
+    const r = await api('/global/stats');
+    if (!r || r.total_pnl === undefined) return;
+    const pnl = r.total_pnl || 0;
+    const sign = pnl >= 0 ? '+$' : '-$';
+    const amt  = Math.abs(pnl).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+    let el = document.getElementById('global-pnl-badge');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'global-pnl-badge';
+      el.style.cssText = 'font-size:11px;color:#ff8800;margin-top:4px';
+      const card = document.querySelector('.metric-card');
+      if (card) card.appendChild(el);
+    }
+    el.textContent = 'Platform total: ' + sign + amt;
+  } catch {}
+}
+setInterval(updateGlobalMoneyCounter, 30000);
+updateGlobalMoneyCounter();
 </script>
 </body>
 </html>

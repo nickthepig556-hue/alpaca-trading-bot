@@ -40605,3 +40605,368 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 21:40:54,179  INFO      [manager]  Open position   : None
 2026-07-05 21:40:54,179  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
 2026-07-05 21:40:54,180  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 21:45:06,426  INFO      [manager]  --- Status at 21:45:06 ---
+2026-07-05 21:45:06,426  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 21:45:06,427  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 21:45:06,428  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 21:45:54,180  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 21:45:54,181  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 21:45:54,181  INFO      [manager]  =======================================================
+2026-07-05 21:45:54,182  INFO      [manager]  Daily signal run  [2026-07-05 21:45]
+2026-07-05 21:45:54,182  INFO      [manager]  =======================================================
+2026-07-05 21:45:54,687  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 21:45:54,882  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 21:45:55,005  INFO      [manager]  Portfolio value : $100,349.05
+2026-07-05 21:45:55,005  INFO      [manager]  Current price   : $63139.07
+2026-07-05 21:45:55,005  INFO      [manager]  Open position   : None
+2026-07-05 21:45:55,005  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 21:45:55,006  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 21:50:06,437  INFO      [manager]  --- Status at 21:50:06 ---
+2026-07-05 21:50:06,437  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 21:50:06,437  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 21:50:06,437  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 21:50:06,437  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 21:50:06,437  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 21:50:06,438  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 21:50:06,438  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 21:50:06,438  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 21:50:06,438  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 21:50:06,438  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 21:50:55,007  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 21:50:55,007  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 21:50:55,007  INFO      [manager]  =======================================================
+2026-07-05 21:50:55,007  INFO      [manager]  Daily signal run  [2026-07-05 21:50]
+2026-07-05 21:50:55,007  INFO      [manager]  =======================================================
+2026-07-05 21:50:55,453  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 21:50:55,658  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 21:50:55,810  INFO      [manager]  Portfolio value : $100,343.78
+2026-07-05 21:50:55,810  INFO      [manager]  Current price   : $63170.24
+2026-07-05 21:50:55,810  INFO      [manager]  Open position   : None
+2026-07-05 21:50:55,811  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 21:50:55,811  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 21:55:06,446  INFO      [manager]  --- Status at 21:55:06 ---
+2026-07-05 21:55:06,446  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 21:55:06,446  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 21:55:06,446  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 21:55:06,446  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 21:55:06,447  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 21:55:55,811  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 21:55:55,811  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 21:55:55,812  INFO      [manager]  =======================================================
+2026-07-05 21:55:55,812  INFO      [manager]  Daily signal run  [2026-07-05 21:55]
+2026-07-05 21:55:55,812  INFO      [manager]  =======================================================
+2026-07-05 21:55:56,343  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 21:55:56,580  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 21:55:56,755  INFO      [manager]  Portfolio value : $100,340.68
+2026-07-05 21:55:56,756  INFO      [manager]  Current price   : $63165.96
+2026-07-05 21:55:56,756  INFO      [manager]  Open position   : None
+2026-07-05 21:55:56,756  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 21:55:56,756  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:00:06,459  INFO      [manager]  --- Status at 22:00:06 ---
+2026-07-05 22:00:06,459  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:00:06,459  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:00:06,460  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:00:56,756  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:00:56,757  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:00:56,757  INFO      [manager]  =======================================================
+2026-07-05 22:00:56,757  INFO      [manager]  Daily signal run  [2026-07-05 22:00]
+2026-07-05 22:00:56,757  INFO      [manager]  =======================================================
+2026-07-05 22:00:57,266  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:00:57,421  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:00:57,543  INFO      [manager]  Portfolio value : $100,344.71
+2026-07-05 22:00:57,543  INFO      [manager]  Current price   : $63227.74
+2026-07-05 22:00:57,543  INFO      [manager]  Open position   : None
+2026-07-05 22:00:57,543  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:00:57,543  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:05:06,471  INFO      [manager]  --- Status at 22:05:06 ---
+2026-07-05 22:05:06,471  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:05:06,472  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:05:06,473  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:05:57,544  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:05:57,545  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:05:57,545  INFO      [manager]  =======================================================
+2026-07-05 22:05:57,545  INFO      [manager]  Daily signal run  [2026-07-05 22:05]
+2026-07-05 22:05:57,545  INFO      [manager]  =======================================================
+2026-07-05 22:05:58,039  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:05:58,235  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:05:58,358  INFO      [manager]  Portfolio value : $100,344.71
+2026-07-05 22:05:58,359  INFO      [manager]  Current price   : $63311.98
+2026-07-05 22:05:58,359  INFO      [manager]  Open position   : None
+2026-07-05 22:05:58,359  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:05:58,359  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:10:06,482  INFO      [manager]  --- Status at 22:10:06 ---
+2026-07-05 22:10:06,482  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:10:06,483  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:10:06,483  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:10:06,483  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:10:06,483  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:10:06,483  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:10:06,484  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:10:06,484  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:10:06,484  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:10:06,484  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:10:58,359  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:10:58,360  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:10:58,360  INFO      [manager]  =======================================================
+2026-07-05 22:10:58,361  INFO      [manager]  Daily signal run  [2026-07-05 22:10]
+2026-07-05 22:10:58,361  INFO      [manager]  =======================================================
+2026-07-05 22:10:58,836  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:10:59,020  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:10:59,141  INFO      [manager]  Portfolio value : $100,355.25
+2026-07-05 22:10:59,141  INFO      [manager]  Current price   : $63182.00
+2026-07-05 22:10:59,141  INFO      [manager]  Open position   : None
+2026-07-05 22:10:59,141  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:10:59,141  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:15:06,494  INFO      [manager]  --- Status at 22:15:06 ---
+2026-07-05 22:15:06,494  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:15:06,494  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:15:06,494  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:15:06,494  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:15:06,494  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:15:06,494  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:15:06,495  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:15:06,495  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:15:06,495  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:15:06,495  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:15:59,141  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:15:59,142  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:15:59,142  INFO      [manager]  =======================================================
+2026-07-05 22:15:59,142  INFO      [manager]  Daily signal run  [2026-07-05 22:15]
+2026-07-05 22:15:59,142  INFO      [manager]  =======================================================
+2026-07-05 22:15:59,645  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:15:59,831  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:15:59,976  INFO      [manager]  Portfolio value : $100,355.25
+2026-07-05 22:15:59,977  INFO      [manager]  Current price   : $63261.07
+2026-07-05 22:15:59,977  INFO      [manager]  Open position   : None
+2026-07-05 22:15:59,977  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:15:59,977  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:20:06,505  INFO      [manager]  --- Status at 22:20:06 ---
+2026-07-05 22:20:06,506  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:20:06,506  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:20:06,506  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:20:06,506  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:20:06,506  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:20:06,506  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:20:06,507  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:20:06,507  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:20:06,507  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:20:06,507  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:20:59,978  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:20:59,978  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:20:59,978  INFO      [manager]  =======================================================
+2026-07-05 22:20:59,978  INFO      [manager]  Daily signal run  [2026-07-05 22:20]
+2026-07-05 22:20:59,978  INFO      [manager]  =======================================================
+2026-07-05 22:21:00,517  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:21:00,731  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:21:00,860  INFO      [manager]  Portfolio value : $100,364.24
+2026-07-05 22:21:00,860  INFO      [manager]  Current price   : $63296.00
+2026-07-05 22:21:00,860  INFO      [manager]  Open position   : None
+2026-07-05 22:21:00,860  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:21:00,861  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:25:06,515  INFO      [manager]  --- Status at 22:25:06 ---
+2026-07-05 22:25:06,515  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:25:06,515  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:25:06,516  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:25:06,516  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:26:00,861  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:26:00,861  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:26:00,862  INFO      [manager]  =======================================================
+2026-07-05 22:26:00,862  INFO      [manager]  Daily signal run  [2026-07-05 22:26]
+2026-07-05 22:26:00,862  INFO      [manager]  =======================================================
+2026-07-05 22:26:01,324  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:26:01,528  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:26:01,655  INFO      [manager]  Portfolio value : $100,364.86
+2026-07-05 22:26:01,655  INFO      [manager]  Current price   : $63163.93
+2026-07-05 22:26:01,655  INFO      [manager]  Open position   : None
+2026-07-05 22:26:01,655  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:26:01,655  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:30:06,524  INFO      [manager]  --- Status at 22:30:06 ---
+2026-07-05 22:30:06,525  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:30:06,525  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:30:06,525  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:30:06,526  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:31:01,656  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:31:01,656  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:31:01,657  INFO      [manager]  =======================================================
+2026-07-05 22:31:01,657  INFO      [manager]  Daily signal run  [2026-07-05 22:31]
+2026-07-05 22:31:01,657  INFO      [manager]  =======================================================
+2026-07-05 22:31:02,144  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:31:02,325  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:31:02,447  INFO      [manager]  Portfolio value : $100,366.41
+2026-07-05 22:31:02,448  INFO      [manager]  Current price   : $63180.84
+2026-07-05 22:31:02,448  INFO      [manager]  Open position   : None
+2026-07-05 22:31:02,448  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:31:02,448  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:35:06,534  INFO      [manager]  --- Status at 22:35:06 ---
+2026-07-05 22:35:06,534  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:35:06,534  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:35:18,341  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:20,321  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:22,240  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:26,289  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:28,434  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:30,419  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:32,363  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:34,362  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:35:36,295  INFO      [manager]  Market closed. Next open in 60 min. Sleeping...
+2026-07-05 22:36:02,449  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:36:02,449  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:36:02,449  INFO      [manager]  =======================================================
+2026-07-05 22:36:02,450  INFO      [manager]  Daily signal run  [2026-07-05 22:36]
+2026-07-05 22:36:02,450  INFO      [manager]  =======================================================
+2026-07-05 22:36:02,948  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:36:03,152  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:36:03,283  INFO      [manager]  Portfolio value : $100,367.65
+2026-07-05 22:36:03,283  INFO      [manager]  Current price   : $63213.69
+2026-07-05 22:36:03,284  INFO      [manager]  Open position   : None
+2026-07-05 22:36:03,284  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:36:03,284  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:40:06,549  INFO      [manager]  --- Status at 22:40:06 ---
+2026-07-05 22:40:06,550  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:40:06,550  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:41:03,284  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:41:03,284  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:41:03,285  INFO      [manager]  =======================================================
+2026-07-05 22:41:03,285  INFO      [manager]  Daily signal run  [2026-07-05 22:41]
+2026-07-05 22:41:03,285  INFO      [manager]  =======================================================
+2026-07-05 22:41:03,790  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:41:03,976  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:41:04,098  INFO      [manager]  Portfolio value : $100,368.27
+2026-07-05 22:41:04,099  INFO      [manager]  Current price   : $63284.48
+2026-07-05 22:41:04,099  INFO      [manager]  Open position   : None
+2026-07-05 22:41:04,099  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:41:04,099  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:45:06,559  INFO      [manager]  --- Status at 22:45:06 ---
+2026-07-05 22:45:06,559  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:45:06,559  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:46:04,100  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:46:04,101  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:46:04,101  INFO      [manager]  =======================================================
+2026-07-05 22:46:04,101  INFO      [manager]  Daily signal run  [2026-07-05 22:46]
+2026-07-05 22:46:04,101  INFO      [manager]  =======================================================
+2026-07-05 22:46:04,640  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:46:04,823  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:46:04,948  INFO      [manager]  Portfolio value : $100,373.85
+2026-07-05 22:46:04,948  INFO      [manager]  Current price   : $63249.10
+2026-07-05 22:46:04,948  INFO      [manager]  Open position   : None
+2026-07-05 22:46:04,948  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:46:04,949  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:50:06,568  INFO      [manager]  --- Status at 22:50:06 ---
+2026-07-05 22:50:06,568  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:50:06,568  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:50:06,568  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:50:06,569  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:51:04,949  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:51:04,949  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:51:04,950  INFO      [manager]  =======================================================
+2026-07-05 22:51:04,950  INFO      [manager]  Daily signal run  [2026-07-05 22:51]
+2026-07-05 22:51:04,950  INFO      [manager]  =======================================================
+2026-07-05 22:51:05,433  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:51:05,588  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:51:05,708  INFO      [manager]  Portfolio value : $100,375.71
+2026-07-05 22:51:05,708  INFO      [manager]  Current price   : $63260.66
+2026-07-05 22:51:05,708  INFO      [manager]  Open position   : None
+2026-07-05 22:51:05,709  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:51:05,709  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 22:55:06,593  INFO      [manager]  --- Status at 22:55:06 ---
+2026-07-05 22:55:06,594  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 22:55:06,594  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 22:55:06,594  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 22:55:06,595  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
+2026-07-05 22:56:05,709  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 22:56:05,710  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 22:56:05,714  INFO      [manager]  =======================================================
+2026-07-05 22:56:05,715  INFO      [manager]  Daily signal run  [2026-07-05 22:56]
+2026-07-05 22:56:05,720  INFO      [manager]  =======================================================
+2026-07-05 22:56:06,220  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 22:56:06,382  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 22:56:06,512  INFO      [manager]  Portfolio value : $100,377.88
+2026-07-05 22:56:06,513  INFO      [manager]  Current price   : $63277.00
+2026-07-05 22:56:06,513  INFO      [manager]  Open position   : None
+2026-07-05 22:56:06,513  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 22:56:06,513  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 23:00:06,604  INFO      [manager]  --- Status at 23:00:06 ---
+2026-07-05 23:00:06,605  INFO      [manager]    GLD        [RUNNING]  PID=36316  restarts=0
+2026-07-05 23:00:06,605  INFO      [manager]    SPY        [RUNNING]  PID=56844  restarts=0
+2026-07-05 23:00:06,605  INFO      [manager]    NVDA       [RUNNING]  PID=56900  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    BTC/USD    [RUNNING]  PID=8140  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    QQQ        [RUNNING]  PID=54368  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    TSLA       [RUNNING]  PID=53484  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    MSFT       [RUNNING]  PID=37576  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    AMZN       [RUNNING]  PID=41896  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    META       [RUNNING]  PID=29520  restarts=0
+2026-07-05 23:00:06,606  INFO      [manager]    AAPL       [RUNNING]  PID=59244  restarts=0
