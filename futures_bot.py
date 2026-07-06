@@ -315,49 +315,61 @@ def futures_fitness(chrom: np.ndarray,
                     df_raw: pd.DataFrame,
                     config: dict) -> float:
     """
-    Extended fitness for futures — rewards leveraged returns but
-    penalises drawdown more heavily.
-
-    fitness = alpha * norm_return
-            + beta  * win_rate
-            + gamma * leverage_efficiency
-            - drawdown_penalty (if exceeded)
+    Vectorised futures fitness — computes all signals at once then simulates.
+    Much faster than calling compute_futures_signal per row.
     """
-    decoded = decode_futures_chromosome(chrom)
-    max_lev = min(decoded["max_leverage"], config.get("max_leverage", 10.0))
+    decoded  = decode_futures_chromosome(chrom)
+    max_lev  = min(decoded["max_leverage"], config.get("max_leverage", 10.0))
+    stop_w   = decoded["stop_width"]
 
-    close   = df_raw['Close'].values
-    n       = len(close)
+    weights    = decoded["weights"]
+    thresholds = decoded["thresholds"]
+    lev_gene   = decoded["leverage_genes"].mean()
+
+    # Vectorised signal computation
+    values    = df_scaled[FEATURES].values          # (n, 12)
+    condition = (values > thresholds).astype(float) # (n, 12)
+    w_sum     = weights.sum()
+    if w_sum == 0:
+        return -1.0
+
+    confidence = (condition * weights).sum(axis=1) / w_sum  # (n,)
+    signals    = np.where(confidence > 0.55, 1,
+                 np.where(confidence < 0.35, -1, 0))
+
+    # Leverage per bar
+    leverage = 1.0 + confidence * (max_lev - 1.0) * lev_gene
+    leverage = np.clip(leverage, 1.0, max_lev)
+    leverage[confidence < 0.45] = 1.0
+
+    close  = df_raw['Close'].values
+    n      = len(close)
+    trades = []
+    equity = [1.0]
 
     in_pos    = False
     entry     = 0.0
     direction = 1
     lev       = 1.0
-    trades    = []
-    equity    = [1.0]
 
-    for i in range(n - 1):
-        signal, conf, leverage = compute_futures_signal(
-            df_scaled.iloc[max(0,i-1):i+1], chrom, config
-        )
+    for i in range(min(n-1, len(signals)-1)):
+        sig = int(signals[i])
+        lv  = float(leverage[i])
 
-        if not in_pos and signal != 0:
+        if not in_pos and sig != 0:
             in_pos    = True
             entry     = close[i]
-            direction = signal
-            lev       = leverage
-
-        elif in_pos and (signal == 0 or signal != direction):
+            direction = sig
+            lev       = lv
+        elif in_pos and (sig == 0 or sig != direction):
             raw_ret = (close[i] - entry) / entry * direction
             lev_ret = raw_ret * lev
-            # Apply stop loss
-            if lev_ret < -decoded["stop_width"] * lev:
-                lev_ret = -decoded["stop_width"] * lev
+            if lev_ret < -stop_w * lev:
+                lev_ret = -stop_w * lev
             trades.append(lev_ret)
             equity.append(equity[-1] * (1 + lev_ret))
             in_pos = False
-
-        elif in_pos:
+        elif in_pos and i > 0:
             daily = (close[i] / close[i-1] - 1) * direction * lev
             equity.append(equity[-1] * (1 + daily))
 
@@ -371,17 +383,15 @@ def futures_fitness(chrom: np.ndarray,
         return -1.0
 
     total_return = equity[-1] - 1.0
-    win_rate     = (np.array(trades) > 0).mean() if trades else 0.0
+    wins   = [t for t in trades if t > 0]
+    losses = [t for t in trades if t <= 0]
+    win_rate = len(wins) / len(trades) if trades else 0.0
 
-    # Max drawdown
     peak   = np.maximum.accumulate(equity)
     max_dd = ((peak - equity) / peak).max() if len(equity) > 1 else 0.0
 
-    # Leverage efficiency: how well did leverage amplify wins vs losses
-    wins   = [t for t in trades if t > 0]
-    losses = [t for t in trades if t <= 0]
-    avg_win  = np.mean(wins)   if wins   else 0.0
-    avg_loss = abs(np.mean(losses)) if losses else 1.0
+    avg_win  = np.mean(wins)          if wins   else 0.0
+    avg_loss = abs(np.mean(losses))   if losses else 1.0
     lev_eff  = min(avg_win / max(avg_loss, 0.001), 3.0) / 3.0
 
     alpha = config.get("fitness_alpha", 0.45)

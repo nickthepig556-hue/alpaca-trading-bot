@@ -68,14 +68,11 @@ def api_futures_train():
 # ── /api/futures/signal ──────────────────────────────────────────────────────
 @app.route("/api/futures/signal")
 def api_futures_signal():
-    """
-    Get current futures signal + evolved leverage for a ticker.
-    ?ticker=BTC/USD
-    """
+    """Get current futures signal + evolved leverage for a ticker. ?ticker=BTC/USD"""
     ticker = request.args.get("ticker", "").upper()
 
     from futures_bot import (FUTURES_CONFIGS, load_futures_chromosome,
-                              compute_futures_signal, decode_futures_chromosome)
+                              decode_futures_chromosome)
     if ticker not in FUTURES_CONFIGS:
         return jsonify({"error": "Unknown ticker"}), 400
 
@@ -87,6 +84,7 @@ def api_futures_signal():
         return jsonify({"error": "Not trained yet", "trained": False}), 404
 
     try:
+        import numpy as np
         import yfinance as yf
         from stock_data import add_indicators, preprocess_data
 
@@ -97,8 +95,24 @@ def api_futures_signal():
         df_ind    = add_indicators(df.copy())
         df_scaled, _ = preprocess_data(df_ind)
 
-        signal, confidence, leverage = compute_futures_signal(df_scaled, chrom, cfg)
-        decoded = decode_futures_chromosome(chrom)
+        decoded    = decode_futures_chromosome(chrom)
+        weights    = decoded["weights"]
+        thresholds = decoded["thresholds"]
+        lev_gene   = decoded["leverage_genes"].mean()
+
+        feats  = ['Close','Volume','SMA_20','SMA_50','SMA_200','RSI',
+                  'MACD','Signal','BB_Upper','BB_Lower','Daily_Return','Volume_Change']
+        values    = df_scaled[feats].values
+        condition = (values > thresholds).astype(float)
+        w_sum     = float(weights.sum())
+        conf_arr  = (condition * weights).sum(axis=1) / max(w_sum, 1e-9)
+        confidence = float(conf_arr[-1])
+
+        signal   = 1 if confidence > 0.55 else (-1 if confidence < 0.35 else 0)
+        max_lev  = float(min(decoded["max_leverage"], cfg.get("max_leverage", 10.0)))
+        leverage = float(np.clip(1.0 + confidence * (max_lev - 1.0) * lev_gene, 1.0, max_lev))
+        if confidence < 0.45:
+            leverage = 1.0
 
         signal_map = {1: "LONG", -1: "SHORT", 0: "FLAT"}
 
@@ -106,12 +120,12 @@ def api_futures_signal():
             "ticker"          : ticker,
             "signal"          : signal_map.get(signal, "FLAT"),
             "signal_int"      : signal,
-            "confidence"      : confidence,
-            "leverage"        : leverage,
-            "max_leverage"    : decoded["max_leverage"],
+            "confidence"      : round(confidence, 4),
+            "leverage"        : round(leverage, 2),
+            "max_leverage"    : round(max_lev, 2),
             "stop_width_pct"  : round(decoded["stop_width"] * 100, 2),
-            "take_profit_mult": decoded["take_profit_mult"],
-            "position_scale"  : decoded["position_scale"],
+            "take_profit_mult": round(decoded["take_profit_mult"], 2),
+            "position_scale"  : round(decoded["position_scale"], 4),
             "trained"         : True,
         })
 

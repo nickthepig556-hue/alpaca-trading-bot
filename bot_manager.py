@@ -127,6 +127,20 @@ BOT_CONFIGS = {
         "start_date"         : "2020-01-01",
     },
 
+    "BTC/USD_futures": {
+    "id"                 : "btc_futures",
+    "name"               : "BTC Futures Bot",
+    "ticker"             : "BTC/USD",
+    "chromosome_file"    : "BTC_futures_chromosome.csv",
+    "log_file"           : "BTC_futures.log",
+    "ga"                 : {},
+    "risk"               : {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
+    "market_open_delay_s": 0,
+    "intraday_interval_s": 120,
+    "lookback_days"      : 90,
+    "start_date"         : "2021-01-01",
+},
+
 
 }
 
@@ -156,6 +170,13 @@ def run_bot_process(config: dict, state_file: str = "bot_state.json") -> None:
     then runs the main trading loop.
     """
     ticker = config["ticker"]
+
+    # Check if this is a futures instrument
+from futures_bot import FUTURES_CONFIGS
+if ticker in FUTURES_CONFIGS:
+    from futures_trading import run_futures_bot
+    run_futures_bot(ticker)
+    return
 
     # Set up per-bot logging
     bot_log = logging.getLogger(ticker)
