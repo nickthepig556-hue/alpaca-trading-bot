@@ -41377,3 +41377,36 @@ Traceback (most recent call last):
             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
 KeyError: 'stop_loss_pct'
 2026-07-05 23:54:12,818  INFO      [manager]  [BTC/USD] Process exiting
+2026-07-05 23:54:41,570  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:55:11,571  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:55:11,571  INFO      [manager]  --- Status at 23:55:11 ---
+2026-07-05 23:55:11,571  INFO      [manager]    GLD        [RUNNING]  PID=34524  restarts=0
+2026-07-05 23:55:11,571  INFO      [manager]    SPY        [RUNNING]  PID=56308  restarts=0
+2026-07-05 23:55:11,571  INFO      [manager]    BTC/USD_futures [STOPPED]  PID=—  restarts=5
+2026-07-05 23:55:11,572  INFO      [manager]    NVDA       [RUNNING]  PID=61452  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    BTC/USD    [RUNNING]  PID=60188  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    QQQ        [RUNNING]  PID=39304  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    TSLA       [RUNNING]  PID=61712  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    MSFT       [RUNNING]  PID=60036  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    AMZN       [RUNNING]  PID=39796  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    META       [RUNNING]  PID=27636  restarts=0
+2026-07-05 23:55:11,572  INFO      [manager]    AAPL       [RUNNING]  PID=59352  restarts=0
+2026-07-05 23:55:41,573  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:56:11,573  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:56:30,366  INFO      [manager]  BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-05 23:56:30,366  INFO      [manager]  Market open — waiting 0s before first signal...
+2026-07-05 23:56:30,366  INFO      [manager]  =======================================================
+2026-07-05 23:56:30,366  INFO      [manager]  Daily signal run  [2026-07-05 23:56]
+2026-07-05 23:56:30,367  INFO      [manager]  =======================================================
+2026-07-05 23:56:31,142  INFO      [manager]  Fetched 100 bars for BTC/USD  (2026-03-29 → 2026-07-06)
+2026-07-05 23:56:31,359  INFO      [manager]  Signal: SELL/HOLD  |  Confidence: 0.107
+2026-07-05 23:56:31,477  INFO      [manager]  Portfolio value : $100,376.95
+2026-07-05 23:56:31,477  INFO      [manager]  Current price   : $63101.18
+2026-07-05 23:56:31,477  INFO      [manager]  Open position   : None
+2026-07-05 23:56:31,478  INFO      [manager]  Confidence 0.107 below threshold 0.33 — skipping trade
+2026-07-05 23:56:31,478  INFO      [manager]  Signal check complete. Sleeping 5 minutes until next check.
+2026-07-05 23:56:41,575  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:57:11,576  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:57:41,578  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:58:11,589  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log
+2026-07-05 23:58:41,591  ERROR     [manager]  [BTC/USD_futures] Reached max restarts (5). Not restarting. Check BTC_futures.log

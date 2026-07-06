@@ -81,6 +81,18 @@ def preprocess_data(df):
         'BB_Upper', 'BB_Lower',
         'Daily_Return', 'Volume_Change'
     ]
+def preprocess_data(df):
+    # Select features for the genetic algorithm
+    features = [
+        'Close', 'Volume',
+        'SMA_20', 'SMA_50', 'SMA_200',
+        'RSI', 'MACD', 'Signal',
+        'BB_Upper', 'BB_Lower',
+        'Daily_Return', 'Volume_Change'
+    ]
+    # Clean infinity/NaN values before scaling (common in futures data)
+    import numpy as np
+    df = df.replace([np.inf, -np.inf], np.nan).dropna()
 
     # Scale all features to range 0-1
     scaler    = MinMaxScaler()

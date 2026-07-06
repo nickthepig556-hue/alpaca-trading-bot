@@ -478,6 +478,10 @@ def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
     ga_cfg  = FUTURES_GA_CONFIG[cfg_key]
     f_cfg   = FUTURES_CONFIGS[ticker]
 
+    # Safety clean inside GA
+    df_scaled = df_scaled.replace([np.inf, -np.inf], float('nan')).dropna()
+    df_raw    = df_raw.loc[df_scaled.index]
+
     rng     = np.random.default_rng(ga_cfg["random_seed"])
     pop_sz  = ga_cfg["population_size"]
     n_gens  = ga_cfg["generations"]
@@ -705,10 +709,21 @@ def main():
                                         datetime.now().strftime("%Y-%m-%d"))
         df_ind    = add_indicators(df_raw.copy())
         df_scaled, _ = preprocess_data(df_ind)
+        import numpy as _np
+        df_scaled = df_scaled.replace([_np.inf, -_np.inf], float('nan')).dropna()
+        df_raw    = df_raw.loc[df_scaled.index]
+        df_raw = df_raw.loc[df_scaled.index]
         idx       = df_scaled.index.intersection(df_raw.index)
         df_scaled = df_scaled.loc[idx]
         df_raw    = df_raw.loc[idx]
 
+        # Clean infinite/NaN values from futures data gaps
+        import numpy as np
+        df_scaled = df_scaled.replace([np.inf, -np.inf], float('nan')).dropna()
+        df_raw    = df_raw.loc[df_scaled.index]
+        if len(df_scaled) < 100:
+            print(f"Not enough clean data after filtering: {len(df_scaled)} rows")
+            sys.exit(1)
         result = train_futures_bot(ticker, df_scaled, df_raw)
         save_futures_chromosome(result, ticker)
         print(f"Training complete. Run the bot with: python futures_bot.py --ticker {ticker}")
