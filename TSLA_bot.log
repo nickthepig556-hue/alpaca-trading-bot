@@ -217,3 +217,24 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 17:19:00,225  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:19:00,227  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
 2026-07-05 17:19:00,416  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:19:00,603  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:37,825  INFO      [TSLA] Process started  PID=6560
+2026-07-05 18:26:38,942  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 18:26:38,942  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:38,943  INFO         Mode    : PAPER
+2026-07-05 18:26:38,943  INFO         Ticker  : TSLA
+2026-07-05 18:26:38,943  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-05 18:26:38,945  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:38,946  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:39,132  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:26,084  INFO      [TSLA] Process started  PID=53484
+2026-07-05 18:35:27,227  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-05 18:35:27,227  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:27,227  INFO         Mode    : PAPER
+2026-07-05 18:35:27,227  INFO         Ticker  : TSLA
+2026-07-05 18:35:27,227  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-05 18:35:27,229  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:27,230  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:27,541  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:27,807  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:28,000  INFO      Market closed. Next open in 60 min. Sleeping...

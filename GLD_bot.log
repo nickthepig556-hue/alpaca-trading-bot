@@ -12830,3 +12830,24 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-05 17:18:50,275  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:18:50,276  INFO      Chromosome loaded from GLD_best_chromosome.csv  (24 genes)
 2026-07-05 17:18:50,470  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:18:50,657  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:27,806  INFO      [GLD] Process started  PID=34640
+2026-07-05 18:26:29,024  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 18:26:29,024  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:29,024  INFO         Mode    : PAPER
+2026-07-05 18:26:29,024  INFO         Ticker  : GLD
+2026-07-05 18:26:29,025  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-05 18:26:29,025  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:29,026  INFO      Chromosome loaded from GLD_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:29,229  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:16,057  INFO      [GLD] Process started  PID=36316
+2026-07-05 18:35:17,286  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-05 18:35:17,287  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:17,287  INFO         Mode    : PAPER
+2026-07-05 18:35:17,287  INFO         Ticker  : GLD
+2026-07-05 18:35:17,287  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-05 18:35:17,289  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:17,291  INFO      Chromosome loaded from GLD_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:17,486  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:17,700  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:17,897  INFO      Market closed. Next open in 60 min. Sleeping...

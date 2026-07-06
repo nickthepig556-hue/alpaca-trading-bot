@@ -122,7 +122,7 @@ input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:2px}
 </div>
 
 <script>
-const API = 'http://localhost:5000/api';
+const API = window.location.origin + '/api';
 const TOKEN = localStorage.getItem('session_token');
 if (!TOKEN) window.location.href = 'login.html';
 const headers = {'Authorization': `Bearer ${TOKEN}`, 'Content-Type': 'application/json'};

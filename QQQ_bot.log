@@ -217,3 +217,24 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 17:18:58,198  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:18:58,200  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (24 genes)
 2026-07-05 17:18:58,419  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:18:58,612  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:35,824  INFO      [QQQ] Process started  PID=35152
+2026-07-05 18:26:37,015  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:26:37,015  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:37,015  INFO         Mode    : PAPER
+2026-07-05 18:26:37,015  INFO         Ticker  : QQQ
+2026-07-05 18:26:37,015  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-05 18:26:37,017  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:37,019  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:37,212  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:24,091  INFO      [QQQ] Process started  PID=54368
+2026-07-05 18:35:25,294  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:35:25,294  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:25,294  INFO         Mode    : PAPER
+2026-07-05 18:35:25,294  INFO         Ticker  : QQQ
+2026-07-05 18:35:25,294  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-05 18:35:25,296  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:25,298  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:25,484  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:25,696  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:25,887  INFO      Market closed. Next open in 60 min. Sleeping...

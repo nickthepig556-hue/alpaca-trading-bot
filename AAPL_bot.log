@@ -105,3 +105,24 @@
 2026-07-05 17:19:08,280  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:19:08,281  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
 2026-07-05 17:19:08,475  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:19:08,663  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:45,852  INFO      [AAPL] Process started  PID=36532
+2026-07-05 18:26:47,057  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:26:47,057  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:47,057  INFO         Mode    : PAPER
+2026-07-05 18:26:47,058  INFO         Ticker  : AAPL
+2026-07-05 18:26:47,058  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-05 18:26:47,060  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:47,061  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:47,245  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:34,103  INFO      [AAPL] Process started  PID=59244
+2026-07-05 18:35:35,297  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:35:35,297  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:35,297  INFO         Mode    : PAPER
+2026-07-05 18:35:35,297  INFO         Ticker  : AAPL
+2026-07-05 18:35:35,297  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-05 18:35:35,299  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:35,301  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:35,490  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:35,700  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:35,886  INFO      Market closed. Next open in 60 min. Sleeping...

@@ -137,3 +137,24 @@
 2026-07-05 17:19:04,283  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:19:04,285  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (24 genes)
 2026-07-05 17:19:04,496  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:19:04,698  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:41,838  INFO      [AMZN] Process started  PID=39100
+2026-07-05 18:26:43,010  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:26:43,010  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:43,010  INFO         Mode    : PAPER
+2026-07-05 18:26:43,010  INFO         Ticker  : AMZN
+2026-07-05 18:26:43,010  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-05 18:26:43,012  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:43,014  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:43,196  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:30,095  INFO      [AMZN] Process started  PID=41896
+2026-07-05 18:35:31,277  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:35:31,277  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:31,277  INFO         Mode    : PAPER
+2026-07-05 18:35:31,277  INFO         Ticker  : AMZN
+2026-07-05 18:35:31,277  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-05 18:35:31,279  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:31,281  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:31,510  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:31,721  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:31,917  INFO      Market closed. Next open in 60 min. Sleeping...

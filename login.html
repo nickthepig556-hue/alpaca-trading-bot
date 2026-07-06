@@ -263,7 +263,7 @@ canvas#fireCanvas{display:block;image-rendering:pixelated;
 </div>
 
 <script>
-const API = 'http://localhost:5000/api';
+const API = window.location.origin + '/api';
 
 // ── Money counter ───────────────────────────────────────────────────────────
 let displayedMoney = 0;
@@ -326,7 +326,7 @@ async function doLogin() {
     if (d.token) {
       localStorage.setItem('session_token', d.token);
       localStorage.setItem('username', d.username);
-      window.location.href = 'dashboard.html';
+      window.location.href = window.location.origin + '/dashboard.html';
     } else {
       showError(errEl, d.error || 'Login failed');
     }
@@ -367,7 +367,7 @@ async function doRegister() {
       localStorage.setItem('username', d.username);
       sucEl.textContent   = 'Account created! Redirecting...';
       sucEl.style.display = 'block';
-      setTimeout(() => window.location.href = 'dashboard.html', 1000);
+      setTimeout(() => window.location.href = window.location.origin + '/dashboard.html', 1000);
     } else {
       showError(errEl, d.error || 'Registration failed');
     }
@@ -395,7 +395,7 @@ document.addEventListener('keydown', e => {
 const token = localStorage.getItem('session_token');
 if (token) {
   fetch(`${API}/auth/me`, {headers:{'Authorization':`Bearer ${token}`}})
-    .then(r => r.ok ? window.location.href = 'dashboard.html' : null)
+    .then(r => r.ok ? window.location.href = window.location.origin + '/dashboard.html' : null)
     .catch(() => {});
 }
 </script>

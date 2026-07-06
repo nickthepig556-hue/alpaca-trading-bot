@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Futures Trading</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,sans-serif;background:#000;color:#f0f0ff;font-size:14px;padding:24px;min-height:100vh}
+.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:8px}
+.logo{font-family:'Courier New',monospace;font-size:16px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.futures-badge{background:#1a0000;color:#ff4444;font-size:11px;padding:3px 10px;
+  border-radius:99px;border:0.5px solid #ff4444;font-weight:600}
+.btn{border:0.5px solid #333;background:transparent;color:#f0f0ff;padding:6px 14px;
+  border-radius:8px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{background:rgba(255,255,255,.07)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;border-color:transparent}
+.btn-train{background:#0a1a2a;color:#44aaff;border-color:#44aaff}
+.btn-train:hover{background:#112233}
+
+.warning-banner{background:#1a0800;border:1px solid #ff6600;border-radius:10px;
+  padding:14px 16px;margin-bottom:20px;display:flex;gap:12px;align-items:flex-start}
+.warning-text{font-size:13px;color:#ffaa66;line-height:1.6}
+.warning-text strong{color:#ff8800}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.card{background:#0d0d12;border:0.5px solid #2a2a2e;border-radius:12px;padding:1rem 1.25rem}
+.card-title{font-size:13px;font-weight:500;color:#aaaacc;margin-bottom:14px;
+  display:flex;align-items:center;justify-content:space-between}
+
+.instrument-grid{display:grid;gap:8px}
+.instrument-row{background:#111114;border-radius:10px;padding:12px 14px;
+  border:0.5px solid transparent;transition:all .2s;cursor:pointer}
+.instrument-row:hover{border-color:#444}
+.instrument-row.trained{border-color:#1a3a1a}
+.instrument-row.active{border-color:#ff6600;background:#1a0d00}
+.inst-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.inst-ticker{font-size:14px;font-weight:600;color:#f0f0ff}
+.inst-name{font-size:11px;color:#666688;margin-top:1px}
+.inst-type{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:500}
+.type-crypto{background:#0a1a2a;color:#44aaff}
+.type-index{background:#1a0a2a;color:#aa44ff}
+.type-commodity{background:#1a1a0a;color:#aaaa44}
+
+.leverage-bar{height:6px;background:#1a1a1e;border-radius:3px;overflow:hidden;margin-top:6px}
+.leverage-fill{height:100%;border-radius:3px;transition:width .5s}
+.lev-low{background:#44cc66}
+.lev-med{background:#ffaa00}
+.lev-high{background:#ff4444}
+
+.signal-badge{font-size:12px;padding:4px 10px;border-radius:99px;font-weight:600}
+.sig-long{background:#0a2a10;color:#44cc66;border:0.5px solid #44cc66}
+.sig-short{background:#2a0a10;color:#ff4444;border:0.5px solid #ff4444}
+.sig-flat{background:#1a1a1e;color:#666688;border:0.5px solid #333}
+.sig-untrained{background:#1a1a00;color:#888800;border:0.5px solid #555500}
+
+.stat-row{display:flex;justify-content:space-between;padding:7px 0;
+  border-bottom:0.5px solid #1a1a1e;font-size:13px}
+.stat-row:last-child{border-bottom:none}
+.stat-key{color:#666688}
+.stat-val{font-weight:500}
+.up{color:#44cc66}.down{color:#ff4444}.orange{color:#ff8800}
+
+.risk-meter{display:flex;gap:4px;margin-top:8px}
+.risk-block{flex:1;height:8px;border-radius:2px;background:#1a1a1e;transition:background .3s}
+.risk-block.active-low{background:#44cc66}
+.risk-block.active-med{background:#ffaa00}
+.risk-block.active-high{background:#ff4444}
+
+.spinner{display:inline-block;width:12px;height:12px;border:2px solid #333;
+  border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:768px){
+  .grid-3{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  body{padding:12px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div style="display:flex;align-items:center;gap:10px">
+    <span class="logo">PROMETHEUS</span>
+    <span class="futures-badge">⚡ FUTURES</span>
+  </div>
+  <div style="display:flex;gap:8px">
+    <a href="dashboard.html" class="btn"><i class="ti ti-arrow-left"></i> Dashboard</a>
+  </div>
+</div>
+
+<div class="warning-banner">
+  <i class="ti ti-alert-triangle" style="color:#ff8800;font-size:20px;flex-shrink:0;margin-top:1px"></i>
+  <div class="warning-text">
+    <strong>High Risk Warning:</strong> Futures trading uses leverage which can amplify both gains and losses.
+    Crypto futures are available on Alpaca paper trading. Index futures (ES, NQ) and commodity futures (GC, CL)
+    require a funded futures account. <strong>Always start in paper trading mode.</strong>
+    The GA evolves leverage between 1x–10x based on market confidence — positions are automatically sized to protect capital.
+  </div>
+</div>
+
+<div class="grid-2">
+  <!-- Instruments list -->
+  <div class="card">
+    <div class="card-title">
+      Available futures
+      <span id="trained-count" style="font-size:11px;color:#666688"></span>
+    </div>
+    <div class="instrument-grid" id="instruments-list">
+      <div style="color:#666688;font-size:13px">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Selected instrument detail -->
+  <div class="card" id="detail-card">
+    <div class="card-title" id="detail-title">Select an instrument</div>
+    <div id="detail-content" style="color:#666688;font-size:13px;text-align:center;padding:40px 0">
+      <i class="ti ti-chart-candle" style="font-size:48px;display:block;margin-bottom:12px"></i>
+      Click an instrument to see its signal and settings
+    </div>
+  </div>
+</div>
+
+<!-- Live signals grid -->
+<div class="card">
+  <div class="card-title">
+    Live signals
+    <button class="btn" onclick="refreshSignals()" style="font-size:11px;padding:4px 10px">
+      <i class="ti ti-refresh"></i> Refresh
+    </button>
+  </div>
+  <div id="signals-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px">
+    <div style="color:#666688;font-size:13px">Loading signals...</div>
+  </div>
+</div>
+
+<script>
+const API = (window.location.protocol === 'file:' ||
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:5000/api'
+  : window.location.origin + '/api';
+
+const TOKEN = localStorage.getItem('session_token');
+if (!TOKEN) window.location.href = 'login.html';
+const headers = {
+  'Authorization': `Bearer ${TOKEN}`,
+  'Content-Type': 'application/json',
+  'ngrok-skip-browser-warning': 'true'
+};
+
+let instruments = [];
+let selectedTicker = null;
+
+async function loadInstruments() {
+  try {
+    const r = await fetch(`${API}/futures/list`, {headers});
+    instruments = await r.json();
+
+    const trained = instruments.filter(i => i.trained).length;
+    document.getElementById('trained-count').textContent = `${trained}/${instruments.length} trained`;
+
+    document.getElementById('instruments-list').innerHTML = instruments.map(inst => `
+      <div class="instrument-row ${inst.trained ? 'trained' : ''} ${selectedTicker===inst.ticker?'active':''}"
+           onclick="selectInstrument('${inst.ticker}')">
+        <div class="inst-header">
+          <div>
+            <div class="inst-ticker">${inst.ticker}</div>
+            <div class="inst-name">${inst.name}</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+            <span class="inst-type type-${inst.type}">${inst.type}</span>
+            ${inst.trained
+              ? '<span style="font-size:10px;color:#44cc66">[trained]</span>'
+              : `<button class="btn btn-train" style="font-size:10px;padding:2px 8px" onclick="event.stopPropagation();trainBot('${inst.ticker}')">Train</button>`
+            }
+          </div>
+        </div>
+        <div style="font-size:11px;color:#666688;display:flex;gap:12px">
+          <span>Max ${inst.max_leverage}x leverage</span>
+          <span>${inst.trading_hours}</span>
+          <span>${(inst.margin_req*100).toFixed(0)}% margin</span>
+        </div>
+      </div>`).join('');
+  } catch(e) {
+    document.getElementById('instruments-list').innerHTML =
+      '<div style="color:#ff4444;font-size:13px">Failed to load — is api.py running?</div>';
+  }
+}
+
+async function selectInstrument(ticker) {
+  selectedTicker = ticker;
+  loadInstruments();
+
+  const titleEl   = document.getElementById('detail-title');
+  const contentEl = document.getElementById('detail-content');
+  titleEl.textContent = ticker;
+  contentEl.innerHTML = '<span class="spinner"></span> Loading signal...';
+
+  try {
+    const r = await fetch(`${API}/futures/signal?ticker=${encodeURIComponent(ticker)}`, {headers});
+    if (r.status === 404) {
+      const inst = instruments.find(i => i.ticker === ticker);
+      contentEl.innerHTML = `
+        <div style="text-align:center;padding:20px 0;color:#666688">
+          <i class="ti ti-dna" style="font-size:32px;display:block;margin-bottom:10px;color:#888800"></i>
+          <div style="margin-bottom:12px">No chromosome trained yet for ${ticker}</div>
+          <button class="btn btn-train" onclick="trainBot('${ticker}')">
+            <i class="ti ti-cpu"></i> Train GA (${inst?.volatility_band || 'high'} volatility — takes 5-15 min)
+          </button>
+        </div>`;
+      return;
+    }
+
+    const d = await r.json();
+    const levPct = Math.min((d.leverage / d.max_leverage) * 100, 100);
+    const levClass = levPct < 40 ? 'lev-low' : levPct < 70 ? 'lev-med' : 'lev-high';
+    const sigClass = d.signal === 'LONG' ? 'sig-long' : d.signal === 'SHORT' ? 'sig-short' : 'sig-flat';
+
+    // Risk meter (1-10 blocks based on leverage)
+    const riskBlocks = Array.from({length:10}, (_,i) => {
+      const lev = Math.round(d.leverage);
+      const cls = i < lev ? (lev <= 3 ? 'active-low' : lev <= 6 ? 'active-med' : 'active-high') : '';
+      return `<div class="risk-block ${cls}"></div>`;
+    }).join('');
+
+    contentEl.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+        <span class="signal-badge ${sigClass}">${d.signal}</span>
+        <span style="font-size:12px;color:#666688">Confidence: ${(d.confidence*100).toFixed(1)}%</span>
+      </div>
+
+      <div class="stat-row">
+        <span class="stat-key">Evolved leverage</span>
+        <span class="stat-val orange">${d.leverage}x</span>
+      </div>
+      <div style="margin:-4px 0 8px">
+        <div class="leverage-bar"><div class="leverage-fill ${levClass}" style="width:${levPct}%"></div></div>
+        <div style="font-size:10px;color:#555;margin-top:2px">1x ──────────────── ${d.max_leverage}x</div>
+      </div>
+
+      <div class="stat-row">
+        <span class="stat-key">Stop loss width</span>
+        <span class="stat-val down">${d.stop_width_pct}%</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Take profit mult</span>
+        <span class="stat-val up">${d.take_profit_mult}x stop</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Position size</span>
+        <span class="stat-val">${(d.position_scale*100).toFixed(0)}% of portfolio</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-key">Max leverage</span>
+        <span class="stat-val">${d.max_leverage}x</span>
+      </div>
+
+      <div style="margin-top:12px">
+        <div style="font-size:11px;color:#666688;margin-bottom:5px">Risk level (1–10)</div>
+        <div class="risk-meter">${riskBlocks}</div>
+      </div>`;
+
+  } catch(e) {
+    contentEl.innerHTML = `<div style="color:#ff4444">Error: ${e.message}</div>`;
+  }
+}
+
+async function refreshSignals() {
+  const grid = document.getElementById('signals-grid');
+  grid.innerHTML = '<span class="spinner"></span>';
+
+  const results = await Promise.allSettled(
+    instruments.map(inst =>
+      fetch(`${API}/futures/signal?ticker=${encodeURIComponent(inst.ticker)}`, {headers})
+        .then(r => r.ok ? r.json() : null)
+        .catch(() => null)
+    )
+  );
+
+  grid.innerHTML = instruments.map((inst, i) => {
+    const d = results[i].value;
+    if (!d || d.error) {
+      return `<div style="background:#111114;border-radius:8px;padding:10px;border:0.5px solid #222">
+        <div style="font-size:13px;font-weight:500">${inst.ticker}</div>
+        <div style="margin-top:6px"><span class="signal-badge sig-untrained">Untrained</span></div>
+        <button class="btn btn-train" style="margin-top:8px;font-size:11px;width:100%;justify-content:center"
+          onclick="trainBot('${inst.ticker}')">Train</button>
+      </div>`;
+    }
+    const sigClass = d.signal==='LONG'?'sig-long':d.signal==='SHORT'?'sig-short':'sig-flat';
+    const levPct   = Math.min((d.leverage/d.max_leverage)*100,100);
+    const levClass = levPct<40?'lev-low':levPct<70?'lev-med':'lev-high';
+    return `<div style="background:#111114;border-radius:8px;padding:10px;border:0.5px solid #222;cursor:pointer"
+      onclick="selectInstrument('${inst.ticker}')">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <span style="font-size:13px;font-weight:500">${inst.ticker}</span>
+        <span class="signal-badge ${sigClass}" style="font-size:10px;padding:2px 7px">${d.signal}</span>
+      </div>
+      <div style="font-size:11px;color:#666688">Leverage: <span class="orange">${d.leverage}x</span></div>
+      <div style="font-size:11px;color:#666688">Conf: ${(d.confidence*100).toFixed(0)}%</div>
+      <div class="leverage-bar" style="margin-top:6px">
+        <div class="leverage-fill ${levClass}" style="width:${levPct}%"></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function trainBot(ticker) {
+  if (!confirm(`Train GA for ${ticker}? This runs in the background and takes 5-15 minutes depending on volatility band.`)) return;
+  try {
+    const r = await fetch(`${API}/futures/train`, {
+      method: 'POST', headers,
+      body: JSON.stringify({ticker})
+    });
+    const d = await r.json();
+    if (d.ok) {
+      alert(`Training started for ${ticker}! Check back in a few minutes. The instrument will show [trained] when complete.`);
+      setInterval(() => loadInstruments(), 30000);
+    } else {
+      alert('Error: ' + d.error);
+    }
+  } catch(e) { alert('Error: ' + e.message); }
+}
+
+// Initial load
+loadInstruments();
+setTimeout(refreshSignals, 1000);
+setInterval(refreshSignals, 60000);
+</script>
+</body>
+</html>

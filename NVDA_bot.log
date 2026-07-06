@@ -228,3 +228,24 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 17:18:54,194  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:18:54,196  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
 2026-07-05 17:18:54,391  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:18:54,598  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:31,808  INFO      [NVDA] Process started  PID=41032
+2026-07-05 18:26:32,920  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:26:32,920  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:32,920  INFO         Mode    : PAPER
+2026-07-05 18:26:32,920  INFO         Ticker  : NVDA
+2026-07-05 18:26:32,920  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-05 18:26:32,922  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:32,924  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:33,114  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:20,073  INFO      [NVDA] Process started  PID=56900
+2026-07-05 18:35:21,288  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:35:21,289  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:21,289  INFO         Mode    : PAPER
+2026-07-05 18:35:21,289  INFO         Ticker  : NVDA
+2026-07-05 18:35:21,289  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-05 18:35:21,291  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:21,292  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:21,477  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:21,682  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:21,869  INFO      Market closed. Next open in 60 min. Sleeping...

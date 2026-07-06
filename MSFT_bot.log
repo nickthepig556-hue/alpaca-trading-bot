@@ -137,3 +137,24 @@
 2026-07-05 17:19:02,245  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-05 17:19:02,247  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
 2026-07-05 17:19:02,439  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:19:02,640  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:26:39,831  INFO      [MSFT] Process started  PID=58544
+2026-07-05 18:26:40,973  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:26:40,973  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:26:40,973  INFO         Mode    : PAPER
+2026-07-05 18:26:40,973  INFO         Ticker  : MSFT
+2026-07-05 18:26:40,973  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-05 18:26:40,975  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:26:40,977  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-05 18:26:41,165  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 18:35:28,100  INFO      [MSFT] Process started  PID=37576
+2026-07-05 18:35:29,242  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-05 18:35:29,242  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-05 18:35:29,242  INFO         Mode    : PAPER
+2026-07-05 18:35:29,242  INFO         Ticker  : MSFT
+2026-07-05 18:35:29,242  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-05 18:35:29,244  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-05 18:35:29,245  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-05 18:35:29,611  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 19:35:29,830  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-05 20:35:30,026  INFO      Market closed. Next open in 60 min. Sleeping...

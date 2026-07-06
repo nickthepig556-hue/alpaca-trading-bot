@@ -150,7 +150,7 @@ tr:hover td{background:#111118}
 </div>
 
 <script>
-const API = 'http://localhost:5000/api';
+const API = window.location.origin + '/api';
 const TOKEN = localStorage.getItem('session_token');
 const USERNAME = localStorage.getItem('username') || '';
 
