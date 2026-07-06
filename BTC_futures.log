@@ -59,3 +59,95 @@ Traceback (most recent call last):
             ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
 KeyError: 'stop_loss_pct'
 2026-07-05 23:54:12,818  INFO      [BTC/USD] Process exiting
+2026-07-06 10:29:53,643  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 10:29:53,643  INFO        Mode       : PAPER
+2026-07-06 10:29:53,643  INFO        Max leverage: 10.0x
+2026-07-06 10:29:53,643  INFO        Trading hours: 24/7
+2026-07-06 10:29:53,645  INFO        Evolved leverage: 2.3x
+2026-07-06 10:29:53,645  INFO        Stop width: 1.0%
+2026-07-06 10:29:53,645  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 10:29:53,646  INFO      [BTC/USD] ── Signal check 10:29 ──
+2026-07-06 10:29:54,033  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:29:54,500  INFO      [BTC/USD] Portfolio=$100,331.38  Price=$63476.78  Position=None
+2026-07-06 10:29:54,501  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:29:54,501  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:29:57,671  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 10:29:57,671  INFO        Mode       : PAPER
+2026-07-06 10:29:57,671  INFO        Max leverage: 10.0x
+2026-07-06 10:29:57,671  INFO        Trading hours: 24/7
+2026-07-06 10:29:57,673  INFO        Evolved leverage: 2.3x
+2026-07-06 10:29:57,673  INFO        Stop width: 1.0%
+2026-07-06 10:29:57,673  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 10:29:57,673  INFO      [BTC/USD] ── Signal check 10:29 ──
+2026-07-06 10:29:57,977  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:29:58,421  INFO      [BTC/USD] Portfolio=$100,332.87  Price=$63445.20  Position=None
+2026-07-06 10:29:58,422  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:29:58,422  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:33:34,806  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-06 10:33:34,806  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-06 10:33:42,404  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 10:33:42,404  INFO        Mode       : PAPER
+2026-07-06 10:33:42,404  INFO        Max leverage: 10.0x
+2026-07-06 10:33:42,404  INFO        Trading hours: 24/7
+2026-07-06 10:33:42,406  INFO        Evolved leverage: 2.3x
+2026-07-06 10:33:42,406  INFO        Stop width: 1.0%
+2026-07-06 10:33:42,406  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 10:33:42,406  INFO      [BTC/USD] ── Signal check 10:33 ──
+2026-07-06 10:33:42,770  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:33:43,225  INFO      [BTC/USD] Portfolio=$100,334.27  Price=$63613.72  Position=None
+2026-07-06 10:33:43,225  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:33:43,225  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:33:56,477  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 10:33:56,477  INFO        Mode       : PAPER
+2026-07-06 10:33:56,477  INFO        Max leverage: 10.0x
+2026-07-06 10:33:56,477  INFO        Trading hours: 24/7
+2026-07-06 10:33:56,479  INFO        Evolved leverage: 2.3x
+2026-07-06 10:33:56,479  INFO        Stop width: 1.0%
+2026-07-06 10:33:56,479  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 10:33:56,479  INFO      [BTC/USD] ── Signal check 10:33 ──
+2026-07-06 10:33:56,815  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:33:57,326  INFO      [BTC/USD] Portfolio=$100,326.31  Price=$63615.55  Position=None
+2026-07-06 10:33:57,326  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:33:57,326  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:43:43,226  INFO      [BTC/USD] ── Signal check 10:43 ──
+2026-07-06 10:43:43,403  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:43:43,886  INFO      [BTC/USD] Portfolio=$100,343.82  Price=$63676.97  Position=None
+2026-07-06 10:43:43,887  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:43:43,887  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:43:57,327  INFO      [BTC/USD] ── Signal check 10:43 ──
+2026-07-06 10:43:57,604  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:43:58,032  INFO      [BTC/USD] Portfolio=$100,344.49  Price=$63662.60  Position=None
+2026-07-06 10:43:58,032  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:43:58,032  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:53:43,888  INFO      [BTC/USD] ── Signal check 10:53 ──
+2026-07-06 10:53:44,042  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:53:44,508  INFO      [BTC/USD] Portfolio=$100,392.30  Price=$63712.51  Position=None
+2026-07-06 10:53:44,509  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:53:44,509  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 10:53:58,032  INFO      [BTC/USD] ── Signal check 10:53 ──
+2026-07-06 10:53:58,197  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 10:53:58,643  INFO      [BTC/USD] Portfolio=$100,389.26  Price=$63705.42  Position=None
+2026-07-06 10:53:58,643  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 10:53:58,643  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:03:44,510  INFO      [BTC/USD] ── Signal check 11:03 ──
+2026-07-06 11:03:44,675  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:03:45,134  INFO      [BTC/USD] Portfolio=$100,348.87  Price=$63781.76  Position=None
+2026-07-06 11:03:45,134  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:03:45,134  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:03:58,644  INFO      [BTC/USD] ── Signal check 11:03 ──
+2026-07-06 11:03:58,799  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:03:59,221  INFO      [BTC/USD] Portfolio=$100,342.32  Price=$63802.50  Position=None
+2026-07-06 11:03:59,222  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:03:59,222  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:13:45,135  INFO      [BTC/USD] ── Signal check 11:13 ──
+2026-07-06 11:13:45,289  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:13:45,734  INFO      [BTC/USD] Portfolio=$100,365.26  Price=$63827.00  Position=None
+2026-07-06 11:13:45,735  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:13:45,735  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:13:59,222  INFO      [BTC/USD] ── Signal check 11:13 ──
+2026-07-06 11:13:59,407  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:13:59,886  INFO      [BTC/USD] Portfolio=$100,372.91  Price=$63849.12  Position=None
+2026-07-06 11:13:59,886  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:13:59,886  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:18:07,240  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-06 11:18:07,240  INFO      [BTC/USD] Futures bot stopped by user

@@ -127,18 +127,53 @@ BOT_CONFIGS = {
         "start_date"         : "2020-01-01",
     },
 
-    "BTC/USD_futures": {
-    "id"                 : "btc_futures",
-    "name"               : "BTC Futures Bot",
-    "ticker"             : "BTC/USD",
-    "chromosome_file"    : "BTC_futures_chromosome.csv",
-    "log_file"           : "BTC_futures.log",
-    "ga"                 : {},
-    "risk"               : {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
-    "market_open_delay_s": 0,
-    "intraday_interval_s": 120,
-    "lookback_days"      : 90,
-    "start_date"         : "2021-01-01",
+    "BTC/USD_FUT": {
+    "id": "btc_fut", "name": "Bitcoin Futures", "ticker": "BTC/USD",
+    "chromosome_file": "BTC_futures_chromosome.csv",
+    "log_file": "BTC_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2021-01-01",
+},
+    "ETH/USD_FUT": {
+    "id": "eth_fut", "name": "Ethereum Futures", "ticker": "ETH/USD",
+    "chromosome_file": "ETH-USD_futures_chromosome.csv",
+    "log_file": "ETH_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2021-01-01",
+},
+     "ES_FUT": {
+    "id": "es_fut", "name": "E-mini S&P 500 Futures", "ticker": "ES",
+    "chromosome_file": "ES_futures_chromosome.csv",
+    "log_file": "ES_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2020-01-01",
+},
+    "NQ_FUT": {
+    "id": "nq_fut", "name": "E-mini Nasdaq Futures", "ticker": "NQ",
+    "chromosome_file": "NQ_futures_chromosome.csv",
+    "log_file": "NQ_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2020-01-01",
+},
+    "GC_FUT": {
+    "id": "gc_fut", "name": "Gold Futures", "ticker": "GC",
+    "chromosome_file": "GC_futures_chromosome.csv",
+    "log_file": "GC_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2020-01-01",
+},
+    "CL_FUT": {
+    "id": "cl_fut", "name": "Crude Oil Futures", "ticker": "CL",
+    "chromosome_file": "CL_futures_chromosome.csv",
+    "log_file": "CL_futures.log",
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "market_open_delay_s": 0, "intraday_interval_s": 120,
+    "lookback_days": 90, "start_date": "2020-01-01",
 },
 
 
@@ -170,6 +205,24 @@ def run_bot_process(config: dict, state_file: str = "bot_state.json") -> None:
     then runs the main trading loop.
     """
     ticker = config["ticker"]
+
+    # Check if this is a futures instrument
+    try:
+        from futures_bot import FUTURES_CONFIGS
+        from futures_trading import run_futures_bot
+        if ticker in FUTURES_CONFIGS:
+            run_futures_bot(ticker)
+            return
+    except Exception as e:
+        pass
+
+    # Set up per-bot logging
+    bot_log = logging.getLogger(ticker)
+    bot_log.setLevel(logging.INFO)
+    fh = logging.FileHandler(config["log_file"], encoding="utf-8")
+    fh.setFormatter(logging.Formatter(
+        "%(asctime)s  %(levelname)-8s  %(message)s"
+    ))
 
     # Set up per-bot logging
     bot_log = logging.getLogger(ticker)

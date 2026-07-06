@@ -218,15 +218,17 @@ def calc_futures_position(confidence: float,
 # ──────────────────────────────────────────────────────────────────────────────
 
 def get_futures_position(trading_client: TradingClient, ticker: str) -> dict | None:
-    """Get current futures position."""
     try:
         pos  = trading_client.get_open_position(ticker)
         qty  = int(pos.qty)
         side = "long" if qty > 0 else "short"
+        # Use current price for entry since Alpaca reports ES price in points
+        current_price = get_latest_futures_price(ticker)
+        entry = current_price if current_price > 0 else float(pos.avg_entry_price)
         return {
             'qty'          : abs(qty),
             'side'         : side,
-            'entry_price'  : float(pos.avg_entry_price),
+            'entry_price'  : entry,
             'market_value' : float(pos.market_value),
             'unrealised_pl': float(pos.unrealized_pl),
         }

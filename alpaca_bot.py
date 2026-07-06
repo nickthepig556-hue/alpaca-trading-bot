@@ -374,8 +374,9 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
     """
     stop_price   = entry_price * (1 - config['stop_loss_pct'])
     target_price = entry_price * (1 + config['take_profit_pct'])
-    trailing_stop = entry_price   # will be updated as price rises
+    trailing_stop = None   # disabled until trade moves in our favour
     peak_price    = entry_price
+    trailing_activated = False
 
     log.info(f"Monitoring {ticker}  |  entry={entry_price:.2f}  "
              f"stop={stop_price:.2f}  target={target_price:.2f}")
@@ -398,15 +399,19 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
         if side == 'short':
             stop_price   = entry_price * (1 + config['stop_loss_pct'])
             target_price = entry_price * (1 - config['take_profit_pct'])
-            # Trailing stop for short — tracks price falling
-            if current_price < peak_price:
+            # Only activate trailing stop after price moves 1x stop distance in our favour
+            if current_price < entry_price * (1 - config['stop_loss_pct']):
+                trailing_activated = True
+            if trailing_activated and current_price < peak_price:
                 peak_price    = current_price
                 trailing_stop = peak_price * (1 + config['trailing_stop_pct'])
         else:
             stop_price   = entry_price * (1 - config['stop_loss_pct'])
             target_price = entry_price * (1 + config['take_profit_pct'])
-            # Trailing stop for long — tracks price rising
-            if current_price > peak_price:
+            # Only activate trailing stop after price moves 1x stop distance in our favour
+            if current_price > entry_price * (1 + config['stop_loss_pct']):
+                trailing_activated = True
+            if trailing_activated and current_price > peak_price:
                 peak_price    = current_price
                 trailing_stop = peak_price * (1 - config['trailing_stop_pct'])
 
@@ -423,7 +428,7 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
                            reason="stop-loss", side="short")
                 alerter.trade_closed(ticker, "short", qty, entry_price, current_price, "stop-loss")
                 return True
-            if current_price >= trailing_stop and current_price > peak_price:
+            if trailing_activated and trailing_stop and current_price >= trailing_stop:
                 log.warning(f"[STOP] SHORT TRAILING STOP at {current_price:.2f}")
                 place_sell(trading_client, ticker, qty,
                            reason="trailing-stop", side="short")
@@ -442,7 +447,7 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
                            reason="stop-loss", side="long")
                 alerter.trade_closed(ticker, "long", qty, entry_price, current_price, "stop-loss")
                 return True
-            if current_price <= trailing_stop and current_price < peak_price:
+            if trailing_activated and trailing_stop and current_price <= trailing_stop:
                 log.warning(f"[STOP] TRAILING STOP at {current_price:.2f}")
                 place_sell(trading_client, ticker, qty,
                            reason="trailing-stop", side="long")

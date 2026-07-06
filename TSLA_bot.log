@@ -251,3 +251,422 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='paper-api.alpaca.m
 2026-07-05 23:46:32,736  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
 2026-07-05 23:46:32,927  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-06 00:46:33,290  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 01:46:33,485  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 02:46:33,715  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 03:46:33,903  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 04:46:35,295  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 05:46:35,479  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 06:46:35,669  INFO      Market closed. Next open in 43 min. Sleeping...
+2026-07-06 07:30:05,195  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:35:05,196  INFO      =======================================================
+2026-07-06 07:35:05,197  INFO      Daily signal run  [2026-07-06 07:35]
+2026-07-06 07:35:05,197  INFO      =======================================================
+2026-07-06 07:35:07,558  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 07:35:07,830  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 07:35:08,132  INFO      Portfolio value : $100,409.24
+2026-07-06 07:35:08,132  INFO      Current price   : $393.61
+2026-07-06 07:35:08,132  INFO      Open position   : None
+2026-07-06 07:35:08,132  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 07:35:08,132  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:40:08,364  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:45:08,365  INFO      =======================================================
+2026-07-06 07:45:08,366  INFO      Daily signal run  [2026-07-06 07:45]
+2026-07-06 07:45:08,366  INFO      =======================================================
+2026-07-06 07:45:08,785  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 07:45:08,930  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 07:45:09,079  INFO      Portfolio value : $100,411.99
+2026-07-06 07:45:09,080  INFO      Current price   : $398.23
+2026-07-06 07:45:09,080  INFO      Open position   : None
+2026-07-06 07:45:09,080  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 07:45:09,081  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:50:09,266  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:55:09,266  INFO      =======================================================
+2026-07-06 07:55:09,267  INFO      Daily signal run  [2026-07-06 07:55]
+2026-07-06 07:55:09,267  INFO      =======================================================
+2026-07-06 07:55:09,785  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 07:55:09,981  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 07:55:10,127  INFO      Portfolio value : $100,373.94
+2026-07-06 07:55:10,130  INFO      Current price   : $401.15
+2026-07-06 07:55:10,131  INFO      Open position   : None
+2026-07-06 07:55:10,131  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 07:55:10,131  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:00:10,530  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:05:10,530  INFO      =======================================================
+2026-07-06 08:05:10,530  INFO      Daily signal run  [2026-07-06 08:05]
+2026-07-06 08:05:10,531  INFO      =======================================================
+2026-07-06 08:05:10,903  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:05:11,102  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 08:05:11,236  INFO      Portfolio value : $100,309.75
+2026-07-06 08:05:11,236  INFO      Current price   : $401.70
+2026-07-06 08:05:11,237  INFO      Open position   : None
+2026-07-06 08:05:11,237  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 08:05:11,237  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:10:11,432  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:15:11,433  INFO      =======================================================
+2026-07-06 08:15:11,433  INFO      Daily signal run  [2026-07-06 08:15]
+2026-07-06 08:15:11,433  INFO      =======================================================
+2026-07-06 08:15:11,978  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:15:12,141  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 08:15:12,276  INFO      Portfolio value : $100,378.79
+2026-07-06 08:15:12,277  INFO      Current price   : $403.77
+2026-07-06 08:15:12,277  INFO      Open position   : None
+2026-07-06 08:15:12,277  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 08:15:12,277  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:20:12,466  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:25:12,467  INFO      =======================================================
+2026-07-06 08:25:12,468  INFO      Daily signal run  [2026-07-06 08:25]
+2026-07-06 08:25:12,468  INFO      =======================================================
+2026-07-06 08:25:12,799  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:25:12,982  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 08:25:13,113  INFO      Portfolio value : $100,383.74
+2026-07-06 08:25:13,114  INFO      Current price   : $405.37
+2026-07-06 08:25:13,114  INFO      Open position   : None
+2026-07-06 08:25:13,114  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 08:25:13,115  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:30:13,320  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:35:13,320  INFO      =======================================================
+2026-07-06 08:35:13,321  INFO      Daily signal run  [2026-07-06 08:35]
+2026-07-06 08:35:13,321  INFO      =======================================================
+2026-07-06 08:35:13,680  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:35:13,874  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 08:35:14,001  INFO      Portfolio value : $100,400.75
+2026-07-06 08:35:14,001  INFO      Current price   : $405.63
+2026-07-06 08:35:14,001  INFO      Open position   : None
+2026-07-06 08:35:14,001  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 08:35:14,001  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:40:14,186  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:45:14,187  INFO      =======================================================
+2026-07-06 08:45:14,189  INFO      Daily signal run  [2026-07-06 08:45]
+2026-07-06 08:45:14,189  INFO      =======================================================
+2026-07-06 08:45:14,605  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:45:14,766  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 08:45:14,971  INFO      Portfolio value : $100,406.64
+2026-07-06 08:45:14,971  INFO      Current price   : $404.39
+2026-07-06 08:45:14,971  INFO      Open position   : None
+2026-07-06 08:45:14,971  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 08:45:14,971  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:50:15,187  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:55:15,188  INFO      =======================================================
+2026-07-06 08:55:15,188  INFO      Daily signal run  [2026-07-06 08:55]
+2026-07-06 08:55:15,188  INFO      =======================================================
+2026-07-06 08:55:15,539  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 08:55:15,726  INFO      Signal: SELL/HOLD  |  Confidence: 0.102
+2026-07-06 08:55:15,848  INFO      Portfolio value : $100,389.54
+2026-07-06 08:55:15,848  INFO      Current price   : $405.11
+2026-07-06 08:55:15,848  INFO      Open position   : None
+2026-07-06 08:55:15,848  INFO      Confidence 0.102 below threshold 0.33 — skipping trade
+2026-07-06 08:55:15,848  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:00:16,080  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:05:16,080  INFO      =======================================================
+2026-07-06 09:05:16,088  INFO      Daily signal run  [2026-07-06 09:05]
+2026-07-06 09:05:16,088  INFO      =======================================================
+2026-07-06 09:05:16,471  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:05:16,652  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 09:05:16,779  INFO      Portfolio value : $100,387.59
+2026-07-06 09:05:16,779  INFO      Current price   : $409.14
+2026-07-06 09:05:16,779  INFO      Open position   : None
+2026-07-06 09:05:16,780  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 09:05:16,780  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:10:17,012  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:15:17,013  INFO      =======================================================
+2026-07-06 09:15:17,013  INFO      Daily signal run  [2026-07-06 09:15]
+2026-07-06 09:15:17,013  INFO      =======================================================
+2026-07-06 09:15:17,442  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:15:17,636  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 09:15:17,765  INFO      Portfolio value : $100,356.19
+2026-07-06 09:15:17,766  INFO      Current price   : $409.58
+2026-07-06 09:15:17,766  INFO      Open position   : None
+2026-07-06 09:15:17,766  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 09:15:17,766  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:20:17,979  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:25:17,980  INFO      =======================================================
+2026-07-06 09:25:17,982  INFO      Daily signal run  [2026-07-06 09:25]
+2026-07-06 09:25:17,982  INFO      =======================================================
+2026-07-06 09:25:18,335  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:25:18,503  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 09:25:18,620  INFO      Portfolio value : $100,340.31
+2026-07-06 09:25:18,625  INFO      Current price   : $410.32
+2026-07-06 09:25:18,625  INFO      Open position   : None
+2026-07-06 09:25:18,625  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 09:25:18,626  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:30:18,847  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:35:18,848  INFO      =======================================================
+2026-07-06 09:35:18,849  INFO      Daily signal run  [2026-07-06 09:35]
+2026-07-06 09:35:18,849  INFO      =======================================================
+2026-07-06 09:35:19,258  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:35:19,434  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 09:35:19,583  INFO      Portfolio value : $100,302.27
+2026-07-06 09:35:19,583  INFO      Current price   : $412.78
+2026-07-06 09:35:19,583  INFO      Open position   : None
+2026-07-06 09:35:19,583  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 09:35:19,583  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:40:19,794  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:45:19,795  INFO      =======================================================
+2026-07-06 09:45:19,795  INFO      Daily signal run  [2026-07-06 09:45]
+2026-07-06 09:45:19,795  INFO      =======================================================
+2026-07-06 09:45:20,184  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:45:20,325  INFO      Signal: SELL/HOLD  |  Confidence: 0.120
+2026-07-06 09:45:20,542  INFO      Portfolio value : $100,266.49
+2026-07-06 09:45:20,542  INFO      Current price   : $412.48
+2026-07-06 09:45:20,542  INFO      Open position   : None
+2026-07-06 09:45:20,542  INFO      Confidence 0.120 below threshold 0.33 — skipping trade
+2026-07-06 09:45:20,542  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:50:20,874  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:55:20,882  INFO      =======================================================
+2026-07-06 09:55:20,885  INFO      Daily signal run  [2026-07-06 09:55]
+2026-07-06 09:55:20,885  INFO      =======================================================
+2026-07-06 09:55:21,242  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 09:55:21,432  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 09:55:21,555  INFO      Portfolio value : $100,293.11
+2026-07-06 09:55:21,555  INFO      Current price   : $412.94
+2026-07-06 09:55:21,555  INFO      Open position   : None
+2026-07-06 09:55:21,555  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 09:55:21,555  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:00:21,749  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:05:21,750  INFO      =======================================================
+2026-07-06 10:05:21,750  INFO      Daily signal run  [2026-07-06 10:05]
+2026-07-06 10:05:21,750  INFO      =======================================================
+2026-07-06 10:05:22,140  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:05:22,286  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:05:22,407  INFO      Portfolio value : $100,259.61
+2026-07-06 10:05:22,408  INFO      Current price   : $414.94
+2026-07-06 10:05:22,408  INFO      Open position   : None
+2026-07-06 10:05:22,408  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:05:22,408  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:10:22,603  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:15:22,604  INFO      =======================================================
+2026-07-06 10:15:22,604  INFO      Daily signal run  [2026-07-06 10:15]
+2026-07-06 10:15:22,604  INFO      =======================================================
+2026-07-06 10:15:22,967  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:15:23,169  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:15:23,309  INFO      Portfolio value : $100,241.73
+2026-07-06 10:15:23,310  INFO      Current price   : $417.41
+2026-07-06 10:15:23,310  INFO      Open position   : None
+2026-07-06 10:15:23,310  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:15:23,310  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:20:23,502  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:25:23,502  INFO      =======================================================
+2026-07-06 10:25:23,502  INFO      Daily signal run  [2026-07-06 10:25]
+2026-07-06 10:25:23,503  INFO      =======================================================
+2026-07-06 10:25:23,883  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:25:24,049  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:25:24,169  INFO      Portfolio value : $100,285.62
+2026-07-06 10:25:24,169  INFO      Current price   : $416.83
+2026-07-06 10:25:24,169  INFO      Open position   : None
+2026-07-06 10:25:24,169  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:25:24,169  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:29:44,300  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:29:44,304  INFO      [TSLA] Process exiting
+2026-07-06 10:30:01,791  INFO      [TSLA] Process started  PID=52788
+2026-07-06 10:30:01,793  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-06 10:30:01,793  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:30:01,793  INFO         Mode    : PAPER
+2026-07-06 10:30:01,794  INFO         Ticker  : TSLA
+2026-07-06 10:30:01,794  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-06 10:30:01,794  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:30:01,807  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-06 10:30:01,933  ERROR     Unexpected error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+                ~~~~~~~~~~~~~~~^
+        sock=conn,
+        ^^^^^^^^^^
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\ssl_.py", line 458, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+        sock, context, tls_in_tls, server_hostname=server_hostname
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\ssl_.py", line 502, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+        method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\packages\six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+        conn,
+    ...<5 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connectionpool.py", line 1061, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\connection.py", line 419, in connect
+    self.sock = ssl_wrap_socket(
+                ~~~~~~~~~~~~~~~^
+        sock=conn,
+        ^^^^^^^^^^
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\ssl_.py", line 458, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+        sock, context, tls_in_tls, server_hostname=server_hostname
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\urllib3\util\ssl_.py", line 502, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 610, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 475, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 195, in _one_request
+    response = self._session.request(method, url, **opts)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-07-06 10:30:02,020  INFO      Retrying in 5 minutes...
+2026-07-06 10:33:34,807  INFO      [TSLA] Process exiting
+2026-07-06 10:34:00,459  INFO      [TSLA] Process started  PID=35588
+2026-07-06 10:34:00,462  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-06 10:34:00,462  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:34:00,462  INFO         Mode    : PAPER
+2026-07-06 10:34:00,462  INFO         Ticker  : TSLA
+2026-07-06 10:34:00,462  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-06 10:34:00,462  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:34:00,464  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-06 10:34:00,718  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:39:00,718  INFO      =======================================================
+2026-07-06 10:39:00,719  INFO      Daily signal run  [2026-07-06 10:39]
+2026-07-06 10:39:00,719  INFO      =======================================================
+2026-07-06 10:39:01,266  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:39:01,456  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:39:01,580  INFO      Portfolio value : $100,341.58
+2026-07-06 10:39:01,580  INFO      Current price   : $417.65
+2026-07-06 10:39:01,580  INFO      Open position   : None
+2026-07-06 10:39:01,580  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:39:01,580  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:44:01,772  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:49:01,772  INFO      =======================================================
+2026-07-06 10:49:01,773  INFO      Daily signal run  [2026-07-06 10:49]
+2026-07-06 10:49:01,773  INFO      =======================================================
+2026-07-06 10:49:02,269  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:49:02,484  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:49:02,629  INFO      Portfolio value : $100,353.94
+2026-07-06 10:49:02,629  INFO      Current price   : $416.21
+2026-07-06 10:49:02,629  INFO      Open position   : None
+2026-07-06 10:49:02,629  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:49:02,630  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:54:02,824  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:59:02,825  INFO      =======================================================
+2026-07-06 10:59:02,825  INFO      Daily signal run  [2026-07-06 10:59]
+2026-07-06 10:59:02,825  INFO      =======================================================
+2026-07-06 10:59:03,277  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 10:59:03,450  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 10:59:03,571  INFO      Portfolio value : $100,357.46
+2026-07-06 10:59:03,572  INFO      Current price   : $418.26
+2026-07-06 10:59:03,572  INFO      Open position   : None
+2026-07-06 10:59:03,572  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 10:59:03,572  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:04:03,775  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:09:03,776  INFO      =======================================================
+2026-07-06 11:09:03,776  INFO      Daily signal run  [2026-07-06 11:09]
+2026-07-06 11:09:03,776  INFO      =======================================================
+2026-07-06 11:09:04,137  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 11:09:04,301  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 11:09:04,421  INFO      Portfolio value : $100,378.92
+2026-07-06 11:09:04,422  INFO      Current price   : $418.82
+2026-07-06 11:09:04,422  INFO      Open position   : None
+2026-07-06 11:09:04,422  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 11:09:04,422  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:14:04,615  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:18:07,240  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 11:18:07,244  INFO      [TSLA] Process exiting
+2026-07-06 11:32:20,752  INFO      [TSLA] Process started  PID=66616
+2026-07-06 11:32:20,755  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-06 11:32:20,755  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 11:32:20,755  INFO         Mode    : PAPER
+2026-07-06 11:32:20,755  INFO         Ticker  : TSLA
+2026-07-06 11:32:20,755  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-06 11:32:20,755  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 11:32:20,757  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
+2026-07-06 11:32:20,950  INFO      Market open — waiting 300s before first signal...

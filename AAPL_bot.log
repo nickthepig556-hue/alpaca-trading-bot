@@ -139,3 +139,307 @@
 2026-07-05 23:46:40,824  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
 2026-07-05 23:46:41,016  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-06 00:46:41,229  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 01:46:41,419  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 02:46:41,608  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 03:46:41,791  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 04:46:43,155  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 05:46:43,399  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 06:46:43,584  INFO      Market closed. Next open in 43 min. Sleeping...
+2026-07-06 07:30:05,213  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:35:05,214  INFO      =======================================================
+2026-07-06 07:35:05,214  INFO      Daily signal run  [2026-07-06 07:35]
+2026-07-06 07:35:05,214  INFO      =======================================================
+2026-07-06 07:35:07,758  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 07:35:08,099  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 07:35:08,260  INFO      Portfolio value : $100,408.93
+2026-07-06 07:35:08,260  INFO      Current price   : $308.51
+2026-07-06 07:35:08,260  INFO      Open position   : None
+2026-07-06 07:35:08,260  INFO      Position size: 60 shares  (confidence=0.453, alloc=18.6%, $18,681 of $100,409)
+2026-07-06 07:35:08,260  INFO      Opening SHORT position: 60 x AAPL
+2026-07-06 07:35:08,653  INFO      [OK] SELL SHORT order submitted: 60 x AAPL  [id=7f316cfd-e509-47df-aad4-de17696ff07f]
+2026-07-06 07:35:13,717  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:40:13,911  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:45:13,912  INFO      =======================================================
+2026-07-06 07:45:13,912  INFO      Daily signal run  [2026-07-06 07:45]
+2026-07-06 07:45:13,913  INFO      =======================================================
+2026-07-06 07:45:14,368  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 07:45:14,582  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 07:45:14,767  INFO      Portfolio value : $100,416.57
+2026-07-06 07:45:14,767  INFO      Current price   : $309.04
+2026-07-06 07:45:14,767  INFO      Open position   : {'qty': 60, 'side': 'short', 'entry_price': 309.105167, 'market_value': -18539.7, 'unrealised_pl': 6.61002}
+2026-07-06 07:45:14,767  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 07:45:14,767  INFO      Monitoring AAPL  |  entry=309.11  stop=302.92  target=321.47
+2026-07-06 07:46:15,037  INFO        AAPL [short] price=309.42  stop=315.29  trailing=309.11  target=296.74  P&L=-20.09
+2026-07-06 07:46:15,037  WARNING   [STOP] SHORT TRAILING STOP at 309.42
+2026-07-06 07:46:15,160  INFO      [CLOSE] BUY TO COVER (trailing-stop): 60 x AAPL  [id=155e6739-6091-4dd2-adae-a2fcea0cf3f3]
+2026-07-06 07:46:15,160  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:51:15,354  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:56:15,354  INFO      =======================================================
+2026-07-06 07:56:15,357  INFO      Daily signal run  [2026-07-06 07:56]
+2026-07-06 07:56:15,357  INFO      =======================================================
+2026-07-06 07:56:15,917  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 07:56:16,153  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 07:56:16,388  INFO      Portfolio value : $100,353.56
+2026-07-06 07:56:16,388  INFO      Current price   : $309.58
+2026-07-06 07:56:16,389  INFO      Open position   : None
+2026-07-06 07:56:16,389  INFO      Position size: 60 shares  (confidence=0.453, alloc=18.6%, $18,671 of $100,354)
+2026-07-06 07:56:16,389  INFO      Opening SHORT position: 60 x AAPL
+2026-07-06 07:56:16,471  INFO      [OK] SELL SHORT order submitted: 60 x AAPL  [id=7c691f78-5272-4f35-95cd-55de0c91bfa9]
+2026-07-06 07:56:21,530  INFO      Monitoring AAPL  |  entry=309.60  stop=303.41  target=321.98
+2026-07-06 07:57:21,753  INFO        AAPL [short] price=309.74  stop=315.79  trailing=309.60  target=297.22  P&L=-9.90
+2026-07-06 07:57:21,753  WARNING   [STOP] SHORT TRAILING STOP at 309.74
+2026-07-06 07:57:21,982  INFO      [CLOSE] BUY TO COVER (trailing-stop): 60 x AAPL  [id=181e2847-a5af-465a-9d99-e749b881abfc]
+2026-07-06 07:57:21,982  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:02:22,173  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:07:22,174  INFO      =======================================================
+2026-07-06 08:07:22,174  INFO      Daily signal run  [2026-07-06 08:07]
+2026-07-06 08:07:22,174  INFO      =======================================================
+2026-07-06 08:07:23,722  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 08:07:23,916  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 08:07:24,041  INFO      Portfolio value : $100,348.63
+2026-07-06 08:07:24,041  INFO      Current price   : $309.53
+2026-07-06 08:07:24,041  INFO      Open position   : None
+2026-07-06 08:07:24,042  INFO      Position size: 60 shares  (confidence=0.453, alloc=18.6%, $18,670 of $100,349)
+2026-07-06 08:07:24,042  INFO      Opening SHORT position: 60 x AAPL
+2026-07-06 08:07:24,123  INFO      [OK] SELL SHORT order submitted: 60 x AAPL  [id=acea96e4-5fef-4326-90e6-19ab5cc403bb]
+2026-07-06 08:07:29,185  INFO      Monitoring AAPL  |  entry=309.52  stop=303.33  target=321.90
+2026-07-06 08:08:29,414  INFO        AAPL [short] price=309.68  stop=315.71  trailing=309.52  target=297.14  P&L=-10.20
+2026-07-06 08:08:29,414  WARNING   [STOP] SHORT TRAILING STOP at 309.68
+2026-07-06 08:08:29,483  INFO      [CLOSE] BUY TO COVER (trailing-stop): 60 x AAPL  [id=6df45208-338a-4053-89af-2fa549cbe914]
+2026-07-06 08:08:29,483  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:13:29,709  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:18:29,710  INFO      =======================================================
+2026-07-06 08:18:29,710  INFO      Daily signal run  [2026-07-06 08:18]
+2026-07-06 08:18:29,710  INFO      =======================================================
+2026-07-06 08:18:30,138  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 08:18:30,362  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 08:18:30,497  INFO      Portfolio value : $100,393.02
+2026-07-06 08:18:30,497  INFO      Current price   : $310.48
+2026-07-06 08:18:30,497  INFO      Open position   : None
+2026-07-06 08:18:30,498  INFO      Position size: 60 shares  (confidence=0.453, alloc=18.6%, $18,678 of $100,393)
+2026-07-06 08:18:30,498  INFO      Opening SHORT position: 60 x AAPL
+2026-07-06 08:18:30,691  INFO      [OK] SELL SHORT order submitted: 60 x AAPL  [id=2ab94cf9-1426-4c16-8d97-8c52a1885068]
+2026-07-06 08:18:35,784  INFO      Monitoring AAPL  |  entry=310.41  stop=304.20  target=322.83
+2026-07-06 08:19:36,005  INFO        AAPL [short] price=310.57  stop=316.62  trailing=310.41  target=297.99  P&L=-9.60
+2026-07-06 08:19:36,007  WARNING   [STOP] SHORT TRAILING STOP at 310.57
+2026-07-06 08:19:36,077  INFO      [CLOSE] BUY TO COVER (trailing-stop): 60 x AAPL  [id=a0b63ab1-b77e-4d12-b675-7418ba6224aa]
+2026-07-06 08:19:36,078  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:24:36,264  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:29:36,266  INFO      =======================================================
+2026-07-06 08:29:36,266  INFO      Daily signal run  [2026-07-06 08:29]
+2026-07-06 08:29:36,266  INFO      =======================================================
+2026-07-06 08:29:36,744  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 08:29:36,978  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 08:29:37,102  INFO      Portfolio value : $100,379.99
+2026-07-06 08:29:37,102  INFO      Current price   : $311.61
+2026-07-06 08:29:37,102  INFO      Open position   : None
+2026-07-06 08:29:37,102  INFO      Position size: 59 shares  (confidence=0.453, alloc=18.6%, $18,675 of $100,380)
+2026-07-06 08:29:37,102  INFO      Opening SHORT position: 59 x AAPL
+2026-07-06 08:29:37,176  INFO      [OK] SELL SHORT order submitted: 59 x AAPL  [id=c1c4a275-8a0e-4e53-8c78-bbfe9b144e00]
+2026-07-06 08:29:42,248  INFO      Monitoring AAPL  |  entry=311.64  stop=305.41  target=324.11
+2026-07-06 08:30:42,495  INFO        AAPL [short] price=311.38  stop=317.88  trailing=316.05  target=299.18  P&L=+16.40
+2026-07-06 08:31:42,785  INFO        AAPL [short] price=311.41  stop=317.88  trailing=316.05  target=299.18  P&L=+14.44
+2026-07-06 08:32:43,060  INFO        AAPL [short] price=311.38  stop=317.88  trailing=316.05  target=299.18  P&L=+13.08
+2026-07-06 08:33:43,302  INFO        AAPL [short] price=311.49  stop=317.88  trailing=316.05  target=299.18  P&L=+10.31
+2026-07-06 08:34:43,684  INFO        AAPL [short] price=311.26  stop=317.88  trailing=315.93  target=299.18  P&L=+23.88
+2026-07-06 08:35:43,922  INFO        AAPL [short] price=311.74  stop=317.88  trailing=315.93  target=299.18  P&L=-5.62
+2026-07-06 08:36:44,164  INFO        AAPL [short] price=311.80  stop=317.88  trailing=315.93  target=299.18  P&L=-7.39
+2026-07-06 08:37:44,417  INFO        AAPL [short] price=311.62  stop=317.88  trailing=315.93  target=299.18  P&L=+1.76
+2026-07-06 08:38:44,693  INFO        AAPL [short] price=311.64  stop=317.88  trailing=315.93  target=299.18  P&L=+0.28
+2026-07-06 08:39:45,031  INFO        AAPL [short] price=311.75  stop=317.88  trailing=315.93  target=299.18  P&L=-6.80
+2026-07-06 08:40:45,327  INFO        AAPL [short] price=311.69  stop=317.88  trailing=315.93  target=299.18  P&L=-2.67
+2026-07-06 08:41:45,630  INFO        AAPL [short] price=311.63  stop=317.88  trailing=315.93  target=299.18  P&L=+2.05
+2026-07-06 08:42:45,877  INFO        AAPL [short] price=311.48  stop=317.88  trailing=315.93  target=299.18  P&L=+9.13
+2026-07-06 08:43:46,178  INFO        AAPL [short] price=311.54  stop=317.88  trailing=315.93  target=299.18  P&L=+6.18
+2026-07-06 08:44:46,409  INFO        AAPL [short] price=311.51  stop=317.88  trailing=315.93  target=299.18  P&L=+9.47
+2026-07-06 08:45:46,631  INFO        AAPL [short] price=311.57  stop=317.88  trailing=315.93  target=299.18  P&L=+4.41
+2026-07-06 08:46:46,862  INFO        AAPL [short] price=311.59  stop=317.88  trailing=315.93  target=299.18  P&L=+0.28
+2026-07-06 08:47:47,078  INFO        AAPL [short] price=312.29  stop=317.88  trailing=315.93  target=299.18  P&L=-37.10
+2026-07-06 08:48:47,331  INFO        AAPL [short] price=312.08  stop=317.88  trailing=315.93  target=299.18  P&L=-28.04
+2026-07-06 08:49:47,555  INFO        AAPL [short] price=311.82  stop=317.88  trailing=315.93  target=299.18  P&L=-10.34
+2026-07-06 08:50:47,783  INFO        AAPL [short] price=312.12  stop=317.88  trailing=315.93  target=299.18  P&L=-27.74
+2026-07-06 08:51:48,001  INFO        AAPL [short] price=312.10  stop=317.88  trailing=315.93  target=299.18  P&L=-26.86
+2026-07-06 08:52:48,355  INFO        AAPL [short] price=312.23  stop=317.88  trailing=315.93  target=299.18  P&L=-34.82
+2026-07-06 08:53:48,629  INFO        AAPL [short] price=312.12  stop=317.88  trailing=315.93  target=299.18  P&L=-28.04
+2026-07-06 08:54:48,851  INFO        AAPL [short] price=312.31  stop=317.88  trailing=315.93  target=299.18  P&L=-38.66
+2026-07-06 08:55:49,111  INFO        AAPL [short] price=312.32  stop=317.88  trailing=315.93  target=299.18  P&L=-39.84
+2026-07-06 08:56:49,345  INFO        AAPL [short] price=312.33  stop=317.88  trailing=315.93  target=299.18  P&L=-41.61
+2026-07-06 08:57:49,570  INFO        AAPL [short] price=312.11  stop=317.88  trailing=315.93  target=299.18  P&L=-30.10
+2026-07-06 08:58:49,854  INFO        AAPL [short] price=312.22  stop=317.88  trailing=315.93  target=299.18  P&L=-36.00
+2026-07-06 08:59:50,109  INFO        AAPL [short] price=312.53  stop=317.88  trailing=315.93  target=299.18  P&L=-52.82
+2026-07-06 09:00:50,398  INFO        AAPL [short] price=312.58  stop=317.88  trailing=315.93  target=299.18  P&L=-56.36
+2026-07-06 09:01:50,613  INFO        AAPL [short] price=312.89  stop=317.88  trailing=315.93  target=299.18  P&L=-70.52
+2026-07-06 09:02:50,856  INFO        AAPL [short] price=312.58  stop=317.88  trailing=315.93  target=299.18  P&L=-55.18
+2026-07-06 09:03:51,055  INFO        AAPL [short] price=312.73  stop=317.88  trailing=315.93  target=299.18  P&L=-63.44
+2026-07-06 09:04:51,315  INFO        AAPL [short] price=312.83  stop=317.88  trailing=315.93  target=299.18  P&L=-69.04
+2026-07-06 09:05:51,574  INFO        AAPL [short] price=312.85  stop=317.88  trailing=315.93  target=299.18  P&L=-71.11
+2026-07-06 09:06:51,799  INFO        AAPL [short] price=312.60  stop=317.88  trailing=315.93  target=299.18  P&L=-56.36
+2026-07-06 09:07:52,053  INFO        AAPL [short] price=312.66  stop=317.88  trailing=315.93  target=299.18  P&L=-59.90
+2026-07-06 09:08:52,375  INFO        AAPL [short] price=312.67  stop=317.88  trailing=315.93  target=299.18  P&L=-60.49
+2026-07-06 09:09:52,652  INFO        AAPL [short] price=312.61  stop=317.88  trailing=315.93  target=299.18  P&L=-56.95
+2026-07-06 09:10:52,898  INFO        AAPL [short] price=312.77  stop=317.88  trailing=315.93  target=299.18  P&L=-69.93
+2026-07-06 09:11:53,151  INFO        AAPL [short] price=313.04  stop=317.88  trailing=315.93  target=299.18  P&L=-82.91
+2026-07-06 09:12:53,381  INFO        AAPL [short] price=312.99  stop=317.88  trailing=315.93  target=299.18  P&L=-80.55
+2026-07-06 09:13:53,607  INFO        AAPL [short] price=313.04  stop=317.88  trailing=315.93  target=299.18  P&L=-79.07
+2026-07-06 09:14:53,837  INFO        AAPL [short] price=312.87  stop=317.88  trailing=315.93  target=299.18  P&L=-71.11
+2026-07-06 09:15:54,114  INFO        AAPL [short] price=312.78  stop=317.88  trailing=315.93  target=299.18  P&L=-69.34
+2026-07-06 09:16:54,354  INFO        AAPL [short] price=312.80  stop=317.88  trailing=315.93  target=299.18  P&L=-66.98
+2026-07-06 09:17:54,585  INFO        AAPL [short] price=312.93  stop=317.88  trailing=315.93  target=299.18  P&L=-75.83
+2026-07-06 09:18:54,805  INFO        AAPL [short] price=313.08  stop=317.88  trailing=315.93  target=299.18  P&L=-84.68
+2026-07-06 09:19:55,075  INFO        AAPL [short] price=313.26  stop=317.88  trailing=315.93  target=299.18  P&L=-98.83
+2026-07-06 09:20:55,308  INFO        AAPL [short] price=313.29  stop=317.88  trailing=315.93  target=299.18  P&L=-97.07
+2026-07-06 09:21:55,560  INFO        AAPL [short] price=313.12  stop=317.88  trailing=315.93  target=299.18  P&L=-87.04
+2026-07-06 09:22:55,805  INFO        AAPL [short] price=313.05  stop=317.88  trailing=315.93  target=299.18  P&L=-83.20
+2026-07-06 09:23:56,028  INFO        AAPL [short] price=313.12  stop=317.88  trailing=315.93  target=299.18  P&L=-88.22
+2026-07-06 09:24:56,291  INFO        AAPL [short] price=312.97  stop=317.88  trailing=315.93  target=299.18  P&L=-80.55
+2026-07-06 09:25:56,581  INFO        AAPL [short] price=313.07  stop=317.88  trailing=315.93  target=299.18  P&L=-86.15
+2026-07-06 09:26:56,844  INFO        AAPL [short] price=313.17  stop=317.88  trailing=315.93  target=299.18  P&L=-90.28
+2026-07-06 09:27:57,074  INFO        AAPL [short] price=313.33  stop=317.88  trailing=315.93  target=299.18  P&L=-98.85
+2026-07-06 09:28:57,319  INFO        AAPL [short] price=313.31  stop=317.88  trailing=315.93  target=299.18  P&L=-98.25
+2026-07-06 09:29:57,584  INFO        AAPL [short] price=313.58  stop=317.88  trailing=315.93  target=299.18  P&L=-112.41
+2026-07-06 09:30:57,945  INFO        AAPL [short] price=313.47  stop=317.88  trailing=315.93  target=299.18  P&L=-107.10
+2026-07-06 09:31:58,144  INFO        AAPL [short] price=313.50  stop=317.88  trailing=315.93  target=299.18  P&L=-110.05
+2026-07-06 09:32:58,470  INFO        AAPL [short] price=313.56  stop=317.88  trailing=315.93  target=299.18  P&L=-113.00
+2026-07-06 09:33:58,803  INFO        AAPL [short] price=313.57  stop=317.88  trailing=315.93  target=299.18  P&L=-113.59
+2026-07-06 09:34:59,001  INFO        AAPL [short] price=313.62  stop=317.88  trailing=315.93  target=299.18  P&L=-116.54
+2026-07-06 09:35:59,244  INFO        AAPL [short] price=313.80  stop=317.88  trailing=315.93  target=299.18  P&L=-128.63
+2026-07-06 09:36:59,508  INFO        AAPL [short] price=313.68  stop=317.88  trailing=315.93  target=299.18  P&L=-119.49
+2026-07-06 09:37:59,750  INFO        AAPL [short] price=313.86  stop=317.88  trailing=315.93  target=299.18  P&L=-129.52
+2026-07-06 09:38:59,976  INFO        AAPL [short] price=314.03  stop=317.88  trailing=315.93  target=299.18  P&L=-140.73
+2026-07-06 09:40:00,311  INFO        AAPL [short] price=313.83  stop=317.88  trailing=315.93  target=299.18  P&L=-134.24
+2026-07-06 09:41:00,564  INFO        AAPL [short] price=313.76  stop=317.88  trailing=315.93  target=299.18  P&L=-124.80
+2026-07-06 09:42:00,821  INFO        AAPL [short] price=314.02  stop=317.88  trailing=315.93  target=299.18  P&L=-139.84
+2026-07-06 09:43:01,108  INFO        AAPL [short] price=313.89  stop=317.88  trailing=315.93  target=299.18  P&L=-132.47
+2026-07-06 09:44:01,371  INFO        AAPL [short] price=313.99  stop=317.88  trailing=315.93  target=299.18  P&L=-135.42
+2026-07-06 09:45:01,723  INFO        AAPL [short] price=314.09  stop=317.88  trailing=315.93  target=299.18  P&L=-148.99
+2026-07-06 09:46:01,956  INFO        AAPL [short] price=313.98  stop=317.88  trailing=315.93  target=299.18  P&L=-137.48
+2026-07-06 09:47:02,212  INFO        AAPL [short] price=314.10  stop=317.88  trailing=315.93  target=299.18  P&L=-143.38
+2026-07-06 09:48:02,436  INFO        AAPL [short] price=313.84  stop=317.88  trailing=315.93  target=299.18  P&L=-129.52
+2026-07-06 09:49:02,648  INFO        AAPL [short] price=313.76  stop=317.88  trailing=315.93  target=299.18  P&L=-124.31
+2026-07-06 09:50:02,870  INFO        AAPL [short] price=313.59  stop=317.88  trailing=315.93  target=299.18  P&L=-115.65
+2026-07-06 09:51:03,131  INFO        AAPL [short] price=313.86  stop=317.88  trailing=315.93  target=299.18  P&L=-130.70
+2026-07-06 09:52:03,372  INFO        AAPL [short] price=313.88  stop=317.88  trailing=315.93  target=299.18  P&L=-131.88
+2026-07-06 09:53:03,614  INFO        AAPL [short] price=313.72  stop=317.88  trailing=315.93  target=299.18  P&L=-124.80
+2026-07-06 09:54:03,875  INFO        AAPL [short] price=313.62  stop=317.88  trailing=315.93  target=299.18  P&L=-114.18
+2026-07-06 09:55:04,115  INFO        AAPL [short] price=313.42  stop=317.88  trailing=315.93  target=299.18  P&L=-104.74
+2026-07-06 09:56:04,451  INFO        AAPL [short] price=313.53  stop=317.88  trailing=315.93  target=299.18  P&L=-114.18
+2026-07-06 09:57:04,704  INFO        AAPL [short] price=313.53  stop=317.88  trailing=315.93  target=299.18  P&L=-110.34
+2026-07-06 09:58:04,971  INFO        AAPL [short] price=313.53  stop=317.88  trailing=315.93  target=299.18  P&L=-110.64
+2026-07-06 09:59:05,224  INFO        AAPL [short] price=313.41  stop=317.88  trailing=315.93  target=299.18  P&L=-104.15
+2026-07-06 10:00:05,664  INFO        AAPL [short] price=313.77  stop=317.88  trailing=315.93  target=299.18  P&L=-125.39
+2026-07-06 10:01:05,956  INFO        AAPL [short] price=313.56  stop=317.88  trailing=315.93  target=299.18  P&L=-112.41
+2026-07-06 10:02:06,231  INFO        AAPL [short] price=313.45  stop=317.88  trailing=315.93  target=299.18  P&L=-107.08
+2026-07-06 10:03:06,549  INFO        AAPL [short] price=313.45  stop=317.88  trailing=315.93  target=299.18  P&L=-106.51
+2026-07-06 10:04:06,794  INFO        AAPL [short] price=313.47  stop=317.88  trailing=315.93  target=299.18  P&L=-107.98
+2026-07-06 10:05:07,183  INFO        AAPL [short] price=313.36  stop=317.88  trailing=315.93  target=299.18  P&L=-101.20
+2026-07-06 10:06:07,489  INFO        AAPL [short] price=313.15  stop=317.88  trailing=315.93  target=299.18  P&L=-89.40
+2026-07-06 10:07:07,794  INFO        AAPL [short] price=313.10  stop=317.88  trailing=315.93  target=299.18  P&L=-81.73
+2026-07-06 10:08:07,995  INFO        AAPL [short] price=313.08  stop=317.88  trailing=315.93  target=299.18  P&L=-84.68
+2026-07-06 10:09:08,225  INFO        AAPL [short] price=313.09  stop=317.88  trailing=315.93  target=299.18  P&L=-87.04
+2026-07-06 10:10:08,463  INFO        AAPL [short] price=312.97  stop=317.88  trailing=315.93  target=299.18  P&L=-78.76
+2026-07-06 10:11:08,758  INFO        AAPL [short] price=312.93  stop=317.88  trailing=315.93  target=299.18  P&L=-75.83
+2026-07-06 10:12:09,233  INFO        AAPL [short] price=313.09  stop=317.88  trailing=315.93  target=299.18  P&L=-86.45
+2026-07-06 10:13:09,519  INFO        AAPL [short] price=312.92  stop=317.88  trailing=315.93  target=299.18  P&L=-75.24
+2026-07-06 10:14:09,776  INFO        AAPL [short] price=312.86  stop=317.88  trailing=315.93  target=299.18  P&L=-71.70
+2026-07-06 10:15:10,027  INFO        AAPL [short] price=312.99  stop=317.88  trailing=315.93  target=299.18  P&L=-77.60
+2026-07-06 10:16:10,306  INFO        AAPL [short] price=312.68  stop=317.88  trailing=315.93  target=299.18  P&L=-61.09
+2026-07-06 10:17:10,557  INFO        AAPL [short] price=312.57  stop=317.88  trailing=315.93  target=299.18  P&L=-53.70
+2026-07-06 10:18:11,102  INFO        AAPL [short] price=312.40  stop=317.88  trailing=315.93  target=299.18  P&L=-45.74
+2026-07-06 10:19:11,380  INFO        AAPL [short] price=312.60  stop=317.88  trailing=315.93  target=299.18  P&L=-56.93
+2026-07-06 10:20:11,818  INFO        AAPL [short] price=312.83  stop=317.88  trailing=315.93  target=299.18  P&L=-69.34
+2026-07-06 10:21:12,091  INFO        AAPL [short] price=312.69  stop=317.88  trailing=315.93  target=299.18  P&L=-62.85
+2026-07-06 10:22:12,316  INFO        AAPL [short] price=312.62  stop=317.88  trailing=315.93  target=299.18  P&L=-57.54
+2026-07-06 10:23:12,546  INFO        AAPL [short] price=312.43  stop=317.88  trailing=315.93  target=299.18  P&L=-47.51
+2026-07-06 10:24:12,778  INFO        AAPL [short] price=312.42  stop=317.88  trailing=315.93  target=299.18  P&L=-45.15
+2026-07-06 10:25:13,067  INFO        AAPL [short] price=312.50  stop=317.88  trailing=315.93  target=299.18  P&L=-46.92
+2026-07-06 10:26:13,314  INFO        AAPL [short] price=312.54  stop=317.88  trailing=315.93  target=299.18  P&L=-52.52
+2026-07-06 10:27:13,558  INFO        AAPL [short] price=312.41  stop=317.88  trailing=315.93  target=299.18  P&L=-45.15
+2026-07-06 10:28:13,777  INFO        AAPL [short] price=312.37  stop=317.88  trailing=315.93  target=299.18  P&L=-43.97
+2026-07-06 10:29:14,037  INFO        AAPL [short] price=312.38  stop=317.88  trailing=315.93  target=299.18  P&L=-44.26
+2026-07-06 10:29:44,299  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:29:44,304  INFO      [AAPL] Process exiting
+2026-07-06 10:30:09,758  INFO      [AAPL] Process started  PID=58616
+2026-07-06 10:30:09,760  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 10:30:09,760  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:30:09,761  INFO         Mode    : PAPER
+2026-07-06 10:30:09,761  INFO         Ticker  : AAPL
+2026-07-06 10:30:09,761  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-06 10:30:09,761  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:30:09,769  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-06 10:30:09,971  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:33:34,806  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:33:34,810  INFO      [AAPL] Process exiting
+2026-07-06 10:34:08,704  INFO      [AAPL] Process started  PID=45740
+2026-07-06 10:34:08,707  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 10:34:08,707  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:34:08,707  INFO         Mode    : PAPER
+2026-07-06 10:34:08,707  INFO         Ticker  : AAPL
+2026-07-06 10:34:08,707  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-06 10:34:08,707  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:34:08,709  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-06 10:34:08,905  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:39:08,905  INFO      =======================================================
+2026-07-06 10:39:08,906  INFO      Daily signal run  [2026-07-06 10:39]
+2026-07-06 10:39:08,906  INFO      =======================================================
+2026-07-06 10:39:09,522  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 10:39:09,760  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 10:39:09,887  INFO      Portfolio value : $100,344.79
+2026-07-06 10:39:09,887  INFO      Current price   : $312.08
+2026-07-06 10:39:09,887  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 311.644746, 'market_value': -18413.31, 'unrealised_pl': -26.269986}
+2026-07-06 10:39:09,887  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 10:39:09,887  INFO      Monitoring AAPL  |  entry=311.64  stop=305.41  target=324.11
+2026-07-06 10:40:10,141  INFO        AAPL [short] price=312.15  stop=317.88  trailing=311.64  target=299.18  P&L=-28.65
+2026-07-06 10:40:10,141  WARNING   [STOP] SHORT TRAILING STOP at 312.15
+2026-07-06 10:40:10,262  INFO      [CLOSE] BUY TO COVER (trailing-stop): 59 x AAPL  [id=673f781d-e4cc-4aaa-a8e5-9b0497181096]
+2026-07-06 10:40:10,262  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:45:10,447  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:50:10,448  INFO      =======================================================
+2026-07-06 10:50:10,448  INFO      Daily signal run  [2026-07-06 10:50]
+2026-07-06 10:50:10,448  INFO      =======================================================
+2026-07-06 10:50:10,915  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 10:50:11,123  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 10:50:11,366  INFO      Portfolio value : $100,365.23
+2026-07-06 10:50:11,366  INFO      Current price   : $312.90
+2026-07-06 10:50:11,366  INFO      Open position   : None
+2026-07-06 10:50:11,366  INFO      Position size: 59 shares  (confidence=0.453, alloc=18.6%, $18,673 of $100,365)
+2026-07-06 10:50:11,366  INFO      Opening SHORT position: 59 x AAPL
+2026-07-06 10:50:11,435  INFO      [OK] SELL SHORT order submitted: 59 x AAPL  [id=2f503978-5087-435c-b61d-ed9b98622518]
+2026-07-06 10:50:16,516  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 10:51:16,804  INFO        AAPL [short] price=312.84  stop=319.16  trailing=317.53  target=300.38  P&L=+2.95
+2026-07-06 10:52:17,245  INFO        AAPL [short] price=312.64  stop=319.16  trailing=317.32  target=300.38  P&L=+16.23
+2026-07-06 10:53:17,517  INFO        AAPL [short] price=312.54  stop=319.16  trailing=317.23  target=300.38  P&L=+21.23
+2026-07-06 10:54:17,778  INFO        AAPL [short] price=312.55  stop=319.16  trailing=317.23  target=300.38  P&L=+22.42
+2026-07-06 10:55:18,019  INFO        AAPL [short] price=312.71  stop=319.16  trailing=317.23  target=300.38  P&L=+7.67
+2026-07-06 10:56:18,283  INFO        AAPL [short] price=312.70  stop=319.16  trailing=317.23  target=300.38  P&L=+13.57
+2026-07-06 10:57:18,588  INFO        AAPL [short] price=312.72  stop=319.16  trailing=317.23  target=300.38  P&L=+9.74
+2026-07-06 10:58:18,874  INFO        AAPL [short] price=312.69  stop=319.16  trailing=317.23  target=300.38  P&L=+10.91
+2026-07-06 10:59:19,126  INFO        AAPL [short] price=312.73  stop=319.16  trailing=317.23  target=300.38  P&L=+9.44
+2026-07-06 11:00:19,328  INFO        AAPL [short] price=312.62  stop=319.16  trailing=317.23  target=300.38  P&L=+17.11
+2026-07-06 11:01:19,600  INFO        AAPL [short] price=312.73  stop=319.16  trailing=317.23  target=300.38  P&L=+9.44
+2026-07-06 11:02:19,839  INFO        AAPL [short] price=312.66  stop=319.16  trailing=317.23  target=300.38  P&L=+15.63
+2026-07-06 11:03:20,208  INFO        AAPL [short] price=312.58  stop=319.16  trailing=317.23  target=300.38  P&L=+18.88
+2026-07-06 11:04:20,476  INFO        AAPL [short] price=312.76  stop=319.16  trailing=317.23  target=300.38  P&L=+7.08
+2026-07-06 11:05:20,675  INFO        AAPL [short] price=312.73  stop=319.16  trailing=317.23  target=300.38  P&L=+12.69
+2026-07-06 11:06:20,914  INFO        AAPL [short] price=312.77  stop=319.16  trailing=317.23  target=300.38  P&L=+6.79
+2026-07-06 11:07:21,143  INFO        AAPL [short] price=312.85  stop=319.16  trailing=317.23  target=300.38  P&L=+2.95
+2026-07-06 11:08:21,517  INFO        AAPL [short] price=312.46  stop=319.16  trailing=317.15  target=300.38  P&L=+24.78
+2026-07-06 11:09:21,825  INFO        AAPL [short] price=312.34  stop=319.16  trailing=317.03  target=300.38  P&L=+33.63
+2026-07-06 11:10:22,059  INFO        AAPL [short] price=312.57  stop=319.16  trailing=317.03  target=300.38  P&L=+19.77
+2026-07-06 11:11:22,425  INFO        AAPL [short] price=312.52  stop=319.16  trailing=317.03  target=300.38  P&L=+21.83
+2026-07-06 11:12:22,683  INFO        AAPL [short] price=312.66  stop=319.16  trailing=317.03  target=300.38  P&L=+14.16
+2026-07-06 11:13:22,930  INFO        AAPL [short] price=312.67  stop=319.16  trailing=317.03  target=300.38  P&L=+12.98
+2026-07-06 11:14:23,160  INFO        AAPL [short] price=312.69  stop=319.16  trailing=317.03  target=300.38  P&L=+14.46
+2026-07-06 11:15:23,412  INFO        AAPL [short] price=312.88  stop=319.16  trailing=317.03  target=300.38  P&L=+0.89
+2026-07-06 11:16:23,676  INFO        AAPL [short] price=312.68  stop=319.16  trailing=317.03  target=300.38  P&L=+12.39
+2026-07-06 11:17:23,895  INFO        AAPL [short] price=312.68  stop=319.16  trailing=317.03  target=300.38  P&L=+14.16
+2026-07-06 11:18:07,240  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 11:18:07,243  INFO      [AAPL] Process exiting
+2026-07-06 11:32:28,852  INFO      [AAPL] Process started  PID=68216
+2026-07-06 11:32:28,855  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 11:32:28,855  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 11:32:28,855  INFO         Mode    : PAPER
+2026-07-06 11:32:28,855  INFO         Ticker  : AAPL
+2026-07-06 11:32:28,855  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-06 11:32:28,855  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 11:32:28,857  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
+2026-07-06 11:32:29,051  INFO      Market open — waiting 300s before first signal...

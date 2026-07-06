@@ -171,3 +171,284 @@
 2026-07-05 23:46:34,797  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
 2026-07-05 23:46:34,988  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-06 00:46:35,192  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 01:46:35,378  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 02:46:35,575  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 03:46:35,770  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 04:46:37,135  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 05:46:37,323  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 06:46:37,507  INFO      Market closed. Next open in 43 min. Sleeping...
+2026-07-06 07:30:05,165  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:35:05,165  INFO      =======================================================
+2026-07-06 07:35:05,166  INFO      Daily signal run  [2026-07-06 07:35]
+2026-07-06 07:35:05,166  INFO      =======================================================
+2026-07-06 07:35:07,687  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 07:35:07,960  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 07:35:08,178  INFO      Portfolio value : $100,408.78
+2026-07-06 07:35:08,178  INFO      Current price   : $386.39
+2026-07-06 07:35:08,178  INFO      Open position   : None
+2026-07-06 07:35:08,178  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 07:35:08,178  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:40:08,379  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:45:08,380  INFO      =======================================================
+2026-07-06 07:45:08,380  INFO      Daily signal run  [2026-07-06 07:45]
+2026-07-06 07:45:08,380  INFO      =======================================================
+2026-07-06 07:45:08,806  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 07:45:08,990  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 07:45:09,148  INFO      Portfolio value : $100,411.37
+2026-07-06 07:45:09,148  INFO      Current price   : $384.35
+2026-07-06 07:45:09,148  INFO      Open position   : None
+2026-07-06 07:45:09,148  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 07:45:09,148  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 07:50:09,495  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:55:09,495  INFO      =======================================================
+2026-07-06 07:55:09,495  INFO      Daily signal run  [2026-07-06 07:55]
+2026-07-06 07:55:09,495  INFO      =======================================================
+2026-07-06 07:55:09,990  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 07:55:10,211  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 07:55:10,364  INFO      Portfolio value : $100,373.74
+2026-07-06 07:55:10,365  INFO      Current price   : $384.08
+2026-07-06 07:55:10,366  INFO      Open position   : None
+2026-07-06 07:55:10,366  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 07:55:10,366  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:00:10,743  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:05:10,743  INFO      =======================================================
+2026-07-06 08:05:10,744  INFO      Daily signal run  [2026-07-06 08:05]
+2026-07-06 08:05:10,744  INFO      =======================================================
+2026-07-06 08:05:11,126  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:05:11,326  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:05:11,452  INFO      Portfolio value : $100,308.27
+2026-07-06 08:05:11,452  INFO      Current price   : $383.50
+2026-07-06 08:05:11,452  INFO      Open position   : None
+2026-07-06 08:05:11,453  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:05:11,453  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:10:11,803  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:15:11,803  INFO      =======================================================
+2026-07-06 08:15:11,804  INFO      Daily signal run  [2026-07-06 08:15]
+2026-07-06 08:15:11,804  INFO      =======================================================
+2026-07-06 08:15:12,194  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:15:12,449  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:15:12,577  INFO      Portfolio value : $100,378.23
+2026-07-06 08:15:12,577  INFO      Current price   : $383.52
+2026-07-06 08:15:12,578  INFO      Open position   : None
+2026-07-06 08:15:12,578  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:15:12,578  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:20:12,766  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:25:12,767  INFO      =======================================================
+2026-07-06 08:25:12,767  INFO      Daily signal run  [2026-07-06 08:25]
+2026-07-06 08:25:12,767  INFO      =======================================================
+2026-07-06 08:25:13,248  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:25:13,473  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:25:13,600  INFO      Portfolio value : $100,385.11
+2026-07-06 08:25:13,600  INFO      Current price   : $383.92
+2026-07-06 08:25:13,600  INFO      Open position   : None
+2026-07-06 08:25:13,600  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:25:13,600  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:30:13,788  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:35:13,789  INFO      =======================================================
+2026-07-06 08:35:13,792  INFO      Daily signal run  [2026-07-06 08:35]
+2026-07-06 08:35:13,793  INFO      =======================================================
+2026-07-06 08:35:14,195  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:35:14,398  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:35:14,628  INFO      Portfolio value : $100,400.32
+2026-07-06 08:35:14,628  INFO      Current price   : $382.71
+2026-07-06 08:35:14,629  INFO      Open position   : None
+2026-07-06 08:35:14,629  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:35:14,629  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:40:14,816  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:45:14,817  INFO      =======================================================
+2026-07-06 08:45:14,817  INFO      Daily signal run  [2026-07-06 08:45]
+2026-07-06 08:45:14,817  INFO      =======================================================
+2026-07-06 08:45:15,229  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:45:15,407  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:45:15,576  INFO      Portfolio value : $100,405.66
+2026-07-06 08:45:15,577  INFO      Current price   : $384.00
+2026-07-06 08:45:15,577  INFO      Open position   : None
+2026-07-06 08:45:15,577  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:45:15,577  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 08:50:15,774  INFO      Market open — waiting 300s before first signal...
+2026-07-06 08:55:15,774  INFO      =======================================================
+2026-07-06 08:55:15,774  INFO      Daily signal run  [2026-07-06 08:55]
+2026-07-06 08:55:15,775  INFO      =======================================================
+2026-07-06 08:55:16,141  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 08:55:16,324  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 08:55:16,444  INFO      Portfolio value : $100,393.23
+2026-07-06 08:55:16,445  INFO      Current price   : $384.46
+2026-07-06 08:55:16,445  INFO      Open position   : None
+2026-07-06 08:55:16,445  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 08:55:16,445  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:00:16,641  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:05:16,642  INFO      =======================================================
+2026-07-06 09:05:16,642  INFO      Daily signal run  [2026-07-06 09:05]
+2026-07-06 09:05:16,643  INFO      =======================================================
+2026-07-06 09:05:17,027  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:05:17,274  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:05:17,401  INFO      Portfolio value : $100,389.46
+2026-07-06 09:05:17,401  INFO      Current price   : $385.30
+2026-07-06 09:05:17,401  INFO      Open position   : None
+2026-07-06 09:05:17,401  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:05:17,402  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:10:17,613  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:15:17,614  INFO      =======================================================
+2026-07-06 09:15:17,627  INFO      Daily signal run  [2026-07-06 09:15]
+2026-07-06 09:15:17,628  INFO      =======================================================
+2026-07-06 09:15:18,022  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:15:18,195  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:15:18,402  INFO      Portfolio value : $100,354.60
+2026-07-06 09:15:18,402  INFO      Current price   : $385.81
+2026-07-06 09:15:18,402  INFO      Open position   : None
+2026-07-06 09:15:18,402  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:15:18,402  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:20:18,604  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:25:18,605  INFO      =======================================================
+2026-07-06 09:25:18,605  INFO      Daily signal run  [2026-07-06 09:25]
+2026-07-06 09:25:18,605  INFO      =======================================================
+2026-07-06 09:25:18,956  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:25:19,136  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:25:19,259  INFO      Portfolio value : $100,341.59
+2026-07-06 09:25:19,259  INFO      Current price   : $386.12
+2026-07-06 09:25:19,259  INFO      Open position   : None
+2026-07-06 09:25:19,259  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:25:19,260  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:30:19,439  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:35:19,440  INFO      =======================================================
+2026-07-06 09:35:19,441  INFO      Daily signal run  [2026-07-06 09:35]
+2026-07-06 09:35:19,442  INFO      =======================================================
+2026-07-06 09:35:19,843  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:35:20,051  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:35:20,168  INFO      Portfolio value : $100,302.33
+2026-07-06 09:35:20,168  INFO      Current price   : $386.56
+2026-07-06 09:35:20,169  INFO      Open position   : None
+2026-07-06 09:35:20,169  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:35:20,169  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:40:20,359  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:45:20,359  INFO      =======================================================
+2026-07-06 09:45:20,360  INFO      Daily signal run  [2026-07-06 09:45]
+2026-07-06 09:45:20,360  INFO      =======================================================
+2026-07-06 09:45:20,738  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:45:20,950  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:45:21,080  INFO      Portfolio value : $100,265.90
+2026-07-06 09:45:21,080  INFO      Current price   : $386.52
+2026-07-06 09:45:21,080  INFO      Open position   : None
+2026-07-06 09:45:21,080  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:45:21,080  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 09:50:21,276  INFO      Market open — waiting 300s before first signal...
+2026-07-06 09:55:21,276  INFO      =======================================================
+2026-07-06 09:55:21,276  INFO      Daily signal run  [2026-07-06 09:55]
+2026-07-06 09:55:21,276  INFO      =======================================================
+2026-07-06 09:55:21,705  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 09:55:21,926  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 09:55:22,092  INFO      Portfolio value : $100,292.68
+2026-07-06 09:55:22,092  INFO      Current price   : $386.28
+2026-07-06 09:55:22,092  INFO      Open position   : None
+2026-07-06 09:55:22,092  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 09:55:22,093  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:00:22,289  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:05:22,290  INFO      =======================================================
+2026-07-06 10:05:22,290  INFO      Daily signal run  [2026-07-06 10:05]
+2026-07-06 10:05:22,290  INFO      =======================================================
+2026-07-06 10:05:22,742  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:05:22,916  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:05:23,048  INFO      Portfolio value : $100,261.87
+2026-07-06 10:05:23,048  INFO      Current price   : $385.58
+2026-07-06 10:05:23,048  INFO      Open position   : None
+2026-07-06 10:05:23,048  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:05:23,049  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:10:23,404  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:15:23,404  INFO      =======================================================
+2026-07-06 10:15:23,405  INFO      Daily signal run  [2026-07-06 10:15]
+2026-07-06 10:15:23,405  INFO      =======================================================
+2026-07-06 10:15:23,762  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:15:23,984  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:15:24,103  INFO      Portfolio value : $100,240.23
+2026-07-06 10:15:24,103  INFO      Current price   : $384.56
+2026-07-06 10:15:24,103  INFO      Open position   : None
+2026-07-06 10:15:24,104  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:15:24,104  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:20:24,303  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:25:24,304  INFO      =======================================================
+2026-07-06 10:25:24,304  INFO      Daily signal run  [2026-07-06 10:25]
+2026-07-06 10:25:24,304  INFO      =======================================================
+2026-07-06 10:25:24,690  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:25:24,871  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:25:25,008  INFO      Portfolio value : $100,281.44
+2026-07-06 10:25:25,008  INFO      Current price   : $384.03
+2026-07-06 10:25:25,008  INFO      Open position   : None
+2026-07-06 10:25:25,009  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:25:25,009  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:29:44,299  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:29:44,303  INFO      [MSFT] Process exiting
+2026-07-06 10:30:03,751  INFO      [MSFT] Process started  PID=36108
+2026-07-06 10:30:03,754  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 10:30:03,754  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:30:03,754  INFO         Mode    : PAPER
+2026-07-06 10:30:03,754  INFO         Ticker  : MSFT
+2026-07-06 10:30:03,754  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-06 10:30:03,754  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:30:03,763  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-06 10:30:04,445  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:33:34,806  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:33:34,810  INFO      [MSFT] Process exiting
+2026-07-06 10:34:02,454  INFO      [MSFT] Process started  PID=68756
+2026-07-06 10:34:02,457  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 10:34:02,457  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:34:02,457  INFO         Mode    : PAPER
+2026-07-06 10:34:02,457  INFO         Ticker  : MSFT
+2026-07-06 10:34:02,457  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-06 10:34:02,457  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:34:02,459  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-06 10:34:02,652  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:39:02,652  INFO      =======================================================
+2026-07-06 10:39:02,653  INFO      Daily signal run  [2026-07-06 10:39]
+2026-07-06 10:39:02,653  INFO      =======================================================
+2026-07-06 10:39:03,283  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:39:03,605  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:39:03,725  INFO      Portfolio value : $100,341.98
+2026-07-06 10:39:03,725  INFO      Current price   : $384.36
+2026-07-06 10:39:03,725  INFO      Open position   : None
+2026-07-06 10:39:03,725  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:39:03,725  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:44:03,962  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:49:03,963  INFO      =======================================================
+2026-07-06 10:49:03,964  INFO      Daily signal run  [2026-07-06 10:49]
+2026-07-06 10:49:03,964  INFO      =======================================================
+2026-07-06 10:49:04,372  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:49:04,723  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:49:04,929  INFO      Portfolio value : $100,354.97
+2026-07-06 10:49:04,929  INFO      Current price   : $384.95
+2026-07-06 10:49:04,929  INFO      Open position   : None
+2026-07-06 10:49:04,929  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:49:04,929  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 10:54:05,139  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:59:05,140  INFO      =======================================================
+2026-07-06 10:59:05,140  INFO      Daily signal run  [2026-07-06 10:59]
+2026-07-06 10:59:05,140  INFO      =======================================================
+2026-07-06 10:59:05,561  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 10:59:05,756  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 10:59:05,877  INFO      Portfolio value : $100,357.87
+2026-07-06 10:59:05,877  INFO      Current price   : $385.24
+2026-07-06 10:59:05,877  INFO      Open position   : None
+2026-07-06 10:59:05,879  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 10:59:05,881  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:04:06,081  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:09:06,082  INFO      =======================================================
+2026-07-06 11:09:06,082  INFO      Daily signal run  [2026-07-06 11:09]
+2026-07-06 11:09:06,083  INFO      =======================================================
+2026-07-06 11:09:06,491  INFO      Fetched 70 bars for MSFT  (2026-03-25 → 2026-07-06)
+2026-07-06 11:09:06,690  INFO      Signal: SELL/HOLD  |  Confidence: 0.093
+2026-07-06 11:09:06,811  INFO      Portfolio value : $100,382.52
+2026-07-06 11:09:06,811  INFO      Current price   : $385.97
+2026-07-06 11:09:06,811  INFO      Open position   : None
+2026-07-06 11:09:06,811  INFO      Confidence 0.093 below threshold 0.3 — skipping trade
+2026-07-06 11:09:06,811  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:14:07,006  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:18:07,240  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 11:18:07,243  INFO      [MSFT] Process exiting
+2026-07-06 11:32:22,727  INFO      [MSFT] Process started  PID=67196
+2026-07-06 11:32:22,730  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-06 11:32:22,730  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 11:32:22,730  INFO         Mode    : PAPER
+2026-07-06 11:32:22,730  INFO         Ticker  : MSFT
+2026-07-06 11:32:22,730  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-06 11:32:22,730  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 11:32:22,732  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (24 genes)
+2026-07-06 11:32:22,925  INFO      Market open — waiting 300s before first signal...

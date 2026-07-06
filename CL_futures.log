@@ -1,0 +1,33 @@
+2026-07-06 10:33:52,473  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-06 10:33:52,473  INFO        Mode       : PAPER
+2026-07-06 10:33:52,473  INFO        Max leverage: 15.0x
+2026-07-06 10:33:52,474  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-06 10:33:52,476  INFO        Evolved leverage: 5.6x
+2026-07-06 10:33:52,476  INFO        Stop width: 4.5%
+2026-07-06 10:33:52,476  INFO      [CL] Bot running — checking every 10 minutes
+2026-07-06 10:33:52,476  INFO      [CL] ── Signal check 10:33 ──
+2026-07-06 10:33:52,797  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 10:33:53,222  INFO      [CL] Portfolio=$100,330.41  Price=$68.46  Position=None
+2026-07-06 10:33:53,222  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 10:33:53,223  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 10:43:53,224  INFO      [CL] ── Signal check 10:43 ──
+2026-07-06 10:43:53,503  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 10:43:53,946  INFO      [CL] Portfolio=$100,344.88  Price=$68.31  Position=None
+2026-07-06 10:43:53,946  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 10:43:53,946  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 10:53:53,947  INFO      [CL] ── Signal check 10:53 ──
+2026-07-06 10:53:54,116  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 10:53:54,563  INFO      [CL] Portfolio=$100,388.73  Price=$68.32  Position=None
+2026-07-06 10:53:54,564  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 10:53:54,564  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 11:03:54,564  INFO      [CL] ── Signal check 11:03 ──
+2026-07-06 11:03:54,758  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 11:03:55,195  INFO      [CL] Portfolio=$100,349.64  Price=$68.26  Position=None
+2026-07-06 11:03:55,195  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 11:03:55,195  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 11:13:55,196  INFO      [CL] ── Signal check 11:13 ──
+2026-07-06 11:13:55,396  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 11:13:55,822  INFO      [CL] Portfolio=$100,373.82  Price=$68.27  Position=None
+2026-07-06 11:13:55,822  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 11:13:55,822  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 11:18:07,240  INFO      [CL] Futures bot stopped by user

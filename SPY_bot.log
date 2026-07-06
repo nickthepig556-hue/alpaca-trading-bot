@@ -2838,3 +2838,275 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='paper-api.alpaca.
 2026-07-05 23:46:22,761  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
 2026-07-05 23:46:22,959  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-06 00:46:23,169  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 01:46:23,370  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 02:46:23,556  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 03:46:23,803  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 04:46:25,163  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 05:46:25,352  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 06:46:25,545  INFO      Market closed. Next open in 44 min. Sleeping...
+2026-07-06 07:30:05,401  INFO      Market open — waiting 300s before first signal...
+2026-07-06 07:35:05,403  INFO      =======================================================
+2026-07-06 07:35:05,404  INFO      Daily signal run  [2026-07-06 07:35]
+2026-07-06 07:35:05,404  INFO      =======================================================
+2026-07-06 07:35:07,691  INFO      Fetched 70 bars for SPY  (2026-03-25 → 2026-07-06)
+2026-07-06 07:35:08,095  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-06 07:35:08,392  INFO      Portfolio value : $100,408.62
+2026-07-06 07:35:08,393  INFO      Current price   : $748.70
+2026-07-06 07:35:08,393  INFO      Open position   : {'qty': 31, 'side': 'long', 'entry_price': 735.14, 'market_value': 23209.855, 'unrealised_pl': 420.515}
+2026-07-06 07:35:08,393  INFO      BUY signal — already long, monitoring existing position
+2026-07-06 07:35:08,393  INFO      Monitoring SPY  |  entry=735.14  stop=724.11  target=757.19
+2026-07-06 07:36:08,723  INFO        SPY [long] price=748.62  stop=724.11  trailing=739.64  target=757.19  P&L=+416.95
+2026-07-06 07:37:09,009  INFO        SPY [long] price=748.43  stop=724.11  trailing=739.64  target=757.19  P&L=+413.77
+2026-07-06 07:38:09,252  INFO        SPY [long] price=747.65  stop=724.11  trailing=739.64  target=757.19  P&L=+388.74
+2026-07-06 07:39:09,504  INFO        SPY [long] price=747.82  stop=724.11  trailing=739.64  target=757.19  P&L=+393.70
+2026-07-06 07:40:09,777  INFO        SPY [long] price=748.16  stop=724.11  trailing=739.64  target=757.19  P&L=+404.86
+2026-07-06 07:41:10,008  INFO        SPY [long] price=748.43  stop=724.11  trailing=739.64  target=757.19  P&L=+411.83
+2026-07-06 07:42:10,244  INFO        SPY [long] price=747.97  stop=724.11  trailing=739.64  target=757.19  P&L=+396.18
+2026-07-06 07:43:10,549  INFO        SPY [long] price=747.94  stop=724.11  trailing=739.64  target=757.19  P&L=+396.80
+2026-07-06 07:44:10,819  INFO        SPY [long] price=748.20  stop=724.11  trailing=739.64  target=757.19  P&L=+405.63
+2026-07-06 07:45:11,144  INFO        SPY [long] price=748.53  stop=724.11  trailing=739.64  target=757.19  P&L=+419.12
+2026-07-06 07:46:11,391  INFO        SPY [long] price=748.89  stop=724.11  trailing=739.90  target=757.19  P&L=+426.87
+2026-07-06 07:47:11,617  INFO        SPY [long] price=748.42  stop=724.11  trailing=739.90  target=757.19  P&L=+411.06
+2026-07-06 07:48:11,833  INFO        SPY [long] price=748.83  stop=724.11  trailing=739.90  target=757.19  P&L=+424.24
+2026-07-06 07:49:12,073  INFO        SPY [long] price=748.91  stop=724.11  trailing=739.92  target=757.19  P&L=+426.56
+2026-07-06 07:50:12,326  INFO        SPY [long] price=748.85  stop=724.11  trailing=739.92  target=757.19  P&L=+425.94
+2026-07-06 07:51:12,609  INFO        SPY [long] price=749.10  stop=724.11  trailing=740.11  target=757.19  P&L=+432.76
+2026-07-06 07:52:12,906  INFO        SPY [long] price=749.12  stop=724.11  trailing=740.13  target=757.19  P&L=+433.07
+2026-07-06 07:53:13,261  INFO        SPY [long] price=748.44  stop=724.11  trailing=740.13  target=757.19  P&L=+412.92
+2026-07-06 07:54:13,481  INFO        SPY [long] price=749.01  stop=724.11  trailing=740.13  target=757.19  P&L=+430.28
+2026-07-06 07:55:13,718  INFO        SPY [long] price=748.78  stop=724.11  trailing=740.13  target=757.19  P&L=+424.08
+2026-07-06 07:56:13,937  INFO        SPY [long] price=748.68  stop=724.11  trailing=740.13  target=757.19  P&L=+420.36
+2026-07-06 07:57:14,192  INFO        SPY [long] price=748.90  stop=724.11  trailing=740.13  target=757.19  P&L=+425.92
+2026-07-06 07:58:14,536  INFO        SPY [long] price=748.78  stop=724.11  trailing=740.13  target=757.19  P&L=+423.46
+2026-07-06 07:59:14,918  INFO        SPY [long] price=748.62  stop=724.11  trailing=740.13  target=757.19  P&L=+416.64
+2026-07-06 08:00:15,237  INFO        SPY [long] price=748.37  stop=724.11  trailing=740.13  target=757.19  P&L=+411.37
+2026-07-06 08:01:15,487  INFO        SPY [long] price=748.68  stop=724.11  trailing=740.13  target=757.19  P&L=+419.74
+2026-07-06 08:02:15,708  INFO        SPY [long] price=748.80  stop=724.11  trailing=740.13  target=757.19  P&L=+423.62
+2026-07-06 08:03:16,004  INFO        SPY [long] price=748.75  stop=724.11  trailing=740.13  target=757.19  P&L=+421.29
+2026-07-06 08:04:16,231  INFO        SPY [long] price=748.52  stop=724.11  trailing=740.13  target=757.19  P&L=+414.78
+2026-07-06 08:05:16,461  INFO        SPY [long] price=748.14  stop=724.11  trailing=740.13  target=757.19  P&L=+403.93
+2026-07-06 08:06:16,736  INFO        SPY [long] price=748.51  stop=724.11  trailing=740.13  target=757.19  P&L=+414.47
+2026-07-06 08:07:16,992  INFO        SPY [long] price=748.53  stop=724.11  trailing=740.13  target=757.19  P&L=+415.25
+2026-07-06 08:08:17,364  INFO        SPY [long] price=748.88  stop=724.11  trailing=740.13  target=757.19  P&L=+425.79
+2026-07-06 08:09:17,651  INFO        SPY [long] price=748.77  stop=724.11  trailing=740.13  target=757.19  P&L=+421.91
+2026-07-06 08:10:17,873  INFO        SPY [long] price=748.87  stop=724.11  trailing=740.13  target=757.19  P&L=+425.63
+2026-07-06 08:11:18,179  INFO        SPY [long] price=748.93  stop=724.11  trailing=740.13  target=757.19  P&L=+427.49
+2026-07-06 08:12:18,418  INFO        SPY [long] price=748.86  stop=724.11  trailing=740.13  target=757.19  P&L=+424.80
+2026-07-06 08:13:18,677  INFO        SPY [long] price=749.03  stop=724.11  trailing=740.13  target=757.19  P&L=+430.75
+2026-07-06 08:14:18,949  INFO        SPY [long] price=749.43  stop=724.11  trailing=740.44  target=757.19  P&L=+443.30
+2026-07-06 08:15:19,214  INFO        SPY [long] price=749.41  stop=724.11  trailing=740.44  target=757.19  P&L=+441.44
+2026-07-06 08:16:19,492  INFO        SPY [long] price=749.11  stop=724.11  trailing=740.44  target=757.19  P&L=+434.00
+2026-07-06 08:17:19,744  INFO        SPY [long] price=749.24  stop=724.11  trailing=740.44  target=757.19  P&L=+437.41
+2026-07-06 08:18:20,013  INFO        SPY [long] price=749.38  stop=724.11  trailing=740.44  target=757.19  P&L=+441.13
+2026-07-06 08:19:20,279  INFO        SPY [long] price=749.12  stop=724.11  trailing=740.44  target=757.19  P&L=+432.92
+2026-07-06 08:20:20,533  INFO        SPY [long] price=749.24  stop=724.11  trailing=740.44  target=757.19  P&L=+436.79
+2026-07-06 08:21:20,833  INFO        SPY [long] price=749.09  stop=724.11  trailing=740.44  target=757.19  P&L=+433.69
+2026-07-06 08:22:21,117  INFO        SPY [long] price=749.39  stop=724.11  trailing=740.44  target=757.19  P&L=+441.60
+2026-07-06 08:23:21,383  INFO        SPY [long] price=749.66  stop=724.11  trailing=740.67  target=757.19  P&L=+450.12
+2026-07-06 08:24:21,674  INFO        SPY [long] price=749.72  stop=724.11  trailing=740.72  target=757.19  P&L=+451.98
+2026-07-06 08:25:21,935  INFO        SPY [long] price=749.79  stop=724.11  trailing=740.79  target=757.19  P&L=+454.46
+2026-07-06 08:26:22,158  INFO        SPY [long] price=749.83  stop=724.11  trailing=740.83  target=757.19  P&L=+455.39
+2026-07-06 08:27:22,431  INFO        SPY [long] price=749.88  stop=724.11  trailing=740.88  target=757.19  P&L=+457.25
+2026-07-06 08:28:22,651  INFO        SPY [long] price=749.81  stop=724.11  trailing=740.88  target=757.19  P&L=+454.77
+2026-07-06 08:29:22,914  INFO        SPY [long] price=749.81  stop=724.11  trailing=740.88  target=757.19  P&L=+454.75
+2026-07-06 08:30:23,190  INFO        SPY [long] price=749.82  stop=724.11  trailing=740.88  target=757.19  P&L=+454.77
+2026-07-06 08:31:23,441  INFO        SPY [long] price=749.86  stop=724.11  trailing=740.88  target=757.19  P&L=+457.56
+2026-07-06 08:32:23,718  INFO        SPY [long] price=750.05  stop=724.11  trailing=741.05  target=757.19  P&L=+462.21
+2026-07-06 08:33:23,959  INFO        SPY [long] price=750.07  stop=724.11  trailing=741.06  target=757.19  P&L=+463.14
+2026-07-06 08:34:24,254  INFO        SPY [long] price=749.73  stop=724.11  trailing=741.06  target=757.19  P&L=+452.91
+2026-07-06 08:35:24,531  INFO        SPY [long] price=749.64  stop=724.11  trailing=741.06  target=757.19  P&L=+449.50
+2026-07-06 08:36:24,943  INFO        SPY [long] price=749.84  stop=724.11  trailing=741.06  target=757.19  P&L=+455.08
+2026-07-06 08:37:25,264  INFO        SPY [long] price=749.59  stop=724.11  trailing=741.06  target=757.19  P&L=+448.88
+2026-07-06 08:38:25,516  INFO        SPY [long] price=749.50  stop=724.11  trailing=741.06  target=757.19  P&L=+445.47
+2026-07-06 08:39:25,804  INFO        SPY [long] price=749.50  stop=724.11  trailing=741.06  target=757.19  P&L=+445.16
+2026-07-06 08:40:26,045  INFO        SPY [long] price=749.57  stop=724.11  trailing=741.06  target=757.19  P&L=+447.18
+2026-07-06 08:41:26,265  INFO        SPY [long] price=749.51  stop=724.11  trailing=741.06  target=757.19  P&L=+444.69
+2026-07-06 08:42:26,512  INFO        SPY [long] price=749.28  stop=724.11  trailing=741.06  target=757.19  P&L=+437.72
+2026-07-06 08:43:26,775  INFO        SPY [long] price=749.27  stop=724.11  trailing=741.06  target=757.19  P&L=+438.34
+2026-07-06 08:44:27,038  INFO        SPY [long] price=749.66  stop=724.11  trailing=741.06  target=757.19  P&L=+450.89
+2026-07-06 08:45:27,257  INFO        SPY [long] price=749.68  stop=724.11  trailing=741.06  target=757.19  P&L=+450.12
+2026-07-06 08:46:27,549  INFO        SPY [long] price=749.72  stop=724.11  trailing=741.06  target=757.19  P&L=+452.60
+2026-07-06 08:47:27,799  INFO        SPY [long] price=749.60  stop=724.11  trailing=741.06  target=757.19  P&L=+448.57
+2026-07-06 08:48:28,031  INFO        SPY [long] price=749.60  stop=724.11  trailing=741.06  target=757.19  P&L=+447.49
+2026-07-06 08:49:28,279  INFO        SPY [long] price=749.79  stop=724.11  trailing=741.06  target=757.19  P&L=+454.15
+2026-07-06 08:50:28,551  INFO        SPY [long] price=749.89  stop=724.11  trailing=741.06  target=757.19  P&L=+458.80
+2026-07-06 08:51:28,779  INFO        SPY [long] price=749.89  stop=724.11  trailing=741.06  target=757.19  P&L=+457.40
+2026-07-06 08:52:29,096  INFO        SPY [long] price=749.75  stop=724.11  trailing=741.06  target=757.19  P&L=+452.91
+2026-07-06 08:53:29,330  INFO        SPY [long] price=749.73  stop=724.11  trailing=741.06  target=757.19  P&L=+452.29
+2026-07-06 08:54:29,562  INFO        SPY [long] price=749.89  stop=724.11  trailing=741.06  target=757.19  P&L=+457.56
+2026-07-06 08:55:29,824  INFO        SPY [long] price=749.77  stop=724.11  trailing=741.06  target=757.19  P&L=+454.15
+2026-07-06 08:56:30,095  INFO        SPY [long] price=749.86  stop=724.11  trailing=741.06  target=757.19  P&L=+456.17
+2026-07-06 08:57:30,334  INFO        SPY [long] price=749.78  stop=724.11  trailing=741.06  target=757.19  P&L=+453.84
+2026-07-06 08:58:30,564  INFO        SPY [long] price=750.05  stop=724.11  trailing=741.06  target=757.19  P&L=+462.83
+2026-07-06 08:59:30,810  INFO        SPY [long] price=750.06  stop=724.11  trailing=741.06  target=757.19  P&L=+463.76
+2026-07-06 09:00:31,035  INFO        SPY [long] price=750.20  stop=724.11  trailing=741.20  target=757.19  P&L=+465.93
+2026-07-06 09:01:31,348  INFO        SPY [long] price=750.15  stop=724.11  trailing=741.20  target=757.19  P&L=+465.31
+2026-07-06 09:02:31,578  INFO        SPY [long] price=750.29  stop=724.11  trailing=741.29  target=757.19  P&L=+469.65
+2026-07-06 09:03:31,834  INFO        SPY [long] price=750.25  stop=724.11  trailing=741.29  target=757.19  P&L=+468.41
+2026-07-06 09:04:32,102  INFO        SPY [long] price=750.29  stop=724.11  trailing=741.29  target=757.19  P&L=+469.61
+2026-07-06 09:05:32,324  INFO        SPY [long] price=750.10  stop=724.11  trailing=741.29  target=757.19  P&L=+464.07
+2026-07-06 09:06:32,664  INFO        SPY [long] price=750.22  stop=724.11  trailing=741.29  target=757.19  P&L=+467.48
+2026-07-06 09:07:32,895  INFO        SPY [long] price=750.17  stop=724.11  trailing=741.29  target=757.19  P&L=+465.93
+2026-07-06 09:08:33,148  INFO        SPY [long] price=750.09  stop=724.11  trailing=741.29  target=757.19  P&L=+464.07
+2026-07-06 09:09:33,411  INFO        SPY [long] price=750.12  stop=724.11  trailing=741.29  target=757.19  P&L=+464.69
+2026-07-06 09:10:33,636  INFO        SPY [long] price=750.30  stop=724.11  trailing=741.30  target=757.19  P&L=+469.65
+2026-07-06 09:11:33,889  INFO        SPY [long] price=750.29  stop=724.11  trailing=741.30  target=757.19  P&L=+469.93
+2026-07-06 09:12:34,142  INFO        SPY [long] price=750.17  stop=724.11  trailing=741.30  target=757.19  P&L=+465.31
+2026-07-06 09:13:34,371  INFO        SPY [long] price=749.97  stop=724.11  trailing=741.30  target=757.19  P&L=+459.73
+2026-07-06 09:14:34,647  INFO        SPY [long] price=750.02  stop=724.11  trailing=741.30  target=757.19  P&L=+461.90
+2026-07-06 09:15:34,907  INFO        SPY [long] price=749.95  stop=724.11  trailing=741.30  target=757.19  P&L=+459.11
+2026-07-06 09:16:35,176  INFO        SPY [long] price=749.91  stop=724.11  trailing=741.30  target=757.19  P&L=+457.87
+2026-07-06 09:17:35,505  INFO        SPY [long] price=749.82  stop=724.11  trailing=741.30  target=757.19  P&L=+452.91
+2026-07-06 09:18:35,774  INFO        SPY [long] price=749.67  stop=724.11  trailing=741.30  target=757.19  P&L=+450.43
+2026-07-06 09:19:36,008  INFO        SPY [long] price=749.69  stop=724.11  trailing=741.30  target=757.19  P&L=+451.67
+2026-07-06 09:20:36,350  INFO        SPY [long] price=749.83  stop=724.11  trailing=741.30  target=757.19  P&L=+456.32
+2026-07-06 09:21:36,605  INFO        SPY [long] price=749.81  stop=724.11  trailing=741.30  target=757.19  P&L=+454.77
+2026-07-06 09:22:36,857  INFO        SPY [long] price=749.96  stop=724.11  trailing=741.30  target=757.19  P&L=+458.18
+2026-07-06 09:23:37,077  INFO        SPY [long] price=749.99  stop=724.11  trailing=741.30  target=757.19  P&L=+460.35
+2026-07-06 09:24:37,301  INFO        SPY [long] price=750.17  stop=724.11  trailing=741.30  target=757.19  P&L=+466.08
+2026-07-06 09:25:37,529  INFO        SPY [long] price=750.24  stop=724.11  trailing=741.30  target=757.19  P&L=+467.79
+2026-07-06 09:26:37,758  INFO        SPY [long] price=750.59  stop=724.11  trailing=741.58  target=757.19  P&L=+479.26
+2026-07-06 09:27:37,978  INFO        SPY [long] price=750.58  stop=724.11  trailing=741.58  target=757.19  P&L=+478.33
+2026-07-06 09:28:38,207  INFO        SPY [long] price=750.43  stop=724.11  trailing=741.58  target=757.19  P&L=+474.30
+2026-07-06 09:29:38,465  INFO        SPY [long] price=750.72  stop=724.11  trailing=741.71  target=757.19  P&L=+482.98
+2026-07-06 09:30:38,729  INFO        SPY [long] price=750.78  stop=724.11  trailing=741.77  target=757.19  P&L=+484.69
+2026-07-06 09:31:38,940  INFO        SPY [long] price=750.91  stop=724.11  trailing=741.90  target=757.19  P&L=+488.56
+2026-07-06 09:32:39,180  INFO        SPY [long] price=750.66  stop=724.11  trailing=741.90  target=757.19  P&L=+480.96
+2026-07-06 09:33:39,390  INFO        SPY [long] price=750.71  stop=724.11  trailing=741.90  target=757.19  P&L=+482.36
+2026-07-06 09:34:39,622  INFO        SPY [long] price=750.70  stop=724.11  trailing=741.90  target=757.19  P&L=+481.74
+2026-07-06 09:35:39,869  INFO        SPY [long] price=750.53  stop=724.11  trailing=741.90  target=757.19  P&L=+477.40
+2026-07-06 09:36:40,173  INFO        SPY [long] price=750.55  stop=724.11  trailing=741.90  target=757.19  P&L=+478.33
+2026-07-06 09:37:40,549  INFO        SPY [long] price=750.50  stop=724.11  trailing=741.90  target=757.19  P&L=+476.16
+2026-07-06 09:38:40,785  INFO        SPY [long] price=750.61  stop=724.11  trailing=741.90  target=757.19  P&L=+479.73
+2026-07-06 09:39:41,038  INFO        SPY [long] price=750.63  stop=724.11  trailing=741.90  target=757.19  P&L=+480.19
+2026-07-06 09:40:41,316  INFO        SPY [long] price=750.59  stop=724.11  trailing=741.90  target=757.19  P&L=+478.02
+2026-07-06 09:41:41,646  INFO        SPY [long] price=750.72  stop=724.11  trailing=741.90  target=757.19  P&L=+483.60
+2026-07-06 09:42:41,893  INFO        SPY [long] price=750.75  stop=724.11  trailing=741.90  target=757.19  P&L=+484.38
+2026-07-06 09:43:42,115  INFO        SPY [long] price=750.76  stop=724.11  trailing=741.90  target=757.19  P&L=+485.31
+2026-07-06 09:44:42,357  INFO        SPY [long] price=750.80  stop=724.11  trailing=741.90  target=757.19  P&L=+486.08
+2026-07-06 09:45:42,597  INFO        SPY [long] price=750.85  stop=724.11  trailing=741.90  target=757.19  P&L=+487.32
+2026-07-06 09:46:42,841  INFO        SPY [long] price=750.76  stop=724.11  trailing=741.90  target=757.19  P&L=+484.22
+2026-07-06 09:47:43,050  INFO        SPY [long] price=750.75  stop=724.11  trailing=741.90  target=757.19  P&L=+484.22
+2026-07-06 09:48:43,298  INFO        SPY [long] price=750.71  stop=724.11  trailing=741.90  target=757.19  P&L=+483.60
+2026-07-06 09:49:43,517  INFO        SPY [long] price=750.84  stop=724.11  trailing=741.90  target=757.19  P&L=+486.70
+2026-07-06 09:50:43,824  INFO        SPY [long] price=750.94  stop=724.11  trailing=741.93  target=757.19  P&L=+489.64
+2026-07-06 09:51:44,075  INFO        SPY [long] price=750.89  stop=724.11  trailing=741.93  target=757.19  P&L=+488.40
+2026-07-06 09:52:44,316  INFO        SPY [long] price=750.65  stop=724.11  trailing=741.93  target=757.19  P&L=+481.43
+2026-07-06 09:53:44,557  INFO        SPY [long] price=750.69  stop=724.11  trailing=741.93  target=757.19  P&L=+482.05
+2026-07-06 09:54:44,802  INFO        SPY [long] price=750.67  stop=724.11  trailing=741.93  target=757.19  P&L=+481.58
+2026-07-06 09:55:45,028  INFO        SPY [long] price=750.73  stop=724.11  trailing=741.93  target=757.19  P&L=+483.13
+2026-07-06 09:56:45,272  INFO        SPY [long] price=750.86  stop=724.11  trailing=741.93  target=757.19  P&L=+487.63
+2026-07-06 09:57:45,501  INFO        SPY [long] price=750.88  stop=724.11  trailing=741.93  target=757.19  P&L=+487.01
+2026-07-06 09:58:45,743  INFO        SPY [long] price=750.84  stop=724.11  trailing=741.93  target=757.19  P&L=+486.08
+2026-07-06 09:59:46,012  INFO        SPY [long] price=750.85  stop=724.11  trailing=741.93  target=757.19  P&L=+487.01
+2026-07-06 10:00:46,245  INFO        SPY [long] price=750.75  stop=724.11  trailing=741.93  target=757.19  P&L=+483.91
+2026-07-06 10:01:46,493  INFO        SPY [long] price=750.72  stop=724.11  trailing=741.93  target=757.19  P&L=+483.29
+2026-07-06 10:02:46,751  INFO        SPY [long] price=750.70  stop=724.11  trailing=741.93  target=757.19  P&L=+482.36
+2026-07-06 10:03:46,995  INFO        SPY [long] price=750.74  stop=724.11  trailing=741.93  target=757.19  P&L=+483.91
+2026-07-06 10:04:47,202  INFO        SPY [long] price=750.75  stop=724.11  trailing=741.93  target=757.19  P&L=+483.91
+2026-07-06 10:05:47,612  INFO        SPY [long] price=750.86  stop=724.11  trailing=741.93  target=757.19  P&L=+487.01
+2026-07-06 10:06:47,862  INFO        SPY [long] price=750.81  stop=724.11  trailing=741.93  target=757.19  P&L=+486.08
+2026-07-06 10:07:48,099  INFO        SPY [long] price=750.95  stop=724.11  trailing=741.93  target=757.19  P&L=+489.95
+2026-07-06 10:08:48,333  INFO        SPY [long] price=750.90  stop=724.11  trailing=741.93  target=757.19  P&L=+488.56
+2026-07-06 10:09:48,606  INFO        SPY [long] price=751.00  stop=724.11  trailing=741.99  target=757.19  P&L=+491.66
+2026-07-06 10:10:48,828  INFO        SPY [long] price=751.04  stop=724.11  trailing=742.03  target=757.19  P&L=+492.90
+2026-07-06 10:11:49,025  INFO        SPY [long] price=751.04  stop=724.11  trailing=742.03  target=757.19  P&L=+492.90
+2026-07-06 10:12:49,318  INFO        SPY [long] price=750.99  stop=724.11  trailing=742.03  target=757.19  P&L=+491.35
+2026-07-06 10:13:49,642  INFO        SPY [long] price=750.95  stop=724.11  trailing=742.03  target=757.19  P&L=+489.80
+2026-07-06 10:14:49,970  INFO        SPY [long] price=751.06  stop=724.11  trailing=742.05  target=757.19  P&L=+493.52
+2026-07-06 10:15:50,218  INFO        SPY [long] price=751.01  stop=724.11  trailing=742.05  target=757.19  P&L=+491.97
+2026-07-06 10:16:50,466  INFO        SPY [long] price=750.97  stop=724.11  trailing=742.05  target=757.19  P&L=+490.42
+2026-07-06 10:17:50,899  INFO        SPY [long] price=750.93  stop=724.11  trailing=742.05  target=757.19  P&L=+489.80
+2026-07-06 10:18:51,173  INFO        SPY [long] price=750.89  stop=724.11  trailing=742.05  target=757.19  P&L=+488.56
+2026-07-06 10:19:51,391  INFO        SPY [long] price=750.99  stop=724.11  trailing=742.05  target=757.19  P&L=+491.66
+2026-07-06 10:20:51,600  INFO        SPY [long] price=750.98  stop=724.11  trailing=742.05  target=757.19  P&L=+490.57
+2026-07-06 10:21:51,842  INFO        SPY [long] price=750.87  stop=724.11  trailing=742.05  target=757.19  P&L=+487.63
+2026-07-06 10:22:52,094  INFO        SPY [long] price=750.89  stop=724.11  trailing=742.05  target=757.19  P&L=+488.10
+2026-07-06 10:23:52,387  INFO        SPY [long] price=750.89  stop=724.11  trailing=742.05  target=757.19  P&L=+488.25
+2026-07-06 10:24:52,635  INFO        SPY [long] price=750.83  stop=724.11  trailing=742.05  target=757.19  P&L=+487.32
+2026-07-06 10:25:52,882  INFO        SPY [long] price=750.88  stop=724.11  trailing=742.05  target=757.19  P&L=+488.10
+2026-07-06 10:26:53,251  INFO        SPY [long] price=750.76  stop=724.11  trailing=742.05  target=757.19  P&L=+484.38
+2026-07-06 10:27:53,474  INFO        SPY [long] price=750.65  stop=724.11  trailing=742.05  target=757.19  P&L=+481.43
+2026-07-06 10:28:53,726  INFO        SPY [long] price=750.62  stop=724.11  trailing=742.05  target=757.19  P&L=+479.88
+2026-07-06 10:29:44,299  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:29:44,302  INFO      [SPY] Process exiting
+2026-07-06 10:29:53,506  INFO      [SPY] Process started  PID=42056
+2026-07-06 10:29:53,508  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-06 10:29:53,509  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:29:53,509  INFO         Mode    : PAPER
+2026-07-06 10:29:53,509  INFO         Ticker  : SPY
+2026-07-06 10:29:53,509  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-06 10:29:53,509  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:29:53,516  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-06 10:29:53,733  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:33:34,806  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 10:33:34,810  INFO      [SPY] Process exiting
+2026-07-06 10:33:40,435  INFO      [SPY] Process started  PID=48632
+2026-07-06 10:33:40,437  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-06 10:33:40,438  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 10:33:40,438  INFO         Mode    : PAPER
+2026-07-06 10:33:40,438  INFO         Ticker  : SPY
+2026-07-06 10:33:40,438  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-06 10:33:40,438  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 10:33:40,439  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-06 10:33:40,637  INFO      Market open — waiting 300s before first signal...
+2026-07-06 10:38:40,637  INFO      =======================================================
+2026-07-06 10:38:40,638  INFO      Daily signal run  [2026-07-06 10:38]
+2026-07-06 10:38:40,638  INFO      =======================================================
+2026-07-06 10:38:41,306  INFO      Fetched 70 bars for SPY  (2026-03-25 → 2026-07-06)
+2026-07-06 10:38:41,534  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-06 10:38:41,692  INFO      Portfolio value : $100,352.12
+2026-07-06 10:38:41,692  INFO      Current price   : $750.45
+2026-07-06 10:38:41,692  INFO      Open position   : {'qty': 31, 'side': 'long', 'entry_price': 735.14, 'market_value': 23263.02, 'unrealised_pl': 473.68}
+2026-07-06 10:38:41,692  INFO      BUY signal — already long, monitoring existing position
+2026-07-06 10:38:41,692  INFO      Monitoring SPY  |  entry=735.14  stop=724.11  target=757.19
+2026-07-06 10:39:41,955  INFO        SPY [long] price=750.58  stop=724.11  trailing=741.57  target=757.19  P&L=+478.33
+2026-07-06 10:40:42,193  INFO        SPY [long] price=750.72  stop=724.11  trailing=741.71  target=757.19  P&L=+482.98
+2026-07-06 10:41:42,419  INFO        SPY [long] price=750.66  stop=724.11  trailing=741.71  target=757.19  P&L=+481.12
+2026-07-06 10:42:42,672  INFO        SPY [long] price=750.67  stop=724.11  trailing=741.71  target=757.19  P&L=+481.43
+2026-07-06 10:43:42,911  INFO        SPY [long] price=750.64  stop=724.11  trailing=741.71  target=757.19  P&L=+480.35
+2026-07-06 10:44:43,286  INFO        SPY [long] price=750.74  stop=724.11  trailing=741.73  target=757.19  P&L=+483.60
+2026-07-06 10:45:43,517  INFO        SPY [long] price=750.59  stop=724.11  trailing=741.73  target=757.19  P&L=+478.95
+2026-07-06 10:46:43,772  INFO        SPY [long] price=750.73  stop=724.11  trailing=741.73  target=757.19  P&L=+484.53
+2026-07-06 10:47:44,037  INFO        SPY [long] price=750.97  stop=724.11  trailing=741.96  target=757.19  P&L=+490.73
+2026-07-06 10:48:44,283  INFO        SPY [long] price=750.97  stop=724.11  trailing=741.96  target=757.19  P&L=+490.57
+2026-07-06 10:49:44,529  INFO        SPY [long] price=751.02  stop=724.11  trailing=742.01  target=757.19  P&L=+491.66
+2026-07-06 10:50:44,826  INFO        SPY [long] price=751.01  stop=724.11  trailing=742.01  target=757.19  P&L=+492.28
+2026-07-06 10:51:45,055  INFO        SPY [long] price=750.92  stop=724.11  trailing=742.01  target=757.19  P&L=+488.25
+2026-07-06 10:52:45,257  INFO        SPY [long] price=750.85  stop=724.11  trailing=742.01  target=757.19  P&L=+486.70
+2026-07-06 10:53:45,511  INFO        SPY [long] price=750.82  stop=724.11  trailing=742.01  target=757.19  P&L=+486.08
+2026-07-06 10:54:45,775  INFO        SPY [long] price=750.72  stop=724.11  trailing=742.01  target=757.19  P&L=+482.98
+2026-07-06 10:55:46,034  INFO        SPY [long] price=750.61  stop=724.11  trailing=742.01  target=757.19  P&L=+479.24
+2026-07-06 10:56:46,236  INFO        SPY [long] price=750.52  stop=724.11  trailing=742.01  target=757.19  P&L=+476.47
+2026-07-06 10:57:46,490  INFO        SPY [long] price=750.70  stop=724.11  trailing=742.01  target=757.19  P&L=+482.20
+2026-07-06 10:58:46,782  INFO        SPY [long] price=750.54  stop=724.11  trailing=742.01  target=757.19  P&L=+477.42
+2026-07-06 10:59:47,028  INFO        SPY [long] price=750.40  stop=724.11  trailing=742.01  target=757.19  P&L=+473.37
+2026-07-06 11:00:47,454  INFO        SPY [long] price=750.58  stop=724.11  trailing=742.01  target=757.19  P&L=+478.95
+2026-07-06 11:01:47,718  INFO        SPY [long] price=750.68  stop=724.11  trailing=742.01  target=757.19  P&L=+481.74
+2026-07-06 11:02:48,041  INFO        SPY [long] price=750.59  stop=724.11  trailing=742.01  target=757.19  P&L=+478.64
+2026-07-06 11:03:48,269  INFO        SPY [long] price=750.84  stop=724.11  trailing=742.01  target=757.19  P&L=+486.78
+2026-07-06 11:04:48,604  INFO        SPY [long] price=750.83  stop=724.11  trailing=742.01  target=757.19  P&L=+486.70
+2026-07-06 11:05:48,868  INFO        SPY [long] price=751.13  stop=724.11  trailing=742.12  target=757.19  P&L=+495.38
+2026-07-06 11:06:49,102  INFO        SPY [long] price=751.45  stop=724.11  trailing=742.43  target=757.19  P&L=+506.54
+2026-07-06 11:07:49,361  INFO        SPY [long] price=751.48  stop=724.11  trailing=742.47  target=757.19  P&L=+506.85
+2026-07-06 11:08:49,598  INFO        SPY [long] price=751.39  stop=724.11  trailing=742.47  target=757.19  P&L=+503.75
+2026-07-06 11:09:49,849  INFO        SPY [long] price=751.40  stop=724.11  trailing=742.47  target=757.19  P&L=+504.06
+2026-07-06 11:10:50,072  INFO        SPY [long] price=751.35  stop=724.11  trailing=742.47  target=757.19  P&L=+502.51
+2026-07-06 11:11:50,329  INFO        SPY [long] price=751.30  stop=724.11  trailing=742.47  target=757.19  P&L=+500.65
+2026-07-06 11:12:50,589  INFO        SPY [long] price=751.40  stop=724.11  trailing=742.47  target=757.19  P&L=+503.75
+2026-07-06 11:13:50,885  INFO        SPY [long] price=751.20  stop=724.11  trailing=742.47  target=757.19  P&L=+498.48
+2026-07-06 11:14:51,147  INFO        SPY [long] price=751.24  stop=724.11  trailing=742.47  target=757.19  P&L=+499.41
+2026-07-06 11:15:51,380  INFO        SPY [long] price=751.35  stop=724.11  trailing=742.47  target=757.19  P&L=+502.20
+2026-07-06 11:16:51,630  INFO        SPY [long] price=751.28  stop=724.11  trailing=742.47  target=757.19  P&L=+500.96
+2026-07-06 11:17:51,871  INFO        SPY [long] price=751.14  stop=724.11  trailing=742.47  target=757.19  P&L=+496.00
+2026-07-06 11:18:07,240  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-06 11:18:07,246  INFO      [SPY] Process exiting
+2026-07-06 11:32:00,620  INFO      [SPY] Process started  PID=66896
+2026-07-06 11:32:00,624  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-06 11:32:00,624  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-06 11:32:00,624  INFO         Mode    : PAPER
+2026-07-06 11:32:00,624  INFO         Ticker  : SPY
+2026-07-06 11:32:00,624  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-06 11:32:00,624  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-06 11:32:00,626  INFO      Chromosome loaded from SPY_best_chromosome.csv  (24 genes)
+2026-07-06 11:32:00,817  INFO      Market open — waiting 300s before first signal...

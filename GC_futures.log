@@ -1,0 +1,33 @@
+2026-07-06 10:33:50,461  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-06 10:33:50,461  INFO        Mode       : PAPER
+2026-07-06 10:33:50,462  INFO        Max leverage: 15.0x
+2026-07-06 10:33:50,462  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-06 10:33:50,464  INFO        Evolved leverage: 6.6x
+2026-07-06 10:33:50,464  INFO        Stop width: 9.0%
+2026-07-06 10:33:50,464  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-06 10:33:50,464  INFO      [GC] ── Signal check 10:33 ──
+2026-07-06 10:33:50,815  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 10:33:51,249  INFO      [GC] Portfolio=$100,334.43  Price=$4156.10  Position=None
+2026-07-06 10:33:51,250  INFO      [GC] FLAT signal — no trade
+2026-07-06 10:33:51,250  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-06 10:43:51,250  INFO      [GC] ── Signal check 10:43 ──
+2026-07-06 10:43:51,446  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 10:43:51,873  INFO      [GC] Portfolio=$100,345.55  Price=$4160.00  Position=None
+2026-07-06 10:43:51,874  INFO      [GC] FLAT signal — no trade
+2026-07-06 10:43:51,874  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-06 10:53:51,875  INFO      [GC] ── Signal check 10:53 ──
+2026-07-06 10:53:52,047  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 10:53:52,446  INFO      [GC] Portfolio=$100,393.75  Price=$4161.70  Position=None
+2026-07-06 10:53:52,446  INFO      [GC] FLAT signal — no trade
+2026-07-06 10:53:52,446  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-06 11:03:52,447  INFO      [GC] ── Signal check 11:03 ──
+2026-07-06 11:03:52,589  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 11:03:53,066  INFO      [GC] Portfolio=$100,349.15  Price=$4166.10  Position=None
+2026-07-06 11:03:53,066  INFO      [GC] FLAT signal — no trade
+2026-07-06 11:03:53,066  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-06 11:13:53,067  INFO      [GC] ── Signal check 11:13 ──
+2026-07-06 11:13:53,263  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 11:13:53,976  INFO      [GC] Portfolio=$100,372.20  Price=$4164.70  Position=None
+2026-07-06 11:13:53,976  INFO      [GC] FLAT signal — no trade
+2026-07-06 11:13:53,976  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-06 11:18:07,240  INFO      [GC] Futures bot stopped by user
