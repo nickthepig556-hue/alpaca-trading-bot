@@ -843,40 +843,6 @@ def api_futures_list():
         })
     return jsonify(result)
 
-
-# ── /api/futures/train ───────────────────────────────────────────────────────
-@app.route("/api/futures/train", methods=["POST"])
-def api_futures_train():
-    """
-    Train a futures chromosome in the background.
-    Body: { ticker: "BTC/USD" }
-    """
-    data   = request.get_json()
-    ticker = (data or {}).get("ticker", "").upper()
-
-    from futures_bot import FUTURES_CONFIGS
-    if ticker not in FUTURES_CONFIGS:
-        return jsonify({"error": f"Unknown ticker: {ticker}"}), 400
-
-    def _train():
-        try:
-            import subprocess, sys
-            result = subprocess.run(
-                [sys.executable, "futures_bot.py", "--train", "--ticker", ticker],
-                capture_output=True, text=True, timeout=3600
-            )
-            if result.returncode == 0:
-                log.info(f"Futures training complete: {ticker}")
-            else:
-                log.error(f"Futures training failed: {result.stderr[-300:]}")
-        except Exception as e:
-            log.error(f"Futures training error: {e}")
-
-    import threading
-    threading.Thread(target=_train, daemon=True).start()
-    return jsonify({"ok": True, "status": "training", "ticker": ticker})
-
-
 # ── /api/futures/signal ──────────────────────────────────────────────────────
 @app.route("/api/futures/signal")
 def api_futures_signal():
@@ -969,6 +935,43 @@ def api_futures_chromosome():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/api/futures/train", methods=["POST"])
+def api_futures_train():
+    """Train a futures chromosome. Prevents duplicate training processes."""
+    import threading
+    data   = request.get_json()
+    ticker = (data or {}).get("ticker", "").upper()
+
+    from futures_bot import FUTURES_CONFIGS
+    if ticker not in FUTURES_CONFIGS:
+        return jsonify({"error": f"Unknown ticker: {ticker}"}), 400
+
+    # Prevent duplicate training
+    if getattr(app, '_training_tickers', None) is None:
+        app._training_tickers = set()
+    if ticker in app._training_tickers:
+        return jsonify({"ok": False, "error": f"{ticker} is already training"}), 400
+
+    app._training_tickers.add(ticker)
+
+    def _train():
+        try:
+            import subprocess, sys
+            result = subprocess.run(
+                [sys.executable, "futures_bot.py", "--train", "--ticker", ticker],
+                capture_output=True, text=True, timeout=3600
+            )
+            if result.returncode == 0:
+                log.info(f"Futures training complete: {ticker}")
+            else:
+                log.error(f"Futures training failed: {result.stderr[-300:]}")
+        except Exception as e:
+            log.error(f"Futures training error: {e}")
+        finally:
+            app._training_tickers.discard(ticker)
+
+    threading.Thread(target=_train, daemon=True).start()
+    return jsonify({"ok": True, "status": "training", "ticker": ticker})
 if __name__ == "__main__":
     print("\n" + "="*55)
     print("  Step 5 — Flask API server")

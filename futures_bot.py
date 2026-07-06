@@ -1,5 +1,5 @@
 """
-futures_bot.py  —  Futures Trading Module
+futures_bot.py  --  Futures Trading Module
 ==========================================
 Extends alpaca_bot.py with futures trading capabilities.
 
@@ -11,10 +11,10 @@ Index futures   : ES (S&P 500), NQ (Nasdaq), GC (Gold), CL (Crude Oil)
 
 GA Chromosome Extension (32 genes instead of 24)
 -------------------------------------------------
-genes[0:12]   → feature weights      (same as spot)
-genes[12:24]  → buy thresholds       (same as spot)
-genes[24:28]  → leverage genes       (evolved leverage 1x-10x)
-genes[28:32]  → risk genes           (stop width, position sizing)
+genes[0:12]   -> feature weights      (same as spot)
+genes[12:24]  -> buy thresholds       (same as spot)
+genes[24:28]  -> leverage genes       (evolved leverage 1x-10x)
+genes[28:32]  -> risk genes           (stop width, position sizing)
 
 Leverage Calculation
 --------------------
@@ -44,12 +44,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv()
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # FUTURES CONFIGURATION
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 FUTURES_CONFIGS = {
-    # ── Crypto futures (Alpaca paper supported) ───────────────────────────────
+    # -- Crypto futures (Alpaca paper supported) -------------------------------
     "BTC/USD": {
         "name"           : "Bitcoin Futures",
         "type"           : "crypto",
@@ -80,7 +80,7 @@ FUTURES_CONFIGS = {
         "chromosome_file": "ETH_futures_chromosome.csv",
         "log_file"       : "ETH_futures.log",
     },
-    # ── Index futures (require funded futures account) ────────────────────────
+    # -- Index futures (require funded futures account) ------------------------
     "ES": {
         "name"           : "E-mini S&P 500 Futures",
         "type"           : "index",
@@ -143,6 +143,63 @@ FUTURES_CONFIGS = {
     },
 }
 
+# ------------------------------------------------------------------------------
+# DYNAMIC TICKER REGISTRATION
+# ------------------------------------------------------------------------------
+
+DYNAMIC_FUTURES_FILE = Path(__file__).parent / "dynamic_futures.json"
+
+def load_dynamic_tickers() -> dict:
+    if DYNAMIC_FUTURES_FILE.exists():
+        import json
+        return json.loads(DYNAMIC_FUTURES_FILE.read_text())
+    return {}
+
+def save_dynamic_tickers(tickers: dict) -> None:
+    import json
+    DYNAMIC_FUTURES_FILE.write_text(json.dumps(tickers, indent=2))
+
+def register_dynamic_ticker(ticker: str, asset_type: str = "crypto",
+                             max_leverage: float = 10.0) -> tuple[bool, str]:
+    import yfinance as yf
+    yf_map = {"crypto": ticker.replace("/", "-"), "index": ticker + "=F",
+               "commodity": ticker + "=F"}
+    yf_sym = yf_map.get(asset_type, ticker.replace("/", "-"))
+    try:
+        df = yf.download(yf_sym, period="30d", auto_adjust=True, progress=False)
+        if df.empty or len(df) < 10:
+            return False, f"No data found for {yf_sym}"
+    except Exception as e:
+        return False, f"Failed to validate {ticker}: {e}"
+
+    safe = ticker.replace("/", "-")
+    config = {
+        "name"           : f"{ticker} Futures",
+        "type"           : asset_type,
+        "yf_symbol"      : yf_sym,
+        "alpaca_symbol"  : ticker,
+        "max_leverage"   : max_leverage,
+        "min_leverage"   : 1.0,
+        "contract_size"  : 1,
+        "tick_size"      : 0.01,
+        "margin_req"     : 0.10,
+        "trading_hours"  : "24/7" if asset_type == "crypto" else "23h/day (Mon-Fri)",
+        "volatility_band": "extreme" if asset_type == "crypto" else "high",
+        "chromosome_file": f"{safe}_futures_chromosome.csv",
+        "log_file"       : f"{safe}_futures.log",
+    }
+    FUTURES_CONFIGS[ticker] = config
+    dynamic = load_dynamic_tickers()
+    dynamic[ticker] = config
+    save_dynamic_tickers(dynamic)
+    return True, f"{ticker} registered successfully"
+
+# Load dynamic tickers on import
+try:
+    FUTURES_CONFIGS.update(load_dynamic_tickers())
+except Exception:
+    pass
+
 # Extended chromosome length for futures
 FUTURES_CHROM_LENGTH = 32   # 24 base + 4 leverage + 4 risk genes
 FEATURES = [
@@ -151,9 +208,9 @@ FEATURES = [
     'Daily_Return', 'Volume_Change',
 ]
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # EXTENDED GA CONFIG FOR FUTURES
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 FUTURES_GA_CONFIG = {
     "extreme": {   # Crypto
@@ -216,9 +273,9 @@ FUTURES_GA_CONFIG = {
 }
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # CHROMOSOME DECODER
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 def decode_futures_chromosome(chrom: np.ndarray) -> dict:
     """
@@ -294,28 +351,28 @@ def compute_futures_signal(df_scaled: pd.DataFrame,
     else:
         signal = 0    # flat / too uncertain
 
-    # GA-evolved leverage — scales with confidence
+    # GA-evolved leverage -- scales with confidence
     max_lev  = min(decoded["max_leverage"], config.get("max_leverage", 10.0))
     leverage = 1.0 + confidence * (max_lev - 1.0) * decoded["leverage_genes"].mean()
     leverage = float(np.clip(leverage, 1.0, max_lev))
 
-    # Low confidence cap — don't use leverage if not confident
+    # Low confidence cap -- don't use leverage if not confident
     if confidence < 0.45:
         leverage = 1.0
 
     return signal, round(confidence, 4), round(leverage, 2)
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # FUTURES FITNESS FUNCTION
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 def futures_fitness(chrom: np.ndarray,
                     df_scaled: pd.DataFrame,
                     df_raw: pd.DataFrame,
                     config: dict) -> float:
     """
-    Vectorised futures fitness — computes all signals at once then simulates.
+    Vectorised futures fitness -- computes all signals at once then simulates.
     Much faster than calling compute_futures_signal per row.
     """
     decoded  = decode_futures_chromosome(chrom)
@@ -407,9 +464,9 @@ def futures_fitness(chrom: np.ndarray,
     return float(score)
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # FUTURES GA TRAINING
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
                       df_raw: pd.DataFrame) -> dict:
@@ -444,11 +501,11 @@ def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
     stag_count = 0
 
     print(f"\n{'='*60}")
-    print(f"  FUTURES GA — {ticker} ({f_cfg['name']})")
+    print(f"  FUTURES GA -- {ticker} ({f_cfg['name']})")
     print(f"  Max leverage: {f_cfg['max_leverage']}x  |  {n_gens} generations")
     print(f"{'='*60}")
     print(f"{'Gen':>5} | {'Best Fit':>10} | {'Leverage':>9} | {'Stop':>7} | {'TP Mult':>8}")
-    print(f"{'─'*55}")
+    print(f"{'-'*55}")
 
     for gen in range(1, n_gens + 1):
         elite_idx = np.argsort(fitnesses)[-elite_n:]
@@ -507,7 +564,7 @@ def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
 
     decoded = decode_futures_chromosome(best_chrom)
     print(f"\n{'='*60}")
-    print(f"  FUTURES TRAINING COMPLETE — {ticker}")
+    print(f"  FUTURES TRAINING COMPLETE -- {ticker}")
     print(f"  Best fitness    : {best_fit:.4f}")
     print(f"  Evolved leverage: {decoded['max_leverage']:.1f}x")
     print(f"  Stop width      : {decoded['stop_width']*100:.1f}%")
@@ -558,9 +615,9 @@ def load_futures_chromosome(ticker: str) -> np.ndarray:
     return chrom
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # RISK GUARD FOR FUTURES
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 class FuturesRiskGuard:
     """
@@ -582,7 +639,7 @@ class FuturesRiskGuard:
     def check(self, confidence: float, leverage: float,
               portfolio_value: float) -> tuple[bool, str]:
         if self.halted:
-            return False, "Futures trading halted — too many losses"
+            return False, "Futures trading halted -- too many losses"
         if confidence < self.CONFIDENCE_THRESHOLD:
             return False, f"Confidence {confidence:.2f} below futures threshold {self.CONFIDENCE_THRESHOLD}"
         if leverage > self.MAX_LEVERAGE:
@@ -608,9 +665,9 @@ class FuturesRiskGuard:
             self.halted = False
 
 
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 # CLI
-# ──────────────────────────────────────────────────────────────────────────────
+# ------------------------------------------------------------------------------
 
 def main():
     parser = argparse.ArgumentParser(description="Futures trading bot")
@@ -623,7 +680,7 @@ def main():
     if args.list:
         print("\nAvailable futures:")
         print(f"{'Ticker':<12} {'Name':<30} {'Type':<12} {'Max Lev':<10} {'Hours'}")
-        print("─" * 75)
+        print("-" * 75)
         for ticker, cfg in FUTURES_CONFIGS.items():
             exists = "[trained]" if Path(cfg["chromosome_file"]).exists() else "[untrained]"
             print(f"{ticker:<12} {cfg['name']:<30} {cfg['type']:<12} "

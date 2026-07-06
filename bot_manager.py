@@ -171,13 +171,6 @@ def run_bot_process(config: dict, state_file: str = "bot_state.json") -> None:
     """
     ticker = config["ticker"]
 
-    # Check if this is a futures instrument
-from futures_bot import FUTURES_CONFIGS
-if ticker in FUTURES_CONFIGS:
-    from futures_trading import run_futures_bot
-    run_futures_bot(ticker)
-    return
-
     # Set up per-bot logging
     bot_log = logging.getLogger(ticker)
     bot_log.setLevel(logging.INFO)

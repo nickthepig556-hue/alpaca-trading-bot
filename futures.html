@@ -103,6 +103,38 @@ body{font-family:system-ui,sans-serif;background:#000;color:#f0f0ff;font-size:14
   </div>
 </div>
 
+
+  <!-- Add custom futures ticker -->
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-title">Add any futures instrument</div>
+    <div style="display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap">
+      <div style="flex:1;min-width:140px">
+        <div style="font-size:11px;color:#666688;margin-bottom:5px">Ticker symbol</div>
+        <input id="custom-ticker" placeholder="e.g. SOL/USD, LINK/USD, XRP/USD"
+          style="width:100%;background:#111114;border:0.5px solid #333;border-radius:8px;
+          padding:8px 12px;color:#f0f0ff;font-size:13px;outline:none">
+      </div>
+      <div style="flex:1;min-width:120px">
+        <div style="font-size:11px;color:#666688;margin-bottom:5px">Asset type</div>
+        <select id="custom-type" style="width:100%;background:#111114;border:0.5px solid #333;
+          border-radius:8px;padding:8px 12px;color:#f0f0ff;font-size:13px;outline:none">
+          <option value="crypto">Crypto</option>
+          <option value="index">Index</option>
+          <option value="commodity">Commodity</option>
+        </select>
+      </div>
+      <div style="flex:1;min-width:100px">
+        <div style="font-size:11px;color:#666688;margin-bottom:5px">Max leverage</div>
+        <input id="custom-leverage" type="number" value="10" min="1" max="50"
+          style="width:100%;background:#111114;border:0.5px solid #333;border-radius:8px;
+          padding:8px 12px;color:#f0f0ff;font-size:13px;outline:none">
+      </div>
+      <button class="btn btn-accent" onclick="addCustomTicker()" style="flex-shrink:0">
+        <i class="ti ti-plus"></i> Add &amp; Train
+      </button>
+    </div>
+    <div id="custom-status" style="font-size:12px;color:#666688;margin-top:8px;display:none"></div>
+  </div>
 <div class="grid-2">
   <!-- Instruments list -->
   <div class="card">
@@ -311,7 +343,7 @@ async function refreshSignals() {
 }
 
 async function trainBot(ticker) {
-  if (!confirm(`Train GA for ${ticker}? This runs in the background and takes 5-15 minutes depending on volatility band.`)) return;
+  if (!confirm('Train GA for ' + ticker + '? Runs in background — 3-15 min depending on volatility. The bot will auto-appear in your dashboard when done.')) return;
   try {
     const r = await fetch(`${API}/futures/train`, {
       method: 'POST', headers,
@@ -319,12 +351,86 @@ async function trainBot(ticker) {
     });
     const d = await r.json();
     if (d.ok) {
-      alert(`Training started for ${ticker}! Check back in a few minutes. The instrument will show [trained] when complete.`);
-      setInterval(() => loadInstruments(), 30000);
+      showStatus('training-' + ticker.replace('/','_'),
+        'Training ' + ticker + '... checking every 30s. Bot will appear in dashboard automatically when done.');
+      pollTrainingComplete(ticker);
     } else {
       alert('Error: ' + d.error);
     }
   } catch(e) { alert('Error: ' + e.message); }
+}
+
+function showStatus(id, msg, color='#ff8800') {
+  let el = document.getElementById(id);
+  if (!el) {
+    el = document.createElement('div');
+    el.id = id;
+    el.style.cssText = 'font-size:12px;margin-top:6px;padding:6px 10px;background:#1a1a00;border-radius:6px';
+    const card = document.querySelector('.instrument-grid');
+    if (card) card.prepend(el);
+  }
+  el.style.color = color;
+  el.textContent = msg;
+}
+
+async function pollTrainingComplete(ticker) {
+  const key = 'training-' + ticker.replace('/','_');
+  let attempts = 0;
+  const check = setInterval(async () => {
+    attempts++;
+    try {
+      const r = await fetch(`${API}/futures/list`, {headers});
+      const list = await r.json();
+      const inst = list.find(i => i.ticker === ticker);
+      if (inst && inst.trained) {
+        clearInterval(check);
+        showStatus(key, ticker + ' training complete! Bot added to dashboard.', '#44cc66');
+        loadInstruments();
+        refreshSignals();
+        // Notify parent dashboard if open
+        if (window.opener) window.opener.location.reload();
+      } else if (attempts > 60) {
+        clearInterval(check);
+        showStatus(key, 'Training taking longer than expected. Refresh page to check.', '#ff4444');
+      } else {
+        showStatus(key, 'Training ' + ticker + '... (' + (attempts*30) + 's elapsed)');
+      }
+    } catch {}
+  }, 30000);
+}
+
+async function addCustomTicker() {
+  const ticker  = document.getElementById('custom-ticker').value.trim().toUpperCase();
+  const type    = document.getElementById('custom-type').value;
+  const maxLev  = parseFloat(document.getElementById('custom-leverage').value) || 10;
+  const statusEl = document.getElementById('custom-status');
+
+  if (!ticker) { alert('Enter a ticker symbol'); return; }
+
+  statusEl.style.display = 'block';
+  statusEl.textContent = 'Validating ' + ticker + '...';
+  statusEl.style.color = '#ff8800';
+
+  try {
+    // Register the custom ticker via API
+    const r = await fetch(`${API}/futures/add_ticker`, {
+      method: 'POST', headers,
+      body: JSON.stringify({ticker, type, max_leverage: maxLev})
+    });
+    const d = await r.json();
+    if (!d.ok) {
+      statusEl.textContent = 'Error: ' + (d.error || 'Failed');
+      statusEl.style.color = '#ff4444';
+      return;
+    }
+    statusEl.textContent = ticker + ' added! Starting training...';
+    await loadInstruments();
+    await trainBot(ticker);
+    document.getElementById('custom-ticker').value = '';
+  } catch(e) {
+    statusEl.textContent = 'Error: ' + e.message;
+    statusEl.style.color = '#ff4444';
+  }
 }
 
 // Initial load

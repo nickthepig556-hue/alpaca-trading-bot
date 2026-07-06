@@ -1,6 +1,6 @@
 ﻿import re
 
-files = ['stock_data.py', 'genetic_algorithm.py', 'train_dynamic.py']
+files = ['stock_data.py', 'genetic_algorithm.py', 'train_dynamic.py', 'futures_bot.py']
 
 replacements = {
     '\u2705': '[OK]',

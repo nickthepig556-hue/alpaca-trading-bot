@@ -11,3 +11,51 @@
 2026-07-05 22:58:55,894  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
 2026-07-05 22:58:55,894  INFO      [BTC/USD] Signal complete. Sleeping 600s...
 2026-07-05 23:00:15,308  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-05 23:46:23,559  INFO      [BTC/USD] Process started  PID=50760
+2026-07-05 23:46:24,682  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:46:24,684  INFO      [BTC/USD] Process exiting
+2026-07-05 23:48:11,618  INFO      [BTC/USD] Process started  PID=61160
+2026-07-05 23:48:12,875  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:48:12,876  INFO      [BTC/USD] Process exiting
+2026-07-05 23:49:41,626  INFO      [BTC/USD] Process started  PID=53472
+2026-07-05 23:49:42,857  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:49:42,858  INFO      [BTC/USD] Process exiting
+2026-07-05 23:51:11,642  INFO      [BTC/USD] Process started  PID=53896
+2026-07-05 23:51:12,920  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:51:12,921  INFO      [BTC/USD] Process exiting
+2026-07-05 23:52:41,633  INFO      [BTC/USD] Process started  PID=49656
+2026-07-05 23:52:42,843  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:52:42,845  INFO      [BTC/USD] Process exiting
+2026-07-05 23:54:11,646  INFO      [BTC/USD] Process started  PID=53848
+2026-07-05 23:54:12,816  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 211, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-05 23:54:12,818  INFO      [BTC/USD] Process exiting
