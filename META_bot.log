@@ -629,3 +629,51 @@
 2026-07-07 00:02:44,145  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:02:44,377  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:02:44,577  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:32,208  INFO      [META] Process started  PID=95092
+2026-07-07 08:50:32,211  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 08:50:32,211  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:32,211  INFO         Mode    : PAPER
+2026-07-07 08:50:32,211  INFO         Ticker  : META
+2026-07-07 08:50:32,211  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 08:50:32,211  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:32,219  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:32,634  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:32,634  INFO      =======================================================
+2026-07-07 08:55:32,635  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:32,635  INFO      =======================================================
+2026-07-07 08:55:33,230  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:33,429  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 08:55:33,632  INFO      Portfolio value : $121,631.94
+2026-07-07 08:55:33,633  INFO      Current price   : $607.22
+2026-07-07 08:55:33,633  INFO      Open position   : None
+2026-07-07 08:55:33,633  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:00:33,911  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:05:33,912  INFO      =======================================================
+2026-07-07 09:05:33,912  INFO      Daily signal run  [2026-07-07 09:05]
+2026-07-07 09:05:33,912  INFO      =======================================================
+2026-07-07 09:05:34,459  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:05:34,674  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:05:34,936  INFO      Portfolio value : $121,687.89
+2026-07-07 09:05:34,936  INFO      Current price   : $605.55
+2026-07-07 09:05:34,936  INFO      Open position   : None
+2026-07-07 09:05:34,936  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:10:35,162  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:15:35,163  INFO      =======================================================
+2026-07-07 09:15:35,163  INFO      Daily signal run  [2026-07-07 09:15]
+2026-07-07 09:15:35,164  INFO      =======================================================
+2026-07-07 09:15:35,558  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:15:35,815  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:15:36,033  INFO      Portfolio value : $121,546.41
+2026-07-07 09:15:36,033  INFO      Current price   : $604.09
+2026-07-07 09:15:36,033  INFO      Open position   : None
+2026-07-07 09:15:36,033  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:20:36,225  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:25:36,226  INFO      =======================================================
+2026-07-07 09:25:36,226  INFO      Daily signal run  [2026-07-07 09:25]
+2026-07-07 09:25:36,227  INFO      =======================================================
+2026-07-07 09:25:36,657  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:25:36,857  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:25:37,071  INFO      Portfolio value : $121,615.66
+2026-07-07 09:25:37,071  INFO      Current price   : $606.66
+2026-07-07 09:25:37,071  INFO      Open position   : None
+2026-07-07 09:25:37,072  INFO      Signal check complete. Sleeping 5 minutes until next check.

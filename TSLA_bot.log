@@ -1035,3 +1035,51 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 00:02:29,207  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:02:29,399  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:02:29,597  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:26,149  INFO      [TSLA] Process started  PID=89680
+2026-07-07 08:50:26,152  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 08:50:26,152  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:26,152  INFO         Mode    : PAPER
+2026-07-07 08:50:26,152  INFO         Ticker  : TSLA
+2026-07-07 08:50:26,152  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 08:50:26,152  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:26,161  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:26,383  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:26,384  INFO      =======================================================
+2026-07-07 08:55:26,384  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:26,384  INFO      =======================================================
+2026-07-07 08:55:26,895  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:27,103  INFO      Signal: SELL/HOLD  |  Confidence: 0.273
+2026-07-07 08:55:27,225  INFO      Portfolio value : $121,635.85
+2026-07-07 08:55:27,226  INFO      Current price   : $409.76
+2026-07-07 08:55:27,226  INFO      Open position   : None
+2026-07-07 08:55:27,226  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:00:27,423  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:05:27,424  INFO      =======================================================
+2026-07-07 09:05:27,425  INFO      Daily signal run  [2026-07-07 09:05]
+2026-07-07 09:05:27,425  INFO      =======================================================
+2026-07-07 09:05:27,750  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:05:27,906  INFO      Signal: SELL/HOLD  |  Confidence: 0.273
+2026-07-07 09:05:28,026  INFO      Portfolio value : $121,679.63
+2026-07-07 09:05:28,027  INFO      Current price   : $409.03
+2026-07-07 09:05:28,027  INFO      Open position   : None
+2026-07-07 09:05:28,027  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:10:28,214  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:15:28,215  INFO      =======================================================
+2026-07-07 09:15:28,219  INFO      Daily signal run  [2026-07-07 09:15]
+2026-07-07 09:15:28,219  INFO      =======================================================
+2026-07-07 09:15:28,649  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:15:28,823  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 09:15:29,027  INFO      Portfolio value : $121,539.27
+2026-07-07 09:15:29,027  INFO      Current price   : $407.81
+2026-07-07 09:15:29,028  INFO      Open position   : None
+2026-07-07 09:15:29,028  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:20:29,226  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:25:29,227  INFO      =======================================================
+2026-07-07 09:25:29,227  INFO      Daily signal run  [2026-07-07 09:25]
+2026-07-07 09:25:29,227  INFO      =======================================================
+2026-07-07 09:25:29,555  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:25:29,760  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 09:25:29,898  INFO      Portfolio value : $121,607.37
+2026-07-07 09:25:29,898  INFO      Current price   : $406.10
+2026-07-07 09:25:29,898  INFO      Open position   : None
+2026-07-07 09:25:29,898  INFO      Signal check complete. Sleeping 5 minutes until next check.

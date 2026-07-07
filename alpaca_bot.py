@@ -416,7 +416,7 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
                 trailing_stop = peak_price * (1 - config['trailing_stop_pct'])
 
         log.info(f"  {ticker} [{side}] price={current_price:.2f}  "
-                 f"stop={stop_price:.2f}  trailing={trailing_stop:.2f if trailing_stop else 'inactive'}  "
+                 f"stop={stop_price:.2f}  trailing={f'{trailing_stop:.2f}' if trailing_stop is not None else 'inactive'}  "
                  f"target={target_price:.2f}  P&L={pos['unrealised_pl']:+.2f}")
 
         qty = pos['qty']

@@ -918,3 +918,51 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 00:06:35,326  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:06:35,518  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:06:35,744  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:22,144  INFO      [NVDA] Process started  PID=88268
+2026-07-07 08:50:22,146  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 08:50:22,146  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:22,147  INFO         Mode    : PAPER
+2026-07-07 08:50:22,147  INFO         Ticker  : NVDA
+2026-07-07 08:50:22,147  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 08:50:22,147  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:22,157  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:22,371  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:22,372  INFO      =======================================================
+2026-07-07 08:55:22,372  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:22,373  INFO      =======================================================
+2026-07-07 08:55:22,921  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:23,134  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 08:55:23,259  INFO      Portfolio value : $121,633.79
+2026-07-07 08:55:23,259  INFO      Current price   : $192.60
+2026-07-07 08:55:23,259  INFO      Open position   : None
+2026-07-07 08:55:23,260  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:00:23,451  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:05:23,452  INFO      =======================================================
+2026-07-07 09:05:23,452  INFO      Daily signal run  [2026-07-07 09:05]
+2026-07-07 09:05:23,452  INFO      =======================================================
+2026-07-07 09:05:23,820  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:05:23,995  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:05:24,124  INFO      Portfolio value : $121,679.89
+2026-07-07 09:05:24,124  INFO      Current price   : $192.78
+2026-07-07 09:05:24,124  INFO      Open position   : None
+2026-07-07 09:05:24,124  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:10:24,312  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:15:24,314  INFO      =======================================================
+2026-07-07 09:15:24,315  INFO      Daily signal run  [2026-07-07 09:15]
+2026-07-07 09:15:24,315  INFO      =======================================================
+2026-07-07 09:15:24,678  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:15:24,879  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:15:25,063  INFO      Portfolio value : $121,545.04
+2026-07-07 09:15:25,063  INFO      Current price   : $192.98
+2026-07-07 09:15:25,064  INFO      Open position   : None
+2026-07-07 09:15:25,066  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:20:25,247  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:25:25,248  INFO      =======================================================
+2026-07-07 09:25:25,249  INFO      Daily signal run  [2026-07-07 09:25]
+2026-07-07 09:25:25,249  INFO      =======================================================
+2026-07-07 09:25:25,596  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:25:25,780  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:25:25,899  INFO      Portfolio value : $121,614.77
+2026-07-07 09:25:25,899  INFO      Current price   : $192.91
+2026-07-07 09:25:25,899  INFO      Open position   : None
+2026-07-07 09:25:25,899  INFO      Signal check complete. Sleeping 5 minutes until next check.

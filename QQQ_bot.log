@@ -900,3 +900,53 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 00:06:38,587  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:06:38,817  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:06:39,008  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:24,111  INFO      [QQQ] Process started  PID=92996
+2026-07-07 08:50:24,114  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 08:50:24,114  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:24,114  INFO         Mode    : PAPER
+2026-07-07 08:50:24,114  INFO         Ticker  : QQQ
+2026-07-07 08:50:24,114  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 08:50:24,114  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:24,123  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:24,310  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:24,311  INFO      =======================================================
+2026-07-07 08:55:24,312  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:24,312  INFO      =======================================================
+2026-07-07 08:55:24,916  INFO      Fetched 70 bars for QQQ  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:25,124  INFO      Signal: BUY  |  Confidence: 0.570
+2026-07-07 08:55:25,385  INFO      Portfolio value : $121,634.95
+2026-07-07 08:55:25,386  INFO      Current price   : $707.45
+2026-07-07 08:55:25,386  INFO      Open position   : None
+2026-07-07 08:55:25,386  INFO      Position size: 37 shares  (confidence=0.570, alloc=22.1%, $26,865 of $121,635)
+2026-07-07 08:55:25,466  INFO      [OK] BUY (long) order submitted: 37 x QQQ  [id=389d1e1c-e930-4d35-95a6-664a204561c2]
+2026-07-07 08:55:30,531  INFO      Monitoring QQQ  |  entry=707.57  stop=693.41  target=735.87
+2026-07-07 08:56:30,750  INFO        QQQ [long] price=707.10  stop=693.41  trailing=inactive  target=735.87  P&L=-19.65
+2026-07-07 08:57:30,971  INFO        QQQ [long] price=706.98  stop=693.41  trailing=inactive  target=735.87  P&L=-22.76
+2026-07-07 08:58:31,250  INFO        QQQ [long] price=707.44  stop=693.41  trailing=inactive  target=735.87  P&L=-4.67
+2026-07-07 08:59:31,520  INFO        QQQ [long] price=707.63  stop=693.41  trailing=inactive  target=735.87  P&L=+2.73
+2026-07-07 09:00:32,044  INFO        QQQ [long] price=706.96  stop=693.41  trailing=inactive  target=735.87  P&L=-22.61
+2026-07-07 09:01:32,309  INFO        QQQ [long] price=706.53  stop=693.41  trailing=inactive  target=735.87  P&L=-39.45
+2026-07-07 09:02:32,528  INFO        QQQ [long] price=707.00  stop=693.41  trailing=inactive  target=735.87  P&L=-22.43
+2026-07-07 09:03:32,772  INFO        QQQ [long] price=707.15  stop=693.41  trailing=inactive  target=735.87  P&L=-15.40
+2026-07-07 09:04:33,012  INFO        QQQ [long] price=707.29  stop=693.41  trailing=inactive  target=735.87  P&L=-9.48
+2026-07-07 09:05:33,557  INFO        QQQ [long] price=707.65  stop=693.41  trailing=inactive  target=735.87  P&L=+3.10
+2026-07-07 09:06:33,778  INFO        QQQ [long] price=707.48  stop=693.41  trailing=inactive  target=735.87  P&L=-0.23
+2026-07-07 09:07:34,029  INFO        QQQ [long] price=707.28  stop=693.41  trailing=inactive  target=735.87  P&L=-10.59
+2026-07-07 09:08:34,300  INFO        QQQ [long] price=707.57  stop=693.41  trailing=inactive  target=735.87  P&L=+0.14
+2026-07-07 09:09:34,575  INFO        QQQ [long] price=707.47  stop=693.41  trailing=inactive  target=735.87  P&L=-4.30
+2026-07-07 09:10:34,908  INFO        QQQ [long] price=707.85  stop=693.41  trailing=inactive  target=735.87  P&L=+10.50
+2026-07-07 09:11:35,138  INFO        QQQ [long] price=708.06  stop=693.41  trailing=inactive  target=735.87  P&L=+20.12
+2026-07-07 09:12:35,363  INFO        QQQ [long] price=708.10  stop=693.41  trailing=inactive  target=735.87  P&L=+19.75
+2026-07-07 09:13:35,598  INFO        QQQ [long] price=708.25  stop=693.41  trailing=inactive  target=735.87  P&L=+26.04
+2026-07-07 09:14:35,910  INFO        QQQ [long] price=707.99  stop=693.41  trailing=inactive  target=735.87  P&L=+15.68
+2026-07-07 09:15:36,211  INFO        QQQ [long] price=707.23  stop=693.41  trailing=inactive  target=735.87  P&L=-11.33
+2026-07-07 09:16:36,470  INFO        QQQ [long] price=706.91  stop=693.41  trailing=inactive  target=735.87  P&L=-24.46
+2026-07-07 09:17:36,697  INFO        QQQ [long] price=706.98  stop=693.41  trailing=inactive  target=735.87  P&L=-23.17
+2026-07-07 09:18:36,913  INFO        QQQ [long] price=707.06  stop=693.41  trailing=inactive  target=735.87  P&L=-19.84
+2026-07-07 09:19:37,175  INFO        QQQ [long] price=706.68  stop=693.41  trailing=inactive  target=735.87  P&L=-32.79
+2026-07-07 09:20:37,437  INFO        QQQ [long] price=706.87  stop=693.41  trailing=inactive  target=735.87  P&L=-27.24
+2026-07-07 09:21:37,682  INFO        QQQ [long] price=707.14  stop=693.41  trailing=inactive  target=735.87  P&L=-9.11
+2026-07-07 09:22:37,914  INFO        QQQ [long] price=707.16  stop=693.41  trailing=inactive  target=735.87  P&L=-14.66
+2026-07-07 09:23:38,164  INFO        QQQ [long] price=706.78  stop=693.41  trailing=inactive  target=735.87  P&L=-29.09
+2026-07-07 09:24:38,698  INFO        QQQ [long] price=706.51  stop=693.41  trailing=inactive  target=735.87  P&L=-36.86
+2026-07-07 09:25:38,961  INFO        QQQ [long] price=706.64  stop=693.41  trailing=inactive  target=735.87  P&L=-32.05

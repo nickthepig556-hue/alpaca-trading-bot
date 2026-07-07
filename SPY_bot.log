@@ -4430,3 +4430,131 @@ Traceback (most recent call last):
                                       ^^^^^^^^^^^^^^^^^^^
 TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 08:43:36,332  INFO      Retrying in 5 minutes...
+2026-07-07 08:48:36,554  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:50:20,205  INFO      [SPY] Process started  PID=91452
+2026-07-07 08:50:20,207  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 08:50:20,207  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:20,207  INFO         Mode    : PAPER
+2026-07-07 08:50:20,207  INFO         Ticker  : SPY
+2026-07-07 08:50:20,207  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-07 08:50:20,208  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:20,217  INFO      Chromosome loaded from SPY_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:20,415  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:53:36,555  INFO      =======================================================
+2026-07-07 08:53:36,557  INFO      Daily signal run  [2026-07-07 08:53]
+2026-07-07 08:53:36,557  INFO      =======================================================
+2026-07-07 08:53:36,989  INFO      Fetched 70 bars for SPY  (2026-03-26 → 2026-07-07)
+2026-07-07 08:53:37,217  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-07 08:53:37,353  INFO      Portfolio value : $121,632.46
+2026-07-07 08:53:37,353  INFO      Current price   : $746.72
+2026-07-07 08:53:37,354  INFO      Open position   : {'qty': 38, 'side': 'long', 'entry_price': 747.412105, 'market_value': 28376.5, 'unrealised_pl': -25.15999}
+2026-07-07 08:53:37,354  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 08:53:37,354  INFO      Monitoring SPY  |  entry=747.41  stop=736.20  target=769.83
+2026-07-07 08:54:37,670  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={f'{trailing_stop:.2f}' if trailing_stop is not None else 'inactive'}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-07 08:54:37,671  INFO      Retrying in 5 minutes...
+2026-07-07 08:55:20,416  INFO      =======================================================
+2026-07-07 08:55:20,416  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:20,416  INFO      =======================================================
+2026-07-07 08:55:21,004  INFO      Fetched 70 bars for SPY  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:21,276  INFO      Signal: BUY  |  Confidence: 0.575
+2026-07-07 08:55:21,430  INFO      Portfolio value : $121,634.17
+2026-07-07 08:55:21,431  INFO      Current price   : $746.78
+2026-07-07 08:55:21,431  INFO      Open position   : {'qty': 38, 'side': 'long', 'entry_price': 747.412105, 'market_value': 28378.21, 'unrealised_pl': -23.44999}
+2026-07-07 08:55:21,431  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 08:55:21,431  INFO      Monitoring SPY  |  entry=747.41  stop=736.20  target=769.83
+2026-07-07 08:56:21,760  INFO        SPY [long] price=746.80  stop=736.20  trailing=inactive  target=769.83  P&L=-21.55
+2026-07-07 08:57:22,030  INFO        SPY [long] price=746.57  stop=736.20  trailing=inactive  target=769.83  P&L=-32.76
+2026-07-07 08:58:22,752  INFO        SPY [long] price=746.71  stop=736.20  trailing=inactive  target=769.83  P&L=-25.92
+2026-07-07 08:59:23,083  INFO        SPY [long] price=746.72  stop=736.20  trailing=inactive  target=769.83  P&L=-26.30
+2026-07-07 08:59:37,911  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:00:23,314  INFO        SPY [long] price=746.25  stop=736.20  trailing=inactive  target=769.83  P&L=-43.78
+2026-07-07 09:01:23,553  INFO        SPY [long] price=746.04  stop=736.20  trailing=inactive  target=769.83  P&L=-53.28
+2026-07-07 09:02:23,938  INFO        SPY [long] price=746.26  stop=736.20  trailing=inactive  target=769.83  P&L=-42.83
+2026-07-07 09:03:24,209  INFO        SPY [long] price=746.24  stop=736.20  trailing=inactive  target=769.83  P&L=-44.54
+2026-07-07 09:04:24,429  INFO        SPY [long] price=746.43  stop=736.20  trailing=inactive  target=769.83  P&L=-36.56
+2026-07-07 09:04:37,912  INFO      =======================================================
+2026-07-07 09:04:37,913  INFO      Daily signal run  [2026-07-07 09:04]
+2026-07-07 09:04:37,913  INFO      =======================================================
+2026-07-07 09:04:38,341  INFO      Fetched 70 bars for SPY  (2026-03-26 → 2026-07-07)
+2026-07-07 09:04:38,577  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-07 09:04:38,709  INFO      Portfolio value : $121,607.11
+2026-07-07 09:04:38,709  INFO      Current price   : $746.21
+2026-07-07 09:04:38,709  INFO      Open position   : {'qty': 38, 'side': 'long', 'entry_price': 747.412105, 'market_value': 28356.74, 'unrealised_pl': -44.91999}
+2026-07-07 09:04:38,709  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 09:04:38,709  INFO      Monitoring SPY  |  entry=747.41  stop=736.20  target=769.83
+2026-07-07 09:05:24,746  INFO        SPY [long] price=746.52  stop=736.20  trailing=inactive  target=769.83  P&L=-33.14
+2026-07-07 09:05:39,046  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={f'{trailing_stop:.2f}' if trailing_stop is not None else 'inactive'}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-07 09:05:39,046  INFO      Retrying in 5 minutes...
+2026-07-07 09:06:24,995  INFO        SPY [long] price=746.50  stop=736.20  trailing=inactive  target=769.83  P&L=-33.52
+2026-07-07 09:07:25,290  INFO        SPY [long] price=746.23  stop=736.20  trailing=inactive  target=769.83  P&L=-45.30
+2026-07-07 09:08:25,601  INFO        SPY [long] price=746.63  stop=736.20  trailing=inactive  target=769.83  P&L=-29.53
+2026-07-07 09:09:25,875  INFO        SPY [long] price=746.49  stop=736.20  trailing=inactive  target=769.83  P&L=-34.28
+2026-07-07 09:10:26,141  INFO        SPY [long] price=746.54  stop=736.20  trailing=inactive  target=769.83  P&L=-32.76
+2026-07-07 09:10:39,240  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:11:26,341  INFO        SPY [long] price=746.64  stop=736.20  trailing=inactive  target=769.83  P&L=-29.34
+2026-07-07 09:12:26,599  INFO        SPY [long] price=746.60  stop=736.20  trailing=inactive  target=769.83  P&L=-31.05
+2026-07-07 09:13:26,792  INFO        SPY [long] price=746.40  stop=736.20  trailing=inactive  target=769.83  P&L=-38.84
+2026-07-07 09:14:27,135  INFO        SPY [long] price=746.37  stop=736.20  trailing=inactive  target=769.83  P&L=-39.98
+2026-07-07 09:15:27,397  INFO        SPY [long] price=745.84  stop=736.20  trailing=inactive  target=769.83  P&L=-59.36
+2026-07-07 09:15:39,241  INFO      =======================================================
+2026-07-07 09:15:39,242  INFO      Daily signal run  [2026-07-07 09:15]
+2026-07-07 09:15:39,242  INFO      =======================================================
+2026-07-07 09:15:39,742  INFO      Fetched 70 bars for SPY  (2026-03-26 → 2026-07-07)
+2026-07-07 09:15:39,982  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-07 09:15:40,141  INFO      Portfolio value : $121,538.46
+2026-07-07 09:15:40,142  INFO      Current price   : $745.84
+2026-07-07 09:15:40,142  INFO      Open position   : {'qty': 38, 'side': 'long', 'entry_price': 747.412105, 'market_value': 28343.82, 'unrealised_pl': -57.83999}
+2026-07-07 09:15:40,142  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 09:15:40,142  INFO      Monitoring SPY  |  entry=747.41  stop=736.20  target=769.83
+2026-07-07 09:16:27,629  INFO        SPY [long] price=745.82  stop=736.20  trailing=inactive  target=769.83  P&L=-60.88
+2026-07-07 09:16:40,395  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={f'{trailing_stop:.2f}' if trailing_stop is not None else 'inactive'}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-07 09:16:40,395  INFO      Retrying in 5 minutes...
+2026-07-07 09:17:27,902  INFO        SPY [long] price=746.02  stop=736.20  trailing=inactive  target=769.83  P&L=-52.90
+2026-07-07 09:18:28,136  INFO        SPY [long] price=745.91  stop=736.20  trailing=inactive  target=769.83  P&L=-57.46
+2026-07-07 09:19:28,429  INFO        SPY [long] price=746.05  stop=736.20  trailing=inactive  target=769.83  P&L=-51.76
+2026-07-07 09:20:28,677  INFO        SPY [long] price=746.00  stop=736.20  trailing=inactive  target=769.83  P&L=-55.56
+2026-07-07 09:21:28,962  INFO        SPY [long] price=746.21  stop=736.20  trailing=inactive  target=769.83  P&L=-46.06
+2026-07-07 09:21:40,589  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:22:29,221  INFO        SPY [long] price=746.13  stop=736.20  trailing=inactive  target=769.83  P&L=-49.10
+2026-07-07 09:23:29,485  INFO        SPY [long] price=745.97  stop=736.20  trailing=inactive  target=769.83  P&L=-54.80
+2026-07-07 09:24:29,727  INFO        SPY [long] price=745.90  stop=736.20  trailing=inactive  target=769.83  P&L=-58.60
+2026-07-07 09:25:30,123  INFO        SPY [long] price=745.86  stop=736.20  trailing=inactive  target=769.83  P&L=-58.98

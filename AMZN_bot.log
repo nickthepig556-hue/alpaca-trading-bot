@@ -836,3 +836,53 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 00:06:45,746  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:06:45,940  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:06:46,142  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:30,157  INFO      [AMZN] Process started  PID=94400
+2026-07-07 08:50:30,160  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 08:50:30,160  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:30,160  INFO         Mode    : PAPER
+2026-07-07 08:50:30,160  INFO         Ticker  : AMZN
+2026-07-07 08:50:30,160  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 08:50:30,160  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:30,170  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:30,355  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:30,356  INFO      =======================================================
+2026-07-07 08:55:30,357  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:30,357  INFO      =======================================================
+2026-07-07 08:55:30,877  INFO      Fetched 70 bars for AMZN  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:31,063  INFO      Signal: BUY  |  Confidence: 0.535
+2026-07-07 08:55:31,377  INFO      Portfolio value : $121,631.66
+2026-07-07 08:55:31,377  INFO      Current price   : $244.94
+2026-07-07 08:55:31,377  INFO      Open position   : None
+2026-07-07 08:55:31,377  INFO      Position size: 104 shares  (confidence=0.535, alloc=21.1%, $25,621 of $121,632)
+2026-07-07 08:55:31,467  INFO      [OK] BUY (long) order submitted: 104 x AMZN  [id=47d9968c-2ffa-47fa-a530-90b5d6be10e5]
+2026-07-07 08:55:36,529  INFO      Monitoring AMZN  |  entry=245.00  stop=240.10  target=254.80
+2026-07-07 08:56:36,771  INFO        AMZN [long] price=244.67  stop=240.10  trailing=inactive  target=254.80  P&L=-43.68
+2026-07-07 08:57:37,196  INFO        AMZN [long] price=244.50  stop=240.10  trailing=inactive  target=254.80  P&L=-48.88
+2026-07-07 08:58:37,405  INFO        AMZN [long] price=244.44  stop=240.10  trailing=inactive  target=254.80  P&L=-60.32
+2026-07-07 08:59:37,653  INFO        AMZN [long] price=244.32  stop=240.10  trailing=inactive  target=254.80  P&L=-71.76
+2026-07-07 09:00:37,900  INFO        AMZN [long] price=244.26  stop=240.10  trailing=inactive  target=254.80  P&L=-76.96
+2026-07-07 09:01:38,183  INFO        AMZN [long] price=244.31  stop=240.10  trailing=inactive  target=254.80  P&L=-71.76
+2026-07-07 09:02:38,419  INFO        AMZN [long] price=244.18  stop=240.10  trailing=inactive  target=254.80  P&L=-84.76
+2026-07-07 09:03:38,678  INFO        AMZN [long] price=244.15  stop=240.10  trailing=inactive  target=254.80  P&L=-88.40
+2026-07-07 09:04:38,876  INFO        AMZN [long] price=244.01  stop=240.10  trailing=inactive  target=254.80  P&L=-106.08
+2026-07-07 09:05:39,171  INFO        AMZN [long] price=244.19  stop=240.10  trailing=inactive  target=254.80  P&L=-86.84
+2026-07-07 09:06:39,423  INFO        AMZN [long] price=244.21  stop=240.10  trailing=inactive  target=254.80  P&L=-82.16
+2026-07-07 09:07:39,694  INFO        AMZN [long] price=243.87  stop=240.10  trailing=inactive  target=254.80  P&L=-112.32
+2026-07-07 09:08:39,948  INFO        AMZN [long] price=243.81  stop=240.10  trailing=inactive  target=254.80  P&L=-123.76
+2026-07-07 09:09:40,179  INFO        AMZN [long] price=243.81  stop=240.10  trailing=inactive  target=254.80  P&L=-123.76
+2026-07-07 09:10:40,500  INFO        AMZN [long] price=243.71  stop=240.10  trailing=inactive  target=254.80  P&L=-134.68
+2026-07-07 09:11:40,784  INFO        AMZN [long] price=243.62  stop=240.10  trailing=inactive  target=254.80  P&L=-143.52
+2026-07-07 09:12:41,020  INFO        AMZN [long] price=243.58  stop=240.10  trailing=inactive  target=254.80  P&L=-151.32
+2026-07-07 09:13:41,263  INFO        AMZN [long] price=243.59  stop=240.10  trailing=inactive  target=254.80  P&L=-147.16
+2026-07-07 09:14:41,487  INFO        AMZN [long] price=243.62  stop=240.10  trailing=inactive  target=254.80  P&L=-144.04
+2026-07-07 09:15:41,739  INFO        AMZN [long] price=243.67  stop=240.10  trailing=inactive  target=254.80  P&L=-138.32
+2026-07-07 09:16:41,956  INFO        AMZN [long] price=243.57  stop=240.10  trailing=inactive  target=254.80  P&L=-139.36
+2026-07-07 09:17:42,197  INFO        AMZN [long] price=243.68  stop=240.10  trailing=inactive  target=254.80  P&L=-136.24
+2026-07-07 09:18:42,444  INFO        AMZN [long] price=243.67  stop=240.10  trailing=inactive  target=254.80  P&L=-138.84
+2026-07-07 09:19:42,720  INFO        AMZN [long] price=243.55  stop=240.10  trailing=inactive  target=254.80  P&L=-150.80
+2026-07-07 09:20:42,966  INFO        AMZN [long] price=243.60  stop=240.10  trailing=inactive  target=254.80  P&L=-145.86
+2026-07-07 09:21:43,209  INFO        AMZN [long] price=243.61  stop=240.10  trailing=inactive  target=254.80  P&L=-144.56
+2026-07-07 09:22:43,431  INFO        AMZN [long] price=243.60  stop=240.10  trailing=inactive  target=254.80  P&L=-145.60
+2026-07-07 09:23:43,676  INFO        AMZN [long] price=243.62  stop=240.10  trailing=inactive  target=254.80  P&L=-144.04
+2026-07-07 09:24:43,901  INFO        AMZN [long] price=243.55  stop=240.10  trailing=inactive  target=254.80  P&L=-152.88
+2026-07-07 09:25:44,112  INFO        AMZN [long] price=243.55  stop=240.10  trailing=inactive  target=254.80  P&L=-151.84

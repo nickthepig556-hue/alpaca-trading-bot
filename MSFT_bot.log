@@ -629,3 +629,53 @@
 2026-07-07 00:02:39,872  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:02:40,062  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:02:40,274  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:28,185  INFO      [MSFT] Process started  PID=91980
+2026-07-07 08:50:28,188  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 08:50:28,188  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:28,188  INFO         Mode    : PAPER
+2026-07-07 08:50:28,188  INFO         Ticker  : MSFT
+2026-07-07 08:50:28,188  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 08:50:28,188  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:28,196  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:28,388  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:28,395  INFO      =======================================================
+2026-07-07 08:55:28,396  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:28,396  INFO      =======================================================
+2026-07-07 08:55:28,972  INFO      Fetched 70 bars for MSFT  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:29,192  INFO      Signal: BUY  |  Confidence: 0.373
+2026-07-07 08:55:29,337  INFO      Portfolio value : $121,634.54
+2026-07-07 08:55:29,337  INFO      Current price   : $391.85
+2026-07-07 08:55:29,337  INFO      Open position   : None
+2026-07-07 08:55:29,337  INFO      Position size: 50 shares  (confidence=0.373, alloc=16.2%, $19,700 of $121,635)
+2026-07-07 08:55:29,412  INFO      [OK] BUY (long) order submitted: 50 x MSFT  [id=7f62155d-1aef-449d-bbb9-55651919ad67]
+2026-07-07 08:55:34,487  INFO      Monitoring MSFT  |  entry=392.00  stop=384.16  target=407.68
+2026-07-07 08:56:34,744  INFO        MSFT [long] price=392.35  stop=384.16  trailing=inactive  target=407.68  P&L=+17.25
+2026-07-07 08:57:35,107  INFO        MSFT [long] price=392.45  stop=384.16  trailing=inactive  target=407.68  P&L=+20.25
+2026-07-07 08:58:35,357  INFO        MSFT [long] price=392.65  stop=384.16  trailing=inactive  target=407.68  P&L=+32.75
+2026-07-07 08:59:35,590  INFO        MSFT [long] price=391.87  stop=384.16  trailing=inactive  target=407.68  P&L=-6.25
+2026-07-07 09:00:35,845  INFO        MSFT [long] price=391.98  stop=384.16  trailing=inactive  target=407.68  P&L=-1.48
+2026-07-07 09:01:36,092  INFO        MSFT [long] price=392.47  stop=384.16  trailing=inactive  target=407.68  P&L=+23.50
+2026-07-07 09:02:36,335  INFO        MSFT [long] price=392.89  stop=384.16  trailing=inactive  target=407.68  P&L=+43.88
+2026-07-07 09:03:36,559  INFO        MSFT [long] price=392.99  stop=384.16  trailing=inactive  target=407.68  P&L=+47.75
+2026-07-07 09:04:36,778  INFO        MSFT [long] price=392.81  stop=384.16  trailing=inactive  target=407.68  P&L=+40.25
+2026-07-07 09:05:37,078  INFO        MSFT [long] price=393.23  stop=384.16  trailing=inactive  target=407.68  P&L=+61.75
+2026-07-07 09:06:37,368  INFO        MSFT [long] price=393.66  stop=384.16  trailing=inactive  target=407.68  P&L=+83.00
+2026-07-07 09:07:37,600  INFO        MSFT [long] price=393.42  stop=384.16  trailing=inactive  target=407.68  P&L=+71.00
+2026-07-07 09:08:37,823  INFO        MSFT [long] price=392.96  stop=384.16  trailing=inactive  target=407.68  P&L=+48.00
+2026-07-07 09:09:38,064  INFO        MSFT [long] price=393.46  stop=384.16  trailing=inactive  target=407.68  P&L=+74.00
+2026-07-07 09:10:38,319  INFO        MSFT [long] price=392.81  stop=384.16  trailing=inactive  target=407.68  P&L=+40.50
+2026-07-07 09:11:38,539  INFO        MSFT [long] price=392.68  stop=384.16  trailing=inactive  target=407.68  P&L=+41.00
+2026-07-07 09:12:38,785  INFO        MSFT [long] price=392.59  stop=384.16  trailing=inactive  target=407.68  P&L=+29.00
+2026-07-07 09:13:38,995  INFO        MSFT [long] price=392.86  stop=384.16  trailing=inactive  target=407.68  P&L=+43.99
+2026-07-07 09:14:39,227  INFO        MSFT [long] price=392.05  stop=384.16  trailing=inactive  target=407.68  P&L=+6.25
+2026-07-07 09:15:39,431  INFO        MSFT [long] price=392.10  stop=384.16  trailing=inactive  target=407.68  P&L=+5.00
+2026-07-07 09:16:39,656  INFO        MSFT [long] price=392.48  stop=384.16  trailing=inactive  target=407.68  P&L=+23.25
+2026-07-07 09:17:39,879  INFO        MSFT [long] price=392.74  stop=384.16  trailing=inactive  target=407.68  P&L=+42.50
+2026-07-07 09:18:40,131  INFO        MSFT [long] price=392.88  stop=384.16  trailing=inactive  target=407.68  P&L=+44.25
+2026-07-07 09:19:40,472  INFO        MSFT [long] price=393.16  stop=384.16  trailing=inactive  target=407.68  P&L=+57.81
+2026-07-07 09:20:40,734  INFO        MSFT [long] price=393.08  stop=384.16  trailing=inactive  target=407.68  P&L=+54.00
+2026-07-07 09:21:40,967  INFO        MSFT [long] price=393.74  stop=384.16  trailing=inactive  target=407.68  P&L=+87.00
+2026-07-07 09:22:41,174  INFO        MSFT [long] price=393.65  stop=384.16  trailing=inactive  target=407.68  P&L=+82.50
+2026-07-07 09:23:41,421  INFO        MSFT [long] price=393.38  stop=384.16  trailing=inactive  target=407.68  P&L=+71.00
+2026-07-07 09:24:41,628  INFO        MSFT [long] price=393.59  stop=384.16  trailing=inactive  target=407.68  P&L=+79.58
+2026-07-07 09:25:42,021  INFO        MSFT [long] price=393.57  stop=384.16  trailing=inactive  target=407.68  P&L=+75.50

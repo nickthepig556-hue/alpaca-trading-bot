@@ -13323,3 +13323,51 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-07 00:02:15,475  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 01:02:15,703  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-07 02:02:15,902  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 08:50:18,257  INFO      [GLD] Process started  PID=92372
+2026-07-07 08:50:18,264  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 08:50:18,264  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 08:50:18,264  INFO         Mode    : PAPER
+2026-07-07 08:50:18,265  INFO         Ticker  : GLD
+2026-07-07 08:50:18,265  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 08:50:18,265  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 08:50:18,272  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 08:50:18,460  INFO      Market open — waiting 300s before first signal...
+2026-07-07 08:55:18,461  INFO      =======================================================
+2026-07-07 08:55:18,461  INFO      Daily signal run  [2026-07-07 08:55]
+2026-07-07 08:55:18,461  INFO      =======================================================
+2026-07-07 08:55:19,061  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 08:55:19,224  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 08:55:19,358  INFO      Portfolio value : $121,634.17
+2026-07-07 08:55:19,359  INFO      Current price   : $381.34
+2026-07-07 08:55:19,359  INFO      Open position   : None
+2026-07-07 08:55:19,359  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:00:19,569  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:05:19,570  INFO      =======================================================
+2026-07-07 09:05:19,570  INFO      Daily signal run  [2026-07-07 09:05]
+2026-07-07 09:05:19,570  INFO      =======================================================
+2026-07-07 09:05:19,979  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:05:20,143  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:05:20,269  INFO      Portfolio value : $121,686.59
+2026-07-07 09:05:20,269  INFO      Current price   : $380.97
+2026-07-07 09:05:20,269  INFO      Open position   : None
+2026-07-07 09:05:20,269  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:10:20,474  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:15:20,475  INFO      =======================================================
+2026-07-07 09:15:20,475  INFO      Daily signal run  [2026-07-07 09:15]
+2026-07-07 09:15:20,476  INFO      =======================================================
+2026-07-07 09:15:20,856  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:15:21,001  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:15:21,123  INFO      Portfolio value : $121,533.77
+2026-07-07 09:15:21,123  INFO      Current price   : $380.67
+2026-07-07 09:15:21,123  INFO      Open position   : None
+2026-07-07 09:15:21,123  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:20:21,371  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:25:21,371  INFO      =======================================================
+2026-07-07 09:25:21,372  INFO      Daily signal run  [2026-07-07 09:25]
+2026-07-07 09:25:21,372  INFO      =======================================================
+2026-07-07 09:25:21,725  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:25:21,919  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:25:22,040  INFO      Portfolio value : $121,615.38
+2026-07-07 09:25:22,040  INFO      Current price   : $380.41
+2026-07-07 09:25:22,040  INFO      Open position   : None
+2026-07-07 09:25:22,040  INFO      Signal check complete. Sleeping 5 minutes until next check.
