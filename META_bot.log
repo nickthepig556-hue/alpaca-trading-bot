@@ -677,3 +677,170 @@
 2026-07-07 09:25:37,071  INFO      Current price   : $606.66
 2026-07-07 09:25:37,071  INFO      Open position   : None
 2026-07-07 09:25:37,072  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:30:37,265  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:35:37,267  INFO      =======================================================
+2026-07-07 09:35:37,267  INFO      Daily signal run  [2026-07-07 09:35]
+2026-07-07 09:35:37,267  INFO      =======================================================
+2026-07-07 09:35:37,621  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:35:37,821  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:35:38,058  INFO      Portfolio value : $121,596.50
+2026-07-07 09:35:38,059  INFO      Current price   : $605.85
+2026-07-07 09:35:38,059  INFO      Open position   : None
+2026-07-07 09:35:38,059  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:40:38,242  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:45:38,243  INFO      =======================================================
+2026-07-07 09:45:38,244  INFO      Daily signal run  [2026-07-07 09:45]
+2026-07-07 09:45:38,244  INFO      =======================================================
+2026-07-07 09:45:39,139  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:45:39,369  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:45:39,593  INFO      Portfolio value : $121,752.06
+2026-07-07 09:45:39,593  INFO      Current price   : $606.24
+2026-07-07 09:45:39,593  INFO      Open position   : None
+2026-07-07 09:45:39,593  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:50:39,795  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:55:39,796  INFO      =======================================================
+2026-07-07 09:55:39,796  INFO      Daily signal run  [2026-07-07 09:55]
+2026-07-07 09:55:39,796  INFO      =======================================================
+2026-07-07 09:55:40,161  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 09:55:40,324  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 09:55:40,552  INFO      Portfolio value : $121,768.98
+2026-07-07 09:55:40,552  INFO      Current price   : $604.99
+2026-07-07 09:55:40,552  INFO      Open position   : None
+2026-07-07 09:55:40,552  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:00:40,750  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,063  INFO      [META] Process exiting
+2026-07-07 10:02:17,624  INFO      [META] Process started  PID=92316
+2026-07-07 10:02:17,626  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:02:17,626  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:17,626  INFO         Mode    : PAPER
+2026-07-07 10:02:17,626  INFO         Ticker  : META
+2026-07-07 10:02:17,627  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:02:17,627  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:17,628  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:17,816  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [META] Process exiting
+2026-07-07 10:04:39,135  INFO      [META] Process started  PID=96144
+2026-07-07 10:04:39,137  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:04:39,137  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:39,137  INFO         Mode    : PAPER
+2026-07-07 10:04:39,137  INFO         Ticker  : META
+2026-07-07 10:04:39,138  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:04:39,138  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:39,139  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:39,337  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:39,338  INFO      =======================================================
+2026-07-07 10:09:39,338  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:39,338  INFO      =======================================================
+2026-07-07 10:09:39,921  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:40,111  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 10:09:40,231  INFO      Portfolio value : $121,895.53
+2026-07-07 10:09:40,231  INFO      Current price   : $605.70
+2026-07-07 10:09:40,231  INFO      Open position   : None
+2026-07-07 10:09:40,232  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,685  INFO      [META] Process exiting
+2026-07-07 10:10:19,409  INFO      [META] Process started  PID=37268
+2026-07-07 10:10:19,412  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:10:19,412  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:19,412  INFO         Mode    : PAPER
+2026-07-07 10:10:19,412  INFO         Ticker  : META
+2026-07-07 10:10:19,412  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:10:19,412  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:19,414  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:19,612  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:19,613  INFO      =======================================================
+2026-07-07 10:15:19,614  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:19,614  INFO      =======================================================
+2026-07-07 10:15:20,218  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:20,421  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 10:15:20,553  INFO      Portfolio value : $121,907.78
+2026-07-07 10:15:20,553  INFO      Current price   : $605.18
+2026-07-07 10:15:20,553  INFO      Open position   : None
+2026-07-07 10:15:20,553  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:20:20,743  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,864  INFO      [META] Process exiting
+2026-07-07 10:23:47,378  INFO      [META] Process started  PID=100076
+2026-07-07 10:23:47,381  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:23:47,382  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:47,382  INFO         Mode    : PAPER
+2026-07-07 10:23:47,382  INFO         Ticker  : META
+2026-07-07 10:23:47,382  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:23:47,382  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:47,384  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:47,586  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [META] Process exiting
+2026-07-07 10:26:14,456  INFO      [META] Process started  PID=96384
+2026-07-07 10:26:14,458  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:26:14,459  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:14,459  INFO         Mode    : PAPER
+2026-07-07 10:26:14,459  INFO         Ticker  : META
+2026-07-07 10:26:14,459  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:26:14,459  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:14,460  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:14,655  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [META] Process exiting
+2026-07-07 10:30:10,392  INFO      [META] Process started  PID=71148
+2026-07-07 10:30:10,394  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:30:10,395  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:10,395  INFO         Mode    : PAPER
+2026-07-07 10:30:10,395  INFO         Ticker  : META
+2026-07-07 10:30:10,395  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:30:10,395  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:10,396  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:10,611  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,811  INFO      [META] Process exiting
+2026-07-07 10:35:39,294  INFO      [META] Process started  PID=77148
+2026-07-07 10:35:39,297  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:35:39,297  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:39,297  INFO         Mode    : PAPER
+2026-07-07 10:35:39,297  INFO         Ticker  : META
+2026-07-07 10:35:39,297  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:35:39,297  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:39,299  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:39,512  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [META] Process exiting
+2026-07-07 10:39:21,114  INFO      [META] Process started  PID=99288
+2026-07-07 10:39:21,116  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:39:21,116  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:21,116  INFO         Mode    : PAPER
+2026-07-07 10:39:21,116  INFO         Ticker  : META
+2026-07-07 10:39:21,116  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:39:21,116  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:21,118  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:21,341  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:21,341  INFO      =======================================================
+2026-07-07 10:44:21,342  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:21,342  INFO      =======================================================
+2026-07-07 10:44:21,853  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:22,064  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 10:44:22,192  INFO      Portfolio value : $100,580.98
+2026-07-07 10:44:22,193  INFO      Current price   : $608.09
+2026-07-07 10:44:22,198  INFO      Open position   : None
+2026-07-07 10:44:22,200  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,003  INFO      [META] Process exiting
+2026-07-07 10:50:07,727  INFO      [META] Process started  PID=84112
+2026-07-07 10:50:07,729  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:50:07,730  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:50:07,730  INFO         Mode    : PAPER
+2026-07-07 10:50:07,730  INFO         Ticker  : META
+2026-07-07 10:50:07,730  INFO         Chromosome : META_best_chromosome.csv
+2026-07-07 10:50:07,730  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:50:07,731  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-07 10:50:07,953  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:55:07,953  INFO      =======================================================
+2026-07-07 10:55:07,953  INFO      Daily signal run  [2026-07-07 10:55]
+2026-07-07 10:55:07,954  INFO      =======================================================
+2026-07-07 10:55:08,661  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:08,831  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 10:55:08,963  INFO      Portfolio value : $100,507.59
+2026-07-07 10:55:08,963  INFO      Current price   : $607.89
+2026-07-07 10:55:08,963  INFO      Open position   : None
+2026-07-07 10:55:08,963  INFO      Signal check complete. Sleeping 5 minutes until next check.

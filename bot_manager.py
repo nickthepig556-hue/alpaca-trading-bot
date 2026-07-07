@@ -146,7 +146,7 @@ BOT_CONFIGS = {
     "id": "btc_fut", "name": "Bitcoin Futures", "ticker": "BTC/USD",
     "chromosome_file": "BTC_futures_chromosome.csv",
     "log_file": "BTC_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2021-01-01",
 },
@@ -154,7 +154,7 @@ BOT_CONFIGS = {
     "id": "eth_fut", "name": "Ethereum Futures", "ticker": "ETH/USD",
     "chromosome_file": "ETH-USD_futures_chromosome.csv",
     "log_file": "ETH_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.15, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2021-01-01",
 },
@@ -162,7 +162,7 @@ BOT_CONFIGS = {
     "id": "es_fut", "name": "E-mini S&P 500 Futures", "ticker": "ES",
     "chromosome_file": "ES_futures_chromosome.csv",
     "log_file": "ES_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2010-01-01",
 },
@@ -170,7 +170,7 @@ BOT_CONFIGS = {
     "id": "nq_fut", "name": "E-mini Nasdaq Futures", "ticker": "NQ",
     "chromosome_file": "NQ_futures_chromosome.csv",
     "log_file": "NQ_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2010-01-01",
 },
@@ -178,7 +178,7 @@ BOT_CONFIGS = {
     "id": "gc_fut", "name": "Gold Futures", "ticker": "GC",
     "chromosome_file": "GC_futures_chromosome.csv",
     "log_file": "GC_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2010-01-01",
 },
@@ -186,7 +186,7 @@ BOT_CONFIGS = {
     "id": "cl_fut", "name": "Crude Oil Futures", "ticker": "CL",
     "chromosome_file": "CL_futures_chromosome.csv",
     "log_file": "CL_futures.log",
-    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
+    "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50, "stop_loss_pct": 0.05, "take_profit_pct": 0.50, "trailing_stop_pct": 0.03},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
     "lookback_days": 90, "start_date": "2010-01-01",
 },
@@ -229,7 +229,7 @@ def run_bot_process(config: dict, state_file: str = "bot_state.json") -> None:
             run_futures_bot(ticker)
             return
     except Exception as e:
-        pass
+        print(f"Futures detection error for {ticker}: {e}")
 
     # Set up per-bot logging
     bot_log = logging.getLogger(ticker)

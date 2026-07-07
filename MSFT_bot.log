@@ -679,3 +679,191 @@
 2026-07-07 09:23:41,421  INFO        MSFT [long] price=393.38  stop=384.16  trailing=inactive  target=407.68  P&L=+71.00
 2026-07-07 09:24:41,628  INFO        MSFT [long] price=393.59  stop=384.16  trailing=inactive  target=407.68  P&L=+79.58
 2026-07-07 09:25:42,021  INFO        MSFT [long] price=393.57  stop=384.16  trailing=inactive  target=407.68  P&L=+75.50
+2026-07-07 09:26:42,263  INFO        MSFT [long] price=393.50  stop=384.16  trailing=inactive  target=407.68  P&L=+75.00
+2026-07-07 09:27:42,494  INFO        MSFT [long] price=393.46  stop=384.16  trailing=inactive  target=407.68  P&L=+73.00
+2026-07-07 09:28:42,722  INFO        MSFT [long] price=393.35  stop=384.16  trailing=inactive  target=407.68  P&L=+67.50
+2026-07-07 09:29:42,995  INFO        MSFT [long] price=393.43  stop=384.16  trailing=inactive  target=407.68  P&L=+71.75
+2026-07-07 09:30:43,237  INFO        MSFT [long] price=393.23  stop=384.16  trailing=inactive  target=407.68  P&L=+61.75
+2026-07-07 09:31:43,554  INFO        MSFT [long] price=393.80  stop=384.16  trailing=inactive  target=407.68  P&L=+90.00
+2026-07-07 09:32:43,788  INFO        MSFT [long] price=393.70  stop=384.16  trailing=inactive  target=407.68  P&L=+85.00
+2026-07-07 09:33:43,999  INFO        MSFT [long] price=393.39  stop=384.16  trailing=inactive  target=407.68  P&L=+69.00
+2026-07-07 09:34:44,222  INFO        MSFT [long] price=392.88  stop=384.16  trailing=inactive  target=407.68  P&L=+44.00
+2026-07-07 09:35:44,443  INFO        MSFT [long] price=392.84  stop=384.16  trailing=inactive  target=407.68  P&L=+38.00
+2026-07-07 09:36:44,656  INFO        MSFT [long] price=392.64  stop=384.16  trailing=inactive  target=407.68  P&L=+32.00
+2026-07-07 09:37:44,893  INFO        MSFT [long] price=393.07  stop=384.16  trailing=inactive  target=407.68  P&L=+50.69
+2026-07-07 09:38:45,149  INFO        MSFT [long] price=392.91  stop=384.16  trailing=inactive  target=407.68  P&L=+47.50
+2026-07-07 09:39:45,411  INFO        MSFT [long] price=392.85  stop=384.16  trailing=inactive  target=407.68  P&L=+44.34
+2026-07-07 09:40:45,666  INFO        MSFT [long] price=393.39  stop=384.16  trailing=inactive  target=407.68  P&L=+66.92
+2026-07-07 09:41:45,883  INFO        MSFT [long] price=393.16  stop=384.16  trailing=inactive  target=407.68  P&L=+60.25
+2026-07-07 09:42:46,129  INFO        MSFT [long] price=393.09  stop=384.16  trailing=inactive  target=407.68  P&L=+55.50
+2026-07-07 09:43:46,347  INFO        MSFT [long] price=392.91  stop=384.16  trailing=inactive  target=407.68  P&L=+47.75
+2026-07-07 09:44:46,581  INFO        MSFT [long] price=393.03  stop=384.16  trailing=inactive  target=407.68  P&L=+54.00
+2026-07-07 09:45:46,786  INFO        MSFT [long] price=393.40  stop=384.16  trailing=inactive  target=407.68  P&L=+70.50
+2026-07-07 09:46:47,061  INFO        MSFT [long] price=393.24  stop=384.16  trailing=inactive  target=407.68  P&L=+64.48
+2026-07-07 09:47:47,352  INFO        MSFT [long] price=393.32  stop=384.16  trailing=inactive  target=407.68  P&L=+65.50
+2026-07-07 09:48:47,585  INFO        MSFT [long] price=393.39  stop=384.16  trailing=inactive  target=407.68  P&L=+69.38
+2026-07-07 09:49:47,889  INFO        MSFT [long] price=393.62  stop=384.16  trailing=inactive  target=407.68  P&L=+79.75
+2026-07-07 09:50:48,133  INFO        MSFT [long] price=393.51  stop=384.16  trailing=inactive  target=407.68  P&L=+76.50
+2026-07-07 09:51:48,368  INFO        MSFT [long] price=393.53  stop=384.16  trailing=inactive  target=407.68  P&L=+76.50
+2026-07-07 09:52:48,618  INFO        MSFT [long] price=393.17  stop=384.16  trailing=inactive  target=407.68  P&L=+58.50
+2026-07-07 09:53:48,834  INFO        MSFT [long] price=392.99  stop=384.16  trailing=inactive  target=407.68  P&L=+48.00
+2026-07-07 09:54:49,039  INFO        MSFT [long] price=393.04  stop=384.16  trailing=inactive  target=407.68  P&L=+51.50
+2026-07-07 09:55:49,325  INFO        MSFT [long] price=393.27  stop=384.16  trailing=inactive  target=407.68  P&L=+72.00
+2026-07-07 09:56:49,667  INFO        MSFT [long] price=393.58  stop=384.16  trailing=inactive  target=407.68  P&L=+81.50
+2026-07-07 09:57:49,908  INFO        MSFT [long] price=393.97  stop=384.16  trailing=inactive  target=407.68  P&L=+99.50
+2026-07-07 09:58:50,143  INFO        MSFT [long] price=393.79  stop=384.16  trailing=inactive  target=407.68  P&L=+89.50
+2026-07-07 09:59:50,388  INFO        MSFT [long] price=393.91  stop=384.16  trailing=inactive  target=407.68  P&L=+98.50
+2026-07-07 10:00:50,662  INFO        MSFT [long] price=393.77  stop=384.16  trailing=inactive  target=407.68  P&L=+88.25
+2026-07-07 10:01:50,920  INFO        MSFT [long] price=393.80  stop=384.16  trailing=inactive  target=407.68  P&L=+90.00
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,062  INFO      [MSFT] Process exiting
+2026-07-07 10:02:13,573  INFO      [MSFT] Process started  PID=98088
+2026-07-07 10:02:13,575  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:02:13,575  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:13,575  INFO         Mode    : PAPER
+2026-07-07 10:02:13,575  INFO         Ticker  : MSFT
+2026-07-07 10:02:13,576  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:02:13,576  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:13,577  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:13,766  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [MSFT] Process exiting
+2026-07-07 10:04:35,166  INFO      [MSFT] Process started  PID=93960
+2026-07-07 10:04:35,169  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:04:35,169  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:35,169  INFO         Mode    : PAPER
+2026-07-07 10:04:35,169  INFO         Ticker  : MSFT
+2026-07-07 10:04:35,169  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:04:35,169  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:35,171  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:35,428  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:35,428  INFO      =======================================================
+2026-07-07 10:09:35,429  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:35,429  INFO      =======================================================
+2026-07-07 10:09:36,011  INFO      Fetched 70 bars for MSFT  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:36,230  INFO      Signal: BUY  |  Confidence: 0.373
+2026-07-07 10:09:36,374  INFO      Portfolio value : $121,900.85
+2026-07-07 10:09:36,375  INFO      Current price   : $393.94
+2026-07-07 10:09:36,376  INFO      Open position   : {'qty': 50, 'side': 'long', 'entry_price': 392.0, 'market_value': 19695.25, 'unrealised_pl': 95.25}
+2026-07-07 10:09:36,376  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:09:36,376  INFO      Monitoring MSFT  |  entry=392.00  stop=384.16  target=407.68
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,686  INFO      [MSFT] Process exiting
+2026-07-07 10:10:15,324  INFO      [MSFT] Process started  PID=96756
+2026-07-07 10:10:15,327  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:10:15,327  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:15,327  INFO         Mode    : PAPER
+2026-07-07 10:10:15,327  INFO         Ticker  : MSFT
+2026-07-07 10:10:15,327  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:10:15,327  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:15,329  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:15,545  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:15,553  INFO      =======================================================
+2026-07-07 10:15:15,554  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:15,554  INFO      =======================================================
+2026-07-07 10:15:16,347  INFO      Fetched 70 bars for MSFT  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:16,548  INFO      Signal: BUY  |  Confidence: 0.373
+2026-07-07 10:15:16,697  INFO      Portfolio value : $121,907.29
+2026-07-07 10:15:16,697  INFO      Current price   : $393.14
+2026-07-07 10:15:16,697  INFO      Open position   : {'qty': 50, 'side': 'long', 'entry_price': 392.0, 'market_value': 19656.5, 'unrealised_pl': 56.5}
+2026-07-07 10:15:16,697  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:15:16,697  INFO      Monitoring MSFT  |  entry=392.00  stop=384.16  target=407.68
+2026-07-07 10:16:16,917  INFO        MSFT [long] price=393.30  stop=384.16  trailing=inactive  target=407.68  P&L=+65.25
+2026-07-07 10:17:17,166  INFO        MSFT [long] price=393.08  stop=384.16  trailing=inactive  target=407.68  P&L=+54.00
+2026-07-07 10:18:17,593  INFO        MSFT [long] price=393.08  stop=384.16  trailing=inactive  target=407.68  P&L=+57.00
+2026-07-07 10:19:25,942  INFO        MSFT [long] price=392.85  stop=384.16  trailing=inactive  target=407.68  P&L=+42.00
+2026-07-07 10:20:26,221  INFO        MSFT [long] price=394.10  stop=384.16  trailing=inactive  target=407.68  P&L=+105.00
+2026-07-07 10:21:26,503  INFO        MSFT [long] price=393.75  stop=384.16  trailing=inactive  target=407.68  P&L=+88.25
+2026-07-07 10:22:26,775  INFO        MSFT [long] price=393.54  stop=384.16  trailing=inactive  target=407.68  P&L=+77.00
+2026-07-07 10:23:26,992  INFO        MSFT [long] price=393.91  stop=384.16  trailing=inactive  target=407.68  P&L=+94.00
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,863  INFO      [MSFT] Process exiting
+2026-07-07 10:23:43,255  INFO      [MSFT] Process started  PID=82736
+2026-07-07 10:23:43,258  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:23:43,258  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:43,258  INFO         Mode    : PAPER
+2026-07-07 10:23:43,258  INFO         Ticker  : MSFT
+2026-07-07 10:23:43,258  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:23:43,259  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:43,260  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:43,449  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [MSFT] Process exiting
+2026-07-07 10:26:10,441  INFO      [MSFT] Process started  PID=47048
+2026-07-07 10:26:10,443  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:26:10,443  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:10,443  INFO         Mode    : PAPER
+2026-07-07 10:26:10,444  INFO         Ticker  : MSFT
+2026-07-07 10:26:10,444  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:26:10,444  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:10,445  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:10,645  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,987  INFO      [MSFT] Process exiting
+2026-07-07 10:30:06,346  INFO      [MSFT] Process started  PID=81716
+2026-07-07 10:30:06,349  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:30:06,349  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:06,350  INFO         Mode    : PAPER
+2026-07-07 10:30:06,350  INFO         Ticker  : MSFT
+2026-07-07 10:30:06,350  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:30:06,350  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:06,352  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:06,550  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,811  INFO      [MSFT] Process exiting
+2026-07-07 10:35:35,254  INFO      [MSFT] Process started  PID=98332
+2026-07-07 10:35:35,257  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:35:35,257  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:35,257  INFO         Mode    : PAPER
+2026-07-07 10:35:35,257  INFO         Ticker  : MSFT
+2026-07-07 10:35:35,257  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:35:35,257  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:35,259  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:35,464  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [MSFT] Process exiting
+2026-07-07 10:39:17,069  INFO      [MSFT] Process started  PID=89180
+2026-07-07 10:39:17,071  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:39:17,071  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:17,071  INFO         Mode    : PAPER
+2026-07-07 10:39:17,071  INFO         Ticker  : MSFT
+2026-07-07 10:39:17,071  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:39:17,072  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:17,073  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:17,322  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:17,323  INFO      =======================================================
+2026-07-07 10:44:17,323  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:17,323  INFO      =======================================================
+2026-07-07 10:44:17,885  INFO      Fetched 70 bars for MSFT  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:18,102  INFO      Signal: BUY  |  Confidence: 0.373
+2026-07-07 10:44:18,230  INFO      Portfolio value : $100,584.42
+2026-07-07 10:44:18,231  INFO      Current price   : $394.62
+2026-07-07 10:44:18,231  INFO      Open position   : {'qty': 50, 'side': 'long', 'entry_price': 392.0, 'market_value': 19731.0, 'unrealised_pl': 131.0}
+2026-07-07 10:44:18,231  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:44:18,231  INFO      Monitoring MSFT  |  entry=392.00  stop=384.16  target=407.68
+2026-07-07 10:45:18,499  INFO        MSFT [long] price=394.05  stop=384.16  trailing=inactive  target=407.68  P&L=+103.65
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,003  INFO      [MSFT] Process exiting
+2026-07-07 10:50:03,759  INFO      [MSFT] Process started  PID=99124
+2026-07-07 10:50:03,762  INFO      [MSFT] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:50:03,762  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:50:03,762  INFO         Mode    : PAPER
+2026-07-07 10:50:03,762  INFO         Ticker  : MSFT
+2026-07-07 10:50:03,762  INFO         Chromosome : MSFT_best_chromosome.csv
+2026-07-07 10:50:03,763  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:50:03,764  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
+2026-07-07 10:50:04,147  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:55:04,147  INFO      =======================================================
+2026-07-07 10:55:04,148  INFO      Daily signal run  [2026-07-07 10:55]
+2026-07-07 10:55:04,148  INFO      =======================================================
+2026-07-07 10:55:04,741  INFO      Fetched 70 bars for MSFT  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:04,993  INFO      Signal: BUY  |  Confidence: 0.373
+2026-07-07 10:55:05,119  INFO      Portfolio value : $100,489.33
+2026-07-07 10:55:05,119  INFO      Current price   : $394.27
+2026-07-07 10:55:05,120  INFO      Open position   : {'qty': 50, 'side': 'long', 'entry_price': 392.0, 'market_value': 19713.5, 'unrealised_pl': 113.5}
+2026-07-07 10:55:05,120  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:55:05,120  INFO      Monitoring MSFT  |  entry=392.00  stop=384.16  target=407.68
+2026-07-07 10:56:05,389  INFO        MSFT [long] price=394.41  stop=384.16  trailing=inactive  target=407.68  P&L=+120.50
+2026-07-07 10:57:05,643  INFO        MSFT [long] price=394.45  stop=384.16  trailing=inactive  target=407.68  P&L=+123.00
+2026-07-07 10:58:05,910  INFO        MSFT [long] price=394.10  stop=384.16  trailing=inactive  target=407.68  P&L=+106.50
+2026-07-07 10:59:06,141  INFO        MSFT [long] price=393.99  stop=384.16  trailing=inactive  target=407.68  P&L=+99.75

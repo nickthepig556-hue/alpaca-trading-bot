@@ -49,8 +49,9 @@ from alerts import Alerter
 API_KEY      = os.getenv("ALPACA_API_KEY", "")
 SECRET_KEY   = os.getenv("ALPACA_SECRET_KEY", "")
 IS_PAPER     = os.getenv("TRADING_MODE", "paper").lower() != "live"
-FEATURES     = ['Close','Volume','SMA_20','SMA_50','SMA_200','RSI',
-                'MACD','Signal','BB_Upper','BB_Lower','Daily_Return','Volume_Change']
+# Import FEATURES from futures_bot to stay in sync
+from futures_bot import FEATURES as FUTURES_FEATURES
+FEATURES = FUTURES_FEATURES  # 17 features matching trained chromosomes
 
 logging.basicConfig(
     level=logging.INFO,
@@ -242,6 +243,14 @@ def place_futures_order(trading_client: TradingClient,
     """Place a futures market order."""
     if qty <= 0:
         return None
+
+    # Index/commodity futures require a funded live account
+    # Run in signal-only mode on Alpaca paper
+    PAPER_ONLY_TICKERS = {"ES", "NQ", "GC", "CL"}
+    if ticker in PAPER_ONLY_TICKERS:
+        log.info(f"[SIGNAL ONLY] {side.upper()} {qty}x {ticker} — index futures require live account")
+        return None
+    
     order_side = OrderSide.BUY if side in ("long", "cover") else OrderSide.SELL
     try:
         order = trading_client.submit_order(MarketOrderRequest(
@@ -451,6 +460,10 @@ def run_futures_bot(ticker: str) -> None:
         sys.exit(1)
 
     cfg = FUTURES_CONFIGS[ticker]
+    # Ensure required risk keys exist
+    cfg.setdefault('stop_loss_pct', 0.05)
+    cfg.setdefault('take_profit_pct', 0.50)
+    cfg.setdefault('intraday_interval_s', 120)
 
     # Setup logging to file
     fh = logging.FileHandler(cfg["log_file"], encoding="utf-8")

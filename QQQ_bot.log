@@ -950,3 +950,191 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 09:23:38,164  INFO        QQQ [long] price=706.78  stop=693.41  trailing=inactive  target=735.87  P&L=-29.09
 2026-07-07 09:24:38,698  INFO        QQQ [long] price=706.51  stop=693.41  trailing=inactive  target=735.87  P&L=-36.86
 2026-07-07 09:25:38,961  INFO        QQQ [long] price=706.64  stop=693.41  trailing=inactive  target=735.87  P&L=-32.05
+2026-07-07 09:26:39,234  INFO        QQQ [long] price=706.87  stop=693.41  trailing=inactive  target=735.87  P&L=-25.76
+2026-07-07 09:27:39,462  INFO        QQQ [long] price=707.22  stop=693.41  trailing=inactive  target=735.87  P&L=-13.55
+2026-07-07 09:28:39,713  INFO        QQQ [long] price=707.10  stop=693.41  trailing=inactive  target=735.87  P&L=-17.25
+2026-07-07 09:29:40,065  INFO        QQQ [long] price=707.03  stop=693.41  trailing=inactive  target=735.87  P&L=-19.65
+2026-07-07 09:30:40,299  INFO        QQQ [long] price=706.92  stop=693.41  trailing=inactive  target=735.87  P&L=-22.43
+2026-07-07 09:31:40,498  INFO        QQQ [long] price=707.08  stop=693.41  trailing=inactive  target=735.87  P&L=-17.99
+2026-07-07 09:32:40,716  INFO        QQQ [long] price=707.15  stop=693.41  trailing=inactive  target=735.87  P&L=-15.40
+2026-07-07 09:33:40,943  INFO        QQQ [long] price=707.36  stop=693.41  trailing=inactive  target=735.87  P&L=-8.74
+2026-07-07 09:34:41,249  INFO        QQQ [long] price=707.20  stop=693.41  trailing=inactive  target=735.87  P&L=-14.29
+2026-07-07 09:35:41,485  INFO        QQQ [long] price=706.78  stop=693.41  trailing=inactive  target=735.87  P&L=-30.94
+2026-07-07 09:36:41,701  INFO        QQQ [long] price=707.20  stop=693.41  trailing=inactive  target=735.87  P&L=-13.55
+2026-07-07 09:37:41,945  INFO        QQQ [long] price=706.71  stop=693.41  trailing=inactive  target=735.87  P&L=-34.64
+2026-07-07 09:38:42,195  INFO        QQQ [long] price=706.62  stop=693.41  trailing=inactive  target=735.87  P&L=-34.27
+2026-07-07 09:39:42,424  INFO        QQQ [long] price=706.30  stop=693.41  trailing=inactive  target=735.87  P&L=-46.85
+2026-07-07 09:40:42,700  INFO        QQQ [long] price=706.29  stop=693.41  trailing=inactive  target=735.87  P&L=-44.26
+2026-07-07 09:41:42,920  INFO        QQQ [long] price=706.65  stop=693.41  trailing=inactive  target=735.87  P&L=-33.90
+2026-07-07 09:42:43,136  INFO        QQQ [long] price=707.11  stop=693.41  trailing=inactive  target=735.87  P&L=-17.99
+2026-07-07 09:43:43,395  INFO        QQQ [long] price=707.11  stop=693.41  trailing=inactive  target=735.87  P&L=-16.14
+2026-07-07 09:44:43,637  INFO        QQQ [long] price=707.41  stop=693.41  trailing=inactive  target=735.87  P&L=-7.07
+2026-07-07 09:45:43,858  INFO        QQQ [long] price=708.28  stop=693.41  trailing=inactive  target=735.87  P&L=+26.41
+2026-07-07 09:46:44,114  INFO        QQQ [long] price=708.35  stop=693.41  trailing=inactive  target=735.87  P&L=+29.00
+2026-07-07 09:47:44,404  INFO        QQQ [long] price=708.67  stop=693.41  trailing=inactive  target=735.87  P&L=+40.84
+2026-07-07 09:48:44,647  INFO        QQQ [long] price=708.76  stop=693.41  trailing=inactive  target=735.87  P&L=+44.17
+2026-07-07 09:49:45,110  INFO        QQQ [long] price=708.21  stop=693.41  trailing=inactive  target=735.87  P&L=+23.82
+2026-07-07 09:50:45,354  INFO        QQQ [long] price=708.16  stop=693.41  trailing=inactive  target=735.87  P&L=+21.97
+2026-07-07 09:51:45,620  INFO        QQQ [long] price=708.41  stop=693.41  trailing=inactive  target=735.87  P&L=+32.70
+2026-07-07 09:52:45,876  INFO        QQQ [long] price=708.84  stop=693.41  trailing=inactive  target=735.87  P&L=+47.13
+2026-07-07 09:53:46,107  INFO        QQQ [long] price=708.95  stop=693.41  trailing=inactive  target=735.87  P&L=+50.46
+2026-07-07 09:54:46,524  INFO        QQQ [long] price=708.76  stop=693.41  trailing=inactive  target=735.87  P&L=+44.18
+2026-07-07 09:55:46,746  INFO        QQQ [long] price=708.54  stop=693.41  trailing=inactive  target=735.87  P&L=+34.55
+2026-07-07 09:56:47,092  INFO        QQQ [long] price=708.61  stop=693.41  trailing=inactive  target=735.87  P&L=+37.51
+2026-07-07 09:57:47,313  INFO        QQQ [long] price=708.89  stop=693.41  trailing=inactive  target=735.87  P&L=+48.98
+2026-07-07 09:58:47,548  INFO        QQQ [long] price=709.08  stop=693.41  trailing=inactive  target=735.87  P&L=+56.01
+2026-07-07 09:59:47,797  INFO        QQQ [long] price=709.23  stop=693.41  trailing=inactive  target=735.87  P&L=+61.56
+2026-07-07 10:00:48,026  INFO        QQQ [long] price=709.47  stop=693.41  trailing=inactive  target=735.87  P&L=+70.44
+2026-07-07 10:01:48,227  INFO        QQQ [long] price=709.87  stop=693.41  trailing=inactive  target=735.87  P&L=+84.87
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,059  INFO      [QQQ] Process exiting
+2026-07-07 10:02:09,615  INFO      [QQQ] Process started  PID=91700
+2026-07-07 10:02:09,618  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:02:09,618  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:09,618  INFO         Mode    : PAPER
+2026-07-07 10:02:09,618  INFO         Ticker  : QQQ
+2026-07-07 10:02:09,618  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:02:09,619  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:09,621  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:09,838  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [QQQ] Process exiting
+2026-07-07 10:04:31,144  INFO      [QQQ] Process started  PID=61644
+2026-07-07 10:04:31,147  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:04:31,147  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:31,147  INFO         Mode    : PAPER
+2026-07-07 10:04:31,147  INFO         Ticker  : QQQ
+2026-07-07 10:04:31,147  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:04:31,148  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:31,150  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:31,402  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:31,403  INFO      =======================================================
+2026-07-07 10:09:31,403  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:31,403  INFO      =======================================================
+2026-07-07 10:09:31,937  INFO      Fetched 70 bars for QQQ  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:32,158  INFO      Signal: BUY  |  Confidence: 0.570
+2026-07-07 10:09:32,285  INFO      Portfolio value : $121,902.36
+2026-07-07 10:09:32,286  INFO      Current price   : $709.85
+2026-07-07 10:09:32,286  INFO      Open position   : {'qty': 37, 'side': 'long', 'entry_price': 707.566216, 'market_value': 26262.6, 'unrealised_pl': 82.650008}
+2026-07-07 10:09:32,286  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:09:32,286  INFO      Monitoring QQQ  |  entry=707.57  stop=693.41  target=735.87
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,685  INFO      [QQQ] Process exiting
+2026-07-07 10:10:11,328  INFO      [QQQ] Process started  PID=72940
+2026-07-07 10:10:11,330  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:10:11,331  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:11,331  INFO         Mode    : PAPER
+2026-07-07 10:10:11,331  INFO         Ticker  : QQQ
+2026-07-07 10:10:11,331  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:10:11,331  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:11,332  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:11,544  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:11,545  INFO      =======================================================
+2026-07-07 10:15:11,545  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:11,545  INFO      =======================================================
+2026-07-07 10:15:12,217  INFO      Fetched 70 bars for QQQ  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:12,423  INFO      Signal: BUY  |  Confidence: 0.570
+2026-07-07 10:15:12,566  INFO      Portfolio value : $121,911.67
+2026-07-07 10:15:12,567  INFO      Current price   : $711.07
+2026-07-07 10:15:12,567  INFO      Open position   : {'qty': 37, 'side': 'long', 'entry_price': 707.566216, 'market_value': 26310.7259, 'unrealised_pl': 130.775908}
+2026-07-07 10:15:12,567  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:15:12,567  INFO      Monitoring QQQ  |  entry=707.57  stop=693.41  target=735.87
+2026-07-07 10:16:12,819  INFO        QQQ [long] price=711.07  stop=693.41  trailing=inactive  target=735.87  P&L=+125.57
+2026-07-07 10:17:13,086  INFO        QQQ [long] price=711.04  stop=693.41  trailing=inactive  target=735.87  P&L=+129.83
+2026-07-07 10:18:13,384  INFO        QQQ [long] price=710.92  stop=693.41  trailing=inactive  target=735.87  P&L=+123.72
+2026-07-07 10:19:25,973  INFO        QQQ [long] price=711.15  stop=693.41  trailing=inactive  target=735.87  P&L=-156.23
+2026-07-07 10:20:26,245  INFO        QQQ [long] price=711.74  stop=693.41  trailing=inactive  target=735.87  P&L=-117.24
+2026-07-07 10:21:26,483  INFO        QQQ [long] price=711.87  stop=693.41  trailing=inactive  target=735.87  P&L=-108.14
+2026-07-07 10:22:26,712  INFO        QQQ [long] price=711.99  stop=693.41  trailing=inactive  target=735.87  P&L=-100.99
+2026-07-07 10:23:27,003  INFO        QQQ [long] price=712.88  stop=693.41  trailing=inactive  target=735.87  P&L=-43.79
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,864  INFO      [QQQ] Process exiting
+2026-07-07 10:23:39,259  INFO      [QQQ] Process started  PID=86416
+2026-07-07 10:23:39,262  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:23:39,262  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:39,263  INFO         Mode    : PAPER
+2026-07-07 10:23:39,263  INFO         Ticker  : QQQ
+2026-07-07 10:23:39,263  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:23:39,263  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:39,265  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:39,486  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [QQQ] Process exiting
+2026-07-07 10:26:06,419  INFO      [QQQ] Process started  PID=93776
+2026-07-07 10:26:06,422  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:26:06,422  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:06,422  INFO         Mode    : PAPER
+2026-07-07 10:26:06,422  INFO         Ticker  : QQQ
+2026-07-07 10:26:06,423  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:26:06,423  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:06,424  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:06,608  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [QQQ] Process exiting
+2026-07-07 10:30:02,354  INFO      [QQQ] Process started  PID=96660
+2026-07-07 10:30:02,356  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:30:02,357  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:02,357  INFO         Mode    : PAPER
+2026-07-07 10:30:02,357  INFO         Ticker  : QQQ
+2026-07-07 10:30:02,357  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:30:02,357  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:02,358  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:02,987  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,810  INFO      [QQQ] Process exiting
+2026-07-07 10:35:31,226  INFO      [QQQ] Process started  PID=66740
+2026-07-07 10:35:31,228  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:35:31,228  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:31,229  INFO         Mode    : PAPER
+2026-07-07 10:35:31,229  INFO         Ticker  : QQQ
+2026-07-07 10:35:31,229  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:35:31,229  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:31,230  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:31,532  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [QQQ] Process exiting
+2026-07-07 10:39:13,016  INFO      [QQQ] Process started  PID=93592
+2026-07-07 10:39:13,019  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:39:13,019  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:13,019  INFO         Mode    : PAPER
+2026-07-07 10:39:13,019  INFO         Ticker  : QQQ
+2026-07-07 10:39:13,019  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:39:13,019  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:13,021  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:13,230  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:13,231  INFO      =======================================================
+2026-07-07 10:44:13,231  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:13,232  INFO      =======================================================
+2026-07-07 10:44:13,886  INFO      Fetched 70 bars for QQQ  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:14,098  INFO      Signal: BUY  |  Confidence: 0.570
+2026-07-07 10:44:14,222  INFO      Portfolio value : $100,578.93
+2026-07-07 10:44:14,223  INFO      Current price   : $712.41
+2026-07-07 10:44:14,223  INFO      Open position   : {'qty': 65, 'side': 'long', 'entry_price': 713.553693, 'market_value': 46309.9, 'unrealised_pl': -71.090045}
+2026-07-07 10:44:14,223  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:44:14,224  INFO      Monitoring QQQ  |  entry=713.55  stop=699.28  target=742.10
+2026-07-07 10:45:14,448  INFO        QQQ [long] price=712.80  stop=699.28  trailing=inactive  target=742.10  P&L=-48.99
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,003  INFO      [QQQ] Process exiting
+2026-07-07 10:49:59,705  INFO      [QQQ] Process started  PID=85944
+2026-07-07 10:49:59,708  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:49:59,708  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:49:59,708  INFO         Mode    : PAPER
+2026-07-07 10:49:59,708  INFO         Ticker  : QQQ
+2026-07-07 10:49:59,708  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-07 10:49:59,708  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:49:59,710  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-07 10:49:59,965  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:54:59,966  INFO      =======================================================
+2026-07-07 10:54:59,966  INFO      Daily signal run  [2026-07-07 10:54]
+2026-07-07 10:54:59,966  INFO      =======================================================
+2026-07-07 10:55:00,762  INFO      Fetched 70 bars for QQQ  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:00,995  INFO      Signal: BUY  |  Confidence: 0.570
+2026-07-07 10:55:01,160  INFO      Portfolio value : $100,495.87
+2026-07-07 10:55:01,161  INFO      Current price   : $712.74
+2026-07-07 10:55:01,161  INFO      Open position   : {'qty': 65, 'side': 'long', 'entry_price': 713.553693, 'market_value': 46326.8065, 'unrealised_pl': -54.183545}
+2026-07-07 10:55:01,161  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:55:01,161  INFO      Monitoring QQQ  |  entry=713.55  stop=699.28  target=742.10
+2026-07-07 10:56:01,431  INFO        QQQ [long] price=712.38  stop=699.28  trailing=inactive  target=742.10  P&L=-74.67
+2026-07-07 10:57:01,672  INFO        QQQ [long] price=712.51  stop=699.28  trailing=inactive  target=742.10  P&L=-71.09
+2026-07-07 10:58:01,897  INFO        QQQ [long] price=712.30  stop=699.28  trailing=inactive  target=742.10  P&L=-78.89
+2026-07-07 10:59:02,196  INFO        QQQ [long] price=712.22  stop=699.28  trailing=inactive  target=742.10  P&L=-75.64

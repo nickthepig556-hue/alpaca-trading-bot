@@ -1083,3 +1083,170 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 09:25:29,898  INFO      Current price   : $406.10
 2026-07-07 09:25:29,898  INFO      Open position   : None
 2026-07-07 09:25:29,898  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:30:30,099  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:35:30,099  INFO      =======================================================
+2026-07-07 09:35:30,100  INFO      Daily signal run  [2026-07-07 09:35]
+2026-07-07 09:35:30,101  INFO      =======================================================
+2026-07-07 09:35:30,434  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:35:30,621  INFO      Signal: SELL/HOLD  |  Confidence: 0.254
+2026-07-07 09:35:30,762  INFO      Portfolio value : $121,599.83
+2026-07-07 09:35:30,763  INFO      Current price   : $405.47
+2026-07-07 09:35:30,763  INFO      Open position   : None
+2026-07-07 09:35:30,763  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:40:30,957  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:45:30,957  INFO      =======================================================
+2026-07-07 09:45:30,958  INFO      Daily signal run  [2026-07-07 09:45]
+2026-07-07 09:45:30,958  INFO      =======================================================
+2026-07-07 09:45:31,400  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:45:31,566  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 09:45:31,689  INFO      Portfolio value : $121,750.80
+2026-07-07 09:45:31,689  INFO      Current price   : $406.66
+2026-07-07 09:45:31,689  INFO      Open position   : None
+2026-07-07 09:45:31,689  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:50:31,881  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:55:31,882  INFO      =======================================================
+2026-07-07 09:55:31,883  INFO      Daily signal run  [2026-07-07 09:55]
+2026-07-07 09:55:31,883  INFO      =======================================================
+2026-07-07 09:55:32,208  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:55:32,418  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 09:55:32,543  INFO      Portfolio value : $121,761.59
+2026-07-07 09:55:32,544  INFO      Current price   : $406.02
+2026-07-07 09:55:32,544  INFO      Open position   : None
+2026-07-07 09:55:32,544  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:00:32,733  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,058  INFO      [TSLA] Process exiting
+2026-07-07 10:02:11,639  INFO      [TSLA] Process started  PID=94296
+2026-07-07 10:02:11,646  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:02:11,646  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:11,646  INFO         Mode    : PAPER
+2026-07-07 10:02:11,646  INFO         Ticker  : TSLA
+2026-07-07 10:02:11,646  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:02:11,647  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:11,649  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:11,853  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [TSLA] Process exiting
+2026-07-07 10:04:33,093  INFO      [TSLA] Process started  PID=100340
+2026-07-07 10:04:33,098  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:04:33,099  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:33,099  INFO         Mode    : PAPER
+2026-07-07 10:04:33,099  INFO         Ticker  : TSLA
+2026-07-07 10:04:33,099  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:04:33,099  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:33,101  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:33,295  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:33,295  INFO      =======================================================
+2026-07-07 10:09:33,296  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:33,296  INFO      =======================================================
+2026-07-07 10:09:33,836  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:34,108  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 10:09:34,228  INFO      Portfolio value : $121,902.04
+2026-07-07 10:09:34,229  INFO      Current price   : $406.99
+2026-07-07 10:09:34,229  INFO      Open position   : None
+2026-07-07 10:09:34,229  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,685  INFO      [TSLA] Process exiting
+2026-07-07 10:10:13,352  INFO      [TSLA] Process started  PID=73580
+2026-07-07 10:10:13,355  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:10:13,355  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:13,355  INFO         Mode    : PAPER
+2026-07-07 10:10:13,355  INFO         Ticker  : TSLA
+2026-07-07 10:10:13,355  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:10:13,355  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:13,357  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:13,548  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:13,548  INFO      =======================================================
+2026-07-07 10:15:13,548  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:13,548  INFO      =======================================================
+2026-07-07 10:15:14,103  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:14,283  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 10:15:14,409  INFO      Portfolio value : $121,918.09
+2026-07-07 10:15:14,409  INFO      Current price   : $407.40
+2026-07-07 10:15:14,409  INFO      Open position   : None
+2026-07-07 10:15:14,409  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:20:14,594  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,864  INFO      [TSLA] Process exiting
+2026-07-07 10:23:41,285  INFO      [TSLA] Process started  PID=66680
+2026-07-07 10:23:41,288  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:23:41,288  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:41,288  INFO         Mode    : PAPER
+2026-07-07 10:23:41,288  INFO         Ticker  : TSLA
+2026-07-07 10:23:41,288  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:23:41,289  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:41,290  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:41,485  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [TSLA] Process exiting
+2026-07-07 10:26:08,406  INFO      [TSLA] Process started  PID=80992
+2026-07-07 10:26:08,409  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:26:08,409  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:08,409  INFO         Mode    : PAPER
+2026-07-07 10:26:08,409  INFO         Ticker  : TSLA
+2026-07-07 10:26:08,409  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:26:08,409  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:08,411  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:08,594  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [TSLA] Process exiting
+2026-07-07 10:30:04,408  INFO      [TSLA] Process started  PID=97924
+2026-07-07 10:30:04,411  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:30:04,411  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:04,411  INFO         Mode    : PAPER
+2026-07-07 10:30:04,411  INFO         Ticker  : TSLA
+2026-07-07 10:30:04,411  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:30:04,411  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:04,413  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:04,880  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,811  INFO      [TSLA] Process exiting
+2026-07-07 10:35:33,283  INFO      [TSLA] Process started  PID=56756
+2026-07-07 10:35:33,285  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:35:33,285  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:33,285  INFO         Mode    : PAPER
+2026-07-07 10:35:33,285  INFO         Ticker  : TSLA
+2026-07-07 10:35:33,285  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:35:33,286  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:33,287  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:33,493  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [TSLA] Process exiting
+2026-07-07 10:39:15,051  INFO      [TSLA] Process started  PID=67624
+2026-07-07 10:39:15,054  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:39:15,054  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:15,054  INFO         Mode    : PAPER
+2026-07-07 10:39:15,054  INFO         Ticker  : TSLA
+2026-07-07 10:39:15,054  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:39:15,054  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:15,055  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:15,280  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:15,281  INFO      =======================================================
+2026-07-07 10:44:15,281  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:15,281  INFO      =======================================================
+2026-07-07 10:44:15,788  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:16,020  INFO      Signal: SELL/HOLD  |  Confidence: 0.273
+2026-07-07 10:44:16,144  INFO      Portfolio value : $100,587.79
+2026-07-07 10:44:16,145  INFO      Current price   : $408.32
+2026-07-07 10:44:16,145  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13883.05, 'unrealised_pl': 219.290004}
+2026-07-07 10:44:16,145  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,004  INFO      [TSLA] Process exiting
+2026-07-07 10:50:01,718  INFO      [TSLA] Process started  PID=96412
+2026-07-07 10:50:01,721  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:50:01,721  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:50:01,721  INFO         Mode    : PAPER
+2026-07-07 10:50:01,721  INFO         Ticker  : TSLA
+2026-07-07 10:50:01,721  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-07 10:50:01,721  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:50:01,723  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-07 10:50:01,926  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:55:01,927  INFO      =======================================================
+2026-07-07 10:55:01,928  INFO      Daily signal run  [2026-07-07 10:55]
+2026-07-07 10:55:01,928  INFO      =======================================================
+2026-07-07 10:55:02,474  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:02,664  INFO      Signal: SELL/HOLD  |  Confidence: 0.273
+2026-07-07 10:55:02,800  INFO      Portfolio value : $100,488.18
+2026-07-07 10:55:02,800  INFO      Current price   : $409.50
+2026-07-07 10:55:02,800  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13921.98, 'unrealised_pl': 180.360004}
+2026-07-07 10:55:02,800  INFO      Signal check complete. Sleeping 5 minutes until next check.

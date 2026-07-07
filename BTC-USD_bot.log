@@ -9276,3 +9276,276 @@
 2026-07-06 10:28:18,287  INFO      Signal check complete. Sleeping 5 minutes until next check.
 2026-07-06 10:29:44,299  INFO      Bot stopped by user (KeyboardInterrupt)
 2026-07-06 10:29:44,304  INFO      [BTC/USD] Process exiting
+2026-07-07 10:02:21,620  INFO      [BTC/USD] Process started  PID=99104
+2026-07-07 10:02:21,623  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:02:21,623  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:21,623  INFO         Mode    : PAPER
+2026-07-07 10:02:21,623  INFO         Ticker  : BTC/USD
+2026-07-07 10:02:21,623  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:02:21,623  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:21,629  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:02:21,629  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:02:21,629  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:02:21,629  INFO      =======================================================
+2026-07-07 10:02:21,629  INFO      Daily signal run  [2026-07-07 10:02]
+2026-07-07 10:02:21,630  INFO      =======================================================
+2026-07-07 10:02:22,068  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:02:22,399  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:02:22,401  INFO      Retrying in 5 minutes...
+2026-07-07 10:04:21,355  INFO      [BTC/USD] Process exiting
+2026-07-07 10:04:43,145  INFO      [BTC/USD] Process started  PID=95320
+2026-07-07 10:04:43,149  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:04:43,149  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:43,149  INFO         Mode    : PAPER
+2026-07-07 10:04:43,149  INFO         Ticker  : BTC/USD
+2026-07-07 10:04:43,149  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:04:43,149  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:43,151  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:04:43,151  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:04:43,151  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:04:43,151  INFO      =======================================================
+2026-07-07 10:04:43,151  INFO      Daily signal run  [2026-07-07 10:04]
+2026-07-07 10:04:43,151  INFO      =======================================================
+2026-07-07 10:04:43,530  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:04:43,955  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:04:43,956  INFO      Retrying in 5 minutes...
+2026-07-07 10:09:43,957  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:09:43,958  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:09:43,958  INFO      =======================================================
+2026-07-07 10:09:43,958  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:43,958  INFO      =======================================================
+2026-07-07 10:09:44,390  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:09:44,588  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:09:44,589  INFO      Retrying in 5 minutes...
+2026-07-07 10:10:01,683  INFO      [BTC/USD] Process exiting
+2026-07-07 10:10:23,371  INFO      [BTC/USD] Process started  PID=95120
+2026-07-07 10:10:23,373  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:10:23,373  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:23,373  INFO         Mode    : PAPER
+2026-07-07 10:10:23,373  INFO         Ticker  : BTC/USD
+2026-07-07 10:10:23,374  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:10:23,374  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:23,375  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:10:23,375  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:10:23,375  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:10:23,375  INFO      =======================================================
+2026-07-07 10:10:23,375  INFO      Daily signal run  [2026-07-07 10:10]
+2026-07-07 10:10:23,375  INFO      =======================================================
+2026-07-07 10:10:23,864  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:10:24,276  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:10:24,277  INFO      Retrying in 5 minutes...
+2026-07-07 10:15:24,277  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:15:24,277  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:15:24,277  INFO      =======================================================
+2026-07-07 10:15:24,277  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:24,277  INFO      =======================================================
+2026-07-07 10:15:24,701  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:15:24,865  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:15:24,866  INFO      Retrying in 5 minutes...
+2026-07-07 10:20:24,867  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:20:24,867  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:20:24,867  INFO      =======================================================
+2026-07-07 10:20:24,868  INFO      Daily signal run  [2026-07-07 10:20]
+2026-07-07 10:20:24,868  INFO      =======================================================
+2026-07-07 10:20:25,406  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:20:25,633  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 509, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 207, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:20:25,633  INFO      Retrying in 5 minutes...
+2026-07-07 10:23:29,862  INFO      [BTC/USD] Process exiting
+2026-07-07 10:23:51,370  INFO      [BTC/USD] Process started  PID=78168
+2026-07-07 10:23:51,372  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:23:51,373  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:51,373  INFO         Mode    : PAPER
+2026-07-07 10:23:51,373  INFO         Ticker  : BTC/USD
+2026-07-07 10:23:51,373  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:23:51,373  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:51,374  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:23:51,374  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:23:51,374  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:23:51,374  INFO      =======================================================
+2026-07-07 10:23:51,374  INFO      Daily signal run  [2026-07-07 10:23]
+2026-07-07 10:23:51,374  INFO      =======================================================
+2026-07-07 10:23:51,863  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:23:52,197  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 628, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 516, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 214, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:23:52,198  INFO      Retrying in 5 minutes...
+2026-07-07 10:25:20,665  INFO      [BTC/USD] Process exiting
+2026-07-07 10:26:18,410  INFO      [BTC/USD] Process started  PID=92248
+2026-07-07 10:26:18,413  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:26:18,413  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:18,413  INFO         Mode    : PAPER
+2026-07-07 10:26:18,416  INFO         Ticker  : BTC/USD
+2026-07-07 10:26:18,416  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:26:18,416  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:18,417  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:26:18,417  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:26:18,417  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:26:18,417  INFO      =======================================================
+2026-07-07 10:26:18,418  INFO      Daily signal run  [2026-07-07 10:26]
+2026-07-07 10:26:18,418  INFO      =======================================================
+2026-07-07 10:26:18,965  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:26:19,299  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 628, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 516, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 214, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:26:19,300  INFO      Retrying in 5 minutes...
+2026-07-07 10:29:52,986  INFO      [BTC/USD] Process exiting
+2026-07-07 10:30:14,400  INFO      [BTC/USD] Process started  PID=99536
+2026-07-07 10:30:14,402  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:30:14,403  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:14,403  INFO         Mode    : PAPER
+2026-07-07 10:30:14,406  INFO         Ticker  : BTC/USD
+2026-07-07 10:30:14,406  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:30:14,407  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:14,408  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:30:14,409  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:30:14,409  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:30:14,409  INFO      =======================================================
+2026-07-07 10:30:14,409  INFO      Daily signal run  [2026-07-07 10:30]
+2026-07-07 10:30:14,409  INFO      =======================================================
+2026-07-07 10:30:14,855  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:30:15,186  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 628, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 516, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 214, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:30:15,187  INFO      Retrying in 5 minutes...
+2026-07-07 10:34:14,809  INFO      [BTC/USD] Process exiting
+2026-07-07 10:35:43,312  INFO      [BTC/USD] Process started  PID=60216
+2026-07-07 10:35:43,315  INFO      [BTC/USD] Config loaded — max alloc 28%  stop 2.5%
+2026-07-07 10:35:43,316  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:43,316  INFO         Mode    : PAPER
+2026-07-07 10:35:43,317  INFO         Ticker  : BTC/USD
+2026-07-07 10:35:43,317  INFO         Chromosome : BTC-USD_best_chromosome.csv
+2026-07-07 10:35:43,317  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:43,318  INFO      Chromosome loaded from BTC-USD_best_chromosome.csv  (24 genes)
+2026-07-07 10:35:43,318  INFO      BTC/USD is crypto — trades 24/7, skipping market hours check
+2026-07-07 10:35:43,318  INFO      Market open — waiting 0s before first signal...
+2026-07-07 10:35:43,318  INFO      =======================================================
+2026-07-07 10:35:43,318  INFO      Daily signal run  [2026-07-07 10:35]
+2026-07-07 10:35:43,318  INFO      =======================================================
+2026-07-07 10:35:43,722  INFO      Fetched 100 bars for BTC/USD  (2026-03-30 → 2026-07-07)
+2026-07-07 10:35:44,074  ERROR     Unexpected error: operands could not be broadcast together with shapes (167,17) (1,7) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 628, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 516, in run_daily_signal
+    signal, confidence = compute_signal(bars, chrom)
+                         ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 214, in compute_signal
+    signals     = generate_signals(df_scaled, chrom)
+  File "C:\Users\nickt\alpaca-trading-bot\genetic_algorithm.py", line 93, in generate_signals
+    condition = (values > t).astype(float)       # (n_days, 12)
+                 ^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,17) (1,7) 
+2026-07-07 10:35:44,075  INFO      Retrying in 5 minutes...
+2026-07-07 10:39:03,409  INFO      [BTC/USD] Process exiting

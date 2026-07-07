@@ -63,8 +63,8 @@ BOT_CONFIG = {
     'weight_threshold'    : 0.30,   # GA weight-sum below this → skip trade
 
     # Risk management
-    'stop_loss_pct'       : 0.02,   # 2 % stop-loss below entry
-    'take_profit_pct'     : 0.04,   # 4 % take-profit above entry
+    'stop_loss_pct'       : 0.05,   # 5 % stop-loss below entry
+    'take_profit_pct'     : 0.50,   # 4 % take-profit above entry
     'trailing_stop_pct'   : 0.015,  # 1.5 % trailing stop (activated after entry)
 
     # Timing
@@ -129,7 +129,12 @@ def load_chromosome(path: str) -> np.ndarray:
             f"{path} not found. Run genetic_algorithm.py first."
         )
     df     = pd.read_csv(path)
-    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+    if 'weight' in df.columns and 'threshold' in df.columns:
+        chrom = np.concatenate([df['weight'].values, df['threshold'].values])
+    elif 'value' in df.columns:
+        chrom = df['value'].values
+    else:
+        raise ValueError(f"Unknown chromosome format in {path}")
     log.info(f"Chromosome loaded from {path}  ({len(chrom)} genes)")
     return chrom
 
@@ -204,6 +209,13 @@ def compute_signal(bars: pd.DataFrame, chrom: np.ndarray) -> tuple[int, float]:
 
     df_scaled, _ = preprocess_data(df_ind)
 
+    # Ensure df_scaled has all required features
+    from genetic_algorithm import FEATURES as GA_FEATURES
+    missing = [f for f in GA_FEATURES if f not in df_scaled.columns]
+    if missing:
+        log.warning(f"Missing features in scaled data: {missing} — recomputing indicators")
+        df_ind2   = add_indicators(df_yf.copy() if 'df_yf' in dir() else bars.copy())
+        df_scaled, _ = preprocess_data(df_ind2)
     signals     = generate_signals(df_scaled, chrom)
     last_signal = int(signals.iloc[-1])
 

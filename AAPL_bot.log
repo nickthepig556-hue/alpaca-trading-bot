@@ -869,3 +869,190 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 09:23:48,138  INFO        AAPL [long] price=313.81  stop=306.19  trailing=inactive  target=324.93  P&L=+155.24
 2026-07-07 09:24:48,371  INFO        AAPL [long] price=313.95  stop=306.19  trailing=inactive  target=324.93  P&L=+168.69
 2026-07-07 09:25:48,765  INFO        AAPL [long] price=313.46  stop=306.19  trailing=inactive  target=324.93  P&L=+114.92
+2026-07-07 09:26:49,031  INFO        AAPL [long] price=313.79  stop=306.19  trailing=inactive  target=324.93  P&L=+151.32
+2026-07-07 09:27:49,310  INFO        AAPL [long] price=314.01  stop=306.19  trailing=inactive  target=324.93  P&L=+176.52
+2026-07-07 09:28:49,555  INFO        AAPL [long] price=313.99  stop=306.19  trailing=inactive  target=324.93  P&L=+174.28
+2026-07-07 09:29:49,825  INFO        AAPL [long] price=314.07  stop=306.19  trailing=inactive  target=324.93  P&L=+183.24
+2026-07-07 09:30:50,070  INFO        AAPL [long] price=314.04  stop=306.19  trailing=inactive  target=324.93  P&L=+182.12
+2026-07-07 09:31:50,315  INFO        AAPL [long] price=313.98  stop=306.19  trailing=inactive  target=324.93  P&L=+172.60
+2026-07-07 09:32:50,571  INFO        AAPL [long] price=313.81  stop=306.19  trailing=inactive  target=324.93  P&L=+154.12
+2026-07-07 09:33:50,834  INFO        AAPL [long] price=313.94  stop=306.19  trailing=inactive  target=324.93  P&L=+173.16
+2026-07-07 09:34:51,087  INFO        AAPL [long] price=313.92  stop=306.19  trailing=inactive  target=324.93  P&L=+167.56
+2026-07-07 09:35:51,315  INFO        AAPL [long] price=314.23  stop=306.19  trailing=inactive  target=324.93  P&L=+201.72
+2026-07-07 09:36:51,624  INFO        AAPL [long] price=313.97  stop=306.19  trailing=inactive  target=324.93  P&L=+173.72
+2026-07-07 09:37:52,188  INFO        AAPL [long] price=314.01  stop=306.19  trailing=inactive  target=324.93  P&L=+174.00
+2026-07-07 09:38:52,429  INFO        AAPL [long] price=314.14  stop=306.19  trailing=inactive  target=324.93  P&L=+190.52
+2026-07-07 09:39:52,658  INFO        AAPL [long] price=314.11  stop=306.19  trailing=inactive  target=324.93  P&L=+187.72
+2026-07-07 09:40:52,878  INFO        AAPL [long] price=314.22  stop=306.19  trailing=inactive  target=324.93  P&L=+198.36
+2026-07-07 09:41:53,109  INFO        AAPL [long] price=314.22  stop=306.19  trailing=inactive  target=324.93  P&L=+197.24
+2026-07-07 09:42:53,370  INFO        AAPL [long] price=314.15  stop=306.19  trailing=inactive  target=324.93  P&L=+192.20
+2026-07-07 09:43:53,587  INFO        AAPL [long] price=314.32  stop=306.19  trailing=inactive  target=324.93  P&L=+211.23
+2026-07-07 09:44:53,791  INFO        AAPL [long] price=314.32  stop=306.19  trailing=inactive  target=324.93  P&L=+212.92
+2026-07-07 09:45:54,022  INFO        AAPL [long] price=314.55  stop=306.19  trailing=inactive  target=324.93  P&L=+237.00
+2026-07-07 09:46:54,271  INFO        AAPL [long] price=314.45  stop=306.19  trailing=inactive  target=324.93  P&L=+223.56
+2026-07-07 09:47:54,485  INFO        AAPL [long] price=314.56  stop=306.19  trailing=inactive  target=324.93  P&L=+238.12
+2026-07-07 09:48:54,771  INFO        AAPL [long] price=314.52  stop=306.19  trailing=inactive  target=324.93  P&L=+236.44
+2026-07-07 09:49:54,992  INFO        AAPL [long] price=314.43  stop=306.19  trailing=inactive  target=324.93  P&L=+224.68
+2026-07-07 09:50:55,198  INFO        AAPL [long] price=314.52  stop=306.19  trailing=inactive  target=324.93  P&L=+238.12
+2026-07-07 09:51:55,422  INFO        AAPL [long] price=314.54  stop=306.19  trailing=inactive  target=324.93  P&L=+235.88
+2026-07-07 09:52:55,655  INFO        AAPL [long] price=314.45  stop=306.19  trailing=inactive  target=324.93  P&L=+225.80
+2026-07-07 09:53:55,881  INFO        AAPL [long] price=314.38  stop=306.19  trailing=inactive  target=324.93  P&L=+219.08
+2026-07-07 09:54:56,166  INFO        AAPL [long] price=314.35  stop=306.19  trailing=inactive  target=324.93  P&L=+214.60
+2026-07-07 09:55:56,388  INFO        AAPL [long] price=314.41  stop=306.19  trailing=inactive  target=324.93  P&L=+221.88
+2026-07-07 09:56:56,858  INFO        AAPL [long] price=314.35  stop=306.19  trailing=inactive  target=324.93  P&L=+214.04
+2026-07-07 09:57:57,186  INFO        AAPL [long] price=314.49  stop=306.19  trailing=inactive  target=324.93  P&L=+230.84
+2026-07-07 09:58:57,415  INFO        AAPL [long] price=314.32  stop=306.19  trailing=inactive  target=324.93  P&L=+211.24
+2026-07-07 09:59:57,701  INFO        AAPL [long] price=314.20  stop=306.19  trailing=inactive  target=324.93  P&L=+197.24
+2026-07-07 10:00:57,957  INFO        AAPL [long] price=314.17  stop=306.19  trailing=inactive  target=324.93  P&L=+198.92
+2026-07-07 10:01:53,054  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,063  INFO      [AAPL] Process exiting
+2026-07-07 10:02:19,617  INFO      [AAPL] Process started  PID=95844
+2026-07-07 10:02:19,620  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:02:19,620  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:19,620  INFO         Mode    : PAPER
+2026-07-07 10:02:19,620  INFO         Ticker  : AAPL
+2026-07-07 10:02:19,620  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:02:19,620  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:19,622  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:19,842  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [AAPL] Process exiting
+2026-07-07 10:04:41,249  INFO      [AAPL] Process started  PID=95464
+2026-07-07 10:04:41,252  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:04:41,252  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:41,252  INFO         Mode    : PAPER
+2026-07-07 10:04:41,252  INFO         Ticker  : AAPL
+2026-07-07 10:04:41,252  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:04:41,252  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:41,254  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:41,436  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:41,436  INFO      =======================================================
+2026-07-07 10:09:41,437  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:41,437  INFO      =======================================================
+2026-07-07 10:09:42,195  INFO      Fetched 70 bars for AAPL  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:42,439  INFO      Signal: BUY  |  Confidence: 0.799
+2026-07-07 10:09:42,589  INFO      Portfolio value : $121,903.94
+2026-07-07 10:09:42,589  INFO      Current price   : $313.79
+2026-07-07 10:09:42,589  INFO      Open position   : {'qty': 112, 'side': 'long', 'entry_price': 312.433928, 'market_value': 35143.92, 'unrealised_pl': 151.320064}
+2026-07-07 10:09:42,589  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:09:42,590  INFO      Monitoring AAPL  |  entry=312.43  stop=306.19  target=324.93
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,684  INFO      [AAPL] Process exiting
+2026-07-07 10:10:21,384  INFO      [AAPL] Process started  PID=60980
+2026-07-07 10:10:21,386  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:10:21,387  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:21,387  INFO         Mode    : PAPER
+2026-07-07 10:10:21,387  INFO         Ticker  : AAPL
+2026-07-07 10:10:21,387  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:10:21,387  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:21,388  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:21,590  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:21,590  INFO      =======================================================
+2026-07-07 10:15:21,591  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:21,591  INFO      =======================================================
+2026-07-07 10:15:22,170  INFO      Fetched 70 bars for AAPL  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:22,392  INFO      Signal: BUY  |  Confidence: 0.799
+2026-07-07 10:15:22,534  INFO      Portfolio value : $121,910.44
+2026-07-07 10:15:22,534  INFO      Current price   : $313.11
+2026-07-07 10:15:22,534  INFO      Open position   : {'qty': 112, 'side': 'long', 'entry_price': 312.433928, 'market_value': 35064.96, 'unrealised_pl': 72.360064}
+2026-07-07 10:15:22,534  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:15:22,534  INFO      Monitoring AAPL  |  entry=312.43  stop=306.19  target=324.93
+2026-07-07 10:16:22,760  INFO        AAPL [long] price=312.78  stop=306.19  trailing=inactive  target=324.93  P&L=+38.76
+2026-07-07 10:17:23,019  INFO        AAPL [long] price=312.76  stop=306.19  trailing=inactive  target=324.93  P&L=+35.96
+2026-07-07 10:18:23,218  INFO        AAPL [long] price=313.45  stop=306.19  trailing=inactive  target=324.93  P&L=+115.97
+2026-07-07 10:19:25,973  INFO        AAPL [long] price=314.02  stop=306.19  trailing=inactive  target=324.93  P&L=+85.03
+2026-07-07 10:20:26,251  INFO        AAPL [long] price=313.63  stop=306.19  trailing=inactive  target=324.93  P&L=+62.24
+2026-07-07 10:21:26,501  INFO        AAPL [long] price=313.26  stop=306.19  trailing=inactive  target=324.93  P&L=+42.10
+2026-07-07 10:22:26,729  INFO        AAPL [long] price=313.11  stop=306.19  trailing=inactive  target=324.93  P&L=+35.48
+2026-07-07 10:23:26,930  INFO        AAPL [long] price=313.30  stop=306.19  trailing=inactive  target=324.93  P&L=+45.81
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,863  INFO      [AAPL] Process exiting
+2026-07-07 10:23:49,378  INFO      [AAPL] Process started  PID=93332
+2026-07-07 10:23:49,381  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:23:49,381  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:49,381  INFO         Mode    : PAPER
+2026-07-07 10:23:49,381  INFO         Ticker  : AAPL
+2026-07-07 10:23:49,381  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:23:49,382  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:49,384  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:49,569  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [AAPL] Process exiting
+2026-07-07 10:26:16,459  INFO      [AAPL] Process started  PID=87320
+2026-07-07 10:26:16,462  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:26:16,462  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:16,462  INFO         Mode    : PAPER
+2026-07-07 10:26:16,462  INFO         Ticker  : AAPL
+2026-07-07 10:26:16,462  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:26:16,462  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:16,464  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:16,655  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [AAPL] Process exiting
+2026-07-07 10:30:12,368  INFO      [AAPL] Process started  PID=15420
+2026-07-07 10:30:12,371  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:30:12,371  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:12,371  INFO         Mode    : PAPER
+2026-07-07 10:30:12,371  INFO         Ticker  : AAPL
+2026-07-07 10:30:12,371  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:30:12,371  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:12,372  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:12,565  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,811  INFO      [AAPL] Process exiting
+2026-07-07 10:35:41,323  INFO      [AAPL] Process started  PID=70308
+2026-07-07 10:35:41,325  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:35:41,325  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:41,325  INFO         Mode    : PAPER
+2026-07-07 10:35:41,326  INFO         Ticker  : AAPL
+2026-07-07 10:35:41,326  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:35:41,326  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:41,327  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:41,529  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,411  INFO      [AAPL] Process exiting
+2026-07-07 10:39:23,123  INFO      [AAPL] Process started  PID=68708
+2026-07-07 10:39:23,125  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:39:23,125  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:23,125  INFO         Mode    : PAPER
+2026-07-07 10:39:23,125  INFO         Ticker  : AAPL
+2026-07-07 10:39:23,125  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:39:23,126  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:23,127  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:23,369  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:23,370  INFO      =======================================================
+2026-07-07 10:44:23,370  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:23,370  INFO      =======================================================
+2026-07-07 10:44:24,035  INFO      Fetched 70 bars for AAPL  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:24,302  INFO      Signal: BUY  |  Confidence: 0.799
+2026-07-07 10:44:24,427  INFO      Portfolio value : $100,577.51
+2026-07-07 10:44:24,427  INFO      Current price   : $313.61
+2026-07-07 10:44:24,427  INFO      Open position   : {'qty': 53, 'side': 'long', 'entry_price': 312.43566, 'market_value': 16621.595, 'unrealised_pl': 62.50502}
+2026-07-07 10:44:24,427  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:44:24,427  INFO      Monitoring AAPL  |  entry=312.44  stop=306.19  target=324.93
+2026-07-07 10:45:24,657  INFO        AAPL [long] price=313.61  stop=306.19  trailing=inactive  target=324.93  P&L=+63.13
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,003  INFO      [AAPL] Process exiting
+2026-07-07 10:50:09,734  INFO      [AAPL] Process started  PID=79148
+2026-07-07 10:50:09,737  INFO      [AAPL] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:50:09,737  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:50:09,737  INFO         Mode    : PAPER
+2026-07-07 10:50:09,737  INFO         Ticker  : AAPL
+2026-07-07 10:50:09,737  INFO         Chromosome : AAPL_best_chromosome.csv
+2026-07-07 10:50:09,738  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:50:09,739  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
+2026-07-07 10:50:09,932  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:55:09,933  INFO      =======================================================
+2026-07-07 10:55:09,933  INFO      Daily signal run  [2026-07-07 10:55]
+2026-07-07 10:55:09,933  INFO      =======================================================
+2026-07-07 10:55:10,538  INFO      Fetched 70 bars for AAPL  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:10,777  INFO      Signal: BUY  |  Confidence: 0.799
+2026-07-07 10:55:10,905  INFO      Portfolio value : $100,506.67
+2026-07-07 10:55:10,905  INFO      Current price   : $313.71
+2026-07-07 10:55:10,905  INFO      Open position   : {'qty': 53, 'side': 'long', 'entry_price': 312.43566, 'market_value': 16626.63, 'unrealised_pl': 67.54002}
+2026-07-07 10:55:10,905  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:55:10,905  INFO      Monitoring AAPL  |  entry=312.44  stop=306.19  target=324.93
+2026-07-07 10:56:11,276  INFO        AAPL [long] price=313.89  stop=306.19  trailing=inactive  target=324.93  P&L=+77.08
+2026-07-07 10:57:11,601  INFO        AAPL [long] price=313.87  stop=306.19  trailing=inactive  target=324.93  P&L=+76.20
+2026-07-07 10:58:11,875  INFO        AAPL [long] price=313.76  stop=306.19  trailing=inactive  target=324.93  P&L=+70.63
+2026-07-07 10:59:12,109  INFO        AAPL [long] price=313.73  stop=306.19  trailing=inactive  target=324.93  P&L=+68.60

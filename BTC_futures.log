@@ -1245,3 +1245,533 @@ KeyError: 'stop_loss_pct'
 2026-07-07 08:43:41,652  INFO      [BTC/USD] Portfolio=$121,590.22  Price=$62932.49  Position=None
 2026-07-07 08:43:41,652  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
 2026-07-07 08:43:41,652  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 08:50:36,238  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 08:50:36,238  INFO        Mode       : PAPER
+2026-07-07 08:50:36,238  INFO        Max leverage: 10.0x
+2026-07-07 08:50:36,238  INFO        Trading hours: 24/7
+2026-07-07 08:50:36,248  INFO        Evolved leverage: 2.3x
+2026-07-07 08:50:36,248  INFO        Stop width: 1.0%
+2026-07-07 08:50:36,248  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 08:50:36,248  INFO      [BTC/USD] ── Signal check 08:50 ──
+2026-07-07 08:50:36,629  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 08:50:37,195  INFO      [BTC/USD] Portfolio=$121,609.12  Price=$63213.03  Position=None
+2026-07-07 08:50:37,195  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 08:50:37,195  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 08:50:38,185  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 08:50:38,185  INFO        Mode       : PAPER
+2026-07-07 08:50:38,185  INFO        Max leverage: 10.0x
+2026-07-07 08:50:38,185  INFO        Trading hours: 24/7
+2026-07-07 08:50:38,187  INFO        Evolved leverage: 2.3x
+2026-07-07 08:50:38,187  INFO        Stop width: 1.0%
+2026-07-07 08:50:38,187  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 08:50:38,187  INFO      [BTC/USD] ── Signal check 08:50 ──
+2026-07-07 08:50:38,511  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 08:50:38,950  INFO      [BTC/USD] Portfolio=$121,607.60  Price=$63202.90  Position=None
+2026-07-07 08:50:38,950  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 08:50:38,950  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 08:53:41,653  INFO      [BTC/USD] ── Signal check 08:53 ──
+2026-07-07 08:53:41,806  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 08:53:42,237  INFO      [BTC/USD] Portfolio=$121,632.27  Price=$63296.66  Position=None
+2026-07-07 08:53:42,238  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 08:53:42,238  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:00:37,196  INFO      [BTC/USD] ── Signal check 09:00 ──
+2026-07-07 09:00:37,373  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:00:37,828  INFO      [BTC/USD] Portfolio=$121,555.98  Price=$63544.40  Position=None
+2026-07-07 09:00:37,828  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:00:37,829  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:00:38,952  INFO      [BTC/USD] ── Signal check 09:00 ──
+2026-07-07 09:00:39,139  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:00:39,573  INFO      [BTC/USD] Portfolio=$121,540.35  Price=$63554.91  Position=None
+2026-07-07 09:00:39,574  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:00:39,574  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:03:42,239  INFO      [BTC/USD] ── Signal check 09:03 ──
+2026-07-07 09:03:42,414  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:03:42,882  INFO      [BTC/USD] Portfolio=$121,630.59  Price=$63472.60  Position=None
+2026-07-07 09:03:42,882  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:03:42,887  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:10:37,834  INFO      [BTC/USD] ── Signal check 09:10 ──
+2026-07-07 09:10:38,021  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:10:38,467  INFO      [BTC/USD] Portfolio=$121,650.53  Price=$63466.00  Position=None
+2026-07-07 09:10:38,467  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:10:38,467  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:10:39,575  INFO      [BTC/USD] ── Signal check 09:10 ──
+2026-07-07 09:10:39,766  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:10:40,207  INFO      [BTC/USD] Portfolio=$121,649.11  Price=$63462.00  Position=None
+2026-07-07 09:10:40,208  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:10:40,208  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:13:42,889  INFO      [BTC/USD] ── Signal check 09:13 ──
+2026-07-07 09:13:43,098  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:13:43,576  INFO      [BTC/USD] Portfolio=$121,625.80  Price=$63517.45  Position=None
+2026-07-07 09:13:43,576  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:13:43,576  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:20:38,468  INFO      [BTC/USD] ── Signal check 09:20 ──
+2026-07-07 09:20:38,652  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:20:39,207  INFO      [BTC/USD] Portfolio=$121,637.52  Price=$63588.84  Position=None
+2026-07-07 09:20:39,207  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:20:39,207  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:20:40,208  INFO      [BTC/USD] ── Signal check 09:20 ──
+2026-07-07 09:20:40,400  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:20:40,880  INFO      [BTC/USD] Portfolio=$121,621.98  Price=$63606.50  Position=None
+2026-07-07 09:20:40,881  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:20:40,881  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:23:43,577  INFO      [BTC/USD] ── Signal check 09:23 ──
+2026-07-07 09:23:43,760  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:23:44,208  INFO      [BTC/USD] Portfolio=$121,661.61  Price=$63722.20  Position=None
+2026-07-07 09:23:44,208  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:23:44,208  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:30:39,208  INFO      [BTC/USD] ── Signal check 09:30 ──
+2026-07-07 09:30:39,415  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:30:39,898  INFO      [BTC/USD] Portfolio=$121,646.12  Price=$63669.03  Position=None
+2026-07-07 09:30:39,898  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:30:39,899  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:30:40,882  INFO      [BTC/USD] ── Signal check 09:30 ──
+2026-07-07 09:30:41,096  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:30:41,557  INFO      [BTC/USD] Portfolio=$121,655.39  Price=$63670.00  Position=None
+2026-07-07 09:30:41,558  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:30:41,558  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:33:44,208  INFO      [BTC/USD] ── Signal check 09:33 ──
+2026-07-07 09:33:44,397  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:33:44,862  INFO      [BTC/USD] Portfolio=$121,617.28  Price=$63747.27  Position=None
+2026-07-07 09:33:44,862  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:33:44,863  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:40:39,899  INFO      [BTC/USD] ── Signal check 09:40 ──
+2026-07-07 09:40:40,094  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:40:40,573  INFO      [BTC/USD] Portfolio=$121,608.89  Price=$63766.10  Position=None
+2026-07-07 09:40:40,574  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:40:40,574  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:40:41,558  INFO      [BTC/USD] ── Signal check 09:40 ──
+2026-07-07 09:40:41,744  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:40:42,227  INFO      [BTC/USD] Portfolio=$121,632.03  Price=$63766.10  Position=None
+2026-07-07 09:40:42,227  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:40:42,227  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:43:44,863  INFO      [BTC/USD] ── Signal check 09:43 ──
+2026-07-07 09:43:45,048  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:43:45,534  INFO      [BTC/USD] Portfolio=$121,614.70  Price=$63789.60  Position=None
+2026-07-07 09:43:45,534  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:43:45,534  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:50:40,574  INFO      [BTC/USD] ── Signal check 09:50 ──
+2026-07-07 09:50:40,769  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:50:41,282  INFO      [BTC/USD] Portfolio=$121,773.05  Price=$63965.50  Position=None
+2026-07-07 09:50:41,282  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:50:41,282  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:50:42,229  INFO      [BTC/USD] ── Signal check 09:50 ──
+2026-07-07 09:50:42,387  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:50:42,819  INFO      [BTC/USD] Portfolio=$121,773.92  Price=$63998.60  Position=None
+2026-07-07 09:50:42,820  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:50:42,820  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 09:53:45,535  INFO      [BTC/USD] ── Signal check 09:53 ──
+2026-07-07 09:53:45,690  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 09:53:46,121  INFO      [BTC/USD] Portfolio=$121,752.55  Price=$64089.98  Position=None
+2026-07-07 09:53:46,129  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 09:53:46,129  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 10:00:41,283  INFO      [BTC/USD] ── Signal check 10:00 ──
+2026-07-07 10:00:41,427  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 10:00:41,883  INFO      [BTC/USD] Portfolio=$121,864.88  Price=$63903.70  Position=None
+2026-07-07 10:00:41,883  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 10:00:41,883  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 10:00:42,820  INFO      [BTC/USD] ── Signal check 10:00 ──
+2026-07-07 10:00:43,020  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.240  |  Leverage: 1.00x
+2026-07-07 10:00:43,465  INFO      [BTC/USD] Portfolio=$121,866.41  Price=$63903.70  Position=None
+2026-07-07 10:00:43,465  INFO      Risk guard blocked trade: Confidence 0.24 below futures threshold 0.5
+2026-07-07 10:00:43,465  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 10:01:53,055  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-07 10:01:53,055  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-07 10:01:53,055  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-07 10:02:21,610  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:02:21,610  INFO        Mode       : PAPER
+2026-07-07 10:02:21,610  INFO        Max leverage: 10.0x
+2026-07-07 10:02:21,610  INFO        Trading hours: 24/7
+2026-07-07 10:02:23,726  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:02:23,726  INFO        Mode       : PAPER
+2026-07-07 10:02:23,726  INFO        Max leverage: 10.0x
+2026-07-07 10:02:23,726  INFO        Trading hours: 24/7
+2026-07-07 10:02:23,728  INFO      [BTC/USD] Process started  PID=97040
+2026-07-07 10:02:23,731  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:02:23,732  INFO      [BTC/USD] Process exiting
+2026-07-07 10:04:05,731  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:04:05,731  INFO        Mode       : PAPER
+2026-07-07 10:04:05,731  INFO        Max leverage: 10.0x
+2026-07-07 10:04:05,731  INFO        Trading hours: 24/7
+2026-07-07 10:04:05,733  INFO      [BTC/USD] Process started  PID=82876
+2026-07-07 10:04:05,735  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:04:05,736  INFO      [BTC/USD] Process exiting
+2026-07-07 10:04:43,142  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:04:43,142  INFO        Mode       : PAPER
+2026-07-07 10:04:43,142  INFO        Max leverage: 10.0x
+2026-07-07 10:04:43,142  INFO        Trading hours: 24/7
+2026-07-07 10:04:45,226  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:04:45,226  INFO        Mode       : PAPER
+2026-07-07 10:04:45,226  INFO        Max leverage: 10.0x
+2026-07-07 10:04:45,227  INFO        Trading hours: 24/7
+2026-07-07 10:04:45,228  INFO      [BTC/USD] Process started  PID=97656
+2026-07-07 10:04:45,232  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:04:45,233  INFO      [BTC/USD] Process exiting
+2026-07-07 10:06:27,141  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:06:27,141  INFO        Mode       : PAPER
+2026-07-07 10:06:27,141  INFO        Max leverage: 10.0x
+2026-07-07 10:06:27,141  INFO        Trading hours: 24/7
+2026-07-07 10:06:27,143  INFO      [BTC/USD] Process started  PID=88068
+2026-07-07 10:06:27,146  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:06:27,148  INFO      [BTC/USD] Process exiting
+2026-07-07 10:10:23,368  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:10:23,369  INFO        Mode       : PAPER
+2026-07-07 10:10:23,369  INFO        Max leverage: 10.0x
+2026-07-07 10:10:23,369  INFO        Trading hours: 24/7
+2026-07-07 10:10:25,498  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:10:25,498  INFO        Mode       : PAPER
+2026-07-07 10:10:25,498  INFO        Max leverage: 10.0x
+2026-07-07 10:10:25,498  INFO        Trading hours: 24/7
+2026-07-07 10:10:25,500  INFO      [BTC/USD] Process started  PID=88880
+2026-07-07 10:10:25,503  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:10:25,504  INFO      [BTC/USD] Process exiting
+2026-07-07 10:12:07,411  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:12:07,411  INFO        Mode       : PAPER
+2026-07-07 10:12:07,411  INFO        Max leverage: 10.0x
+2026-07-07 10:12:07,411  INFO        Trading hours: 24/7
+2026-07-07 10:12:07,413  INFO      [BTC/USD] Process started  PID=75780
+2026-07-07 10:12:07,416  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:12:07,417  INFO      [BTC/USD] Process exiting
+2026-07-07 10:18:37,551  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:18:37,551  INFO        Mode       : PAPER
+2026-07-07 10:18:37,551  INFO        Max leverage: 10.0x
+2026-07-07 10:18:37,551  INFO        Trading hours: 24/7
+2026-07-07 10:18:37,553  INFO      [BTC/USD] Process started  PID=98312
+2026-07-07 10:18:37,556  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:18:37,560  INFO      [BTC/USD] Process exiting
+2026-07-07 10:23:51,368  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:23:51,368  INFO        Mode       : PAPER
+2026-07-07 10:23:51,368  INFO        Max leverage: 10.0x
+2026-07-07 10:23:51,368  INFO        Trading hours: 24/7
+2026-07-07 10:23:53,302  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:23:53,302  INFO        Mode       : PAPER
+2026-07-07 10:23:53,302  INFO        Max leverage: 10.0x
+2026-07-07 10:23:53,302  INFO        Trading hours: 24/7
+2026-07-07 10:23:53,304  INFO      [BTC/USD] Process started  PID=74172
+2026-07-07 10:23:53,306  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:23:53,307  INFO      [BTC/USD] Process exiting
+2026-07-07 10:26:18,408  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:26:18,408  INFO        Mode       : PAPER
+2026-07-07 10:26:18,409  INFO        Max leverage: 10.0x
+2026-07-07 10:26:18,409  INFO        Trading hours: 24/7
+2026-07-07 10:26:20,534  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:26:20,534  INFO        Mode       : PAPER
+2026-07-07 10:26:20,534  INFO        Max leverage: 10.0x
+2026-07-07 10:26:20,534  INFO        Trading hours: 24/7
+2026-07-07 10:26:20,536  INFO      [BTC/USD] Process started  PID=76172
+2026-07-07 10:26:20,539  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:26:20,540  INFO      [BTC/USD] Process exiting
+2026-07-07 10:28:02,529  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:28:02,529  INFO        Mode       : PAPER
+2026-07-07 10:28:02,529  INFO        Max leverage: 10.0x
+2026-07-07 10:28:02,529  INFO        Trading hours: 24/7
+2026-07-07 10:28:02,531  INFO      [BTC/USD] Process started  PID=40208
+2026-07-07 10:28:02,534  ERROR     [BTC/USD] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:28:02,535  INFO      [BTC/USD] Process exiting
+2026-07-07 10:30:14,398  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:30:14,398  INFO        Mode       : PAPER
+2026-07-07 10:30:14,398  INFO        Max leverage: 10.0x
+2026-07-07 10:30:14,398  INFO        Trading hours: 24/7
+2026-07-07 10:30:16,464  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:30:16,465  INFO        Mode       : PAPER
+2026-07-07 10:30:16,465  INFO        Max leverage: 10.0x
+2026-07-07 10:30:16,465  INFO        Trading hours: 24/7
+2026-07-07 10:30:16,467  INFO      [BTC/USD] Process started  PID=77944
+2026-07-07 10:30:16,469  INFO      [BTC/USD] Config loaded — max alloc 15%  stop 5.0%
+2026-07-07 10:30:16,470  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:16,470  INFO         Mode    : PAPER
+2026-07-07 10:30:16,470  INFO         Ticker  : BTC/USD
+2026-07-07 10:30:16,470  INFO         Chromosome : BTC_futures_chromosome.csv
+2026-07-07 10:30:16,470  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:16,471  ERROR     [BTC/USD] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:30:16,476  INFO      [BTC/USD] Process exiting
+2026-07-07 10:31:58,425  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:31:58,425  INFO        Mode       : PAPER
+2026-07-07 10:31:58,425  INFO        Max leverage: 10.0x
+2026-07-07 10:31:58,425  INFO        Trading hours: 24/7
+2026-07-07 10:31:58,427  INFO      [BTC/USD] Process started  PID=64288
+2026-07-07 10:31:58,431  INFO      [BTC/USD] Config loaded — max alloc 15%  stop 5.0%
+2026-07-07 10:31:58,432  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:31:58,432  INFO         Mode    : PAPER
+2026-07-07 10:31:58,432  INFO         Ticker  : BTC/USD
+2026-07-07 10:31:58,432  INFO         Chromosome : BTC_futures_chromosome.csv
+2026-07-07 10:31:58,432  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:31:58,433  ERROR     [BTC/USD] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:31:58,437  INFO      [BTC/USD] Process exiting
+2026-07-07 10:35:43,310  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:35:43,310  INFO        Mode       : PAPER
+2026-07-07 10:35:43,310  INFO        Max leverage: 10.0x
+2026-07-07 10:35:43,310  INFO        Trading hours: 24/7
+2026-07-07 10:35:45,334  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:35:45,334  INFO        Mode       : PAPER
+2026-07-07 10:35:45,334  INFO        Max leverage: 10.0x
+2026-07-07 10:35:45,334  INFO        Trading hours: 24/7
+2026-07-07 10:35:45,336  INFO      [BTC/USD] Process started  PID=73392
+2026-07-07 10:35:45,339  INFO      [BTC/USD] Config loaded — max alloc 15%  stop 5.0%
+2026-07-07 10:35:45,339  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:45,339  INFO         Mode    : PAPER
+2026-07-07 10:35:45,339  INFO         Ticker  : BTC/USD
+2026-07-07 10:35:45,339  INFO         Chromosome : BTC_futures_chromosome.csv
+2026-07-07 10:35:45,340  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:45,340  ERROR     [BTC/USD] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:35:45,344  INFO      [BTC/USD] Process exiting
+2026-07-07 10:37:27,351  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:37:27,351  INFO        Mode       : PAPER
+2026-07-07 10:37:27,351  INFO        Max leverage: 10.0x
+2026-07-07 10:37:27,351  INFO        Trading hours: 24/7
+2026-07-07 10:37:27,353  INFO      [BTC/USD] Process started  PID=94460
+2026-07-07 10:37:27,356  INFO      [BTC/USD] Config loaded — max alloc 15%  stop 5.0%
+2026-07-07 10:37:27,356  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:37:27,356  INFO         Mode    : PAPER
+2026-07-07 10:37:27,356  INFO         Ticker  : BTC/USD
+2026-07-07 10:37:27,356  INFO         Chromosome : BTC_futures_chromosome.csv
+2026-07-07 10:37:27,356  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:37:27,357  ERROR     [BTC/USD] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:37:27,361  INFO      [BTC/USD] Process exiting
+2026-07-07 10:39:25,109  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:39:25,109  INFO        Mode       : PAPER
+2026-07-07 10:39:25,110  INFO        Max leverage: 10.0x
+2026-07-07 10:39:25,110  INFO        Trading hours: 24/7
+2026-07-07 10:39:25,111  INFO        Evolved leverage: 3.9x
+2026-07-07 10:39:25,111  INFO        Stop width: 4.4%
+2026-07-07 10:39:25,112  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 10:39:25,112  INFO      [BTC/USD] ── Signal check 10:39 ──
+2026-07-07 10:39:25,506  ERROR     [BTC/USD] Error: operands could not be broadcast together with shapes (167,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,12) (17,) 
+2026-07-07 10:39:25,507  INFO      Retrying in 5 minutes...
+2026-07-07 10:39:27,103  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:39:27,103  INFO        Mode       : PAPER
+2026-07-07 10:39:27,103  INFO        Max leverage: 10.0x
+2026-07-07 10:39:27,103  INFO        Trading hours: 24/7
+2026-07-07 10:39:27,105  INFO        Evolved leverage: 3.9x
+2026-07-07 10:39:27,105  INFO        Stop width: 4.4%
+2026-07-07 10:39:27,105  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 10:39:27,105  INFO      [BTC/USD] ── Signal check 10:39 ──
+2026-07-07 10:39:27,426  ERROR     [BTC/USD] Error: operands could not be broadcast together with shapes (167,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,12) (17,) 
+2026-07-07 10:39:27,426  INFO      Retrying in 5 minutes...
+2026-07-07 10:44:25,508  INFO      [BTC/USD] ── Signal check 10:44 ──
+2026-07-07 10:44:25,676  ERROR     [BTC/USD] Error: operands could not be broadcast together with shapes (167,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,12) (17,) 
+2026-07-07 10:44:25,677  INFO      Retrying in 5 minutes...
+2026-07-07 10:44:27,427  INFO      [BTC/USD] ── Signal check 10:44 ──
+2026-07-07 10:44:27,654  ERROR     [BTC/USD] Error: operands could not be broadcast together with shapes (167,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (167,12) (17,) 
+2026-07-07 10:44:27,655  INFO      Retrying in 5 minutes...
+2026-07-07 10:50:11,778  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:50:11,778  INFO        Mode       : PAPER
+2026-07-07 10:50:11,778  INFO        Max leverage: 10.0x
+2026-07-07 10:50:11,778  INFO        Trading hours: 24/7
+2026-07-07 10:50:11,781  INFO        Evolved leverage: 3.9x
+2026-07-07 10:50:11,781  INFO        Stop width: 4.4%
+2026-07-07 10:50:11,781  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 10:50:11,781  INFO      [BTC/USD] ── Signal check 10:50 ──
+2026-07-07 10:50:12,127  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 10:50:12,615  INFO      [BTC/USD] Portfolio=$100,627.27  Price=$64012.02  Position=None
+2026-07-07 10:50:12,615  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 10:50:12,615  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 10:50:13,717  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-07 10:50:13,717  INFO        Mode       : PAPER
+2026-07-07 10:50:13,717  INFO        Max leverage: 10.0x
+2026-07-07 10:50:13,717  INFO        Trading hours: 24/7
+2026-07-07 10:50:13,719  INFO        Evolved leverage: 3.9x
+2026-07-07 10:50:13,719  INFO        Stop width: 4.4%
+2026-07-07 10:50:13,719  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-07 10:50:13,719  INFO      [BTC/USD] ── Signal check 10:50 ──
+2026-07-07 10:50:14,075  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 10:50:14,538  INFO      [BTC/USD] Portfolio=$100,619.27  Price=$64012.02  Position=None
+2026-07-07 10:50:14,538  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 10:50:14,538  INFO      [BTC/USD] Signal complete. Sleeping 600s...

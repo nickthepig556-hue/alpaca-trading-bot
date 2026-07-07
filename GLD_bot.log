@@ -13371,3 +13371,161 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-07 09:25:22,040  INFO      Current price   : $380.41
 2026-07-07 09:25:22,040  INFO      Open position   : None
 2026-07-07 09:25:22,040  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:30:22,245  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:35:22,246  INFO      =======================================================
+2026-07-07 09:35:22,246  INFO      Daily signal run  [2026-07-07 09:35]
+2026-07-07 09:35:22,246  INFO      =======================================================
+2026-07-07 09:35:22,608  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:35:22,771  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:35:22,893  INFO      Portfolio value : $121,595.70
+2026-07-07 09:35:22,893  INFO      Current price   : $380.22
+2026-07-07 09:35:22,894  INFO      Open position   : None
+2026-07-07 09:35:22,894  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:40:23,092  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:45:23,092  INFO      =======================================================
+2026-07-07 09:45:23,093  INFO      Daily signal run  [2026-07-07 09:45]
+2026-07-07 09:45:23,093  INFO      =======================================================
+2026-07-07 09:45:23,462  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:45:23,596  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:45:23,739  INFO      Portfolio value : $121,742.40
+2026-07-07 09:45:23,739  INFO      Current price   : $380.60
+2026-07-07 09:45:23,739  INFO      Open position   : None
+2026-07-07 09:45:23,739  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:50:23,977  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:55:23,978  INFO      =======================================================
+2026-07-07 09:55:23,978  INFO      Daily signal run  [2026-07-07 09:55]
+2026-07-07 09:55:23,979  INFO      =======================================================
+2026-07-07 09:55:24,384  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 09:55:24,515  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 09:55:24,635  INFO      Portfolio value : $121,742.92
+2026-07-07 09:55:24,636  INFO      Current price   : $379.63
+2026-07-07 09:55:24,636  INFO      Open position   : None
+2026-07-07 09:55:24,636  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:00:24,968  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:02:03,555  INFO      [GLD] Process started  PID=92100
+2026-07-07 10:02:03,563  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:02:03,563  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:03,564  INFO         Mode    : PAPER
+2026-07-07 10:02:03,564  INFO         Ticker  : GLD
+2026-07-07 10:02:03,564  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:02:03,564  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:03,566  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:03,760  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:25,057  INFO      [GLD] Process started  PID=56612
+2026-07-07 10:04:25,060  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:04:25,060  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:25,060  INFO         Mode    : PAPER
+2026-07-07 10:04:25,060  INFO         Ticker  : GLD
+2026-07-07 10:04:25,060  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:04:25,060  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:25,062  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:25,248  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:25,248  INFO      =======================================================
+2026-07-07 10:09:25,248  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:25,248  INFO      =======================================================
+2026-07-07 10:09:25,798  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:25,974  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 10:09:26,093  INFO      Portfolio value : $121,908.32
+2026-07-07 10:09:26,094  INFO      Current price   : $379.92
+2026-07-07 10:09:26,094  INFO      Open position   : None
+2026-07-07 10:09:26,094  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:05,334  INFO      [GLD] Process started  PID=80568
+2026-07-07 10:10:05,337  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:10:05,337  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:05,337  INFO         Mode    : PAPER
+2026-07-07 10:10:05,337  INFO         Ticker  : GLD
+2026-07-07 10:10:05,337  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:10:05,337  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:05,339  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:05,539  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:05,540  INFO      =======================================================
+2026-07-07 10:15:05,540  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:05,540  INFO      =======================================================
+2026-07-07 10:15:06,077  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:06,235  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 10:15:06,370  INFO      Portfolio value : $121,924.70
+2026-07-07 10:15:06,370  INFO      Current price   : $380.01
+2026-07-07 10:15:06,370  INFO      Open position   : None
+2026-07-07 10:15:06,370  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:20:06,589  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:33,260  INFO      [GLD] Process started  PID=68408
+2026-07-07 10:23:33,267  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:23:33,268  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:33,268  INFO         Mode    : PAPER
+2026-07-07 10:23:33,268  INFO         Ticker  : GLD
+2026-07-07 10:23:33,268  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:23:33,268  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:33,270  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:33,453  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:26:00,526  INFO      [GLD] Process started  PID=67388
+2026-07-07 10:26:00,529  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:26:00,529  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:00,529  INFO         Mode    : PAPER
+2026-07-07 10:26:00,529  INFO         Ticker  : GLD
+2026-07-07 10:26:00,529  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:26:00,530  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:00,531  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:00,756  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:56,337  INFO      [GLD] Process started  PID=19320
+2026-07-07 10:29:56,340  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:29:56,340  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:29:56,340  INFO         Mode    : PAPER
+2026-07-07 10:29:56,340  INFO         Ticker  : GLD
+2026-07-07 10:29:56,340  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:29:56,340  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:29:56,342  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:29:56,532  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:35:25,276  INFO      [GLD] Process started  PID=78168
+2026-07-07 10:35:25,278  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:35:25,278  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:25,279  INFO         Mode    : PAPER
+2026-07-07 10:35:25,279  INFO         Ticker  : GLD
+2026-07-07 10:35:25,279  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:35:25,279  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:25,280  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:25,504  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:07,035  INFO      [GLD] Process started  PID=77368
+2026-07-07 10:39:07,042  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:39:07,043  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:07,043  INFO         Mode    : PAPER
+2026-07-07 10:39:07,043  INFO         Ticker  : GLD
+2026-07-07 10:39:07,043  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:39:07,043  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:07,045  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:07,263  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:07,264  INFO      =======================================================
+2026-07-07 10:44:07,264  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:07,265  INFO      =======================================================
+2026-07-07 10:44:07,815  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:08,027  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 10:44:08,150  INFO      Portfolio value : $100,582.86
+2026-07-07 10:44:08,153  INFO      Current price   : $380.27
+2026-07-07 10:44:08,153  INFO      Open position   : None
+2026-07-07 10:44:08,153  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:49:53,702  INFO      [GLD] Process started  PID=45328
+2026-07-07 10:49:53,705  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-07 10:49:53,705  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:49:53,705  INFO         Mode    : PAPER
+2026-07-07 10:49:53,705  INFO         Ticker  : GLD
+2026-07-07 10:49:53,705  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-07 10:49:53,705  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:49:53,707  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-07 10:49:53,937  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:54:53,938  INFO      =======================================================
+2026-07-07 10:54:53,939  INFO      Daily signal run  [2026-07-07 10:54]
+2026-07-07 10:54:53,939  INFO      =======================================================
+2026-07-07 10:54:54,598  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 10:54:54,785  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 10:54:54,941  INFO      Portfolio value : $100,480.41
+2026-07-07 10:54:54,941  INFO      Current price   : $380.33
+2026-07-07 10:54:54,941  INFO      Open position   : None
+2026-07-07 10:54:54,941  INFO      Signal check complete. Sleeping 5 minutes until next check.

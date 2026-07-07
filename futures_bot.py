@@ -201,11 +201,12 @@ except Exception:
     pass
 
 # Extended chromosome length for futures
-FUTURES_CHROM_LENGTH = 32   # 24 base + 4 leverage + 4 risk genes
+FUTURES_CHROM_LENGTH = 38   # 34 base (17w+17t) + 4 leverage genes
 FEATURES = [
     'Close', 'Volume', 'SMA_20', 'SMA_50', 'SMA_200',
     'RSI', 'MACD', 'Signal', 'BB_Upper', 'BB_Lower',
     'Daily_Return', 'Volume_Change',
+    'ATR', 'OBV', 'VWAP', 'Williams_R', 'Stoch_K',
 ]
 
 # ------------------------------------------------------------------------------
@@ -294,10 +295,12 @@ def decode_futures_chromosome(chrom: np.ndarray) -> dict:
         take_profit_mult: float          evolved take profit multiplier
     }
     """
-    weights        = chrom[0:12]
-    thresholds     = chrom[12:24]
-    leverage_genes = chrom[24:28]
-    risk_genes     = chrom[28:32]
+    weights        = chrom[0:17]
+    thresholds     = chrom[17:34]
+    # Cap thresholds at 0.60 to prevent over-restrictive entry
+    thresholds     = np.clip(thresholds, 0.0, 0.60)
+    leverage_genes = chrom[34:38]
+    risk_genes     = chrom[34:38]  # reuse leverage genes for risk
 
     # Interpret risk genes
     max_leverage     = 1.0 + leverage_genes.mean() * 9.0   # 1x to 10x
@@ -451,12 +454,36 @@ def futures_fitness(chrom: np.ndarray,
     avg_loss = abs(np.mean(losses))   if losses else 1.0
     lev_eff  = min(avg_win / max(avg_loss, 0.001), 3.0) / 3.0
 
-    alpha = config.get("fitness_alpha", 0.45)
-    beta  = config.get("fitness_beta",  0.35)
+    alpha = config.get("fitness_alpha", 0.35)
+    beta  = config.get("fitness_beta",  0.25)
     gamma = config.get("fitness_gamma", 0.20)
 
-    norm_return = np.clip((total_return + 1.0) / 2.0, 0.0, 1.0)
-    score = alpha * norm_return + beta * win_rate + gamma * lev_eff
+    norm_return   = np.clip((total_return + 1.0) / 3.0, 0.0, 1.0)
+
+    # Profit factor reward
+    wins_arr   = [t for t in trades if t > 0]
+    losses_arr = [t for t in trades if t <= 0]
+    gross_p    = sum(wins_arr)            if wins_arr   else 0.0
+    gross_l    = abs(sum(losses_arr))     if losses_arr else 1e-9
+    pf         = gross_p / gross_l
+    norm_pf    = float(np.clip((pf - 1.0) / 4.0, 0.0, 1.0))
+
+    # RR ratio reward
+    avg_win  = np.mean(wins_arr)          if wins_arr   else 0.0
+    avg_loss = abs(np.mean(losses_arr))   if losses_arr else 1e-9
+    rr       = avg_win / avg_loss
+    norm_rr  = float(np.clip((rr - 1.0) / 3.0, 0.0, 1.0))
+
+    score = (alpha * norm_return
+           + beta  * win_rate
+           + gamma * lev_eff
+           + 0.10  * norm_pf
+           + 0.10  * norm_rr)
+
+    # Time in market bonus
+    time_in_mkt = len([i for i in range(len(trades)) if True]) / max(len(equity)-1, 1)
+    if time_in_mkt > 0.40:
+        score *= 1.03
 
     if max_dd > config.get("max_drawdown_thresh", 0.30):
         score *= config.get("drawdown_penalty", 0.35)
@@ -495,6 +522,9 @@ def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
     combined_config = {**ga_cfg, **f_cfg}
 
     population = rng.uniform(0, 1, (pop_sz, FUTURES_CHROM_LENGTH))
+    # Cap initial thresholds to 0.60 so bot enters market more often
+    N_FEAT = len(FEATURES)
+    population[:, N_FEAT:N_FEAT*2] = np.clip(population[:, N_FEAT:N_FEAT*2], 0.1, 0.60)
     fitnesses  = np.array([
         futures_fitness(c, df_scaled, df_raw, combined_config)
         for c in population
@@ -535,6 +565,9 @@ def train_futures_bot(ticker: str, df_scaled: pd.DataFrame,
             for child in [c1, c2]:
                 m = rng.random(FUTURES_CHROM_LENGTH) < mut_r
                 child[m] = np.clip(child[m] + rng.normal(0, mut_s, m.sum()), 0, 1)
+                # Cap thresholds
+                N_F = len(FEATURES)
+                child[N_F:N_F*2] = np.clip(child[N_F:N_F*2], 0.0, 0.60)
 
             next_pop.append(np.array([c1, c2]))
 
@@ -614,8 +647,9 @@ def load_futures_chromosome(ticker: str) -> np.ndarray:
         raise FileNotFoundError(f"No futures chromosome for {ticker}. Train first.")
     df    = pd.read_csv(path)
     chrom = df["value"].values
-    if len(chrom) != FUTURES_CHROM_LENGTH:
-        raise ValueError(f"Expected {FUTURES_CHROM_LENGTH} genes, got {len(chrom)}")
+    if len(chrom) < 34:
+        raise ValueError(f"Too few genes: {len(chrom)}")
+    chrom = chrom[:FUTURES_CHROM_LENGTH]  # trim to expected length
     return chrom
 
 

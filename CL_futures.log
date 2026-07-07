@@ -677,3 +677,380 @@
 2026-07-07 08:43:35,830  INFO      [CL] Portfolio=$121,596.29  Price=$70.32  Position=None
 2026-07-07 08:43:35,830  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
 2026-07-07 08:43:35,830  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 08:50:48,191  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 08:50:48,191  INFO        Mode       : PAPER
+2026-07-07 08:50:48,192  INFO        Max leverage: 15.0x
+2026-07-07 08:50:48,192  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 08:50:48,199  INFO        Evolved leverage: 5.6x
+2026-07-07 08:50:48,199  INFO        Stop width: 4.5%
+2026-07-07 08:50:48,200  INFO      [CL] Bot running — checking every 10 minutes
+2026-07-07 08:50:48,200  INFO      [CL] ── Signal check 08:50 ──
+2026-07-07 08:50:48,535  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 08:50:48,956  INFO      [CL] Portfolio=$121,608.74  Price=$70.24  Position=None
+2026-07-07 08:50:48,956  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 08:50:48,956  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 08:53:35,831  INFO      [CL] ── Signal check 08:53 ──
+2026-07-07 08:53:36,030  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 08:53:36,471  INFO      [CL] Portfolio=$121,631.51  Price=$70.10  Position=None
+2026-07-07 08:53:36,471  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 08:53:36,471  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:00:48,957  INFO      [CL] ── Signal check 09:00 ──
+2026-07-07 09:00:49,135  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:00:49,749  INFO      [CL] Portfolio=$121,555.26  Price=$70.01  Position=None
+2026-07-07 09:00:49,749  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:00:49,749  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:03:36,473  INFO      [CL] ── Signal check 09:03 ──
+2026-07-07 09:03:36,627  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:03:37,116  INFO      [CL] Portfolio=$121,629.02  Price=$70.08  Position=None
+2026-07-07 09:03:37,116  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:03:37,117  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:10:49,750  INFO      [CL] ── Signal check 09:10 ──
+2026-07-07 09:10:49,937  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:10:50,348  INFO      [CL] Portfolio=$121,624.48  Price=$70.23  Position=None
+2026-07-07 09:10:50,348  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:10:50,348  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:13:37,117  INFO      [CL] ── Signal check 09:13 ──
+2026-07-07 09:13:37,263  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:13:37,683  INFO      [CL] Portfolio=$121,638.76  Price=$70.26  Position=None
+2026-07-07 09:13:37,684  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:13:37,685  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:20:50,349  INFO      [CL] ── Signal check 09:20 ──
+2026-07-07 09:20:50,494  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:20:50,886  INFO      [CL] Portfolio=$121,626.86  Price=$70.28  Position=None
+2026-07-07 09:20:50,886  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:20:50,887  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:23:37,685  INFO      [CL] ── Signal check 09:23 ──
+2026-07-07 09:23:37,919  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:23:38,320  INFO      [CL] Portfolio=$121,659.06  Price=$70.31  Position=None
+2026-07-07 09:23:38,321  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:23:38,321  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:30:50,887  INFO      [CL] ── Signal check 09:30 ──
+2026-07-07 09:30:51,065  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:30:51,586  INFO      [CL] Portfolio=$121,673.35  Price=$70.41  Position=None
+2026-07-07 09:30:51,586  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:30:51,586  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:33:38,321  INFO      [CL] ── Signal check 09:33 ──
+2026-07-07 09:33:38,474  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:33:38,927  INFO      [CL] Portfolio=$121,645.18  Price=$70.42  Position=None
+2026-07-07 09:33:38,927  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:33:38,927  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:40:51,587  INFO      [CL] ── Signal check 09:40 ──
+2026-07-07 09:40:51,733  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:40:52,177  INFO      [CL] Portfolio=$121,593.66  Price=$70.16  Position=None
+2026-07-07 09:40:52,177  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:40:52,177  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:43:38,928  INFO      [CL] ── Signal check 09:43 ──
+2026-07-07 09:43:39,134  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:43:39,609  INFO      [CL] Portfolio=$121,600.47  Price=$70.21  Position=None
+2026-07-07 09:43:39,610  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:43:39,610  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:50:52,178  INFO      [CL] ── Signal check 09:50 ──
+2026-07-07 09:50:52,354  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:50:52,834  INFO      [CL] Portfolio=$121,784.62  Price=$70.12  Position=None
+2026-07-07 09:50:52,834  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:50:52,834  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 09:53:39,610  INFO      [CL] ── Signal check 09:53 ──
+2026-07-07 09:53:39,744  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 09:53:40,222  INFO      [CL] Portfolio=$121,778.85  Price=$70.23  Position=None
+2026-07-07 09:53:40,222  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 09:53:40,222  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 10:00:52,835  INFO      [CL] ── Signal check 10:00 ──
+2026-07-07 10:00:53,007  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-07 10:00:53,425  INFO      [CL] Portfolio=$121,869.15  Price=$70.48  Position=None
+2026-07-07 10:00:53,425  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-07 10:00:53,426  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 10:01:53,054  INFO      [CL] Futures bot stopped by user
+2026-07-07 10:01:53,055  INFO      [CL] Futures bot stopped by user
+2026-07-07 10:02:33,660  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:02:33,660  INFO        Mode       : PAPER
+2026-07-07 10:02:33,660  INFO        Max leverage: 15.0x
+2026-07-07 10:02:33,661  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:02:33,670  INFO      [CL] Process started  PID=86880
+2026-07-07 10:02:33,674  ERROR     [CL] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:02:33,675  INFO      [CL] Process exiting
+2026-07-07 10:04:55,111  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:04:55,111  INFO        Mode       : PAPER
+2026-07-07 10:04:55,112  INFO        Max leverage: 15.0x
+2026-07-07 10:04:55,112  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:04:55,114  INFO      [CL] Process started  PID=84560
+2026-07-07 10:04:55,117  ERROR     [CL] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:04:55,118  INFO      [CL] Process exiting
+2026-07-07 10:10:35,479  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:10:35,480  INFO        Mode       : PAPER
+2026-07-07 10:10:35,480  INFO        Max leverage: 15.0x
+2026-07-07 10:10:35,480  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:10:35,482  INFO      [CL] Process started  PID=96928
+2026-07-07 10:10:35,485  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:10:35,485  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:35,485  INFO         Mode    : PAPER
+2026-07-07 10:10:35,485  INFO         Ticker  : CL
+2026-07-07 10:10:35,485  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:10:35,485  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:35,486  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 611, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:10:35,490  INFO      [CL] Process exiting
+2026-07-07 10:17:07,489  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:17:07,490  INFO        Mode       : PAPER
+2026-07-07 10:17:07,490  INFO        Max leverage: 15.0x
+2026-07-07 10:17:07,490  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:17:07,492  INFO      [CL] Process started  PID=97132
+2026-07-07 10:17:07,495  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:17:07,495  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:17:07,495  INFO         Mode    : PAPER
+2026-07-07 10:17:07,495  INFO         Ticker  : CL
+2026-07-07 10:17:07,495  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:17:07,495  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:17:07,496  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 611, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:17:07,501  INFO      [CL] Process exiting
+2026-07-07 10:24:03,390  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:24:03,390  INFO        Mode       : PAPER
+2026-07-07 10:24:03,390  INFO        Max leverage: 15.0x
+2026-07-07 10:24:03,390  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:24:03,392  INFO      [CL] Process started  PID=57108
+2026-07-07 10:24:03,395  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:24:03,395  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:24:03,396  INFO         Mode    : PAPER
+2026-07-07 10:24:03,396  INFO         Ticker  : CL
+2026-07-07 10:24:03,396  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:24:03,396  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:24:03,397  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:24:03,402  INFO      [CL] Process exiting
+2026-07-07 10:26:30,636  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:26:30,636  INFO        Mode       : PAPER
+2026-07-07 10:26:30,636  INFO        Max leverage: 15.0x
+2026-07-07 10:26:30,637  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:26:30,639  INFO      [CL] Process started  PID=94184
+2026-07-07 10:26:30,641  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:26:30,642  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:30,642  INFO         Mode    : PAPER
+2026-07-07 10:26:30,642  INFO         Ticker  : CL
+2026-07-07 10:26:30,642  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:26:30,642  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:30,643  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:26:30,648  INFO      [CL] Process exiting
+2026-07-07 10:30:26,427  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:30:26,427  INFO        Mode       : PAPER
+2026-07-07 10:30:26,427  INFO        Max leverage: 15.0x
+2026-07-07 10:30:26,427  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:30:26,429  INFO      [CL] Process started  PID=95792
+2026-07-07 10:30:26,431  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:30:26,431  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:26,431  INFO         Mode    : PAPER
+2026-07-07 10:30:26,431  INFO         Ticker  : CL
+2026-07-07 10:30:26,432  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:30:26,432  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:26,432  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:30:26,437  INFO      [CL] Process exiting
+2026-07-07 10:35:55,333  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:35:55,334  INFO        Mode       : PAPER
+2026-07-07 10:35:55,334  INFO        Max leverage: 15.0x
+2026-07-07 10:35:55,334  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:35:55,336  INFO      [CL] Process started  PID=78668
+2026-07-07 10:35:55,338  INFO      [CL] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:35:55,338  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:55,338  INFO         Mode    : PAPER
+2026-07-07 10:35:55,338  INFO         Ticker  : CL
+2026-07-07 10:35:55,338  INFO         Chromosome : CL_futures_chromosome.csv
+2026-07-07 10:35:55,339  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:55,339  ERROR     [CL] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:35:55,345  INFO      [CL] Process exiting
+2026-07-07 10:39:37,101  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:39:37,102  INFO        Mode       : PAPER
+2026-07-07 10:39:37,102  INFO        Max leverage: 15.0x
+2026-07-07 10:39:37,102  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:39:37,104  INFO        Evolved leverage: 3.1x
+2026-07-07 10:39:37,104  INFO        Stop width: 3.1%
+2026-07-07 10:39:37,104  INFO      [CL] Bot running — checking every 10 minutes
+2026-07-07 10:39:37,104  INFO      [CL] ── Signal check 10:39 ──
+2026-07-07 10:39:37,426  ERROR     [CL] Error: operands could not be broadcast together with shapes (53,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
+2026-07-07 10:39:37,427  INFO      Retrying in 5 minutes...
+2026-07-07 10:44:37,427  INFO      [CL] ── Signal check 10:44 ──
+2026-07-07 10:44:37,572  ERROR     [CL] Error: operands could not be broadcast together with shapes (53,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
+2026-07-07 10:44:37,573  INFO      Retrying in 5 minutes...

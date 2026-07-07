@@ -966,3 +966,180 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 09:25:25,899  INFO      Current price   : $192.91
 2026-07-07 09:25:25,899  INFO      Open position   : None
 2026-07-07 09:25:25,899  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:30:26,091  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:35:26,092  INFO      =======================================================
+2026-07-07 09:35:26,093  INFO      Daily signal run  [2026-07-07 09:35]
+2026-07-07 09:35:26,093  INFO      =======================================================
+2026-07-07 09:35:26,495  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:35:26,712  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:35:26,931  INFO      Portfolio value : $121,608.06
+2026-07-07 09:35:26,931  INFO      Current price   : $193.09
+2026-07-07 09:35:26,931  INFO      Open position   : None
+2026-07-07 09:35:26,931  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:40:27,140  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:45:27,140  INFO      =======================================================
+2026-07-07 09:45:27,143  INFO      Daily signal run  [2026-07-07 09:45]
+2026-07-07 09:45:27,143  INFO      =======================================================
+2026-07-07 09:45:27,530  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:45:27,692  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:45:27,823  INFO      Portfolio value : $121,732.80
+2026-07-07 09:45:27,824  INFO      Current price   : $193.65
+2026-07-07 09:45:27,824  INFO      Open position   : None
+2026-07-07 09:45:27,824  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 09:50:28,008  INFO      Market open — waiting 300s before first signal...
+2026-07-07 09:55:28,008  INFO      =======================================================
+2026-07-07 09:55:28,009  INFO      Daily signal run  [2026-07-07 09:55]
+2026-07-07 09:55:28,009  INFO      =======================================================
+2026-07-07 09:55:28,402  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 09:55:28,597  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 09:55:28,727  INFO      Portfolio value : $121,766.36
+2026-07-07 09:55:28,728  INFO      Current price   : $194.05
+2026-07-07 09:55:28,728  INFO      Open position   : None
+2026-07-07 09:55:28,728  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:00:28,917  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:01:53,055  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,062  INFO      [NVDA] Process exiting
+2026-07-07 10:02:07,658  INFO      [NVDA] Process started  PID=91940
+2026-07-07 10:02:07,661  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:02:07,661  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:07,661  INFO         Mode    : PAPER
+2026-07-07 10:02:07,661  INFO         Ticker  : NVDA
+2026-07-07 10:02:07,661  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:02:07,661  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:07,663  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:07,851  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [NVDA] Process exiting
+2026-07-07 10:04:29,146  INFO      [NVDA] Process started  PID=74552
+2026-07-07 10:04:29,149  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:04:29,150  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:29,150  INFO         Mode    : PAPER
+2026-07-07 10:04:29,150  INFO         Ticker  : NVDA
+2026-07-07 10:04:29,150  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:04:29,150  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:29,152  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:29,346  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:29,347  INFO      =======================================================
+2026-07-07 10:09:29,347  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:29,348  INFO      =======================================================
+2026-07-07 10:09:29,904  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:30,110  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 10:09:30,245  INFO      Portfolio value : $121,909.22
+2026-07-07 10:09:30,245  INFO      Current price   : $195.36
+2026-07-07 10:09:30,245  INFO      Open position   : None
+2026-07-07 10:09:30,246  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,686  INFO      [NVDA] Process exiting
+2026-07-07 10:10:09,356  INFO      [NVDA] Process started  PID=90908
+2026-07-07 10:10:09,359  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:10:09,359  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:09,360  INFO         Mode    : PAPER
+2026-07-07 10:10:09,360  INFO         Ticker  : NVDA
+2026-07-07 10:10:09,360  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:10:09,360  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:09,362  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:09,556  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:09,557  INFO      =======================================================
+2026-07-07 10:15:09,558  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:09,558  INFO      =======================================================
+2026-07-07 10:15:10,113  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:10,344  INFO      Signal: SELL/HOLD  |  Confidence: 0.255
+2026-07-07 10:15:10,490  INFO      Portfolio value : $121,912.16
+2026-07-07 10:15:10,490  INFO      Current price   : $196.04
+2026-07-07 10:15:10,490  INFO      Open position   : None
+2026-07-07 10:15:10,490  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:20:10,695  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,865  INFO      [NVDA] Process exiting
+2026-07-07 10:23:37,213  INFO      [NVDA] Process started  PID=65728
+2026-07-07 10:23:37,216  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:23:37,216  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:37,216  INFO         Mode    : PAPER
+2026-07-07 10:23:37,216  INFO         Ticker  : NVDA
+2026-07-07 10:23:37,216  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:23:37,216  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:37,218  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:37,405  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [NVDA] Process exiting
+2026-07-07 10:26:04,451  INFO      [NVDA] Process started  PID=68040
+2026-07-07 10:26:04,454  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:26:04,454  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:04,454  INFO         Mode    : PAPER
+2026-07-07 10:26:04,454  INFO         Ticker  : NVDA
+2026-07-07 10:26:04,454  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:26:04,455  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:04,458  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:04,651  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [NVDA] Process exiting
+2026-07-07 10:30:00,330  INFO      [NVDA] Process started  PID=63252
+2026-07-07 10:30:00,333  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:30:00,333  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:00,333  INFO         Mode    : PAPER
+2026-07-07 10:30:00,333  INFO         Ticker  : NVDA
+2026-07-07 10:30:00,333  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:30:00,333  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:00,335  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:00,890  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,811  INFO      [NVDA] Process exiting
+2026-07-07 10:35:29,255  INFO      [NVDA] Process started  PID=92152
+2026-07-07 10:35:29,258  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:35:29,258  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:29,258  INFO         Mode    : PAPER
+2026-07-07 10:35:29,258  INFO         Ticker  : NVDA
+2026-07-07 10:35:29,258  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:35:29,259  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:29,260  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:29,456  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [NVDA] Process exiting
+2026-07-07 10:39:11,043  INFO      [NVDA] Process started  PID=65996
+2026-07-07 10:39:11,046  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:39:11,046  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:11,046  INFO         Mode    : PAPER
+2026-07-07 10:39:11,046  INFO         Ticker  : NVDA
+2026-07-07 10:39:11,046  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:39:11,046  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:11,048  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:11,274  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:11,275  INFO      =======================================================
+2026-07-07 10:44:11,275  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:11,276  INFO      =======================================================
+2026-07-07 10:44:11,819  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:12,050  INFO      Signal: BUY  |  Confidence: 0.380
+2026-07-07 10:44:12,178  INFO      Portfolio value : $100,576.56
+2026-07-07 10:44:12,178  INFO      Current price   : $197.31
+2026-07-07 10:44:12,179  INFO      Open position   : {'qty': 75, 'side': 'short', 'entry_price': 196.69, 'market_value': -14798.9925, 'unrealised_pl': -47.2425}
+2026-07-07 10:44:12,179  INFO      Flipping short → long: closing short position
+2026-07-07 10:44:12,254  INFO      [CLOSE] BUY TO COVER (flip to long): 75 x NVDA  [id=7d7f67fd-a80b-49c9-9890-77abbd2cc2f5]
+2026-07-07 10:44:17,254  INFO      Position size: 83 shares  (confidence=0.380, alloc=16.4%, $16,499 of $100,577)
+2026-07-07 10:44:17,344  INFO      [OK] BUY (long) order submitted: 83 x NVDA  [id=cf4542ed-2e87-4251-ab57-02780a1a2277]
+2026-07-07 10:44:22,407  INFO      Monitoring NVDA  |  entry=197.43  stop=193.48  target=205.33
+2026-07-07 10:45:22,681  INFO        NVDA [long] price=197.46  stop=193.48  trailing=inactive  target=205.33  P&L=+2.41
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,004  INFO      [NVDA] Process exiting
+2026-07-07 10:49:57,767  INFO      [NVDA] Process started  PID=88996
+2026-07-07 10:49:57,769  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:49:57,769  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:49:57,769  INFO         Mode    : PAPER
+2026-07-07 10:49:57,769  INFO         Ticker  : NVDA
+2026-07-07 10:49:57,770  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-07 10:49:57,770  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:49:57,771  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-07 10:49:57,976  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:54:57,976  INFO      =======================================================
+2026-07-07 10:54:57,977  INFO      Daily signal run  [2026-07-07 10:54]
+2026-07-07 10:54:57,977  INFO      =======================================================
+2026-07-07 10:54:58,523  INFO      Fetched 70 bars for NVDA  (2026-03-26 → 2026-07-07)
+2026-07-07 10:54:58,743  INFO      Signal: BUY  |  Confidence: 0.380
+2026-07-07 10:54:58,865  INFO      Portfolio value : $100,486.31
+2026-07-07 10:54:58,865  INFO      Current price   : $197.03
+2026-07-07 10:54:58,865  INFO      Open position   : {'qty': 83, 'side': 'long', 'entry_price': 197.430241, 'market_value': 16352.6683, 'unrealised_pl': -34.041703}
+2026-07-07 10:54:58,865  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:54:58,865  INFO      Monitoring NVDA  |  entry=197.43  stop=193.48  target=205.33
+2026-07-07 10:55:59,199  INFO        NVDA [long] price=196.82  stop=193.48  trailing=inactive  target=205.33  P&L=-53.02
+2026-07-07 10:56:59,547  INFO        NVDA [long] price=196.89  stop=193.48  trailing=inactive  target=205.33  P&L=-41.94
+2026-07-07 10:57:59,806  INFO        NVDA [long] price=196.74  stop=193.48  trailing=inactive  target=205.33  P&L=-55.63
+2026-07-07 10:59:00,042  INFO        NVDA [long] price=196.95  stop=193.48  trailing=inactive  target=205.33  P&L=-37.79

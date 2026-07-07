@@ -676,3 +676,431 @@
 2026-07-07 08:43:29,803  INFO      [NQ] Portfolio=$121,598.18  Price=$29310.00  Position=None
 2026-07-07 08:43:29,803  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,673)
 2026-07-07 08:43:29,803  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 08:50:44,253  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 08:50:44,253  INFO        Mode       : PAPER
+2026-07-07 08:50:44,253  INFO        Max leverage: 20.0x
+2026-07-07 08:50:44,254  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 08:50:44,262  INFO        Evolved leverage: 2.7x
+2026-07-07 08:50:44,262  INFO        Stop width: 1.0%
+2026-07-07 08:50:44,262  INFO      [NQ] Bot running — checking every 10 minutes
+2026-07-07 08:50:44,264  INFO      [NQ] ── Signal check 08:50 ──
+2026-07-07 08:50:44,774  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 08:50:45,355  INFO      [NQ] Portfolio=$121,609.50  Price=$29261.00  Position=None
+2026-07-07 08:50:45,355  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,674)
+2026-07-07 08:50:45,355  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 08:53:29,804  INFO      [NQ] ── Signal check 08:53 ──
+2026-07-07 08:53:30,008  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 08:53:30,443  INFO      [NQ] Portfolio=$121,632.84  Price=$29248.25  Position=None
+2026-07-07 08:53:30,444  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,675)
+2026-07-07 08:53:30,444  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:00:45,356  INFO      [NQ] ── Signal check 09:00 ──
+2026-07-07 09:00:45,504  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:00:45,940  INFO      [NQ] Portfolio=$121,566.79  Price=$29263.50  Position=None
+2026-07-07 09:00:45,940  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,671)
+2026-07-07 09:00:45,940  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:03:30,444  INFO      [NQ] ── Signal check 09:03 ──
+2026-07-07 09:03:30,610  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:03:31,042  INFO      [NQ] Portfolio=$121,642.43  Price=$29312.25  Position=None
+2026-07-07 09:03:31,043  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,676)
+2026-07-07 09:03:31,043  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:10:45,940  INFO      [NQ] ── Signal check 09:10 ──
+2026-07-07 09:10:46,093  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:10:46,528  INFO      [NQ] Portfolio=$121,639.40  Price=$29301.50  Position=None
+2026-07-07 09:10:46,528  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,676)
+2026-07-07 09:10:46,528  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:13:31,043  INFO      [NQ] ── Signal check 09:13 ──
+2026-07-07 09:13:31,230  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:13:31,646  INFO      [NQ] Portfolio=$121,629.31  Price=$29299.50  Position=None
+2026-07-07 09:13:31,646  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,675)
+2026-07-07 09:13:31,646  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:20:46,529  INFO      [NQ] ── Signal check 09:20 ──
+2026-07-07 09:20:46,685  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:20:47,130  INFO      [NQ] Portfolio=$121,618.66  Price=$29331.25  Position=None
+2026-07-07 09:20:47,130  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,674)
+2026-07-07 09:20:47,131  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:23:31,646  INFO      [NQ] ── Signal check 09:23 ──
+2026-07-07 09:23:31,891  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:23:32,295  INFO      [NQ] Portfolio=$121,665.17  Price=$29344.25  Position=None
+2026-07-07 09:23:32,295  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,677)
+2026-07-07 09:23:32,295  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:30:47,133  INFO      [NQ] ── Signal check 09:30 ──
+2026-07-07 09:30:47,304  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:30:47,722  INFO      [NQ] Portfolio=$121,669.17  Price=$29279.25  Position=None
+2026-07-07 09:30:47,722  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,677)
+2026-07-07 09:30:47,722  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:33:32,297  INFO      [NQ] ── Signal check 09:33 ──
+2026-07-07 09:33:32,484  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:33:32,881  INFO      [NQ] Portfolio=$121,642.34  Price=$29287.25  Position=None
+2026-07-07 09:33:32,881  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,676)
+2026-07-07 09:33:32,881  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:40:47,723  INFO      [NQ] ── Signal check 09:40 ──
+2026-07-07 09:40:47,890  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:40:48,325  INFO      [NQ] Portfolio=$121,588.42  Price=$29300.00  Position=None
+2026-07-07 09:40:48,325  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,672)
+2026-07-07 09:40:48,325  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:43:32,882  INFO      [NQ] ── Signal check 09:43 ──
+2026-07-07 09:43:33,095  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:43:33,499  INFO      [NQ] Portfolio=$121,587.46  Price=$29312.00  Position=None
+2026-07-07 09:43:33,503  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,672)
+2026-07-07 09:43:33,503  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:50:48,325  INFO      [NQ] ── Signal check 09:50 ──
+2026-07-07 09:50:48,480  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:50:48,883  INFO      [NQ] Portfolio=$121,786.62  Price=$29266.50  Position=None
+2026-07-07 09:50:48,883  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,685)
+2026-07-07 09:50:48,883  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 09:53:33,503  INFO      [NQ] ── Signal check 09:53 ──
+2026-07-07 09:53:33,657  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 09:53:34,121  INFO      [NQ] Portfolio=$121,786.42  Price=$29286.00  Position=None
+2026-07-07 09:53:34,121  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,685)
+2026-07-07 09:53:34,121  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 10:00:48,884  INFO      [NQ] ── Signal check 10:00 ──
+2026-07-07 10:00:49,065  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-07 10:00:49,504  INFO      [NQ] Portfolio=$121,873.73  Price=$29343.25  Position=None
+2026-07-07 10:00:49,505  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$7,690)
+2026-07-07 10:00:49,505  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 10:01:53,055  INFO      [NQ] Futures bot stopped by user
+2026-07-07 10:01:53,055  INFO      [NQ] Futures bot stopped by user
+2026-07-07 10:02:29,667  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:02:29,667  INFO        Mode       : PAPER
+2026-07-07 10:02:29,667  INFO        Max leverage: 20.0x
+2026-07-07 10:02:29,667  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:02:29,675  INFO      [NQ] Process started  PID=80444
+2026-07-07 10:02:29,678  ERROR     [NQ] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:02:29,679  INFO      [NQ] Process exiting
+2026-07-07 10:04:51,156  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:04:51,156  INFO        Mode       : PAPER
+2026-07-07 10:04:51,156  INFO        Max leverage: 20.0x
+2026-07-07 10:04:51,156  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:04:51,159  INFO      [NQ] Process started  PID=68164
+2026-07-07 10:04:51,162  ERROR     [NQ] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:04:51,164  INFO      [NQ] Process exiting
+2026-07-07 10:09:27,236  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:09:27,236  INFO        Mode       : PAPER
+2026-07-07 10:09:27,236  INFO        Max leverage: 20.0x
+2026-07-07 10:09:27,236  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:09:27,238  INFO      [NQ] Process started  PID=78572
+2026-07-07 10:09:27,241  ERROR     [NQ] Crashed: 'stop_loss_pct'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 279, in run_bot_process
+    f"stop {config['risk']['stop_loss_pct']*100:.1f}%")
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'stop_loss_pct'
+2026-07-07 10:09:27,242  INFO      [NQ] Process exiting
+2026-07-07 10:10:31,474  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:10:31,475  INFO        Mode       : PAPER
+2026-07-07 10:10:31,475  INFO        Max leverage: 20.0x
+2026-07-07 10:10:31,475  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:10:31,477  INFO      [NQ] Process started  PID=64832
+2026-07-07 10:10:31,481  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:10:31,481  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:31,481  INFO         Mode    : PAPER
+2026-07-07 10:10:31,481  INFO         Ticker  : NQ
+2026-07-07 10:10:31,481  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:10:31,481  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:31,482  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 611, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:10:31,487  INFO      [NQ] Process exiting
+2026-07-07 10:15:07,491  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:15:07,492  INFO        Mode       : PAPER
+2026-07-07 10:15:07,492  INFO        Max leverage: 20.0x
+2026-07-07 10:15:07,492  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:15:07,494  INFO      [NQ] Process started  PID=78148
+2026-07-07 10:15:07,497  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:15:07,497  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:15:07,497  INFO         Mode    : PAPER
+2026-07-07 10:15:07,497  INFO         Ticker  : NQ
+2026-07-07 10:15:07,497  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:15:07,497  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:15:07,498  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 611, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:15:07,502  INFO      [NQ] Process exiting
+2026-07-07 10:21:37,562  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:21:37,562  INFO        Mode       : PAPER
+2026-07-07 10:21:37,562  INFO        Max leverage: 20.0x
+2026-07-07 10:21:37,562  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:21:37,564  INFO      [NQ] Process started  PID=78380
+2026-07-07 10:21:37,567  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:21:37,567  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:21:37,567  INFO         Mode    : PAPER
+2026-07-07 10:21:37,567  INFO         Ticker  : NQ
+2026-07-07 10:21:37,567  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:21:37,567  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:21:37,568  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 611, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:21:37,572  INFO      [NQ] Process exiting
+2026-07-07 10:23:59,366  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:23:59,366  INFO        Mode       : PAPER
+2026-07-07 10:23:59,366  INFO        Max leverage: 20.0x
+2026-07-07 10:23:59,366  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:23:59,368  INFO      [NQ] Process started  PID=344
+2026-07-07 10:23:59,371  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:23:59,371  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:59,371  INFO         Mode    : PAPER
+2026-07-07 10:23:59,371  INFO         Ticker  : NQ
+2026-07-07 10:23:59,371  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:23:59,372  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:59,372  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:23:59,377  INFO      [NQ] Process exiting
+2026-07-07 10:26:26,501  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:26:26,501  INFO        Mode       : PAPER
+2026-07-07 10:26:26,501  INFO        Max leverage: 20.0x
+2026-07-07 10:26:26,501  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:26:26,503  INFO      [NQ] Process started  PID=72904
+2026-07-07 10:26:26,506  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:26:26,506  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:26,506  INFO         Mode    : PAPER
+2026-07-07 10:26:26,506  INFO         Ticker  : NQ
+2026-07-07 10:26:26,506  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:26:26,507  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:26,507  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:26:26,512  INFO      [NQ] Process exiting
+2026-07-07 10:30:22,414  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:30:22,414  INFO        Mode       : PAPER
+2026-07-07 10:30:22,414  INFO        Max leverage: 20.0x
+2026-07-07 10:30:22,414  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:30:22,416  INFO      [NQ] Process started  PID=94820
+2026-07-07 10:30:22,422  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:30:22,422  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:22,422  INFO         Mode    : PAPER
+2026-07-07 10:30:22,422  INFO         Ticker  : NQ
+2026-07-07 10:30:22,422  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:30:22,422  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:22,423  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:30:22,428  INFO      [NQ] Process exiting
+2026-07-07 10:35:51,393  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:35:51,394  INFO        Mode       : PAPER
+2026-07-07 10:35:51,394  INFO        Max leverage: 20.0x
+2026-07-07 10:35:51,394  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:35:51,396  INFO      [NQ] Process started  PID=76820
+2026-07-07 10:35:51,398  INFO      [NQ] Config loaded — max alloc 10%  stop 5.0%
+2026-07-07 10:35:51,398  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:51,399  INFO         Mode    : PAPER
+2026-07-07 10:35:51,399  INFO         Ticker  : NQ
+2026-07-07 10:35:51,399  INFO         Chromosome : NQ_futures_chromosome.csv
+2026-07-07 10:35:51,399  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:51,400  ERROR     [NQ] Crashed: 'weight'
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'weight'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\bot_manager.py", line 282, in run_bot_process
+    ab.run_bot()
+    ~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 618, in run_bot
+    chrom = load_chromosome(CHROMOSOME_FILE)
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 132, in load_chromosome
+    chrom  = np.concatenate([df['weight'].values, df['threshold'].values])
+                             ~~^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\frame.py", line 4378, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'weight'
+2026-07-07 10:35:51,406  INFO      [NQ] Process exiting
+2026-07-07 10:39:33,067  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-07 10:39:33,067  INFO        Mode       : PAPER
+2026-07-07 10:39:33,067  INFO        Max leverage: 20.0x
+2026-07-07 10:39:33,067  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:39:33,069  INFO        Evolved leverage: 2.8x
+2026-07-07 10:39:33,069  INFO        Stop width: 3.1%
+2026-07-07 10:39:33,069  INFO      [NQ] Bot running — checking every 10 minutes
+2026-07-07 10:39:33,069  INFO      [NQ] ── Signal check 10:39 ──
+2026-07-07 10:39:33,504  ERROR     [NQ] Error: operands could not be broadcast together with shapes (53,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
+2026-07-07 10:39:33,505  INFO      Retrying in 5 minutes...
+2026-07-07 10:44:33,506  INFO      [NQ] ── Signal check 10:44 ──
+2026-07-07 10:44:33,653  ERROR     [NQ] Error: operands could not be broadcast together with shapes (53,12) (17,) 
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 500, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 370, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 164, in compute_futures_signal_live
+    condition = (values > thresholds).astype(float)
+                 ^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
+2026-07-07 10:44:33,654  INFO      Retrying in 5 minutes...

@@ -886,3 +886,191 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 09:23:43,676  INFO        AMZN [long] price=243.62  stop=240.10  trailing=inactive  target=254.80  P&L=-144.04
 2026-07-07 09:24:43,901  INFO        AMZN [long] price=243.55  stop=240.10  trailing=inactive  target=254.80  P&L=-152.88
 2026-07-07 09:25:44,112  INFO        AMZN [long] price=243.55  stop=240.10  trailing=inactive  target=254.80  P&L=-151.84
+2026-07-07 09:26:44,370  INFO        AMZN [long] price=243.39  stop=240.10  trailing=inactive  target=254.80  P&L=-172.63
+2026-07-07 09:27:44,629  INFO        AMZN [long] price=243.17  stop=240.10  trailing=inactive  target=254.80  P&L=-190.32
+2026-07-07 09:28:44,846  INFO        AMZN [long] price=243.28  stop=240.10  trailing=inactive  target=254.80  P&L=-179.40
+2026-07-07 09:29:45,068  INFO        AMZN [long] price=243.11  stop=240.10  trailing=inactive  target=254.80  P&L=-196.56
+2026-07-07 09:30:45,301  INFO        AMZN [long] price=243.34  stop=240.10  trailing=inactive  target=254.80  P&L=-172.45
+2026-07-07 09:31:45,512  INFO        AMZN [long] price=243.28  stop=240.10  trailing=inactive  target=254.80  P&L=-174.72
+2026-07-07 09:32:45,759  INFO        AMZN [long] price=243.31  stop=240.10  trailing=inactive  target=254.80  P&L=-175.76
+2026-07-07 09:33:46,001  INFO        AMZN [long] price=242.89  stop=240.10  trailing=inactive  target=254.80  P&L=-220.38
+2026-07-07 09:34:46,247  INFO        AMZN [long] price=243.04  stop=240.10  trailing=inactive  target=254.80  P&L=-203.84
+2026-07-07 09:35:46,479  INFO        AMZN [long] price=243.24  stop=240.10  trailing=inactive  target=254.80  P&L=-187.20
+2026-07-07 09:36:46,683  INFO        AMZN [long] price=243.18  stop=240.10  trailing=inactive  target=254.80  P&L=-189.28
+2026-07-07 09:37:46,939  INFO        AMZN [long] price=243.20  stop=240.10  trailing=inactive  target=254.80  P&L=-191.36
+2026-07-07 09:38:47,163  INFO        AMZN [long] price=243.06  stop=240.10  trailing=inactive  target=254.80  P&L=-204.88
+2026-07-07 09:39:47,434  INFO        AMZN [long] price=242.96  stop=240.10  trailing=inactive  target=254.80  P&L=-212.16
+2026-07-07 09:40:47,635  INFO        AMZN [long] price=242.86  stop=240.10  trailing=inactive  target=254.80  P&L=-220.48
+2026-07-07 09:41:47,968  INFO        AMZN [long] price=243.20  stop=240.10  trailing=inactive  target=254.80  P&L=-186.16
+2026-07-07 09:42:48,194  INFO        AMZN [long] price=243.14  stop=240.10  trailing=inactive  target=254.80  P&L=-193.44
+2026-07-07 09:43:48,452  INFO        AMZN [long] price=242.82  stop=240.10  trailing=inactive  target=254.80  P&L=-228.28
+2026-07-07 09:44:48,705  INFO        AMZN [long] price=242.92  stop=240.10  trailing=inactive  target=254.80  P&L=-215.28
+2026-07-07 09:45:48,952  INFO        AMZN [long] price=243.03  stop=240.10  trailing=inactive  target=254.80  P&L=-205.40
+2026-07-07 09:46:49,189  INFO        AMZN [long] price=243.03  stop=240.10  trailing=inactive  target=254.80  P&L=-210.08
+2026-07-07 09:47:49,414  INFO        AMZN [long] price=243.33  stop=240.10  trailing=inactive  target=254.80  P&L=-172.12
+2026-07-07 09:48:49,668  INFO        AMZN [long] price=243.40  stop=240.10  trailing=inactive  target=254.80  P&L=-169.00
+2026-07-07 09:49:49,909  INFO        AMZN [long] price=243.46  stop=240.10  trailing=inactive  target=254.80  P&L=-163.80
+2026-07-07 09:50:50,192  INFO        AMZN [long] price=243.28  stop=240.10  trailing=inactive  target=254.80  P&L=-182.00
+2026-07-07 09:51:50,413  INFO        AMZN [long] price=243.35  stop=240.10  trailing=inactive  target=254.80  P&L=-170.56
+2026-07-07 09:52:50,672  INFO        AMZN [long] price=243.47  stop=240.10  trailing=inactive  target=254.80  P&L=-159.12
+2026-07-07 09:53:50,896  INFO        AMZN [long] price=243.01  stop=240.10  trailing=inactive  target=254.80  P&L=-206.44
+2026-07-07 09:54:51,126  INFO        AMZN [long] price=242.98  stop=240.10  trailing=inactive  target=254.80  P&L=-210.08
+2026-07-07 09:55:51,331  INFO        AMZN [long] price=243.35  stop=240.10  trailing=inactive  target=254.80  P&L=-174.72
+2026-07-07 09:56:51,663  INFO        AMZN [long] price=243.45  stop=240.10  trailing=inactive  target=254.80  P&L=-161.20
+2026-07-07 09:57:51,894  INFO        AMZN [long] price=243.36  stop=240.10  trailing=inactive  target=254.80  P&L=-171.60
+2026-07-07 09:58:52,102  INFO        AMZN [long] price=243.09  stop=240.10  trailing=inactive  target=254.80  P&L=-200.72
+2026-07-07 09:59:52,329  INFO        AMZN [long] price=243.67  stop=240.10  trailing=inactive  target=254.80  P&L=-134.16
+2026-07-07 10:00:52,554  INFO        AMZN [long] price=243.57  stop=240.10  trailing=inactive  target=254.80  P&L=-147.68
+2026-07-07 10:01:52,814  INFO        AMZN [long] price=243.85  stop=240.10  trailing=inactive  target=254.80  P&L=-117.00
+2026-07-07 10:01:53,054  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:01:53,063  INFO      [AMZN] Process exiting
+2026-07-07 10:02:15,567  INFO      [AMZN] Process started  PID=99344
+2026-07-07 10:02:15,569  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:02:15,570  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:02:15,570  INFO         Mode    : PAPER
+2026-07-07 10:02:15,570  INFO         Ticker  : AMZN
+2026-07-07 10:02:15,570  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:02:15,570  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:02:15,571  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:02:15,771  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:04:21,354  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:04:21,357  INFO      [AMZN] Process exiting
+2026-07-07 10:04:37,197  INFO      [AMZN] Process started  PID=89584
+2026-07-07 10:04:37,200  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:04:37,200  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:04:37,200  INFO         Mode    : PAPER
+2026-07-07 10:04:37,200  INFO         Ticker  : AMZN
+2026-07-07 10:04:37,200  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:04:37,200  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:04:37,202  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:04:37,393  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:09:37,396  INFO      =======================================================
+2026-07-07 10:09:37,396  INFO      Daily signal run  [2026-07-07 10:09]
+2026-07-07 10:09:37,396  INFO      =======================================================
+2026-07-07 10:09:37,974  INFO      Fetched 70 bars for AMZN  (2026-03-26 → 2026-07-07)
+2026-07-07 10:09:38,156  INFO      Signal: BUY  |  Confidence: 0.577
+2026-07-07 10:09:38,280  INFO      Portfolio value : $121,902.11
+2026-07-07 10:09:38,281  INFO      Current price   : $244.19
+2026-07-07 10:09:38,281  INFO      Open position   : {'qty': 104, 'side': 'long', 'entry_price': 245.0, 'market_value': 25395.76, 'unrealised_pl': -84.24}
+2026-07-07 10:09:38,281  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:09:38,281  INFO      Monitoring AMZN  |  entry=245.00  stop=240.10  target=254.80
+2026-07-07 10:10:01,682  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:10:01,686  INFO      [AMZN] Process exiting
+2026-07-07 10:10:17,319  INFO      [AMZN] Process started  PID=66836
+2026-07-07 10:10:17,322  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:10:17,322  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:10:17,322  INFO         Mode    : PAPER
+2026-07-07 10:10:17,322  INFO         Ticker  : AMZN
+2026-07-07 10:10:17,322  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:10:17,323  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:10:17,324  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:10:17,554  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:15:17,554  INFO      =======================================================
+2026-07-07 10:15:17,555  INFO      Daily signal run  [2026-07-07 10:15]
+2026-07-07 10:15:17,555  INFO      =======================================================
+2026-07-07 10:15:18,093  INFO      Fetched 70 bars for AMZN  (2026-03-26 → 2026-07-07)
+2026-07-07 10:15:18,273  INFO      Signal: BUY  |  Confidence: 0.577
+2026-07-07 10:15:18,395  INFO      Portfolio value : $121,904.18
+2026-07-07 10:15:18,396  INFO      Current price   : $244.63
+2026-07-07 10:15:18,396  INFO      Open position   : {'qty': 104, 'side': 'long', 'entry_price': 245.0, 'market_value': 25442.04, 'unrealised_pl': -37.96}
+2026-07-07 10:15:18,396  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:15:18,396  INFO      Monitoring AMZN  |  entry=245.00  stop=240.10  target=254.80
+2026-07-07 10:16:18,606  INFO        AMZN [long] price=244.54  stop=240.10  trailing=inactive  target=254.80  P&L=-47.44
+2026-07-07 10:17:18,825  INFO        AMZN [long] price=244.69  stop=240.10  trailing=inactive  target=254.80  P&L=-32.24
+2026-07-07 10:18:19,060  INFO        AMZN [long] price=244.65  stop=240.10  trailing=inactive  target=254.80  P&L=-36.40
+2026-07-07 10:19:25,970  INFO        AMZN [long] price=244.52  stop=240.10  trailing=inactive  target=254.80  P&L=-15.36
+2026-07-07 10:20:26,248  INFO        AMZN [long] price=244.35  stop=240.10  trailing=inactive  target=254.80  P&L=-20.80
+2026-07-07 10:21:26,473  INFO        AMZN [long] price=244.36  stop=240.10  trailing=inactive  target=254.80  P&L=-21.60
+2026-07-07 10:22:26,703  INFO        AMZN [long] price=244.38  stop=240.10  trailing=inactive  target=254.80  P&L=-19.88
+2026-07-07 10:23:27,025  INFO        AMZN [long] price=244.58  stop=240.10  trailing=inactive  target=254.80  P&L=-14.08
+2026-07-07 10:23:29,861  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:23:29,864  INFO      [AMZN] Process exiting
+2026-07-07 10:23:45,290  INFO      [AMZN] Process started  PID=66876
+2026-07-07 10:23:45,293  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:23:45,293  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:23:45,293  INFO         Mode    : PAPER
+2026-07-07 10:23:45,293  INFO         Ticker  : AMZN
+2026-07-07 10:23:45,293  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:23:45,293  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:23:45,295  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:23:45,498  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:25:20,664  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:25:20,666  INFO      [AMZN] Process exiting
+2026-07-07 10:26:12,456  INFO      [AMZN] Process started  PID=77624
+2026-07-07 10:26:12,459  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:26:12,459  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:26:12,459  INFO         Mode    : PAPER
+2026-07-07 10:26:12,459  INFO         Ticker  : AMZN
+2026-07-07 10:26:12,459  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:26:12,460  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:26:12,464  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:26:12,647  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:29:52,985  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:29:52,988  INFO      [AMZN] Process exiting
+2026-07-07 10:30:08,390  INFO      [AMZN] Process started  PID=92052
+2026-07-07 10:30:08,392  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:30:08,393  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:30:08,393  INFO         Mode    : PAPER
+2026-07-07 10:30:08,393  INFO         Ticker  : AMZN
+2026-07-07 10:30:08,393  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:30:08,393  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:30:08,394  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:30:08,595  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:34:14,808  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:34:14,812  INFO      [AMZN] Process exiting
+2026-07-07 10:35:37,294  INFO      [AMZN] Process started  PID=84536
+2026-07-07 10:35:37,296  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:35:37,296  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:35:37,297  INFO         Mode    : PAPER
+2026-07-07 10:35:37,297  INFO         Ticker  : AMZN
+2026-07-07 10:35:37,297  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:35:37,297  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:35:37,298  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:35:37,483  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:39:03,408  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:39:03,410  INFO      [AMZN] Process exiting
+2026-07-07 10:39:19,086  INFO      [AMZN] Process started  PID=79244
+2026-07-07 10:39:19,090  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:39:19,090  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:39:19,090  INFO         Mode    : PAPER
+2026-07-07 10:39:19,090  INFO         Ticker  : AMZN
+2026-07-07 10:39:19,090  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:39:19,090  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:39:19,092  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:39:19,318  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:44:19,319  INFO      =======================================================
+2026-07-07 10:44:19,319  INFO      Daily signal run  [2026-07-07 10:44]
+2026-07-07 10:44:19,319  INFO      =======================================================
+2026-07-07 10:44:19,920  INFO      Fetched 70 bars for AMZN  (2026-03-26 → 2026-07-07)
+2026-07-07 10:44:20,120  INFO      Signal: BUY  |  Confidence: 0.577
+2026-07-07 10:44:20,258  INFO      Portfolio value : $100,587.60
+2026-07-07 10:44:20,258  INFO      Current price   : $245.49
+2026-07-07 10:44:20,258  INFO      Open position   : {'qty': 32, 'side': 'long', 'entry_price': 245.0, 'market_value': 7854.72, 'unrealised_pl': 14.72}
+2026-07-07 10:44:20,258  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:44:20,258  INFO      Monitoring AMZN  |  entry=245.00  stop=240.10  target=254.80
+2026-07-07 10:45:20,499  INFO        AMZN [long] price=245.65  stop=240.10  trailing=inactive  target=254.80  P&L=+20.80
+2026-07-07 10:45:31,001  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-07 10:45:31,003  INFO      [AMZN] Process exiting
+2026-07-07 10:50:05,771  INFO      [AMZN] Process started  PID=97584
+2026-07-07 10:50:05,774  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-07 10:50:05,774  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-07 10:50:05,774  INFO         Mode    : PAPER
+2026-07-07 10:50:05,774  INFO         Ticker  : AMZN
+2026-07-07 10:50:05,774  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-07 10:50:05,774  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-07 10:50:05,776  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-07 10:50:05,982  INFO      Market open — waiting 300s before first signal...
+2026-07-07 10:55:05,983  INFO      =======================================================
+2026-07-07 10:55:05,983  INFO      Daily signal run  [2026-07-07 10:55]
+2026-07-07 10:55:05,983  INFO      =======================================================
+2026-07-07 10:55:06,571  INFO      Fetched 70 bars for AMZN  (2026-03-26 → 2026-07-07)
+2026-07-07 10:55:06,780  INFO      Signal: BUY  |  Confidence: 0.577
+2026-07-07 10:55:06,909  INFO      Portfolio value : $100,487.12
+2026-07-07 10:55:06,909  INFO      Current price   : $245.92
+2026-07-07 10:55:06,909  INFO      Open position   : {'qty': 32, 'side': 'long', 'entry_price': 245.0, 'market_value': 7870.08, 'unrealised_pl': 30.08}
+2026-07-07 10:55:06,909  INFO      BUY signal — already long, monitoring existing position
+2026-07-07 10:55:06,909  INFO      Monitoring AMZN  |  entry=245.00  stop=240.10  target=254.80
+2026-07-07 10:56:07,143  INFO        AMZN [long] price=246.10  stop=240.10  trailing=inactive  target=254.80  P&L=+35.20
+2026-07-07 10:57:07,416  INFO        AMZN [long] price=246.20  stop=240.10  trailing=inactive  target=254.80  P&L=+38.24
+2026-07-07 10:58:07,673  INFO        AMZN [long] price=245.93  stop=240.10  trailing=inactive  target=254.80  P&L=+29.76
+2026-07-07 10:59:07,913  INFO        AMZN [long] price=245.68  stop=240.10  trailing=inactive  target=254.80  P&L=+19.84
