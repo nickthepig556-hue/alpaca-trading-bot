@@ -13146,3 +13146,177 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-06 11:31:58,739  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-06 11:31:58,741  INFO      Chromosome loaded from GLD_best_chromosome.csv  (24 genes)
 2026-07-06 11:31:58,953  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:36:58,954  INFO      =======================================================
+2026-07-06 11:36:58,955  INFO      Daily signal run  [2026-07-06 11:36]
+2026-07-06 11:36:58,955  INFO      =======================================================
+2026-07-06 11:36:59,604  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 11:36:59,789  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 11:36:59,978  INFO      Portfolio value : $100,297.45
+2026-07-06 11:36:59,978  INFO      Current price   : $381.41
+2026-07-06 11:36:59,978  INFO      Open position   : None
+2026-07-06 11:36:59,978  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 11:36:59,978  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:42:00,225  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:47:00,226  INFO      =======================================================
+2026-07-06 11:47:00,227  INFO      Daily signal run  [2026-07-06 11:47]
+2026-07-06 11:47:00,227  INFO      =======================================================
+2026-07-06 11:47:00,793  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 11:47:00,966  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 11:47:01,114  INFO      Portfolio value : $100,290.27
+2026-07-06 11:47:01,114  INFO      Current price   : $381.58
+2026-07-06 11:47:01,114  INFO      Open position   : None
+2026-07-06 11:47:01,114  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 11:47:01,114  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:52:01,349  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:57:01,350  INFO      =======================================================
+2026-07-06 11:57:01,350  INFO      Daily signal run  [2026-07-06 11:57]
+2026-07-06 11:57:01,350  INFO      =======================================================
+2026-07-06 11:57:01,856  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 11:57:02,017  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 11:57:02,165  INFO      Portfolio value : $100,336.35
+2026-07-06 11:57:02,166  INFO      Current price   : $381.76
+2026-07-06 11:57:02,166  INFO      Open position   : None
+2026-07-06 11:57:02,167  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 11:57:02,167  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:02:02,590  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:07:02,591  INFO      =======================================================
+2026-07-06 12:07:02,591  INFO      Daily signal run  [2026-07-06 12:07]
+2026-07-06 12:07:02,591  INFO      =======================================================
+2026-07-06 12:07:03,001  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:07:03,218  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:07:03,347  INFO      Portfolio value : $100,328.13
+2026-07-06 12:07:03,347  INFO      Current price   : $381.44
+2026-07-06 12:07:03,348  INFO      Open position   : None
+2026-07-06 12:07:03,348  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:07:03,348  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:12:03,599  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:17:03,600  INFO      =======================================================
+2026-07-06 12:17:03,600  INFO      Daily signal run  [2026-07-06 12:17]
+2026-07-06 12:17:03,600  INFO      =======================================================
+2026-07-06 12:17:03,982  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:17:04,135  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:17:04,274  INFO      Portfolio value : $100,309.79
+2026-07-06 12:17:04,274  INFO      Current price   : $381.86
+2026-07-06 12:17:04,274  INFO      Open position   : None
+2026-07-06 12:17:04,274  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:17:04,274  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:22:04,469  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:27:04,470  INFO      =======================================================
+2026-07-06 12:27:04,470  INFO      Daily signal run  [2026-07-06 12:27]
+2026-07-06 12:27:04,470  INFO      =======================================================
+2026-07-06 12:27:04,845  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:27:05,039  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:27:05,160  INFO      Portfolio value : $100,282.00
+2026-07-06 12:27:05,161  INFO      Current price   : $381.90
+2026-07-06 12:27:05,161  INFO      Open position   : None
+2026-07-06 12:27:05,161  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:27:05,161  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:32:05,379  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:37:05,380  INFO      =======================================================
+2026-07-06 12:37:05,380  INFO      Daily signal run  [2026-07-06 12:37]
+2026-07-06 12:37:05,380  INFO      =======================================================
+2026-07-06 12:37:05,736  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:37:05,877  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:37:05,996  INFO      Portfolio value : $100,238.37
+2026-07-06 12:37:05,996  INFO      Current price   : $382.30
+2026-07-06 12:37:05,996  INFO      Open position   : None
+2026-07-06 12:37:05,996  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:37:05,996  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:42:06,269  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:47:06,270  INFO      =======================================================
+2026-07-06 12:47:06,270  INFO      Daily signal run  [2026-07-06 12:47]
+2026-07-06 12:47:06,270  INFO      =======================================================
+2026-07-06 12:47:06,683  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:47:06,870  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:47:06,996  INFO      Portfolio value : $100,236.00
+2026-07-06 12:47:06,996  INFO      Current price   : $382.17
+2026-07-06 12:47:06,996  INFO      Open position   : None
+2026-07-06 12:47:06,997  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:47:06,997  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 12:52:07,197  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:57:07,198  INFO      =======================================================
+2026-07-06 12:57:07,198  INFO      Daily signal run  [2026-07-06 12:57]
+2026-07-06 12:57:07,198  INFO      =======================================================
+2026-07-06 12:57:07,577  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 12:57:07,769  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 12:57:07,891  INFO      Portfolio value : $100,226.13
+2026-07-06 12:57:07,892  INFO      Current price   : $382.05
+2026-07-06 12:57:07,892  INFO      Open position   : None
+2026-07-06 12:57:07,892  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 12:57:07,892  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:02:08,117  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:07:08,118  INFO      =======================================================
+2026-07-06 13:07:08,120  INFO      Daily signal run  [2026-07-06 13:07]
+2026-07-06 13:07:08,120  INFO      =======================================================
+2026-07-06 13:07:08,489  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:07:08,651  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:07:08,776  INFO      Portfolio value : $100,237.82
+2026-07-06 13:07:08,777  INFO      Current price   : $381.81
+2026-07-06 13:07:08,777  INFO      Open position   : None
+2026-07-06 13:07:08,777  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:07:08,777  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:12:09,033  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:17:09,034  INFO      =======================================================
+2026-07-06 13:17:09,034  INFO      Daily signal run  [2026-07-06 13:17]
+2026-07-06 13:17:09,034  INFO      =======================================================
+2026-07-06 13:17:09,443  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:17:09,595  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:17:09,720  INFO      Portfolio value : $100,193.31
+2026-07-06 13:17:09,720  INFO      Current price   : $381.68
+2026-07-06 13:17:09,720  INFO      Open position   : None
+2026-07-06 13:17:09,720  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:17:09,720  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:22:09,941  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:27:09,942  INFO      =======================================================
+2026-07-06 13:27:09,942  INFO      Daily signal run  [2026-07-06 13:27]
+2026-07-06 13:27:09,942  INFO      =======================================================
+2026-07-06 13:27:10,326  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:27:10,479  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:27:10,604  INFO      Portfolio value : $100,222.37
+2026-07-06 13:27:10,604  INFO      Current price   : $381.93
+2026-07-06 13:27:10,604  INFO      Open position   : None
+2026-07-06 13:27:10,604  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:27:10,604  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:32:10,826  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:37:10,827  INFO      =======================================================
+2026-07-06 13:37:10,828  INFO      Daily signal run  [2026-07-06 13:37]
+2026-07-06 13:37:10,828  INFO      =======================================================
+2026-07-06 13:37:11,235  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:37:11,408  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:37:11,528  INFO      Portfolio value : $100,225.16
+2026-07-06 13:37:11,528  INFO      Current price   : $381.79
+2026-07-06 13:37:11,528  INFO      Open position   : None
+2026-07-06 13:37:11,528  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:37:11,529  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:42:11,719  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:47:11,719  INFO      =======================================================
+2026-07-06 13:47:11,720  INFO      Daily signal run  [2026-07-06 13:47]
+2026-07-06 13:47:11,720  INFO      =======================================================
+2026-07-06 13:47:12,068  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:47:12,209  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:47:12,325  INFO      Portfolio value : $100,268.22
+2026-07-06 13:47:12,325  INFO      Current price   : $382.02
+2026-07-06 13:47:12,325  INFO      Open position   : None
+2026-07-06 13:47:12,325  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:47:12,325  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 13:52:12,531  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:57:12,532  INFO      =======================================================
+2026-07-06 13:57:12,533  INFO      Daily signal run  [2026-07-06 13:57]
+2026-07-06 13:57:12,533  INFO      =======================================================
+2026-07-06 13:57:12,909  INFO      Fetched 70 bars for GLD  (2026-03-25 → 2026-07-06)
+2026-07-06 13:57:13,095  INFO      Signal: SELL/HOLD  |  Confidence: 0.177
+2026-07-06 13:57:13,220  INFO      Portfolio value : $100,300.05
+2026-07-06 13:57:13,220  INFO      Current price   : $381.87
+2026-07-06 13:57:13,220  INFO      Open position   : None
+2026-07-06 13:57:13,220  INFO      Confidence 0.177 below threshold 0.28 — skipping trade
+2026-07-06 13:57:13,220  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 14:02:13,414  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 15:02:13,607  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 16:02:13,794  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 17:02:14,013  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 18:02:14,258  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 19:02:14,461  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 20:02:14,669  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 21:02:14,890  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 22:02:15,084  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 23:02:15,283  INFO      Market closed. Next open in 60 min. Sleeping...

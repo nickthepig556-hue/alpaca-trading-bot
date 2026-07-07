@@ -31,3 +31,15 @@
 2026-07-06 11:13:47,903  INFO      [ETH/USD] FLAT signal — no trade
 2026-07-06 11:13:47,904  INFO      [ETH/USD] Signal complete. Sleeping 600s...
 2026-07-06 11:18:07,240  INFO      [ETH/USD] Futures bot stopped by user
+2026-07-06 11:32:04,720  INFO      [FUTURES BOT] Starting: ETH/USD (Ethereum Futures)
+2026-07-06 11:32:04,720  INFO        Mode       : PAPER
+2026-07-06 11:32:04,720  INFO        Max leverage: 10.0x
+2026-07-06 11:32:04,721  INFO        Trading hours: 24/7
+2026-07-06 11:32:04,722  INFO        Evolved leverage: 4.1x
+2026-07-06 11:32:04,722  INFO        Stop width: 1.3%
+2026-07-06 11:32:04,722  INFO      [ETH/USD] Bot running — checking every 10 minutes
+2026-07-06 11:32:04,722  INFO      [ETH/USD] ── Signal check 11:32 ──
+2026-07-06 11:32:05,020  INFO      [ETH/USD] Signal: FLAT  |  Confidence: 0.375  |  Leverage: 1.00x
+2026-07-06 11:32:05,461  INFO      [ETH/USD] Portfolio=$100,321.25  Price=$1796.56  Position=None
+2026-07-06 11:32:05,461  INFO      [ETH/USD] FLAT signal — no trade
+2026-07-06 11:32:05,461  INFO      [ETH/USD] Signal complete. Sleeping 600s...

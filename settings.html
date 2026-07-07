@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Account Settings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#f0f0ff;font-family:'Space Grotesk',system-ui,sans-serif;
+  font-size:14px;padding:24px;min-height:100vh}
+
+.top-bar{display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:32px;flex-wrap:wrap;gap:12px}
+.logo{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+.btn{border:0.5px solid #2a2a2e;background:transparent;color:#f0f0ff;
+  padding:7px 16px;border-radius:8px;cursor:pointer;font-size:13px;
+  display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk',sans-serif}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;border-color:transparent}
+.btn-accent:hover{opacity:.85}
+.btn-danger{border-color:#ff3344;color:#ff3344}
+.btn-danger:hover{background:rgba(255,51,68,.1)}
+
+.layout{display:grid;grid-template-columns:220px 1fr;gap:24px;max-width:900px;margin:0 auto}
+
+/* Sidebar */
+.sidebar{display:flex;flex-direction:column;gap:4px}
+.sidebar-item{padding:10px 14px;border-radius:10px;cursor:pointer;font-size:13px;
+  font-weight:500;color:#666688;display:flex;align-items:center;gap:10px;
+  transition:all .2s;border:0.5px solid transparent}
+.sidebar-item:hover{color:#f0f0ff;background:#0f0f18}
+.sidebar-item.active{color:#ff6600;background:#1a0d00;border-color:#2a1500}
+.sidebar-item i{font-size:16px}
+
+/* Panels */
+.panel{display:none}
+.panel.active{display:block}
+.panel-title{font-size:18px;font-weight:700;margin-bottom:6px}
+.panel-desc{color:#666688;font-size:13px;margin-bottom:28px}
+
+.card{background:#0d0d12;border:0.5px solid #1e1e2e;border-radius:14px;
+  padding:24px;margin-bottom:16px}
+.card-title{font-size:13px;font-weight:600;color:#aaaacc;margin-bottom:16px;
+  display:flex;align-items:center;gap:8px}
+
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:11px;color:#666688;margin-bottom:6px;
+  text-transform:uppercase;letter-spacing:1px;font-family:'Space Mono',monospace}
+.form-input{width:100%;background:#111114;border:0.5px solid #2a2a2e;
+  border-radius:10px;padding:11px 14px;color:#f0f0ff;font-size:13px;
+  font-family:'Space Mono',monospace;outline:none;transition:border-color .2s}
+.form-input:focus{border-color:#ff6600}
+.form-input::placeholder{color:#333}
+.form-help{font-size:11px;color:#444;margin-top:5px}
+.form-help a{color:#ff8800;text-decoration:none}
+
+.stat-row{display:flex;justify-content:space-between;align-items:center;
+  padding:10px 0;border-bottom:0.5px solid #1a1a1e;font-size:13px}
+.stat-row:last-child{border-bottom:none}
+.stat-key{color:#666688}
+.stat-val{font-weight:500}
+.up{color:#44cc66}.down{color:#ff4455}.orange{color:#ff8800}
+
+.plan-badge{font-size:11px;padding:3px 10px;border-radius:99px;font-weight:600}
+.plan-free{background:#1a1a1e;color:#666688}
+.plan-live{background:#0a2a10;color:#44cc66}
+
+.alert{border-radius:10px;padding:12px 16px;font-size:13px;margin-bottom:16px;
+  display:flex;gap:10px;align-items:flex-start;line-height:1.6}
+.alert-info{background:#0a0a1a;border:0.5px solid #1a1a3a;color:#6688cc}
+.alert-success{background:#0a1a00;border:0.5px solid #1a3a00;color:#44cc66;display:none}
+.alert-error{background:#1a0000;border:0.5px solid #3a0000;color:#ff6666;display:none}
+
+.danger-zone{border-color:#2a0000}
+.danger-zone .card-title{color:#ff4444}
+
+.spinner{display:inline-block;width:12px;height:12px;border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media(max-width:768px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{flex-direction:row;flex-wrap:wrap}
+  .sidebar-item{flex:1;min-width:80px;justify-content:center;padding:8px}
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div style="display:flex;align-items:center;gap:16px">
+    <span class="logo">PROMETHEUS</span>
+    <a href="dashboard.html" class="btn"><i class="ti ti-arrow-left"></i> Dashboard</a>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <span id="username-label" style="font-size:13px;color:#666688;font-family:'Space Mono',monospace"></span>
+    <button class="btn" onclick="doLogout()"><i class="ti ti-logout"></i></button>
+  </div>
+</div>
+
+<div class="layout">
+  <!-- Sidebar nav -->
+  <div class="sidebar">
+    <div class="sidebar-item active" onclick="showPanel('profile')">
+      <i class="ti ti-user"></i> Profile
+    </div>
+    <div class="sidebar-item" onclick="showPanel('portfolio')">
+      <i class="ti ti-chart-line"></i> Portfolio
+    </div>
+    <div class="sidebar-item" onclick="showPanel('alpaca')">
+      <i class="ti ti-key"></i> Alpaca keys
+    </div>
+    <div class="sidebar-item" onclick="showPanel('subscription')">
+      <i class="ti ti-credit-card"></i> Subscription
+    </div>
+    <div class="sidebar-item" onclick="showPanel('alerts')">
+      <i class="ti ti-bell"></i> Alerts
+    </div>
+    <div class="sidebar-item" onclick="showPanel('danger')">
+      <i class="ti ti-alert-triangle"></i> Danger zone
+    </div>
+  </div>
+
+  <!-- Panels -->
+  <div>
+
+    <!-- Profile -->
+    <div class="panel active" id="panel-profile">
+      <div class="panel-title">Profile</div>
+      <div class="panel-desc">Manage your account information and password.</div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-user-circle"></i> Account info</div>
+        <div class="stat-row">
+          <span class="stat-key">Username</span>
+          <span class="stat-val" id="profile-username" style="font-family:'Space Mono',monospace">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Email</span>
+          <span class="stat-val" id="profile-email">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Member since</span>
+          <span class="stat-val" id="profile-joined">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Last login</span>
+          <span class="stat-val" id="profile-last-login">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Account type</span>
+          <span class="stat-val"><span class="plan-badge plan-free" id="profile-plan">Paper Trading</span></span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-lock"></i> Change password</div>
+        <div id="pw-success" class="alert alert-success"><i class="ti ti-check"></i> Password updated successfully</div>
+        <div id="pw-error" class="alert alert-error"><i class="ti ti-alert-circle"></i> <span id="pw-error-msg"></span></div>
+        <div class="form-group">
+          <label class="form-label">Current password</label>
+          <input class="form-input" type="password" id="pw-current" placeholder="••••••••">
+        </div>
+        <div class="form-group">
+          <label class="form-label">New password</label>
+          <input class="form-input" type="password" id="pw-new" placeholder="At least 6 characters">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Confirm new password</label>
+          <input class="form-input" type="password" id="pw-confirm" placeholder="Repeat new password">
+        </div>
+        <button class="btn btn-accent" onclick="changePassword()">Update password</button>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="panel" id="panel-portfolio">
+      <div class="panel-title">Portfolio</div>
+      <div class="panel-desc">Your paper trading performance and statistics.</div>
+      <div class="card">
+        <div class="card-title"><i class="ti ti-wallet"></i> Balance</div>
+        <div class="stat-row">
+          <span class="stat-key">Starting balance</span>
+          <span class="stat-val">$100,000.00</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Current balance</span>
+          <span class="stat-val up" id="port-balance">Loading...</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Total P&L</span>
+          <span class="stat-val" id="port-pnl">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Total trades</span>
+          <span class="stat-val" id="port-trades">—</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Win rate</span>
+          <span class="stat-val" id="port-winrate">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alpaca keys -->
+    <div class="panel" id="panel-alpaca">
+      <div class="panel-title">Alpaca API Keys</div>
+      <div class="panel-desc">Connect your Alpaca account to start live trading.</div>
+
+      <div class="alert alert-info">
+        <i class="ti ti-info-circle"></i>
+        <div>Get your API keys from <a href="https://alpaca.markets" target="_blank">alpaca.markets</a> → Paper Trading → API Keys. Keys are stored locally and never sent to our servers.</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-key"></i> Paper trading keys</div>
+        <div class="form-group">
+          <label class="form-label">API Key ID</label>
+          <input class="form-input" type="text" id="alpaca-key" placeholder="PKXXXXXXXXXXXXXXXX">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Secret Key</label>
+          <input class="form-input" type="password" id="alpaca-secret" placeholder="••••••••••••••••••••••••••••••••">
+        </div>
+        <div id="keys-status" class="alert alert-success" style="margin-bottom:12px">
+          <i class="ti ti-check"></i> Keys saved successfully
+        </div>
+        <button class="btn btn-accent" onclick="saveAlpacaKeys()">
+          <i class="ti ti-device-floppy"></i> Save keys
+        </button>
+      </div>
+    </div>
+
+    <!-- Subscription -->
+    <div class="panel" id="panel-subscription">
+      <div class="panel-title">Subscription</div>
+      <div class="panel-desc">Upgrade to live trading when you're ready.</div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-crown"></i> Current plan</div>
+        <div class="stat-row">
+          <span class="stat-key">Plan</span>
+          <span class="stat-val"><span class="plan-badge plan-free">Paper Trading — Free</span></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Paper balance</span>
+          <span class="stat-val up">$100,000</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-key">Real money trading</span>
+          <span class="stat-val" style="color:#666688">Not enabled</span>
+        </div>
+      </div>
+
+      <div class="card" style="border-color:#ff6600;background:linear-gradient(135deg,rgba(255,102,0,.06),#0d0d12)">
+        <div class="card-title" style="color:#ff8800"><i class="ti ti-rocket"></i> Upgrade to Live Trading</div>
+        <div style="font-size:48px;font-weight:700;font-family:'Space Mono',monospace;
+          background:linear-gradient(135deg,#ff6600,#ffaa00);
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px">
+          $5<span style="font-size:18px;color:#666688">/month</span>
+        </div>
+        <div style="color:#666688;font-size:13px;margin-bottom:20px">
+          + $0.01 per executed trade
+        </div>
+        <ul style="list-style:none;margin-bottom:24px">
+          <li style="padding:6px 0;font-size:13px;color:#aaaacc;display:flex;gap:8px">
+            <i class="ti ti-check" style="color:#44cc66"></i> Real money trading via Alpaca
+          </li>
+          <li style="padding:6px 0;font-size:13px;color:#aaaacc;display:flex;gap:8px">
+            <i class="ti ti-check" style="color:#44cc66"></i> Email alerts for every trade
+          </li>
+          <li style="padding:6px 0;font-size:13px;color:#aaaacc;display:flex;gap:8px">
+            <i class="ti ti-check" style="color:#44cc66"></i> Bot duplication for winners
+          </li>
+          <li style="padding:6px 0;font-size:13px;color:#aaaacc;display:flex;gap:8px">
+            <i class="ti ti-check" style="color:#44cc66"></i> Priority support
+          </li>
+        </ul>
+        <button class="btn btn-accent" onclick="alert('Payment processing coming soon! Paper trade for now to build confidence.')">
+          <i class="ti ti-credit-card"></i> Upgrade — $5/month
+        </button>
+      </div>
+    </div>
+
+    <!-- Alerts -->
+    <div class="panel" id="panel-alerts">
+      <div class="panel-title">Alert Settings</div>
+      <div class="panel-desc">Configure when and how you get notified about your bots.</div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-mail"></i> Email alerts</div>
+        <div class="stat-row">
+          <span class="stat-key">Email</span>
+          <span class="stat-val" id="alert-email">—</span>
+        </div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:12px">
+          <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+            <div>
+              <div style="font-size:13px;font-weight:500">Trade opened</div>
+              <div style="font-size:11px;color:#666688">Alert when a bot opens a position</div>
+            </div>
+            <input type="checkbox" checked style="width:16px;height:16px;accent-color:#ff6600">
+          </label>
+          <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+            <div>
+              <div style="font-size:13px;font-weight:500">Trade closed</div>
+              <div style="font-size:11px;color:#666688">Alert when a position is closed</div>
+            </div>
+            <input type="checkbox" checked style="width:16px;height:16px;accent-color:#ff6600">
+          </label>
+          <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+            <div>
+              <div style="font-size:13px;font-weight:500">Daily summary</div>
+              <div style="font-size:11px;color:#666688">End-of-day P&L summary at 4:30 PM ET</div>
+            </div>
+            <input type="checkbox" checked style="width:16px;height:16px;accent-color:#ff6600">
+          </label>
+          <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+            <div>
+              <div style="font-size:13px;font-weight:500">Bot crashed</div>
+              <div style="font-size:11px;color:#666688">Alert if a bot stops unexpectedly</div>
+            </div>
+            <input type="checkbox" checked style="width:16px;height:16px;accent-color:#ff6600">
+          </label>
+        </div>
+        <button class="btn btn-accent" style="margin-top:20px" onclick="alert('Alert preferences saved!')">
+          <i class="ti ti-device-floppy"></i> Save preferences
+        </button>
+      </div>
+    </div>
+
+    <!-- Danger zone -->
+    <div class="panel" id="panel-danger">
+      <div class="panel-title">Danger Zone</div>
+      <div class="panel-desc">Irreversible actions. Be careful.</div>
+
+      <div class="card danger-zone">
+        <div class="card-title"><i class="ti ti-trash"></i> Delete account</div>
+        <div style="font-size:13px;color:#666688;margin-bottom:16px;line-height:1.7">
+          Permanently delete your account and all associated data. This cannot be undone. All bots, trade history, and settings will be lost.
+        </div>
+        <button class="btn btn-danger" onclick="confirmDelete()">
+          <i class="ti ti-trash"></i> Delete my account
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="ti ti-refresh"></i> Reset paper portfolio</div>
+        <div style="font-size:13px;color:#666688;margin-bottom:16px;line-height:1.7">
+          Reset your paper portfolio back to $100,000 and clear all trade history. Your bot configurations will be kept.
+        </div>
+        <button class="btn btn-danger" onclick="confirmReset()">
+          <i class="ti ti-refresh"></i> Reset to $100,000
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const API = (window.location.protocol === 'file:' ||
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:5000/api'
+  : window.location.origin + '/api';
+
+const TOKEN    = localStorage.getItem('session_token');
+const USERNAME = localStorage.getItem('username') || '';
+if (!TOKEN) window.location.href = 'login.html';
+
+document.getElementById('username-label').textContent = USERNAME;
+
+const headers = {
+  'Authorization'              : `Bearer ${TOKEN}`,
+  'Content-Type'               : 'application/json',
+  'ngrok-skip-browser-warning' : 'true',
+};
+
+function showPanel(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sidebar-item').forEach(s => s.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  event.currentTarget.classList.add('active');
+  if (name === 'portfolio') loadPortfolio();
+}
+
+async function loadProfile() {
+  try {
+    const r = await fetch(`${API}/auth/me`, {headers});
+    const d = await r.json();
+    document.getElementById('profile-username').textContent   = d.username || '—';
+    document.getElementById('profile-email').textContent      = d.email    || 'Not set';
+    document.getElementById('profile-joined').textContent     = d.created_at ? new Date(d.created_at).toLocaleDateString() : '—';
+    document.getElementById('profile-last-login').textContent = d.last_login ? new Date(d.last_login).toLocaleString()     : '—';
+    document.getElementById('alert-email').textContent        = d.email    || 'Not set';
+  } catch {}
+}
+
+async function loadPortfolio() {
+  try {
+    const r = await fetch(`${API}/user/portfolio`, {headers});
+    const d = await r.json();
+    const pnl = d.total_pnl || 0;
+    document.getElementById('port-balance').textContent  = '$' + (d.balance || 100000).toLocaleString('en-US',{minimumFractionDigits:2});
+    document.getElementById('port-pnl').textContent      = (pnl>=0?'+$':'-$') + Math.abs(pnl).toFixed(2);
+    document.getElementById('port-pnl').className        = 'stat-val ' + (pnl>=0?'up':'down');
+    document.getElementById('port-trades').textContent   = d.n_trades || 0;
+    document.getElementById('port-winrate').textContent  = (d.win_rate||0) + '%';
+  } catch {
+    document.getElementById('port-balance').textContent = '$100,000.00';
+  }
+}
+
+async function changePassword() {
+  const current = document.getElementById('pw-current').value;
+  const newPw   = document.getElementById('pw-new').value;
+  const confirm = document.getElementById('pw-confirm').value;
+  const sucEl   = document.getElementById('pw-success');
+  const errEl   = document.getElementById('pw-error');
+  const msgEl   = document.getElementById('pw-error-msg');
+
+  sucEl.style.display = 'none';
+  errEl.style.display = 'none';
+
+  if (!current || !newPw) { showPwError('Fill in all fields'); return; }
+  if (newPw.length < 6)   { showPwError('New password must be at least 6 characters'); return; }
+  if (newPw !== confirm)  { showPwError('Passwords do not match'); return; }
+
+  try {
+    const r = await fetch(`${API}/auth/change_password`, {
+      method: 'POST', headers,
+      body: JSON.stringify({current_password: current, new_password: newPw})
+    });
+    const d = await r.json();
+    if (d.ok) {
+      sucEl.style.display = 'flex';
+      document.getElementById('pw-current').value = '';
+      document.getElementById('pw-new').value     = '';
+      document.getElementById('pw-confirm').value = '';
+    } else {
+      showPwError(d.error || 'Failed to update password');
+    }
+  } catch { showPwError('Could not connect to server'); }
+}
+
+function showPwError(msg) {
+  document.getElementById('pw-error-msg').textContent = msg;
+  document.getElementById('pw-error').style.display   = 'flex';
+}
+
+function saveAlpacaKeys() {
+  const key    = document.getElementById('alpaca-key').value.trim();
+  const secret = document.getElementById('alpaca-secret').value.trim();
+  const status = document.getElementById('keys-status');
+  if (!key || !secret) { alert('Enter both API key and secret key'); return; }
+  // Store in localStorage (local only — not sent to server)
+  localStorage.setItem('alpaca_key', key);
+  localStorage.setItem('alpaca_secret', secret);
+  status.style.display = 'flex';
+  setTimeout(() => status.style.display = 'none', 3000);
+}
+
+function confirmDelete() {
+  if (!confirm('Are you absolutely sure? This will permanently delete your account and all data.')) return;
+  if (!confirm('This cannot be undone. Type your username to confirm.')) return;
+  alert('Account deletion coming in the next release.');
+}
+
+function confirmReset() {
+  if (!confirm('Reset your paper portfolio to $100,000? All trade history will be cleared.')) return;
+  alert('Portfolio reset coming in the next release.');
+}
+
+function doLogout() {
+  fetch(`${API}/auth/logout`, {method:'POST', headers}).catch(()=>{});
+  localStorage.removeItem('session_token');
+  localStorage.removeItem('username');
+  window.location.href = window.location.origin.includes('localhost') ||
+    window.location.protocol === 'file:'
+    ? 'login.html'
+    : window.location.origin + '/login.html';
+}
+
+loadProfile();
+</script>
+</body>
+</html>

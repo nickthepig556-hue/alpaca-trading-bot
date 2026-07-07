@@ -63,3 +63,532 @@
 2026-06-26 21:29:49,270  INFO        BTC-USD      [OK] Updated
 2026-06-26 21:29:49,271  INFO        Total time: 1.1 minutes
 2026-06-26 21:29:49,271  INFO      =======================================================
+2026-07-06 21:52:24,339  INFO      
+=======================================================
+2026-07-06 21:52:24,339  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-06 21:52:24,339  INFO        2026-07-06 21:52
+2026-07-06 21:52:24,339  INFO      =======================================================
+2026-07-06 21:52:24,339  INFO      
+=======================================================
+2026-07-06 21:52:24,339  INFO        Retraining: GLD
+2026-07-06 21:52:24,339  INFO        2026-07-06 21:52
+2026-07-06 21:52:24,340  INFO      =======================================================
+2026-07-06 21:52:24,626  INFO      [GLD] Current fitness: 1.0000
+2026-07-06 21:52:24,627  INFO      [GLD] Backed up to GLD_chromosome_20260706_215224.csv
+2026-07-06 21:52:25,476  INFO      [GLD] Downloading fresh data...
+2026-07-06 21:52:26,017  INFO      [GLD] Computing indicators on 1633 rows...
+2026-07-06 21:52:26,037  INFO      [GLD] Running GA (200 gen × 100 pop)...
+2026-07-06 21:52:33,121  INFO      [GLD] New fitness   : 1.0000
+2026-07-06 21:52:33,121  INFO      [GLD] Total return  : +108.89%
+2026-07-06 21:52:33,121  INFO      [GLD] Win rate      : 100.00%
+2026-07-06 21:52:33,121  INFO      [GLD] Trades        : 11
+2026-07-06 21:52:33,121  INFO      [GLD] Max drawdown  : 13.87%
+2026-07-06 21:52:33,121  INFO      [GLD] New fitness 1.0000 >= threshold 0.9500 — accepting
+2026-07-06 21:52:33,125  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-06 21:52:43,126  INFO      
+=======================================================
+2026-07-06 21:52:43,126  INFO        Retraining: SPY
+2026-07-06 21:52:43,126  INFO        2026-07-06 21:52
+2026-07-06 21:52:43,126  INFO      =======================================================
+2026-07-06 21:52:43,136  INFO      [SPY] Current fitness: 1.0000
+2026-07-06 21:52:43,137  INFO      [SPY] Backed up to SPY_chromosome_20260706_215243.csv
+2026-07-06 21:52:43,137  INFO      [SPY] Downloading fresh data...
+2026-07-06 21:52:43,584  INFO      [SPY] Computing indicators on 1633 rows...
+2026-07-06 21:52:43,589  INFO      [SPY] Running GA (250 gen × 120 pop)...
+2026-07-06 21:52:57,566  INFO      [SPY] New fitness   : 1.0000
+2026-07-06 21:52:57,566  INFO      [SPY] Total return  : +206.41%
+2026-07-06 21:52:57,566  INFO      [SPY] Win rate      : 100.00%
+2026-07-06 21:52:57,566  INFO      [SPY] Trades        : 14
+2026-07-06 21:52:57,566  INFO      [SPY] Max drawdown  : 9.30%
+2026-07-06 21:52:57,567  INFO      [SPY] New fitness 1.0000 >= threshold 0.9500 — accepting
+2026-07-06 21:52:57,578  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-06 21:53:07,579  INFO      
+=======================================================
+2026-07-06 21:53:07,579  INFO        Retraining: BTC/USD_FUT
+2026-07-06 21:53:07,579  INFO        2026-07-06 21:53
+2026-07-06 21:53:07,579  INFO      =======================================================
+2026-07-06 21:53:07,579  INFO      [BTC/USD_FUT] Current fitness: 0.0000
+2026-07-06 21:53:07,579  INFO      [BTC/USD_FUT] Downloading fresh data...
+2026-07-06 21:53:08,131  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BTC-USD_FUT"}}}
+2026-07-06 21:53:08,288  ERROR     $BTC-USD_FUT: possibly delisted; no timezone found
+2026-07-06 21:53:08,293  ERROR     
+1 Failed download:
+2026-07-06 21:53:08,293  ERROR     ['BTC-USD_FUT']: possibly delisted; no timezone found
+2026-07-06 21:53:08,296  INFO      [BTC/USD_FUT] Computing indicators on 0 rows...
+2026-07-06 21:53:08,296  ERROR     [BTC/USD_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:53:18,337  INFO      
+=======================================================
+2026-07-06 21:53:18,338  INFO        Retraining: ETH/USD_FUT
+2026-07-06 21:53:18,338  INFO        2026-07-06 21:53
+2026-07-06 21:53:18,338  INFO      =======================================================
+2026-07-06 21:53:18,338  INFO      [ETH/USD_FUT] Current fitness: 0.0000
+2026-07-06 21:53:18,338  INFO      [ETH/USD_FUT] Downloading fresh data...
+2026-07-06 21:53:18,959  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ETH-USD_FUT"}}}
+2026-07-06 21:53:19,106  ERROR     $ETH-USD_FUT: possibly delisted; no timezone found
+2026-07-06 21:53:19,108  ERROR     
+1 Failed download:
+2026-07-06 21:53:19,108  ERROR     ['ETH-USD_FUT']: possibly delisted; no timezone found
+2026-07-06 21:53:19,110  INFO      [ETH/USD_FUT] Computing indicators on 0 rows...
+2026-07-06 21:53:19,111  ERROR     [ETH/USD_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:53:29,112  INFO      
+=======================================================
+2026-07-06 21:53:29,112  INFO        Retraining: ES_FUT
+2026-07-06 21:53:29,112  INFO        2026-07-06 21:53
+2026-07-06 21:53:29,112  INFO      =======================================================
+2026-07-06 21:53:29,112  INFO      [ES_FUT] Current fitness: 0.0000
+2026-07-06 21:53:29,112  INFO      [ES_FUT] Downloading fresh data...
+2026-07-06 21:53:29,594  ERROR     $ES_FUT: possibly delisted; no timezone found
+2026-07-06 21:53:29,602  ERROR     
+1 Failed download:
+2026-07-06 21:53:29,602  ERROR     ['ES_FUT']: possibly delisted; no timezone found
+2026-07-06 21:53:29,604  INFO      [ES_FUT] Computing indicators on 0 rows...
+2026-07-06 21:53:29,605  ERROR     [ES_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:53:39,606  INFO      
+=======================================================
+2026-07-06 21:53:39,606  INFO        Retraining: NQ_FUT
+2026-07-06 21:53:39,606  INFO        2026-07-06 21:53
+2026-07-06 21:53:39,607  INFO      =======================================================
+2026-07-06 21:53:39,607  INFO      [NQ_FUT] Current fitness: 0.0000
+2026-07-06 21:53:39,607  INFO      [NQ_FUT] Downloading fresh data...
+2026-07-06 21:53:39,968  ERROR     $NQ_FUT: possibly delisted; no timezone found
+2026-07-06 21:53:39,969  ERROR     
+1 Failed download:
+2026-07-06 21:53:39,969  ERROR     ['NQ_FUT']: possibly delisted; no timezone found
+2026-07-06 21:53:39,971  INFO      [NQ_FUT] Computing indicators on 0 rows...
+2026-07-06 21:53:39,971  ERROR     [NQ_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:53:49,972  INFO      
+=======================================================
+2026-07-06 21:53:49,972  INFO        Retraining: GC_FUT
+2026-07-06 21:53:49,972  INFO        2026-07-06 21:53
+2026-07-06 21:53:49,973  INFO      =======================================================
+2026-07-06 21:53:49,973  INFO      [GC_FUT] Current fitness: 0.0000
+2026-07-06 21:53:49,973  INFO      [GC_FUT] Downloading fresh data...
+2026-07-06 21:53:50,300  ERROR     $GC_FUT: possibly delisted; no timezone found
+2026-07-06 21:53:50,314  ERROR     
+1 Failed download:
+2026-07-06 21:53:50,314  ERROR     ['GC_FUT']: possibly delisted; no timezone found
+2026-07-06 21:53:50,317  INFO      [GC_FUT] Computing indicators on 0 rows...
+2026-07-06 21:53:50,317  ERROR     [GC_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:54:00,318  INFO      
+=======================================================
+2026-07-06 21:54:00,318  INFO        Retraining: CL_FUT
+2026-07-06 21:54:00,319  INFO        2026-07-06 21:54
+2026-07-06 21:54:00,319  INFO      =======================================================
+2026-07-06 21:54:00,319  INFO      [CL_FUT] Current fitness: 0.0000
+2026-07-06 21:54:00,319  INFO      [CL_FUT] Downloading fresh data...
+2026-07-06 21:54:00,736  ERROR     $CL_FUT: possibly delisted; no timezone found
+2026-07-06 21:54:00,741  ERROR     
+1 Failed download:
+2026-07-06 21:54:00,741  ERROR     ['CL_FUT']: possibly delisted; no timezone found
+2026-07-06 21:54:00,743  INFO      [CL_FUT] Computing indicators on 0 rows...
+2026-07-06 21:54:00,744  ERROR     [CL_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 21:54:10,745  INFO      
+=======================================================
+2026-07-06 21:54:10,745  INFO        RETRAIN SUMMARY
+2026-07-06 21:54:10,745  INFO      =======================================================
+2026-07-06 21:54:10,745  INFO        GLD          [OK] Updated
+2026-07-06 21:54:10,746  INFO        SPY          [OK] Updated
+2026-07-06 21:54:10,746  INFO        BTC/USD_FUT  [--] Kept previous
+2026-07-06 21:54:10,746  INFO        ETH/USD_FUT  [--] Kept previous
+2026-07-06 21:54:10,746  INFO        ES_FUT       [--] Kept previous
+2026-07-06 21:54:10,746  INFO        NQ_FUT       [--] Kept previous
+2026-07-06 21:54:10,746  INFO        GC_FUT       [--] Kept previous
+2026-07-06 21:54:10,746  INFO        CL_FUT       [--] Kept previous
+2026-07-06 21:54:10,746  INFO        Total time: 1.8 minutes
+2026-07-06 21:54:10,746  INFO      =======================================================
+2026-07-06 21:59:48,486  INFO      
+=======================================================
+2026-07-06 21:59:48,487  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-06 21:59:48,487  INFO        2026-07-06 21:59
+2026-07-06 21:59:48,487  INFO      =======================================================
+2026-07-06 21:59:48,487  INFO      
+=======================================================
+2026-07-06 21:59:48,487  INFO        Retraining: GLD
+2026-07-06 21:59:48,487  INFO        2026-07-06 21:59
+2026-07-06 21:59:48,487  INFO      =======================================================
+2026-07-06 21:59:48,789  INFO      [GLD] Current fitness: 1.0000
+2026-07-06 21:59:48,790  INFO      [GLD] Backed up to GLD_chromosome_20260706_215948.csv
+2026-07-06 21:59:49,607  INFO      [GLD] Downloading fresh data...
+2026-07-06 21:59:50,026  INFO      [GLD] Computing indicators on 1633 rows...
+2026-07-06 21:59:50,050  INFO      [GLD] Running GA (200 gen × 100 pop)...
+2026-07-06 21:59:57,318  INFO      [GLD] New fitness   : 1.2500
+2026-07-06 21:59:57,318  INFO      [GLD] Total return  : +112.43%
+2026-07-06 21:59:57,318  INFO      [GLD] Win rate      : 100.00%
+2026-07-06 21:59:57,318  INFO      [GLD] Trades        : 10
+2026-07-06 21:59:57,318  INFO      [GLD] Max drawdown  : 13.87%
+2026-07-06 21:59:57,318  INFO      [GLD] New fitness 1.2500 >= threshold 0.9500 — accepting
+2026-07-06 21:59:57,322  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-06 22:00:07,323  INFO      
+=======================================================
+2026-07-06 22:00:07,323  INFO        Retraining: SPY
+2026-07-06 22:00:07,323  INFO        2026-07-06 22:00
+2026-07-06 22:00:07,323  INFO      =======================================================
+2026-07-06 22:00:07,332  INFO      [SPY] Current fitness: 1.0000
+2026-07-06 22:00:07,333  INFO      [SPY] Backed up to SPY_chromosome_20260706_220007.csv
+2026-07-06 22:00:07,334  INFO      [SPY] Downloading fresh data...
+2026-07-06 22:00:07,736  INFO      [SPY] Computing indicators on 1633 rows...
+2026-07-06 22:00:07,743  INFO      [SPY] Running GA (250 gen × 120 pop)...
+2026-07-06 22:00:19,021  INFO      [SPY] New fitness   : 1.2500
+2026-07-06 22:00:19,022  INFO      [SPY] Total return  : +116.96%
+2026-07-06 22:00:19,022  INFO      [SPY] Win rate      : 100.00%
+2026-07-06 22:00:19,022  INFO      [SPY] Trades        : 13
+2026-07-06 22:00:19,022  INFO      [SPY] Max drawdown  : 8.88%
+2026-07-06 22:00:19,022  INFO      [SPY] New fitness 1.2500 >= threshold 0.9500 — accepting
+2026-07-06 22:00:19,025  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-06 22:00:29,026  INFO      
+=======================================================
+2026-07-06 22:00:29,026  INFO        Retraining: BTC/USD_FUT
+2026-07-06 22:00:29,026  INFO        2026-07-06 22:00
+2026-07-06 22:00:29,026  INFO      =======================================================
+2026-07-06 22:00:29,027  INFO      [BTC/USD_FUT] Current fitness: 0.0000
+2026-07-06 22:00:29,027  INFO      [BTC/USD_FUT] Downloading fresh data...
+2026-07-06 22:00:29,722  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BTC-USD_FUT"}}}
+2026-07-06 22:00:29,861  ERROR     $BTC-USD_FUT: possibly delisted; no timezone found
+2026-07-06 22:00:29,865  ERROR     
+1 Failed download:
+2026-07-06 22:00:29,865  ERROR     ['BTC-USD_FUT']: possibly delisted; no timezone found
+2026-07-06 22:00:29,869  INFO      [BTC/USD_FUT] Computing indicators on 0 rows...
+2026-07-06 22:00:29,869  ERROR     [BTC/USD_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:00:39,872  INFO      
+=======================================================
+2026-07-06 22:00:39,873  INFO        Retraining: ETH/USD_FUT
+2026-07-06 22:00:39,873  INFO        2026-07-06 22:00
+2026-07-06 22:00:39,873  INFO      =======================================================
+2026-07-06 22:00:39,873  INFO      [ETH/USD_FUT] Current fitness: 0.0000
+2026-07-06 22:00:39,873  INFO      [ETH/USD_FUT] Downloading fresh data...
+2026-07-06 22:00:41,105  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ETH-USD_FUT"}}}
+2026-07-06 22:00:41,272  ERROR     $ETH-USD_FUT: possibly delisted; no timezone found
+2026-07-06 22:00:41,275  ERROR     
+1 Failed download:
+2026-07-06 22:00:41,275  ERROR     ['ETH-USD_FUT']: possibly delisted; no timezone found
+2026-07-06 22:00:41,277  INFO      [ETH/USD_FUT] Computing indicators on 0 rows...
+2026-07-06 22:00:41,277  ERROR     [ETH/USD_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:00:51,289  INFO      
+=======================================================
+2026-07-06 22:00:51,289  INFO        Retraining: ES_FUT
+2026-07-06 22:00:51,289  INFO        2026-07-06 22:00
+2026-07-06 22:00:51,289  INFO      =======================================================
+2026-07-06 22:00:51,289  INFO      [ES_FUT] Current fitness: 0.0000
+2026-07-06 22:00:51,290  INFO      [ES_FUT] Downloading fresh data...
+2026-07-06 22:00:51,577  ERROR     $ES_FUT: possibly delisted; no timezone found
+2026-07-06 22:00:51,582  ERROR     
+1 Failed download:
+2026-07-06 22:00:51,583  ERROR     ['ES_FUT']: possibly delisted; no timezone found
+2026-07-06 22:00:51,585  INFO      [ES_FUT] Computing indicators on 0 rows...
+2026-07-06 22:00:51,587  ERROR     [ES_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:01:01,589  INFO      
+=======================================================
+2026-07-06 22:01:01,589  INFO        Retraining: NQ_FUT
+2026-07-06 22:01:01,589  INFO        2026-07-06 22:01
+2026-07-06 22:01:01,589  INFO      =======================================================
+2026-07-06 22:01:01,590  INFO      [NQ_FUT] Current fitness: 0.0000
+2026-07-06 22:01:01,590  INFO      [NQ_FUT] Downloading fresh data...
+2026-07-06 22:01:01,979  ERROR     $NQ_FUT: possibly delisted; no timezone found
+2026-07-06 22:01:01,988  ERROR     
+1 Failed download:
+2026-07-06 22:01:01,988  ERROR     ['NQ_FUT']: possibly delisted; no timezone found
+2026-07-06 22:01:01,991  INFO      [NQ_FUT] Computing indicators on 0 rows...
+2026-07-06 22:01:01,991  ERROR     [NQ_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:01:11,993  INFO      
+=======================================================
+2026-07-06 22:01:11,993  INFO        Retraining: GC_FUT
+2026-07-06 22:01:11,993  INFO        2026-07-06 22:01
+2026-07-06 22:01:11,993  INFO      =======================================================
+2026-07-06 22:01:11,993  INFO      [GC_FUT] Current fitness: 0.0000
+2026-07-06 22:01:11,993  INFO      [GC_FUT] Downloading fresh data...
+2026-07-06 22:01:12,276  ERROR     $GC_FUT: possibly delisted; no timezone found
+2026-07-06 22:01:12,284  ERROR     
+1 Failed download:
+2026-07-06 22:01:12,285  ERROR     ['GC_FUT']: possibly delisted; no timezone found
+2026-07-06 22:01:12,289  INFO      [GC_FUT] Computing indicators on 0 rows...
+2026-07-06 22:01:12,291  ERROR     [GC_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:01:22,294  INFO      
+=======================================================
+2026-07-06 22:01:22,294  INFO        Retraining: CL_FUT
+2026-07-06 22:01:22,294  INFO        2026-07-06 22:01
+2026-07-06 22:01:22,294  INFO      =======================================================
+2026-07-06 22:01:22,294  INFO      [CL_FUT] Current fitness: 0.0000
+2026-07-06 22:01:22,294  INFO      [CL_FUT] Downloading fresh data...
+2026-07-06 22:01:22,655  ERROR     $CL_FUT: possibly delisted; no timezone found
+2026-07-06 22:01:22,668  ERROR     
+1 Failed download:
+2026-07-06 22:01:22,668  ERROR     ['CL_FUT']: possibly delisted; no timezone found
+2026-07-06 22:01:22,671  INFO      [CL_FUT] Computing indicators on 0 rows...
+2026-07-06 22:01:22,672  ERROR     [CL_FUT] Retrain failed: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 162, in retrain_ticker
+    df_ind    = add_indicators(df_raw.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-06 22:01:32,674  INFO      
+=======================================================
+2026-07-06 22:01:32,675  INFO        RETRAIN SUMMARY
+2026-07-06 22:01:32,675  INFO      =======================================================
+2026-07-06 22:01:32,675  INFO        GLD          [OK] Updated
+2026-07-06 22:01:32,675  INFO        SPY          [OK] Updated
+2026-07-06 22:01:32,675  INFO        BTC/USD_FUT  [--] Kept previous
+2026-07-06 22:01:32,676  INFO        ETH/USD_FUT  [--] Kept previous
+2026-07-06 22:01:32,676  INFO        ES_FUT       [--] Kept previous
+2026-07-06 22:01:32,676  INFO        NQ_FUT       [--] Kept previous
+2026-07-06 22:01:32,676  INFO        GC_FUT       [--] Kept previous
+2026-07-06 22:01:32,676  INFO        CL_FUT       [--] Kept previous
+2026-07-06 22:01:32,676  INFO        Total time: 1.7 minutes
+2026-07-06 22:01:32,677  INFO      =======================================================
+2026-07-06 22:18:04,110  INFO      
+=======================================================
+2026-07-06 22:18:04,111  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-06 22:18:04,111  INFO        2026-07-06 22:18
+2026-07-06 22:18:04,111  INFO      =======================================================
+2026-07-06 22:18:04,111  INFO      
+=======================================================
+2026-07-06 22:18:04,111  INFO        Retraining: GLD
+2026-07-06 22:18:04,111  INFO        2026-07-06 22:18
+2026-07-06 22:18:04,111  INFO      =======================================================
+2026-07-06 22:18:04,125  INFO      [GLD] Current fitness: 1.2500
+2026-07-06 22:18:04,127  INFO      [GLD] Backed up to GLD_chromosome_20260706_221804.csv
+2026-07-06 22:18:04,928  INFO      [GLD] Downloading fresh data...
+2026-07-06 22:18:05,334  INFO      [GLD] Computing indicators on 1633 rows...
+2026-07-06 22:18:05,354  INFO      [GLD] Running GA (200 gen × 100 pop)...
+2026-07-06 22:18:12,523  INFO      [GLD] New fitness   : 1.2500
+2026-07-06 22:18:12,523  INFO      [GLD] Total return  : +112.43%
+2026-07-06 22:18:12,523  INFO      [GLD] Win rate      : 100.00%
+2026-07-06 22:18:12,523  INFO      [GLD] Trades        : 10
+2026-07-06 22:18:12,523  INFO      [GLD] Max drawdown  : 13.87%
+2026-07-06 22:18:12,523  INFO      [GLD] New fitness 1.2500 >= threshold 1.1875 — accepting
+2026-07-06 22:18:12,528  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-06 22:18:22,529  INFO      
+=======================================================
+2026-07-06 22:18:22,530  INFO        Retraining: SPY
+2026-07-06 22:18:22,530  INFO        2026-07-06 22:18
+2026-07-06 22:18:22,530  INFO      =======================================================
+2026-07-06 22:18:22,540  INFO      [SPY] Current fitness: 1.2500
+2026-07-06 22:18:22,543  INFO      [SPY] Backed up to SPY_chromosome_20260706_221822.csv
+2026-07-06 22:18:22,544  INFO      [SPY] Downloading fresh data...
+2026-07-06 22:18:22,862  INFO      [SPY] Computing indicators on 1633 rows...
+2026-07-06 22:18:22,869  INFO      [SPY] Running GA (250 gen × 120 pop)...
+2026-07-06 22:18:34,187  INFO      [SPY] New fitness   : 1.2500
+2026-07-06 22:18:34,187  INFO      [SPY] Total return  : +116.96%
+2026-07-06 22:18:34,187  INFO      [SPY] Win rate      : 100.00%
+2026-07-06 22:18:34,187  INFO      [SPY] Trades        : 13
+2026-07-06 22:18:34,187  INFO      [SPY] Max drawdown  : 8.88%
+2026-07-06 22:18:34,187  INFO      [SPY] New fitness 1.2500 >= threshold 1.1875 — accepting
+2026-07-06 22:18:34,191  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-06 22:18:44,192  INFO      
+=======================================================
+2026-07-06 22:18:44,192  INFO        RETRAIN SUMMARY
+2026-07-06 22:18:44,192  INFO      =======================================================
+2026-07-06 22:18:44,192  INFO        GLD          [OK] Updated
+2026-07-06 22:18:44,192  INFO        SPY          [OK] Updated
+2026-07-06 22:18:44,192  INFO        Total time: 0.7 minutes
+2026-07-06 22:18:44,192  INFO      =======================================================

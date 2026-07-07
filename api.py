@@ -758,9 +758,36 @@ def api_me():
 # ── /api/global/stats ────────────────────────────────────────────────────────
 @app.route("/api/global/stats")
 def api_global_stats():
-    """Public — global platform stats for the fire counter."""
-    stats = get_global_stats()
-    return jsonify(stats)
+    """Global platform stats — pulls real P&L from Alpaca + user DB."""
+    try:
+        from auth import get_global_stats, get_db
+        db_stats = get_global_stats()
+
+        # Pull real P&L from Alpaca paper account
+        alpaca_pnl = 0.0
+        try:
+            account = trading_client.get_account()
+            # equity - last_equity gives today's P&L
+            # equity - 100000 gives total P&L since start
+            alpaca_pnl = float(account.equity) - 100000.0
+        except Exception:
+            pass
+
+        # Combine DB stats with real Alpaca P&L
+        total_pnl = alpaca_pnl + (db_stats.get("total_pnl") or 0.0)
+
+        return jsonify({
+            "total_users"  : max(db_stats.get("total_users", 1), 1),
+            "total_trades" : db_stats.get("total_trades", 0),
+            "total_pnl"    : round(total_pnl, 2),
+            "total_bots"   : db_stats.get("total_bots", 16),
+            "leaderboard"  : db_stats.get("leaderboard", []),
+        })
+    except Exception as e:
+        return jsonify({
+            "total_users": 1, "total_trades": 0,
+            "total_pnl": 0.0, "total_bots": 16, "leaderboard": []
+        })
  
  
 # ── /api/admin/users ─────────────────────────────────────────────────────────
@@ -972,6 +999,66 @@ def api_futures_train():
 
     threading.Thread(target=_train, daemon=True).start()
     return jsonify({"ok": True, "status": "training", "ticker": ticker})
+
+@app.route('/onboarding.html')
+def serve_onboarding():
+    return send_from_directory('.', 'onboarding.html')
+
+@app.route('/settings.html')
+def serve_settings():
+    return send_from_directory('.', 'settings.html')
+
+@app.route('/index.html')
+def serve_index_html():
+    return send_from_directory('.', 'index.html')
+
+@app.route('/')
+def serve_root():
+    return send_from_directory('.', 'index.html')
+
+@app.route("/api/auth/change_password", methods=["POST"])
+def api_change_password():
+    """Change password for logged-in user."""
+    token = request.headers.get("Authorization","").replace("Bearer ","")
+    user  = get_user_from_token(token)
+    if not user:
+        return jsonify({"error": "Unauthorized"}), 401
+    data     = request.get_json()
+    current  = (data or {}).get("current_password","")
+    new_pw   = (data or {}).get("new_password","")
+    if not current or not new_pw:
+        return jsonify({"error": "Both passwords required"}), 400
+    if len(new_pw) < 6:
+        return jsonify({"error": "Password must be at least 6 characters"}), 400
+    from auth import verify_password, hash_password, get_db
+    with get_db() as conn:
+        row = conn.execute("SELECT password_hash FROM users WHERE id=?", (user["id"],)).fetchone()
+        if not verify_password(current, row["password_hash"]):
+            return jsonify({"error": "Current password is incorrect"}), 400
+        new_hash = hash_password(new_pw)
+        conn.execute("UPDATE users SET password_hash=? WHERE id=?", (new_hash, user["id"]))
+        conn.commit()
+    return jsonify({"ok": True})
+
+@app.route("/api/backtest/run", methods=["POST"])
+def api_backtest_run():
+    data   = request.get_json()
+    ticker = (data or {}).get("ticker", "GLD").upper()
+    start  = (data or {}).get("start_date", "2023-01-01")
+    end    = (data or {}).get("end_date", None)
+    equity = float((data or {}).get("starting_equity", 100000))
+    try:
+        from backtest import run_backtest
+        results = run_backtest(ticker, start, end, starting_equity=equity)
+        return jsonify(results)
+    except Exception as e:
+        log.error(f"Backtest error: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/backtest.html')
+def serve_backtest():
+    return send_from_directory('.', 'backtest.html')
+
 if __name__ == "__main__":
     print("\n" + "="*55)
     print("  Step 5 — Flask API server")

@@ -326,7 +326,10 @@ async function doLogin() {
     if (d.token) {
       localStorage.setItem('session_token', d.token);
       localStorage.setItem('username', d.username);
-      window.location.href = window.location.origin + '/dashboard.html';
+      // New users go to onboarding, returning users go to dashboard
+      const dest = window.location.origin.includes('localhost') || window.location.protocol === 'file:'
+        ? 'dashboard.html' : window.location.origin + '/dashboard.html';
+      window.location.href = dest;
     } else {
       showError(errEl, d.error || 'Login failed');
     }
@@ -367,7 +370,11 @@ async function doRegister() {
       localStorage.setItem('username', d.username);
       sucEl.textContent   = 'Account created! Redirecting...';
       sucEl.style.display = 'block';
-      setTimeout(() => window.location.href = window.location.origin + '/dashboard.html', 1000);
+      setTimeout(() => {
+        const dest = window.location.origin.includes('localhost') || window.location.protocol === 'file:'
+          ? 'onboarding.html' : window.location.origin + '/onboarding.html';
+        window.location.href = dest;
+      }, 1000);
     } else {
       showError(errEl, d.error || 'Registration failed');
     }

@@ -213,6 +213,15 @@ def retrain_ticker(ticker: str, config: dict) -> bool:
 def retrain_all() -> dict[str, bool]:
     """Retrain all configured bots sequentially."""
     from bot_manager import BOT_CONFIGS
+    
+    # Skip futures bots — they use futures_bot.py for retraining
+    from futures_bot import FUTURES_CONFIGS
+    spot_configs = {
+        ticker: cfg for ticker, cfg in BOT_CONFIGS.items()
+        if ticker not in FUTURES_CONFIGS
+        and not ticker.endswith('_FUT')
+        and cfg.get('chromosome_file', '').endswith('_best_chromosome.csv')
+    }
 
     results = {}
     start   = datetime.now()
@@ -222,7 +231,7 @@ def retrain_all() -> dict[str, bool]:
     log.info(f"  {start.strftime('%Y-%m-%d %H:%M')}")
     log.info("="*55)
 
-    for ticker, config in BOT_CONFIGS.items():
+    for ticker, config in spot_configs.items():
         try:
             ok = retrain_ticker(ticker, config)
             results[ticker] = ok
@@ -244,6 +253,7 @@ def retrain_all() -> dict[str, bool]:
     log.info("="*55)
 
     return results
+
 
 
 # ──────────────────────────────────────────────────────────────────────────────

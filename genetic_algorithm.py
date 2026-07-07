@@ -23,9 +23,10 @@ FEATURES = [
     'RSI', 'MACD', 'Signal',
     'BB_Upper', 'BB_Lower',
     'Daily_Return', 'Volume_Change',
+    'ATR', 'OBV', 'VWAP', 'Williams_R', 'Stoch_K',
 ]
-N_FEATURES   = len(FEATURES)          # 12
-CHROM_LENGTH = N_FEATURES * 2         # 24  (12 weights + 12 thresholds)
+N_FEATURES   = len(FEATURES)          # 17
+CHROM_LENGTH = N_FEATURES * 2         # 34  (17 weights + 17 thresholds)
 
 # Gene layout inside a chromosome (all values in [0, 1]):
 #   genes[0:12]  -> feature weights   (how much each indicator contributes)
@@ -36,20 +37,21 @@ CHROM_LENGTH = N_FEATURES * 2         # 24  (12 weights + 12 thresholds)
 # GA HYPER-PARAMETERS
 # ------------------------------------------------------------------------------
 GA_CONFIG = {
-    'population_size'    : 100,
-    'generations'        : 200,
-    'elite_count'        : 5,       # top N chromosomes copied unchanged each gen
-    'tournament_size'    : 5,       # k individuals compete per selection event
+    'population_size'    : 150,     # increased from 100 for broader search
+    'generations'        : 400,     # increased from 200 for deeper optimisation
+    'elite_count'        : 8,       # top N chromosomes copied unchanged each gen
+    'tournament_size'    : 6,       # k individuals compete per selection event
     'crossover_rate'     : 0.85,
     'mutation_rate_init' : 0.15,    # starting mutation rate (adaptive)
     'mutation_rate_min'  : 0.01,    # floor -- never mutate less than this
-    'mutation_rate_max'  : 0.30,    # ceiling
-    'mutation_step'      : 0.15,    # Gaussian std for gene perturbation
-    'stagnation_window'  : 20,      # gens without improvement -> boost mutation
-    'fitness_alpha'      : 0.60,    # weight on total_return in composite score
-    'fitness_beta'       : 0.40,    # weight on win_rate
-    'drawdown_penalty'   : 0.50,    # multiplier applied when drawdown > threshold
-    'max_drawdown_thresh': 0.20,    # 20 % drawdown triggers penalty
+    'mutation_rate_max'  : 0.35,    # ceiling
+    'mutation_step'      : 0.12,    # Gaussian std for gene perturbation
+    'stagnation_window'  : 25,      # gens without improvement -> boost mutation
+    'fitness_alpha'      : 0.45,    # weight on total_return
+    'fitness_beta'       : 0.30,    # weight on win_rate
+    'fitness_gamma'      : 0.25,    # weight on profit_factor (NEW)
+    'drawdown_penalty'   : 0.45,    # multiplier applied when drawdown > threshold
+    'max_drawdown_thresh': 0.20,    # 20% drawdown triggers penalty
     'min_trades'         : 10,      # chromosomes generating fewer trades -> penalised
     'random_seed'        : 42,
 }
@@ -148,12 +150,20 @@ def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame) -> dict:
     drawdown    = (peak - equity) / peak
     max_dd      = drawdown.max() if len(drawdown) > 0 else 0.0
 
+    # Profit factor: ratio of gross profit to gross loss
+    wins   = [t for t in trades if t > 0]
+    losses = [t for t in trades if t <= 0]
+    gross_profit = sum(wins)   if wins   else 0.0
+    gross_loss   = abs(sum(losses)) if losses else 1e-9
+    profit_factor = gross_profit / gross_loss
+
     return {
-        'total_return': total_return,
-        'win_rate'    : win_rate,
-        'n_trades'    : n_trades,
-        'max_drawdown': max_dd,
-        'equity_curve': equity,
+        'total_return' : total_return,
+        'win_rate'     : win_rate,
+        'n_trades'     : n_trades,
+        'max_drawdown' : max_dd,
+        'equity_curve' : equity,
+        'profit_factor': profit_factor,
     }
 
 
@@ -173,16 +183,26 @@ def fitness(chrom: np.ndarray,
     total_return = stats['total_return']
     win_rate     = stats['win_rate']
     max_dd       = stats['max_drawdown']
+    # profit_factor accessed via stats dict in score calculation
 
     # Penalise chromosomes that barely trade
     if n_trades < config['min_trades']:
         return -1.0
 
-    # Normalise total_return to [0,1] range (clamp at ±100 %)
-    norm_return = np.clip((total_return + 1.0) / 2.0, 0.0, 1.0)
+    # Normalise total_return to [0,1] range (clamp at +/-100%)
+    norm_return   = np.clip((total_return + 1.0) / 2.0, 0.0, 1.0)
 
-    score = (config['fitness_alpha'] * norm_return
-             + config['fitness_beta'] * win_rate)
+    # Profit factor normalised to [0,1] -- cap at 5x
+    profit_factor = stats.get('profit_factor', 1.0)
+    norm_pf       = float(np.clip((profit_factor - 1.0) / 4.0, 0.0, 1.0))
+
+    alpha = config.get('fitness_alpha', 0.45)
+    beta  = config.get('fitness_beta',  0.30)
+    gamma = config.get('fitness_gamma', 0.25)
+
+    score = (alpha * norm_return
+           + beta  * win_rate
+           + gamma * norm_pf)
 
     # Drawdown penalty
     if max_dd > config['max_drawdown_thresh']:

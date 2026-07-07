@@ -31,3 +31,15 @@
 2026-07-06 11:13:53,976  INFO      [GC] FLAT signal — no trade
 2026-07-06 11:13:53,976  INFO      [GC] Signal complete. Sleeping 600s...
 2026-07-06 11:18:07,240  INFO      [GC] Futures bot stopped by user
+2026-07-06 11:32:10,691  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-06 11:32:10,691  INFO        Mode       : PAPER
+2026-07-06 11:32:10,691  INFO        Max leverage: 15.0x
+2026-07-06 11:32:10,691  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-06 11:32:10,693  INFO        Evolved leverage: 6.6x
+2026-07-06 11:32:10,693  INFO        Stop width: 9.0%
+2026-07-06 11:32:10,693  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-06 11:32:10,693  INFO      [GC] ── Signal check 11:32 ──
+2026-07-06 11:32:11,299  INFO      [GC] Signal: FLAT  |  Confidence: 0.527  |  Leverage: 2.85x
+2026-07-06 11:32:11,720  INFO      [GC] Portfolio=$100,318.16  Price=$4163.10  Position=None
+2026-07-06 11:32:11,720  INFO      [GC] FLAT signal — no trade
+2026-07-06 11:32:11,720  INFO      [GC] Signal complete. Sleeping 600s...

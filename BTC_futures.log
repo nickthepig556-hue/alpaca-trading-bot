@@ -151,3 +151,27 @@ KeyError: 'stop_loss_pct'
 2026-07-06 11:13:59,886  INFO      [BTC/USD] Signal complete. Sleeping 600s...
 2026-07-06 11:18:07,240  INFO      [BTC/USD] Futures bot stopped by user
 2026-07-06 11:18:07,240  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-06 11:32:02,679  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 11:32:02,679  INFO        Mode       : PAPER
+2026-07-06 11:32:02,679  INFO        Max leverage: 10.0x
+2026-07-06 11:32:02,679  INFO        Trading hours: 24/7
+2026-07-06 11:32:02,681  INFO        Evolved leverage: 2.3x
+2026-07-06 11:32:02,681  INFO        Stop width: 1.0%
+2026-07-06 11:32:02,681  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 11:32:02,681  INFO      [BTC/USD] ── Signal check 11:32 ──
+2026-07-06 11:32:03,027  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:32:03,493  INFO      [BTC/USD] Portfolio=$100,319.17  Price=$63873.23  Position=None
+2026-07-06 11:32:03,493  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:32:03,494  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 11:32:16,713  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-06 11:32:16,714  INFO        Mode       : PAPER
+2026-07-06 11:32:16,714  INFO        Max leverage: 10.0x
+2026-07-06 11:32:16,714  INFO        Trading hours: 24/7
+2026-07-06 11:32:16,716  INFO        Evolved leverage: 2.3x
+2026-07-06 11:32:16,716  INFO        Stop width: 1.0%
+2026-07-06 11:32:16,716  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-06 11:32:16,716  INFO      [BTC/USD] ── Signal check 11:32 ──
+2026-07-06 11:32:17,067  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 11:32:17,508  INFO      [BTC/USD] Portfolio=$100,313.60  Price=$63870.12  Position=None
+2026-07-06 11:32:17,509  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 11:32:17,509  INFO      [BTC/USD] Signal complete. Sleeping 600s...

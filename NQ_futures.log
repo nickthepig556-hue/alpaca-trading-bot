@@ -31,3 +31,15 @@
 2026-07-06 11:13:51,896  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$6,334)
 2026-07-06 11:13:51,896  INFO      [NQ] Signal complete. Sleeping 600s...
 2026-07-06 11:18:07,240  INFO      [NQ] Futures bot stopped by user
+2026-07-06 11:32:08,699  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-06 11:32:08,699  INFO        Mode       : PAPER
+2026-07-06 11:32:08,699  INFO        Max leverage: 20.0x
+2026-07-06 11:32:08,699  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-06 11:32:08,701  INFO        Evolved leverage: 2.7x
+2026-07-06 11:32:08,701  INFO        Stop width: 1.0%
+2026-07-06 11:32:08,701  INFO      [NQ] Bot running — checking every 10 minutes
+2026-07-06 11:32:08,702  INFO      [NQ] ── Signal check 11:32 ──
+2026-07-06 11:32:09,053  INFO      [NQ] Signal: LONG  |  Confidence: 0.808  |  Leverage: 1.26x
+2026-07-06 11:32:09,520  INFO      [NQ] Portfolio=$100,323.11  Price=$29974.75  Position=None
+2026-07-06 11:32:09,520  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.3x, exposure=$6,331)
+2026-07-06 11:32:09,520  INFO      [NQ] Signal complete. Sleeping 600s...

@@ -64,6 +64,28 @@ def add_indicators(df):
     # Volume Change
     df['Volume_Change'] = df['Volume'].pct_change()
 
+    # ATR (Average True Range) — measures volatility
+    high_low   = df['High'] - df['Low']
+    high_close = (df['High'] - df['Close'].shift()).abs()
+    low_close  = (df['Low']  - df['Close'].shift()).abs()
+    true_range = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
+    df['ATR']  = true_range.rolling(window=14).mean()
+
+    # OBV (On-Balance Volume) — volume momentum
+    obv        = (np.sign(df['Close'].diff()) * df['Volume']).fillna(0).cumsum()
+    df['OBV']  = obv
+
+    # VWAP proxy (rolling 20-day volume-weighted average price)
+    df['VWAP'] = (df['Close'] * df['Volume']).rolling(20).sum() / df['Volume'].rolling(20).sum()
+
+    # Williams %R — overbought/oversold momentum
+    highest_high = df['High'].rolling(14).max()
+    lowest_low   = df['Low'].rolling(14).min()
+    df['Williams_R'] = -100 * (highest_high - df['Close']) / (highest_high - lowest_low + 1e-9)
+
+    # Stochastic oscillator %K
+    df['Stoch_K'] = 100 * (df['Close'] - lowest_low) / (highest_high - lowest_low + 1e-9)
+
     # Drop rows with NaN values from indicators
     df.dropna(inplace=True)
 
@@ -79,16 +101,8 @@ def preprocess_data(df):
         'SMA_20', 'SMA_50', 'SMA_200',
         'RSI', 'MACD', 'Signal',
         'BB_Upper', 'BB_Lower',
-        'Daily_Return', 'Volume_Change'
-    ]
-def preprocess_data(df):
-    # Select features for the genetic algorithm
-    features = [
-        'Close', 'Volume',
-        'SMA_20', 'SMA_50', 'SMA_200',
-        'RSI', 'MACD', 'Signal',
-        'BB_Upper', 'BB_Lower',
-        'Daily_Return', 'Volume_Change'
+        'Daily_Return', 'Volume_Change',
+        'ATR', 'OBV', 'VWAP', 'Williams_R', 'Stoch_K',
     ]
     # Clean infinity/NaN values before scaling (common in futures data)
     import numpy as np

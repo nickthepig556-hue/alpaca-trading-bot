@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Welcome</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#f0f0ff;font-family:'Space Grotesk',system-ui,sans-serif;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:24px}
+
+.logo{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:40px;letter-spacing:2px}
+
+.onboard-card{background:#0d0d12;border:0.5px solid #1e1e2e;border-radius:20px;
+  width:100%;max-width:560px;overflow:hidden}
+
+/* Steps indicator */
+.steps{display:flex;border-bottom:0.5px solid #1e1e2e}
+.step{flex:1;padding:14px;text-align:center;font-size:11px;
+  color:#444;font-family:'Space Mono',monospace;letter-spacing:1px;
+  text-transform:uppercase;border-bottom:2px solid transparent;transition:all .3s}
+.step.active{color:#ff6600;border-bottom-color:#ff6600}
+.step.done{color:#44cc66;border-bottom-color:#44cc66}
+
+.step-content{padding:40px;display:none}
+.step-content.active{display:block}
+
+.step-icon{font-size:48px;margin-bottom:16px}
+.step-title{font-size:22px;font-weight:700;margin-bottom:8px}
+.step-desc{color:#666688;font-size:14px;line-height:1.7;margin-bottom:28px}
+
+/* Bot picker grid */
+.bot-picker{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:24px}
+.bot-option{background:#111114;border:0.5px solid #2a2a2e;border-radius:12px;
+  padding:14px;cursor:pointer;transition:all .2s;text-align:left}
+.bot-option:hover{border-color:#444}
+.bot-option.selected{border-color:#ff6600;background:#1a0d00}
+.bot-option-ticker{font-size:14px;font-weight:600;font-family:'Space Mono',monospace}
+.bot-option-name{font-size:11px;color:#666688;margin-top:2px}
+.bot-option-badge{font-size:10px;padding:2px 6px;border-radius:99px;margin-top:6px;display:inline-block}
+.badge-etf{background:#0a1a0a;color:#44cc66}
+.badge-stock{background:#0a0a1a;color:#4488ff}
+.badge-crypto{background:#1a0a0a;color:#ff6644}
+.badge-futures{background:#1a0000;color:#ff4444}
+
+/* Alpaca key input */
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:11px;color:#666688;margin-bottom:6px;
+  text-transform:uppercase;letter-spacing:1px;font-family:'Space Mono',monospace}
+.form-input{width:100%;background:#111114;border:0.5px solid #2a2a2e;
+  border-radius:10px;padding:12px 16px;color:#f0f0ff;font-size:13px;
+  font-family:'Space Mono',monospace;outline:none;transition:border-color .2s}
+.form-input:focus{border-color:#ff6600}
+.form-input::placeholder{color:#333}
+.input-help{font-size:11px;color:#444;margin-top:6px}
+.input-help a{color:#ff8800;text-decoration:none}
+
+/* Risk selector */
+.risk-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:24px}
+.risk-option{background:#111114;border:0.5px solid #2a2a2e;border-radius:12px;
+  padding:16px;cursor:pointer;transition:all .2s;text-align:center}
+.risk-option:hover{border-color:#444}
+.risk-option.selected{border-color:#ff6600;background:#1a0d00}
+.risk-icon{font-size:28px;margin-bottom:8px}
+.risk-name{font-size:13px;font-weight:600;margin-bottom:4px}
+.risk-desc{font-size:11px;color:#666688}
+
+/* Progress summary */
+.summary-row{display:flex;justify-content:space-between;align-items:center;
+  padding:12px 0;border-bottom:0.5px solid #1a1a1e;font-size:13px}
+.summary-row:last-child{border-bottom:none}
+.summary-key{color:#666688}
+.summary-val{font-weight:500;color:#f0f0ff}
+.summary-val.green{color:#44cc66}
+.summary-val.orange{color:#ff8800}
+
+.btn{border:none;padding:13px 24px;border-radius:10px;font-size:14px;
+  font-weight:600;cursor:pointer;transition:all .2s;font-family:'Space Grotesk',sans-serif;
+  display:inline-flex;align-items:center;gap:8px}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;width:100%}
+.btn-accent:hover{opacity:.85}
+.btn-skip{background:transparent;border:0.5px solid #2a2a2e;color:#666688;
+  font-size:13px;padding:8px 16px;border-radius:8px;cursor:pointer;
+  font-family:'Space Grotesk',sans-serif}
+.btn-skip:hover{color:#f0f0ff;border-color:#444}
+
+.step-footer{display:flex;justify-content:space-between;align-items:center;
+  margin-top:20px}
+
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.success-check{font-size:64px;margin-bottom:16px;animation:pop .4s ease-out}
+@keyframes pop{0%{transform:scale(0)}80%{transform:scale(1.1)}100%{transform:scale(1)}}
+
+@media(max-width:480px){
+  .bot-picker{grid-template-columns:1fr}
+  .risk-options{grid-template-columns:1fr}
+  .step-content{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="logo">PROMETHEUS</div>
+
+<div class="onboard-card">
+  <!-- Steps indicator -->
+  <div class="steps">
+    <div class="step active" id="step-ind-1">Welcome</div>
+    <div class="step" id="step-ind-2">Pick bots</div>
+    <div class="step" id="step-ind-3">Risk level</div>
+    <div class="step" id="step-ind-4">Alpaca keys</div>
+    <div class="step" id="step-ind-5">Done</div>
+  </div>
+
+  <!-- Step 1: Welcome -->
+  <div class="step-content active" id="step-1">
+    <div class="step-icon">🔥</div>
+    <div class="step-title">Welcome to Prometheus</div>
+    <div class="step-desc">
+      You have <strong style="color:#ff8800">$100,000 in paper money</strong> ready to deploy. 
+      Your bots will trade automatically — no coding, no market knowledge needed.<br><br>
+      This takes about 2 minutes to set up. Let's go.
+    </div>
+    <div style="background:#111114;border:0.5px solid #2a2a2e;border-radius:12px;padding:20px;margin-bottom:24px">
+      <div style="font-size:12px;color:#666688;margin-bottom:12px;text-transform:uppercase;letter-spacing:1px">Your starting portfolio</div>
+      <div style="font-size:36px;font-weight:700;font-family:'Space Mono',monospace;
+        background:linear-gradient(135deg,#ff6600,#ffaa00);
+        -webkit-background-clip:text;-webkit-text-fill-color:transparent">$100,000.00</div>
+      <div style="font-size:12px;color:#666688;margin-top:6px">Paper money — zero real risk</div>
+    </div>
+    <button class="btn btn-accent" onclick="nextStep()">
+      <i class="ti ti-rocket"></i> Let's set up your bots
+    </button>
+  </div>
+
+  <!-- Step 2: Pick bots -->
+  <div class="step-content" id="step-2">
+    <div class="step-icon">🤖</div>
+    <div class="step-title">Pick your first bots</div>
+    <div class="step-desc">Choose what you want to trade. Each bot trains a genetic algorithm on years of market data. You can always add more later.</div>
+    <div class="bot-picker" id="bot-picker">
+      <div class="bot-option selected" data-ticker="SPY" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">SPY</div>
+        <div class="bot-option-name">S&P 500 ETF</div>
+        <span class="bot-option-badge badge-etf">ETF</span>
+      </div>
+      <div class="bot-option selected" data-ticker="GLD" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">GLD</div>
+        <div class="bot-option-name">Gold ETF</div>
+        <span class="bot-option-badge badge-etf">ETF</span>
+      </div>
+      <div class="bot-option" data-ticker="NVDA" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">NVDA</div>
+        <div class="bot-option-name">NVIDIA</div>
+        <span class="bot-option-badge badge-stock">Stock</span>
+      </div>
+      <div class="bot-option" data-ticker="AAPL" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">AAPL</div>
+        <div class="bot-option-name">Apple</div>
+        <span class="bot-option-badge badge-stock">Stock</span>
+      </div>
+      <div class="bot-option" data-ticker="TSLA" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">TSLA</div>
+        <div class="bot-option-name">Tesla</div>
+        <span class="bot-option-badge badge-stock">Stock</span>
+      </div>
+      <div class="bot-option" data-ticker="BTC/USD" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">BTC</div>
+        <div class="bot-option-name">Bitcoin (24/7)</div>
+        <span class="bot-option-badge badge-crypto">Crypto</span>
+      </div>
+      <div class="bot-option" data-ticker="ETH/USD" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">ETH</div>
+        <div class="bot-option-name">Ethereum (24/7)</div>
+        <span class="bot-option-badge badge-crypto">Crypto</span>
+      </div>
+      <div class="bot-option" data-ticker="BTC/USD_FUT" onclick="toggleBot(this)">
+        <div class="bot-option-ticker">BTC ⚡</div>
+        <div class="bot-option-name">Bitcoin Futures (2.3x)</div>
+        <span class="bot-option-badge badge-futures">Futures</span>
+      </div>
+    </div>
+    <div class="step-footer">
+      <button class="btn-skip" onclick="nextStep()">Skip — add later</button>
+      <button class="btn btn-accent" style="width:auto" onclick="nextStep()">
+        Continue <i class="ti ti-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Step 3: Risk level -->
+  <div class="step-content" id="step-3">
+    <div class="step-icon">⚖️</div>
+    <div class="step-title">Choose your risk level</div>
+    <div class="step-desc">This sets how aggressively your bots trade. You can change this anytime from the gene editor.</div>
+    <div class="risk-options">
+      <div class="risk-option" data-risk="conservative" onclick="selectRisk(this)">
+        <div class="risk-icon">🛡️</div>
+        <div class="risk-name">Conservative</div>
+        <div class="risk-desc">Tight stops, small positions, lower returns but safer</div>
+      </div>
+      <div class="risk-option selected" data-risk="balanced" onclick="selectRisk(this)">
+        <div class="risk-icon">⚖️</div>
+        <div class="risk-name">Balanced</div>
+        <div class="risk-desc">GA-evolved settings — let the algorithm decide</div>
+      </div>
+      <div class="risk-option" data-risk="aggressive" onclick="selectRisk(this)">
+        <div class="risk-icon">🚀</div>
+        <div class="risk-name">Aggressive</div>
+        <div class="risk-desc">Wider stops, larger positions, higher risk and reward</div>
+      </div>
+    </div>
+    <div class="step-footer">
+      <button class="btn-skip" onclick="prevStep()"><i class="ti ti-arrow-left"></i> Back</button>
+      <button class="btn btn-accent" style="width:auto" onclick="nextStep()">
+        Continue <i class="ti ti-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Step 4: Alpaca keys (optional) -->
+  <div class="step-content" id="step-4">
+    <div class="step-icon">🔑</div>
+    <div class="step-title">Connect your Alpaca account</div>
+    <div class="step-desc">Optional — skip this to trade with paper money only. Add your Alpaca API keys when you're ready to trade real money.</div>
+    <div class="form-group">
+      <label class="form-label">API Key</label>
+      <input class="form-input" type="text" id="alpaca-key" placeholder="PKXXXXXXXXXXXXXXXX">
+      <div class="input-help">Get your keys at <a href="https://alpaca.markets" target="_blank">alpaca.markets</a> → Paper Trading → API Keys</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Secret Key</label>
+      <input class="form-input" type="password" id="alpaca-secret" placeholder="••••••••••••••••••••••••••••••••">
+    </div>
+    <div style="background:#0a1a00;border:0.5px solid #1a3a00;border-radius:10px;
+      padding:14px;font-size:12px;color:#44cc66;margin-bottom:20px">
+      <i class="ti ti-shield-check"></i> Your keys are stored only on your local machine and never sent to our servers.
+    </div>
+    <div class="step-footer">
+      <button class="btn-skip" onclick="nextStep()">Skip for now</button>
+      <button class="btn btn-accent" style="width:auto" onclick="saveKeys()">
+        <i class="ti ti-key"></i> Save & continue
+      </button>
+    </div>
+  </div>
+
+  <!-- Step 5: Done -->
+  <div class="step-content" id="step-5">
+    <div style="text-align:center">
+      <div class="success-check">🔥</div>
+      <div class="step-title">You're all set!</div>
+      <div class="step-desc" style="margin:0 auto 28px">Your bots are being configured. Here's what happens next:</div>
+    </div>
+
+    <div id="setup-summary" style="margin-bottom:28px"></div>
+
+    <div style="background:#111114;border:0.5px solid #2a2a2e;border-radius:12px;
+      padding:16px;font-size:13px;color:#666688;margin-bottom:24px;line-height:1.7">
+      <strong style="color:#ff8800">What happens now:</strong><br>
+      Your bots check for trading signals every 5 minutes. When confidence is high enough, they place trades automatically. Check your dashboard to watch them in action.
+    </div>
+
+    <button class="btn btn-accent" onclick="goToDashboard()">
+      <i class="ti ti-layout-dashboard"></i> Open my dashboard
+    </button>
+  </div>
+</div>
+
+<script>
+const API = (window.location.protocol === 'file:' ||
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:5000/api'
+  : window.location.origin + '/api';
+
+const TOKEN = localStorage.getItem('session_token');
+if (!TOKEN) window.location.href = 'login.html';
+
+const headers = {
+  'Authorization'              : `Bearer ${TOKEN}`,
+  'Content-Type'               : 'application/json',
+  'ngrok-skip-browser-warning' : 'true',
+};
+
+let currentStep  = 1;
+let totalSteps   = 5;
+let selectedBots = ['SPY', 'GLD'];
+let selectedRisk = 'balanced';
+
+function nextStep() {
+  if (currentStep === totalSteps) return;
+  markStep(currentStep, 'done');
+  currentStep++;
+  showStep(currentStep);
+  if (currentStep === totalSteps) buildSummary();
+}
+
+function prevStep() {
+  if (currentStep === 1) return;
+  markStep(currentStep, '');
+  currentStep--;
+  showStep(currentStep);
+}
+
+function showStep(n) {
+  document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+  document.getElementById('step-' + n).classList.add('active');
+  document.getElementById('step-ind-' + n).classList.add('active');
+}
+
+function markStep(n, cls) {
+  const el = document.getElementById('step-ind-' + n);
+  el.classList.remove('active', 'done');
+  if (cls) el.classList.add(cls);
+}
+
+function toggleBot(el) {
+  const ticker = el.dataset.ticker;
+  el.classList.toggle('selected');
+  if (el.classList.contains('selected')) {
+    if (!selectedBots.includes(ticker)) selectedBots.push(ticker);
+  } else {
+    selectedBots = selectedBots.filter(t => t !== ticker);
+  }
+}
+
+function selectRisk(el) {
+  document.querySelectorAll('.risk-option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedRisk = el.dataset.risk;
+}
+
+async function saveKeys() {
+  const key    = document.getElementById('alpaca-key').value.trim();
+  const secret = document.getElementById('alpaca-secret').value.trim();
+  if (!key || !secret) { nextStep(); return; }
+
+  try {
+    await fetch(`${API}/user/settings`, {
+      method: 'POST', headers,
+      body: JSON.stringify({alpaca_key: key, alpaca_secret: secret})
+    });
+  } catch {}
+  nextStep();
+}
+
+function buildSummary() {
+  const riskLabels = {conservative:'Conservative 🛡️', balanced:'Balanced ⚖️', aggressive:'Aggressive 🚀'};
+  document.getElementById('setup-summary').innerHTML = `
+    <div class="summary-row">
+      <span class="summary-key">Starting balance</span>
+      <span class="summary-val green">$100,000.00 paper</span>
+    </div>
+    <div class="summary-row">
+      <span class="summary-key">Bots selected</span>
+      <span class="summary-val orange">${selectedBots.length} bots</span>
+    </div>
+    <div class="summary-row">
+      <span class="summary-key">Tickers</span>
+      <span class="summary-val">${selectedBots.join(', ')}</span>
+    </div>
+    <div class="summary-row">
+      <span class="summary-key">Risk profile</span>
+      <span class="summary-val">${riskLabels[selectedRisk]}</span>
+    </div>`;
+
+  // Save preferences to localStorage
+  localStorage.setItem('onboard_bots', JSON.stringify(selectedBots));
+  localStorage.setItem('onboard_risk', selectedRisk);
+  localStorage.setItem('onboarded', '1');
+}
+
+function goToDashboard() {
+  window.location.href = window.location.origin.includes('localhost') ||
+    window.location.protocol === 'file:'
+    ? 'dashboard.html'
+    : window.location.origin + '/dashboard.html';
+}
+</script>
+</body>
+</html>

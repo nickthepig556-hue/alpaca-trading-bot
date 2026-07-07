@@ -443,3 +443,376 @@
 2026-07-06 11:32:28,855  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-06 11:32:28,857  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (24 genes)
 2026-07-06 11:32:29,051  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:37:29,052  INFO      =======================================================
+2026-07-06 11:37:29,053  INFO      Daily signal run  [2026-07-06 11:37]
+2026-07-06 11:37:29,053  INFO      =======================================================
+2026-07-06 11:37:29,617  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 11:37:29,831  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 11:37:29,971  INFO      Portfolio value : $100,295.54
+2026-07-06 11:37:29,972  INFO      Current price   : $312.37
+2026-07-06 11:37:29,972  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18429.3226, 'unrealised_pl': 31.7774}
+2026-07-06 11:37:29,972  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 11:37:29,972  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 11:38:30,323  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 11:38:30,324  INFO      Retrying in 5 minutes...
+2026-07-06 11:43:30,570  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:48:30,571  INFO      =======================================================
+2026-07-06 11:48:30,572  INFO      Daily signal run  [2026-07-06 11:48]
+2026-07-06 11:48:30,572  INFO      =======================================================
+2026-07-06 11:48:31,104  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 11:48:31,318  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 11:48:31,449  INFO      Portfolio value : $100,343.48
+2026-07-06 11:48:31,449  INFO      Current price   : $312.49
+2026-07-06 11:48:31,449  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18437.5, 'unrealised_pl': 23.6}
+2026-07-06 11:48:31,449  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 11:48:31,450  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 11:49:31,812  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 11:49:31,812  INFO      Retrying in 5 minutes...
+2026-07-06 11:54:33,120  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:59:33,121  INFO      =======================================================
+2026-07-06 11:59:33,121  INFO      Daily signal run  [2026-07-06 11:59]
+2026-07-06 11:59:33,121  INFO      =======================================================
+2026-07-06 11:59:33,642  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 11:59:33,885  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 11:59:34,053  INFO      Portfolio value : $100,331.44
+2026-07-06 11:59:34,053  INFO      Current price   : $312.66
+2026-07-06 11:59:34,054  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18446.055, 'unrealised_pl': 15.045}
+2026-07-06 11:59:34,054  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 11:59:34,054  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:00:34,305  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:00:34,306  INFO      Retrying in 5 minutes...
+2026-07-06 12:05:34,499  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:10:34,500  INFO      =======================================================
+2026-07-06 12:10:34,500  INFO      Daily signal run  [2026-07-06 12:10]
+2026-07-06 12:10:34,500  INFO      =======================================================
+2026-07-06 12:10:35,008  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 12:10:35,277  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 12:10:35,472  INFO      Portfolio value : $100,357.51
+2026-07-06 12:10:35,472  INFO      Current price   : $312.65
+2026-07-06 12:10:35,472  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18446.94, 'unrealised_pl': 14.16}
+2026-07-06 12:10:35,472  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:10:35,472  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:11:35,861  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:11:35,862  INFO      Retrying in 5 minutes...
+2026-07-06 12:16:36,050  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:21:36,051  INFO      =======================================================
+2026-07-06 12:21:36,052  INFO      Daily signal run  [2026-07-06 12:21]
+2026-07-06 12:21:36,052  INFO      =======================================================
+2026-07-06 12:21:36,475  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 12:21:36,668  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 12:21:36,797  INFO      Portfolio value : $100,335.48
+2026-07-06 12:21:36,798  INFO      Current price   : $312.88
+2026-07-06 12:21:36,799  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18459.92, 'unrealised_pl': 1.18}
+2026-07-06 12:21:36,799  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:21:36,799  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:22:37,007  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:22:37,007  INFO      Retrying in 5 minutes...
+2026-07-06 12:27:37,206  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:32:37,207  INFO      =======================================================
+2026-07-06 12:32:37,207  INFO      Daily signal run  [2026-07-06 12:32]
+2026-07-06 12:32:37,207  INFO      =======================================================
+2026-07-06 12:32:37,614  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 12:32:37,818  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 12:32:38,011  INFO      Portfolio value : $100,206.58
+2026-07-06 12:32:38,012  INFO      Current price   : $313.46
+2026-07-06 12:32:38,013  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18492.9659, 'unrealised_pl': -31.8659}
+2026-07-06 12:32:38,013  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:32:38,013  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:33:38,219  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:33:38,220  INFO      Retrying in 5 minutes...
+2026-07-06 12:38:38,497  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:43:38,497  INFO      =======================================================
+2026-07-06 12:43:38,498  INFO      Daily signal run  [2026-07-06 12:43]
+2026-07-06 12:43:38,498  INFO      =======================================================
+2026-07-06 12:43:38,857  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 12:43:39,122  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 12:43:39,251  INFO      Portfolio value : $100,247.52
+2026-07-06 12:43:39,252  INFO      Current price   : $313.04
+2026-07-06 12:43:39,252  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18470.54, 'unrealised_pl': -9.44}
+2026-07-06 12:43:39,252  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:43:39,252  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:44:39,489  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:44:39,490  INFO      Retrying in 5 minutes...
+2026-07-06 12:49:39,685  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:54:39,686  INFO      =======================================================
+2026-07-06 12:54:39,686  INFO      Daily signal run  [2026-07-06 12:54]
+2026-07-06 12:54:39,686  INFO      =======================================================
+2026-07-06 12:54:40,092  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 12:54:40,314  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 12:54:40,543  INFO      Portfolio value : $100,201.20
+2026-07-06 12:54:40,543  INFO      Current price   : $313.39
+2026-07-06 12:54:40,543  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18490.01, 'unrealised_pl': -28.91}
+2026-07-06 12:54:40,543  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:54:40,543  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 12:55:40,806  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:55:40,807  INFO      Retrying in 5 minutes...
+2026-07-06 13:00:41,004  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:05:41,004  INFO      =======================================================
+2026-07-06 13:05:41,005  INFO      Daily signal run  [2026-07-06 13:05]
+2026-07-06 13:05:41,005  INFO      =======================================================
+2026-07-06 13:05:41,435  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 13:05:41,662  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 13:05:41,786  INFO      Portfolio value : $100,233.33
+2026-07-06 13:05:41,786  INFO      Current price   : $313.17
+2026-07-06 13:05:41,786  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18477.325, 'unrealised_pl': -16.225}
+2026-07-06 13:05:41,786  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:05:41,786  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 13:06:42,053  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:06:42,053  INFO      Retrying in 5 minutes...
+2026-07-06 13:11:42,244  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:16:42,245  INFO      =======================================================
+2026-07-06 13:16:42,245  INFO      Daily signal run  [2026-07-06 13:16]
+2026-07-06 13:16:42,245  INFO      =======================================================
+2026-07-06 13:16:42,660  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 13:16:42,867  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 13:16:42,992  INFO      Portfolio value : $100,198.60
+2026-07-06 13:16:42,992  INFO      Current price   : $313.24
+2026-07-06 13:16:42,993  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18481.75, 'unrealised_pl': -20.65}
+2026-07-06 13:16:42,993  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:16:42,993  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 13:17:43,479  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:17:43,480  INFO      Retrying in 5 minutes...
+2026-07-06 13:22:43,668  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:27:43,669  INFO      =======================================================
+2026-07-06 13:27:43,669  INFO      Daily signal run  [2026-07-06 13:27]
+2026-07-06 13:27:43,669  INFO      =======================================================
+2026-07-06 13:27:44,167  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 13:27:44,395  INFO      Signal: SELL/HOLD  |  Confidence: 0.453
+2026-07-06 13:27:44,519  INFO      Portfolio value : $100,226.69
+2026-07-06 13:27:44,519  INFO      Current price   : $313.36
+2026-07-06 13:27:44,519  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18488.24, 'unrealised_pl': -27.14}
+2026-07-06 13:27:44,519  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:27:44,519  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 13:28:44,766  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:28:44,766  INFO      Retrying in 5 minutes...
+2026-07-06 13:33:45,068  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:38:45,068  INFO      =======================================================
+2026-07-06 13:38:45,068  INFO      Daily signal run  [2026-07-06 13:38]
+2026-07-06 13:38:45,068  INFO      =======================================================
+2026-07-06 13:38:45,467  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 13:38:45,696  INFO      Signal: SELL/HOLD  |  Confidence: 0.499
+2026-07-06 13:38:45,847  INFO      Portfolio value : $100,225.12
+2026-07-06 13:38:45,848  INFO      Current price   : $313.68
+2026-07-06 13:38:45,848  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18508.005, 'unrealised_pl': -46.905}
+2026-07-06 13:38:45,848  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:38:45,848  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 13:39:46,069  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:39:46,070  INFO      Retrying in 5 minutes...
+2026-07-06 13:44:46,275  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:49:46,275  INFO      =======================================================
+2026-07-06 13:49:46,275  INFO      Daily signal run  [2026-07-06 13:49]
+2026-07-06 13:49:46,275  INFO      =======================================================
+2026-07-06 13:49:46,706  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 13:49:46,940  INFO      Signal: SELL/HOLD  |  Confidence: 0.499
+2026-07-06 13:49:47,064  INFO      Portfolio value : $100,247.44
+2026-07-06 13:49:47,064  INFO      Current price   : $312.98
+2026-07-06 13:49:47,065  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18465.82, 'unrealised_pl': -4.72}
+2026-07-06 13:49:47,065  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:49:47,065  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 13:50:47,357  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:50:47,358  INFO      Retrying in 5 minutes...
+2026-07-06 13:55:47,556  INFO      Market open — waiting 300s before first signal...
+2026-07-06 14:00:47,556  INFO      =======================================================
+2026-07-06 14:00:47,557  INFO      Daily signal run  [2026-07-06 14:00]
+2026-07-06 14:00:47,557  INFO      =======================================================
+2026-07-06 14:00:47,987  INFO      Fetched 70 bars for AAPL  (2026-03-25 → 2026-07-06)
+2026-07-06 14:00:48,195  INFO      Signal: SELL/HOLD  |  Confidence: 0.499
+2026-07-06 14:00:48,328  INFO      Portfolio value : $100,291.09
+2026-07-06 14:00:48,328  INFO      Current price   : $312.66
+2026-07-06 14:00:48,328  INFO      Open position   : {'qty': 59, 'side': 'short', 'entry_price': 312.9, 'market_value': -18465.23, 'unrealised_pl': -4.13}
+2026-07-06 14:00:48,329  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 14:00:48,329  INFO      Monitoring AAPL  |  entry=312.90  stop=306.64  target=325.42
+2026-07-06 14:01:48,577  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 14:01:48,578  INFO      Retrying in 5 minutes...
+2026-07-06 14:06:48,769  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 15:06:48,957  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 16:06:49,145  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 17:06:49,342  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 18:06:49,545  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 19:06:49,731  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 20:06:49,972  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 21:06:50,165  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 22:06:50,365  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 23:06:50,642  INFO      Market closed. Next open in 60 min. Sleeping...

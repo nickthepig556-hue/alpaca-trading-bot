@@ -670,3 +670,365 @@ requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetErro
 2026-07-06 11:32:20,755  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-06 11:32:20,757  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (24 genes)
 2026-07-06 11:32:20,950  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:37:20,950  INFO      =======================================================
+2026-07-06 11:37:20,950  INFO      Daily signal run  [2026-07-06 11:37]
+2026-07-06 11:37:20,951  INFO      =======================================================
+2026-07-06 11:37:21,569  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 11:37:21,760  INFO      Signal: SELL/HOLD  |  Confidence: 0.263
+2026-07-06 11:37:21,922  INFO      Portfolio value : $100,295.31
+2026-07-06 11:37:21,923  INFO      Current price   : $415.33
+2026-07-06 11:37:21,923  INFO      Open position   : None
+2026-07-06 11:37:21,923  INFO      Confidence 0.263 below threshold 0.33 — skipping trade
+2026-07-06 11:37:21,923  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-06 11:42:22,122  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:47:22,122  INFO      =======================================================
+2026-07-06 11:47:22,123  INFO      Daily signal run  [2026-07-06 11:47]
+2026-07-06 11:47:22,123  INFO      =======================================================
+2026-07-06 11:47:22,494  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 11:47:22,656  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 11:47:22,784  INFO      Portfolio value : $100,305.32
+2026-07-06 11:47:22,784  INFO      Current price   : $414.80
+2026-07-06 11:47:22,784  INFO      Open position   : None
+2026-07-06 11:47:22,784  INFO      Position size: 34 shares  (confidence=0.424, alloc=14.2%, $14,220 of $100,305)
+2026-07-06 11:47:22,784  INFO      Opening SHORT position: 34 x TSLA
+2026-07-06 11:47:22,867  INFO      [OK] SELL SHORT order submitted: 34 x TSLA  [id=8fd4c8e0-0325-4f85-ba87-0564dfdece61]
+2026-07-06 11:47:27,933  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 11:48:13,217  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 570, in run_daily_signal
+    monitor_position(trading_client, data_client,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    TICKER, position['entry_price'],
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 11:48:13,219  INFO      Retrying in 5 minutes...
+2026-07-06 11:53:13,434  INFO      Market open — waiting 300s before first signal...
+2026-07-06 11:58:13,435  INFO      =======================================================
+2026-07-06 11:58:13,435  INFO      Daily signal run  [2026-07-06 11:58]
+2026-07-06 11:58:13,435  INFO      =======================================================
+2026-07-06 11:58:13,808  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 11:58:13,984  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 11:58:14,125  INFO      Portfolio value : $100,345.08
+2026-07-06 11:58:14,125  INFO      Current price   : $414.45
+2026-07-06 11:58:14,125  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14091.64, 'unrealised_pl': 10.700004}
+2026-07-06 11:58:14,125  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 11:58:14,125  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 11:58:59,337  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 11:58:59,338  INFO      Retrying in 5 minutes...
+2026-07-06 12:03:59,532  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:08:59,533  INFO      =======================================================
+2026-07-06 12:08:59,533  INFO      Daily signal run  [2026-07-06 12:08]
+2026-07-06 12:08:59,533  INFO      =======================================================
+2026-07-06 12:09:00,041  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 12:09:00,233  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 12:09:00,413  INFO      Portfolio value : $100,328.91
+2026-07-06 12:09:00,413  INFO      Current price   : $415.40
+2026-07-06 12:09:00,414  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14122.24, 'unrealised_pl': -19.899996}
+2026-07-06 12:09:00,414  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:09:00,414  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 12:09:45,651  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:09:45,652  INFO      Retrying in 5 minutes...
+2026-07-06 12:14:45,839  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:19:45,840  INFO      =======================================================
+2026-07-06 12:19:45,841  INFO      Daily signal run  [2026-07-06 12:19]
+2026-07-06 12:19:45,841  INFO      =======================================================
+2026-07-06 12:19:46,204  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 12:19:46,366  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 12:19:46,504  INFO      Portfolio value : $100,351.12
+2026-07-06 12:19:46,504  INFO      Current price   : $414.79
+2026-07-06 12:19:46,504  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14102.86, 'unrealised_pl': -0.519996}
+2026-07-06 12:19:46,504  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:19:46,504  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 12:20:31,732  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:20:31,733  INFO      Retrying in 5 minutes...
+2026-07-06 12:25:32,013  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:30:32,013  INFO      =======================================================
+2026-07-06 12:30:32,014  INFO      Daily signal run  [2026-07-06 12:30]
+2026-07-06 12:30:32,014  INFO      =======================================================
+2026-07-06 12:30:32,396  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 12:30:32,556  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 12:30:32,685  INFO      Portfolio value : $100,209.33
+2026-07-06 12:30:32,685  INFO      Current price   : $417.51
+2026-07-06 12:30:32,685  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14193.98, 'unrealised_pl': -91.639996}
+2026-07-06 12:30:32,685  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:30:32,685  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 12:31:17,934  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:31:17,935  INFO      Retrying in 5 minutes...
+2026-07-06 12:36:18,152  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:41:18,152  INFO      =======================================================
+2026-07-06 12:41:18,152  INFO      Daily signal run  [2026-07-06 12:41]
+2026-07-06 12:41:18,152  INFO      =======================================================
+2026-07-06 12:41:18,528  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 12:41:18,688  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 12:41:18,817  INFO      Portfolio value : $100,238.80
+2026-07-06 12:41:18,817  INFO      Current price   : $416.77
+2026-07-06 12:41:18,817  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14169.194, 'unrealised_pl': -66.853996}
+2026-07-06 12:41:18,818  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:41:18,818  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 12:42:04,059  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:42:04,059  INFO      Retrying in 5 minutes...
+2026-07-06 12:47:04,256  INFO      Market open — waiting 300s before first signal...
+2026-07-06 12:52:04,256  INFO      =======================================================
+2026-07-06 12:52:04,257  INFO      Daily signal run  [2026-07-06 12:52]
+2026-07-06 12:52:04,257  INFO      =======================================================
+2026-07-06 12:52:04,666  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 12:52:04,859  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 12:52:04,982  INFO      Portfolio value : $100,198.53
+2026-07-06 12:52:04,983  INFO      Current price   : $417.16
+2026-07-06 12:52:04,983  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14183.44, 'unrealised_pl': -81.099996}
+2026-07-06 12:52:04,983  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 12:52:04,983  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 12:52:50,250  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 12:52:50,250  INFO      Retrying in 5 minutes...
+2026-07-06 12:57:50,440  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:02:50,441  INFO      =======================================================
+2026-07-06 13:02:50,441  INFO      Daily signal run  [2026-07-06 13:02]
+2026-07-06 13:02:50,441  INFO      =======================================================
+2026-07-06 13:02:50,841  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:02:51,012  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:02:51,134  INFO      Portfolio value : $100,276.51
+2026-07-06 13:02:51,134  INFO      Current price   : $415.93
+2026-07-06 13:02:51,134  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14141.9872, 'unrealised_pl': -39.647196}
+2026-07-06 13:02:51,134  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:02:51,135  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:03:36,377  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:03:36,378  INFO      Retrying in 5 minutes...
+2026-07-06 13:08:36,567  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:13:36,567  INFO      =======================================================
+2026-07-06 13:13:36,567  INFO      Daily signal run  [2026-07-06 13:13]
+2026-07-06 13:13:36,567  INFO      =======================================================
+2026-07-06 13:13:36,921  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:13:37,064  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:13:37,195  INFO      Portfolio value : $100,201.15
+2026-07-06 13:13:37,195  INFO      Current price   : $417.12
+2026-07-06 13:13:37,195  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14182.4166, 'unrealised_pl': -80.076596}
+2026-07-06 13:13:37,196  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:13:37,196  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:14:22,447  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:14:22,448  INFO      Retrying in 5 minutes...
+2026-07-06 13:19:22,639  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:24:22,639  INFO      =======================================================
+2026-07-06 13:24:22,640  INFO      Daily signal run  [2026-07-06 13:24]
+2026-07-06 13:24:22,640  INFO      =======================================================
+2026-07-06 13:24:23,078  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:24:23,312  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:24:23,468  INFO      Portfolio value : $100,238.92
+2026-07-06 13:24:23,469  INFO      Current price   : $417.12
+2026-07-06 13:24:23,469  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14182.08, 'unrealised_pl': -79.739996}
+2026-07-06 13:24:23,469  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:24:23,469  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:25:08,701  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:25:08,702  INFO      Retrying in 5 minutes...
+2026-07-06 13:30:08,904  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:35:08,906  INFO      =======================================================
+2026-07-06 13:35:08,907  INFO      Daily signal run  [2026-07-06 13:35]
+2026-07-06 13:35:08,907  INFO      =======================================================
+2026-07-06 13:35:09,314  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:35:09,488  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:35:09,613  INFO      Portfolio value : $100,202.00
+2026-07-06 13:35:09,613  INFO      Current price   : $417.74
+2026-07-06 13:35:09,613  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14201.8, 'unrealised_pl': -99.459996}
+2026-07-06 13:35:09,613  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:35:09,614  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:35:54,827  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:35:54,828  INFO      Retrying in 5 minutes...
+2026-07-06 13:40:55,016  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:45:55,016  INFO      =======================================================
+2026-07-06 13:45:55,016  INFO      Daily signal run  [2026-07-06 13:45]
+2026-07-06 13:45:55,016  INFO      =======================================================
+2026-07-06 13:45:55,369  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:45:55,584  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:45:55,710  INFO      Portfolio value : $100,227.49
+2026-07-06 13:45:55,711  INFO      Current price   : $417.53
+2026-07-06 13:45:55,711  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14197.38, 'unrealised_pl': -95.039996}
+2026-07-06 13:45:55,711  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:45:55,711  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:46:40,912  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:46:40,913  INFO      Retrying in 5 minutes...
+2026-07-06 13:51:41,116  INFO      Market open — waiting 300s before first signal...
+2026-07-06 13:56:41,116  INFO      =======================================================
+2026-07-06 13:56:41,116  INFO      Daily signal run  [2026-07-06 13:56]
+2026-07-06 13:56:41,116  INFO      =======================================================
+2026-07-06 13:56:41,452  INFO      Fetched 70 bars for TSLA  (2026-03-25 → 2026-07-06)
+2026-07-06 13:56:41,624  INFO      Signal: SELL/HOLD  |  Confidence: 0.424
+2026-07-06 13:56:41,761  INFO      Portfolio value : $100,302.57
+2026-07-06 13:56:41,762  INFO      Current price   : $419.44
+2026-07-06 13:56:41,762  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -14262.66, 'unrealised_pl': -160.319996}
+2026-07-06 13:56:41,762  INFO      SELL signal — already short, monitoring existing position
+2026-07-06 13:56:41,762  INFO      Monitoring TSLA  |  entry=414.77  stop=404.41  target=435.51
+2026-07-06 13:57:26,985  ERROR     Unexpected error: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 621, in run_bot
+    run_daily_signal(trading_client, data_client, chrom, BOT_CONFIG)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 575, in run_daily_signal
+    monitor_position(trading_client, data_client, TICKER,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    position['entry_price'], config, position['side'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 419, in monitor_position
+    f"stop={stop_price:.2f}  trailing={trailing_stop:.2f}  "
+                                      ^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
+2026-07-06 13:57:26,986  INFO      Retrying in 5 minutes...
+2026-07-06 14:02:27,171  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 15:02:27,375  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 16:02:27,558  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 17:02:27,743  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 18:02:27,947  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 19:02:28,190  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 20:02:28,383  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 21:02:28,634  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 22:02:28,821  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-06 23:02:29,020  INFO      Market closed. Next open in 60 min. Sleeping...

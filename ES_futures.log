@@ -42,3 +42,17 @@
 2026-07-06 11:12:04,570  INFO      [FUTURES] SELL TO EXIT 1x ES  [take-profit]  id=618fc5b2-677b-4d0f-bba3-b42c19cd1e4c
 2026-07-06 11:12:04,571  INFO      [ES] Signal complete. Sleeping 600s...
 2026-07-06 11:18:07,240  INFO      [ES] Futures bot stopped by user
+2026-07-06 11:32:06,701  INFO      [FUTURES BOT] Starting: ES (E-mini S&P 500 Futures)
+2026-07-06 11:32:06,701  INFO        Mode       : PAPER
+2026-07-06 11:32:06,701  INFO        Max leverage: 20.0x
+2026-07-06 11:32:06,701  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-06 11:32:06,703  INFO        Evolved leverage: 3.4x
+2026-07-06 11:32:06,703  INFO        Stop width: 2.2%
+2026-07-06 11:32:06,703  INFO      [ES] Bot running — checking every 10 minutes
+2026-07-06 11:32:06,703  INFO      [ES] ── Signal check 11:32 ──
+2026-07-06 11:32:07,079  INFO      [ES] Signal: LONG  |  Confidence: 0.720  |  Leverage: 1.44x
+2026-07-06 11:32:07,510  INFO      [ES] Portfolio=$100,323.70  Price=$7588.50  Position=None
+2026-07-06 11:32:07,510  INFO      Futures position: 1 units  (scale=7.7%, leverage=1.4x, exposure=$11,201)
+2026-07-06 11:32:07,596  INFO      [FUTURES] BUY LONG 1x ES  [signal]  id=2853c156-e90e-44aa-913c-d7ebe358ad2b
+2026-07-06 11:32:11,126  INFO      [ES] Monitoring LONG  entry=7588.75  stop=7421.80  target=8294.96
+2026-07-06 11:34:11,645  INFO      [ES] LONG price=7588.25  stop=7421.80  target=8294.96  P&L=-0.01%

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prometheus — Backtest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#f0f0ff;font-family:'Space Grotesk',system-ui,sans-serif;
+  font-size:14px;padding:24px;min-height:100vh}
+
+.top-bar{display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:28px;flex-wrap:wrap;gap:12px}
+.logo{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;
+  background:linear-gradient(135deg,#ff6600,#ffaa00);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:2px}
+.btn{border:0.5px solid #2a2a2e;background:transparent;color:#f0f0ff;
+  padding:7px 16px;border-radius:8px;cursor:pointer;font-size:13px;
+  display:inline-flex;align-items:center;gap:6px;font-family:'Space Grotesk',sans-serif;
+  text-decoration:none}
+.btn:hover{background:rgba(255,255,255,.06)}
+.btn-accent{background:linear-gradient(135deg,#ff4400,#ff8800);color:#fff;
+  border-color:transparent;padding:10px 24px;font-size:14px;font-weight:600}
+.btn-accent:hover{opacity:.85}
+.btn-accent:disabled{opacity:.5;cursor:not-allowed}
+
+/* Config panel */
+.config-panel{background:#0d0d12;border:0.5px solid #1e1e2e;border-radius:14px;
+  padding:24px;margin-bottom:20px}
+.config-grid{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:12px;align-items:end}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-label{font-size:11px;color:#666688;text-transform:uppercase;
+  letter-spacing:1px;font-family:'Space Mono',monospace}
+.form-input,.form-select{background:#111114;border:0.5px solid #2a2a2e;
+  border-radius:8px;padding:9px 12px;color:#f0f0ff;font-size:13px;
+  font-family:'Space Mono',monospace;outline:none;transition:border-color .2s;width:100%}
+.form-input:focus,.form-select:focus{border-color:#ff6600}
+
+/* Results grid */
+.results-grid{display:grid;grid-template-columns:1fr 340px;gap:16px;margin-bottom:16px}
+.card{background:#0d0d12;border:0.5px solid #1e1e2e;border-radius:14px;padding:20px}
+.card-title{font-size:12px;font-weight:600;color:#aaaacc;margin-bottom:16px;
+  display:flex;align-items:center;justify-content:space-between;
+  text-transform:uppercase;letter-spacing:1px;font-family:'Space Mono',monospace}
+
+/* Stats comparison */
+.stats-compare{display:grid;gap:1px;background:#1e1e2e;border-radius:10px;overflow:hidden}
+.stat-row{display:grid;grid-template-columns:1fr 90px 90px;background:#0d0d12;
+  padding:10px 14px;font-size:13px;align-items:center}
+.stat-row.header{background:#111114;font-size:10px;color:#666688;
+  text-transform:uppercase;letter-spacing:1px;font-family:'Space Mono',monospace}
+.stat-key{color:#aaaacc}
+.stat-bot{text-align:right;font-weight:500;font-family:'Space Mono',monospace}
+.stat-bnh{text-align:right;color:#666688;font-family:'Space Mono',monospace}
+.up{color:#44cc66}.down{color:#ff4455}.neutral{color:#ffaa00}
+.winner{background:rgba(255,102,0,.08)!important}
+
+/* Summary badges */
+.summary-row{display:flex;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.badge{padding:6px 14px;border-radius:8px;font-size:12px;font-weight:600;
+  font-family:'Space Mono',monospace}
+.badge-win{background:#0a2a10;color:#44cc66;border:0.5px solid #1a4a20}
+.badge-loss{background:#2a0a10;color:#ff4455;border:0.5px solid #4a1a20}
+.badge-neutral{background:#1a1a00;color:#ffaa00;border:0.5px solid #3a3a00}
+
+/* Trade log */
+.trade-log{max-height:320px;overflow-y:auto}
+.trade-row{display:grid;grid-template-columns:80px 60px 80px 80px 80px 80px;
+  gap:8px;padding:8px 0;border-bottom:0.5px solid #1a1a1e;
+  font-size:12px;font-family:'Space Mono',monospace;align-items:center}
+.trade-row.header{color:#666688;font-size:10px;letter-spacing:0.5px;
+  text-transform:uppercase;position:sticky;top:0;background:#0d0d12;z-index:1}
+.trade-long{color:#44aaff}
+.trade-short{color:#ff8844}
+.trade-win{color:#44cc66}
+.trade-loss{color:#ff4455}
+
+/* Empty state */
+.empty-state{text-align:center;padding:80px 20px;color:#666688}
+.empty-icon{font-size:48px;display:block;margin-bottom:16px}
+
+/* Chart container */
+.chart-wrap{position:relative;height:300px}
+
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.2);
+  border-top-color:#ff6600;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.progress-bar{height:4px;background:#1a1a1e;border-radius:2px;overflow:hidden;margin-top:8px}
+.progress-fill{height:100%;background:linear-gradient(90deg,#ff4400,#ff8800);
+  border-radius:2px;transition:width .3s;width:0%}
+
+@media(max-width:900px){
+  .results-grid{grid-template-columns:1fr}
+  .config-grid{grid-template-columns:1fr 1fr;row-gap:12px}
+  .trade-row{grid-template-columns:70px 50px 70px 70px 70px}
+}
+@media(max-width:480px){
+  body{padding:12px}
+  .config-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div style="display:flex;align-items:center;gap:16px">
+    <span class="logo">PROMETHEUS</span>
+    <span style="font-size:11px;color:#666688;font-family:'Space Mono',monospace;
+      text-transform:uppercase;letter-spacing:2px">Backtest</span>
+  </div>
+  <div style="display:flex;gap:8px">
+    <a href="dashboard.html" class="btn"><i class="ti ti-arrow-left"></i> Dashboard</a>
+    <a href="gene_editor.html" class="btn"><i class="ti ti-dna"></i> Gene editor</a>
+  </div>
+</div>
+
+<!-- Config -->
+<div class="config-panel">
+  <div class="config-grid">
+    <div class="form-group">
+      <label class="form-label">Ticker</label>
+      <select class="form-select" id="bt-ticker">
+        <option value="GLD">GLD — Gold ETF</option>
+        <option value="SPY">SPY — S&P 500</option>
+        <option value="NVDA">NVDA — NVIDIA</option>
+        <option value="QQQ">QQQ — Nasdaq</option>
+        <option value="TSLA">TSLA — Tesla</option>
+        <option value="MSFT">MSFT — Microsoft</option>
+        <option value="AMZN">AMZN — Amazon</option>
+        <option value="META">META — Meta</option>
+        <option value="AAPL">AAPL — Apple</option>
+        <option value="BTC/USD">BTC/USD — Bitcoin</option>
+        <option value="ETH/USD">ETH/USD — Ethereum</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Start date</label>
+      <input class="form-input" type="date" id="bt-start" value="2023-01-01">
+    </div>
+    <div class="form-group">
+      <label class="form-label">End date</label>
+      <input class="form-input" type="date" id="bt-end">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Starting equity</label>
+      <input class="form-input" type="number" id="bt-equity" value="100000" min="1000">
+    </div>
+    <div class="form-group">
+      <label class="form-label">&nbsp;</label>
+      <button class="btn btn-accent" id="run-btn" onclick="runBacktest()">
+        <i class="ti ti-player-play"></i> Run backtest
+      </button>
+    </div>
+  </div>
+  <div id="bt-progress" style="display:none;margin-top:12px">
+    <div style="font-size:12px;color:#666688" id="bt-progress-label">Downloading data...</div>
+    <div class="progress-bar"><div class="progress-fill" id="bt-progress-fill"></div></div>
+  </div>
+</div>
+
+<!-- Empty state -->
+<div class="empty-state" id="empty-state">
+  <span class="empty-icon">📊</span>
+  Select a ticker and date range, then click <strong>Run backtest</strong>
+</div>
+
+<!-- Results (hidden until run) -->
+<div id="results" style="display:none">
+
+  <!-- Summary badges -->
+  <div class="summary-row" id="summary-badges"></div>
+
+  <div class="results-grid">
+    <!-- Chart -->
+    <div class="card">
+      <div class="card-title">
+        <span>Equity curve</span>
+        <div style="display:flex;gap:16px;font-size:11px;font-weight:400">
+          <span style="color:#ff6600">── Bot strategy</span>
+          <span style="color:#4488ff">── Buy &amp; hold</span>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="equity-chart"></canvas>
+      </div>
+    </div>
+
+    <!-- Stats comparison -->
+    <div class="card">
+      <div class="card-title">Performance comparison</div>
+      <div class="stats-compare">
+        <div class="stat-row header">
+          <span>Metric</span>
+          <span style="text-align:right">Bot</span>
+          <span style="text-align:right">B&H</span>
+        </div>
+        <div class="stat-row" id="stat-return"></div>
+        <div class="stat-row" id="stat-sharpe"></div>
+        <div class="stat-row" id="stat-sortino"></div>
+        <div class="stat-row" id="stat-maxdd"></div>
+        <div class="stat-row" id="stat-calmar"></div>
+        <div class="stat-row" id="stat-winrate"></div>
+        <div class="stat-row" id="stat-trades"></div>
+        <div class="stat-row" id="stat-equity"></div>
+        <div class="stat-row" id="stat-pf"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trade log -->
+  <div class="card">
+    <div class="card-title">
+      Trade log
+      <span id="trade-count" style="font-size:11px;font-weight:400;color:#666688"></span>
+    </div>
+    <div class="trade-log">
+      <div class="trade-row header">
+        <span>Date</span>
+        <span>Side</span>
+        <span>Entry</span>
+        <span>Exit</span>
+        <span>P&L %</span>
+        <span>Reason</span>
+      </div>
+      <div id="trade-rows"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const API = (window.location.protocol === 'file:' ||
+  window.location.hostname === 'localhost' ||
+  window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:5000/api'
+  : window.location.origin + '/api';
+
+const TOKEN = localStorage.getItem('session_token');
+const headers = {
+  'Authorization': `Bearer ${TOKEN || ''}`,
+  'Content-Type' : 'application/json',
+  'ngrok-skip-browser-warning': 'true',
+};
+
+// Set default end date to today
+document.getElementById('bt-end').value = new Date().toISOString().split('T')[0];
+
+let equityChart = null;
+
+async function runBacktest() {
+  const ticker  = document.getElementById('bt-ticker').value;
+  const start   = document.getElementById('bt-start').value;
+  const end     = document.getElementById('bt-end').value;
+  const equity  = parseFloat(document.getElementById('bt-equity').value) || 100000;
+  const btn     = document.getElementById('run-btn');
+
+  if (!start || !end) { alert('Select a date range'); return; }
+  if (new Date(start) >= new Date(end)) { alert('Start date must be before end date'); return; }
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Running...';
+  document.getElementById('empty-state').style.display = 'none';
+  document.getElementById('results').style.display     = 'none';
+  document.getElementById('bt-progress').style.display = 'block';
+
+  // Animate progress bar
+  let pct = 0;
+  const steps = ['Downloading market data...','Computing indicators...','Running simulation...','Comparing to buy & hold...','Building results...'];
+  let stepIdx = 0;
+  const prog = setInterval(() => {
+    pct = Math.min(pct + 3, 90);
+    document.getElementById('bt-progress-fill').style.width = pct + '%';
+    if (pct % 18 === 0 && stepIdx < steps.length) {
+      document.getElementById('bt-progress-label').textContent = steps[stepIdx++];
+    }
+  }, 200);
+
+  try {
+    const r = await fetch(`${API}/backtest/run`, {
+      method: 'POST', headers,
+      body: JSON.stringify({ticker, start_date: start, end_date: end,
+                            starting_equity: equity})
+    });
+
+    clearInterval(prog);
+    document.getElementById('bt-progress-fill').style.width = '100%';
+
+    if (!r.ok) {
+      const err = await r.json();
+      throw new Error(err.error || 'Backtest failed');
+    }
+
+    const data = await r.json();
+    renderResults(data);
+
+  } catch(e) {
+    clearInterval(prog);
+    document.getElementById('empty-state').style.display = 'block';
+    document.getElementById('empty-state').innerHTML =
+      `<span class="empty-icon">❌</span><strong style="color:#ff4455">${e.message}</strong><br>
+       <span style="font-size:13px;color:#666688;margin-top:8px;display:block">Check that the ticker is valid and has data for the selected date range.</span>`;
+  } finally {
+    document.getElementById('bt-progress').style.display = 'none';
+    btn.disabled = false;
+    btn.innerHTML = '<i class="ti ti-player-play"></i> Run backtest';
+  }
+}
+
+function renderResults(d) {
+  document.getElementById('results').style.display = 'block';
+  const bs = d.bot_stats;
+  const bh = d.bnh_stats;
+
+  // Summary badges
+  const botWon  = bs.total_return > bh.total_return;
+  const badges  = [
+    `<span class="badge ${bs.total_return >= 0 ? 'badge-win' : 'badge-loss'}">
+      Bot: ${bs.total_return >= 0 ? '+' : ''}${bs.total_return}%</span>`,
+    `<span class="badge ${bh.total_return >= 0 ? 'badge-win' : 'badge-loss'}">
+      Buy & Hold: ${bh.total_return >= 0 ? '+' : ''}${bh.total_return}%</span>`,
+    `<span class="badge badge-neutral">${bs.n_trades} trades</span>`,
+    `<span class="badge badge-neutral">Win rate: ${bs.win_rate}%</span>`,
+    `<span class="badge ${botWon ? 'badge-win' : 'badge-neutral'}">
+      ${botWon ? '🤖 Bot wins' : '📈 Buy & Hold wins'}</span>`,
+    d.chromosome_found ? '' :
+      '<span class="badge badge-loss">⚠️ No chromosome — train this bot first</span>',
+  ];
+  document.getElementById('summary-badges').innerHTML = badges.join('');
+
+  // Stats rows
+  function statRow(id, label, botVal, bnhVal, format, higherBetter=true) {
+    const botNum = parseFloat(botVal);
+    const bnhNum = parseFloat(bnhVal);
+    const botBetter = higherBetter ? botNum > bnhNum : botNum < bnhNum;
+    const botCls  = botBetter ? 'up' : 'down';
+    const el = document.getElementById(id);
+    el.className = 'stat-row' + (botBetter ? ' winner' : '');
+    el.innerHTML = `<span class="stat-key">${label}</span>
+      <span class="stat-bot ${botCls}">${format(botNum)}</span>
+      <span class="stat-bnh">${format(bnhNum)}</span>`;
+  }
+
+  const pct  = v => (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+  const num  = v => v.toFixed(3);
+  const ddFmt= v => '-' + Math.abs(v).toFixed(2) + '%';
+  const mon  = v => '$' + Math.abs(v).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  const cnt  = v => Math.round(v).toString();
+  const pfFmt= v => v === Infinity ? '∞' : v.toFixed(2) + 'x';
+
+  statRow('stat-return',  'Total return',    bs.total_return,  bh.total_return,  pct);
+  statRow('stat-sharpe',  'Sharpe ratio',    bs.sharpe,        bh.sharpe,        num);
+  statRow('stat-sortino', 'Sortino ratio',   bs.sortino,       bh.sortino,       num);
+  statRow('stat-maxdd',   'Max drawdown',    bs.max_drawdown,  bh.max_drawdown,  ddFmt, false);
+  statRow('stat-calmar',  'Calmar ratio',    bs.calmar,        bh.calmar,        num);
+  statRow('stat-winrate', 'Win rate',        bs.win_rate,      bh.win_rate,      v => v.toFixed(1)+'%');
+  statRow('stat-trades',  'Trades',          bs.n_trades,      bh.n_trades,      cnt, false);
+  statRow('stat-equity',  'Final equity',    bs.final_equity,  bh.final_equity,  mon);
+  statRow('stat-pf',      'Profit factor',   bs.profit_factor, 1,                pfFmt);
+
+  // Equity chart
+  if (equityChart) equityChart.destroy();
+  const ctx = document.getElementById('equity-chart').getContext('2d');
+  equityChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: d.dates.filter((_,i) => i % Math.max(1,Math.floor(d.dates.length/80)) === 0),
+      datasets: [
+        {
+          label: 'Bot strategy',
+          data: d.bot_equity.filter((_,i) => i % Math.max(1,Math.floor(d.dates.length/80)) === 0),
+          borderColor: '#ff6600',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.3,
+          fill: false,
+        },
+        {
+          label: 'Buy & Hold',
+          data: d.bnh_equity.filter((_,i) => i % Math.max(1,Math.floor(d.dates.length/80)) === 0),
+          borderColor: '#4488ff',
+          borderWidth: 1.5,
+          borderDash: [4,4],
+          pointRadius: 0,
+          tension: 0.3,
+          fill: false,
+        },
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: {mode:'index', intersect:false},
+      plugins: {
+        legend: {display:false},
+        tooltip: {
+          callbacks: {
+            label: ctx => ctx.dataset.label + ': $' +
+              ctx.parsed.y.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})
+          }
+        }
+      },
+      scales: {
+        x: {ticks:{maxTicksLimit:8,color:'#666688',font:{size:11}},
+            grid:{display:false},border:{display:false}},
+        y: {ticks:{color:'#666688',font:{size:11},
+                   callback:v=>'$'+v.toLocaleString()},
+            grid:{color:'rgba(255,255,255,.05)'},border:{display:false}}
+      }
+    }
+  });
+
+  // Trade log
+  const trades = d.trades || [];
+  document.getElementById('trade-count').textContent = `${trades.length} trades`;
+  document.getElementById('trade-rows').innerHTML = trades.map(t => {
+    const date = d.dates[t.exit_idx] || '—';
+    const sideCls = t.direction === 'long' ? 'trade-long' : 'trade-short';
+    const pnlCls  = t.pnl_pct >= 0 ? 'trade-win' : 'trade-loss';
+    return `<div class="trade-row">
+      <span style="color:#666688">${date}</span>
+      <span class="${sideCls}">${t.direction}</span>
+      <span>$${t.entry_price}</span>
+      <span>$${t.exit_price}</span>
+      <span class="${pnlCls}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct}%</span>
+      <span style="color:#666688;font-size:10px">${t.reason}</span>
+    </div>`;
+  }).join('') || '<div style="color:#666688;padding:16px;text-align:center">No trades in this period</div>';
+}
+
+// Enter key support
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter') runBacktest();
+});
+</script>
+</body>
+</html>
