@@ -1138,3 +1138,17 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:57:01,672  INFO        QQQ [long] price=712.51  stop=699.28  trailing=inactive  target=742.10  P&L=-71.09
 2026-07-07 10:58:01,897  INFO        QQQ [long] price=712.30  stop=699.28  trailing=inactive  target=742.10  P&L=-78.89
 2026-07-07 10:59:02,196  INFO        QQQ [long] price=712.22  stop=699.28  trailing=inactive  target=742.10  P&L=-75.64
+2026-07-07 11:00:02,760  INFO        QQQ [long] price=712.83  stop=699.28  trailing=inactive  target=742.10  P&L=-54.19
+2026-07-07 11:01:03,041  INFO        QQQ [long] price=713.00  stop=699.28  trailing=inactive  target=742.10  P&L=-34.04
+2026-07-07 11:02:03,275  INFO        QQQ [long] price=712.91  stop=699.28  trailing=inactive  target=742.10  P&L=-37.94
+2026-07-07 11:03:03,506  INFO        QQQ [long] price=713.02  stop=699.28  trailing=inactive  target=742.10  P&L=-34.72
+2026-07-07 11:04:03,737  INFO        QQQ [long] price=712.83  stop=699.28  trailing=inactive  target=742.10  P&L=-47.04
+2026-07-07 11:05:04,013  INFO        QQQ [long] price=713.16  stop=699.28  trailing=inactive  target=742.10  P&L=-27.54
+2026-07-07 11:06:04,255  INFO        QQQ [long] price=713.10  stop=699.28  trailing=inactive  target=742.10  P&L=-26.24
+2026-07-07 11:07:04,504  INFO        QQQ [long] price=713.57  stop=699.28  trailing=inactive  target=742.10  P&L=-1.59
+2026-07-07 11:08:04,897  INFO        QQQ [long] price=713.68  stop=699.28  trailing=inactive  target=742.10  P&L=+10.81
+2026-07-07 11:09:05,103  INFO        QQQ [long] price=713.56  stop=699.28  trailing=inactive  target=742.10  P&L=+3.66
+2026-07-07 11:10:05,365  INFO        QQQ [long] price=713.59  stop=699.28  trailing=inactive  target=742.10  P&L=+3.66
+2026-07-07 11:11:05,644  INFO        QQQ [long] price=712.98  stop=699.28  trailing=inactive  target=742.10  P&L=-33.39
+2026-07-07 11:12:05,885  INFO        QQQ [long] price=713.21  stop=699.28  trailing=inactive  target=742.10  P&L=-27.54
+2026-07-07 11:13:06,125  INFO        QQQ [long] price=713.12  stop=699.28  trailing=inactive  target=742.10  P&L=-23.64

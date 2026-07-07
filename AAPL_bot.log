@@ -1056,3 +1056,16 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:57:11,601  INFO        AAPL [long] price=313.87  stop=306.19  trailing=inactive  target=324.93  P&L=+76.20
 2026-07-07 10:58:11,875  INFO        AAPL [long] price=313.76  stop=306.19  trailing=inactive  target=324.93  P&L=+70.63
 2026-07-07 10:59:12,109  INFO        AAPL [long] price=313.73  stop=306.19  trailing=inactive  target=324.93  P&L=+68.60
+2026-07-07 11:00:12,318  INFO        AAPL [long] price=313.52  stop=306.19  trailing=inactive  target=324.93  P&L=+57.47
+2026-07-07 11:01:12,665  INFO        AAPL [long] price=313.45  stop=306.19  trailing=inactive  target=324.93  P&L=+53.76
+2026-07-07 11:02:12,927  INFO        AAPL [long] price=313.40  stop=306.19  trailing=inactive  target=324.93  P&L=+52.17
+2026-07-07 11:03:13,171  INFO        AAPL [long] price=313.32  stop=306.19  trailing=inactive  target=324.93  P&L=+46.81
+2026-07-07 11:04:13,376  INFO        AAPL [long] price=313.23  stop=306.19  trailing=inactive  target=324.93  P&L=+42.37
+2026-07-07 11:05:13,587  INFO        AAPL [long] price=313.15  stop=306.19  trailing=inactive  target=324.93  P&L=+38.39
+2026-07-07 11:06:13,856  INFO        AAPL [long] price=313.14  stop=306.19  trailing=inactive  target=324.93  P&L=+39.19
+2026-07-07 11:07:14,091  INFO        AAPL [long] price=312.98  stop=306.19  trailing=inactive  target=324.93  P&L=+28.86
+2026-07-07 11:08:14,353  INFO        AAPL [long] price=312.67  stop=306.19  trailing=inactive  target=324.93  P&L=+12.69
+2026-07-07 11:09:14,641  INFO        AAPL [long] price=312.83  stop=306.19  trailing=inactive  target=324.93  P&L=+20.64
+2026-07-07 11:10:14,879  INFO        AAPL [long] price=312.41  stop=306.19  trailing=inactive  target=324.93  P&L=-0.56
+2026-07-07 11:11:15,210  INFO        AAPL [long] price=312.50  stop=306.19  trailing=inactive  target=324.93  P&L=+3.41
+2026-07-07 11:12:15,476  INFO        AAPL [long] price=312.86  stop=306.19  trailing=inactive  target=324.93  P&L=+22.49

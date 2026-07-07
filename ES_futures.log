@@ -1157,3 +1157,19 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^
 ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
 2026-07-07 10:44:31,640  INFO      Retrying in 5 minutes...
+2026-07-07 10:50:17,788  INFO      [FUTURES BOT] Starting: ES (E-mini S&P 500 Futures)
+2026-07-07 10:50:17,788  INFO        Mode       : PAPER
+2026-07-07 10:50:17,788  INFO        Max leverage: 20.0x
+2026-07-07 10:50:17,788  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:50:17,790  INFO        Evolved leverage: 4.1x
+2026-07-07 10:50:17,790  INFO        Stop width: 6.4%
+2026-07-07 10:50:17,790  INFO      [ES] Bot running — checking every 10 minutes
+2026-07-07 10:50:17,790  INFO      [ES] ── Signal check 10:50 ──
+2026-07-07 10:50:18,134  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 10:50:18,682  INFO      [ES] Portfolio=$100,565.87  Price=$7566.75  Position={'qty': 2, 'side': 'long', 'entry_price': 7566.75, 'market_value': 149.63, 'unrealised_pl': -0.2275}
+2026-07-07 10:50:18,682  INFO      [ES] Already LONG — monitoring
+2026-07-07 10:50:18,682  INFO      [ES] Monitoring LONG  entry=7566.75  stop=7082.48  target=8307.69
+2026-07-07 10:52:19,212  INFO      [ES] LONG price=7563.75  stop=7082.48  target=8307.69  P&L=-0.04%
+2026-07-07 10:54:19,843  INFO      [ES] LONG price=7565.75  stop=7082.48  target=8307.69  P&L=-0.01%
+2026-07-07 10:56:20,292  INFO      [ES] LONG price=7566.50  stop=7082.48  target=8307.69  P&L=-0.00%
+2026-07-07 10:58:20,875  INFO      [ES] LONG price=7567.50  stop=6841.02  target=8307.69  P&L=+0.01%

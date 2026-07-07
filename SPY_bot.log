@@ -4850,3 +4850,17 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:56:57,408  INFO        SPY [long] price=748.72  stop=730.77  trailing=inactive  target=764.16  P&L=+471.02
 2026-07-07 10:57:57,652  INFO        SPY [long] price=748.72  stop=730.77  trailing=inactive  target=764.16  P&L=+469.99
 2026-07-07 10:58:57,867  INFO        SPY [long] price=748.64  stop=730.77  trailing=inactive  target=764.16  P&L=+465.85
+2026-07-07 10:59:58,101  INFO        SPY [long] price=748.95  stop=730.77  trailing=inactive  target=764.16  P&L=+486.89
+2026-07-07 11:00:58,371  INFO        SPY [long] price=748.99  stop=730.77  trailing=inactive  target=764.16  P&L=+489.31
+2026-07-07 11:01:58,640  INFO        SPY [long] price=748.94  stop=730.77  trailing=inactive  target=764.16  P&L=+485.86
+2026-07-07 11:02:58,903  INFO        SPY [long] price=749.08  stop=730.77  trailing=inactive  target=764.16  P&L=+494.14
+2026-07-07 11:03:59,235  INFO        SPY [long] price=748.90  stop=730.77  trailing=inactive  target=764.16  P&L=+483.79
+2026-07-07 11:04:59,973  INFO        SPY [long] price=749.15  stop=730.77  trailing=inactive  target=764.16  P&L=+501.73
+2026-07-07 11:06:00,235  INFO        SPY [long] price=749.23  stop=730.77  trailing=inactive  target=764.16  P&L=+500.35
+2026-07-07 11:07:00,474  INFO        SPY [long] price=749.26  stop=730.77  trailing=inactive  target=764.16  P&L=+505.87
+2026-07-07 11:08:00,779  INFO        SPY [long] price=749.28  stop=730.77  trailing=inactive  target=764.16  P&L=+509.32
+2026-07-07 11:09:01,015  INFO        SPY [long] price=749.18  stop=730.77  trailing=inactive  target=764.16  P&L=+501.74
+2026-07-07 11:10:01,514  INFO        SPY [long] price=749.17  stop=730.77  trailing=inactive  target=764.16  P&L=+502.42
+2026-07-07 11:11:01,717  INFO        SPY [long] price=748.91  stop=730.77  trailing=inactive  target=764.16  P&L=+483.79
+2026-07-07 11:12:01,946  INFO        SPY [long] price=749.06  stop=730.77  trailing=inactive  target=764.16  P&L=+494.83
+2026-07-07 11:13:02,266  INFO        SPY [long] price=748.96  stop=730.77  trailing=inactive  target=764.16  P&L=+489.31

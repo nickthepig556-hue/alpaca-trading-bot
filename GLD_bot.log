@@ -13529,3 +13529,14 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-07 10:54:54,941  INFO      Current price   : $380.33
 2026-07-07 10:54:54,941  INFO      Open position   : None
 2026-07-07 10:54:54,941  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 10:59:55,156  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:04:55,157  INFO      =======================================================
+2026-07-07 11:04:55,157  INFO      Daily signal run  [2026-07-07 11:04]
+2026-07-07 11:04:55,157  INFO      =======================================================
+2026-07-07 11:04:55,582  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:04:55,745  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:04:55,868  INFO      Portfolio value : $100,622.96
+2026-07-07 11:04:55,869  INFO      Current price   : $380.39
+2026-07-07 11:04:55,869  INFO      Open position   : None
+2026-07-07 11:04:55,869  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:09:56,066  INFO      Market open — waiting 300s before first signal...

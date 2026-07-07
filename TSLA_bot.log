@@ -1250,3 +1250,14 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:55:02,800  INFO      Current price   : $409.50
 2026-07-07 10:55:02,800  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13921.98, 'unrealised_pl': 180.360004}
 2026-07-07 10:55:02,800  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:00:03,598  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:05:03,599  INFO      =======================================================
+2026-07-07 11:05:03,600  INFO      Daily signal run  [2026-07-07 11:05]
+2026-07-07 11:05:03,600  INFO      =======================================================
+2026-07-07 11:05:04,064  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:05:04,331  INFO      Signal: SELL/HOLD  |  Confidence: 0.273
+2026-07-07 11:05:04,506  INFO      Portfolio value : $100,625.89
+2026-07-07 11:05:04,506  INFO      Current price   : $408.91
+2026-07-07 11:05:04,506  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13902.94, 'unrealised_pl': 199.400004}
+2026-07-07 11:05:04,506  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:10:04,753  INFO      Market open — waiting 300s before first signal...

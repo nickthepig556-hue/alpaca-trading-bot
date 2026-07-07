@@ -1054,3 +1054,15 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^
 ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
 2026-07-07 10:44:37,573  INFO      Retrying in 5 minutes...
+2026-07-07 10:50:23,818  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-07 10:50:23,818  INFO        Mode       : PAPER
+2026-07-07 10:50:23,818  INFO        Max leverage: 15.0x
+2026-07-07 10:50:23,819  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:50:23,820  INFO        Evolved leverage: 3.1x
+2026-07-07 10:50:23,820  INFO        Stop width: 3.1%
+2026-07-07 10:50:23,820  INFO      [CL] Bot running — checking every 10 minutes
+2026-07-07 10:50:23,820  INFO      [CL] ── Signal check 10:50 ──
+2026-07-07 10:50:24,238  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 10:50:24,717  INFO      [CL] Portfolio=$100,556.89  Price=$70.44  Position=None
+2026-07-07 10:50:24,717  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 10:50:24,717  INFO      [CL] Signal complete. Sleeping 600s...

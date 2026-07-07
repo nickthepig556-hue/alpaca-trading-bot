@@ -1074,3 +1074,17 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:57:07,416  INFO        AMZN [long] price=246.20  stop=240.10  trailing=inactive  target=254.80  P&L=+38.24
 2026-07-07 10:58:07,673  INFO        AMZN [long] price=245.93  stop=240.10  trailing=inactive  target=254.80  P&L=+29.76
 2026-07-07 10:59:07,913  INFO        AMZN [long] price=245.68  stop=240.10  trailing=inactive  target=254.80  P&L=+19.84
+2026-07-07 11:00:08,166  INFO        AMZN [long] price=245.74  stop=240.10  trailing=inactive  target=254.80  P&L=+23.84
+2026-07-07 11:01:08,535  INFO        AMZN [long] price=245.83  stop=240.10  trailing=inactive  target=254.80  P&L=+26.56
+2026-07-07 11:02:08,775  INFO        AMZN [long] price=245.62  stop=240.10  trailing=inactive  target=254.80  P&L=+19.84
+2026-07-07 11:03:08,980  INFO        AMZN [long] price=245.71  stop=240.10  trailing=inactive  target=254.80  P&L=+22.72
+2026-07-07 11:04:09,217  INFO        AMZN [long] price=245.79  stop=240.10  trailing=inactive  target=254.80  P&L=+25.28
+2026-07-07 11:05:09,471  INFO        AMZN [long] price=245.85  stop=240.10  trailing=inactive  target=254.80  P&L=+26.24
+2026-07-07 11:06:09,810  INFO        AMZN [long] price=245.69  stop=240.10  trailing=inactive  target=254.80  P&L=+22.08
+2026-07-07 11:07:10,056  INFO        AMZN [long] price=245.54  stop=240.10  trailing=inactive  target=254.80  P&L=+17.28
+2026-07-07 11:08:10,310  INFO        AMZN [long] price=245.38  stop=240.10  trailing=inactive  target=254.80  P&L=+10.88
+2026-07-07 11:09:10,578  INFO        AMZN [long] price=245.30  stop=240.10  trailing=inactive  target=254.80  P&L=+9.60
+2026-07-07 11:10:10,903  INFO        AMZN [long] price=245.23  stop=240.10  trailing=inactive  target=254.80  P&L=+6.88
+2026-07-07 11:11:11,260  INFO        AMZN [long] price=245.24  stop=240.10  trailing=inactive  target=254.80  P&L=+7.53
+2026-07-07 11:12:11,507  INFO        AMZN [long] price=245.19  stop=240.10  trailing=inactive  target=254.80  P&L=+6.24
+2026-07-07 11:13:11,725  INFO        AMZN [long] price=245.32  stop=240.10  trailing=inactive  target=254.80  P&L=+9.47

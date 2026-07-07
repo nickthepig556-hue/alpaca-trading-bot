@@ -961,3 +961,16 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^
 ValueError: operands could not be broadcast together with shapes (167,12) (17,) 
 2026-07-07 10:44:29,757  INFO      Retrying in 5 minutes...
+2026-07-07 10:50:15,837  INFO      [FUTURES BOT] Starting: ETH/USD (Ethereum Futures)
+2026-07-07 10:50:15,837  INFO        Mode       : PAPER
+2026-07-07 10:50:15,837  INFO        Max leverage: 10.0x
+2026-07-07 10:50:15,837  INFO        Trading hours: 24/7
+2026-07-07 10:50:15,839  INFO        Evolved leverage: 3.7x
+2026-07-07 10:50:15,839  INFO        Stop width: 6.4%
+2026-07-07 10:50:15,839  INFO      [ETH/USD] Bot running — checking every 10 minutes
+2026-07-07 10:50:15,839  INFO      [ETH/USD] ── Signal check 10:50 ──
+2026-07-07 10:50:16,204  INFO      [ETH/USD] Signal: LONG  |  Confidence: 0.628  |  Leverage: 1.51x
+2026-07-07 10:50:16,750  INFO      [ETH/USD] Portfolio=$100,601.07  Price=$1804.70  Position=None
+2026-07-07 10:50:16,750  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,573)
+2026-07-07 10:50:16,835  INFO      [FUTURES] BUY LONG 4x ETH/USD  [signal]  id=422dedd6-4b25-48a6-a326-341851b65175
+2026-07-07 10:50:19,893  INFO      [ETH/USD] Signal complete. Sleeping 600s...

@@ -305,7 +305,7 @@ def api_positions():
         return jsonify([
             {
                 "symbol"       : p.symbol,
-                "qty"          : int(p.qty),
+                "qty"          : float(p.qty),
                 "entry_price"  : round(safe_float(p.avg_entry_price), 2),
                 "current_price": round(safe_float(p.current_price), 2),
                 "market_value" : round(safe_float(p.market_value), 2),

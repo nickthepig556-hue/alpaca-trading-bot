@@ -1143,3 +1143,17 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 10:56:59,547  INFO        NVDA [long] price=196.89  stop=193.48  trailing=inactive  target=205.33  P&L=-41.94
 2026-07-07 10:57:59,806  INFO        NVDA [long] price=196.74  stop=193.48  trailing=inactive  target=205.33  P&L=-55.63
 2026-07-07 10:59:00,042  INFO        NVDA [long] price=196.95  stop=193.48  trailing=inactive  target=205.33  P&L=-37.79
+2026-07-07 11:00:00,566  INFO        NVDA [long] price=197.46  stop=193.48  trailing=inactive  target=205.33  P&L=+2.88
+2026-07-07 11:01:00,821  INFO        NVDA [long] price=197.68  stop=193.48  trailing=inactive  target=205.33  P&L=+21.14
+2026-07-07 11:02:01,047  INFO        NVDA [long] price=197.63  stop=193.48  trailing=inactive  target=205.33  P&L=+21.56
+2026-07-07 11:03:01,279  INFO        NVDA [long] price=197.76  stop=193.48  trailing=inactive  target=205.33  P&L=+26.54
+2026-07-07 11:04:01,548  INFO        NVDA [long] price=197.73  stop=193.48  trailing=inactive  target=205.33  P&L=+24.05
+2026-07-07 11:05:01,956  INFO        NVDA [long] price=198.18  stop=193.48  trailing=inactive  target=205.33  P&L=+63.06
+2026-07-07 11:06:02,198  INFO        NVDA [long] price=198.12  stop=193.48  trailing=inactive  target=205.33  P&L=+58.08
+2026-07-07 11:07:02,418  INFO        NVDA [long] price=198.21  stop=193.48  trailing=inactive  target=205.33  P&L=+65.33
+2026-07-07 11:08:02,617  INFO        NVDA [long] price=198.31  stop=193.48  trailing=inactive  target=205.33  P&L=+70.53
+2026-07-07 11:09:02,872  INFO        NVDA [long] price=198.10  stop=193.48  trailing=inactive  target=205.33  P&L=+53.93
+2026-07-07 11:10:03,120  INFO        NVDA [long] price=198.00  stop=193.48  trailing=inactive  target=205.33  P&L=+45.62
+2026-07-07 11:11:03,423  INFO        NVDA [long] price=197.74  stop=193.48  trailing=inactive  target=205.33  P&L=+24.05
+2026-07-07 11:12:03,668  INFO        NVDA [long] price=197.72  stop=193.48  trailing=inactive  target=205.33  P&L=+20.31
+2026-07-07 11:13:03,919  INFO        NVDA [long] price=197.52  stop=193.48  trailing=inactive  target=205.33  P&L=+8.28

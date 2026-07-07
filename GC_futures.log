@@ -1093,3 +1093,16 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^
 ValueError: operands could not be broadcast together with shapes (53,12) (17,) 
 2026-07-07 10:44:35,675  INFO      Retrying in 5 minutes...
+2026-07-07 10:50:21,804  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-07 10:50:21,805  INFO        Mode       : PAPER
+2026-07-07 10:50:21,805  INFO        Max leverage: 15.0x
+2026-07-07 10:50:21,805  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-07 10:50:21,806  INFO        Evolved leverage: 3.2x
+2026-07-07 10:50:21,807  INFO        Stop width: 5.1%
+2026-07-07 10:50:21,807  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-07 10:50:21,807  INFO      [GC] ── Signal check 10:50 ──
+2026-07-07 10:50:22,182  INFO      [GC] Signal: LONG  |  Confidence: 0.599  |  Leverage: 1.32x
+2026-07-07 10:50:22,678  INFO      [GC] Portfolio=$100,556.66  Price=$4156.40  Position=None
+2026-07-07 10:50:22,678  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,083)
+2026-07-07 10:50:22,678  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 10:50:22,678  INFO      [GC] Signal complete. Sleeping 600s...

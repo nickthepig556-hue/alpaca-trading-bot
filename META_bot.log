@@ -844,3 +844,14 @@
 2026-07-07 10:55:08,963  INFO      Current price   : $607.89
 2026-07-07 10:55:08,963  INFO      Open position   : None
 2026-07-07 10:55:08,963  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:00:09,285  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:05:09,286  INFO      =======================================================
+2026-07-07 11:05:09,286  INFO      Daily signal run  [2026-07-07 11:05]
+2026-07-07 11:05:09,286  INFO      =======================================================
+2026-07-07 11:05:09,652  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:05:09,795  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:05:09,998  INFO      Portfolio value : $100,622.92
+2026-07-07 11:05:09,998  INFO      Current price   : $606.97
+2026-07-07 11:05:09,998  INFO      Open position   : None
+2026-07-07 11:05:09,999  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:10:10,216  INFO      Market open — waiting 300s before first signal...
