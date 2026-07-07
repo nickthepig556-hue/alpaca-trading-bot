@@ -1116,3 +1116,13 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 10:50:20,759  INFO      [NQ] Portfolio=$100,559.82  Price=$29524.75  Position=None
 2026-07-07 10:50:20,759  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,615)
 2026-07-07 10:50:20,759  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:00:20,760  INFO      [NQ] ── Signal check 11:00 ──
+2026-07-07 11:00:20,926  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:00:21,340  INFO      [NQ] Portfolio=$100,520.91  Price=$29538.00  Position=None
+2026-07-07 11:00:21,340  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,611)
+2026-07-07 11:00:21,340  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:10:21,341  INFO      [NQ] ── Signal check 11:10 ──
+2026-07-07 11:10:21,597  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:10:22,234  INFO      [NQ] Portfolio=$100,542.04  Price=$29538.50  Position=None
+2026-07-07 11:10:22,235  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,614)
+2026-07-07 11:10:22,235  INFO      [NQ] Signal complete. Sleeping 600s...

@@ -1173,3 +1173,12 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 10:54:19,843  INFO      [ES] LONG price=7565.75  stop=7082.48  target=8307.69  P&L=-0.01%
 2026-07-07 10:56:20,292  INFO      [ES] LONG price=7566.50  stop=7082.48  target=8307.69  P&L=-0.00%
 2026-07-07 10:58:20,875  INFO      [ES] LONG price=7567.50  stop=6841.02  target=8307.69  P&L=+0.01%
+2026-07-07 11:00:21,441  INFO      [ES] LONG price=7567.50  stop=6841.02  target=8307.69  P&L=+0.01%
+2026-07-07 11:02:21,645  INFO      [ES] Position closed externally
+2026-07-07 11:02:21,645  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-07 11:12:21,646  INFO      [ES] ── Signal check 11:12 ──
+2026-07-07 11:12:21,833  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 11:12:22,234  INFO      [ES] Portfolio=$100,565.39  Price=$7568.50  Position=None
+2026-07-07 11:12:22,234  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,085)
+2026-07-07 11:12:22,234  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-07 11:12:22,235  INFO      [ES] Signal complete. Sleeping 600s...

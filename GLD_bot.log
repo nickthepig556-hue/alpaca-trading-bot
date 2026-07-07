@@ -13540,3 +13540,52 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-07 11:04:55,869  INFO      Open position   : None
 2026-07-07 11:04:55,869  INFO      Signal check complete. Sleeping 5 minutes until next check.
 2026-07-07 11:09:56,066  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:14:56,066  INFO      =======================================================
+2026-07-07 11:14:56,067  INFO      Daily signal run  [2026-07-07 11:14]
+2026-07-07 11:14:56,067  INFO      =======================================================
+2026-07-07 11:14:56,442  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:14:56,639  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:14:56,765  INFO      Portfolio value : $100,521.07
+2026-07-07 11:14:56,766  INFO      Current price   : $380.15
+2026-07-07 11:14:56,766  INFO      Open position   : None
+2026-07-07 11:14:56,766  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:19:57,105  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:24:57,106  INFO      =======================================================
+2026-07-07 11:24:57,107  INFO      Daily signal run  [2026-07-07 11:24]
+2026-07-07 11:24:57,107  INFO      =======================================================
+2026-07-07 11:24:57,484  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:24:57,650  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:24:57,787  INFO      Portfolio value : $100,559.34
+2026-07-07 11:24:57,787  INFO      Current price   : $380.36
+2026-07-07 11:24:57,787  INFO      Open position   : None
+2026-07-07 11:24:57,787  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:29:57,976  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:34:57,977  INFO      =======================================================
+2026-07-07 11:34:57,978  INFO      Daily signal run  [2026-07-07 11:34]
+2026-07-07 11:34:57,978  INFO      =======================================================
+2026-07-07 11:34:58,416  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:34:58,576  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:34:58,706  INFO      Portfolio value : $100,592.70
+2026-07-07 11:34:58,706  INFO      Current price   : $380.42
+2026-07-07 11:34:58,706  INFO      Open position   : None
+2026-07-07 11:34:58,706  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:39:58,904  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:44:58,905  INFO      =======================================================
+2026-07-07 11:44:58,906  INFO      Daily signal run  [2026-07-07 11:44]
+2026-07-07 11:44:58,906  INFO      =======================================================
+2026-07-07 11:44:59,538  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:44:59,742  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:45:00,351  INFO      Portfolio value : $100,620.29
+2026-07-07 11:45:00,352  INFO      Current price   : $380.49
+2026-07-07 11:45:00,352  INFO      Open position   : None
+2026-07-07 11:45:00,352  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:50:00,633  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:55:00,635  INFO      =======================================================
+2026-07-07 11:55:00,635  INFO      Daily signal run  [2026-07-07 11:55]
+2026-07-07 11:55:00,635  INFO      =======================================================
+2026-07-07 11:55:00,993  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 11:55:01,189  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 11:55:01,312  INFO      Portfolio value : $100,504.36
+2026-07-07 11:55:01,312  INFO      Current price   : $380.18
+2026-07-07 11:55:01,313  INFO      Open position   : None
+2026-07-07 11:55:01,313  INFO      Signal check complete. Sleeping 5 minutes until next check.

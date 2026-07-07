@@ -1066,3 +1066,13 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 10:50:24,717  INFO      [CL] Portfolio=$100,556.89  Price=$70.44  Position=None
 2026-07-07 10:50:24,717  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
 2026-07-07 10:50:24,717  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:00:24,718  INFO      [CL] ── Signal check 11:00 ──
+2026-07-07 11:00:24,883  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:00:25,311  INFO      [CL] Portfolio=$100,521.45  Price=$70.47  Position=None
+2026-07-07 11:00:25,311  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:00:25,311  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:10:25,312  INFO      [CL] ── Signal check 11:10 ──
+2026-07-07 11:10:25,476  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:10:25,909  INFO      [CL] Portfolio=$100,551.71  Price=$70.44  Position=None
+2026-07-07 11:10:25,909  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:10:25,909  INFO      [CL] Signal complete. Sleeping 600s...

@@ -855,3 +855,52 @@
 2026-07-07 11:05:09,998  INFO      Open position   : None
 2026-07-07 11:05:09,999  INFO      Signal check complete. Sleeping 5 minutes until next check.
 2026-07-07 11:10:10,216  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:15:10,217  INFO      =======================================================
+2026-07-07 11:15:10,217  INFO      Daily signal run  [2026-07-07 11:15]
+2026-07-07 11:15:10,217  INFO      =======================================================
+2026-07-07 11:15:10,602  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:15:10,748  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:15:10,867  INFO      Portfolio value : $100,523.54
+2026-07-07 11:15:10,867  INFO      Current price   : $605.64
+2026-07-07 11:15:10,867  INFO      Open position   : None
+2026-07-07 11:15:10,867  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:20:11,066  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:25:11,067  INFO      =======================================================
+2026-07-07 11:25:11,067  INFO      Daily signal run  [2026-07-07 11:25]
+2026-07-07 11:25:11,067  INFO      =======================================================
+2026-07-07 11:25:11,472  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:25:11,647  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:25:11,774  INFO      Portfolio value : $100,546.37
+2026-07-07 11:25:11,774  INFO      Current price   : $607.10
+2026-07-07 11:25:11,774  INFO      Open position   : None
+2026-07-07 11:25:11,774  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:30:11,991  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:35:11,992  INFO      =======================================================
+2026-07-07 11:35:11,992  INFO      Daily signal run  [2026-07-07 11:35]
+2026-07-07 11:35:11,992  INFO      =======================================================
+2026-07-07 11:35:12,392  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:35:12,591  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:35:12,717  INFO      Portfolio value : $100,595.73
+2026-07-07 11:35:12,717  INFO      Current price   : $608.11
+2026-07-07 11:35:12,717  INFO      Open position   : None
+2026-07-07 11:35:12,717  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:40:12,973  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:45:12,974  INFO      =======================================================
+2026-07-07 11:45:12,975  INFO      Daily signal run  [2026-07-07 11:45]
+2026-07-07 11:45:12,975  INFO      =======================================================
+2026-07-07 11:45:13,403  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:45:13,555  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:45:13,747  INFO      Portfolio value : $100,600.29
+2026-07-07 11:45:13,748  INFO      Current price   : $607.74
+2026-07-07 11:45:13,748  INFO      Open position   : None
+2026-07-07 11:45:13,748  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:50:13,975  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:55:13,976  INFO      =======================================================
+2026-07-07 11:55:13,976  INFO      Daily signal run  [2026-07-07 11:55]
+2026-07-07 11:55:13,976  INFO      =======================================================
+2026-07-07 11:55:14,427  INFO      Fetched 70 bars for META  (2026-03-26 → 2026-07-07)
+2026-07-07 11:55:14,621  INFO      Signal: SELL/HOLD  |  Confidence: 0.336
+2026-07-07 11:55:14,744  INFO      Portfolio value : $100,480.96
+2026-07-07 11:55:14,744  INFO      Current price   : $608.34
+2026-07-07 11:55:14,744  INFO      Open position   : None
+2026-07-07 11:55:14,744  INFO      Signal check complete. Sleeping 5 minutes until next check.

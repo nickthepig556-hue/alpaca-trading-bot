@@ -5,7 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Prometheus Investments</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js">
+function toggleBotsPanel() {
+  const botsCard = document.getElementById('bots-list').closest('.card');
+  const grid = document.querySelector('.main-grid');
+  const icon = document.getElementById('bots-toggle-icon');
+  const isCollapsed = botsCard.classList.toggle('bots-panel-small');
+  document.getElementById('bots-list').classList.toggle('bots-collapsed', isCollapsed);
+  grid.classList.toggle('panel-collapsed', isCollapsed);
+  icon.className = isCollapsed ? 'ti ti-chevrons-left' : 'ti ti-chevrons-right';
+  localStorage.setItem('bots_collapsed', isCollapsed ? '1' : '0');
+}
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('bots_collapsed') === '1') toggleBotsPanel();
+});
+
+</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,sans-serif;background:#000000;color:#f0f0ff;font-size:14px;padding:24px;min-height:100vh}
@@ -112,6 +127,20 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
   .metric-value{font-size:16px}
 }
 .refresh-hint{font-size:11px;color:#555568;text-align:right;margin-top:6px}
+
+.bots-panel-collapsed .bots-list { display: none !important; }
+.bots-panel-collapsed { min-width: 48px !important; max-width: 48px !important; }
+.bots-panel-collapsed .card-title { display: none; }
+.bots-panel-collapsed #bots-toggle-btn { margin: 0 auto; display: flex; }
+.main-grid.bots-collapsed { grid-template-columns: 1fr 48px; }
+
+
+.bots-collapsed > .bots-list { display:none !important }
+.bots-panel-small { max-width:52px !important; min-width:52px !important; overflow:hidden }
+.bots-panel-small .card-title { display:none }
+.bots-panel-small .card-header { justify-content:center }
+.main-grid.panel-collapsed { grid-template-columns: 1fr 52px !important }
+
 </style>
 </head>
 <body>
@@ -175,8 +204,12 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
   </div>
 
   <div class="card">
-    <div class="card-header"><span class="card-title">Your bots</span>
-      <span class="spinner" id="bots-spinner" style="display:none"></span>
+    <div class="card-header">
+      <span class="card-title">Your bots <span class="spinner" id="bots-spinner" style="display:none"></span></span>
+      <button class="btn" onclick="toggleBotsPanel()" id="bots-toggle-btn"
+        style="font-size:12px;padding:4px 8px" title="Collapse bots list">
+        <i class="ti ti-chevrons-right" id="bots-toggle-icon"></i>
+      </button>
     </div>
     <div class="bots-list" id="bots-list"><div style="color:#898781;font-size:13px">Loading...</div></div>
   </div>

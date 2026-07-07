@@ -1261,3 +1261,52 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-07 11:05:04,506  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13902.94, 'unrealised_pl': 199.400004}
 2026-07-07 11:05:04,506  INFO      Signal check complete. Sleeping 5 minutes until next check.
 2026-07-07 11:10:04,753  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:15:04,753  INFO      =======================================================
+2026-07-07 11:15:04,754  INFO      Daily signal run  [2026-07-07 11:15]
+2026-07-07 11:15:04,754  INFO      =======================================================
+2026-07-07 11:15:05,159  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:15:05,342  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 11:15:05,479  INFO      Portfolio value : $100,528.06
+2026-07-07 11:15:05,480  INFO      Current price   : $406.60
+2026-07-07 11:15:05,480  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13825.7634, 'unrealised_pl': 276.576604}
+2026-07-07 11:15:05,480  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:20:05,827  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:25:05,827  INFO      =======================================================
+2026-07-07 11:25:05,827  INFO      Daily signal run  [2026-07-07 11:25]
+2026-07-07 11:25:05,828  INFO      =======================================================
+2026-07-07 11:25:06,171  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:25:06,351  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 11:25:06,481  INFO      Portfolio value : $100,557.81
+2026-07-07 11:25:06,481  INFO      Current price   : $407.08
+2026-07-07 11:25:06,481  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13839.7, 'unrealised_pl': 262.640004}
+2026-07-07 11:25:06,482  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:30:06,692  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:35:06,694  INFO      =======================================================
+2026-07-07 11:35:06,714  INFO      Daily signal run  [2026-07-07 11:35]
+2026-07-07 11:35:06,714  INFO      =======================================================
+2026-07-07 11:35:07,070  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:35:07,234  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 11:35:07,370  INFO      Portfolio value : $100,594.92
+2026-07-07 11:35:07,371  INFO      Current price   : $406.28
+2026-07-07 11:35:07,371  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13813.86, 'unrealised_pl': 288.480004}
+2026-07-07 11:35:07,371  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:40:07,561  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:45:07,562  INFO      =======================================================
+2026-07-07 11:45:07,562  INFO      Daily signal run  [2026-07-07 11:45]
+2026-07-07 11:45:07,562  INFO      =======================================================
+2026-07-07 11:45:07,974  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:45:08,158  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 11:45:08,305  INFO      Portfolio value : $100,602.66
+2026-07-07 11:45:08,305  INFO      Current price   : $406.84
+2026-07-07 11:45:08,305  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13832.662, 'unrealised_pl': 269.678004}
+2026-07-07 11:45:08,305  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 11:50:08,502  INFO      Market open — waiting 300s before first signal...
+2026-07-07 11:55:08,503  INFO      =======================================================
+2026-07-07 11:55:08,504  INFO      Daily signal run  [2026-07-07 11:55]
+2026-07-07 11:55:08,504  INFO      =======================================================
+2026-07-07 11:55:08,866  INFO      Fetched 70 bars for TSLA  (2026-03-26 → 2026-07-07)
+2026-07-07 11:55:09,058  INFO      Signal: SELL/HOLD  |  Confidence: 0.269
+2026-07-07 11:55:09,363  INFO      Portfolio value : $100,499.99
+2026-07-07 11:55:09,363  INFO      Current price   : $407.31
+2026-07-07 11:55:09,364  INFO      Open position   : {'qty': 34, 'side': 'short', 'entry_price': 414.774706, 'market_value': -13846.4966, 'unrealised_pl': 255.843404}
+2026-07-07 11:55:09,364  INFO      Signal check complete. Sleeping 5 minutes until next check.

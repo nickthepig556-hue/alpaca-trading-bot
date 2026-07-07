@@ -1106,3 +1106,15 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 10:50:22,678  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,083)
 2026-07-07 10:50:22,678  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
 2026-07-07 10:50:22,678  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 11:00:22,679  INFO      [GC] ── Signal check 11:00 ──
+2026-07-07 11:00:22,845  INFO      [GC] Signal: LONG  |  Confidence: 0.599  |  Leverage: 1.32x
+2026-07-07 11:00:23,256  INFO      [GC] Portfolio=$100,521.44  Price=$4156.60  Position=None
+2026-07-07 11:00:23,256  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,078)
+2026-07-07 11:00:23,256  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 11:00:23,256  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 11:10:23,257  INFO      [GC] ── Signal check 11:10 ──
+2026-07-07 11:10:23,485  INFO      [GC] Signal: LONG  |  Confidence: 0.599  |  Leverage: 1.32x
+2026-07-07 11:10:23,985  INFO      [GC] Portfolio=$100,541.00  Price=$4156.80  Position=None
+2026-07-07 11:10:23,985  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,081)
+2026-07-07 11:10:23,985  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 11:10:23,985  INFO      [GC] Signal complete. Sleeping 600s...
