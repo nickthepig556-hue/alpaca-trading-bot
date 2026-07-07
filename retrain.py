@@ -131,6 +131,11 @@ def retrain_ticker(ticker: str, config: dict) -> bool:
 
     Returns True if retrain succeeded.
     """
+    # Use global GA_CONFIG as base, override with bot-specific settings
+    from genetic_algorithm import GA_CONFIG as GLOBAL_GA
+    ga_config = {**GLOBAL_GA, **config.get('ga', {})}
+    config = {**config, 'ga': ga_config}
+
     log.info(f"\n{'='*55}")
     log.info(f"  Retraining: {ticker}")
     log.info(f"  {datetime.now().strftime('%Y-%m-%d %H:%M')}")
@@ -220,7 +225,6 @@ def retrain_all() -> dict[str, bool]:
         ticker: cfg for ticker, cfg in BOT_CONFIGS.items()
         if ticker not in FUTURES_CONFIGS
         and not ticker.endswith('_FUT')
-        and cfg.get('chromosome_file', '').endswith('_best_chromosome.csv')
     }
 
     results = {}

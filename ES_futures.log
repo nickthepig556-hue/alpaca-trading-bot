@@ -398,3 +398,10 @@
 2026-07-06 23:15:38,087  INFO      [ES] LONG price=7566.75  stop=7350.41  target=8294.96  P&L=-0.29%
 2026-07-06 23:17:38,581  INFO      [ES] LONG price=7566.50  stop=7350.41  target=8294.96  P&L=-0.29%
 2026-07-06 23:19:39,097  INFO      [ES] LONG price=7565.00  stop=7350.41  target=8294.96  P&L=-0.31%
+2026-07-06 23:21:39,913  INFO      [ES] LONG price=7565.25  stop=7350.41  target=8294.96  P&L=-0.31%
+2026-07-06 23:23:40,465  INFO      [ES] LONG price=7565.75  stop=7350.41  target=8294.96  P&L=-0.30%
+2026-07-06 23:25:40,944  INFO      [ES] LONG price=7565.25  stop=7350.41  target=8294.96  P&L=-0.31%
+2026-07-06 23:27:41,502  INFO      [ES] LONG price=7565.75  stop=7350.41  target=8294.96  P&L=-0.30%
+2026-07-06 23:29:42,061  INFO      [ES] LONG price=7564.75  stop=7350.41  target=8294.96  P&L=-0.32%
+2026-07-06 23:31:42,581  INFO      [ES] LONG price=7564.50  stop=7350.41  target=8294.96  P&L=-0.32%
+2026-07-06 23:33:43,115  INFO      [ES] LONG price=7566.00  stop=7350.41  target=8294.96  P&L=-0.30%

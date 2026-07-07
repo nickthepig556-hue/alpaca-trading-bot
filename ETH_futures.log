@@ -393,3 +393,13 @@
 2026-07-06 23:12:53,635  INFO      [ETH/USD] Portfolio=$100,199.79  Price=$1761.20  Position=None
 2026-07-06 23:12:53,635  INFO      [ETH/USD] FLAT signal — no trade
 2026-07-06 23:12:53,635  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:22:53,636  INFO      [ETH/USD] ── Signal check 23:22 ──
+2026-07-06 23:22:53,826  INFO      [ETH/USD] Signal: FLAT  |  Confidence: 0.375  |  Leverage: 1.00x
+2026-07-06 23:22:54,289  INFO      [ETH/USD] Portfolio=$100,233.67  Price=$1759.68  Position=None
+2026-07-06 23:22:54,290  INFO      [ETH/USD] FLAT signal — no trade
+2026-07-06 23:22:54,290  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:32:54,290  INFO      [ETH/USD] ── Signal check 23:32 ──
+2026-07-06 23:32:54,486  INFO      [ETH/USD] Signal: FLAT  |  Confidence: 0.375  |  Leverage: 1.00x
+2026-07-06 23:32:54,931  INFO      [ETH/USD] Portfolio=$100,279.69  Price=$1766.36  Position=None
+2026-07-06 23:32:54,931  INFO      [ETH/USD] FLAT signal — no trade
+2026-07-06 23:32:54,931  INFO      [ETH/USD] Signal complete. Sleeping 600s...

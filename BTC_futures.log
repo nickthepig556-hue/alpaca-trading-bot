@@ -875,3 +875,23 @@ KeyError: 'stop_loss_pct'
 2026-07-06 23:13:03,453  INFO      [BTC/USD] Portfolio=$100,199.79  Price=$62925.08  Position=None
 2026-07-06 23:13:03,453  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
 2026-07-06 23:13:03,453  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:22:52,525  INFO      [BTC/USD] ── Signal check 23:22 ──
+2026-07-06 23:22:52,723  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 23:22:53,220  INFO      [BTC/USD] Portfolio=$100,233.67  Price=$62910.10  Position=None
+2026-07-06 23:22:53,221  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 23:22:53,221  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:23:03,454  INFO      [BTC/USD] ── Signal check 23:23 ──
+2026-07-06 23:23:03,652  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 23:23:04,158  INFO      [BTC/USD] Portfolio=$100,243.75  Price=$62895.96  Position=None
+2026-07-06 23:23:04,158  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 23:23:04,158  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:32:53,221  INFO      [BTC/USD] ── Signal check 23:32 ──
+2026-07-06 23:32:53,391  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 23:32:53,863  INFO      [BTC/USD] Portfolio=$100,279.69  Price=$63063.82  Position=None
+2026-07-06 23:32:53,863  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 23:32:53,863  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-06 23:33:04,158  INFO      [BTC/USD] ── Signal check 23:33 ──
+2026-07-06 23:33:04,377  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.320  |  Leverage: 1.00x
+2026-07-06 23:33:04,894  INFO      [BTC/USD] Portfolio=$100,280.25  Price=$63085.80  Position=None
+2026-07-06 23:33:04,895  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-06 23:33:04,895  INFO      [BTC/USD] Signal complete. Sleeping 600s...

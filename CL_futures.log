@@ -392,3 +392,13 @@
 2026-07-06 23:13:00,527  INFO      [CL] Portfolio=$100,199.79  Price=$69.04  Position=None
 2026-07-06 23:13:00,528  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
 2026-07-06 23:13:00,528  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 23:23:00,528  INFO      [CL] ── Signal check 23:23 ──
+2026-07-06 23:23:00,691  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 23:23:01,107  INFO      [CL] Portfolio=$100,233.67  Price=$69.02  Position=None
+2026-07-06 23:23:01,109  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 23:23:01,109  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-06 23:33:01,110  INFO      [CL] ── Signal check 23:33 ──
+2026-07-06 23:33:01,305  INFO      [CL] Signal: SHORT  |  Confidence: 0.088  |  Leverage: 1.00x
+2026-07-06 23:33:01,835  INFO      [CL] Portfolio=$100,280.25  Price=$69.15  Position=None
+2026-07-06 23:33:01,835  INFO      Risk guard blocked trade: Confidence 0.09 below futures threshold 0.5
+2026-07-06 23:33:01,835  INFO      [CL] Signal complete. Sleeping 600s...
