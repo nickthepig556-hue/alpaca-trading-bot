@@ -108,7 +108,7 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
 
 def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame,
                     stop_loss_pct: float = 0.05,
-                    take_profit_pct: float = 0.15) -> dict:
+                    take_profit_pct: float = 0.50) -> dict:
     """
     Realistic long-only backtest matching the actual bot behaviour:
       - Enter on BUY signal (1)

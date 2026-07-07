@@ -51,24 +51,7 @@ BOT_CONFIGS = {
         "log_file"           : "GLD_bot.log",
 
         # GA training settings
-        "ga": {
-            "population_size"    : 100,
-            "generations"        : 200,
-            "elite_count"        : 5,
-            "tournament_size"    : 5,
-            "crossover_rate"     : 0.85,
-            "mutation_rate_init" : 0.15,
-            "mutation_rate_min"  : 0.01,
-            "mutation_rate_max"  : 0.30,
-            "mutation_step"      : 0.15,
-            "stagnation_window"  : 20,
-            "fitness_alpha"      : 0.60,
-            "fitness_beta"       : 0.40,
-            "drawdown_penalty"   : 0.50,
-            "max_drawdown_thresh": 0.20,
-            "min_trades"         : 10,
-            "random_seed"        : 42,
-        },
+        "ga": {},
 
         # Risk / execution settings
         "risk": {
@@ -93,24 +76,7 @@ BOT_CONFIGS = {
         "chromosome_file"    : "SPY_best_chromosome.csv",
         "log_file"           : "SPY_bot.log",
 
-        "ga": {
-            "population_size"    : 120,    # larger pop — SPY has more noise
-            "generations"        : 250,
-            "elite_count"        : 6,
-            "tournament_size"    : 5,
-            "crossover_rate"     : 0.85,
-            "mutation_rate_init" : 0.12,
-            "mutation_rate_min"  : 0.01,
-            "mutation_rate_max"  : 0.25,
-            "mutation_step"      : 0.12,
-            "stagnation_window"  : 25,
-            "fitness_alpha"      : 0.55,
-            "fitness_beta"       : 0.45,
-            "drawdown_penalty"   : 0.60,   # stricter — SPY drawdowns can be deep
-            "max_drawdown_thresh": 0.15,
-            "min_trades"         : 12,
-            "random_seed"        : 43,
-        },
+        "ga": {},
 
         "risk": {
             "min_allocation_pct" : 0.05,
