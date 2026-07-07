@@ -401,3 +401,13 @@
 2026-07-06 23:32:56,803  INFO      [NQ] Portfolio=$100,279.69  Price=$29601.75  Position=None
 2026-07-06 23:32:56,803  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,018)
 2026-07-06 23:32:56,803  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-06 23:42:56,803  INFO      [NQ] ── Signal check 23:42 ──
+2026-07-06 23:42:56,947  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-06 23:42:57,371  INFO      [NQ] Portfolio=$100,293.74  Price=$29626.50  Position=None
+2026-07-06 23:42:57,371  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,019)
+2026-07-06 23:42:57,371  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-06 23:52:57,372  INFO      [NQ] ── Signal check 23:52 ──
+2026-07-06 23:52:57,536  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-06 23:52:57,931  INFO      [NQ] Portfolio=$100,345.38  Price=$29663.00  Position=None
+2026-07-06 23:52:57,931  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,022)
+2026-07-06 23:52:57,932  INFO      [NQ] Signal complete. Sleeping 600s...

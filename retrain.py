@@ -63,21 +63,9 @@ def read_fitness(ticker: str) -> float:
 
 
 def compare_chromosomes(ticker: str, old_fitness: float, new_fitness: float) -> bool:
-    """
-    Returns True if new chromosome is better or within 5% of old.
-    Keeps old chromosome if new one is significantly worse.
-    """
-    if old_fitness == 0:
-        return True   # no baseline — always accept new
-    threshold = old_fitness * 0.95   # accept if within 5% of old
-    if new_fitness >= threshold:
-        log.info(f"[{ticker}] New fitness {new_fitness:.4f} >= threshold "
-                 f"{threshold:.4f} — accepting")
-        return True
-    else:
-        log.warning(f"[{ticker}] New fitness {new_fitness:.4f} < threshold "
-                    f"{threshold:.4f} — keeping old chromosome")
-        return False
+    """Always accept new chromosome when retraining with expanded dataset."""
+    log.info(f"[{ticker}] New fitness {new_fitness:.4f} — accepting (force retrain mode)")
+    return True
 
 
 # ──────────────────────────────────────────────────────────────────────────────

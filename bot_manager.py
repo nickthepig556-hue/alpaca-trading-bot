@@ -131,49 +131,49 @@ BOT_CONFIGS = {
     "id": "bot_1782920056", "name": "NVDA bot", "ticker": "NVDA",
     "chromosome_file": "NVDA_best_chromosome.csv", "log_file": "NVDA_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "QQQ": {
     "id": "bot_1782923206", "name": "QQQ bot", "ticker": "QQQ",
     "chromosome_file": "QQQ_best_chromosome.csv", "log_file": "QQQ_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "TSLA": {
     "id": "bot_1782923207", "name": "TSLA bot", "ticker": "TSLA",
     "chromosome_file": "TSLA_best_chromosome.csv", "log_file": "TSLA_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.04,"max_allocation_pct":0.28,"weight_threshold":0.33,"stop_loss_pct":0.025,"take_profit_pct":0.05,"trailing_stop_pct":0.02},
-    "market_open_delay_s": 300, "intraday_interval_s": 45, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 45, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "MSFT": {
     "id": "bot_1782923208", "name": "MSFT bot", "ticker": "MSFT",
     "chromosome_file": "MSFT_best_chromosome.csv", "log_file": "MSFT_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "AMZN": {
     "id": "bot_1782923209", "name": "AMZN bot", "ticker": "AMZN",
     "chromosome_file": "AMZN_best_chromosome.csv", "log_file": "AMZN_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "META": {
     "id": "bot_1782923210", "name": "META bot", "ticker": "META",
     "chromosome_file": "META_best_chromosome.csv", "log_file": "META_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.04,"max_allocation_pct":0.28,"weight_threshold":0.33,"stop_loss_pct":0.025,"take_profit_pct":0.05,"trailing_stop_pct":0.02},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "AAPL": {
     "id": "bot_aapl", "name": "AAPL bot", "ticker": "AAPL",
     "chromosome_file": "AAPL_best_chromosome.csv", "log_file": "AAPL_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
-    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2020-01-01",
+    "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
 "BTC/USD": {
     "id": "b1782517946", "name": "BTC bot", "ticker": "BTC/USD",
     "chromosome_file": "BTC-USD_best_chromosome.csv", "log_file": "BTC_bot.log",
     "ga": {}, "risk": {"min_allocation_pct":0.03,"max_allocation_pct":0.20,"weight_threshold":0.33,"stop_loss_pct":0.035,"take_profit_pct":0.07,"trailing_stop_pct":0.028},
-    "market_open_delay_s": 0, "intraday_interval_s": 120, "lookback_days": 90, "start_date": "2021-01-01",
+    "market_open_delay_s": 0, "intraday_interval_s": 120, "lookback_days": 90, "start_date": "2010-01-01",
 },
 
     "BTC/USD_FUT": {
@@ -198,7 +198,7 @@ BOT_CONFIGS = {
     "log_file": "ES_futures.log",
     "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
-    "lookback_days": 90, "start_date": "2020-01-01",
+    "lookback_days": 90, "start_date": "2010-01-01",
 },
     "NQ_FUT": {
     "id": "nq_fut", "name": "E-mini Nasdaq Futures", "ticker": "NQ",
@@ -206,7 +206,7 @@ BOT_CONFIGS = {
     "log_file": "NQ_futures.log",
     "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
-    "lookback_days": 90, "start_date": "2020-01-01",
+    "lookback_days": 90, "start_date": "2010-01-01",
 },
     "GC_FUT": {
     "id": "gc_fut", "name": "Gold Futures", "ticker": "GC",
@@ -214,7 +214,7 @@ BOT_CONFIGS = {
     "log_file": "GC_futures.log",
     "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
-    "lookback_days": 90, "start_date": "2020-01-01",
+    "lookback_days": 90, "start_date": "2010-01-01",
 },
     "CL_FUT": {
     "id": "cl_fut", "name": "Crude Oil Futures", "ticker": "CL",
@@ -222,7 +222,7 @@ BOT_CONFIGS = {
     "log_file": "CL_futures.log",
     "ga": {}, "risk": {"max_allocation_pct": 0.10, "weight_threshold": 0.50},
     "market_open_delay_s": 0, "intraday_interval_s": 120,
-    "lookback_days": 90, "start_date": "2020-01-01",
+    "lookback_days": 90, "start_date": "2010-01-01",
 },
 
 

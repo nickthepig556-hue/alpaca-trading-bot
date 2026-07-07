@@ -94,7 +94,7 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
         return pd.Series(np.full(len(df_scaled), -1), index=df_scaled.index)
 
     score = (condition * w).sum(axis=1) / weight_sum   # (n_days,)
-    signals = np.where(score > 0.5, 1, -1)
+    signals = np.where(score > 0.35, 1, -1)
     return pd.Series(signals, index=df_scaled.index)
 
 

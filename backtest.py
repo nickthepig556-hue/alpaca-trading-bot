@@ -58,7 +58,7 @@ def load_chromosome(ticker: str) -> np.ndarray | None:
 
 def generate_bot_signals(df_scaled: pd.DataFrame,
                           chrom: np.ndarray,
-                          weight_threshold: float = 0.30) -> pd.Series:
+                          weight_threshold: float = 0.15) -> pd.Series:
     """
     Generate buy/sell signals from chromosome weights.
     Returns a Series of 1 (buy), -1 (sell/short), 0 (hold).
@@ -125,10 +125,11 @@ def simulate_strategy(close: np.ndarray,
         sig = int(signals[i])
 
         if not in_pos:
-            if sig != 0:
+            # Only go LONG — never short ETFs/stocks on backtest
+            if sig == 1:
                 in_pos    = True
                 entry     = close[i]
-                direction = sig
+                direction = 1
         else:
             # Check stop/take-profit
             raw_ret = (close[i] - entry) / entry * direction
@@ -141,10 +142,7 @@ def simulate_strategy(close: np.ndarray,
             elif raw_ret >= take_profit_pct:
                 closed = True
                 reason = "take-profit"
-            elif sig != direction and sig != 0:
-                closed = True
-                reason = "signal-flip"
-            elif sig == 0:
+            elif sig == -1:
                 closed = True
                 reason = "signal-exit"
 
