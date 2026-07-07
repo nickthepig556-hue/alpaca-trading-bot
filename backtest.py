@@ -58,7 +58,7 @@ def load_chromosome(ticker: str) -> np.ndarray | None:
 
 def generate_bot_signals(df_scaled: pd.DataFrame,
                           chrom: np.ndarray,
-                          weight_threshold: float = 0.15) -> pd.Series:
+                          weight_threshold: float = 0.30) -> pd.Series:
     """
     Generate buy/sell signals from chromosome weights.
     Returns a Series of 1 (buy), -1 (sell/short), 0 (hold).
@@ -85,8 +85,8 @@ def generate_bot_signals(df_scaled: pd.DataFrame,
         scores    = (condition * w).sum(axis=1) / max(w_sum, 1e-9)
 
         signals = pd.Series(0, index=df_scaled.index)
-        signals[scores > 0.55] = 1
-        signals[scores < 0.35] = -1
+        signals[scores > 0.35] = 1
+        signals[scores < 0.20] = -1
         return signals
 
 
@@ -96,8 +96,8 @@ def generate_bot_signals(df_scaled: pd.DataFrame,
 
 def simulate_strategy(close: np.ndarray,
                        signals: np.ndarray,
-                       stop_loss_pct: float   = 0.02,
-                       take_profit_pct: float = 0.04,
+                       stop_loss_pct: float   = 0.05,
+                       take_profit_pct: float = 0.50,
                        starting_equity: float = 100_000.0) -> dict:
     """
     Simulate bot strategy on historical data.
@@ -284,8 +284,8 @@ def max_consecutive(bools: list, value: bool) -> int:
 def run_backtest(ticker: str,
                  start_date: str,
                  end_date: str   = None,
-                 stop_loss_pct: float   = 0.02,
-                 take_profit_pct: float = 0.04,
+                 stop_loss_pct: float   = 0.05,
+                 take_profit_pct: float = 0.50,
                  starting_equity: float = 100_000.0) -> dict:
     """
     Full backtest pipeline:

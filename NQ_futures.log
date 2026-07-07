@@ -411,3 +411,23 @@
 2026-07-06 23:52:57,931  INFO      [NQ] Portfolio=$100,345.38  Price=$29663.00  Position=None
 2026-07-06 23:52:57,931  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,022)
 2026-07-06 23:52:57,932  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 00:02:57,932  INFO      [NQ] ── Signal check 00:02 ──
+2026-07-07 00:02:58,087  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-07 00:02:58,498  INFO      [NQ] Portfolio=$100,337.05  Price=$29678.75  Position=None
+2026-07-07 00:02:58,498  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,021)
+2026-07-07 00:02:58,498  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 00:12:58,500  INFO      [NQ] ── Signal check 00:12 ──
+2026-07-07 00:12:58,633  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-07 00:12:59,036  INFO      [NQ] Portfolio=$100,333.50  Price=$29696.25  Position=None
+2026-07-07 00:12:59,036  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,021)
+2026-07-07 00:12:59,036  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 00:22:59,037  INFO      [NQ] ── Signal check 00:22 ──
+2026-07-07 00:22:59,221  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-07 00:22:59,619  INFO      [NQ] Portfolio=$100,338.55  Price=$29639.50  Position=None
+2026-07-07 00:22:59,620  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,021)
+2026-07-07 00:22:59,621  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 00:32:59,621  INFO      [NQ] ── Signal check 00:32 ──
+2026-07-07 00:32:59,782  INFO      [NQ] Signal: LONG  |  Confidence: 0.617  |  Leverage: 1.20x
+2026-07-07 00:33:00,182  INFO      [NQ] Portfolio=$100,355.25  Price=$29669.50  Position=None
+2026-07-07 00:33:00,183  INFO      Futures position: 0 units  (scale=5.0%, leverage=1.2x, exposure=$6,022)
+2026-07-07 00:33:00,183  INFO      [NQ] Signal complete. Sleeping 600s...

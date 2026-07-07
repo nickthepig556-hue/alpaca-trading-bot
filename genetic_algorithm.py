@@ -52,7 +52,7 @@ GA_CONFIG = {
     'fitness_gamma'      : 0.25,    # weight on profit_factor (NEW)
     'drawdown_penalty'   : 0.45,    # multiplier applied when drawdown > threshold
     'max_drawdown_thresh': 0.20,    # 20% drawdown triggers penalty
-    'min_trades'         : 10,      # chromosomes generating fewer trades -> penalised
+    'min_trades'         : 5,       # fewer trades OK since we hold longer now
     'random_seed'        : 42,
 }
 
@@ -86,6 +86,9 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
     w      = weights.reshape(1, -1)              # (1, 12)
     t      = thresholds.reshape(1, -1)           # (1, 12)
 
+    # Cap thresholds at 0.65 to prevent over-restrictive entry conditions
+    t = np.minimum(t, 0.65)
+   
     # Condition matrix: 1 where scaled value exceeds threshold, 0 otherwise
     condition = (values > t).astype(float)       # (n_days, 12)
 
@@ -94,7 +97,8 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
         return pd.Series(np.full(len(df_scaled), -1), index=df_scaled.index)
 
     score = (condition * w).sum(axis=1) / weight_sum   # (n_days,)
-    signals = np.where(score > 0.35, 1, -1)
+    signals = np.where(score > 0.35, 1, 0)
+    signals = np.where(score < 0.20, -1, signals)
     return pd.Series(signals, index=df_scaled.index)
 
 
@@ -102,60 +106,106 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
 # FITNESS FUNCTION
 # ------------------------------------------------------------------------------
 
-def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame) -> dict:
+def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame,
+                    stop_loss_pct: float = 0.05,
+                    take_profit_pct: float = 0.15) -> dict:
     """
-    Simple long-only backtest:
-      • Enter long on BUY signal, exit on SELL signal.
-      • One position at a time; no leverage; no transaction costs (add later).
-    Returns a dict of performance metrics.
+    Realistic long-only backtest matching the actual bot behaviour:
+      - Enter on BUY signal (1)
+      - Stay in position while signal stays BUY or neutral (0)
+      - Exit ONLY on: stop-loss hit, take-profit hit, or strong SELL signal
+      - Trailing stop activates after position profitable by 1x stop distance
+      - Rewards holding winners, cutting losers
+
+    This matches how alpaca_bot.py actually trades.
     """
     close       = df_raw['Close'].values
     sig         = signals.values
     n           = len(sig)
 
-    in_position = False
-    entry_price = 0.0
-    trades      = []          # list of (return_pct,)
-    equity      = [1.0]       # normalised equity curve
+    in_position      = False
+    entry_price      = 0.0
+    peak_price       = 0.0
+    trailing_active  = False
+    trailing_stop    = 0.0
+    trades           = []
+    equity           = [1.0]
+    days_in_market   = 0
 
-    for i in range(n - 1):
-        if not in_position and sig[i] == 1:
-            in_position = True
-            entry_price = close[i]
-        elif in_position and sig[i] == -1:
-            ret = (close[i] - entry_price) / entry_price
-            trades.append(ret)
-            in_position = False
-            equity.append(equity[-1] * (1 + ret))
+    for i in range(1, n):
+        if not in_position:
+            if sig[i] == 1:
+                in_position     = True
+                entry_price     = close[i]
+                peak_price      = close[i]
+                trailing_active = False
+                trailing_stop   = entry_price * (1 - stop_loss_pct)
+            equity.append(equity[-1])
         else:
-            if in_position:
-                equity.append(equity[-1] * (close[i] / close[i - 1]))
-            else:
-                equity.append(equity[-1])
+            days_in_market += 1
+            current = close[i]
 
-    # Close any open position at end
+            # Update trailing stop once profitable by 1x stop distance
+            if current > entry_price * (1 + stop_loss_pct):
+                trailing_active = True
+            if trailing_active and current > peak_price:
+                peak_price    = current
+                trailing_stop = peak_price * (1 - stop_loss_pct * 1.5)
+
+            raw_ret = (current - entry_price) / entry_price
+            closed  = False
+            reason  = ""
+
+            # Hard stop loss
+            if current <= trailing_stop and trailing_active:
+                closed = True; reason = "trailing-stop"
+            elif raw_ret <= -stop_loss_pct:
+                closed = True; reason = "stop-loss"
+            # Take profit
+            elif raw_ret >= take_profit_pct:
+                closed = True; reason = "take-profit"
+            # Only exit on strong SELL signal (not just neutral)
+            elif sig[i] == -1 and raw_ret > 0:
+                # Only exit profitable positions on sell signal
+                closed = True; reason = "signal-exit"
+            elif sig[i] == -1 and raw_ret <= -stop_loss_pct * 0.5:
+                # Cut losing positions faster
+                closed = True; reason = "stop-loss"
+
+            if closed:
+                trades.append(raw_ret)
+                equity.append(equity[-1] * (1 + raw_ret))
+                in_position     = False
+                trailing_active = False
+            else:
+                equity.append(equity[-1] * (current / close[i-1]))
+
+    # Close open position at end
     if in_position:
         ret = (close[-1] - entry_price) / entry_price
         trades.append(ret)
         equity.append(equity[-1] * (1 + ret))
+        days_in_market += 1
 
     equity = np.array(equity)
-
     total_return = equity[-1] - 1.0
     n_trades     = len(trades)
     win_rate     = (np.array(trades) > 0).mean() if n_trades > 0 else 0.0
+    time_in_mkt  = days_in_market / max(n - 1, 1)
 
-    # Max drawdown
-    peak        = np.maximum.accumulate(equity)
-    drawdown    = (peak - equity) / peak
-    max_dd      = drawdown.max() if len(drawdown) > 0 else 0.0
+    peak     = np.maximum.accumulate(equity)
+    drawdown = (peak - equity) / peak
+    max_dd   = drawdown.max() if len(drawdown) > 0 else 0.0
 
-    # Profit factor: ratio of gross profit to gross loss
-    wins   = [t for t in trades if t > 0]
-    losses = [t for t in trades if t <= 0]
-    gross_profit = sum(wins)   if wins   else 0.0
-    gross_loss   = abs(sum(losses)) if losses else 1e-9
+    wins         = [t for t in trades if t > 0]
+    losses       = [t for t in trades if t <= 0]
+    gross_profit = sum(wins)             if wins   else 0.0
+    gross_loss   = abs(sum(losses))      if losses else 1e-9
     profit_factor = gross_profit / gross_loss
+
+    avg_win  = np.mean(wins)   if wins   else 0.0
+    avg_loss = abs(np.mean(losses)) if losses else 1e-9
+    rr_ratio = avg_win / avg_loss   # reward:risk ratio
 
     return {
         'total_return' : total_return,
@@ -164,6 +214,8 @@ def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame) -> dict:
         'max_drawdown' : max_dd,
         'equity_curve' : equity,
         'profit_factor': profit_factor,
+        'time_in_mkt'  : time_in_mkt,
+        'rr_ratio'     : rr_ratio,
     }
 
 
@@ -189,20 +241,34 @@ def fitness(chrom: np.ndarray,
     if n_trades < config['min_trades']:
         return -1.0
 
-    # Normalise total_return to [0,1] range (clamp at +/-100%)
-    norm_return   = np.clip((total_return + 1.0) / 2.0, 0.0, 1.0)
+    # Normalise total_return to [0,1] (clamp at +/-200% for long datasets)
+    norm_return   = np.clip((total_return + 1.0) / 3.0, 0.0, 1.0)
 
-    # Profit factor normalised to [0,1] -- cap at 5x
+    # Profit factor normalised [0,1] -- cap at 5x
     profit_factor = stats.get('profit_factor', 1.0)
     norm_pf       = float(np.clip((profit_factor - 1.0) / 4.0, 0.0, 1.0))
 
-    alpha = config.get('fitness_alpha', 0.45)
-    beta  = config.get('fitness_beta',  0.30)
-    gamma = config.get('fitness_gamma', 0.25)
+    # Reward:risk ratio normalised [0,1] -- cap at 4:1
+    rr_ratio      = stats.get('rr_ratio', 1.0)
+    norm_rr       = float(np.clip((rr_ratio - 1.0) / 3.0, 0.0, 1.0))
+
+    # Time in market normalised -- reward staying invested
+    time_in_mkt   = stats.get('time_in_mkt', 0.0)
+
+    alpha = config.get('fitness_alpha', 0.40)  # total return
+    beta  = config.get('fitness_beta',  0.25)  # win rate
+    gamma = config.get('fitness_gamma', 0.20)  # profit factor
+    delta = 0.15                                # reward:risk ratio
 
     score = (alpha * norm_return
            + beta  * win_rate
-           + gamma * norm_pf)
+           + gamma * norm_pf
+           + delta * norm_rr)
+
+    # Time in market bonus -- reward strategies that stay invested
+    # (up to 5% bonus for being 50%+ in market)
+    if time_in_mkt > 0.50:
+        score *= (1.0 + 0.05 * time_in_mkt)
 
     # Drawdown penalty
     if max_dd > config['max_drawdown_thresh']:
@@ -252,7 +318,10 @@ def adaptive_mutate(chrom: np.ndarray,
     mask   = rng.random(len(chrom)) < mutation_rate
     noise  = rng.normal(0, mutation_step, size=len(chrom))
     mutant = np.where(mask, mutant + noise, mutant)
-    return np.clip(mutant, 0.0, 1.0)
+    mutant = np.clip(mutant, 0.0, 1.0)
+    # Cap thresholds so bot doesn't become too selective
+    mutant[N_FEATURES:] = np.clip(mutant[N_FEATURES:], 0.0, 0.60)
+    return mutant
 
 
 def adapt_mutation_rate(current_rate: float,
@@ -306,6 +375,8 @@ def run_ga(df_scaled: pd.DataFrame,
 
     # -- Initialise ----------------------------------------------------------
     population = init_population(pop_size, CHROM_LENGTH, rng)
+    # Cap initial thresholds
+    population[:, N_FEATURES:] = np.clip(population[:, N_FEATURES:], 0.1, 0.60)
     fitnesses  = np.array([fitness(c, df_scaled, df_raw, config) for c in population])
 
     best_idx       = np.argmax(fitnesses)
@@ -330,6 +401,8 @@ def run_ga(df_scaled: pd.DataFrame,
         # -- Elitism: carry top chromosomes unchanged ----------------------
         elite_idx  = np.argsort(fitnesses)[-elite_n:]
         elites     = population[elite_idx].copy()
+        # Cap thresholds on elites so they don't pass bad genes
+        elites[:, N_FEATURES:] = np.clip(elites[:, N_FEATURES:], 0.0, 0.60)
 
         # -- Build next generation -----------------------------------------
         next_pop = [elites]   # start with elites
@@ -348,6 +421,8 @@ def run_ga(df_scaled: pd.DataFrame,
             next_pop.append(np.array([c1, c2]))
 
         population = np.vstack(next_pop)[:pop_size]
+        # Enforce threshold cap every generation
+        population[:, N_FEATURES:] = np.clip(population[:, N_FEATURES:], 0.0, 0.60)
         fitnesses  = np.array([fitness(c, df_scaled, df_raw, config) for c in population])
 
         # -- Track best ----------------------------------------------------
