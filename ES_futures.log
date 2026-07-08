@@ -1182,3 +1182,27 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 11:12:22,234  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,085)
 2026-07-07 11:12:22,234  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
 2026-07-07 11:12:22,235  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-07 11:22:22,235  INFO      [ES] ── Signal check 11:22 ──
+2026-07-07 11:22:22,419  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 11:22:22,844  INFO      [ES] Portfolio=$100,584.66  Price=$7567.00  Position=None
+2026-07-07 11:22:22,845  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,088)
+2026-07-07 11:22:22,845  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-07 11:22:22,845  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-07 11:32:22,846  INFO      [ES] ── Signal check 11:32 ──
+2026-07-07 11:32:23,015  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 11:32:23,409  INFO      [ES] Portfolio=$100,557.48  Price=$7567.00  Position=None
+2026-07-07 11:32:23,409  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,084)
+2026-07-07 11:32:23,409  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-07 11:32:23,409  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-07 11:42:23,410  INFO      [ES] ── Signal check 11:42 ──
+2026-07-07 11:42:23,610  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 11:42:24,026  INFO      [ES] Portfolio=$100,643.74  Price=$7569.25  Position=None
+2026-07-07 11:42:24,026  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,097)
+2026-07-07 11:42:24,026  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-07 11:42:24,026  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-07 11:52:24,027  INFO      [ES] ── Signal check 11:52 ──
+2026-07-07 11:52:24,226  INFO      [ES] Signal: LONG  |  Confidence: 0.681  |  Leverage: 1.71x
+2026-07-07 11:52:24,689  INFO      [ES] Portfolio=$100,566.67  Price=$7569.25  Position=None
+2026-07-07 11:52:24,689  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,085)
+2026-07-07 11:52:24,691  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-07 11:52:24,691  INFO      [ES] Signal complete. Sleeping 600s...

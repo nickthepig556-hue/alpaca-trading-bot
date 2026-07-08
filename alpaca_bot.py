@@ -62,6 +62,10 @@ BOT_CONFIG = {
     'max_allocation_pct'  : 0.40,   # 40 % maximum position (risk cap)
     'weight_threshold'    : 0.30,   # GA weight-sum below this → skip trade
 
+    # Concurrent position limits
+    'max_concurrent_positions': 5,    # never open more than 5 at once
+    'min_cash_reserve_pct'    : 0.20, # always keep 20% cash
+
     # Risk management
     'stop_loss_pct'       : 0.05,   # 5 % stop-loss below entry
     'take_profit_pct'     : 0.50,   # 4 % take-profit above entry
@@ -233,35 +237,77 @@ def compute_signal(bars: pd.DataFrame, chrom: np.ndarray) -> tuple[int, float]:
 # POSITION SIZING  (GA-driven)
 # ──────────────────────────────────────────────────────────────────────────────
 
+def kelly_criterion(win_rate: float, win_loss_ratio: float,
+                    fraction: float = 0.25) -> float:
+    """
+    Fractional Kelly Criterion position sizing.
+    fraction=0.25 = Quarter Kelly (conservative, reduces volatility)
+
+    Kelly % = (win_rate - (1 - win_rate) / win_loss_ratio) * fraction
+    """
+    if win_loss_ratio <= 0:
+        return 0.0
+    kelly = (win_rate - (1 - win_rate) / win_loss_ratio) * fraction
+    return max(0.0, min(kelly, 0.25))  # Cap at 25% of portfolio
+
+
 def calc_position_size(confidence: float,
                        portfolio_value: float,
                        current_price: float,
-                       config: dict) -> int:
+                       config: dict,
+                       win_rate: float = 0.55,
+                       win_loss_ratio: float = 2.0,
+                       n_open_positions: int = 0,
+                       cash: float = None) -> int:
     """
-    Map GA confidence → allocation percentage → number of shares.
+    Kelly Criterion + confidence-scaled position sizing with safety guards:
 
-        allocation_pct = min_pct + confidence * (max_pct - min_pct)
-
-    Higher GA confidence (more features above thresholds, heavier weights)
-    → larger position size.
+    1. Confidence threshold gate — skip if below minimum
+    2. Cash reserve guard — keep 20% of portfolio in cash always
+    3. Max concurrent positions — never exceed 5 open at once
+    4. Kelly Criterion — size based on historical win rate and RR ratio
+    5. Confidence scaling — multiply Kelly by confidence for extra safety
     """
+    # ── Gate 1: Confidence threshold ─────────────────────────────────────────
     if confidence < config['weight_threshold']:
         log.info(f"Confidence {confidence:.3f} below threshold "
                  f"{config['weight_threshold']} — skipping trade")
         return 0
 
-    min_p = config['min_allocation_pct']
-    max_p = config['max_allocation_pct']
-    alloc_pct  = min_p + confidence * (max_p - min_p)
-    alloc_pct  = min(alloc_pct, max_p)
+    # ── Gate 2: Max concurrent positions ─────────────────────────────────────
+    max_positions = config.get('max_concurrent_positions', 5)
+    if n_open_positions >= max_positions:
+        log.info(f"Max positions reached ({n_open_positions}/{max_positions}) — skipping")
+        return 0
 
-    dollar_amount = portfolio_value * alloc_pct
+    # ── Gate 3: Cash reserve (always keep 20% in cash) ───────────────────────
+    min_cash_reserve = portfolio_value * config.get('min_cash_reserve_pct', 0.20)
+    available_cash   = cash if cash is not None else portfolio_value * 0.80
+    if available_cash < min_cash_reserve:
+        log.info(f"Cash reserve too low (${available_cash:,.0f} < ${min_cash_reserve:,.0f}) — skipping")
+        return 0
+
+    # ── Kelly Criterion sizing ────────────────────────────────────────────────
+    kelly_pct  = kelly_criterion(win_rate, win_loss_ratio)
+
+    # Scale Kelly by confidence (higher confidence = closer to full Kelly)
+    scaled_pct = kelly_pct * confidence
+
+    # Apply hard limits from config
+    max_p      = config.get('max_allocation_pct', 0.25)
+    min_p      = config.get('min_allocation_pct', 0.05)
+    alloc_pct  = max(min_p, min(scaled_pct, max_p))
+
+    # Can't use more than available cash (minus reserve)
+    spendable     = max(0, available_cash - min_cash_reserve)
+    dollar_amount = min(portfolio_value * alloc_pct, spendable)
     shares        = int(dollar_amount // current_price)
 
-    log.info(f"Position size: {shares} shares  "
-             f"(confidence={confidence:.3f}, alloc={alloc_pct:.1%}, "
-             f"${dollar_amount:,.0f} of ${portfolio_value:,.0f})")
-    return shares
+    log.info(f"Kelly position: {shares} shares  "
+             f"(kelly={kelly_pct:.1%}, conf={confidence:.3f}, "
+             f"alloc={alloc_pct:.1%}, ${dollar_amount:,.0f}  "
+             f"open={n_open_positions}/{max_positions})")
+    return max(shares, 0)
 
 
 # ──────────────────────────────────────────────────────────────────────────────
@@ -540,8 +586,11 @@ def run_daily_signal(trading_client: TradingClient,
             position = None
 
         if position is None:
-            qty = calc_position_size(confidence, portfolio_value,
-                                     current_price, config)
+            qty = calc_position_size(
+                        confidence, portfolio_value, current_price, config,
+                        win_rate=0.55, win_loss_ratio=2.0,
+                        n_open_positions=len(trading_client.get_all_positions()),
+                        cash=float(trading_client.get_account().cash))
             if qty > 0:
                 order_id = place_buy(trading_client, TICKER, qty, side="long")
                 if order_id:
@@ -569,8 +618,11 @@ def run_daily_signal(trading_client: TradingClient,
 
         if position is None:
             # Open short
-            qty = calc_position_size(confidence, portfolio_value,
-                                     current_price, config)
+            qty = calc_position_size(
+                        confidence, portfolio_value, current_price, config,
+                        win_rate=0.55, win_loss_ratio=2.0,
+                        n_open_positions=len(trading_client.get_all_positions()),
+                        cash=float(trading_client.get_account().cash))
             if qty > 0:
                 log.info(f"Opening SHORT position: {qty} x {TICKER}")
                 order_id = place_buy(trading_client, TICKER, qty, side="short")

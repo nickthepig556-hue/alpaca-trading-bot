@@ -13589,3 +13589,721 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-07 11:55:01,312  INFO      Current price   : $380.18
 2026-07-07 11:55:01,313  INFO      Open position   : None
 2026-07-07 11:55:01,313  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:00:01,946  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:05:01,947  INFO      =======================================================
+2026-07-07 12:05:01,948  INFO      Daily signal run  [2026-07-07 12:05]
+2026-07-07 12:05:01,948  INFO      =======================================================
+2026-07-07 12:05:02,399  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:05:02,546  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:05:02,709  INFO      Portfolio value : $100,565.00
+2026-07-07 12:05:02,710  INFO      Current price   : $380.10
+2026-07-07 12:05:02,710  INFO      Open position   : None
+2026-07-07 12:05:02,710  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:10:03,003  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:15:03,004  INFO      =======================================================
+2026-07-07 12:15:03,005  INFO      Daily signal run  [2026-07-07 12:15]
+2026-07-07 12:15:03,005  INFO      =======================================================
+2026-07-07 12:15:03,426  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:15:03,579  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:15:03,710  INFO      Portfolio value : $100,497.79
+2026-07-07 12:15:03,710  INFO      Current price   : $380.07
+2026-07-07 12:15:03,710  INFO      Open position   : None
+2026-07-07 12:15:03,710  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:20:03,980  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:25:03,981  INFO      =======================================================
+2026-07-07 12:25:03,981  INFO      Daily signal run  [2026-07-07 12:25]
+2026-07-07 12:25:03,982  INFO      =======================================================
+2026-07-07 12:25:04,357  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:25:04,531  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:25:04,693  INFO      Portfolio value : $100,497.26
+2026-07-07 12:25:04,694  INFO      Current price   : $380.14
+2026-07-07 12:25:04,694  INFO      Open position   : None
+2026-07-07 12:25:04,694  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:30:05,443  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:35:05,444  INFO      =======================================================
+2026-07-07 12:35:05,445  INFO      Daily signal run  [2026-07-07 12:35]
+2026-07-07 12:35:05,445  INFO      =======================================================
+2026-07-07 12:35:05,854  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:35:06,018  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:35:06,141  INFO      Portfolio value : $100,392.60
+2026-07-07 12:35:06,142  INFO      Current price   : $379.80
+2026-07-07 12:35:06,142  INFO      Open position   : None
+2026-07-07 12:35:06,142  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:40:06,350  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:45:06,350  INFO      =======================================================
+2026-07-07 12:45:06,351  INFO      Daily signal run  [2026-07-07 12:45]
+2026-07-07 12:45:06,351  INFO      =======================================================
+2026-07-07 12:45:06,697  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:45:06,897  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:45:07,030  INFO      Portfolio value : $100,374.47
+2026-07-07 12:45:07,031  INFO      Current price   : $380.04
+2026-07-07 12:45:07,031  INFO      Open position   : None
+2026-07-07 12:45:07,031  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 12:50:07,245  INFO      Market open — waiting 300s before first signal...
+2026-07-07 12:55:07,246  INFO      =======================================================
+2026-07-07 12:55:07,246  INFO      Daily signal run  [2026-07-07 12:55]
+2026-07-07 12:55:07,246  INFO      =======================================================
+2026-07-07 12:55:07,646  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 12:55:07,843  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 12:55:07,966  INFO      Portfolio value : $100,099.46
+2026-07-07 12:55:07,966  INFO      Current price   : $378.55
+2026-07-07 12:55:07,966  INFO      Open position   : None
+2026-07-07 12:55:07,966  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:00:08,181  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:05:08,182  INFO      =======================================================
+2026-07-07 13:05:08,183  INFO      Daily signal run  [2026-07-07 13:05]
+2026-07-07 13:05:08,183  INFO      =======================================================
+2026-07-07 13:05:08,557  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:05:08,733  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:05:08,855  INFO      Portfolio value : $99,959.70
+2026-07-07 13:05:08,855  INFO      Current price   : $378.08
+2026-07-07 13:05:08,855  INFO      Open position   : None
+2026-07-07 13:05:08,855  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:10:09,088  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:15:09,088  INFO      =======================================================
+2026-07-07 13:15:09,089  INFO      Daily signal run  [2026-07-07 13:15]
+2026-07-07 13:15:09,089  INFO      =======================================================
+2026-07-07 13:15:09,499  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:15:09,665  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:15:09,794  INFO      Portfolio value : $99,757.49
+2026-07-07 13:15:09,795  INFO      Current price   : $376.45
+2026-07-07 13:15:09,795  INFO      Open position   : None
+2026-07-07 13:15:09,795  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:20:10,025  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:25:10,027  INFO      =======================================================
+2026-07-07 13:25:10,027  INFO      Daily signal run  [2026-07-07 13:25]
+2026-07-07 13:25:10,027  INFO      =======================================================
+2026-07-07 13:25:10,432  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:25:10,586  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:25:10,706  INFO      Portfolio value : $99,735.62
+2026-07-07 13:25:10,706  INFO      Current price   : $376.29
+2026-07-07 13:25:10,707  INFO      Open position   : None
+2026-07-07 13:25:10,707  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:30:10,908  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:35:10,909  INFO      =======================================================
+2026-07-07 13:35:10,909  INFO      Daily signal run  [2026-07-07 13:35]
+2026-07-07 13:35:10,909  INFO      =======================================================
+2026-07-07 13:35:11,334  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:35:12,356  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:35:12,496  INFO      Portfolio value : $99,898.74
+2026-07-07 13:35:12,496  INFO      Current price   : $377.37
+2026-07-07 13:35:12,496  INFO      Open position   : None
+2026-07-07 13:35:12,497  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:40:12,713  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:45:12,714  INFO      =======================================================
+2026-07-07 13:45:12,714  INFO      Daily signal run  [2026-07-07 13:45]
+2026-07-07 13:45:12,714  INFO      =======================================================
+2026-07-07 13:45:13,089  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:45:13,296  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:45:13,422  INFO      Portfolio value : $99,657.23
+2026-07-07 13:45:13,422  INFO      Current price   : $377.08
+2026-07-07 13:45:13,422  INFO      Open position   : None
+2026-07-07 13:45:13,422  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 13:50:13,624  INFO      Market open — waiting 300s before first signal...
+2026-07-07 13:55:13,625  INFO      =======================================================
+2026-07-07 13:55:13,626  INFO      Daily signal run  [2026-07-07 13:55]
+2026-07-07 13:55:13,626  INFO      =======================================================
+2026-07-07 13:55:14,007  INFO      Fetched 70 bars for GLD  (2026-03-26 → 2026-07-07)
+2026-07-07 13:55:14,194  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-07 13:55:14,323  INFO      Portfolio value : $99,894.86
+2026-07-07 13:55:14,324  INFO      Current price   : $377.72
+2026-07-07 13:55:14,324  INFO      Open position   : None
+2026-07-07 13:55:14,324  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-07 14:00:14,515  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 15:00:14,808  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 16:00:15,032  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 17:00:15,252  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 18:00:15,494  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 19:00:15,718  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 20:00:15,942  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 21:00:16,206  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 22:00:16,427  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-07 23:00:16,691  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 00:00:18,556  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 01:00:18,805  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 02:00:19,065  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 03:00:19,270  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 04:00:19,501  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 05:00:19,730  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 06:00:19,952  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 07:00:20,174  INFO      Market closed. Next open in 30 min. Sleeping...
+2026-07-08 07:30:05,178  INFO      Market open — waiting 300s before first signal...
+2026-07-08 07:35:05,178  INFO      =======================================================
+2026-07-08 07:35:05,180  INFO      Daily signal run  [2026-07-08 07:35]
+2026-07-08 07:35:05,181  INFO      =======================================================
+2026-07-08 07:35:05,704  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 07:35:05,972  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 07:35:06,150  INFO      Portfolio value : $98,213.26
+2026-07-08 07:35:06,150  INFO      Current price   : $374.09
+2026-07-08 07:35:06,151  INFO      Open position   : None
+2026-07-08 07:35:06,151  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 07:40:06,431  INFO      Market open — waiting 300s before first signal...
+2026-07-08 07:45:06,431  INFO      =======================================================
+2026-07-08 07:45:06,432  INFO      Daily signal run  [2026-07-08 07:45]
+2026-07-08 07:45:06,432  INFO      =======================================================
+2026-07-08 07:45:06,944  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 07:45:07,118  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 07:45:07,245  INFO      Portfolio value : $98,338.40
+2026-07-08 07:45:07,245  INFO      Current price   : $373.76
+2026-07-08 07:45:07,246  INFO      Open position   : None
+2026-07-08 07:45:07,246  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 07:50:07,468  INFO      Market open — waiting 300s before first signal...
+2026-07-08 07:55:07,468  INFO      =======================================================
+2026-07-08 07:55:07,469  INFO      Daily signal run  [2026-07-08 07:55]
+2026-07-08 07:55:07,469  INFO      =======================================================
+2026-07-08 07:55:07,862  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 07:55:08,009  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 07:55:08,129  INFO      Portfolio value : $98,118.38
+2026-07-08 07:55:08,130  INFO      Current price   : $373.40
+2026-07-08 07:55:08,130  INFO      Open position   : None
+2026-07-08 07:55:08,130  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:00:08,357  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:05:08,357  INFO      =======================================================
+2026-07-08 08:05:08,358  INFO      Daily signal run  [2026-07-08 08:05]
+2026-07-08 08:05:08,358  INFO      =======================================================
+2026-07-08 08:05:08,736  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:05:08,901  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 08:05:09,031  INFO      Portfolio value : $98,424.38
+2026-07-08 08:05:09,031  INFO      Current price   : $373.20
+2026-07-08 08:05:09,031  INFO      Open position   : None
+2026-07-08 08:05:09,032  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:10:09,324  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:15:09,325  INFO      =======================================================
+2026-07-08 08:15:09,326  INFO      Daily signal run  [2026-07-08 08:15]
+2026-07-08 08:15:09,326  INFO      =======================================================
+2026-07-08 08:15:09,755  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:15:09,914  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 08:15:10,042  INFO      Portfolio value : $98,138.08
+2026-07-08 08:15:10,043  INFO      Current price   : $372.32
+2026-07-08 08:15:10,043  INFO      Open position   : None
+2026-07-08 08:15:10,043  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:20:10,272  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:25:10,276  INFO      =======================================================
+2026-07-08 08:25:10,276  INFO      Daily signal run  [2026-07-08 08:25]
+2026-07-08 08:25:10,276  INFO      =======================================================
+2026-07-08 08:25:10,768  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:25:10,953  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 08:25:11,108  INFO      Portfolio value : $98,369.81
+2026-07-08 08:25:11,108  INFO      Current price   : $372.45
+2026-07-08 08:25:11,108  INFO      Open position   : None
+2026-07-08 08:25:11,109  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:30:11,306  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:35:11,307  INFO      =======================================================
+2026-07-08 08:35:11,308  INFO      Daily signal run  [2026-07-08 08:35]
+2026-07-08 08:35:11,309  INFO      =======================================================
+2026-07-08 08:35:11,642  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:35:11,786  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 08:35:12,084  INFO      Portfolio value : $98,192.79
+2026-07-08 08:35:12,084  INFO      Current price   : $372.05
+2026-07-08 08:35:12,085  INFO      Open position   : None
+2026-07-08 08:35:12,085  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:40:12,279  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:45:12,280  INFO      =======================================================
+2026-07-08 08:45:12,281  INFO      Daily signal run  [2026-07-08 08:45]
+2026-07-08 08:45:12,281  INFO      =======================================================
+2026-07-08 08:45:12,679  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:45:12,845  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 08:45:12,987  INFO      Portfolio value : $97,934.09
+2026-07-08 08:45:12,987  INFO      Current price   : $370.29
+2026-07-08 08:45:12,987  INFO      Open position   : None
+2026-07-08 08:45:12,987  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 08:50:13,178  INFO      Market open — waiting 300s before first signal...
+2026-07-08 08:55:13,179  INFO      =======================================================
+2026-07-08 08:55:13,179  INFO      Daily signal run  [2026-07-08 08:55]
+2026-07-08 08:55:13,179  INFO      =======================================================
+2026-07-08 08:55:13,616  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 08:55:13,761  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 08:55:13,896  INFO      Portfolio value : $97,938.97
+2026-07-08 08:55:13,897  INFO      Current price   : $371.04
+2026-07-08 08:55:13,897  INFO      Open position   : None
+2026-07-08 08:55:13,897  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:00:14,156  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:05:14,157  INFO      =======================================================
+2026-07-08 09:05:14,157  INFO      Daily signal run  [2026-07-08 09:05]
+2026-07-08 09:05:14,157  INFO      =======================================================
+2026-07-08 09:05:14,490  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:05:14,694  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:05:14,854  INFO      Portfolio value : $97,855.88
+2026-07-08 09:05:14,854  INFO      Current price   : $370.48
+2026-07-08 09:05:14,854  INFO      Open position   : None
+2026-07-08 09:05:14,854  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:10:15,063  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:15:15,064  INFO      =======================================================
+2026-07-08 09:15:15,064  INFO      Daily signal run  [2026-07-08 09:15]
+2026-07-08 09:15:15,064  INFO      =======================================================
+2026-07-08 09:15:15,445  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:15:15,629  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:15:15,816  INFO      Portfolio value : $97,661.23
+2026-07-08 09:15:15,816  INFO      Current price   : $370.11
+2026-07-08 09:15:15,816  INFO      Open position   : None
+2026-07-08 09:15:15,816  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:20:16,039  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:25:16,041  INFO      =======================================================
+2026-07-08 09:25:16,041  INFO      Daily signal run  [2026-07-08 09:25]
+2026-07-08 09:25:16,042  INFO      =======================================================
+2026-07-08 09:25:16,410  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:25:16,599  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:25:16,737  INFO      Portfolio value : $97,365.29
+2026-07-08 09:25:16,737  INFO      Current price   : $369.60
+2026-07-08 09:25:16,737  INFO      Open position   : None
+2026-07-08 09:25:16,737  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:30:17,189  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:35:17,192  INFO      =======================================================
+2026-07-08 09:35:17,193  INFO      Daily signal run  [2026-07-08 09:35]
+2026-07-08 09:35:17,193  INFO      =======================================================
+2026-07-08 09:35:17,827  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:35:18,053  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:35:18,178  INFO      Portfolio value : $97,379.67
+2026-07-08 09:35:18,178  INFO      Current price   : $369.25
+2026-07-08 09:35:18,178  INFO      Open position   : None
+2026-07-08 09:35:18,178  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:40:18,400  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:45:18,401  INFO      =======================================================
+2026-07-08 09:45:18,401  INFO      Daily signal run  [2026-07-08 09:45]
+2026-07-08 09:45:18,402  INFO      =======================================================
+2026-07-08 09:45:18,753  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:45:18,912  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:45:19,038  INFO      Portfolio value : $97,352.41
+2026-07-08 09:45:19,038  INFO      Current price   : $369.96
+2026-07-08 09:45:19,038  INFO      Open position   : None
+2026-07-08 09:45:19,038  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 09:50:19,478  INFO      Market open — waiting 300s before first signal...
+2026-07-08 09:55:19,479  INFO      =======================================================
+2026-07-08 09:55:19,480  INFO      Daily signal run  [2026-07-08 09:55]
+2026-07-08 09:55:19,480  INFO      =======================================================
+2026-07-08 09:55:19,889  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 09:55:20,052  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 09:55:20,181  INFO      Portfolio value : $97,482.77
+2026-07-08 09:55:20,181  INFO      Current price   : $370.18
+2026-07-08 09:55:20,181  INFO      Open position   : None
+2026-07-08 09:55:20,181  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:00:20,414  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:05:20,419  INFO      =======================================================
+2026-07-08 10:05:20,421  INFO      Daily signal run  [2026-07-08 10:05]
+2026-07-08 10:05:20,421  INFO      =======================================================
+2026-07-08 10:05:20,794  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:05:20,937  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 10:05:21,068  INFO      Portfolio value : $97,742.83
+2026-07-08 10:05:21,069  INFO      Current price   : $370.35
+2026-07-08 10:05:21,069  INFO      Open position   : None
+2026-07-08 10:05:21,069  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:10:21,346  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:15:21,346  INFO      =======================================================
+2026-07-08 10:15:21,354  INFO      Daily signal run  [2026-07-08 10:15]
+2026-07-08 10:15:21,354  INFO      =======================================================
+2026-07-08 10:15:21,947  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:15:22,105  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 10:15:22,224  INFO      Portfolio value : $97,971.54
+2026-07-08 10:15:22,225  INFO      Current price   : $370.54
+2026-07-08 10:15:22,225  INFO      Open position   : None
+2026-07-08 10:15:22,225  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:20:22,460  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:25:22,461  INFO      =======================================================
+2026-07-08 10:25:22,461  INFO      Daily signal run  [2026-07-08 10:25]
+2026-07-08 10:25:22,462  INFO      =======================================================
+2026-07-08 10:25:22,861  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:25:23,037  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 10:25:23,155  INFO      Portfolio value : $98,135.85
+2026-07-08 10:25:23,156  INFO      Current price   : $370.61
+2026-07-08 10:25:23,156  INFO      Open position   : None
+2026-07-08 10:25:23,156  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:30:23,664  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:35:23,665  INFO      =======================================================
+2026-07-08 10:35:23,666  INFO      Daily signal run  [2026-07-08 10:35]
+2026-07-08 10:35:23,666  INFO      =======================================================
+2026-07-08 10:35:24,047  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:35:24,232  INFO      Signal: SELL/HOLD  |  Confidence: 0.226
+2026-07-08 10:35:24,354  INFO      Portfolio value : $98,272.34
+2026-07-08 10:35:24,354  INFO      Current price   : $371.10
+2026-07-08 10:35:24,354  INFO      Open position   : None
+2026-07-08 10:35:24,354  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:40:24,763  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:45:24,763  INFO      =======================================================
+2026-07-08 10:45:24,764  INFO      Daily signal run  [2026-07-08 10:45]
+2026-07-08 10:45:24,764  INFO      =======================================================
+2026-07-08 10:45:25,257  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:45:25,444  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 10:45:25,580  INFO      Portfolio value : $98,360.62
+2026-07-08 10:45:25,581  INFO      Current price   : $372.15
+2026-07-08 10:45:25,581  INFO      Open position   : None
+2026-07-08 10:45:25,581  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 10:50:25,793  INFO      Market open — waiting 300s before first signal...
+2026-07-08 10:55:25,795  INFO      =======================================================
+2026-07-08 10:55:25,795  INFO      Daily signal run  [2026-07-08 10:55]
+2026-07-08 10:55:25,795  INFO      =======================================================
+2026-07-08 10:55:26,149  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 10:55:26,367  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 10:55:26,569  INFO      Portfolio value : $98,659.71
+2026-07-08 10:55:26,569  INFO      Current price   : $372.86
+2026-07-08 10:55:26,569  INFO      Open position   : None
+2026-07-08 10:55:26,569  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:00:26,765  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:05:26,766  INFO      =======================================================
+2026-07-08 11:05:26,766  INFO      Daily signal run  [2026-07-08 11:05]
+2026-07-08 11:05:26,766  INFO      =======================================================
+2026-07-08 11:05:27,159  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:05:27,325  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:05:27,464  INFO      Portfolio value : $98,806.37
+2026-07-08 11:05:27,464  INFO      Current price   : $372.68
+2026-07-08 11:05:27,464  INFO      Open position   : None
+2026-07-08 11:05:27,464  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:10:27,661  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:15:27,662  INFO      =======================================================
+2026-07-08 11:15:27,663  INFO      Daily signal run  [2026-07-08 11:15]
+2026-07-08 11:15:27,663  INFO      =======================================================
+2026-07-08 11:15:28,010  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:15:28,203  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:15:28,321  INFO      Portfolio value : $98,880.50
+2026-07-08 11:15:28,322  INFO      Current price   : $373.08
+2026-07-08 11:15:28,322  INFO      Open position   : None
+2026-07-08 11:15:28,322  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:20:28,512  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:25:28,512  INFO      =======================================================
+2026-07-08 11:25:28,513  INFO      Daily signal run  [2026-07-08 11:25]
+2026-07-08 11:25:28,513  INFO      =======================================================
+2026-07-08 11:25:28,881  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:25:29,059  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:25:29,184  INFO      Portfolio value : $99,254.77
+2026-07-08 11:25:29,184  INFO      Current price   : $373.48
+2026-07-08 11:25:29,184  INFO      Open position   : None
+2026-07-08 11:25:29,184  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:30:29,367  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:35:29,368  INFO      =======================================================
+2026-07-08 11:35:29,368  INFO      Daily signal run  [2026-07-08 11:35]
+2026-07-08 11:35:29,368  INFO      =======================================================
+2026-07-08 11:35:29,755  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:35:29,935  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:35:30,064  INFO      Portfolio value : $99,445.53
+2026-07-08 11:35:30,064  INFO      Current price   : $373.62
+2026-07-08 11:35:30,065  INFO      Open position   : None
+2026-07-08 11:35:30,065  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:40:30,251  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:45:30,253  INFO      =======================================================
+2026-07-08 11:45:30,254  INFO      Daily signal run  [2026-07-08 11:45]
+2026-07-08 11:45:30,254  INFO      =======================================================
+2026-07-08 11:45:30,796  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:45:31,008  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:45:31,142  INFO      Portfolio value : $99,191.34
+2026-07-08 11:45:31,142  INFO      Current price   : $373.42
+2026-07-08 11:45:31,142  INFO      Open position   : None
+2026-07-08 11:45:31,142  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 11:50:31,379  INFO      Market open — waiting 300s before first signal...
+2026-07-08 11:55:31,379  INFO      =======================================================
+2026-07-08 11:55:31,380  INFO      Daily signal run  [2026-07-08 11:55]
+2026-07-08 11:55:31,380  INFO      =======================================================
+2026-07-08 11:55:31,728  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 11:55:31,912  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 11:55:32,158  INFO      Portfolio value : $98,955.86
+2026-07-08 11:55:32,158  INFO      Current price   : $373.11
+2026-07-08 11:55:32,158  INFO      Open position   : None
+2026-07-08 11:55:32,158  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:00:32,393  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:05:32,395  INFO      =======================================================
+2026-07-08 12:05:32,395  INFO      Daily signal run  [2026-07-08 12:05]
+2026-07-08 12:05:32,395  INFO      =======================================================
+2026-07-08 12:05:32,852  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:05:33,019  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 12:05:33,145  INFO      Portfolio value : $99,130.95
+2026-07-08 12:05:33,145  INFO      Current price   : $373.37
+2026-07-08 12:05:33,145  INFO      Open position   : None
+2026-07-08 12:05:33,145  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:10:33,360  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:15:33,361  INFO      =======================================================
+2026-07-08 12:15:33,361  INFO      Daily signal run  [2026-07-08 12:15]
+2026-07-08 12:15:33,361  INFO      =======================================================
+2026-07-08 12:15:33,739  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:15:33,946  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 12:15:34,155  INFO      Portfolio value : $99,266.93
+2026-07-08 12:15:34,156  INFO      Current price   : $373.81
+2026-07-08 12:15:34,156  INFO      Open position   : None
+2026-07-08 12:15:34,156  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:20:34,373  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:25:34,374  INFO      =======================================================
+2026-07-08 12:25:34,376  INFO      Daily signal run  [2026-07-08 12:25]
+2026-07-08 12:25:34,376  INFO      =======================================================
+2026-07-08 12:25:34,790  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:25:34,966  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 12:25:35,088  INFO      Portfolio value : $99,180.55
+2026-07-08 12:25:35,089  INFO      Current price   : $373.31
+2026-07-08 12:25:35,089  INFO      Open position   : None
+2026-07-08 12:25:35,089  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:30:35,443  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:35:35,444  INFO      =======================================================
+2026-07-08 12:35:35,444  INFO      Daily signal run  [2026-07-08 12:35]
+2026-07-08 12:35:35,444  INFO      =======================================================
+2026-07-08 12:35:35,931  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:35:36,087  INFO      Signal: SELL/HOLD  |  Confidence: 0.333
+2026-07-08 12:35:36,211  INFO      Portfolio value : $99,063.29
+2026-07-08 12:35:36,211  INFO      Current price   : $373.51
+2026-07-08 12:35:36,211  INFO      Open position   : None
+2026-07-08 12:35:36,212  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:40:36,437  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:45:36,438  INFO      =======================================================
+2026-07-08 12:45:36,438  INFO      Daily signal run  [2026-07-08 12:45]
+2026-07-08 12:45:36,438  INFO      =======================================================
+2026-07-08 12:45:36,913  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:45:37,113  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-08 12:45:37,243  INFO      Portfolio value : $99,132.37
+2026-07-08 12:45:37,243  INFO      Current price   : $374.42
+2026-07-08 12:45:37,243  INFO      Open position   : None
+2026-07-08 12:45:37,244  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 12:50:37,472  INFO      Market open — waiting 300s before first signal...
+2026-07-08 12:55:37,472  INFO      =======================================================
+2026-07-08 12:55:37,472  INFO      Daily signal run  [2026-07-08 12:55]
+2026-07-08 12:55:37,472  INFO      =======================================================
+2026-07-08 12:55:37,843  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 12:55:38,008  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-08 12:55:38,141  INFO      Portfolio value : $99,326.20
+2026-07-08 12:55:38,141  INFO      Current price   : $374.69
+2026-07-08 12:55:38,141  INFO      Open position   : None
+2026-07-08 12:55:38,141  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 13:00:38,344  INFO      Market open — waiting 300s before first signal...
+2026-07-08 13:05:38,345  INFO      =======================================================
+2026-07-08 13:05:38,345  INFO      Daily signal run  [2026-07-08 13:05]
+2026-07-08 13:05:38,346  INFO      =======================================================
+2026-07-08 13:05:38,846  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 13:05:39,055  INFO      Signal: SELL/HOLD  |  Confidence: 0.348
+2026-07-08 13:05:39,241  INFO      Portfolio value : $99,364.12
+2026-07-08 13:05:39,241  INFO      Current price   : $375.00
+2026-07-08 13:05:39,241  INFO      Open position   : None
+2026-07-08 13:05:39,241  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-08 13:10:39,506  INFO      Market open — waiting 300s before first signal...
+2026-07-08 13:15:39,511  INFO      =======================================================
+2026-07-08 13:15:39,511  INFO      Daily signal run  [2026-07-08 13:15]
+2026-07-08 13:15:39,511  INFO      =======================================================
+2026-07-08 13:15:39,864  INFO      Fetched 70 bars for GLD  (2026-03-27 → 2026-07-08)
+2026-07-08 13:15:40,021  INFO      Signal: BUY  |  Confidence: 0.431
+2026-07-08 13:15:40,181  INFO      Portfolio value : $99,259.41
+2026-07-08 13:15:40,182  INFO      Current price   : $374.98
+2026-07-08 13:15:40,182  INFO      Open position   : None
+2026-07-08 13:15:40,182  INFO      Position size: 53 shares  (confidence=0.431, alloc=20.1%, $19,929 of $99,259)
+2026-07-08 13:15:40,276  INFO      [OK] BUY (long) order submitted: 53 x GLD  [id=c434f614-d701-4f60-a39a-520d49a3a765]
+2026-07-08 13:15:45,346  INFO      Monitoring GLD  |  entry=375.01  stop=369.38  target=386.26
+2026-07-08 13:16:45,632  INFO        GLD [long] price=374.90  stop=369.38  trailing=inactive  target=386.26  P&L=-5.19
+2026-07-08 13:17:45,898  INFO        GLD [long] price=374.95  stop=369.38  trailing=inactive  target=386.26  P&L=-3.10
+2026-07-08 13:18:46,339  INFO        GLD [long] price=375.05  stop=369.38  trailing=inactive  target=386.26  P&L=-0.42
+2026-07-08 13:19:46,594  INFO        GLD [long] price=374.99  stop=369.38  trailing=inactive  target=386.26  P&L=-0.95
+2026-07-08 13:20:46,845  INFO        GLD [long] price=375.04  stop=369.38  trailing=inactive  target=386.26  P&L=+1.70
+2026-07-08 13:21:47,086  INFO        GLD [long] price=375.09  stop=369.38  trailing=inactive  target=386.26  P&L=+4.35
+2026-07-08 13:22:47,308  INFO        GLD [long] price=375.02  stop=369.38  trailing=inactive  target=386.26  P&L=+0.64
+2026-07-08 13:23:47,575  INFO        GLD [long] price=374.97  stop=369.38  trailing=inactive  target=386.26  P&L=-1.98
+2026-07-08 13:24:47,836  INFO        GLD [long] price=375.04  stop=369.38  trailing=inactive  target=386.26  P&L=+1.17
+2026-07-08 13:25:48,048  INFO        GLD [long] price=374.98  stop=369.38  trailing=inactive  target=386.26  P&L=-4.66
+2026-07-08 13:26:48,285  INFO        GLD [long] price=374.95  stop=369.38  trailing=inactive  target=386.26  P&L=-3.07
+2026-07-08 13:27:48,614  INFO        GLD [long] price=375.10  stop=369.38  trailing=inactive  target=386.26  P&L=+3.82
+2026-07-08 13:28:48,893  INFO        GLD [long] price=374.99  stop=369.38  trailing=inactive  target=386.26  P&L=-0.42
+2026-07-08 13:29:49,134  INFO        GLD [long] price=375.17  stop=369.38  trailing=inactive  target=386.26  P&L=+8.33
+2026-07-08 13:30:49,402  INFO        GLD [long] price=375.27  stop=369.38  trailing=inactive  target=386.26  P&L=+13.89
+2026-07-08 13:31:49,671  INFO        GLD [long] price=375.31  stop=369.38  trailing=inactive  target=386.26  P&L=+16.01
+2026-07-08 13:32:49,900  INFO        GLD [long] price=375.21  stop=369.38  trailing=inactive  target=386.26  P&L=+10.71
+2026-07-08 13:33:50,128  INFO        GLD [long] price=375.36  stop=369.38  trailing=inactive  target=386.26  P&L=+19.19
+2026-07-08 13:34:50,359  INFO        GLD [long] price=375.02  stop=369.38  trailing=inactive  target=386.26  P&L=+0.64
+2026-07-08 13:35:50,640  INFO        GLD [long] price=375.05  stop=369.38  trailing=inactive  target=386.26  P&L=+3.29
+2026-07-08 13:36:51,045  INFO        GLD [long] price=375.20  stop=369.38  trailing=inactive  target=386.26  P&L=+10.71
+2026-07-08 13:37:51,378  INFO        GLD [long] price=375.10  stop=369.38  trailing=inactive  target=386.26  P&L=+5.41
+2026-07-08 13:38:51,624  INFO        GLD [long] price=375.08  stop=369.38  trailing=inactive  target=386.26  P&L=+1.70
+2026-07-08 13:39:51,893  INFO        GLD [long] price=375.07  stop=369.38  trailing=inactive  target=386.26  P&L=+2.76
+2026-07-08 13:40:52,218  INFO        GLD [long] price=375.01  stop=369.38  trailing=inactive  target=386.26  P&L=+0.11
+2026-07-08 13:41:52,449  INFO        GLD [long] price=374.84  stop=369.38  trailing=inactive  target=386.26  P&L=-8.63
+2026-07-08 13:42:52,671  INFO        GLD [long] price=374.75  stop=369.38  trailing=inactive  target=386.26  P&L=-14.73
+2026-07-08 13:43:52,932  INFO        GLD [long] price=374.71  stop=369.38  trailing=inactive  target=386.26  P&L=-15.79
+2026-07-08 13:44:53,270  INFO        GLD [long] price=374.72  stop=369.38  trailing=inactive  target=386.26  P&L=-16.58
+2026-07-08 13:45:53,512  INFO        GLD [long] price=374.40  stop=369.38  trailing=inactive  target=386.26  P&L=-31.69
+2026-07-08 13:46:53,737  INFO        GLD [long] price=374.55  stop=369.38  trailing=inactive  target=386.26  P&L=-24.27
+2026-07-08 13:47:53,945  INFO        GLD [long] price=374.27  stop=369.38  trailing=inactive  target=386.26  P&L=-39.11
+2026-07-08 13:48:54,176  INFO        GLD [long] price=374.36  stop=369.38  trailing=inactive  target=386.26  P&L=-34.33
+2026-07-08 13:49:54,387  INFO        GLD [long] price=374.28  stop=369.38  trailing=inactive  target=386.26  P&L=-38.58
+2026-07-08 13:50:54,695  INFO        GLD [long] price=374.50  stop=369.38  trailing=inactive  target=386.26  P&L=-26.39
+2026-07-08 13:51:54,923  INFO        GLD [long] price=374.53  stop=369.38  trailing=inactive  target=386.26  P&L=-26.12
+2026-07-08 13:52:55,141  INFO        GLD [long] price=374.56  stop=369.38  trailing=inactive  target=386.26  P&L=-24.27
+2026-07-08 13:53:55,396  INFO        GLD [long] price=374.64  stop=369.38  trailing=inactive  target=386.26  P&L=-19.50
+2026-07-08 13:54:55,603  INFO        GLD [long] price=374.69  stop=369.38  trailing=inactive  target=386.26  P&L=-16.85
+2026-07-08 13:55:55,836  INFO        GLD [long] price=374.64  stop=369.38  trailing=inactive  target=386.26  P&L=-20.29
+2026-07-08 13:56:56,082  INFO        GLD [long] price=374.58  stop=369.38  trailing=inactive  target=386.26  P&L=-22.41
+2026-07-08 13:57:56,310  INFO        GLD [long] price=374.67  stop=369.38  trailing=inactive  target=386.26  P&L=-18.17
+2026-07-08 13:58:56,543  INFO        GLD [long] price=374.45  stop=369.38  trailing=inactive  target=386.26  P&L=-29.04
+2026-07-08 13:59:56,800  INFO        GLD [long] price=374.52  stop=369.38  trailing=inactive  target=386.26  P&L=-29.04
+2026-07-08 14:00:57,094  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-34.34
+2026-07-08 14:01:57,321  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-47.59
+2026-07-08 14:02:57,601  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-39.64
+2026-07-08 14:03:57,851  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-34.87
+2026-07-08 14:04:58,076  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-34.87
+2026-07-08 14:05:58,373  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-26.92
+2026-07-08 14:06:58,644  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-29.04
+2026-07-08 14:07:58,891  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-31.16
+2026-07-08 14:08:59,110  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-31.16
+2026-07-08 14:09:59,419  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-28.52
+2026-07-08 14:10:59,650  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-29.57
+2026-07-08 14:11:59,897  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-35.85
+2026-07-08 14:13:00,166  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-35.85
+2026-07-08 14:14:00,373  INFO        GLD [long] price=374.44  stop=369.38  trailing=inactive  target=386.26  P&L=-39.64
+2026-07-08 14:15:00,610  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-41.23
+2026-07-08 14:16:00,841  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-41.23
+2026-07-08 14:17:01,220  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:18:01,448  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:19:01,715  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:20:01,976  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:21:02,223  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.54
+2026-07-08 14:22:02,460  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.54
+2026-07-08 14:23:02,784  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.54
+2026-07-08 14:24:03,008  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.54
+2026-07-08 14:25:03,209  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.54
+2026-07-08 14:26:03,468  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.83
+2026-07-08 14:27:03,714  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.96
+2026-07-08 14:28:03,960  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-58.19
+2026-07-08 14:29:04,249  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-58.19
+2026-07-08 14:30:04,453  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 14:31:04,695  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-38.58
+2026-07-08 14:32:04,924  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-38.58
+2026-07-08 14:33:05,407  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-38.58
+2026-07-08 14:34:05,616  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.60
+2026-07-08 14:35:05,846  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-63.49
+2026-07-08 14:36:06,071  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.02
+2026-07-08 14:37:06,329  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-72.50
+2026-07-08 14:38:06,688  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-73.03
+2026-07-08 14:39:07,050  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-69.32
+2026-07-08 14:40:07,287  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.55
+2026-07-08 14:41:07,512  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.55
+2026-07-08 14:42:07,758  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.60
+2026-07-08 14:43:08,005  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.60
+2026-07-08 14:44:08,261  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 14:45:08,500  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 14:46:08,928  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 14:47:09,162  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 14:48:09,405  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-60.27
+2026-07-08 14:49:09,644  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-60.27
+2026-07-08 14:50:09,861  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-60.27
+2026-07-08 14:51:10,186  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-43.88
+2026-07-08 14:52:10,418  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-39.11
+2026-07-08 14:53:10,656  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:54:10,906  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:55:11,235  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:56:11,468  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:57:11,707  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 14:58:11,945  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.01
+2026-07-08 14:59:12,185  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.01
+2026-07-08 15:00:12,483  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-58.72
+2026-07-08 15:01:12,743  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-58.72
+2026-07-08 15:02:12,994  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-50.83
+2026-07-08 15:03:13,219  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-50.83
+2026-07-08 15:04:13,446  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-50.83
+2026-07-08 15:05:13,735  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-50.83
+2026-07-08 15:06:13,954  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-50.83
+2026-07-08 15:07:14,191  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:08:14,453  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:09:14,834  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:10:15,097  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:11:15,361  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:12:15,608  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:13:15,818  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:14:16,046  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:15:16,304  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 15:16:16,508  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:17:16,746  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:18:17,152  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:19:17,381  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:20:17,727  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:21:17,977  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:22:18,218  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:23:18,529  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:24:18,839  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:25:19,082  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:26:19,317  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:27:19,526  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:28:19,796  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:29:20,022  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:30:20,246  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:31:20,483  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:32:20,735  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:33:20,944  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:34:21,170  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:35:21,424  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:36:21,677  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:37:21,930  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:38:22,182  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:39:22,411  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:40:22,648  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:41:22,854  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:42:23,283  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:43:23,577  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:44:23,827  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:45:24,172  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.25
+2026-07-08 15:46:24,411  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 15:47:24,621  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 15:48:24,875  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:49:25,124  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:50:25,355  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-56.07
+2026-07-08 15:51:25,560  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:52:25,846  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:53:26,117  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:54:26,374  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:55:26,611  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 15:56:26,923  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 15:57:27,145  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 15:58:27,377  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 15:59:27,610  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.12
+2026-07-08 16:00:27,879  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.01
+2026-07-08 16:01:28,100  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.01
+2026-07-08 16:02:28,304  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-55.01
+2026-07-08 16:03:28,549  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-47.59
+2026-07-08 16:04:28,825  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-69.85
+2026-07-08 16:05:29,076  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-69.85
+2026-07-08 16:06:29,304  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.02
+2026-07-08 16:07:29,560  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.02
+2026-07-08 16:08:29,847  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.02
+2026-07-08 16:09:30,124  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.02
+2026-07-08 16:10:30,416  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-48.65
+2026-07-08 16:11:30,682  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.53
+2026-07-08 16:12:30,903  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.53
+2026-07-08 16:13:31,135  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-43.35
+2026-07-08 16:14:31,365  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 16:15:31,642  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 16:16:31,870  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.83
+2026-07-08 16:17:32,092  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 16:18:32,352  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 16:19:32,687  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 16:20:33,046  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 16:21:33,294  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-51.30
+2026-07-08 16:22:33,525  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:23:33,748  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:24:33,959  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:25:34,220  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:26:34,452  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:27:34,704  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-65.61
+2026-07-08 16:28:34,950  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.78
+2026-07-08 16:29:35,181  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.78
+2026-07-08 16:30:35,424  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-29.57
+2026-07-08 16:31:35,677  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-29.57
+2026-07-08 16:32:35,949  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.78
+2026-07-08 16:33:36,203  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-59.78
+2026-07-08 16:34:36,504  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 16:35:36,786  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 16:36:37,020  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 16:37:37,247  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 16:38:37,551  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 16:39:37,920  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-52.89
+2026-07-08 16:40:38,172  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:41:38,413  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:42:38,643  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:43:38,938  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:44:39,180  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:45:39,467  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:46:39,736  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:47:39,987  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:48:40,257  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-54.48
+2026-07-08 16:49:40,456  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-44.41
+2026-07-08 16:50:40,686  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:51:40,916  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:52:41,161  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:53:41,390  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:54:41,610  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:55:41,841  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:56:42,089  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-42.82
+2026-07-08 16:57:42,340  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-53.42
+2026-07-08 16:58:42,598  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 16:59:42,814  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 17:00:43,090  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 17:01:43,351  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 17:02:43,622  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 17:03:43,969  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-46.00
+2026-07-08 17:04:44,239  INFO        GLD [long] price=374.47  stop=369.38  trailing=inactive  target=386.26  P&L=-64.55

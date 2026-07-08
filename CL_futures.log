@@ -1076,3 +1076,23 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 11:10:25,909  INFO      [CL] Portfolio=$100,551.71  Price=$70.44  Position=None
 2026-07-07 11:10:25,909  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
 2026-07-07 11:10:25,909  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:20:25,910  INFO      [CL] ── Signal check 11:20 ──
+2026-07-07 11:20:26,075  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:20:26,609  INFO      [CL] Portfolio=$100,503.37  Price=$70.51  Position=None
+2026-07-07 11:20:26,609  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:20:26,609  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:30:26,610  INFO      [CL] ── Signal check 11:30 ──
+2026-07-07 11:30:26,755  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:30:27,187  INFO      [CL] Portfolio=$100,536.16  Price=$70.56  Position=None
+2026-07-07 11:30:27,187  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:30:27,187  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:40:27,187  INFO      [CL] ── Signal check 11:40 ──
+2026-07-07 11:40:27,353  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:40:27,799  INFO      [CL] Portfolio=$100,643.68  Price=$70.59  Position=None
+2026-07-07 11:40:27,800  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:40:27,800  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-07 11:50:27,800  INFO      [CL] ── Signal check 11:50 ──
+2026-07-07 11:50:27,960  INFO      [CL] Signal: SHORT  |  Confidence: 0.182  |  Leverage: 1.00x
+2026-07-07 11:50:28,370  INFO      [CL] Portfolio=$100,538.85  Price=$70.62  Position=None
+2026-07-07 11:50:28,370  INFO      Risk guard blocked trade: Confidence 0.18 below futures threshold 0.5
+2026-07-07 11:50:28,370  INFO      [CL] Signal complete. Sleeping 600s...

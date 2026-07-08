@@ -986,3 +986,27 @@ ValueError: operands could not be broadcast together with shapes (167,12) (17,)
 2026-07-07 11:10:21,580  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,569)
 2026-07-07 11:10:21,709  ERROR     Futures order failed (long): {"available":"7128.39","balance":"-51327.7","code":40310000,"message":"insufficient balance for USD (requested: 7366.17, available: 7128.39)","symbol":"USD"}
 2026-07-07 11:10:21,709  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:20:21,710  INFO      [ETH/USD] ── Signal check 11:20 ──
+2026-07-07 11:20:21,964  INFO      [ETH/USD] Signal: LONG  |  Confidence: 0.628  |  Leverage: 1.51x
+2026-07-07 11:20:22,412  INFO      [ETH/USD] Portfolio=$100,505.09  Price=$1801.99  Position=None
+2026-07-07 11:20:22,412  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,566)
+2026-07-07 11:20:22,476  ERROR     Futures order failed (long): {"available":"7170.45","balance":"-51327.7","code":40310000,"message":"insufficient balance for USD (requested: 7352.11, available: 7170.45)","symbol":"USD"}
+2026-07-07 11:20:22,477  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:30:22,477  INFO      [ETH/USD] ── Signal check 11:30 ──
+2026-07-07 11:30:22,674  INFO      [ETH/USD] Signal: LONG  |  Confidence: 0.628  |  Leverage: 1.51x
+2026-07-07 11:30:23,114  INFO      [ETH/USD] Portfolio=$100,522.80  Price=$1805.05  Position=None
+2026-07-07 11:30:23,114  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,567)
+2026-07-07 11:30:23,184  ERROR     Futures order failed (long): {"available":"7167.67","balance":"-51327.7","code":40310000,"message":"insufficient balance for USD (requested: 7364.61, available: 7167.67)","symbol":"USD"}
+2026-07-07 11:30:23,184  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:40:23,185  INFO      [ETH/USD] ── Signal check 11:40 ──
+2026-07-07 11:40:23,356  INFO      [ETH/USD] Signal: LONG  |  Confidence: 0.628  |  Leverage: 1.51x
+2026-07-07 11:40:23,835  INFO      [ETH/USD] Portfolio=$100,625.24  Price=$1804.90  Position=None
+2026-07-07 11:40:23,835  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,575)
+2026-07-07 11:40:23,898  ERROR     Futures order failed (long): {"available":"7225.81","balance":"-51327.7","code":40310000,"message":"insufficient balance for USD (requested: 7363.99, available: 7225.81)","symbol":"USD"}
+2026-07-07 11:40:23,898  INFO      [ETH/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:50:23,899  INFO      [ETH/USD] ── Signal check 11:50 ──
+2026-07-07 11:50:24,120  INFO      [ETH/USD] Signal: LONG  |  Confidence: 0.628  |  Leverage: 1.51x
+2026-07-07 11:50:24,614  INFO      [ETH/USD] Portfolio=$100,548.03  Price=$1806.26  Position=None
+2026-07-07 11:50:24,614  INFO      Futures position: 4 units  (scale=5.0%, leverage=1.5x, exposure=$7,569)
+2026-07-07 11:50:24,683  ERROR     Futures order failed (long): {"available":"7179.49","balance":"-51327.7","code":40310000,"message":"insufficient balance for USD (requested: 7369.54, available: 7179.49)","symbol":"USD"}
+2026-07-07 11:50:24,683  INFO      [ETH/USD] Signal complete. Sleeping 600s...

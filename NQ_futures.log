@@ -1126,3 +1126,23 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 11:10:22,234  INFO      [NQ] Portfolio=$100,542.04  Price=$29538.50  Position=None
 2026-07-07 11:10:22,235  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,614)
 2026-07-07 11:10:22,235  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:20:22,236  INFO      [NQ] ── Signal check 11:20 ──
+2026-07-07 11:20:22,410  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:20:22,875  INFO      [NQ] Portfolio=$100,506.50  Price=$29565.25  Position=None
+2026-07-07 11:20:22,875  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,610)
+2026-07-07 11:20:22,875  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:30:22,876  INFO      [NQ] ── Signal check 11:30 ──
+2026-07-07 11:30:23,037  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:30:23,449  INFO      [NQ] Portfolio=$100,526.65  Price=$29529.00  Position=None
+2026-07-07 11:30:23,449  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,612)
+2026-07-07 11:30:23,449  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:40:23,451  INFO      [NQ] ── Signal check 11:40 ──
+2026-07-07 11:40:23,656  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:40:24,092  INFO      [NQ] Portfolio=$100,624.99  Price=$29539.00  Position=None
+2026-07-07 11:40:24,092  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,622)
+2026-07-07 11:40:24,092  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-07 11:50:24,093  INFO      [NQ] ── Signal check 11:50 ──
+2026-07-07 11:50:24,294  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-07 11:50:24,761  INFO      [NQ] Portfolio=$100,545.35  Price=$29554.75  Position=None
+2026-07-07 11:50:24,761  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,614)
+2026-07-07 11:50:24,761  INFO      [NQ] Signal complete. Sleeping 600s...
