@@ -1775,3 +1775,1923 @@ ValueError: operands could not be broadcast together with shapes (167,12) (17,)
 2026-07-07 10:50:14,538  INFO      [BTC/USD] Portfolio=$100,619.27  Price=$64012.02  Position=None
 2026-07-07 10:50:14,538  INFO      [BTC/USD] FLAT signal — no trade
 2026-07-07 10:50:14,538  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:00:12,616  INFO      [BTC/USD] ── Signal check 11:00 ──
+2026-07-07 11:00:12,771  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:00:13,437  INFO      [BTC/USD] Portfolio=$100,518.11  Price=$63984.54  Position=None
+2026-07-07 11:00:13,437  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:00:13,437  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:00:14,539  INFO      [BTC/USD] ── Signal check 11:00 ──
+2026-07-07 11:00:14,686  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:00:15,158  INFO      [BTC/USD] Portfolio=$100,518.52  Price=$63948.90  Position=None
+2026-07-07 11:00:15,158  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:00:15,159  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:10:13,438  INFO      [BTC/USD] ── Signal check 11:10 ──
+2026-07-07 11:10:13,694  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:10:14,321  INFO      [BTC/USD] Portfolio=$100,541.80  Price=$64049.00  Position=None
+2026-07-07 11:10:14,321  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:10:14,322  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:10:15,159  INFO      [BTC/USD] ── Signal check 11:10 ──
+2026-07-07 11:10:15,362  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:10:15,804  INFO      [BTC/USD] Portfolio=$100,545.39  Price=$64049.00  Position=None
+2026-07-07 11:10:15,804  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:10:15,804  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:20:14,322  INFO      [BTC/USD] ── Signal check 11:20 ──
+2026-07-07 11:20:14,553  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:20:15,207  INFO      [BTC/USD] Portfolio=$100,517.67  Price=$63986.60  Position=None
+2026-07-07 11:20:15,208  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:20:15,208  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:20:15,804  INFO      [BTC/USD] ── Signal check 11:20 ──
+2026-07-07 11:20:15,971  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:20:16,449  INFO      [BTC/USD] Portfolio=$100,506.47  Price=$63986.60  Position=None
+2026-07-07 11:20:16,449  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:20:16,449  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:30:15,208  INFO      [BTC/USD] ── Signal check 11:30 ──
+2026-07-07 11:30:15,412  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:30:15,893  INFO      [BTC/USD] Portfolio=$100,522.66  Price=$64137.54  Position=None
+2026-07-07 11:30:15,894  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:30:15,894  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:30:16,450  INFO      [BTC/USD] ── Signal check 11:30 ──
+2026-07-07 11:30:16,585  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:30:17,020  INFO      [BTC/USD] Portfolio=$100,525.52  Price=$64115.30  Position=None
+2026-07-07 11:30:17,020  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:30:17,020  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:40:15,895  INFO      [BTC/USD] ── Signal check 11:40 ──
+2026-07-07 11:40:16,251  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:40:16,696  INFO      [BTC/USD] Portfolio=$100,618.62  Price=$64114.40  Position=None
+2026-07-07 11:40:16,697  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:40:16,697  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:40:17,021  INFO      [BTC/USD] ── Signal check 11:40 ──
+2026-07-07 11:40:17,227  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:40:17,680  INFO      [BTC/USD] Portfolio=$100,618.70  Price=$64114.40  Position=None
+2026-07-07 11:40:17,680  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:40:17,680  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:50:16,697  INFO      [BTC/USD] ── Signal check 11:50 ──
+2026-07-07 11:50:16,884  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:50:17,344  INFO      [BTC/USD] Portfolio=$100,553.36  Price=$64119.09  Position=None
+2026-07-07 11:50:17,344  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:50:17,344  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 11:50:17,681  INFO      [BTC/USD] ── Signal check 11:50 ──
+2026-07-07 11:50:17,874  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 11:50:18,333  INFO      [BTC/USD] Portfolio=$100,554.03  Price=$64119.09  Position=None
+2026-07-07 11:50:18,334  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 11:50:18,334  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:00:17,345  INFO      [BTC/USD] ── Signal check 12:00 ──
+2026-07-07 12:00:17,532  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:00:18,028  INFO      [BTC/USD] Portfolio=$100,569.03  Price=$64133.01  Position=None
+2026-07-07 12:00:18,029  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:00:18,029  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:00:18,334  INFO      [BTC/USD] ── Signal check 12:00 ──
+2026-07-07 12:00:18,523  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:00:18,981  INFO      [BTC/USD] Portfolio=$100,564.92  Price=$64131.57  Position=None
+2026-07-07 12:00:18,981  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:00:18,981  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:10:18,030  INFO      [BTC/USD] ── Signal check 12:10 ──
+2026-07-07 12:10:18,252  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:10:18,825  INFO      [BTC/USD] Portfolio=$100,511.32  Price=$64009.60  Position=None
+2026-07-07 12:10:18,825  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:10:18,825  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:10:18,982  INFO      [BTC/USD] ── Signal check 12:10 ──
+2026-07-07 12:10:19,158  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:10:19,604  INFO      [BTC/USD] Portfolio=$100,507.05  Price=$64009.60  Position=None
+2026-07-07 12:10:19,605  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:10:19,605  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:20:18,826  INFO      [BTC/USD] ── Signal check 12:20 ──
+2026-07-07 12:20:19,053  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:20:19,605  INFO      [BTC/USD] ── Signal check 12:20 ──
+2026-07-07 12:20:19,699  INFO      [BTC/USD] Portfolio=$100,496.18  Price=$64072.59  Position=None
+2026-07-07 12:20:19,700  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:20:19,700  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:20:19,739  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:20:20,183  INFO      [BTC/USD] Portfolio=$100,497.18  Price=$64072.59  Position=None
+2026-07-07 12:20:20,184  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:20:20,184  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:30:19,701  INFO      [BTC/USD] ── Signal check 12:30 ──
+2026-07-07 12:30:19,900  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:30:20,185  INFO      [BTC/USD] ── Signal check 12:30 ──
+2026-07-07 12:30:20,361  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:30:20,407  INFO      [BTC/USD] Portfolio=$100,428.75  Price=$63985.02  Position=None
+2026-07-07 12:30:20,407  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:30:20,407  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:30:20,818  INFO      [BTC/USD] Portfolio=$100,426.98  Price=$63985.02  Position=None
+2026-07-07 12:30:20,818  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:30:20,818  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:40:20,408  INFO      [BTC/USD] ── Signal check 12:40 ──
+2026-07-07 12:40:20,637  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:40:20,819  INFO      [BTC/USD] ── Signal check 12:40 ──
+2026-07-07 12:40:21,008  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:40:21,089  INFO      [BTC/USD] Portfolio=$100,407.73  Price=$64016.70  Position=None
+2026-07-07 12:40:21,090  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:40:21,090  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:40:21,460  INFO      [BTC/USD] Portfolio=$100,410.51  Price=$64016.70  Position=None
+2026-07-07 12:40:21,461  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:40:21,461  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:50:21,090  INFO      [BTC/USD] ── Signal check 12:50 ──
+2026-07-07 12:50:21,273  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:50:21,462  INFO      [BTC/USD] ── Signal check 12:50 ──
+2026-07-07 12:50:21,654  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 12:50:21,727  INFO      [BTC/USD] Portfolio=$100,239.74  Price=$63861.11  Position=None
+2026-07-07 12:50:21,727  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:50:21,727  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 12:50:22,179  INFO      [BTC/USD] Portfolio=$100,237.76  Price=$63873.10  Position=None
+2026-07-07 12:50:22,180  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 12:50:22,180  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:00:21,742  INFO      [BTC/USD] ── Signal check 13:00 ──
+2026-07-07 13:00:21,938  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:00:22,181  INFO      [BTC/USD] ── Signal check 13:00 ──
+2026-07-07 13:00:22,381  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:00:22,418  INFO      [BTC/USD] Portfolio=$99,996.80  Price=$63599.13  Position=None
+2026-07-07 13:00:22,418  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:00:22,418  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:00:22,828  INFO      [BTC/USD] Portfolio=$100,000.88  Price=$63591.79  Position=None
+2026-07-07 13:00:22,828  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:00:22,829  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:10:22,419  INFO      [BTC/USD] ── Signal check 13:10 ──
+2026-07-07 13:10:22,576  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:10:22,829  INFO      [BTC/USD] ── Signal check 13:10 ──
+2026-07-07 13:10:23,019  INFO      [BTC/USD] Portfolio=$99,857.15  Price=$63562.89  Position=None
+2026-07-07 13:10:23,021  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:10:23,021  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:10:23,033  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:10:23,504  INFO      [BTC/USD] Portfolio=$99,857.96  Price=$63562.89  Position=None
+2026-07-07 13:10:23,504  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:10:23,504  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:20:23,022  INFO      [BTC/USD] ── Signal check 13:20 ──
+2026-07-07 13:20:23,207  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:20:23,505  INFO      [BTC/USD] ── Signal check 13:20 ──
+2026-07-07 13:20:23,661  INFO      [BTC/USD] Portfolio=$99,731.76  Price=$63495.30  Position=None
+2026-07-07 13:20:23,662  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:20:23,662  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:20:23,712  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:20:24,146  INFO      [BTC/USD] Portfolio=$99,733.41  Price=$63495.30  Position=None
+2026-07-07 13:20:24,146  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:20:24,146  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:30:23,662  INFO      [BTC/USD] ── Signal check 13:30 ──
+2026-07-07 13:30:23,853  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:30:24,147  INFO      [BTC/USD] ── Signal check 13:30 ──
+2026-07-07 13:30:24,306  INFO      [BTC/USD] Portfolio=$99,733.01  Price=$63653.82  Position=None
+2026-07-07 13:30:24,307  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:30:24,307  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:30:24,347  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:30:24,862  INFO      [BTC/USD] Portfolio=$99,732.95  Price=$63624.84  Position=None
+2026-07-07 13:30:24,862  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:30:24,863  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:40:24,308  INFO      [BTC/USD] ── Signal check 13:40 ──
+2026-07-07 13:40:24,552  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:40:24,863  INFO      [BTC/USD] ── Signal check 13:40 ──
+2026-07-07 13:40:25,078  INFO      [BTC/USD] Portfolio=$99,648.05  Price=$63751.09  Position=None
+2026-07-07 13:40:25,078  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:40:25,079  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:40:25,116  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:40:25,758  INFO      [BTC/USD] Portfolio=$99,646.07  Price=$63751.09  Position=None
+2026-07-07 13:40:25,758  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:40:25,759  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:50:25,079  INFO      [BTC/USD] ── Signal check 13:50 ──
+2026-07-07 13:50:25,306  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:50:25,759  INFO      [BTC/USD] ── Signal check 13:50 ──
+2026-07-07 13:50:25,849  INFO      [BTC/USD] Portfolio=$99,708.46  Price=$63860.83  Position=None
+2026-07-07 13:50:25,849  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:50:25,849  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 13:50:25,947  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 13:50:26,463  INFO      [BTC/USD] Portfolio=$99,701.05  Price=$63848.80  Position=None
+2026-07-07 13:50:26,464  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 13:50:26,464  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:00:25,850  INFO      [BTC/USD] ── Signal check 14:00 ──
+2026-07-07 14:00:26,049  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:00:26,465  INFO      [BTC/USD] ── Signal check 14:00 ──
+2026-07-07 14:00:26,517  INFO      [BTC/USD] Portfolio=$99,873.27  Price=$63827.30  Position=None
+2026-07-07 14:00:26,517  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:00:26,517  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:00:26,630  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:00:27,083  INFO      [BTC/USD] Portfolio=$99,879.57  Price=$63830.10  Position=None
+2026-07-07 14:00:27,083  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:00:27,083  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:10:26,518  INFO      [BTC/USD] ── Signal check 14:10 ──
+2026-07-07 14:10:26,728  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:10:27,084  INFO      [BTC/USD] ── Signal check 14:10 ──
+2026-07-07 14:10:27,193  INFO      [BTC/USD] Portfolio=$99,879.01  Price=$63699.30  Position=None
+2026-07-07 14:10:27,194  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:10:27,194  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:10:27,252  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:10:27,687  INFO      [BTC/USD] Portfolio=$99,879.01  Price=$63699.30  Position=None
+2026-07-07 14:10:27,687  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:10:27,687  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:20:27,194  INFO      [BTC/USD] ── Signal check 14:20 ──
+2026-07-07 14:20:27,687  INFO      [BTC/USD] ── Signal check 14:20 ──
+2026-07-07 14:20:28,011  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:20:28,501  INFO      [BTC/USD] Portfolio=$99,765.17  Price=$63726.20  Position=None
+2026-07-07 14:20:28,502  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:20:28,502  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:20:31,658  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:20:32,141  INFO      [BTC/USD] Portfolio=$99,760.62  Price=$63726.20  Position=None
+2026-07-07 14:20:32,141  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:20:32,141  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:30:28,502  INFO      [BTC/USD] ── Signal check 14:30 ──
+2026-07-07 14:30:28,741  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:30:29,245  INFO      [BTC/USD] Portfolio=$121,175.26  Price=$63740.60  Position=None
+2026-07-07 14:30:29,245  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:30:29,245  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:30:32,142  INFO      [BTC/USD] ── Signal check 14:30 ──
+2026-07-07 14:30:32,304  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:30:32,756  INFO      [BTC/USD] Portfolio=$121,125.28  Price=$63729.88  Position=None
+2026-07-07 14:30:32,757  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:30:32,757  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:40:29,246  INFO      [BTC/USD] ── Signal check 14:40 ──
+2026-07-07 14:40:29,564  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:40:30,136  INFO      [BTC/USD] Portfolio=$121,148.97  Price=$63709.30  Position=None
+2026-07-07 14:40:30,137  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:40:30,137  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:40:32,757  INFO      [BTC/USD] ── Signal check 14:40 ──
+2026-07-07 14:40:32,961  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:40:33,402  INFO      [BTC/USD] Portfolio=$121,148.97  Price=$63709.30  Position=None
+2026-07-07 14:40:33,402  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:40:33,402  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:50:30,137  INFO      [BTC/USD] ── Signal check 14:50 ──
+2026-07-07 14:50:30,358  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:50:30,858  INFO      [BTC/USD] Portfolio=$99,755.54  Price=$63624.90  Position=None
+2026-07-07 14:50:30,859  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:50:30,859  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 14:50:33,403  INFO      [BTC/USD] ── Signal check 14:50 ──
+2026-07-07 14:50:33,601  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 14:50:34,035  INFO      [BTC/USD] Portfolio=$99,756.18  Price=$63624.90  Position=None
+2026-07-07 14:50:34,035  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 14:50:34,036  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:00:30,862  INFO      [BTC/USD] ── Signal check 15:00 ──
+2026-07-07 15:00:31,083  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:00:31,519  INFO      [BTC/USD] Portfolio=$99,701.50  Price=$63782.49  Position=None
+2026-07-07 15:00:31,520  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:00:31,520  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:00:34,037  INFO      [BTC/USD] ── Signal check 15:00 ──
+2026-07-07 15:00:34,207  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:00:34,711  INFO      [BTC/USD] Portfolio=$99,703.00  Price=$63782.49  Position=None
+2026-07-07 15:00:34,711  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:00:34,711  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:10:31,521  INFO      [BTC/USD] ── Signal check 15:10 ──
+2026-07-07 15:10:31,695  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:10:32,421  INFO      [BTC/USD] Portfolio=$99,727.35  Price=$63751.40  Position=None
+2026-07-07 15:10:32,421  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:10:32,422  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:10:34,712  INFO      [BTC/USD] ── Signal check 15:10 ──
+2026-07-07 15:10:34,875  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:10:35,330  INFO      [BTC/USD] Portfolio=$99,727.35  Price=$63770.72  Position=None
+2026-07-07 15:10:35,330  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:10:35,330  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:20:32,422  INFO      [BTC/USD] ── Signal check 15:20 ──
+2026-07-07 15:20:32,778  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:20:33,228  INFO      [BTC/USD] Portfolio=$99,580.59  Price=$63527.13  Position=None
+2026-07-07 15:20:33,229  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:20:33,229  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:20:35,331  INFO      [BTC/USD] ── Signal check 15:20 ──
+2026-07-07 15:20:35,482  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:20:35,936  INFO      [BTC/USD] Portfolio=$99,580.44  Price=$63527.13  Position=None
+2026-07-07 15:20:35,936  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:20:35,936  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:30:33,229  INFO      [BTC/USD] ── Signal check 15:30 ──
+2026-07-07 15:30:33,395  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:30:33,968  INFO      [BTC/USD] Portfolio=$99,497.77  Price=$63475.78  Position=None
+2026-07-07 15:30:33,968  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:30:33,968  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:30:35,937  INFO      [BTC/USD] ── Signal check 15:30 ──
+2026-07-07 15:30:36,142  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:30:36,596  INFO      [BTC/USD] Portfolio=$99,487.37  Price=$63475.78  Position=None
+2026-07-07 15:30:36,596  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:30:36,596  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:40:33,969  INFO      [BTC/USD] ── Signal check 15:40 ──
+2026-07-07 15:40:34,202  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:40:34,714  INFO      [BTC/USD] Portfolio=$99,320.60  Price=$63366.78  Position=None
+2026-07-07 15:40:34,714  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:40:34,714  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:40:36,597  INFO      [BTC/USD] ── Signal check 15:40 ──
+2026-07-07 15:40:36,782  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:40:37,223  INFO      [BTC/USD] Portfolio=$99,317.15  Price=$63366.78  Position=None
+2026-07-07 15:40:37,224  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:40:37,224  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:50:34,715  INFO      [BTC/USD] ── Signal check 15:50 ──
+2026-07-07 15:50:34,881  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:50:35,365  INFO      [BTC/USD] Portfolio=$99,361.30  Price=$63514.70  Position=None
+2026-07-07 15:50:35,365  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:50:35,365  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 15:50:37,225  INFO      [BTC/USD] ── Signal check 15:50 ──
+2026-07-07 15:50:37,378  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 15:50:37,840  INFO      [BTC/USD] Portfolio=$99,361.30  Price=$63488.92  Position=None
+2026-07-07 15:50:37,840  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 15:50:37,841  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:00:35,367  INFO      [BTC/USD] ── Signal check 16:00 ──
+2026-07-07 16:00:35,610  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:00:36,087  INFO      [BTC/USD] Portfolio=$99,279.78  Price=$63349.75  Position=None
+2026-07-07 16:00:36,087  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:00:36,087  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:00:37,841  INFO      [BTC/USD] ── Signal check 16:00 ──
+2026-07-07 16:00:37,995  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:00:38,450  INFO      [BTC/USD] Portfolio=$99,231.07  Price=$63332.30  Position=None
+2026-07-07 16:00:38,451  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:00:38,451  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:10:36,088  INFO      [BTC/USD] ── Signal check 16:10 ──
+2026-07-07 16:10:36,274  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:10:36,796  INFO      [BTC/USD] Portfolio=$99,300.99  Price=$63428.16  Position=None
+2026-07-07 16:10:36,796  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:10:36,796  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:10:38,451  INFO      [BTC/USD] ── Signal check 16:10 ──
+2026-07-07 16:10:38,606  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:10:39,103  INFO      [BTC/USD] Portfolio=$99,290.84  Price=$63428.16  Position=None
+2026-07-07 16:10:39,103  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:10:39,104  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:20:36,797  INFO      [BTC/USD] ── Signal check 16:20 ──
+2026-07-07 16:20:37,095  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:20:37,680  INFO      [BTC/USD] Portfolio=$99,320.78  Price=$63509.57  Position=None
+2026-07-07 16:20:37,681  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:20:37,681  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:20:39,104  INFO      [BTC/USD] ── Signal check 16:20 ──
+2026-07-07 16:20:39,227  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:20:39,695  INFO      [BTC/USD] Portfolio=$99,320.78  Price=$63509.57  Position=None
+2026-07-07 16:20:39,695  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:20:39,695  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:30:37,681  INFO      [BTC/USD] ── Signal check 16:30 ──
+2026-07-07 16:30:37,888  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:30:38,389  INFO      [BTC/USD] Portfolio=$99,336.17  Price=$63425.70  Position=None
+2026-07-07 16:30:38,390  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:30:38,390  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:30:39,697  INFO      [BTC/USD] ── Signal check 16:30 ──
+2026-07-07 16:30:39,865  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:30:40,358  INFO      [BTC/USD] Portfolio=$99,336.17  Price=$63441.40  Position=None
+2026-07-07 16:30:40,358  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:30:40,359  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:40:38,391  INFO      [BTC/USD] ── Signal check 16:40 ──
+2026-07-07 16:40:38,641  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:40:39,131  INFO      [BTC/USD] Portfolio=$99,432.44  Price=$63614.60  Position=None
+2026-07-07 16:40:39,131  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:40:39,131  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:40:40,359  INFO      [BTC/USD] ── Signal check 16:40 ──
+2026-07-07 16:40:40,530  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:40:40,978  INFO      [BTC/USD] Portfolio=$99,432.44  Price=$63614.60  Position=None
+2026-07-07 16:40:40,978  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:40:40,978  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:50:39,131  INFO      [BTC/USD] ── Signal check 16:50 ──
+2026-07-07 16:50:39,297  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:50:39,870  INFO      [BTC/USD] Portfolio=$99,398.92  Price=$63534.90  Position=None
+2026-07-07 16:50:39,871  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:50:39,871  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 16:50:40,979  INFO      [BTC/USD] ── Signal check 16:50 ──
+2026-07-07 16:50:41,181  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 16:50:41,613  INFO      [BTC/USD] Portfolio=$99,401.52  Price=$63534.90  Position=None
+2026-07-07 16:50:41,613  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 16:50:41,613  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:00:39,871  INFO      [BTC/USD] ── Signal check 17:00 ──
+2026-07-07 17:00:40,055  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:00:40,508  INFO      [BTC/USD] Portfolio=$99,499.47  Price=$63560.74  Position=None
+2026-07-07 17:00:40,508  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:00:40,508  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:00:41,614  INFO      [BTC/USD] ── Signal check 17:00 ──
+2026-07-07 17:00:41,775  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:00:42,218  INFO      [BTC/USD] Portfolio=$99,499.47  Price=$63560.74  Position=None
+2026-07-07 17:00:42,219  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:00:42,219  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:10:40,508  INFO      [BTC/USD] ── Signal check 17:10 ──
+2026-07-07 17:10:40,673  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:10:41,173  INFO      [BTC/USD] Portfolio=$99,514.17  Price=$63633.83  Position=None
+2026-07-07 17:10:41,174  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:10:41,174  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:10:42,219  INFO      [BTC/USD] ── Signal check 17:10 ──
+2026-07-07 17:10:42,333  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:10:42,784  INFO      [BTC/USD] Portfolio=$99,521.97  Price=$63633.83  Position=None
+2026-07-07 17:10:42,784  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:10:42,784  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:20:41,174  INFO      [BTC/USD] ── Signal check 17:20 ──
+2026-07-07 17:20:41,361  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:20:41,838  INFO      [BTC/USD] Portfolio=$99,703.67  Price=$63688.33  Position=None
+2026-07-07 17:20:41,838  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:20:41,838  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:20:42,785  INFO      [BTC/USD] ── Signal check 17:20 ──
+2026-07-07 17:20:43,043  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:20:43,483  INFO      [BTC/USD] Portfolio=$99,693.17  Price=$63688.33  Position=None
+2026-07-07 17:20:43,484  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:20:43,484  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:30:41,839  INFO      [BTC/USD] ── Signal check 17:30 ──
+2026-07-07 17:30:42,100  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:30:42,688  INFO      [BTC/USD] Portfolio=$99,680.63  Price=$63669.30  Position=None
+2026-07-07 17:30:42,688  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:30:42,689  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:30:43,485  INFO      [BTC/USD] ── Signal check 17:30 ──
+2026-07-07 17:30:43,648  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:30:44,096  INFO      [BTC/USD] Portfolio=$99,680.63  Price=$63669.30  Position=None
+2026-07-07 17:30:44,097  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:30:44,097  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:40:42,689  INFO      [BTC/USD] ── Signal check 17:40 ──
+2026-07-07 17:40:42,865  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:40:43,376  INFO      [BTC/USD] Portfolio=$99,502.89  Price=$63531.40  Position=None
+2026-07-07 17:40:43,377  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:40:43,377  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:40:44,098  INFO      [BTC/USD] ── Signal check 17:40 ──
+2026-07-07 17:40:44,223  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:40:44,677  INFO      [BTC/USD] Portfolio=$99,507.89  Price=$63531.40  Position=None
+2026-07-07 17:40:44,678  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:40:44,678  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:50:43,378  INFO      [BTC/USD] ── Signal check 17:50 ──
+2026-07-07 17:50:43,566  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:50:44,083  INFO      [BTC/USD] Portfolio=$99,438.89  Price=$63451.83  Position=None
+2026-07-07 17:50:44,084  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:50:44,084  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 17:50:44,679  INFO      [BTC/USD] ── Signal check 17:50 ──
+2026-07-07 17:50:44,791  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 17:50:45,279  INFO      [BTC/USD] Portfolio=$99,438.89  Price=$63431.72  Position=None
+2026-07-07 17:50:45,279  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 17:50:45,280  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:00:44,084  INFO      [BTC/USD] ── Signal check 18:00 ──
+2026-07-07 18:00:44,284  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:00:44,758  INFO      [BTC/USD] Portfolio=$99,244.74  Price=$63336.70  Position=None
+2026-07-07 18:00:44,758  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:00:44,758  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:00:45,280  INFO      [BTC/USD] ── Signal check 18:00 ──
+2026-07-07 18:00:45,495  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:00:45,971  INFO      [BTC/USD] Portfolio=$99,244.74  Price=$63336.70  Position=None
+2026-07-07 18:00:45,971  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:00:45,971  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:10:44,759  INFO      [BTC/USD] ── Signal check 18:10 ──
+2026-07-07 18:10:44,920  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:10:45,498  INFO      [BTC/USD] Portfolio=$99,461.33  Price=$63448.76  Position=None
+2026-07-07 18:10:45,498  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:10:45,498  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:10:45,972  INFO      [BTC/USD] ── Signal check 18:10 ──
+2026-07-07 18:10:46,137  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:10:46,573  INFO      [BTC/USD] Portfolio=$99,461.33  Price=$63442.73  Position=None
+2026-07-07 18:10:46,574  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:10:46,574  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:20:45,499  INFO      [BTC/USD] ── Signal check 18:20 ──
+2026-07-07 18:20:45,791  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:20:46,574  INFO      [BTC/USD] ── Signal check 18:20 ──
+2026-07-07 18:20:46,607  INFO      [BTC/USD] Portfolio=$99,602.07  Price=$63487.95  Position=None
+2026-07-07 18:20:46,607  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:20:46,609  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:20:46,880  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:20:47,338  INFO      [BTC/USD] Portfolio=$99,603.73  Price=$63487.95  Position=None
+2026-07-07 18:20:47,338  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:20:47,338  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:30:46,610  INFO      [BTC/USD] ── Signal check 18:30 ──
+2026-07-07 18:30:46,953  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:30:47,339  INFO      [BTC/USD] ── Signal check 18:30 ──
+2026-07-07 18:30:47,496  INFO      [BTC/USD] Portfolio=$99,642.65  Price=$63606.65  Position=None
+2026-07-07 18:30:47,496  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:30:47,496  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:30:47,538  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:30:48,006  INFO      [BTC/USD] Portfolio=$99,642.65  Price=$63579.40  Position=None
+2026-07-07 18:30:48,006  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:30:48,006  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:40:47,497  INFO      [BTC/USD] ── Signal check 18:40 ──
+2026-07-07 18:40:47,654  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:40:48,007  INFO      [BTC/USD] ── Signal check 18:40 ──
+2026-07-07 18:40:48,176  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:40:48,200  INFO      [BTC/USD] Portfolio=$99,772.73  Price=$63658.51  Position=None
+2026-07-07 18:40:48,200  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:40:48,200  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:40:48,656  INFO      [BTC/USD] Portfolio=$99,772.73  Price=$63658.51  Position=None
+2026-07-07 18:40:48,657  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:40:48,657  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:50:48,201  INFO      [BTC/USD] ── Signal check 18:50 ──
+2026-07-07 18:50:48,609  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:50:48,657  INFO      [BTC/USD] ── Signal check 18:50 ──
+2026-07-07 18:50:49,041  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 18:50:49,472  INFO      [BTC/USD] Portfolio=$99,969.40  Price=$63613.28  Position=None
+2026-07-07 18:50:49,473  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:50:49,473  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 18:50:49,834  INFO      [BTC/USD] Portfolio=$99,969.40  Price=$63613.28  Position=None
+2026-07-07 18:50:49,835  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 18:50:49,835  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:00:49,473  INFO      [BTC/USD] ── Signal check 19:00 ──
+2026-07-07 19:00:49,639  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:00:49,836  INFO      [BTC/USD] ── Signal check 19:00 ──
+2026-07-07 19:00:50,025  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:00:50,125  INFO      [BTC/USD] Portfolio=$99,849.72  Price=$63597.82  Position=None
+2026-07-07 19:00:50,129  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:00:50,129  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:00:50,473  INFO      [BTC/USD] Portfolio=$99,849.72  Price=$63597.82  Position=None
+2026-07-07 19:00:50,474  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:00:50,474  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:10:50,130  INFO      [BTC/USD] ── Signal check 19:10 ──
+2026-07-07 19:10:50,442  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:10:50,474  INFO      [BTC/USD] ── Signal check 19:10 ──
+2026-07-07 19:10:50,641  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:10:50,972  INFO      [BTC/USD] Portfolio=$99,889.76  Price=$63560.19  Position=None
+2026-07-07 19:10:50,972  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:10:50,972  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:10:51,074  INFO      [BTC/USD] Portfolio=$99,889.76  Price=$63560.19  Position=None
+2026-07-07 19:10:51,074  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:10:51,074  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:20:50,973  INFO      [BTC/USD] ── Signal check 19:20 ──
+2026-07-07 19:20:51,074  INFO      [BTC/USD] ── Signal check 19:20 ──
+2026-07-07 19:20:51,250  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:20:51,273  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:20:51,718  INFO      [BTC/USD] Portfolio=$99,887.03  Price=$63511.56  Position=None
+2026-07-07 19:20:51,718  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:20:51,718  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:20:51,741  INFO      [BTC/USD] Portfolio=$99,887.03  Price=$63511.56  Position=None
+2026-07-07 19:20:51,741  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:20:51,742  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:30:51,718  INFO      [BTC/USD] ── Signal check 19:30 ──
+2026-07-07 19:30:51,743  INFO      [BTC/USD] ── Signal check 19:30 ──
+2026-07-07 19:30:51,903  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:30:51,927  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:30:52,383  INFO      [BTC/USD] Portfolio=$99,741.41  Price=$63411.58  Position=None
+2026-07-07 19:30:52,384  INFO      [BTC/USD] Portfolio=$99,741.41  Price=$63411.58  Position=None
+2026-07-07 19:30:52,385  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:30:52,385  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:30:52,385  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:30:52,385  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:40:52,385  INFO      [BTC/USD] ── Signal check 19:40 ──
+2026-07-07 19:40:52,386  INFO      [BTC/USD] ── Signal check 19:40 ──
+2026-07-07 19:40:52,561  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:40:52,561  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:40:53,056  INFO      [BTC/USD] Portfolio=$99,434.19  Price=$62995.46  Position=None
+2026-07-07 19:40:53,056  INFO      [BTC/USD] Portfolio=$99,434.19  Price=$62995.46  Position=None
+2026-07-07 19:40:53,056  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:40:53,057  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:40:53,057  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:40:53,057  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:50:53,057  INFO      [BTC/USD] ── Signal check 19:50 ──
+2026-07-07 19:50:53,058  INFO      [BTC/USD] ── Signal check 19:50 ──
+2026-07-07 19:50:53,287  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:50:53,335  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 19:50:53,746  INFO      [BTC/USD] Portfolio=$99,476.86  Price=$63200.20  Position=None
+2026-07-07 19:50:53,746  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:50:53,746  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 19:50:53,787  INFO      [BTC/USD] Portfolio=$99,476.86  Price=$63200.20  Position=None
+2026-07-07 19:50:53,787  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 19:50:53,787  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:00:53,747  INFO      [BTC/USD] ── Signal check 20:00 ──
+2026-07-07 20:00:53,789  INFO      [BTC/USD] ── Signal check 20:00 ──
+2026-07-07 20:00:53,965  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:00:53,995  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:00:54,458  INFO      [BTC/USD] Portfolio=$99,301.66  Price=$62908.19  Position=None
+2026-07-07 20:00:54,458  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:00:54,459  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:00:54,462  INFO      [BTC/USD] Portfolio=$99,301.66  Price=$62908.19  Position=None
+2026-07-07 20:00:54,462  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:00:54,462  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:10:54,459  INFO      [BTC/USD] ── Signal check 20:10 ──
+2026-07-07 20:10:54,463  INFO      [BTC/USD] ── Signal check 20:10 ──
+2026-07-07 20:10:54,654  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:10:54,670  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:10:55,145  INFO      [BTC/USD] Portfolio=$99,187.60  Price=$62803.50  Position=None
+2026-07-07 20:10:55,145  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:10:55,145  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:10:55,151  INFO      [BTC/USD] Portfolio=$99,187.60  Price=$62803.50  Position=None
+2026-07-07 20:10:55,151  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:10:55,151  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:20:55,146  INFO      [BTC/USD] ── Signal check 20:20 ──
+2026-07-07 20:20:55,152  INFO      [BTC/USD] ── Signal check 20:20 ──
+2026-07-07 20:20:55,345  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:20:55,379  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:20:55,812  INFO      [BTC/USD] Portfolio=$99,207.30  Price=$62823.85  Position=None
+2026-07-07 20:20:55,812  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:20:55,812  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:20:55,839  INFO      [BTC/USD] Portfolio=$99,207.30  Price=$62823.85  Position=None
+2026-07-07 20:20:55,840  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:20:55,840  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:30:55,813  INFO      [BTC/USD] ── Signal check 20:30 ──
+2026-07-07 20:30:55,840  INFO      [BTC/USD] ── Signal check 20:30 ──
+2026-07-07 20:30:55,997  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:30:56,015  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:30:56,507  INFO      [BTC/USD] Portfolio=$99,190.48  Price=$62861.70  Position=None
+2026-07-07 20:30:56,507  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:30:56,507  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:30:56,514  INFO      [BTC/USD] Portfolio=$99,190.48  Price=$62861.70  Position=None
+2026-07-07 20:30:56,520  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:30:56,520  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:40:56,508  INFO      [BTC/USD] ── Signal check 20:40 ──
+2026-07-07 20:40:56,524  INFO      [BTC/USD] ── Signal check 20:40 ──
+2026-07-07 20:40:56,699  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:40:56,733  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:40:57,213  INFO      [BTC/USD] Portfolio=$99,115.88  Price=$62844.10  Position=None
+2026-07-07 20:40:57,213  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:40:57,213  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:40:57,216  INFO      [BTC/USD] Portfolio=$99,115.88  Price=$62844.10  Position=None
+2026-07-07 20:40:57,216  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:40:57,217  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:50:57,214  INFO      [BTC/USD] ── Signal check 20:50 ──
+2026-07-07 20:50:57,217  INFO      [BTC/USD] ── Signal check 20:50 ──
+2026-07-07 20:50:57,417  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:50:57,430  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 20:50:57,898  INFO      [BTC/USD] Portfolio=$99,387.49  Price=$62967.10  Position=None
+2026-07-07 20:50:57,899  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:50:57,899  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 20:50:57,904  INFO      [BTC/USD] Portfolio=$99,387.49  Price=$62967.10  Position=None
+2026-07-07 20:50:57,904  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 20:50:57,904  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:00:57,899  INFO      [BTC/USD] ── Signal check 21:00 ──
+2026-07-07 21:00:57,904  INFO      [BTC/USD] ── Signal check 21:00 ──
+2026-07-07 21:00:58,102  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:00:58,116  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:00:58,589  INFO      [BTC/USD] Portfolio=$99,425.70  Price=$62973.11  Position=None
+2026-07-07 21:00:58,590  INFO      [BTC/USD] Portfolio=$99,425.70  Price=$62973.11  Position=None
+2026-07-07 21:00:58,591  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:00:58,591  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:00:58,591  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:00:58,591  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:10:58,591  INFO      [BTC/USD] ── Signal check 21:10 ──
+2026-07-07 21:10:58,591  INFO      [BTC/USD] ── Signal check 21:10 ──
+2026-07-07 21:10:58,749  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:10:58,764  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:10:59,221  INFO      [BTC/USD] Portfolio=$99,496.06  Price=$63045.09  Position=None
+2026-07-07 21:10:59,221  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:10:59,221  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:10:59,223  INFO      [BTC/USD] Portfolio=$99,496.06  Price=$63045.09  Position=None
+2026-07-07 21:10:59,223  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:10:59,223  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:20:59,221  INFO      [BTC/USD] ── Signal check 21:20 ──
+2026-07-07 21:20:59,224  INFO      [BTC/USD] ── Signal check 21:20 ──
+2026-07-07 21:20:59,405  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:20:59,439  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:21:00,027  INFO      [BTC/USD] Portfolio=$99,479.41  Price=$63002.28  Position=None
+2026-07-07 21:21:00,028  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:21:00,028  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:21:00,028  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:21:00,028  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:31:00,028  INFO      [BTC/USD] ── Signal check 21:31 ──
+2026-07-07 21:31:00,233  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:31:00,284  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:31:00,760  INFO      [BTC/USD] Portfolio=$99,671.72  Price=$63007.66  Position=None
+2026-07-07 21:31:00,760  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:31:00,760  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:31:00,784  INFO      [BTC/USD] Portfolio=$99,671.72  Price=$63007.66  Position=None
+2026-07-07 21:31:00,785  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:31:00,785  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:41:00,761  INFO      [BTC/USD] ── Signal check 21:41 ──
+2026-07-07 21:41:00,787  INFO      [BTC/USD] ── Signal check 21:41 ──
+2026-07-07 21:41:00,948  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:41:00,994  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:41:01,455  INFO      [BTC/USD] Portfolio=$99,596.57  Price=$62913.84  Position=None
+2026-07-07 21:41:01,455  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:41:01,455  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:41:01,463  INFO      [BTC/USD] Portfolio=$99,596.57  Price=$62913.84  Position=None
+2026-07-07 21:41:01,463  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:41:01,464  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:51:01,456  INFO      [BTC/USD] ── Signal check 21:51 ──
+2026-07-07 21:51:01,465  INFO      [BTC/USD] ── Signal check 21:51 ──
+2026-07-07 21:51:01,683  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:51:01,686  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 21:51:02,174  INFO      [BTC/USD] Portfolio=$99,538.86  Price=$62816.90  Position=None
+2026-07-07 21:51:02,174  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:51:02,174  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 21:51:03,158  INFO      [BTC/USD] Portfolio=$99,538.86  Price=$62816.90  Position=None
+2026-07-07 21:51:03,158  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 21:51:03,158  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:01:02,175  INFO      [BTC/USD] ── Signal check 22:01 ──
+2026-07-07 22:01:02,387  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:01:02,848  INFO      [BTC/USD] Portfolio=$99,469.03  Price=$62742.90  Position=None
+2026-07-07 22:01:02,848  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:01:02,849  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:01:03,159  INFO      [BTC/USD] ── Signal check 22:01 ──
+2026-07-07 22:01:03,344  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:01:03,785  INFO      [BTC/USD] Portfolio=$99,469.03  Price=$62742.90  Position=None
+2026-07-07 22:01:03,785  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:01:03,785  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:11:02,849  INFO      [BTC/USD] ── Signal check 22:11 ──
+2026-07-07 22:11:03,020  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:11:03,526  INFO      [BTC/USD] Portfolio=$99,353.22  Price=$62814.50  Position=None
+2026-07-07 22:11:03,526  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:11:03,526  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:11:03,786  INFO      [BTC/USD] ── Signal check 22:11 ──
+2026-07-07 22:11:03,973  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:11:04,407  INFO      [BTC/USD] Portfolio=$99,353.22  Price=$62782.58  Position=None
+2026-07-07 22:11:04,407  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:11:04,407  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:21:03,526  INFO      [BTC/USD] ── Signal check 22:21 ──
+2026-07-07 22:21:03,701  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:21:04,198  INFO      [BTC/USD] Portfolio=$99,325.74  Price=$62803.30  Position=None
+2026-07-07 22:21:04,199  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:21:04,199  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:21:04,407  INFO      [BTC/USD] ── Signal check 22:21 ──
+2026-07-07 22:21:04,635  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:21:05,091  INFO      [BTC/USD] Portfolio=$99,325.74  Price=$62803.30  Position=None
+2026-07-07 22:21:05,092  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:21:05,093  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:31:04,199  INFO      [BTC/USD] ── Signal check 22:31 ──
+2026-07-07 22:31:04,373  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:31:05,093  INFO      [BTC/USD] ── Signal check 22:31 ──
+2026-07-07 22:31:05,095  INFO      [BTC/USD] Portfolio=$99,328.01  Price=$62874.32  Position=None
+2026-07-07 22:31:05,095  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:31:05,095  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:31:05,275  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:31:05,758  INFO      [BTC/USD] Portfolio=$99,328.01  Price=$62874.32  Position=None
+2026-07-07 22:31:05,758  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:31:05,758  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:41:05,095  INFO      [BTC/USD] ── Signal check 22:41 ──
+2026-07-07 22:41:05,281  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:41:05,743  INFO      [BTC/USD] Portfolio=$99,273.73  Price=$62766.67  Position=None
+2026-07-07 22:41:05,743  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:41:05,744  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:41:05,759  INFO      [BTC/USD] ── Signal check 22:41 ──
+2026-07-07 22:41:05,975  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:41:06,427  INFO      [BTC/USD] Portfolio=$99,272.43  Price=$62766.67  Position=None
+2026-07-07 22:41:06,428  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:41:06,428  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:51:05,744  INFO      [BTC/USD] ── Signal check 22:51 ──
+2026-07-07 22:51:06,068  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:51:06,429  INFO      [BTC/USD] ── Signal check 22:51 ──
+2026-07-07 22:51:06,555  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 22:51:06,571  INFO      [BTC/USD] Portfolio=$99,239.97  Price=$62692.55  Position=None
+2026-07-07 22:51:06,571  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:51:06,571  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 22:51:06,998  INFO      [BTC/USD] Portfolio=$99,239.97  Price=$62683.09  Position=None
+2026-07-07 22:51:07,000  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 22:51:07,000  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:01:06,572  INFO      [BTC/USD] ── Signal check 23:01 ──
+2026-07-07 23:01:06,735  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:01:07,000  INFO      [BTC/USD] ── Signal check 23:01 ──
+2026-07-07 23:01:07,190  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:01:07,239  INFO      [BTC/USD] Portfolio=$99,326.57  Price=$62755.94  Position=None
+2026-07-07 23:01:07,240  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:01:07,240  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:01:07,647  INFO      [BTC/USD] Portfolio=$99,326.57  Price=$62755.94  Position=None
+2026-07-07 23:01:07,647  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:01:07,647  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:11:07,240  INFO      [BTC/USD] ── Signal check 23:11 ──
+2026-07-07 23:11:07,542  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:11:07,648  INFO      [BTC/USD] ── Signal check 23:11 ──
+2026-07-07 23:11:07,860  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:11:08,017  INFO      [BTC/USD] Portfolio=$99,376.50  Price=$62801.17  Position=None
+2026-07-07 23:11:08,017  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:11:08,018  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:11:08,328  INFO      [BTC/USD] Portfolio=$99,376.50  Price=$62801.17  Position=None
+2026-07-07 23:11:08,329  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:11:08,329  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:21:08,018  INFO      [BTC/USD] ── Signal check 23:21 ──
+2026-07-07 23:21:08,285  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:21:08,329  INFO      [BTC/USD] ── Signal check 23:21 ──
+2026-07-07 23:21:08,617  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:21:08,886  INFO      [BTC/USD] Portfolio=$99,361.63  Price=$62778.22  Position=None
+2026-07-07 23:21:08,886  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:21:08,886  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:21:09,063  INFO      [BTC/USD] Portfolio=$99,361.63  Price=$62778.22  Position=None
+2026-07-07 23:21:09,064  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:21:09,064  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:31:10,532  INFO      [BTC/USD] ── Signal check 23:31 ──
+2026-07-07 23:31:10,709  INFO      [BTC/USD] ── Signal check 23:31 ──
+2026-07-07 23:31:10,723  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:31:10,817  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:31:11,235  INFO      [BTC/USD] Portfolio=$99,199.39  Price=$62758.94  Position=None
+2026-07-07 23:31:11,236  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:31:11,236  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:31:11,256  INFO      [BTC/USD] Portfolio=$99,199.39  Price=$62758.94  Position=None
+2026-07-07 23:31:11,256  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:31:11,256  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:41:11,236  INFO      [BTC/USD] ── Signal check 23:41 ──
+2026-07-07 23:41:11,257  INFO      [BTC/USD] ── Signal check 23:41 ──
+2026-07-07 23:41:11,431  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:41:11,438  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:41:11,930  INFO      [BTC/USD] Portfolio=$99,123.66  Price=$62622.54  Position=None
+2026-07-07 23:41:11,931  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:41:11,931  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:41:11,933  INFO      [BTC/USD] Portfolio=$99,123.66  Price=$62622.54  Position=None
+2026-07-07 23:41:11,933  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:41:11,933  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:51:11,932  INFO      [BTC/USD] ── Signal check 23:51 ──
+2026-07-07 23:51:11,933  INFO      [BTC/USD] ── Signal check 23:51 ──
+2026-07-07 23:51:12,067  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:51:12,122  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-07 23:51:12,697  INFO      [BTC/USD] Portfolio=$99,039.42  Price=$62588.30  Position=None
+2026-07-07 23:51:12,697  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:51:12,697  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-07 23:51:12,699  INFO      [BTC/USD] Portfolio=$99,039.42  Price=$62588.30  Position=None
+2026-07-07 23:51:12,699  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-07 23:51:12,699  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:01:12,697  INFO      [BTC/USD] ── Signal check 00:01 ──
+2026-07-08 00:01:12,700  INFO      [BTC/USD] ── Signal check 00:01 ──
+2026-07-08 00:01:12,863  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:01:12,885  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:01:13,565  INFO      [BTC/USD] Portfolio=$99,063.96  Price=$62602.30  Position=None
+2026-07-08 00:01:13,566  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:01:13,566  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:01:13,591  INFO      [BTC/USD] Portfolio=$99,063.96  Price=$62602.30  Position=None
+2026-07-08 00:01:13,592  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:01:13,592  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:11:13,567  INFO      [BTC/USD] ── Signal check 00:11 ──
+2026-07-08 00:11:13,593  INFO      [BTC/USD] ── Signal check 00:11 ──
+2026-07-08 00:11:13,759  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:11:13,760  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:11:14,255  INFO      [BTC/USD] Portfolio=$99,073.70  Price=$62574.98  Position=None
+2026-07-08 00:11:14,256  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:11:14,256  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:11:14,265  INFO      [BTC/USD] Portfolio=$99,073.70  Price=$62574.98  Position=None
+2026-07-08 00:11:14,273  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:11:14,273  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:21:14,257  INFO      [BTC/USD] ── Signal check 00:21 ──
+2026-07-08 00:21:14,274  INFO      [BTC/USD] ── Signal check 00:21 ──
+2026-07-08 00:21:14,474  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:21:14,482  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:21:14,983  INFO      [BTC/USD] Portfolio=$99,052.00  Price=$62507.03  Position=None
+2026-07-08 00:21:14,984  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:21:14,984  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:21:14,989  INFO      [BTC/USD] Portfolio=$99,052.00  Price=$62507.03  Position=None
+2026-07-08 00:21:14,996  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:21:14,996  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:31:14,984  INFO      [BTC/USD] ── Signal check 00:31 ──
+2026-07-08 00:31:14,997  INFO      [BTC/USD] ── Signal check 00:31 ──
+2026-07-08 00:31:15,178  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:31:15,210  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:31:15,648  INFO      [BTC/USD] Portfolio=$99,003.34  Price=$62554.50  Position=None
+2026-07-08 00:31:15,648  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:31:15,648  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:31:15,652  INFO      [BTC/USD] Portfolio=$99,003.34  Price=$62554.50  Position=None
+2026-07-08 00:31:15,652  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:31:15,652  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:41:15,649  INFO      [BTC/USD] ── Signal check 00:41 ──
+2026-07-08 00:41:15,652  INFO      [BTC/USD] ── Signal check 00:41 ──
+2026-07-08 00:41:15,860  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:41:15,888  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:41:16,317  INFO      [BTC/USD] Portfolio=$98,953.77  Price=$62570.88  Position=None
+2026-07-08 00:41:16,318  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:41:16,318  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:41:16,331  INFO      [BTC/USD] Portfolio=$98,953.77  Price=$62570.88  Position=None
+2026-07-08 00:41:16,331  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:41:16,332  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:51:16,318  INFO      [BTC/USD] ── Signal check 00:51 ──
+2026-07-08 00:51:16,332  INFO      [BTC/USD] ── Signal check 00:51 ──
+2026-07-08 00:51:16,462  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:51:16,516  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 00:51:16,963  INFO      [BTC/USD] Portfolio=$99,048.38  Price=$62654.40  Position=None
+2026-07-08 00:51:16,964  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:51:16,964  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 00:51:16,967  INFO      [BTC/USD] Portfolio=$99,048.38  Price=$62654.40  Position=None
+2026-07-08 00:51:16,967  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 00:51:16,967  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:01:16,964  INFO      [BTC/USD] ── Signal check 01:01 ──
+2026-07-08 01:01:16,967  INFO      [BTC/USD] ── Signal check 01:01 ──
+2026-07-08 01:01:17,153  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:01:17,160  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:01:17,624  INFO      [BTC/USD] Portfolio=$99,068.42  Price=$62582.90  Position=None
+2026-07-08 01:01:17,624  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:01:17,624  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:01:17,625  INFO      [BTC/USD] Portfolio=$99,068.42  Price=$62582.90  Position=None
+2026-07-08 01:01:17,625  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:01:17,626  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:11:17,624  INFO      [BTC/USD] ── Signal check 01:11 ──
+2026-07-08 01:11:17,626  INFO      [BTC/USD] ── Signal check 01:11 ──
+2026-07-08 01:11:17,803  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:11:17,822  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:11:18,299  INFO      [BTC/USD] Portfolio=$98,953.22  Price=$62647.48  Position=None
+2026-07-08 01:11:18,299  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:11:18,299  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:11:18,303  INFO      [BTC/USD] Portfolio=$98,953.22  Price=$62647.48  Position=None
+2026-07-08 01:11:18,303  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:11:18,303  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:21:18,300  INFO      [BTC/USD] ── Signal check 01:21 ──
+2026-07-08 01:21:18,304  INFO      [BTC/USD] ── Signal check 01:21 ──
+2026-07-08 01:21:18,464  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:21:18,518  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:21:18,936  INFO      [BTC/USD] Portfolio=$98,941.00  Price=$62688.96  Position=None
+2026-07-08 01:21:18,936  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:21:18,937  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:21:18,947  INFO      [BTC/USD] Portfolio=$98,941.00  Price=$62688.96  Position=None
+2026-07-08 01:21:18,948  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:21:18,948  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:31:18,937  INFO      [BTC/USD] ── Signal check 01:31 ──
+2026-07-08 01:31:18,948  INFO      [BTC/USD] ── Signal check 01:31 ──
+2026-07-08 01:31:19,106  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:31:19,177  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:31:19,548  INFO      [BTC/USD] Portfolio=$99,270.09  Price=$62811.60  Position=None
+2026-07-08 01:31:19,548  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:31:19,548  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:31:19,613  INFO      [BTC/USD] Portfolio=$99,270.09  Price=$62811.60  Position=None
+2026-07-08 01:31:19,613  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:31:19,613  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:41:19,549  INFO      [BTC/USD] ── Signal check 01:41 ──
+2026-07-08 01:41:19,614  INFO      [BTC/USD] ── Signal check 01:41 ──
+2026-07-08 01:41:19,720  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:41:19,796  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:41:20,176  INFO      [BTC/USD] Portfolio=$99,253.94  Price=$62761.32  Position=None
+2026-07-08 01:41:20,177  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:41:20,177  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:41:20,235  INFO      [BTC/USD] Portfolio=$99,253.94  Price=$62761.32  Position=None
+2026-07-08 01:41:20,235  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:41:20,235  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:51:20,177  INFO      [BTC/USD] ── Signal check 01:51 ──
+2026-07-08 01:51:20,236  INFO      [BTC/USD] ── Signal check 01:51 ──
+2026-07-08 01:51:20,375  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:51:20,396  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 01:51:20,870  INFO      [BTC/USD] Portfolio=$99,390.48  Price=$62851.38  Position=None
+2026-07-08 01:51:20,870  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:51:20,870  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 01:51:20,884  INFO      [BTC/USD] Portfolio=$99,390.48  Price=$62851.38  Position=None
+2026-07-08 01:51:20,884  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 01:51:20,884  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:01:20,871  INFO      [BTC/USD] ── Signal check 02:01 ──
+2026-07-08 02:01:20,884  INFO      [BTC/USD] ── Signal check 02:01 ──
+2026-07-08 02:01:21,054  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:01:21,054  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:01:21,534  INFO      [BTC/USD] Portfolio=$99,367.63  Price=$62867.08  Position=None
+2026-07-08 02:01:21,534  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:01:21,534  INFO      [BTC/USD] Portfolio=$99,367.63  Price=$62867.08  Position=None
+2026-07-08 02:01:21,534  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:01:21,534  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:01:21,534  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:11:21,534  INFO      [BTC/USD] ── Signal check 02:11 ──
+2026-07-08 02:11:21,535  INFO      [BTC/USD] ── Signal check 02:11 ──
+2026-07-08 02:11:21,668  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:11:21,691  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:11:22,138  INFO      [BTC/USD] Portfolio=$99,259.75  Price=$62780.20  Position=None
+2026-07-08 02:11:22,139  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:11:22,139  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:11:22,159  INFO      [BTC/USD] Portfolio=$99,259.75  Price=$62780.20  Position=None
+2026-07-08 02:11:22,159  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:11:22,159  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:21:22,139  INFO      [BTC/USD] ── Signal check 02:21 ──
+2026-07-08 02:21:22,160  INFO      [BTC/USD] ── Signal check 02:21 ──
+2026-07-08 02:21:22,359  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:21:22,366  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:21:22,826  INFO      [BTC/USD] Portfolio=$98,721.62  Price=$62344.90  Position=None
+2026-07-08 02:21:22,827  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:21:22,827  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:21:22,830  INFO      [BTC/USD] Portfolio=$98,721.62  Price=$62344.90  Position=None
+2026-07-08 02:21:22,830  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:21:22,830  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:31:22,827  INFO      [BTC/USD] ── Signal check 02:31 ──
+2026-07-08 02:31:22,830  INFO      [BTC/USD] ── Signal check 02:31 ──
+2026-07-08 02:31:22,978  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:31:23,023  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:31:23,461  INFO      [BTC/USD] Portfolio=$97,522.25  Price=$62039.30  Position=None
+2026-07-08 02:31:23,461  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:31:23,461  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:31:23,471  INFO      [BTC/USD] Portfolio=$97,522.25  Price=$62039.30  Position=None
+2026-07-08 02:31:23,479  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:31:23,479  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:41:23,462  INFO      [BTC/USD] ── Signal check 02:41 ──
+2026-07-08 02:41:23,479  INFO      [BTC/USD] ── Signal check 02:41 ──
+2026-07-08 02:41:23,635  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:41:23,664  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:41:24,084  INFO      [BTC/USD] Portfolio=$97,206.07  Price=$61938.54  Position=None
+2026-07-08 02:41:24,085  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:41:24,085  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:41:24,115  INFO      [BTC/USD] Portfolio=$97,206.07  Price=$61938.54  Position=None
+2026-07-08 02:41:24,116  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:41:24,116  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:51:24,085  INFO      [BTC/USD] ── Signal check 02:51 ──
+2026-07-08 02:51:24,116  INFO      [BTC/USD] ── Signal check 02:51 ──
+2026-07-08 02:51:24,256  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:51:24,268  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 02:51:24,746  INFO      [BTC/USD] Portfolio=$97,567.37  Price=$62154.10  Position=None
+2026-07-08 02:51:24,746  INFO      [BTC/USD] Portfolio=$97,567.37  Price=$62154.10  Position=None
+2026-07-08 02:51:24,747  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:51:24,747  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 02:51:24,747  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 02:51:24,747  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:01:24,748  INFO      [BTC/USD] ── Signal check 03:01 ──
+2026-07-08 03:01:24,748  INFO      [BTC/USD] ── Signal check 03:01 ──
+2026-07-08 03:01:24,924  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:01:24,964  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:01:25,416  INFO      [BTC/USD] Portfolio=$97,267.60  Price=$62016.54  Position=None
+2026-07-08 03:01:25,416  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:01:25,416  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:01:25,417  INFO      [BTC/USD] Portfolio=$97,267.60  Price=$62016.54  Position=None
+2026-07-08 03:01:25,417  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:01:25,418  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:11:25,416  INFO      [BTC/USD] ── Signal check 03:11 ──
+2026-07-08 03:11:25,418  INFO      [BTC/USD] ── Signal check 03:11 ──
+2026-07-08 03:11:25,625  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:11:25,655  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:11:26,123  INFO      [BTC/USD] Portfolio=$97,153.71  Price=$61952.15  Position=None
+2026-07-08 03:11:26,123  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:11:26,123  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:11:26,127  INFO      [BTC/USD] Portfolio=$97,153.71  Price=$61952.15  Position=None
+2026-07-08 03:11:26,127  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:11:26,127  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:21:26,125  INFO      [BTC/USD] ── Signal check 03:21 ──
+2026-07-08 03:21:26,141  INFO      [BTC/USD] ── Signal check 03:21 ──
+2026-07-08 03:21:26,314  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:21:26,357  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:21:26,758  INFO      [BTC/USD] Portfolio=$97,036.45  Price=$61837.90  Position=None
+2026-07-08 03:21:26,758  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:21:26,758  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:21:26,791  INFO      [BTC/USD] Portfolio=$97,036.45  Price=$61837.90  Position=None
+2026-07-08 03:21:26,792  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:21:26,792  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:31:26,759  INFO      [BTC/USD] ── Signal check 03:31 ──
+2026-07-08 03:31:26,792  INFO      [BTC/USD] ── Signal check 03:31 ──
+2026-07-08 03:31:26,951  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:31:26,952  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:31:27,428  INFO      [BTC/USD] Portfolio=$97,094.74  Price=$61999.40  Position=None
+2026-07-08 03:31:27,429  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:31:27,429  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:31:27,432  INFO      [BTC/USD] Portfolio=$97,094.74  Price=$61999.40  Position=None
+2026-07-08 03:31:27,432  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:31:27,432  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:41:27,429  INFO      [BTC/USD] ── Signal check 03:41 ──
+2026-07-08 03:41:27,433  INFO      [BTC/USD] ── Signal check 03:41 ──
+2026-07-08 03:41:27,663  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:41:27,756  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:41:28,121  INFO      [BTC/USD] Portfolio=$97,110.12  Price=$62078.51  Position=None
+2026-07-08 03:41:28,122  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:41:28,122  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:41:28,186  INFO      [BTC/USD] Portfolio=$97,110.12  Price=$62078.51  Position=None
+2026-07-08 03:41:28,186  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:41:28,187  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:51:28,123  INFO      [BTC/USD] ── Signal check 03:51 ──
+2026-07-08 03:51:28,187  INFO      [BTC/USD] ── Signal check 03:51 ──
+2026-07-08 03:51:28,260  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:51:28,342  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 03:51:28,720  INFO      [BTC/USD] Portfolio=$97,155.52  Price=$62029.10  Position=None
+2026-07-08 03:51:28,721  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:51:28,721  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 03:51:28,768  INFO      [BTC/USD] Portfolio=$97,155.52  Price=$62029.10  Position=None
+2026-07-08 03:51:28,768  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 03:51:28,768  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:01:28,722  INFO      [BTC/USD] ── Signal check 04:01 ──
+2026-07-08 04:01:28,769  INFO      [BTC/USD] ── Signal check 04:01 ──
+2026-07-08 04:01:28,929  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:01:28,980  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:01:29,361  INFO      [BTC/USD] Portfolio=$97,046.78  Price=$61993.20  Position=None
+2026-07-08 04:01:29,361  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:01:29,361  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:01:29,406  INFO      [BTC/USD] Portfolio=$97,046.78  Price=$61993.20  Position=None
+2026-07-08 04:01:29,406  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:01:29,406  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:11:29,362  INFO      [BTC/USD] ── Signal check 04:11 ──
+2026-07-08 04:11:29,407  INFO      [BTC/USD] ── Signal check 04:11 ──
+2026-07-08 04:11:29,541  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:11:29,549  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:11:30,250  INFO      [BTC/USD] Portfolio=$96,841.07  Price=$61924.19  Position=None
+2026-07-08 04:11:30,250  INFO      [BTC/USD] Portfolio=$96,841.07  Price=$61924.19  Position=None
+2026-07-08 04:11:30,250  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:11:30,250  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:11:30,251  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:11:30,252  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:21:30,252  INFO      [BTC/USD] ── Signal check 04:21 ──
+2026-07-08 04:21:30,253  INFO      [BTC/USD] ── Signal check 04:21 ──
+2026-07-08 04:21:30,564  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:21:30,564  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:21:31,012  INFO      [BTC/USD] Portfolio=$97,087.27  Price=$61998.49  Position=None
+2026-07-08 04:21:31,012  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:21:31,012  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:21:31,024  INFO      [BTC/USD] Portfolio=$97,087.27  Price=$61998.49  Position=None
+2026-07-08 04:21:31,024  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:21:31,024  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:31:31,012  INFO      [BTC/USD] ── Signal check 04:31 ──
+2026-07-08 04:31:31,025  INFO      [BTC/USD] ── Signal check 04:31 ──
+2026-07-08 04:31:31,170  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:31:31,191  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:31:31,638  INFO      [BTC/USD] Portfolio=$97,145.09  Price=$62056.07  Position=None
+2026-07-08 04:31:31,639  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:31:31,639  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:31:31,643  INFO      [BTC/USD] Portfolio=$97,145.09  Price=$62056.07  Position=None
+2026-07-08 04:31:31,643  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:31:31,643  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:41:31,640  INFO      [BTC/USD] ── Signal check 04:41 ──
+2026-07-08 04:41:31,644  INFO      [BTC/USD] ── Signal check 04:41 ──
+2026-07-08 04:41:31,805  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:41:31,828  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:41:32,255  INFO      [BTC/USD] Portfolio=$97,323.97  Price=$62089.75  Position=None
+2026-07-08 04:41:32,255  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:41:32,255  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:41:32,257  INFO      [BTC/USD] Portfolio=$97,323.97  Price=$62089.75  Position=None
+2026-07-08 04:41:32,257  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:41:32,257  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:51:32,256  INFO      [BTC/USD] ── Signal check 04:51 ──
+2026-07-08 04:51:32,257  INFO      [BTC/USD] ── Signal check 04:51 ──
+2026-07-08 04:51:32,392  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:51:32,486  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 04:51:32,854  INFO      [BTC/USD] Portfolio=$97,321.63  Price=$62127.98  Position=None
+2026-07-08 04:51:32,854  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:51:32,854  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 04:51:32,912  INFO      [BTC/USD] Portfolio=$97,321.63  Price=$62127.98  Position=None
+2026-07-08 04:51:32,913  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 04:51:32,913  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:01:32,855  INFO      [BTC/USD] ── Signal check 05:01 ──
+2026-07-08 05:01:32,914  INFO      [BTC/USD] ── Signal check 05:01 ──
+2026-07-08 05:01:33,051  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:01:33,100  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:01:33,494  INFO      [BTC/USD] Portfolio=$97,323.79  Price=$62134.26  Position=None
+2026-07-08 05:01:33,494  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:01:33,494  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:01:33,530  INFO      [BTC/USD] Portfolio=$97,323.79  Price=$62134.26  Position=None
+2026-07-08 05:01:33,530  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:01:33,530  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:11:33,495  INFO      [BTC/USD] ── Signal check 05:11 ──
+2026-07-08 05:11:33,530  INFO      [BTC/USD] ── Signal check 05:11 ──
+2026-07-08 05:11:33,708  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:11:33,722  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:11:34,205  INFO      [BTC/USD] Portfolio=$97,249.00  Price=$62037.90  Position=None
+2026-07-08 05:11:34,205  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:11:34,206  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:11:34,210  INFO      [BTC/USD] Portfolio=$97,249.00  Price=$62037.90  Position=None
+2026-07-08 05:11:34,219  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:11:34,220  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:21:34,206  INFO      [BTC/USD] ── Signal check 05:21 ──
+2026-07-08 05:21:34,220  INFO      [BTC/USD] ── Signal check 05:21 ──
+2026-07-08 05:21:34,370  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:21:34,407  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:21:34,911  INFO      [BTC/USD] Portfolio=$97,342.40  Price=$62096.50  Position=None
+2026-07-08 05:21:34,912  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:21:34,912  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:21:34,914  INFO      [BTC/USD] Portfolio=$97,342.40  Price=$62096.50  Position=None
+2026-07-08 05:21:34,914  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:21:34,914  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:31:34,914  INFO      [BTC/USD] ── Signal check 05:31 ──
+2026-07-08 05:31:34,919  INFO      [BTC/USD] ── Signal check 05:31 ──
+2026-07-08 05:31:35,113  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:31:35,125  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:31:35,595  INFO      [BTC/USD] Portfolio=$97,263.99  Price=$62119.48  Position=None
+2026-07-08 05:31:35,603  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:31:35,604  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:31:35,604  INFO      [BTC/USD] Portfolio=$97,263.99  Price=$62119.48  Position=None
+2026-07-08 05:31:35,604  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:31:35,604  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:41:35,604  INFO      [BTC/USD] ── Signal check 05:41 ──
+2026-07-08 05:41:35,604  INFO      [BTC/USD] ── Signal check 05:41 ──
+2026-07-08 05:41:35,793  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:41:35,828  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:41:36,258  INFO      [BTC/USD] Portfolio=$97,291.49  Price=$62094.34  Position=None
+2026-07-08 05:41:36,259  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:41:36,259  INFO      [BTC/USD] Portfolio=$97,291.49  Price=$62094.34  Position=None
+2026-07-08 05:41:36,260  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:41:36,260  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:41:36,260  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:51:36,260  INFO      [BTC/USD] ── Signal check 05:51 ──
+2026-07-08 05:51:36,260  INFO      [BTC/USD] ── Signal check 05:51 ──
+2026-07-08 05:51:36,456  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:51:36,498  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 05:51:36,924  INFO      [BTC/USD] Portfolio=$97,694.67  Price=$62239.80  Position=None
+2026-07-08 05:51:36,924  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:51:36,924  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 05:51:36,948  INFO      [BTC/USD] Portfolio=$97,694.67  Price=$62239.80  Position=None
+2026-07-08 05:51:36,948  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 05:51:36,948  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:01:36,925  INFO      [BTC/USD] ── Signal check 06:01 ──
+2026-07-08 06:01:36,950  INFO      [BTC/USD] ── Signal check 06:01 ──
+2026-07-08 06:01:37,111  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:01:37,133  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:01:37,555  INFO      [BTC/USD] Portfolio=$97,849.15  Price=$62220.58  Position=None
+2026-07-08 06:01:37,555  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:01:37,555  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:01:37,556  INFO      [BTC/USD] Portfolio=$97,849.15  Price=$62220.58  Position=None
+2026-07-08 06:01:37,556  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:01:37,557  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:11:37,556  INFO      [BTC/USD] ── Signal check 06:11 ──
+2026-07-08 06:11:37,557  INFO      [BTC/USD] ── Signal check 06:11 ──
+2026-07-08 06:11:37,715  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:11:37,763  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:11:38,196  INFO      [BTC/USD] Portfolio=$98,155.50  Price=$62358.90  Position=None
+2026-07-08 06:11:38,196  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:11:38,196  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:11:38,207  INFO      [BTC/USD] Portfolio=$98,155.50  Price=$62358.90  Position=None
+2026-07-08 06:11:38,208  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:11:38,209  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:21:38,197  INFO      [BTC/USD] ── Signal check 06:21 ──
+2026-07-08 06:21:38,209  INFO      [BTC/USD] ── Signal check 06:21 ──
+2026-07-08 06:21:38,378  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:21:38,389  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:21:38,824  INFO      [BTC/USD] Portfolio=$98,118.43  Price=$62299.00  Position=None
+2026-07-08 06:21:38,824  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:21:38,824  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:21:38,841  INFO      [BTC/USD] Portfolio=$98,118.43  Price=$62299.00  Position=None
+2026-07-08 06:21:38,841  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:21:38,841  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:31:38,825  INFO      [BTC/USD] ── Signal check 06:31 ──
+2026-07-08 06:31:38,842  INFO      [BTC/USD] ── Signal check 06:31 ──
+2026-07-08 06:31:39,021  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:31:39,053  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:31:39,565  INFO      [BTC/USD] Portfolio=$98,200.98  Price=$62223.50  Position=None
+2026-07-08 06:31:39,565  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:31:39,565  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:31:39,586  INFO      [BTC/USD] Portfolio=$98,200.98  Price=$62223.50  Position=None
+2026-07-08 06:31:39,586  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:31:39,586  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:41:39,566  INFO      [BTC/USD] ── Signal check 06:41 ──
+2026-07-08 06:41:39,587  INFO      [BTC/USD] ── Signal check 06:41 ──
+2026-07-08 06:41:39,733  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:41:39,792  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:41:40,233  INFO      [BTC/USD] Portfolio=$98,111.94  Price=$62088.94  Position=None
+2026-07-08 06:41:40,233  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:41:40,233  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:41:40,246  INFO      [BTC/USD] Portfolio=$98,111.94  Price=$62088.94  Position=None
+2026-07-08 06:41:40,247  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:41:40,247  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:51:40,234  INFO      [BTC/USD] ── Signal check 06:51 ──
+2026-07-08 06:51:40,247  INFO      [BTC/USD] ── Signal check 06:51 ──
+2026-07-08 06:51:40,496  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:51:40,516  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 06:51:41,053  INFO      [BTC/USD] Portfolio=$98,087.59  Price=$62081.86  Position=None
+2026-07-08 06:51:41,053  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:51:41,054  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 06:51:41,061  INFO      [BTC/USD] Portfolio=$98,087.59  Price=$62081.86  Position=None
+2026-07-08 06:51:41,069  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 06:51:41,069  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:01:41,055  INFO      [BTC/USD] ── Signal check 07:01 ──
+2026-07-08 07:01:41,071  INFO      [BTC/USD] ── Signal check 07:01 ──
+2026-07-08 07:01:41,210  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:01:41,218  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:01:41,657  INFO      [BTC/USD] Portfolio=$97,980.97  Price=$61948.32  Position=None
+2026-07-08 07:01:41,657  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:01:41,657  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:01:41,663  INFO      [BTC/USD] Portfolio=$97,980.97  Price=$61948.32  Position=None
+2026-07-08 07:01:41,671  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:01:41,672  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:11:41,658  INFO      [BTC/USD] ── Signal check 07:11 ──
+2026-07-08 07:11:41,672  INFO      [BTC/USD] ── Signal check 07:11 ──
+2026-07-08 07:11:41,837  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:11:41,878  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:11:42,309  INFO      [BTC/USD] Portfolio=$97,828.11  Price=$61880.60  Position=None
+2026-07-08 07:11:42,310  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:11:42,310  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:11:42,316  INFO      [BTC/USD] Portfolio=$97,828.11  Price=$61880.60  Position=None
+2026-07-08 07:11:42,323  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:11:42,323  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:21:42,311  INFO      [BTC/USD] ── Signal check 07:21 ──
+2026-07-08 07:21:42,324  INFO      [BTC/USD] ── Signal check 07:21 ──
+2026-07-08 07:21:42,491  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 07:21:42,517  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 07:21:42,949  INFO      [BTC/USD] Portfolio=$97,945.52  Price=$61861.90  Position=None
+2026-07-08 07:21:42,949  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 07:21:42,949  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:21:42,970  INFO      [BTC/USD] Portfolio=$97,945.52  Price=$61861.90  Position=None
+2026-07-08 07:21:42,970  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 07:21:42,971  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:31:42,950  INFO      [BTC/USD] ── Signal check 07:31 ──
+2026-07-08 07:31:42,971  INFO      [BTC/USD] ── Signal check 07:31 ──
+2026-07-08 07:31:43,201  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:31:43,283  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:31:43,667  INFO      [BTC/USD] Portfolio=$98,185.11  Price=$61876.90  Position=None
+2026-07-08 07:31:43,667  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:31:43,667  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:31:43,715  INFO      [BTC/USD] Portfolio=$98,195.64  Price=$61876.90  Position=None
+2026-07-08 07:31:43,715  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:31:43,715  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:41:43,668  INFO      [BTC/USD] ── Signal check 07:41 ──
+2026-07-08 07:41:43,715  INFO      [BTC/USD] ── Signal check 07:41 ──
+2026-07-08 07:41:43,867  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:41:43,877  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 07:41:44,332  INFO      [BTC/USD] Portfolio=$98,376.18  Price=$62008.80  Position=None
+2026-07-08 07:41:44,332  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:41:44,332  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:41:44,365  INFO      [BTC/USD] Portfolio=$98,375.54  Price=$62008.80  Position=None
+2026-07-08 07:41:44,365  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 07:41:44,365  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:51:44,333  INFO      [BTC/USD] ── Signal check 07:51 ──
+2026-07-08 07:51:44,365  INFO      [BTC/USD] ── Signal check 07:51 ──
+2026-07-08 07:51:44,539  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 07:51:44,572  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 07:51:45,003  INFO      [BTC/USD] Portfolio=$98,416.24  Price=$61712.52  Position=None
+2026-07-08 07:51:45,003  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 07:51:45,003  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 07:51:45,007  INFO      [BTC/USD] Portfolio=$98,413.48  Price=$61712.52  Position=None
+2026-07-08 07:51:45,007  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 07:51:45,007  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:01:45,004  INFO      [BTC/USD] ── Signal check 08:01 ──
+2026-07-08 08:01:45,008  INFO      [BTC/USD] ── Signal check 08:01 ──
+2026-07-08 08:01:45,221  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:01:45,244  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:01:45,681  INFO      [BTC/USD] Portfolio=$98,391.04  Price=$61972.10  Position=None
+2026-07-08 08:01:45,681  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:01:45,682  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:01:45,701  INFO      [BTC/USD] Portfolio=$98,391.04  Price=$61972.10  Position=None
+2026-07-08 08:01:45,701  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:01:45,701  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:11:45,682  INFO      [BTC/USD] ── Signal check 08:11 ──
+2026-07-08 08:11:45,702  INFO      [BTC/USD] ── Signal check 08:11 ──
+2026-07-08 08:11:45,880  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:11:45,886  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:11:46,333  INFO      [BTC/USD] Portfolio=$98,196.73  Price=$62033.67  Position=None
+2026-07-08 08:11:46,333  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:11:46,333  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:11:46,339  INFO      [BTC/USD] Portfolio=$98,196.73  Price=$62033.67  Position=None
+2026-07-08 08:11:46,349  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:11:46,350  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:21:46,334  INFO      [BTC/USD] ── Signal check 08:21 ──
+2026-07-08 08:21:46,350  INFO      [BTC/USD] ── Signal check 08:21 ──
+2026-07-08 08:21:46,520  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:21:46,541  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:21:46,983  INFO      [BTC/USD] Portfolio=$98,405.18  Price=$62099.00  Position=None
+2026-07-08 08:21:46,983  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:21:46,984  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:21:47,000  INFO      [BTC/USD] Portfolio=$98,405.18  Price=$62099.00  Position=None
+2026-07-08 08:21:47,001  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:21:47,002  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:31:46,985  INFO      [BTC/USD] ── Signal check 08:31 ──
+2026-07-08 08:31:47,002  INFO      [BTC/USD] ── Signal check 08:31 ──
+2026-07-08 08:31:47,211  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:31:47,225  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:31:47,888  INFO      [BTC/USD] Portfolio=$98,176.54  Price=$61898.54  Position=None
+2026-07-08 08:31:47,889  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:31:47,889  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:31:47,890  INFO      [BTC/USD] Portfolio=$98,176.54  Price=$61898.54  Position=None
+2026-07-08 08:31:47,890  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:31:47,890  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:41:47,889  INFO      [BTC/USD] ── Signal check 08:41 ──
+2026-07-08 08:41:47,890  INFO      [BTC/USD] ── Signal check 08:41 ──
+2026-07-08 08:41:48,057  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:41:48,089  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 08:41:48,564  INFO      [BTC/USD] Portfolio=$98,087.42  Price=$61905.46  Position=None
+2026-07-08 08:41:48,564  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:41:48,564  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:41:48,569  INFO      [BTC/USD] Portfolio=$98,086.73  Price=$61905.46  Position=None
+2026-07-08 08:41:48,574  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 08:41:48,574  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:51:48,565  INFO      [BTC/USD] ── Signal check 08:51 ──
+2026-07-08 08:51:48,575  INFO      [BTC/USD] ── Signal check 08:51 ──
+2026-07-08 08:51:48,762  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 08:51:48,772  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 08:51:49,218  INFO      [BTC/USD] Portfolio=$97,684.02  Price=$61751.00  Position=None
+2026-07-08 08:51:49,218  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 08:51:49,218  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 08:51:49,234  INFO      [BTC/USD] Portfolio=$97,684.02  Price=$61751.00  Position=None
+2026-07-08 08:51:49,235  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 08:51:49,235  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:01:49,218  INFO      [BTC/USD] ── Signal check 09:01 ──
+2026-07-08 09:01:49,236  INFO      [BTC/USD] ── Signal check 09:01 ──
+2026-07-08 09:01:49,414  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:01:49,435  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:01:49,878  INFO      [BTC/USD] Portfolio=$97,887.56  Price=$61795.90  Position=None
+2026-07-08 09:01:49,878  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:01:49,878  INFO      [BTC/USD] Portfolio=$97,887.56  Price=$61795.90  Position=None
+2026-07-08 09:01:49,878  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:01:49,879  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:01:49,879  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:11:49,880  INFO      [BTC/USD] ── Signal check 09:11 ──
+2026-07-08 09:11:49,880  INFO      [BTC/USD] ── Signal check 09:11 ──
+2026-07-08 09:11:50,073  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:11:50,075  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:11:50,537  INFO      [BTC/USD] Portfolio=$97,781.54  Price=$61628.06  Position=None
+2026-07-08 09:11:50,538  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:11:50,538  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:11:50,544  INFO      [BTC/USD] Portfolio=$97,781.54  Price=$61628.06  Position=None
+2026-07-08 09:11:50,544  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:11:50,544  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:21:50,538  INFO      [BTC/USD] ── Signal check 09:21 ──
+2026-07-08 09:21:50,545  INFO      [BTC/USD] ── Signal check 09:21 ──
+2026-07-08 09:21:50,760  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:21:50,778  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:21:51,206  INFO      [BTC/USD] Portfolio=$97,633.73  Price=$61563.40  Position=None
+2026-07-08 09:21:51,206  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:21:51,206  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:21:51,225  INFO      [BTC/USD] Portfolio=$97,633.73  Price=$61557.40  Position=None
+2026-07-08 09:21:51,226  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:21:51,226  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:31:51,208  INFO      [BTC/USD] ── Signal check 09:31 ──
+2026-07-08 09:31:51,226  INFO      [BTC/USD] ── Signal check 09:31 ──
+2026-07-08 09:31:51,414  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:31:51,432  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:31:51,874  INFO      [BTC/USD] Portfolio=$97,212.36  Price=$61576.11  Position=None
+2026-07-08 09:31:51,874  INFO      [BTC/USD] Portfolio=$97,212.36  Price=$61576.11  Position=None
+2026-07-08 09:31:51,874  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:31:51,875  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:31:51,875  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:31:51,875  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:41:51,876  INFO      [BTC/USD] ── Signal check 09:41 ──
+2026-07-08 09:41:51,876  INFO      [BTC/USD] ── Signal check 09:41 ──
+2026-07-08 09:41:52,057  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:41:52,108  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:41:52,531  INFO      [BTC/USD] Portfolio=$97,487.50  Price=$61622.44  Position=None
+2026-07-08 09:41:52,531  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:41:52,531  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:41:52,571  INFO      [BTC/USD] Portfolio=$97,486.67  Price=$61622.44  Position=None
+2026-07-08 09:41:52,571  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:41:52,571  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:51:52,531  INFO      [BTC/USD] ── Signal check 09:51 ──
+2026-07-08 09:51:52,572  INFO      [BTC/USD] ── Signal check 09:51 ──
+2026-07-08 09:51:52,745  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:51:52,747  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 09:51:53,207  INFO      [BTC/USD] Portfolio=$97,270.98  Price=$61658.42  Position=None
+2026-07-08 09:51:53,207  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:51:53,207  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 09:51:53,215  INFO      [BTC/USD] Portfolio=$97,270.98  Price=$61658.42  Position=None
+2026-07-08 09:51:53,222  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 09:51:53,222  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:01:53,208  INFO      [BTC/USD] ── Signal check 10:01 ──
+2026-07-08 10:01:53,224  INFO      [BTC/USD] ── Signal check 10:01 ──
+2026-07-08 10:01:53,364  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 10:01:53,419  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 10:01:53,821  INFO      [BTC/USD] Portfolio=$97,644.18  Price=$61742.40  Position=None
+2026-07-08 10:01:53,822  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 10:01:53,822  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:01:53,852  INFO      [BTC/USD] Portfolio=$97,644.19  Price=$61742.40  Position=None
+2026-07-08 10:01:53,852  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 10:01:53,852  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:11:53,822  INFO      [BTC/USD] ── Signal check 10:11 ──
+2026-07-08 10:11:53,853  INFO      [BTC/USD] ── Signal check 10:11 ──
+2026-07-08 10:11:54,005  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 10:11:54,009  INFO      [BTC/USD] Signal: SHORT  |  Confidence: 0.336  |  Leverage: 1.00x
+2026-07-08 10:11:54,459  INFO      [BTC/USD] Portfolio=$97,899.15  Price=$61831.19  Position=None
+2026-07-08 10:11:54,460  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 10:11:54,460  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:11:54,461  INFO      [BTC/USD] Portfolio=$97,899.15  Price=$61831.19  Position=None
+2026-07-08 10:11:54,461  INFO      Risk guard blocked trade: Confidence 0.34 below futures threshold 0.5
+2026-07-08 10:11:54,461  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:21:54,460  INFO      [BTC/USD] ── Signal check 10:21 ──
+2026-07-08 10:21:54,462  INFO      [BTC/USD] ── Signal check 10:21 ──
+2026-07-08 10:21:54,630  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:21:54,669  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:21:55,088  INFO      [BTC/USD] Portfolio=$98,250.30  Price=$61906.88  Position=None
+2026-07-08 10:21:55,088  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:21:55,089  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:21:55,116  INFO      [BTC/USD] Portfolio=$98,250.30  Price=$61906.88  Position=None
+2026-07-08 10:21:55,117  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:21:55,117  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:31:55,089  INFO      [BTC/USD] ── Signal check 10:31 ──
+2026-07-08 10:31:55,117  INFO      [BTC/USD] ── Signal check 10:31 ──
+2026-07-08 10:31:55,296  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:31:55,297  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:31:55,758  INFO      [BTC/USD] Portfolio=$98,338.32  Price=$61884.60  Position=None
+2026-07-08 10:31:55,758  INFO      [BTC/USD] Portfolio=$98,338.32  Price=$61884.60  Position=None
+2026-07-08 10:31:55,759  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:31:55,759  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:31:55,759  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:31:55,759  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:41:55,759  INFO      [BTC/USD] ── Signal check 10:41 ──
+2026-07-08 10:41:55,760  INFO      [BTC/USD] ── Signal check 10:41 ──
+2026-07-08 10:41:55,948  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:41:55,950  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:41:56,420  INFO      [BTC/USD] Portfolio=$98,376.94  Price=$62006.60  Position=None
+2026-07-08 10:41:56,421  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:41:56,421  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:41:56,422  INFO      [BTC/USD] Portfolio=$98,376.94  Price=$62006.60  Position=None
+2026-07-08 10:41:56,422  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:41:56,422  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:51:56,421  INFO      [BTC/USD] ── Signal check 10:51 ──
+2026-07-08 10:51:56,422  INFO      [BTC/USD] ── Signal check 10:51 ──
+2026-07-08 10:51:56,630  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:51:56,652  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 10:51:57,099  INFO      [BTC/USD] Portfolio=$98,625.99  Price=$61986.40  Position=None
+2026-07-08 10:51:57,099  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:51:57,099  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 10:51:57,101  INFO      [BTC/USD] Portfolio=$98,625.99  Price=$61986.40  Position=None
+2026-07-08 10:51:57,101  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 10:51:57,101  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:01:57,100  INFO      [BTC/USD] ── Signal check 11:01 ──
+2026-07-08 11:01:57,101  INFO      [BTC/USD] ── Signal check 11:01 ──
+2026-07-08 11:01:57,297  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:01:57,326  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:01:57,753  INFO      [BTC/USD] Portfolio=$98,812.94  Price=$62050.00  Position=None
+2026-07-08 11:01:57,753  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:01:57,753  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:01:57,762  INFO      [BTC/USD] Portfolio=$98,813.77  Price=$62050.00  Position=None
+2026-07-08 11:01:57,769  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:01:57,770  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:11:57,754  INFO      [BTC/USD] ── Signal check 11:11 ──
+2026-07-08 11:11:57,770  INFO      [BTC/USD] ── Signal check 11:11 ──
+2026-07-08 11:11:57,946  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:11:57,954  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:11:58,409  INFO      [BTC/USD] Portfolio=$98,851.68  Price=$62034.68  Position=None
+2026-07-08 11:11:58,410  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:11:58,410  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:11:58,431  INFO      [BTC/USD] Portfolio=$98,850.85  Price=$62034.68  Position=None
+2026-07-08 11:11:58,431  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:11:58,431  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:21:58,411  INFO      [BTC/USD] ── Signal check 11:21 ──
+2026-07-08 11:21:58,431  INFO      [BTC/USD] ── Signal check 11:21 ──
+2026-07-08 11:21:58,607  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:21:58,661  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:21:59,061  INFO      [BTC/USD] Portfolio=$99,107.16  Price=$62170.20  Position=None
+2026-07-08 11:21:59,061  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:21:59,061  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:21:59,095  INFO      [BTC/USD] Portfolio=$99,106.34  Price=$62170.20  Position=None
+2026-07-08 11:21:59,095  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:21:59,095  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:31:59,062  INFO      [BTC/USD] ── Signal check 11:31 ──
+2026-07-08 11:31:59,095  INFO      [BTC/USD] ── Signal check 11:31 ──
+2026-07-08 11:31:59,315  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:31:59,316  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:31:59,789  INFO      [BTC/USD] Portfolio=$99,366.37  Price=$62304.30  Position=None
+2026-07-08 11:31:59,789  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:31:59,789  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:31:59,790  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:41:59,790  INFO      [BTC/USD] ── Signal check 11:41 ──
+2026-07-08 11:41:59,790  INFO      [BTC/USD] ── Signal check 11:41 ──
+2026-07-08 11:41:59,949  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:41:59,979  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:42:00,524  INFO      [BTC/USD] Portfolio=$99,265.34  Price=$62279.04  Position=None
+2026-07-08 11:42:00,525  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:42:00,525  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:42:00,626  INFO      [BTC/USD] Portfolio=$99,263.39  Price=$62279.04  Position=None
+2026-07-08 11:42:00,627  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:42:00,627  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:52:00,531  INFO      [BTC/USD] ── Signal check 11:52 ──
+2026-07-08 11:52:00,628  INFO      [BTC/USD] ── Signal check 11:52 ──
+2026-07-08 11:52:00,710  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:52:00,836  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 11:52:01,157  INFO      [BTC/USD] Portfolio=$99,199.14  Price=$62191.35  Position=None
+2026-07-08 11:52:01,157  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:52:01,157  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 11:52:01,275  INFO      [BTC/USD] Portfolio=$99,199.89  Price=$62191.35  Position=None
+2026-07-08 11:52:01,275  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 11:52:01,275  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:02:01,158  INFO      [BTC/USD] ── Signal check 12:02 ──
+2026-07-08 12:02:01,276  INFO      [BTC/USD] ── Signal check 12:02 ──
+2026-07-08 12:02:01,337  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:02:01,391  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:02:01,826  INFO      [BTC/USD] Portfolio=$99,145.52  Price=$62245.25  Position=None
+2026-07-08 12:02:01,826  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:02:01,826  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:02:01,866  INFO      [BTC/USD] Portfolio=$99,143.45  Price=$62245.25  Position=None
+2026-07-08 12:02:01,866  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:02:01,866  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:12:01,827  INFO      [BTC/USD] ── Signal check 12:12 ──
+2026-07-08 12:12:01,867  INFO      [BTC/USD] ── Signal check 12:12 ──
+2026-07-08 12:12:02,035  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:12:02,070  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:12:02,486  INFO      [BTC/USD] Portfolio=$99,264.32  Price=$62248.01  Position=None
+2026-07-08 12:12:02,486  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:12:02,486  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:12:02,527  INFO      [BTC/USD] Portfolio=$99,264.53  Price=$62248.01  Position=None
+2026-07-08 12:12:02,527  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:12:02,527  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:22:02,487  INFO      [BTC/USD] ── Signal check 12:22 ──
+2026-07-08 12:22:02,527  INFO      [BTC/USD] ── Signal check 12:22 ──
+2026-07-08 12:22:02,656  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:22:02,762  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:22:03,191  INFO      [BTC/USD] Portfolio=$99,231.00  Price=$62253.80  Position=None
+2026-07-08 12:22:03,192  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:22:03,192  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:22:03,203  INFO      [BTC/USD] Portfolio=$99,228.82  Price=$62253.80  Position=None
+2026-07-08 12:22:03,210  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:22:03,210  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:32:03,192  INFO      [BTC/USD] ── Signal check 12:32 ──
+2026-07-08 12:32:03,210  INFO      [BTC/USD] ── Signal check 12:32 ──
+2026-07-08 12:32:03,351  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:32:03,416  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:32:03,849  INFO      [BTC/USD] Portfolio=$99,090.91  Price=$62115.30  Position=None
+2026-07-08 12:32:03,850  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:32:03,850  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:32:03,881  INFO      [BTC/USD] Portfolio=$99,086.04  Price=$62115.30  Position=None
+2026-07-08 12:32:03,881  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:32:03,881  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:42:03,851  INFO      [BTC/USD] ── Signal check 12:42 ──
+2026-07-08 12:42:03,882  INFO      [BTC/USD] ── Signal check 12:42 ──
+2026-07-08 12:42:04,026  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:42:04,030  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:42:04,477  INFO      [BTC/USD] Portfolio=$99,068.62  Price=$62042.66  Position=None
+2026-07-08 12:42:04,477  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:42:04,477  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:42:04,485  INFO      [BTC/USD] Portfolio=$99,068.62  Price=$62042.66  Position=None
+2026-07-08 12:42:04,498  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:42:04,498  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:52:04,478  INFO      [BTC/USD] ── Signal check 12:52 ──
+2026-07-08 12:52:04,499  INFO      [BTC/USD] ── Signal check 12:52 ──
+2026-07-08 12:52:04,684  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:52:04,707  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 12:52:05,147  INFO      [BTC/USD] Portfolio=$99,244.78  Price=$62264.20  Position=None
+2026-07-08 12:52:05,148  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:52:05,148  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 12:52:05,209  INFO      [BTC/USD] Portfolio=$99,244.78  Price=$62264.20  Position=None
+2026-07-08 12:52:05,210  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 12:52:05,210  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:02:05,149  INFO      [BTC/USD] ── Signal check 13:02 ──
+2026-07-08 13:02:05,210  INFO      [BTC/USD] ── Signal check 13:02 ──
+2026-07-08 13:02:05,328  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:02:05,431  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:02:05,874  INFO      [BTC/USD] Portfolio=$99,388.05  Price=$62188.82  Position=None
+2026-07-08 13:02:05,874  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:02:05,874  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:02:05,898  INFO      [BTC/USD] Portfolio=$99,387.41  Price=$62188.82  Position=None
+2026-07-08 13:02:05,899  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:02:05,899  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:12:05,874  INFO      [BTC/USD] ── Signal check 13:12 ──
+2026-07-08 13:12:05,899  INFO      [BTC/USD] ── Signal check 13:12 ──
+2026-07-08 13:12:06,132  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:12:06,135  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:12:06,588  INFO      [BTC/USD] Portfolio=$99,345.15  Price=$62072.00  Position=None
+2026-07-08 13:12:06,588  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:12:06,588  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:12:06,802  INFO      [BTC/USD] Portfolio=$99,349.72  Price=$62072.00  Position=None
+2026-07-08 13:12:06,802  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:12:06,802  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:22:06,589  INFO      [BTC/USD] ── Signal check 13:22 ──
+2026-07-08 13:22:06,771  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:22:06,802  INFO      [BTC/USD] ── Signal check 13:22 ──
+2026-07-08 13:22:06,914  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:22:07,231  INFO      [BTC/USD] Portfolio=$99,294.18  Price=$62179.41  Position=None
+2026-07-08 13:22:07,232  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:22:07,233  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:22:07,571  INFO      [BTC/USD] Portfolio=$99,289.55  Price=$62167.20  Position=None
+2026-07-08 13:22:07,571  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:22:07,571  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:32:07,234  INFO      [BTC/USD] ── Signal check 13:32 ──
+2026-07-08 13:32:07,443  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:32:07,571  INFO      [BTC/USD] ── Signal check 13:32 ──
+2026-07-08 13:32:07,758  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:32:07,901  INFO      [BTC/USD] Portfolio=$99,349.56  Price=$62228.40  Position=None
+2026-07-08 13:32:07,902  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:32:07,902  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:32:08,246  INFO      [BTC/USD] Portfolio=$99,347.92  Price=$62228.40  Position=None
+2026-07-08 13:32:08,246  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:32:08,246  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:42:07,902  INFO      [BTC/USD] ── Signal check 13:42 ──
+2026-07-08 13:42:08,058  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:42:08,246  INFO      [BTC/USD] ── Signal check 13:42 ──
+2026-07-08 13:42:08,536  INFO      [BTC/USD] Portfolio=$99,259.85  Price=$62231.50  Position=None
+2026-07-08 13:42:08,536  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:42:08,537  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:42:08,576  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:42:09,020  INFO      [BTC/USD] Portfolio=$99,258.61  Price=$62205.61  Position=None
+2026-07-08 13:42:09,024  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:42:09,025  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:52:08,537  INFO      [BTC/USD] ── Signal check 13:52 ──
+2026-07-08 13:52:08,731  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:52:09,026  INFO      [BTC/USD] ── Signal check 13:52 ──
+2026-07-08 13:52:09,197  INFO      [BTC/USD] Portfolio=$99,327.14  Price=$62131.88  Position=None
+2026-07-08 13:52:09,197  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:52:09,197  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 13:52:09,214  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 13:52:09,681  INFO      [BTC/USD] Portfolio=$99,329.97  Price=$62131.88  Position=None
+2026-07-08 13:52:09,681  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 13:52:09,681  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:02:09,198  INFO      [BTC/USD] ── Signal check 14:02 ──
+2026-07-08 14:02:09,376  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:02:09,681  INFO      [BTC/USD] ── Signal check 14:02 ──
+2026-07-08 14:02:09,844  INFO      [BTC/USD] Portfolio=$99,270.85  Price=$62216.71  Position=None
+2026-07-08 14:02:09,844  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:02:09,845  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:02:09,869  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:02:10,298  INFO      [BTC/USD] Portfolio=$99,265.72  Price=$62216.71  Position=None
+2026-07-08 14:02:10,298  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:02:10,298  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:12:09,845  INFO      [BTC/USD] ── Signal check 14:12 ──
+2026-07-08 14:12:10,019  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:12:10,298  INFO      [BTC/USD] ── Signal check 14:12 ──
+2026-07-08 14:12:10,511  INFO      [BTC/USD] Portfolio=$99,201.26  Price=$62200.00  Position=None
+2026-07-08 14:12:10,513  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:12:10,513  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:12:10,525  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:12:10,966  INFO      [BTC/USD] Portfolio=$99,209.85  Price=$62200.00  Position=None
+2026-07-08 14:12:10,966  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:12:10,966  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:22:10,514  INFO      [BTC/USD] ── Signal check 14:22 ──
+2026-07-08 14:22:10,703  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:22:10,967  INFO      [BTC/USD] ── Signal check 14:22 ──
+2026-07-08 14:22:11,140  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:22:11,197  INFO      [BTC/USD] Portfolio=$99,080.80  Price=$62192.79  Position=None
+2026-07-08 14:22:11,198  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:22:11,198  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:22:11,750  INFO      [BTC/USD] Portfolio=$99,080.80  Price=$62192.79  Position=None
+2026-07-08 14:22:11,750  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:22:11,750  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:32:11,198  INFO      [BTC/USD] ── Signal check 14:32 ──
+2026-07-08 14:32:11,353  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:32:11,750  INFO      [BTC/USD] ── Signal check 14:32 ──
+2026-07-08 14:32:11,833  INFO      [BTC/USD] Portfolio=$99,041.21  Price=$62197.50  Position=None
+2026-07-08 14:32:11,834  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:32:11,834  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:32:11,962  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:32:12,420  INFO      [BTC/USD] Portfolio=$99,041.21  Price=$62197.50  Position=None
+2026-07-08 14:32:12,421  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:32:12,421  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:42:11,834  INFO      [BTC/USD] ── Signal check 14:42 ──
+2026-07-08 14:42:12,043  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:42:12,422  INFO      [BTC/USD] ── Signal check 14:42 ──
+2026-07-08 14:42:12,545  INFO      [BTC/USD] Portfolio=$99,043.41  Price=$62194.98  Position=None
+2026-07-08 14:42:12,545  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:42:12,545  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:42:12,628  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:42:13,068  INFO      [BTC/USD] Portfolio=$99,043.41  Price=$62194.98  Position=None
+2026-07-08 14:42:13,068  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:42:13,068  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:52:12,546  INFO      [BTC/USD] ── Signal check 14:52 ──
+2026-07-08 14:52:12,731  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:52:13,069  INFO      [BTC/USD] ── Signal check 14:52 ──
+2026-07-08 14:52:13,179  INFO      [BTC/USD] Portfolio=$99,106.59  Price=$62217.55  Position=None
+2026-07-08 14:52:13,179  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:52:13,179  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 14:52:13,244  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 14:52:13,676  INFO      [BTC/USD] Portfolio=$99,106.59  Price=$62217.55  Position=None
+2026-07-08 14:52:13,676  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 14:52:13,677  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:02:13,180  INFO      [BTC/USD] ── Signal check 15:02 ──
+2026-07-08 15:02:13,385  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:02:13,677  INFO      [BTC/USD] ── Signal check 15:02 ──
+2026-07-08 15:02:13,822  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:02:13,881  INFO      [BTC/USD] Portfolio=$99,026.71  Price=$62080.99  Position=None
+2026-07-08 15:02:13,882  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:02:13,882  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:02:14,260  INFO      [BTC/USD] Portfolio=$99,026.71  Price=$62080.99  Position=None
+2026-07-08 15:02:14,260  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:02:14,260  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:12:13,882  INFO      [BTC/USD] ── Signal check 15:12 ──
+2026-07-08 15:12:14,057  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:12:14,261  INFO      [BTC/USD] ── Signal check 15:12 ──
+2026-07-08 15:12:14,459  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:12:14,505  INFO      [BTC/USD] Portfolio=$99,031.61  Price=$62011.62  Position=None
+2026-07-08 15:12:14,505  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:12:14,505  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:12:14,907  INFO      [BTC/USD] Portfolio=$99,031.61  Price=$62011.62  Position=None
+2026-07-08 15:12:14,908  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:12:14,908  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:22:14,506  INFO      [BTC/USD] ── Signal check 15:22 ──
+2026-07-08 15:22:14,711  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:22:14,908  INFO      [BTC/USD] ── Signal check 15:22 ──
+2026-07-08 15:22:15,093  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:22:15,172  INFO      [BTC/USD] Portfolio=$98,990.21  Price=$62002.40  Position=None
+2026-07-08 15:22:15,173  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:22:15,173  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:22:15,535  INFO      [BTC/USD] Portfolio=$98,990.21  Price=$62002.40  Position=None
+2026-07-08 15:22:15,536  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:22:15,536  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:32:15,173  INFO      [BTC/USD] ── Signal check 15:32 ──
+2026-07-08 15:32:15,378  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:32:15,536  INFO      [BTC/USD] ── Signal check 15:32 ──
+2026-07-08 15:32:15,742  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:32:15,885  INFO      [BTC/USD] Portfolio=$99,071.09  Price=$62104.56  Position=None
+2026-07-08 15:32:15,886  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:32:15,886  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:32:16,213  INFO      [BTC/USD] Portfolio=$99,071.09  Price=$62104.56  Position=None
+2026-07-08 15:32:16,214  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:32:16,214  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:42:15,886  INFO      [BTC/USD] ── Signal check 15:42 ──
+2026-07-08 15:42:16,093  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:42:16,215  INFO      [BTC/USD] ── Signal check 15:42 ──
+2026-07-08 15:42:16,412  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:42:16,618  INFO      [BTC/USD] Portfolio=$99,098.62  Price=$62088.49  Position=None
+2026-07-08 15:42:16,618  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:42:16,618  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:42:16,876  INFO      [BTC/USD] Portfolio=$99,098.62  Price=$62088.49  Position=None
+2026-07-08 15:42:16,876  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:42:16,876  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:52:16,618  INFO      [BTC/USD] ── Signal check 15:52 ──
+2026-07-08 15:52:16,837  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:52:16,877  INFO      [BTC/USD] ── Signal check 15:52 ──
+2026-07-08 15:52:17,085  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 15:52:17,338  INFO      [BTC/USD] Portfolio=$99,144.78  Price=$62110.08  Position=None
+2026-07-08 15:52:17,338  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:52:17,338  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 15:52:17,539  INFO      [BTC/USD] Portfolio=$99,144.78  Price=$62110.08  Position=None
+2026-07-08 15:52:17,540  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 15:52:17,540  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:02:17,338  INFO      [BTC/USD] ── Signal check 16:02 ──
+2026-07-08 16:02:17,540  INFO      [BTC/USD] ── Signal check 16:02 ──
+2026-07-08 16:02:17,544  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:02:17,726  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:02:18,009  INFO      [BTC/USD] Portfolio=$99,213.97  Price=$62220.50  Position=None
+2026-07-08 16:02:18,009  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:02:18,009  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:02:18,178  INFO      [BTC/USD] Portfolio=$99,213.97  Price=$62220.50  Position=None
+2026-07-08 16:02:18,179  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:02:18,179  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:12:18,010  INFO      [BTC/USD] ── Signal check 16:12 ──
+2026-07-08 16:12:18,179  INFO      [BTC/USD] ── Signal check 16:12 ──
+2026-07-08 16:12:18,227  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:12:18,343  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:12:18,690  INFO      [BTC/USD] Portfolio=$99,238.39  Price=$62236.02  Position=None
+2026-07-08 16:12:18,691  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:12:18,691  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:12:18,779  INFO      [BTC/USD] Portfolio=$99,238.39  Price=$62236.02  Position=None
+2026-07-08 16:12:18,779  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:12:18,779  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:22:18,692  INFO      [BTC/USD] ── Signal check 16:22 ──
+2026-07-08 16:22:18,780  INFO      [BTC/USD] ── Signal check 16:22 ──
+2026-07-08 16:22:18,913  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:22:18,924  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:22:19,362  INFO      [BTC/USD] Portfolio=$99,188.02  Price=$62210.80  Position=None
+2026-07-08 16:22:19,362  INFO      [BTC/USD] Portfolio=$99,188.02  Price=$62210.80  Position=None
+2026-07-08 16:22:19,363  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:22:19,363  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:22:19,363  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:22:19,363  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:32:19,364  INFO      [BTC/USD] ── Signal check 16:32 ──
+2026-07-08 16:32:19,364  INFO      [BTC/USD] ── Signal check 16:32 ──
+2026-07-08 16:32:19,573  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:32:19,661  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:32:20,057  INFO      [BTC/USD] Portfolio=$99,181.64  Price=$62229.00  Position=None
+2026-07-08 16:32:20,057  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:32:20,057  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:32:20,129  INFO      [BTC/USD] Portfolio=$99,181.64  Price=$62229.00  Position=None
+2026-07-08 16:32:20,129  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:32:20,129  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:42:20,058  INFO      [BTC/USD] ── Signal check 16:42 ──
+2026-07-08 16:42:20,130  INFO      [BTC/USD] ── Signal check 16:42 ──
+2026-07-08 16:42:20,263  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:42:20,296  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:42:20,750  INFO      [BTC/USD] Portfolio=$99,155.34  Price=$62283.42  Position=None
+2026-07-08 16:42:20,752  INFO      [BTC/USD] Portfolio=$99,155.34  Price=$62283.42  Position=None
+2026-07-08 16:42:20,752  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:42:20,752  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:42:20,752  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:42:20,752  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:52:20,753  INFO      [BTC/USD] ── Signal check 16:52 ──
+2026-07-08 16:52:20,753  INFO      [BTC/USD] ── Signal check 16:52 ──
+2026-07-08 16:52:20,981  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:52:20,982  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 16:52:21,496  INFO      [BTC/USD] Portfolio=$99,183.25  Price=$62260.30  Position=None
+2026-07-08 16:52:21,497  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:52:21,497  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 16:52:21,501  INFO      [BTC/USD] Portfolio=$99,183.25  Price=$62260.30  Position=None
+2026-07-08 16:52:21,501  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 16:52:21,501  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:02:21,497  INFO      [BTC/USD] ── Signal check 17:02 ──
+2026-07-08 17:02:21,502  INFO      [BTC/USD] ── Signal check 17:02 ──
+2026-07-08 17:02:21,710  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:02:21,717  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:02:22,169  INFO      [BTC/USD] Portfolio=$99,230.23  Price=$62289.72  Position=None
+2026-07-08 17:02:22,169  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:02:22,169  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:02:22,176  INFO      [BTC/USD] Portfolio=$99,230.23  Price=$62289.72  Position=None
+2026-07-08 17:02:22,176  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:02:22,177  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:05:51,877  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-08 17:05:51,877  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-08 17:06:14,956  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-08 17:06:14,957  INFO        Mode       : PAPER
+2026-07-08 17:06:14,957  INFO        Max leverage: 10.0x
+2026-07-08 17:06:14,957  INFO        Trading hours: 24/7
+2026-07-08 17:06:14,965  INFO        Evolved leverage: 3.9x
+2026-07-08 17:06:14,965  INFO        Stop width: 4.4%
+2026-07-08 17:06:14,965  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-08 17:06:14,965  INFO      [BTC/USD] ── Signal check 17:06 ──
+2026-07-08 17:06:15,436  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:06:15,940  INFO      [BTC/USD] Portfolio=$99,218.14  Price=$62302.60  Position=None
+2026-07-08 17:06:15,940  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:06:15,940  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:06:16,931  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-08 17:06:16,931  INFO        Mode       : PAPER
+2026-07-08 17:06:16,931  INFO        Max leverage: 10.0x
+2026-07-08 17:06:16,931  INFO        Trading hours: 24/7
+2026-07-08 17:06:16,933  INFO        Evolved leverage: 3.9x
+2026-07-08 17:06:16,933  INFO        Stop width: 4.4%
+2026-07-08 17:06:16,933  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-08 17:06:16,933  INFO      [BTC/USD] ── Signal check 17:06 ──
+2026-07-08 17:06:17,215  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:06:17,647  INFO      [BTC/USD] Portfolio=$99,218.14  Price=$62302.60  Position=None
+2026-07-08 17:06:17,648  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:06:17,648  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:16:15,941  INFO      [BTC/USD] ── Signal check 17:16 ──
+2026-07-08 17:16:16,163  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:16:16,692  INFO      [BTC/USD] Portfolio=$99,200.62  Price=$62304.15  Position=None
+2026-07-08 17:16:16,693  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:16:16,693  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:16:17,649  INFO      [BTC/USD] ── Signal check 17:16 ──
+2026-07-08 17:16:17,838  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:16:18,286  INFO      [BTC/USD] Portfolio=$99,200.62  Price=$62304.15  Position=None
+2026-07-08 17:16:18,287  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:16:18,287  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:22:36,434  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-08 17:22:36,434  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-08 17:22:58,147  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-08 17:22:58,147  INFO        Mode       : PAPER
+2026-07-08 17:22:58,147  INFO        Max leverage: 10.0x
+2026-07-08 17:22:58,147  INFO        Trading hours: 24/7
+2026-07-08 17:22:58,149  INFO        Evolved leverage: 3.9x
+2026-07-08 17:22:58,149  INFO        Stop width: 4.4%
+2026-07-08 17:22:58,149  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-08 17:22:58,150  INFO      [BTC/USD] ── Signal check 17:22 ──
+2026-07-08 17:22:58,675  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:22:59,325  INFO      [BTC/USD] Portfolio=$99,056.86  Price=$62214.50  Position=None
+2026-07-08 17:22:59,325  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:22:59,325  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:23:00,227  INFO      [FUTURES BOT] Starting: BTC/USD (Bitcoin Futures)
+2026-07-08 17:23:00,227  INFO        Mode       : PAPER
+2026-07-08 17:23:00,228  INFO        Max leverage: 10.0x
+2026-07-08 17:23:00,228  INFO        Trading hours: 24/7
+2026-07-08 17:23:00,230  INFO        Evolved leverage: 3.9x
+2026-07-08 17:23:00,233  INFO        Stop width: 4.4%
+2026-07-08 17:23:00,236  INFO      [BTC/USD] Bot running — checking every 10 minutes
+2026-07-08 17:23:00,236  INFO      [BTC/USD] ── Signal check 17:23 ──
+2026-07-08 17:23:00,604  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:23:01,204  INFO      [BTC/USD] Portfolio=$99,056.86  Price=$62214.50  Position=None
+2026-07-08 17:23:01,204  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:23:01,204  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:32:59,325  INFO      [BTC/USD] ── Signal check 17:32 ──
+2026-07-08 17:32:59,492  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:33:00,055  INFO      [BTC/USD] Portfolio=$99,103.46  Price=$62200.10  Position=None
+2026-07-08 17:33:00,055  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:33:00,056  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:33:01,205  INFO      [BTC/USD] ── Signal check 17:33 ──
+2026-07-08 17:33:01,452  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:33:01,933  INFO      [BTC/USD] Portfolio=$99,103.46  Price=$62200.10  Position=None
+2026-07-08 17:33:01,933  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:33:01,933  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:43:00,056  INFO      [BTC/USD] ── Signal check 17:43 ──
+2026-07-08 17:43:00,262  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:43:00,775  INFO      [BTC/USD] Portfolio=$99,222.42  Price=$62201.80  Position=None
+2026-07-08 17:43:00,775  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:43:00,775  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:43:01,933  INFO      [BTC/USD] ── Signal check 17:43 ──
+2026-07-08 17:43:02,118  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:43:02,678  INFO      [BTC/USD] Portfolio=$99,222.42  Price=$62201.80  Position=None
+2026-07-08 17:43:02,679  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:43:02,679  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:53:00,776  INFO      [BTC/USD] ── Signal check 17:53 ──
+2026-07-08 17:53:00,951  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:53:01,754  INFO      [BTC/USD] Portfolio=$99,244.16  Price=$62287.20  Position=None
+2026-07-08 17:53:01,754  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:53:01,754  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 17:53:02,679  INFO      [BTC/USD] ── Signal check 17:53 ──
+2026-07-08 17:53:03,115  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 17:53:03,654  INFO      [BTC/USD] Portfolio=$99,244.16  Price=$62287.20  Position=None
+2026-07-08 17:53:03,655  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 17:53:03,655  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 18:03:01,755  INFO      [BTC/USD] ── Signal check 18:03 ──
+2026-07-08 18:03:01,992  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 18:03:02,579  INFO      [BTC/USD] Portfolio=$99,391.30  Price=$62192.42  Position=None
+2026-07-08 18:03:02,580  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 18:03:02,580  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 18:03:03,656  INFO      [BTC/USD] ── Signal check 18:03 ──
+2026-07-08 18:03:04,048  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 18:03:04,576  INFO      [BTC/USD] Portfolio=$99,391.30  Price=$62225.00  Position=None
+2026-07-08 18:03:04,576  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 18:03:04,576  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 18:13:02,581  INFO      [BTC/USD] ── Signal check 18:13 ──
+2026-07-08 18:13:02,772  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 18:13:03,279  INFO      [BTC/USD] Portfolio=$99,577.45  Price=$62242.00  Position=None
+2026-07-08 18:13:03,279  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 18:13:03,280  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 18:13:04,577  INFO      [BTC/USD] ── Signal check 18:13 ──
+2026-07-08 18:13:04,762  INFO      [BTC/USD] Signal: FLAT  |  Confidence: 0.357  |  Leverage: 1.00x
+2026-07-08 18:13:05,213  INFO      [BTC/USD] Portfolio=$99,577.45  Price=$62242.00  Position=None
+2026-07-08 18:13:05,213  INFO      [BTC/USD] FLAT signal — no trade
+2026-07-08 18:13:05,213  INFO      [BTC/USD] Signal complete. Sleeping 600s...
+2026-07-08 18:16:47,721  INFO      [BTC/USD] Futures bot stopped by user
+2026-07-08 18:16:47,721  INFO      [BTC/USD] Futures bot stopped by user

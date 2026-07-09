@@ -1142,3 +1142,947 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-07 11:50:26,581  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,082)
 2026-07-07 11:50:26,581  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
 2026-07-07 11:50:26,581  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:00:26,582  INFO      [GC] ── Signal check 12:00 ──
+2026-07-07 12:00:26,729  INFO      [GC] Signal: LONG  |  Confidence: 0.599  |  Leverage: 1.32x
+2026-07-07 12:00:27,158  INFO      [GC] Portfolio=$100,578.49  Price=$4155.60  Position=None
+2026-07-07 12:00:27,159  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,087)
+2026-07-07 12:00:27,159  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:00:27,159  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:10:27,159  INFO      [GC] ── Signal check 12:10 ──
+2026-07-07 12:10:27,356  INFO      [GC] Signal: LONG  |  Confidence: 0.599  |  Leverage: 1.32x
+2026-07-07 12:10:27,882  INFO      [GC] Portfolio=$100,513.15  Price=$4156.50  Position=None
+2026-07-07 12:10:27,882  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,077)
+2026-07-07 12:10:27,882  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:10:27,882  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:20:27,883  INFO      [GC] ── Signal check 12:20 ──
+2026-07-07 12:20:28,105  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-07 12:20:28,546  INFO      [GC] Portfolio=$100,511.43  Price=$4152.50  Position=None
+2026-07-07 12:20:28,547  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,077)
+2026-07-07 12:20:28,547  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:20:28,547  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:30:28,548  INFO      [GC] ── Signal check 12:30 ──
+2026-07-07 12:30:28,818  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-07 12:30:29,399  INFO      [GC] Portfolio=$100,408.16  Price=$4153.10  Position=None
+2026-07-07 12:30:29,399  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,061)
+2026-07-07 12:30:29,400  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:30:29,400  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:40:29,400  INFO      [GC] ── Signal check 12:40 ──
+2026-07-07 12:40:29,586  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-07 12:40:30,003  INFO      [GC] Portfolio=$100,398.16  Price=$4151.90  Position=None
+2026-07-07 12:40:30,003  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,060)
+2026-07-07 12:40:30,003  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:40:30,004  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 12:50:30,004  INFO      [GC] ── Signal check 12:50 ──
+2026-07-07 12:50:30,160  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-07 12:50:30,582  INFO      [GC] Portfolio=$100,229.69  Price=$4152.40  Position=None
+2026-07-07 12:50:30,582  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,034)
+2026-07-07 12:50:30,582  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 12:50:30,582  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:00:30,583  INFO      [GC] ── Signal check 13:00 ──
+2026-07-07 13:00:30,731  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-07 13:00:31,163  INFO      [GC] Portfolio=$100,001.11  Price=$4146.40  Position=None
+2026-07-07 13:00:31,164  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$15,000)
+2026-07-07 13:00:31,164  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-07 13:00:31,164  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:10:31,170  INFO      [GC] ── Signal check 13:10 ──
+2026-07-07 13:10:31,329  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 13:10:31,724  INFO      [GC] Portfolio=$99,893.87  Price=$4136.40  Position=None
+2026-07-07 13:10:31,724  INFO      [GC] FLAT signal — no trade
+2026-07-07 13:10:31,724  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:20:31,725  INFO      [GC] ── Signal check 13:20 ──
+2026-07-07 13:20:31,892  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 13:20:32,361  INFO      [GC] Portfolio=$99,729.83  Price=$4121.10  Position=None
+2026-07-07 13:20:32,361  INFO      [GC] FLAT signal — no trade
+2026-07-07 13:20:32,361  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:30:32,362  INFO      [GC] ── Signal check 13:30 ──
+2026-07-07 13:30:32,545  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 13:30:33,029  INFO      [GC] Portfolio=$99,770.95  Price=$4105.70  Position=None
+2026-07-07 13:30:33,029  INFO      [GC] FLAT signal — no trade
+2026-07-07 13:30:33,029  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:40:33,029  INFO      [GC] ── Signal check 13:40 ──
+2026-07-07 13:40:33,192  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 13:40:33,682  INFO      [GC] Portfolio=$99,666.50  Price=$4117.70  Position=None
+2026-07-07 13:40:33,683  INFO      [GC] FLAT signal — no trade
+2026-07-07 13:40:33,683  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 13:50:33,685  INFO      [GC] ── Signal check 13:50 ──
+2026-07-07 13:50:33,867  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 13:50:34,319  INFO      [GC] Portfolio=$99,718.17  Price=$4121.20  Position=None
+2026-07-07 13:50:34,320  INFO      [GC] FLAT signal — no trade
+2026-07-07 13:50:34,320  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:00:34,320  INFO      [GC] ── Signal check 14:00 ──
+2026-07-07 14:00:34,485  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:00:34,949  INFO      [GC] Portfolio=$99,879.38  Price=$4122.40  Position=None
+2026-07-07 14:00:34,949  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:00:34,950  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:10:34,950  INFO      [GC] ── Signal check 14:10 ──
+2026-07-07 14:10:35,105  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:10:35,527  INFO      [GC] Portfolio=$99,872.21  Price=$4124.60  Position=None
+2026-07-07 14:10:35,527  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:10:35,527  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:20:35,527  INFO      [GC] ── Signal check 14:20 ──
+2026-07-07 14:20:41,097  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:20:46,209  INFO      [GC] Portfolio=$99,759.94  Price=$4125.00  Position=None
+2026-07-07 14:20:46,210  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:20:46,210  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:30:46,211  INFO      [GC] ── Signal check 14:30 ──
+2026-07-07 14:30:46,366  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:30:46,807  INFO      [GC] Portfolio=$121,086.44  Price=$4119.30  Position=None
+2026-07-07 14:30:46,807  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:30:46,807  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:40:46,807  INFO      [GC] ── Signal check 14:40 ──
+2026-07-07 14:40:47,032  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:40:47,504  INFO      [GC] Portfolio=$121,133.99  Price=$4120.60  Position=None
+2026-07-07 14:40:47,504  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:40:47,504  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 14:50:47,505  INFO      [GC] ── Signal check 14:50 ──
+2026-07-07 14:50:47,690  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 14:50:48,203  INFO      [GC] Portfolio=$99,741.59  Price=$4115.90  Position=None
+2026-07-07 14:50:48,204  INFO      [GC] FLAT signal — no trade
+2026-07-07 14:50:48,204  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:00:48,205  INFO      [GC] ── Signal check 15:00 ──
+2026-07-07 15:00:48,358  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:00:48,792  INFO      [GC] Portfolio=$99,703.00  Price=$4115.50  Position=None
+2026-07-07 15:00:48,793  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:00:48,793  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:10:48,795  INFO      [GC] ── Signal check 15:10 ──
+2026-07-07 15:10:48,984  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:10:49,671  INFO      [GC] Portfolio=$99,727.50  Price=$4116.60  Position=None
+2026-07-07 15:10:49,672  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:10:49,672  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:20:49,672  INFO      [GC] ── Signal check 15:20 ──
+2026-07-07 15:20:49,821  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:20:50,352  INFO      [GC] Portfolio=$99,582.39  Price=$4116.60  Position=None
+2026-07-07 15:20:50,352  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:20:50,352  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:30:50,353  INFO      [GC] ── Signal check 15:30 ──
+2026-07-07 15:30:50,527  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:30:50,952  INFO      [GC] Portfolio=$99,473.72  Price=$4116.60  Position=None
+2026-07-07 15:30:50,952  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:30:50,952  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:40:50,953  INFO      [GC] ── Signal check 15:40 ──
+2026-07-07 15:40:51,136  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:40:51,571  INFO      [GC] Portfolio=$99,331.70  Price=$4116.60  Position=None
+2026-07-07 15:40:51,571  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:40:51,571  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 15:50:51,572  INFO      [GC] ── Signal check 15:50 ──
+2026-07-07 15:50:51,770  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 15:50:52,316  INFO      [GC] Portfolio=$99,361.30  Price=$4116.60  Position=None
+2026-07-07 15:50:52,316  INFO      [GC] FLAT signal — no trade
+2026-07-07 15:50:52,316  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:00:52,316  INFO      [GC] ── Signal check 16:00 ──
+2026-07-07 16:00:52,481  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-07 16:00:52,966  INFO      [GC] Portfolio=$99,198.16  Price=$4116.60  Position=None
+2026-07-07 16:00:52,966  INFO      [GC] FLAT signal — no trade
+2026-07-07 16:00:52,966  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:10:52,967  INFO      [GC] ── Signal check 16:10 ──
+2026-07-07 16:10:53,125  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 16:10:53,594  INFO      [GC] Portfolio=$99,321.73  Price=$4105.80  Position=None
+2026-07-07 16:10:53,594  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 16:10:53,594  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:20:53,595  INFO      [GC] ── Signal check 16:20 ──
+2026-07-07 16:20:53,799  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 16:20:54,291  INFO      [GC] Portfolio=$99,326.21  Price=$4112.40  Position=None
+2026-07-07 16:20:54,292  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 16:20:54,292  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:30:54,292  INFO      [GC] ── Signal check 16:30 ──
+2026-07-07 16:30:54,480  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 16:30:55,019  INFO      [GC] Portfolio=$99,337.88  Price=$4113.60  Position=None
+2026-07-07 16:30:55,020  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 16:30:55,020  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:40:55,021  INFO      [GC] ── Signal check 16:40 ──
+2026-07-07 16:40:55,227  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 16:40:55,720  INFO      [GC] Portfolio=$99,442.32  Price=$4110.20  Position=None
+2026-07-07 16:40:55,720  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 16:40:55,721  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 16:50:55,721  INFO      [GC] ── Signal check 16:50 ──
+2026-07-07 16:50:55,877  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 16:50:56,566  INFO      [GC] Portfolio=$99,402.52  Price=$4111.70  Position=None
+2026-07-07 16:50:56,566  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 16:50:56,566  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:00:56,571  INFO      [GC] ── Signal check 17:00 ──
+2026-07-07 17:00:56,726  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:00:57,152  INFO      [GC] Portfolio=$99,488.40  Price=$4106.80  Position=None
+2026-07-07 17:00:57,152  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:00:57,152  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:10:57,153  INFO      [GC] ── Signal check 17:10 ──
+2026-07-07 17:10:57,329  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:10:57,822  INFO      [GC] Portfolio=$99,510.49  Price=$4109.20  Position=None
+2026-07-07 17:10:57,822  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:10:57,822  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:20:57,824  INFO      [GC] ── Signal check 17:20 ──
+2026-07-07 17:20:58,019  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:20:58,597  INFO      [GC] Portfolio=$99,683.83  Price=$4117.50  Position=None
+2026-07-07 17:20:58,597  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:20:58,597  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:30:58,598  INFO      [GC] ── Signal check 17:30 ──
+2026-07-07 17:30:58,744  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:30:59,199  INFO      [GC] Portfolio=$99,675.39  Price=$4112.10  Position=None
+2026-07-07 17:30:59,199  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:30:59,199  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:40:59,200  INFO      [GC] ── Signal check 17:40 ──
+2026-07-07 17:40:59,435  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:40:59,887  INFO      [GC] Portfolio=$99,489.58  Price=$4116.10  Position=None
+2026-07-07 17:40:59,888  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:40:59,888  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 17:50:59,888  INFO      [GC] ── Signal check 17:50 ──
+2026-07-07 17:51:00,048  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 17:51:00,568  INFO      [GC] Portfolio=$99,431.86  Price=$4113.40  Position=None
+2026-07-07 17:51:00,568  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 17:51:00,569  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:01:00,569  INFO      [GC] ── Signal check 18:01 ──
+2026-07-07 18:01:00,950  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 18:01:01,584  INFO      [GC] Portfolio=$99,227.74  Price=$4110.30  Position=None
+2026-07-07 18:01:01,584  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 18:01:01,584  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:11:01,585  INFO      [GC] ── Signal check 18:11 ──
+2026-07-07 18:11:01,757  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 18:11:02,292  INFO      [GC] Portfolio=$99,445.18  Price=$4107.60  Position=None
+2026-07-07 18:11:02,292  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 18:11:02,292  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:21:02,293  INFO      [GC] ── Signal check 18:21 ──
+2026-07-07 18:21:02,452  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 18:21:02,915  INFO      [GC] Portfolio=$99,609.25  Price=$4110.20  Position=None
+2026-07-07 18:21:02,915  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 18:21:02,915  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:31:02,916  INFO      [GC] ── Signal check 18:31 ──
+2026-07-07 18:31:03,080  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 18:31:03,553  INFO      [GC] Portfolio=$99,644.69  Price=$4114.00  Position=None
+2026-07-07 18:31:03,554  INFO      [GC] FLAT signal — no trade
+2026-07-07 18:31:03,554  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:41:03,554  INFO      [GC] ── Signal check 18:41 ──
+2026-07-07 18:41:03,686  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 18:41:04,128  INFO      [GC] Portfolio=$99,779.37  Price=$4114.70  Position=None
+2026-07-07 18:41:04,128  INFO      [GC] FLAT signal — no trade
+2026-07-07 18:41:04,128  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 18:51:04,129  INFO      [GC] ── Signal check 18:51 ──
+2026-07-07 18:51:04,272  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 18:51:04,769  INFO      [GC] Portfolio=$99,975.25  Price=$4132.90  Position=None
+2026-07-07 18:51:04,770  INFO      [GC] FLAT signal — no trade
+2026-07-07 18:51:04,770  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:01:04,770  INFO      [GC] ── Signal check 19:01 ──
+2026-07-07 19:01:04,958  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:01:05,497  INFO      [GC] Portfolio=$99,849.72  Price=$4130.90  Position=None
+2026-07-07 19:01:05,497  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:01:05,497  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:11:05,497  INFO      [GC] ── Signal check 19:11 ──
+2026-07-07 19:11:05,658  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:11:06,158  INFO      [GC] Portfolio=$99,883.91  Price=$4126.70  Position=None
+2026-07-07 19:11:06,159  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:11:06,159  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:21:06,159  INFO      [GC] ── Signal check 19:21 ──
+2026-07-07 19:21:06,321  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:21:06,794  INFO      [GC] Portfolio=$99,887.71  Price=$4117.10  Position=None
+2026-07-07 19:21:06,795  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:21:06,795  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:31:06,796  INFO      [GC] ── Signal check 19:31 ──
+2026-07-07 19:31:06,962  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:31:07,415  INFO      [GC] Portfolio=$99,741.41  Price=$4119.80  Position=None
+2026-07-07 19:31:07,415  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:31:07,416  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:41:07,417  INFO      [GC] ── Signal check 19:41 ──
+2026-07-07 19:41:07,570  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:41:08,047  INFO      [GC] Portfolio=$99,441.34  Price=$4116.50  Position=None
+2026-07-07 19:41:08,047  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:41:08,047  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 19:51:08,048  INFO      [GC] ── Signal check 19:51 ──
+2026-07-07 19:51:08,363  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 19:51:08,815  INFO      [GC] Portfolio=$99,487.36  Price=$4112.40  Position=None
+2026-07-07 19:51:08,815  INFO      [GC] FLAT signal — no trade
+2026-07-07 19:51:08,815  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:01:08,816  INFO      [GC] ── Signal check 20:01 ──
+2026-07-07 20:01:08,979  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:01:09,554  INFO      [GC] Portfolio=$99,285.10  Price=$4122.20  Position=None
+2026-07-07 20:01:09,554  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:01:09,554  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:11:09,555  INFO      [GC] ── Signal check 20:11 ──
+2026-07-07 20:11:09,701  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:11:10,288  INFO      [GC] Portfolio=$99,236.06  Price=$4119.90  Position=None
+2026-07-07 20:11:10,288  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:11:10,288  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:21:10,289  INFO      [GC] ── Signal check 20:21 ──
+2026-07-07 20:21:10,473  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:21:10,929  INFO      [GC] Portfolio=$99,207.30  Price=$4128.20  Position=None
+2026-07-07 20:21:10,930  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:21:10,930  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:31:10,930  INFO      [GC] ── Signal check 20:31 ──
+2026-07-07 20:31:11,150  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:31:11,679  INFO      [GC] Portfolio=$99,190.48  Price=$4125.00  Position=None
+2026-07-07 20:31:11,680  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:31:11,680  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:41:11,680  INFO      [GC] ── Signal check 20:41 ──
+2026-07-07 20:41:11,840  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:41:12,335  INFO      [GC] Portfolio=$99,178.77  Price=$4129.10  Position=None
+2026-07-07 20:41:12,335  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:41:12,335  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 20:51:12,335  INFO      [GC] ── Signal check 20:51 ──
+2026-07-07 20:51:12,637  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 20:51:13,276  INFO      [GC] Portfolio=$99,380.49  Price=$4130.00  Position=None
+2026-07-07 20:51:13,276  INFO      [GC] FLAT signal — no trade
+2026-07-07 20:51:13,276  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:01:13,277  INFO      [GC] ── Signal check 21:01 ──
+2026-07-07 21:01:13,434  INFO      [GC] Signal: FLAT  |  Confidence: 0.368  |  Leverage: 1.00x
+2026-07-07 21:01:13,946  INFO      [GC] Portfolio=$99,425.70  Price=$4127.60  Position=None
+2026-07-07 21:01:13,946  INFO      [GC] FLAT signal — no trade
+2026-07-07 21:01:13,946  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:11:13,947  INFO      [GC] ── Signal check 21:11 ──
+2026-07-07 21:11:14,155  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 21:11:14,632  INFO      [GC] Portfolio=$99,497.56  Price=$4132.50  Position=None
+2026-07-07 21:11:14,632  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 21:11:14,632  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:21:14,633  INFO      [GC] ── Signal check 21:21 ──
+2026-07-07 21:21:14,840  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 21:21:15,267  INFO      [GC] Portfolio=$99,479.41  Price=$4138.40  Position=None
+2026-07-07 21:21:15,267  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 21:21:15,267  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:31:15,268  INFO      [GC] ── Signal check 21:31 ──
+2026-07-07 21:31:15,474  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 21:31:15,891  INFO      [GC] Portfolio=$99,670.06  Price=$4139.40  Position=None
+2026-07-07 21:31:15,892  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 21:31:15,893  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:41:15,893  INFO      [GC] ── Signal check 21:41 ──
+2026-07-07 21:41:16,048  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 21:41:16,499  INFO      [GC] Portfolio=$99,592.22  Price=$4141.10  Position=None
+2026-07-07 21:41:16,499  INFO      [GC] FLAT signal — no trade
+2026-07-07 21:41:16,499  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 21:51:16,500  INFO      [GC] ── Signal check 21:51 ──
+2026-07-07 21:51:16,712  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-07 21:51:17,175  INFO      [GC] Portfolio=$99,535.92  Price=$4137.60  Position=None
+2026-07-07 21:51:17,175  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-07 21:51:17,175  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:01:17,176  INFO      [GC] ── Signal check 22:01 ──
+2026-07-07 22:01:17,381  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:01:17,816  WARNING   [GC] Could not get price — skipping
+2026-07-07 22:01:17,816  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:11:17,817  INFO      [GC] ── Signal check 22:11 ──
+2026-07-07 22:11:17,980  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:11:18,391  INFO      [GC] Portfolio=$99,353.22  Price=$4134.50  Position=None
+2026-07-07 22:11:18,391  INFO      [GC] FLAT signal — no trade
+2026-07-07 22:11:18,391  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:21:18,392  INFO      [GC] ── Signal check 22:21 ──
+2026-07-07 22:21:18,559  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:21:18,990  INFO      [GC] Portfolio=$99,325.74  Price=$4137.70  Position=None
+2026-07-07 22:21:18,990  INFO      [GC] FLAT signal — no trade
+2026-07-07 22:21:18,990  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:31:18,991  INFO      [GC] ── Signal check 22:31 ──
+2026-07-07 22:31:19,175  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:31:19,585  INFO      [GC] Portfolio=$99,320.52  Price=$4133.80  Position=None
+2026-07-07 22:31:19,585  INFO      [GC] FLAT signal — no trade
+2026-07-07 22:31:19,585  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:41:19,585  INFO      [GC] ── Signal check 22:41 ──
+2026-07-07 22:41:19,763  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:41:20,204  INFO      [GC] Portfolio=$99,272.43  Price=$4136.90  Position=None
+2026-07-07 22:41:20,204  INFO      [GC] FLAT signal — no trade
+2026-07-07 22:41:20,204  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 22:51:20,205  INFO      [GC] ── Signal check 22:51 ──
+2026-07-07 22:51:20,346  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 22:51:20,819  INFO      [GC] Portfolio=$99,239.97  Price=$4135.40  Position=None
+2026-07-07 22:51:20,819  INFO      [GC] FLAT signal — no trade
+2026-07-07 22:51:20,819  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:01:20,819  INFO      [GC] ── Signal check 23:01 ──
+2026-07-07 23:01:21,006  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:01:21,433  INFO      [GC] Portfolio=$99,329.75  Price=$4136.20  Position=None
+2026-07-07 23:01:21,433  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:01:21,433  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:11:21,434  INFO      [GC] ── Signal check 23:11 ──
+2026-07-07 23:11:21,595  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:11:22,009  INFO      [GC] Portfolio=$99,376.50  Price=$4138.20  Position=None
+2026-07-07 23:11:22,009  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:11:22,009  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:21:22,013  INFO      [GC] ── Signal check 23:21 ──
+2026-07-07 23:21:22,197  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:21:22,650  INFO      [GC] Portfolio=$99,361.63  Price=$4137.80  Position=None
+2026-07-07 23:21:22,650  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:21:22,650  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:31:24,296  INFO      [GC] ── Signal check 23:31 ──
+2026-07-07 23:31:24,478  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:31:24,905  INFO      [GC] Portfolio=$99,198.09  Price=$4136.40  Position=None
+2026-07-07 23:31:24,905  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:31:24,905  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:41:24,905  INFO      [GC] ── Signal check 23:41 ──
+2026-07-07 23:41:25,148  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:41:25,560  INFO      [GC] Portfolio=$99,123.66  Price=$4133.50  Position=None
+2026-07-07 23:41:25,561  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:41:25,561  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-07 23:51:25,561  INFO      [GC] ── Signal check 23:51 ──
+2026-07-07 23:51:25,758  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-07 23:51:26,224  INFO      [GC] Portfolio=$99,039.42  Price=$4139.70  Position=None
+2026-07-07 23:51:26,224  INFO      [GC] FLAT signal — no trade
+2026-07-07 23:51:26,224  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:01:26,225  INFO      [GC] ── Signal check 00:01 ──
+2026-07-08 00:01:26,401  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-08 00:01:26,802  INFO      [GC] Portfolio=$99,065.62  Price=$4135.60  Position=None
+2026-07-08 00:01:26,802  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:01:26,802  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:11:26,809  INFO      [GC] ── Signal check 00:11 ──
+2026-07-08 00:11:26,983  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-08 00:11:27,431  INFO      [GC] Portfolio=$99,073.70  Price=$4138.20  Position=None
+2026-07-08 00:11:27,431  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:11:27,432  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:21:27,435  INFO      [GC] ── Signal check 00:21 ──
+2026-07-08 00:21:27,602  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-08 00:21:28,010  INFO      [GC] Portfolio=$99,035.75  Price=$4135.80  Position=None
+2026-07-08 00:21:28,011  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:21:28,011  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:31:28,012  INFO      [GC] ── Signal check 00:31 ──
+2026-07-08 00:31:28,150  INFO      [GC] Signal: FLAT  |  Confidence: 0.457  |  Leverage: 1.25x
+2026-07-08 00:31:28,551  INFO      [GC] Portfolio=$98,996.59  Price=$4140.30  Position=None
+2026-07-08 00:31:28,551  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:31:28,551  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:41:28,552  INFO      [GC] ── Signal check 00:41 ──
+2026-07-08 00:41:28,686  INFO      [GC] Signal: FLAT  |  Confidence: 0.457  |  Leverage: 1.25x
+2026-07-08 00:41:29,096  INFO      [GC] Portfolio=$98,964.80  Price=$4139.80  Position=None
+2026-07-08 00:41:29,096  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:41:29,096  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 00:51:29,097  INFO      [GC] ── Signal check 00:51 ──
+2026-07-08 00:51:29,250  INFO      [GC] Signal: FLAT  |  Confidence: 0.457  |  Leverage: 1.25x
+2026-07-08 00:51:29,675  INFO      [GC] Portfolio=$99,049.79  Price=$4138.30  Position=None
+2026-07-08 00:51:29,675  INFO      [GC] FLAT signal — no trade
+2026-07-08 00:51:29,675  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:01:29,676  INFO      [GC] ── Signal check 01:01 ──
+2026-07-08 01:01:29,851  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 01:01:30,245  INFO      [GC] Portfolio=$99,030.69  Price=$4137.00  Position=None
+2026-07-08 01:01:30,245  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,855)
+2026-07-08 01:01:30,246  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 01:01:30,246  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:11:30,246  INFO      [GC] ── Signal check 01:11 ──
+2026-07-08 01:11:30,446  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 01:11:30,830  INFO      [GC] Portfolio=$98,949.79  Price=$4135.00  Position=None
+2026-07-08 01:11:30,830  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,842)
+2026-07-08 01:11:30,830  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 01:11:30,830  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:21:30,831  INFO      [GC] ── Signal check 01:21 ──
+2026-07-08 01:21:30,994  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 01:21:31,378  INFO      [GC] Portfolio=$98,929.95  Price=$4129.10  Position=None
+2026-07-08 01:21:31,378  INFO      [GC] FLAT signal — no trade
+2026-07-08 01:21:31,378  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:31:31,379  INFO      [GC] ── Signal check 01:31 ──
+2026-07-08 01:31:31,544  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 01:31:31,954  INFO      [GC] Portfolio=$99,261.86  Price=$4126.00  Position=None
+2026-07-08 01:31:31,955  INFO      [GC] FLAT signal — no trade
+2026-07-08 01:31:31,955  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:41:31,955  INFO      [GC] ── Signal check 01:41 ──
+2026-07-08 01:41:32,217  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 01:41:32,608  INFO      [GC] Portfolio=$99,253.94  Price=$4135.00  Position=None
+2026-07-08 01:41:32,609  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,888)
+2026-07-08 01:41:32,609  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 01:41:32,609  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 01:51:32,610  INFO      [GC] ── Signal check 01:51 ──
+2026-07-08 01:51:32,787  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 01:51:33,213  INFO      [GC] Portfolio=$99,387.16  Price=$4133.50  Position=None
+2026-07-08 01:51:33,213  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,908)
+2026-07-08 01:51:33,213  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 01:51:33,213  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:01:33,214  INFO      [GC] ── Signal check 02:01 ──
+2026-07-08 02:01:33,380  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 02:01:33,787  INFO      [GC] Portfolio=$99,313.22  Price=$4133.90  Position=None
+2026-07-08 02:01:33,787  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,897)
+2026-07-08 02:01:33,787  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 02:01:33,787  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:11:33,788  INFO      [GC] ── Signal check 02:11 ──
+2026-07-08 02:11:33,960  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 02:11:34,391  INFO      [GC] Portfolio=$99,259.71  Price=$4130.00  Position=None
+2026-07-08 02:11:34,391  INFO      [GC] FLAT signal — no trade
+2026-07-08 02:11:34,391  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:21:34,392  INFO      [GC] ── Signal check 02:21 ──
+2026-07-08 02:21:34,766  INFO      [GC] Signal: LONG  |  Confidence: 0.560  |  Leverage: 1.30x
+2026-07-08 02:21:35,149  INFO      [GC] Portfolio=$98,684.79  Price=$4131.30  Position=None
+2026-07-08 02:21:35,150  INFO      Futures position: 3 units  (scale=12.8%, leverage=1.3x, exposure=$14,803)
+2026-07-08 02:21:35,150  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-08 02:21:35,150  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:31:35,150  INFO      [GC] ── Signal check 02:31 ──
+2026-07-08 02:31:35,315  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 02:31:35,718  INFO      [GC] Portfolio=$97,545.52  Price=$4101.50  Position=None
+2026-07-08 02:31:35,718  INFO      [GC] FLAT signal — no trade
+2026-07-08 02:31:35,718  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:41:35,719  INFO      [GC] ── Signal check 02:41 ──
+2026-07-08 02:41:35,899  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 02:41:36,317  INFO      [GC] Portfolio=$97,164.39  Price=$4098.60  Position=None
+2026-07-08 02:41:36,318  INFO      [GC] FLAT signal — no trade
+2026-07-08 02:41:36,318  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 02:51:36,319  INFO      [GC] ── Signal check 02:51 ──
+2026-07-08 02:51:36,474  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 02:51:36,940  INFO      [GC] Portfolio=$97,568.92  Price=$4075.10  Position=None
+2026-07-08 02:51:36,943  INFO      [GC] FLAT signal — no trade
+2026-07-08 02:51:36,943  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:01:36,947  INFO      [GC] ── Signal check 03:01 ──
+2026-07-08 03:01:37,142  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:01:37,658  INFO      [GC] Portfolio=$97,254.79  Price=$4076.50  Position=None
+2026-07-08 03:01:37,659  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:01:37,659  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:11:37,659  INFO      [GC] ── Signal check 03:11 ──
+2026-07-08 03:11:37,793  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:11:38,210  INFO      [GC] Portfolio=$97,129.82  Price=$4062.90  Position=None
+2026-07-08 03:11:38,210  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:11:38,210  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:21:38,211  INFO      [GC] ── Signal check 03:21 ──
+2026-07-08 03:21:38,354  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:21:38,777  INFO      [GC] Portfolio=$97,055.75  Price=$4065.30  Position=None
+2026-07-08 03:21:38,778  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:21:38,778  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:31:38,779  INFO      [GC] ── Signal check 03:31 ──
+2026-07-08 03:31:38,933  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:31:39,348  INFO      [GC] Portfolio=$97,087.98  Price=$4065.20  Position=None
+2026-07-08 03:31:39,348  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:31:39,348  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:41:39,349  INFO      [GC] ── Signal check 03:41 ──
+2026-07-08 03:41:39,498  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:41:39,874  INFO      [GC] Portfolio=$97,128.41  Price=$4061.80  Position=None
+2026-07-08 03:41:39,874  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:41:39,875  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 03:51:39,875  INFO      [GC] ── Signal check 03:51 ──
+2026-07-08 03:51:40,030  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 03:51:40,444  INFO      [GC] Portfolio=$97,128.68  Price=$4063.70  Position=None
+2026-07-08 03:51:40,444  INFO      [GC] FLAT signal — no trade
+2026-07-08 03:51:40,445  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:01:40,445  INFO      [GC] ── Signal check 04:01 ──
+2026-07-08 04:01:40,636  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:01:41,048  INFO      [GC] Portfolio=$97,033.54  Price=$4056.70  Position=None
+2026-07-08 04:01:41,048  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:01:41,048  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:11:41,049  INFO      [GC] ── Signal check 04:11 ──
+2026-07-08 04:11:41,223  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:11:41,624  INFO      [GC] Portfolio=$96,823.48  Price=$4054.80  Position=None
+2026-07-08 04:11:41,624  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:11:41,624  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:21:41,626  INFO      [GC] ── Signal check 04:21 ──
+2026-07-08 04:21:41,795  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:21:42,202  INFO      [GC] Portfolio=$97,088.91  Price=$4052.10  Position=None
+2026-07-08 04:21:42,202  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:21:42,202  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:31:42,203  INFO      [GC] ── Signal check 04:31 ──
+2026-07-08 04:31:42,358  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:31:42,754  INFO      [GC] Portfolio=$97,135.00  Price=$4065.80  Position=None
+2026-07-08 04:31:42,754  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:31:42,754  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:41:42,754  INFO      [GC] ── Signal check 04:41 ──
+2026-07-08 04:41:42,952  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:41:43,357  INFO      [GC] Portfolio=$97,336.40  Price=$4062.60  Position=None
+2026-07-08 04:41:43,357  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:41:43,357  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 04:51:43,357  INFO      [GC] ── Signal check 04:51 ──
+2026-07-08 04:51:43,513  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 04:51:43,922  INFO      [GC] Portfolio=$97,331.61  Price=$4064.20  Position=None
+2026-07-08 04:51:43,923  INFO      [GC] FLAT signal — no trade
+2026-07-08 04:51:43,923  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:01:43,923  INFO      [GC] ── Signal check 05:01 ──
+2026-07-08 05:01:44,083  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:01:44,488  INFO      [GC] Portfolio=$97,348.42  Price=$4064.00  Position=None
+2026-07-08 05:01:44,490  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:01:44,490  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:11:44,491  INFO      [GC] ── Signal check 05:11 ──
+2026-07-08 05:11:44,668  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:11:45,074  INFO      [GC] Portfolio=$97,248.13  Price=$4063.70  Position=None
+2026-07-08 05:11:45,074  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:11:45,074  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:21:45,075  INFO      [GC] ── Signal check 05:21 ──
+2026-07-08 05:21:45,257  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:21:45,695  INFO      [GC] Portfolio=$97,353.70  Price=$4058.80  Position=None
+2026-07-08 05:21:45,695  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:21:45,695  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:31:45,696  INFO      [GC] ── Signal check 05:31 ──
+2026-07-08 05:31:45,861  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:31:46,281  INFO      [GC] Portfolio=$97,273.51  Price=$4062.20  Position=None
+2026-07-08 05:31:46,281  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:31:46,281  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:41:46,282  INFO      [GC] ── Signal check 05:41 ──
+2026-07-08 05:41:46,457  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:41:46,845  INFO      [GC] Portfolio=$97,275.03  Price=$4058.40  Position=None
+2026-07-08 05:41:46,845  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:41:46,845  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 05:51:46,846  INFO      [GC] ── Signal check 05:51 ──
+2026-07-08 05:51:47,015  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 05:51:47,432  INFO      [GC] Portfolio=$97,722.56  Price=$4054.90  Position=None
+2026-07-08 05:51:47,432  INFO      [GC] FLAT signal — no trade
+2026-07-08 05:51:47,432  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:01:47,433  INFO      [GC] ── Signal check 06:01 ──
+2026-07-08 06:01:47,603  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:01:48,010  INFO      [GC] Portfolio=$97,862.41  Price=$4069.60  Position=None
+2026-07-08 06:01:48,010  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:01:48,011  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:11:48,011  INFO      [GC] ── Signal check 06:11 ──
+2026-07-08 06:11:48,145  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:11:48,538  INFO      [GC] Portfolio=$98,157.75  Price=$4072.30  Position=None
+2026-07-08 06:11:48,538  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:11:48,538  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:21:48,539  INFO      [GC] ── Signal check 06:21 ──
+2026-07-08 06:21:48,698  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:21:49,102  INFO      [GC] Portfolio=$98,111.87  Price=$4082.50  Position=None
+2026-07-08 06:21:49,103  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:21:49,103  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:31:49,103  INFO      [GC] ── Signal check 06:31 ──
+2026-07-08 06:31:49,361  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:31:49,905  INFO      [GC] Portfolio=$98,231.36  Price=$4082.30  Position=None
+2026-07-08 06:31:49,906  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:31:49,906  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:41:49,907  INFO      [GC] ── Signal check 06:41 ──
+2026-07-08 06:41:50,087  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:41:50,531  INFO      [GC] Portfolio=$98,109.41  Price=$4081.00  Position=None
+2026-07-08 06:41:50,532  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:41:50,532  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 06:51:50,533  INFO      [GC] ── Signal check 06:51 ──
+2026-07-08 06:51:50,772  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 06:51:51,191  INFO      [GC] Portfolio=$98,096.38  Price=$4082.40  Position=None
+2026-07-08 06:51:51,191  INFO      [GC] FLAT signal — no trade
+2026-07-08 06:51:51,191  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:01:51,192  INFO      [GC] ── Signal check 07:01 ──
+2026-07-08 07:01:51,372  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:01:51,800  INFO      [GC] Portfolio=$97,994.86  Price=$4094.00  Position=None
+2026-07-08 07:01:51,800  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:01:51,800  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:11:51,801  INFO      [GC] ── Signal check 07:11 ──
+2026-07-08 07:11:52,068  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:11:52,479  INFO      [GC] Portfolio=$97,819.60  Price=$4086.50  Position=None
+2026-07-08 07:11:52,480  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:11:52,481  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:21:52,482  INFO      [GC] ── Signal check 07:21 ──
+2026-07-08 07:21:52,788  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:21:53,244  INFO      [GC] Portfolio=$97,945.34  Price=$4083.20  Position=None
+2026-07-08 07:21:53,244  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:21:53,244  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:31:53,245  INFO      [GC] ── Signal check 07:31 ──
+2026-07-08 07:31:53,395  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:31:53,828  INFO      [GC] Portfolio=$98,260.66  Price=$4084.30  Position=None
+2026-07-08 07:31:53,828  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:31:53,828  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:41:53,829  INFO      [GC] ── Signal check 07:41 ──
+2026-07-08 07:41:53,994  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:41:54,414  INFO      [GC] Portfolio=$98,356.15  Price=$4084.00  Position=None
+2026-07-08 07:41:54,414  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:41:54,414  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 07:51:54,414  INFO      [GC] ── Signal check 07:51 ──
+2026-07-08 07:51:54,589  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 07:51:55,013  INFO      [GC] Portfolio=$98,382.38  Price=$4088.70  Position=None
+2026-07-08 07:51:55,014  INFO      [GC] FLAT signal — no trade
+2026-07-08 07:51:55,014  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:01:55,014  INFO      [GC] ── Signal check 08:01 ──
+2026-07-08 08:01:55,214  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:01:55,598  INFO      [GC] Portfolio=$98,351.08  Price=$4082.30  Position=None
+2026-07-08 08:01:55,598  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:01:55,598  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:11:55,599  INFO      [GC] ── Signal check 08:11 ──
+2026-07-08 08:11:55,763  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:11:56,229  INFO      [GC] Portfolio=$98,180.85  Price=$4079.40  Position=None
+2026-07-08 08:11:56,229  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:11:56,229  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:21:56,235  INFO      [GC] ── Signal check 08:21 ──
+2026-07-08 08:21:56,425  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:21:56,884  INFO      [GC] Portfolio=$98,533.20  Price=$4073.80  Position=None
+2026-07-08 08:21:56,885  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:21:56,885  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:31:56,885  INFO      [GC] ── Signal check 08:31 ──
+2026-07-08 08:31:57,040  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:31:57,454  INFO      [GC] Portfolio=$98,203.42  Price=$4072.40  Position=None
+2026-07-08 08:31:57,454  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:31:57,454  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:41:57,456  INFO      [GC] ── Signal check 08:41 ──
+2026-07-08 08:41:57,726  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:41:58,169  INFO      [GC] Portfolio=$98,132.01  Price=$4066.80  Position=None
+2026-07-08 08:41:58,170  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:41:58,170  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 08:51:58,171  INFO      [GC] ── Signal check 08:51 ──
+2026-07-08 08:51:58,331  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 08:51:58,806  INFO      [GC] Portfolio=$97,711.38  Price=$4059.00  Position=None
+2026-07-08 08:51:58,807  INFO      [GC] FLAT signal — no trade
+2026-07-08 08:51:58,807  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:01:58,807  INFO      [GC] ── Signal check 09:01 ──
+2026-07-08 09:01:58,977  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:01:59,376  INFO      [GC] Portfolio=$97,862.46  Price=$4053.60  Position=None
+2026-07-08 09:01:59,376  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:01:59,377  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:11:59,377  INFO      [GC] ── Signal check 09:11 ──
+2026-07-08 09:11:59,567  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:12:00,016  INFO      [GC] Portfolio=$97,769.31  Price=$4047.30  Position=None
+2026-07-08 09:12:00,018  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:12:00,019  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:22:00,019  INFO      [GC] ── Signal check 09:22 ──
+2026-07-08 09:22:00,185  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:22:00,672  INFO      [GC] Portfolio=$97,607.10  Price=$4048.70  Position=None
+2026-07-08 09:22:00,673  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:22:00,673  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:32:00,673  INFO      [GC] ── Signal check 09:32 ──
+2026-07-08 09:32:00,832  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:32:01,270  INFO      [GC] Portfolio=$97,227.48  Price=$4041.60  Position=None
+2026-07-08 09:32:01,271  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:32:01,271  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:42:01,272  INFO      [GC] ── Signal check 09:42 ──
+2026-07-08 09:42:01,417  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:42:01,978  INFO      [GC] Portfolio=$97,522.36  Price=$4035.60  Position=None
+2026-07-08 09:42:01,978  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:42:01,978  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 09:52:01,978  INFO      [GC] ── Signal check 09:52 ──
+2026-07-08 09:52:02,153  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 09:52:02,603  INFO      [GC] Portfolio=$97,303.40  Price=$4041.40  Position=None
+2026-07-08 09:52:02,603  INFO      [GC] FLAT signal — no trade
+2026-07-08 09:52:02,603  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:02:02,604  INFO      [GC] ── Signal check 10:02 ──
+2026-07-08 10:02:02,826  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:02:03,269  INFO      [GC] Portfolio=$97,613.76  Price=$4046.20  Position=None
+2026-07-08 10:02:03,270  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:02:03,270  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:12:03,273  INFO      [GC] ── Signal check 10:12 ──
+2026-07-08 10:12:03,477  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:12:04,160  INFO      [GC] Portfolio=$97,937.34  Price=$4043.60  Position=None
+2026-07-08 10:12:04,160  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:12:04,160  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:22:04,161  INFO      [GC] ── Signal check 10:22 ──
+2026-07-08 10:22:04,335  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:22:04,784  INFO      [GC] Portfolio=$98,232.52  Price=$4051.10  Position=None
+2026-07-08 10:22:04,785  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:22:04,785  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:32:04,785  INFO      [GC] ── Signal check 10:32 ──
+2026-07-08 10:32:04,956  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:32:05,676  INFO      [GC] Portfolio=$98,290.25  Price=$4052.00  Position=None
+2026-07-08 10:32:05,677  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:32:05,677  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:42:05,678  INFO      [GC] ── Signal check 10:42 ──
+2026-07-08 10:42:05,867  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:42:06,274  INFO      [GC] Portfolio=$98,403.80  Price=$4054.90  Position=None
+2026-07-08 10:42:06,274  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:42:06,274  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 10:52:06,275  INFO      [GC] ── Signal check 10:52 ──
+2026-07-08 10:52:06,449  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 10:52:06,867  INFO      [GC] Portfolio=$98,629.48  Price=$4058.00  Position=None
+2026-07-08 10:52:06,867  INFO      [GC] FLAT signal — no trade
+2026-07-08 10:52:06,867  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:02:06,868  INFO      [GC] ── Signal check 11:02 ──
+2026-07-08 11:02:07,036  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:02:07,576  INFO      [GC] Portfolio=$98,835.40  Price=$4071.50  Position=None
+2026-07-08 11:02:07,576  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:02:07,576  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:12:07,577  INFO      [GC] ── Signal check 11:12 ──
+2026-07-08 11:12:07,764  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:12:08,210  INFO      [GC] Portfolio=$98,856.89  Price=$4072.00  Position=None
+2026-07-08 11:12:08,211  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:12:08,211  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:22:08,211  INFO      [GC] ── Signal check 11:22 ──
+2026-07-08 11:22:08,384  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:22:08,840  INFO      [GC] Portfolio=$99,110.29  Price=$4076.70  Position=None
+2026-07-08 11:22:08,840  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:22:08,841  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:32:08,845  INFO      [GC] ── Signal check 11:32 ──
+2026-07-08 11:32:09,000  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:32:09,435  INFO      [GC] Portfolio=$99,358.78  Price=$4079.50  Position=None
+2026-07-08 11:32:09,435  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:32:09,435  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:42:09,436  INFO      [GC] ── Signal check 11:42 ──
+2026-07-08 11:42:09,623  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:42:10,054  INFO      [GC] Portfolio=$99,263.50  Price=$4084.00  Position=None
+2026-07-08 11:42:10,055  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:42:10,055  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 11:52:10,055  INFO      [GC] ── Signal check 11:52 ──
+2026-07-08 11:52:10,227  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 11:52:10,678  INFO      [GC] Portfolio=$99,216.50  Price=$4080.20  Position=None
+2026-07-08 11:52:10,679  INFO      [GC] FLAT signal — no trade
+2026-07-08 11:52:10,679  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:02:10,679  INFO      [GC] ── Signal check 12:02 ──
+2026-07-08 12:02:10,841  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:02:11,291  INFO      [GC] Portfolio=$99,158.11  Price=$4080.20  Position=None
+2026-07-08 12:02:11,291  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:02:11,292  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:12:11,292  INFO      [GC] ── Signal check 12:12 ──
+2026-07-08 12:12:11,463  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:12:11,930  INFO      [GC] Portfolio=$99,255.05  Price=$4084.10  Position=None
+2026-07-08 12:12:11,930  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:12:11,930  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:22:11,931  INFO      [GC] ── Signal check 12:22 ──
+2026-07-08 12:22:12,065  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:22:12,514  INFO      [GC] Portfolio=$99,232.58  Price=$4082.50  Position=None
+2026-07-08 12:22:12,514  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:22:12,514  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:32:12,515  INFO      [GC] ── Signal check 12:32 ──
+2026-07-08 12:32:12,755  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:32:13,190  INFO      [GC] Portfolio=$99,074.31  Price=$4080.20  Position=None
+2026-07-08 12:32:13,190  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:32:13,190  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:42:13,196  INFO      [GC] ── Signal check 12:42 ──
+2026-07-08 12:42:13,352  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:42:13,811  INFO      [GC] Portfolio=$99,065.62  Price=$4078.70  Position=None
+2026-07-08 12:42:13,811  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:42:13,811  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 12:52:13,814  INFO      [GC] ── Signal check 12:52 ──
+2026-07-08 12:52:13,994  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 12:52:14,465  INFO      [GC] Portfolio=$99,246.90  Price=$4087.20  Position=None
+2026-07-08 12:52:14,465  INFO      [GC] FLAT signal — no trade
+2026-07-08 12:52:14,465  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:02:14,466  INFO      [GC] ── Signal check 13:02 ──
+2026-07-08 13:02:14,658  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:02:15,121  INFO      [GC] Portfolio=$99,376.94  Price=$4098.50  Position=None
+2026-07-08 13:02:15,121  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:02:15,121  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:12:15,122  INFO      [GC] ── Signal check 13:12 ──
+2026-07-08 13:12:15,300  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:12:15,720  INFO      [GC] Portfolio=$99,334.05  Price=$4097.60  Position=None
+2026-07-08 13:12:15,722  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:12:15,722  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:22:15,734  INFO      [GC] ── Signal check 13:22 ──
+2026-07-08 13:22:15,995  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:22:16,439  INFO      [GC] Portfolio=$99,305.72  Price=$4096.40  Position=None
+2026-07-08 13:22:16,439  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:22:16,439  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:32:16,440  INFO      [GC] ── Signal check 13:32 ──
+2026-07-08 13:32:16,658  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:32:17,234  INFO      [GC] Portfolio=$99,340.37  Price=$4097.20  Position=None
+2026-07-08 13:32:17,235  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:32:17,235  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:42:17,239  INFO      [GC] ── Signal check 13:42 ──
+2026-07-08 13:42:17,388  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:42:17,827  INFO      [GC] Portfolio=$99,276.67  Price=$4098.60  Position=None
+2026-07-08 13:42:17,827  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:42:17,827  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 13:52:17,827  INFO      [GC] ── Signal check 13:52 ──
+2026-07-08 13:52:17,994  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 13:52:18,436  INFO      [GC] Portfolio=$99,326.08  Price=$4093.70  Position=None
+2026-07-08 13:52:18,436  INFO      [GC] FLAT signal — no trade
+2026-07-08 13:52:18,436  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:02:18,437  INFO      [GC] ── Signal check 14:02 ──
+2026-07-08 14:02:18,583  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:02:19,034  INFO      [GC] Portfolio=$99,254.36  Price=$4091.40  Position=None
+2026-07-08 14:02:19,034  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:02:19,035  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:12:19,035  INFO      [GC] ── Signal check 14:12 ──
+2026-07-08 14:12:19,262  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:12:19,878  INFO      [GC] Portfolio=$99,215.91  Price=$4089.00  Position=None
+2026-07-08 14:12:19,878  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:12:19,878  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:22:19,878  INFO      [GC] ── Signal check 14:22 ──
+2026-07-08 14:22:20,023  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:22:20,486  INFO      [GC] Portfolio=$99,078.96  Price=$4089.20  Position=None
+2026-07-08 14:22:20,486  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:22:20,486  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:32:20,487  INFO      [GC] ── Signal check 14:32 ──
+2026-07-08 14:32:20,641  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:32:21,094  INFO      [GC] Portfolio=$99,094.71  Price=$4085.70  Position=None
+2026-07-08 14:32:21,095  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:32:21,095  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:42:21,095  INFO      [GC] ── Signal check 14:42 ──
+2026-07-08 14:42:21,283  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:42:21,697  INFO      [GC] Portfolio=$99,040.54  Price=$4085.60  Position=None
+2026-07-08 14:42:21,697  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:42:21,697  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 14:52:21,698  INFO      [GC] ── Signal check 14:52 ──
+2026-07-08 14:52:21,841  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 14:52:22,373  INFO      [GC] Portfolio=$99,092.25  Price=$4085.20  Position=None
+2026-07-08 14:52:22,375  INFO      [GC] FLAT signal — no trade
+2026-07-08 14:52:22,375  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:02:22,376  INFO      [GC] ── Signal check 15:02 ──
+2026-07-08 15:02:22,569  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:02:23,035  INFO      [GC] Portfolio=$99,029.31  Price=$4087.20  Position=None
+2026-07-08 15:02:23,036  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:02:23,036  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:12:23,037  INFO      [GC] ── Signal check 15:12 ──
+2026-07-08 15:12:23,250  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:12:23,742  INFO      [GC] Portfolio=$99,031.61  Price=$4086.60  Position=None
+2026-07-08 15:12:23,743  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:12:23,743  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:22:23,744  INFO      [GC] ── Signal check 15:22 ──
+2026-07-08 15:22:23,928  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:22:24,374  INFO      [GC] Portfolio=$98,988.84  Price=$4086.60  Position=None
+2026-07-08 15:22:24,374  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:22:24,374  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:32:24,375  INFO      [GC] ── Signal check 15:32 ──
+2026-07-08 15:32:24,548  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:32:25,007  INFO      [GC] Portfolio=$99,074.51  Price=$4086.60  Position=None
+2026-07-08 15:32:25,008  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:32:25,008  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:42:25,008  INFO      [GC] ── Signal check 15:42 ──
+2026-07-08 15:42:25,182  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:42:25,628  INFO      [GC] Portfolio=$99,098.62  Price=$4082.40  Position=None
+2026-07-08 15:42:25,628  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:42:25,628  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 15:52:25,629  INFO      [GC] ── Signal check 15:52 ──
+2026-07-08 15:52:25,855  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 15:52:26,343  INFO      [GC] Portfolio=$99,140.63  Price=$4082.40  Position=None
+2026-07-08 15:52:26,343  INFO      [GC] FLAT signal — no trade
+2026-07-08 15:52:26,344  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:02:26,344  INFO      [GC] ── Signal check 16:02 ──
+2026-07-08 16:02:26,528  INFO      [GC] Signal: FLAT  |  Confidence: 0.453  |  Leverage: 1.24x
+2026-07-08 16:02:26,972  INFO      [GC] Portfolio=$99,226.44  Price=$4086.60  Position=None
+2026-07-08 16:02:26,972  INFO      [GC] FLAT signal — no trade
+2026-07-08 16:02:26,973  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:12:26,973  INFO      [GC] ── Signal check 16:12 ──
+2026-07-08 16:12:27,161  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 16:12:27,666  INFO      [GC] Portfolio=$99,240.15  Price=$4087.60  Position=None
+2026-07-08 16:12:27,666  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 16:12:27,666  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:22:27,667  INFO      [GC] ── Signal check 16:22 ──
+2026-07-08 16:22:27,809  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 16:22:28,230  INFO      [GC] Portfolio=$99,188.10  Price=$4087.80  Position=None
+2026-07-08 16:22:28,230  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 16:22:28,230  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:32:28,230  INFO      [GC] ── Signal check 16:32 ──
+2026-07-08 16:32:28,497  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 16:32:28,997  INFO      [GC] Portfolio=$99,181.64  Price=$4083.50  Position=None
+2026-07-08 16:32:28,998  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 16:32:28,998  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:42:28,998  INFO      [GC] ── Signal check 16:42 ──
+2026-07-08 16:42:29,176  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 16:42:29,720  INFO      [GC] Portfolio=$99,165.59  Price=$4086.60  Position=None
+2026-07-08 16:42:29,721  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 16:42:29,721  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 16:52:29,722  INFO      [GC] ── Signal check 16:52 ──
+2026-07-08 16:52:29,908  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 16:52:30,383  INFO      [GC] Portfolio=$99,182.77  Price=$4088.60  Position=None
+2026-07-08 16:52:30,383  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 16:52:30,383  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:02:30,384  INFO      [GC] ── Signal check 17:02 ──
+2026-07-08 17:02:30,587  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:02:31,132  INFO      [GC] Portfolio=$99,222.76  Price=$4089.40  Position=None
+2026-07-08 17:02:31,133  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:02:31,133  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:05:51,877  INFO      [GC] Futures bot stopped by user
+2026-07-08 17:06:25,022  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-08 17:06:25,022  INFO        Mode       : PAPER
+2026-07-08 17:06:25,022  INFO        Max leverage: 15.0x
+2026-07-08 17:06:25,022  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-08 17:06:25,029  INFO        Evolved leverage: 3.2x
+2026-07-08 17:06:25,030  INFO        Stop width: 5.1%
+2026-07-08 17:06:25,030  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-08 17:06:25,030  INFO      [GC] ── Signal check 17:06 ──
+2026-07-08 17:06:25,382  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:06:25,875  INFO      [GC] Portfolio=$99,216.84  Price=$4087.00  Position=None
+2026-07-08 17:06:25,875  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:06:25,875  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:16:25,876  INFO      [GC] ── Signal check 17:16 ──
+2026-07-08 17:16:26,044  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:16:26,708  INFO      [GC] Portfolio=$99,176.12  Price=$4085.60  Position=None
+2026-07-08 17:16:26,708  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:16:26,708  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:22:36,434  INFO      [GC] Futures bot stopped by user
+2026-07-08 17:23:08,147  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-08 17:23:08,147  INFO        Mode       : PAPER
+2026-07-08 17:23:08,147  INFO        Max leverage: 15.0x
+2026-07-08 17:23:08,147  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-08 17:23:08,149  INFO        Evolved leverage: 3.2x
+2026-07-08 17:23:08,149  INFO        Stop width: 5.1%
+2026-07-08 17:23:08,149  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-08 17:23:08,149  INFO      [GC] ── Signal check 17:23 ──
+2026-07-08 17:23:08,602  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:23:09,314  INFO      [GC] Portfolio=$99,065.18  Price=$4086.30  Position=None
+2026-07-08 17:23:09,314  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:23:09,314  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:33:09,315  INFO      [GC] ── Signal check 17:33 ──
+2026-07-08 17:33:09,499  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:33:09,946  INFO      [GC] Portfolio=$99,173.38  Price=$4085.40  Position=None
+2026-07-08 17:33:09,947  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:33:09,947  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:43:09,947  INFO      [GC] ── Signal check 17:43 ──
+2026-07-08 17:43:10,177  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:43:10,824  INFO      [GC] Portfolio=$99,222.42  Price=$4085.70  Position=None
+2026-07-08 17:43:10,824  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:43:10,824  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 17:53:10,824  INFO      [GC] ── Signal check 17:53 ──
+2026-07-08 17:53:11,043  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 17:53:11,527  INFO      [GC] Portfolio=$99,251.75  Price=$4083.20  Position=None
+2026-07-08 17:53:11,527  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 17:53:11,527  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 18:03:11,528  INFO      [GC] ── Signal check 18:03 ──
+2026-07-08 18:03:11,714  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 18:03:12,212  INFO      [GC] Portfolio=$99,391.30  Price=$4085.00  Position=None
+2026-07-08 18:03:12,213  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 18:03:12,213  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 18:13:12,214  INFO      [GC] ── Signal check 18:13 ──
+2026-07-08 18:13:12,379  INFO      [GC] Signal: SHORT  |  Confidence: 0.265  |  Leverage: 1.00x
+2026-07-08 18:13:12,832  INFO      [GC] Portfolio=$99,577.45  Price=$4089.00  Position=None
+2026-07-08 18:13:12,832  INFO      Risk guard blocked trade: Confidence 0.26 below futures threshold 0.5
+2026-07-08 18:13:12,832  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-08 18:16:47,721  INFO      [GC] Futures bot stopped by user

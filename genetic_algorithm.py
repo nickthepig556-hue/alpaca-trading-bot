@@ -108,104 +108,124 @@ def generate_signals(df_scaled: pd.DataFrame, chrom: np.ndarray) -> pd.Series:
 
 def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame,
                     stop_loss_pct: float = 0.05,
-                    take_profit_pct: float = 0.50) -> dict:
+                    take_profit_pct: float = 0.25,
+                    allow_short: bool = True,
+                    max_hold_days: int = 90) -> dict:
     """
-    Realistic long-only backtest matching the actual bot behaviour:
-      - Enter on BUY signal (1)
-      - Stay in position while signal stays BUY or neutral (0)
-      - Exit ONLY on: stop-loss hit, take-profit hit, or strong SELL signal
-      - Trailing stop activates after position profitable by 1x stop distance
-      - Rewards holding winners, cutting losers
+    Realistic long+short backtest matching actual bot behaviour:
+      - Enter LONG on BUY signal (1)
+      - Enter SHORT on SELL signal (-1) if allow_short=True
+      - Exit on: stop-loss, take-profit, trailing stop, or max_hold_days
+      - Trailing stop activates after 1x stop distance in our favour
+      - Max hold days prevents holding one position forever
 
-    This matches how alpaca_bot.py actually trades.
+    allow_short=True  for volatile assets (TSLA, NVDA, BTC, ETH)
+    allow_short=False for ETFs and long-biased assets (SPY, QQQ, GLD)
     """
     close       = df_raw['Close'].values
     sig         = signals.values
     n           = len(sig)
 
-    in_position      = False
-    entry_price      = 0.0
-    peak_price       = 0.0
-    trailing_active  = False
-    trailing_stop    = 0.0
-    trades           = []
-    equity           = [1.0]
-    days_in_market   = 0
+    in_pos       = False
+    entry        = 0.0
+    direction    = 1     # 1=long, -1=short
+    peak_price   = 0.0
+    trail_active = False
+    trail_stop   = 0.0
+    entry_idx    = 0
+    trades       = []
+    equity       = [1.0]
+    days_in_mkt  = 0
 
     for i in range(1, n):
-        if not in_position:
-            if sig[i] == 1:
-                in_position     = True
-                entry_price     = close[i]
-                peak_price      = close[i]
-                trailing_active = False
-                trailing_stop   = entry_price * (1 - stop_loss_pct)
+        s = int(sig[i])
+
+        if not in_pos:
+            if s == 1:
+                in_pos = True; direction = 1
+                entry = close[i]; peak_price = close[i]
+                trail_active = False
+                trail_stop = entry * (1 - stop_loss_pct)
+                entry_idx = i
+            elif s == -1 and allow_short:
+                in_pos = True; direction = -1
+                entry = close[i]; peak_price = close[i]
+                trail_active = False
+                trail_stop = entry * (1 + stop_loss_pct)
+                entry_idx = i
             equity.append(equity[-1])
         else:
-            days_in_market += 1
-            current = close[i]
+            days_in_mkt += 1
+            current  = close[i]
+            raw_ret  = (current - entry) / entry * direction
+            closed   = False
+            reason   = ""
 
-            # Update trailing stop once profitable by 1x stop distance
-            if current > entry_price * (1 + stop_loss_pct):
-                trailing_active = True
-            if trailing_active and current > peak_price:
-                peak_price    = current
-                trailing_stop = peak_price * (1 - stop_loss_pct * 1.5)
+            # Trailing stop activation
+            if direction == 1 and current > entry * (1 + stop_loss_pct):
+                trail_active = True
+            elif direction == -1 and current < entry * (1 - stop_loss_pct):
+                trail_active = True
 
-            raw_ret = (current - entry_price) / entry_price
-            closed  = False
-            reason  = ""
+            # Update trailing stop
+            if trail_active:
+                if direction == 1 and current > peak_price:
+                    peak_price = current
+                    trail_stop = peak_price * (1 - stop_loss_pct * 1.5)
+                elif direction == -1 and current < peak_price:
+                    peak_price = current
+                    trail_stop = peak_price * (1 + stop_loss_pct * 1.5)
 
-            # Hard stop loss
-            if current <= trailing_stop and trailing_active:
-                closed = True; reason = "trailing-stop"
-            elif raw_ret <= -stop_loss_pct:
-                closed = True; reason = "stop-loss"
-            # Take profit
-            elif raw_ret >= take_profit_pct:
-                closed = True; reason = "take-profit"
-            # Only exit on strong SELL signal (not just neutral)
-            elif sig[i] == -1 and raw_ret > 0:
-                # Only exit profitable positions on sell signal
-                closed = True; reason = "signal-exit"
-            elif sig[i] == -1 and raw_ret <= -stop_loss_pct * 0.5:
-                # Cut losing positions faster
-                closed = True; reason = "stop-loss"
+            # Exit conditions
+            if trail_active:
+                if direction == 1 and current <= trail_stop:
+                    closed = True; reason = "trailing-stop"
+                elif direction == -1 and current >= trail_stop:
+                    closed = True; reason = "trailing-stop"
+            if not closed:
+                if raw_ret <= -stop_loss_pct:
+                    closed = True; reason = "stop-loss"
+                elif raw_ret >= take_profit_pct:
+                    closed = True; reason = "take-profit"
+                elif (i - entry_idx) >= max_hold_days:
+                    closed = True; reason = "max-hold"
+                elif direction == 1 and s == -1 and raw_ret > 0:
+                    closed = True; reason = "signal-exit"
+                elif direction == 1 and s == -1 and raw_ret > 0:
+                    closed = True; reason = "signal-exit"
 
             if closed:
                 trades.append(raw_ret)
                 equity.append(equity[-1] * (1 + raw_ret))
-                in_position     = False
-                trailing_active = False
+                in_pos = False; trail_active = False
             else:
-                equity.append(equity[-1] * (current / close[i-1]))
+                mtm = (close[i] / close[i-1] - 1) * direction
+                equity.append(equity[-1] * (1 + mtm))
 
-    # Close open position at end
-    if in_position:
-        ret = (close[-1] - entry_price) / entry_price
+    if in_pos:
+        ret = (close[-1] - entry) / entry * direction
         trades.append(ret)
         equity.append(equity[-1] * (1 + ret))
-        days_in_market += 1
+        days_in_mkt += 1
 
-    equity = np.array(equity)
+    equity       = np.array(equity)
     total_return = equity[-1] - 1.0
     n_trades     = len(trades)
     win_rate     = (np.array(trades) > 0).mean() if n_trades > 0 else 0.0
-    time_in_mkt  = days_in_market / max(n - 1, 1)
+    time_in_mkt  = days_in_mkt / max(n - 1, 1)
 
-    peak     = np.maximum.accumulate(equity)
-    drawdown = (peak - equity) / peak
-    max_dd   = drawdown.max() if len(drawdown) > 0 else 0.0
+    peak  = np.maximum.accumulate(equity)
+    max_dd = ((peak - equity) / peak).max() if len(equity) > 1 else 0.0
 
     wins         = [t for t in trades if t > 0]
     losses       = [t for t in trades if t <= 0]
-    gross_profit = sum(wins)             if wins   else 0.0
-    gross_loss   = abs(sum(losses))      if losses else 1e-9
+    gross_profit = sum(wins)           if wins   else 0.0
+    gross_loss   = abs(sum(losses))    if losses else 1e-9
     profit_factor = gross_profit / gross_loss
 
-    avg_win  = np.mean(wins)   if wins   else 0.0
-    avg_loss = abs(np.mean(losses)) if losses else 1e-9
-    rr_ratio = avg_win / avg_loss   # reward:risk ratio
+    avg_win  = np.mean(wins)          if wins   else 0.0
+    avg_loss = abs(np.mean(losses))   if losses else 1e-9
+    rr_ratio = avg_win / avg_loss
 
     return {
         'total_return' : total_return,
@@ -219,62 +239,137 @@ def simulate_trades(signals: pd.Series, df_raw: pd.DataFrame,
     }
 
 
+def score_regime(stats: dict, config: dict) -> float:
+    """Score a single regime's stats into [0,1]."""
+    n_trades     = stats['n_trades']
+    total_return = stats['total_return']
+    win_rate     = stats['win_rate']
+    max_dd       = stats['max_drawdown']
+
+    if n_trades < max(2, config.get('min_trades', 5) // 2):
+        return 0.0
+
+    norm_return = np.clip((total_return + 1.0) / 3.0, 0.0, 1.0)
+    profit_factor = stats.get('profit_factor', 1.0)
+    norm_pf = float(np.clip((profit_factor - 1.0) / 4.0, 0.0, 1.0))
+    rr_ratio = stats.get('rr_ratio', 1.0)
+    norm_rr = float(np.clip((rr_ratio - 1.0) / 3.0, 0.0, 1.0))
+    time_in_mkt = stats.get('time_in_mkt', 0.0)
+
+    alpha = config.get('fitness_alpha', 0.40)
+    beta  = config.get('fitness_beta',  0.25)
+    gamma = config.get('fitness_gamma', 0.20)
+    delta = 0.15
+
+    score = (alpha * norm_return + beta * win_rate
+           + gamma * norm_pf + delta * norm_rr)
+
+    if time_in_mkt > 0.50:
+        score *= (1.0 + 0.03 * time_in_mkt)
+
+    if max_dd > config.get('max_drawdown_thresh', 0.20):
+        score *= config.get('drawdown_penalty', 0.45)
+
+    return float(np.clip(score, 0.0, 2.0))
+
+
+def split_regimes(df_scaled: pd.DataFrame,
+                  df_raw: pd.DataFrame) -> list[tuple]:
+    """
+    Split data into market regimes for walk-forward evaluation:
+      - Bull  : periods where price ends higher than it started
+      - Bear  : periods where price ends lower (or flat)
+      - Recent: last 20% of data (most important — most recent patterns)
+
+    Returns list of (df_scaled_slice, df_raw_slice, label) tuples.
+    """
+    n = len(df_raw)
+    if n < 200:
+        # Not enough data — just return the full period
+        return [(df_scaled, df_raw, 'full')]
+
+    regimes = []
+    chunk = max(n // 4, 120)   # ~quarterly chunks
+
+    for i in range(0, n - chunk, chunk // 2):
+        end = min(i + chunk, n)
+        ds  = df_scaled.iloc[i:end]
+        dr  = df_raw.iloc[i:end]
+        if len(ds) < 60:
+            continue
+        pct = (dr['Close'].iloc[-1] / dr['Close'].iloc[0]) - 1
+        label = 'bull' if pct > 0.05 else ('bear' if pct < -0.05 else 'flat')
+        regimes.append((ds, dr, label))
+
+    # Always include the most recent 25% as a high-weight regime
+    recent_start = int(n * 0.75)
+    regimes.append((df_scaled.iloc[recent_start:],
+                    df_raw.iloc[recent_start:], 'recent'))
+
+    return regimes if regimes else [(df_scaled, df_raw, 'full')]
+
+
 def fitness(chrom: np.ndarray,
             df_scaled: pd.DataFrame,
             df_raw: pd.DataFrame,
             config: dict) -> float:
     """
-    Composite fitness:
-        score = alpha * norm_return + beta * win_rate
-        penalised if max_drawdown > threshold or n_trades < min_trades
+    Multi-regime fitness function.
+
+    Evaluates the chromosome across multiple market periods (bull, bear,
+    flat, recent) and averages the scores with regime-specific weights.
+
+    This forces the GA to evolve strategies that generalise across ALL
+    market conditions rather than overfitting to one specific period.
+
+    Regime weights:
+      - recent : 0.40 (most important — we want to trade NOW)
+      - bull   : 0.25 (must capture uptrends)
+      - bear   : 0.25 (must profit or avoid downtrends)
+      - flat   : 0.10 (sideways markets)
     """
-    signals = generate_signals(df_scaled, chrom)
-    stats   = simulate_trades(signals, df_raw)
+    regime_weights = {'recent': 0.40, 'bull': 0.25, 'bear': 0.25,
+                      'flat': 0.10, 'full': 1.0}
 
-    n_trades     = stats['n_trades']
-    total_return = stats['total_return']
-    win_rate     = stats['win_rate']
-    max_dd       = stats['max_drawdown']
-    # profit_factor accessed via stats dict in score calculation
+    regimes = split_regimes(df_scaled, df_raw)
+    total_score  = 0.0
+    total_weight = 0.0
+    total_trades = 0
 
-    # Penalise chromosomes that barely trade
-    if n_trades < config['min_trades']:
+    for ds, dr, label in regimes:
+        try:
+            signals = generate_signals(ds, chrom)
+            stats   = simulate_trades(signals, dr)
+            total_trades += stats['n_trades']
+            w     = regime_weights.get(label, 0.20)
+            s     = score_regime(stats, config)
+            total_score  += s * w
+            total_weight += w
+        except Exception:
+            continue
+
+    if total_weight == 0 or total_trades < config.get('min_trades', 5):
         return -1.0
 
-    # Normalise total_return to [0,1] (clamp at +/-200% for long datasets)
-    norm_return   = np.clip((total_return + 1.0) / 3.0, 0.0, 1.0)
+    # Consistency bonus — reward strategies that score well across ALL regimes
+    regime_scores = []
+    for ds, dr, label in regimes:
+        try:
+            signals = generate_signals(ds, chrom)
+            stats   = simulate_trades(signals, dr)
+            regime_scores.append(score_regime(stats, config))
+        except Exception:
+            regime_scores.append(0.0)
 
-    # Profit factor normalised [0,1] -- cap at 5x
-    profit_factor = stats.get('profit_factor', 1.0)
-    norm_pf       = float(np.clip((profit_factor - 1.0) / 4.0, 0.0, 1.0))
+    if len(regime_scores) > 1:
+        consistency = 1.0 - np.std(regime_scores)   # high std = inconsistent
+        consistency = max(0.0, consistency)
+        base_score  = total_score / total_weight
+        final_score = base_score * (0.80 + 0.20 * consistency)
+    else:
+        final_score = total_score / total_weight
 
-    # Reward:risk ratio normalised [0,1] -- cap at 4:1
-    rr_ratio      = stats.get('rr_ratio', 1.0)
-    norm_rr       = float(np.clip((rr_ratio - 1.0) / 3.0, 0.0, 1.0))
-
-    # Time in market normalised -- reward staying invested
-    time_in_mkt   = stats.get('time_in_mkt', 0.0)
-
-    alpha = config.get('fitness_alpha', 0.40)  # total return
-    beta  = config.get('fitness_beta',  0.25)  # win rate
-    gamma = config.get('fitness_gamma', 0.20)  # profit factor
-    delta = 0.15                                # reward:risk ratio
-
-    score = (alpha * norm_return
-           + beta  * win_rate
-           + gamma * norm_pf
-           + delta * norm_rr)
-
-    # Time in market bonus -- reward strategies that stay invested
-    # (up to 5% bonus for being 50%+ in market)
-    if time_in_mkt > 0.50:
-        score *= (1.0 + 0.05 * time_in_mkt)
-
-    # Drawdown penalty
-    if max_dd > config['max_drawdown_thresh']:
-        score *= config['drawdown_penalty']
-
-    return float(score)
+    return float(np.clip(final_score, -1.0, 2.0))
 
 
 # ------------------------------------------------------------------------------

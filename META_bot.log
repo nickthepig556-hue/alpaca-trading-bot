@@ -2474,3 +2474,37 @@
 2026-07-08 14:09:32,467  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 15:09:32,841  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 16:09:33,079  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,885  INFO      [META] Process exiting
+2026-07-08 17:06:10,911  INFO      [META] Process started  PID=83768
+2026-07-08 17:06:10,913  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 17:06:10,913  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:10,913  INFO         Mode    : PAPER
+2026-07-08 17:06:10,914  INFO         Ticker  : META
+2026-07-08 17:06:10,914  INFO         Chromosome : META_best_chromosome.csv
+2026-07-08 17:06:10,914  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:10,922  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:11,118  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,434  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,439  INFO      [META] Process exiting
+2026-07-08 17:22:54,090  INFO      [META] Process started  PID=127512
+2026-07-08 17:22:54,093  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 17:22:54,093  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:54,093  INFO         Mode    : PAPER
+2026-07-08 17:22:54,093  INFO         Ticker  : META
+2026-07-08 17:22:54,093  INFO         Chromosome : META_best_chromosome.csv
+2026-07-08 17:22:54,093  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:54,095  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:55,318  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,725  INFO      [META] Process exiting
+2026-07-08 18:17:05,562  INFO      [META] Process started  PID=112884
+2026-07-08 18:17:05,564  INFO      [META] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 18:17:05,564  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:17:05,564  INFO         Mode    : PAPER
+2026-07-08 18:17:05,565  INFO         Ticker  : META
+2026-07-08 18:17:05,565  INFO         Chromosome : META_best_chromosome.csv
+2026-07-08 18:17:05,565  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:17:05,571  INFO      Chromosome loaded from META_best_chromosome.csv  (34 genes)
+2026-07-08 18:17:05,952  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:17:06,147  INFO      Market closed. Next open in 60 min. Sleeping...

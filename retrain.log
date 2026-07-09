@@ -2150,3 +2150,549 @@ ValueError: window must be an integer 0 or greater
 2026-07-07 02:55:36,958  INFO        AAPL         [OK] Updated
 2026-07-07 02:55:36,958  INFO        Total time: 13.5 minutes
 2026-07-07 02:55:36,958  INFO      =======================================================
+2026-07-08 17:55:53,120  INFO      
+=======================================================
+2026-07-08 17:55:53,120  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-08 17:55:53,120  INFO        2026-07-08 17:55
+2026-07-08 17:55:53,120  INFO      =======================================================
+2026-07-08 17:55:53,124  INFO      
+=======================================================
+2026-07-08 17:55:53,124  INFO        Retraining: GLD
+2026-07-08 17:55:53,124  INFO        2026-07-08 17:55
+2026-07-08 17:55:53,124  INFO      =======================================================
+2026-07-08 17:55:53,131  INFO      [GLD] Current fitness: 0.4769
+2026-07-08 17:55:53,132  INFO      [GLD] Backed up to GLD_chromosome_20260708_175553.csv
+2026-07-08 17:55:53,132  INFO      [GLD] Deleted old backup: GLD_chromosome_20260707_005906.csv
+2026-07-08 17:55:53,938  INFO      [GLD] Downloading fresh data...
+2026-07-08 17:55:54,324  INFO      [GLD] Computing indicators on 1635 rows...
+2026-07-08 17:55:54,345  INFO      [GLD] Running GA (400 gen × 150 pop)...
+2026-07-08 17:56:51,662  INFO      [GLD] New fitness   : 0.4189
+2026-07-08 17:56:51,662  INFO      [GLD] Total return  : +1038.06%
+2026-07-08 17:56:51,662  INFO      [GLD] Win rate      : 66.67%
+2026-07-08 17:56:51,662  INFO      [GLD] Trades        : 24
+2026-07-08 17:56:51,662  INFO      [GLD] Max drawdown  : 24.37%
+2026-07-08 17:56:51,662  INFO      [GLD] New fitness 0.4189 — accepting (force retrain mode)
+2026-07-08 17:56:51,667  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-08 17:57:01,669  INFO      
+=======================================================
+2026-07-08 17:57:01,670  INFO        Retraining: SPY
+2026-07-08 17:57:01,670  INFO        2026-07-08 17:57
+2026-07-08 17:57:01,670  INFO      =======================================================
+2026-07-08 17:57:01,678  INFO      [SPY] Current fitness: 1.2001
+2026-07-08 17:57:01,679  INFO      [SPY] Backed up to SPY_chromosome_20260708_175701.csv
+2026-07-08 17:57:01,680  INFO      [SPY] Deleted old backup: SPY_chromosome_20260707_005929.csv
+2026-07-08 17:57:01,680  INFO      [SPY] Downloading fresh data...
+2026-07-08 17:57:01,998  INFO      [SPY] Computing indicators on 1635 rows...
+2026-07-08 17:57:02,006  INFO      [SPY] Running GA (400 gen × 150 pop)...
+2026-07-08 17:58:06,358  INFO      [SPY] New fitness   : 1.0441
+2026-07-08 17:58:06,358  INFO      [SPY] Total return  : +989.61%
+2026-07-08 17:58:06,358  INFO      [SPY] Win rate      : 60.87%
+2026-07-08 17:58:06,359  INFO      [SPY] Trades        : 23
+2026-07-08 17:58:06,359  INFO      [SPY] Max drawdown  : 18.33%
+2026-07-08 17:58:06,359  INFO      [SPY] New fitness 1.0441 — accepting (force retrain mode)
+2026-07-08 17:58:06,363  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-08 17:58:16,363  INFO      
+=======================================================
+2026-07-08 17:58:16,364  INFO        Retraining: NVDA
+2026-07-08 17:58:16,364  INFO        2026-07-08 17:58
+2026-07-08 17:58:16,364  INFO      =======================================================
+2026-07-08 17:58:16,372  INFO      [NVDA] Current fitness: 0.4421
+2026-07-08 17:58:16,374  INFO      [NVDA] Backed up to NVDA_chromosome_20260708_175816.csv
+2026-07-08 17:58:16,375  INFO      [NVDA] Deleted old backup: NVDA_chromosome_20260707_010002.csv
+2026-07-08 17:58:16,376  INFO      [NVDA] Downloading fresh data...
+2026-07-08 17:58:16,919  INFO      [NVDA] Computing indicators on 4151 rows...
+2026-07-08 17:58:16,928  INFO      [NVDA] Running GA (400 gen × 150 pop)...
+2026-07-08 18:00:29,405  INFO      [NVDA] New fitness   : 0.3773
+2026-07-08 18:00:29,406  INFO      [NVDA] Total return  : +4233991891.68%
+2026-07-08 18:00:29,406  INFO      [NVDA] Win rate      : 54.78%
+2026-07-08 18:00:29,406  INFO      [NVDA] Trades        : 157
+2026-07-08 18:00:29,406  INFO      [NVDA] Max drawdown  : 34.88%
+2026-07-08 18:00:29,406  INFO      [NVDA] New fitness 0.3773 — accepting (force retrain mode)
+2026-07-08 18:00:29,411  INFO      [NVDA] Chromosome saved — retrain complete
+2026-07-08 18:00:39,412  INFO      
+=======================================================
+2026-07-08 18:00:39,413  INFO        Retraining: QQQ
+2026-07-08 18:00:39,413  INFO        2026-07-08 18:00
+2026-07-08 18:00:39,413  INFO      =======================================================
+2026-07-08 18:00:39,419  INFO      [QQQ] Current fitness: 1.0606
+2026-07-08 18:00:39,430  INFO      [QQQ] Backed up to QQQ_chromosome_20260708_180039.csv
+2026-07-08 18:00:39,430  INFO      [QQQ] Deleted old backup: QQQ_chromosome_20260707_010132.csv
+2026-07-08 18:00:39,430  INFO      [QQQ] Downloading fresh data...
+2026-07-08 18:00:39,916  INFO      [QQQ] Computing indicators on 4151 rows...
+2026-07-08 18:00:39,925  INFO      [QQQ] Running GA (400 gen × 150 pop)...
+2026-07-08 18:03:03,252  INFO      [QQQ] New fitness   : 0.4398
+2026-07-08 18:03:03,252  INFO      [QQQ] Total return  : +81325.54%
+2026-07-08 18:03:03,252  INFO      [QQQ] Win rate      : 60.32%
+2026-07-08 18:03:03,252  INFO      [QQQ] Trades        : 63
+2026-07-08 18:03:03,252  INFO      [QQQ] Max drawdown  : 28.37%
+2026-07-08 18:03:03,252  INFO      [QQQ] New fitness 0.4398 — accepting (force retrain mode)
+2026-07-08 18:03:03,257  INFO      [QQQ] Chromosome saved — retrain complete
+2026-07-08 18:03:13,258  INFO      
+=======================================================
+2026-07-08 18:03:13,258  INFO        Retraining: TSLA
+2026-07-08 18:03:13,258  INFO        2026-07-08 18:03
+2026-07-08 18:03:13,258  INFO      =======================================================
+2026-07-08 18:03:13,268  INFO      [TSLA] Current fitness: 0.3913
+2026-07-08 18:03:13,269  INFO      [TSLA] Backed up to TSLA_chromosome_20260708_180313.csv
+2026-07-08 18:03:13,270  INFO      [TSLA] Deleted old backup: TSLA_chromosome_20260707_010230.csv
+2026-07-08 18:03:13,270  INFO      [TSLA] Downloading fresh data...
+2026-07-08 18:03:13,549  INFO      [TSLA] Computing indicators on 4029 rows...
+2026-07-08 18:03:13,559  INFO      [TSLA] Running GA (400 gen × 150 pop)...
+2026-07-08 18:05:29,946  INFO      [TSLA] New fitness   : 0.3304
+2026-07-08 18:05:29,947  INFO      [TSLA] Total return  : +240464824037.34%
+2026-07-08 18:05:29,947  INFO      [TSLA] Win rate      : 41.32%
+2026-07-08 18:05:29,947  INFO      [TSLA] Trades        : 288
+2026-07-08 18:05:29,947  INFO      [TSLA] Max drawdown  : 50.02%
+2026-07-08 18:05:29,947  INFO      [TSLA] New fitness 0.3304 — accepting (force retrain mode)
+2026-07-08 18:05:29,951  INFO      [TSLA] Chromosome saved — retrain complete
+2026-07-08 18:05:39,952  INFO      
+=======================================================
+2026-07-08 18:05:39,952  INFO        Retraining: MSFT
+2026-07-08 18:05:39,952  INFO        2026-07-08 18:05
+2026-07-08 18:05:39,952  INFO      =======================================================
+2026-07-08 18:05:39,962  INFO      [MSFT] Current fitness: 0.4070
+2026-07-08 18:05:39,963  INFO      [MSFT] Backed up to MSFT_chromosome_20260708_180539.csv
+2026-07-08 18:05:39,963  INFO      [MSFT] Deleted old backup: MSFT_chromosome_20260707_010319.csv
+2026-07-08 18:05:39,964  INFO      [MSFT] Downloading fresh data...
+2026-07-08 18:05:40,447  INFO      [MSFT] Computing indicators on 4151 rows...
+2026-07-08 18:05:40,456  INFO      [MSFT] Running GA (400 gen × 150 pop)...
+2026-07-08 18:08:11,160  INFO      [MSFT] New fitness   : 0.3644
+2026-07-08 18:08:11,161  INFO      [MSFT] Total return  : +258175.04%
+2026-07-08 18:08:11,161  INFO      [MSFT] Win rate      : 48.94%
+2026-07-08 18:08:11,161  INFO      [MSFT] Trades        : 94
+2026-07-08 18:08:11,161  INFO      [MSFT] Max drawdown  : 41.51%
+2026-07-08 18:08:11,161  INFO      [MSFT] New fitness 0.3644 — accepting (force retrain mode)
+2026-07-08 18:08:11,165  INFO      [MSFT] Chromosome saved — retrain complete
+2026-07-08 18:08:21,166  INFO      
+=======================================================
+2026-07-08 18:08:21,166  INFO        Retraining: AMZN
+2026-07-08 18:08:21,166  INFO        2026-07-08 18:08
+2026-07-08 18:08:21,166  INFO      =======================================================
+2026-07-08 18:08:21,174  INFO      [AMZN] Current fitness: 0.3979
+2026-07-08 18:08:21,175  INFO      [AMZN] Backed up to AMZN_chromosome_20260708_180821.csv
+2026-07-08 18:08:21,178  INFO      [AMZN] Deleted old backup: AMZN_chromosome_20260707_010520.csv
+2026-07-08 18:08:21,178  INFO      [AMZN] Downloading fresh data...
+2026-07-08 18:08:21,633  INFO      [AMZN] Computing indicators on 4151 rows...
+2026-07-08 18:08:21,642  INFO      [AMZN] Running GA (400 gen × 150 pop)...
+2026-07-08 18:10:44,261  INFO      [AMZN] New fitness   : 0.3663
+2026-07-08 18:10:44,261  INFO      [AMZN] Total return  : +9525840.20%
+2026-07-08 18:10:44,262  INFO      [AMZN] Win rate      : 54.03%
+2026-07-08 18:10:44,262  INFO      [AMZN] Trades        : 124
+2026-07-08 18:10:44,262  INFO      [AMZN] Max drawdown  : 41.17%
+2026-07-08 18:10:44,262  INFO      [AMZN] New fitness 0.3663 — accepting (force retrain mode)
+2026-07-08 18:10:44,266  INFO      [AMZN] Chromosome saved — retrain complete
+2026-07-08 18:10:54,267  INFO      
+=======================================================
+2026-07-08 18:10:54,267  INFO        Retraining: META
+2026-07-08 18:10:54,267  INFO        2026-07-08 18:10
+2026-07-08 18:10:54,267  INFO      =======================================================
+2026-07-08 18:10:54,291  INFO      [META] Current fitness: 0.4286
+2026-07-08 18:10:54,292  INFO      [META] Backed up to META_chromosome_20260708_181054.csv
+2026-07-08 18:10:54,292  INFO      [META] Deleted old backup: META_chromosome_20260707_010650.csv
+2026-07-08 18:10:54,292  INFO      [META] Downloading fresh data...
+2026-07-08 18:10:54,718  INFO      [META] Computing indicators on 3552 rows...
+2026-07-08 18:10:54,728  INFO      [META] Running GA (400 gen × 150 pop)...
+2026-07-08 18:12:55,516  INFO      [META] New fitness   : 0.3751
+2026-07-08 18:12:55,517  INFO      [META] Total return  : +11345349.95%
+2026-07-08 18:12:55,517  INFO      [META] Win rate      : 54.21%
+2026-07-08 18:12:55,517  INFO      [META] Trades        : 107
+2026-07-08 18:12:55,517  INFO      [META] Max drawdown  : 36.72%
+2026-07-08 18:12:55,517  INFO      [META] New fitness 0.3751 — accepting (force retrain mode)
+2026-07-08 18:12:55,521  INFO      [META] Chromosome saved — retrain complete
+2026-07-08 18:13:05,523  INFO      
+=======================================================
+2026-07-08 18:13:05,523  INFO        Retraining: AAPL
+2026-07-08 18:13:05,524  INFO        2026-07-08 18:13
+2026-07-08 18:13:05,524  INFO      =======================================================
+2026-07-08 18:13:05,532  INFO      [AAPL] Current fitness: 0.4760
+2026-07-08 18:13:05,536  INFO      [AAPL] Backed up to AAPL_chromosome_20260708_181305.csv
+2026-07-08 18:13:05,536  INFO      [AAPL] Deleted old backup: AAPL_chromosome_20260707_010739.csv
+2026-07-08 18:13:05,537  INFO      [AAPL] Downloading fresh data...
+2026-07-08 18:13:05,992  INFO      [AAPL] Computing indicators on 4151 rows...
+2026-07-08 18:13:06,000  INFO      [AAPL] Running GA (400 gen × 150 pop)...
+2026-07-08 18:15:12,408  INFO      [AAPL] New fitness   : 0.4343
+2026-07-08 18:15:12,409  INFO      [AAPL] Total return  : +943657.37%
+2026-07-08 18:15:12,409  INFO      [AAPL] Win rate      : 54.67%
+2026-07-08 18:15:12,409  INFO      [AAPL] Trades        : 75
+2026-07-08 18:15:12,409  INFO      [AAPL] Max drawdown  : 35.60%
+2026-07-08 18:15:12,409  INFO      [AAPL] New fitness 0.4343 — accepting (force retrain mode)
+2026-07-08 18:15:12,413  INFO      [AAPL] Chromosome saved — retrain complete
+2026-07-08 18:15:22,414  INFO      
+=======================================================
+2026-07-08 18:15:22,414  INFO        RETRAIN SUMMARY
+2026-07-08 18:15:22,414  INFO      =======================================================
+2026-07-08 18:15:22,414  INFO        GLD          [OK] Updated
+2026-07-08 18:15:22,414  INFO        SPY          [OK] Updated
+2026-07-08 18:15:22,414  INFO        NVDA         [OK] Updated
+2026-07-08 18:15:22,414  INFO        QQQ          [OK] Updated
+2026-07-08 18:15:22,415  INFO        TSLA         [OK] Updated
+2026-07-08 18:15:22,415  INFO        MSFT         [OK] Updated
+2026-07-08 18:15:22,415  INFO        AMZN         [OK] Updated
+2026-07-08 18:15:22,415  INFO        META         [OK] Updated
+2026-07-08 18:15:22,415  INFO        AAPL         [OK] Updated
+2026-07-08 18:15:22,415  INFO        Total time: 19.5 minutes
+2026-07-08 18:15:22,415  INFO      =======================================================
+2026-07-08 18:27:39,517  INFO      
+=======================================================
+2026-07-08 18:27:39,517  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-08 18:27:39,518  INFO        2026-07-08 18:27
+2026-07-08 18:27:39,518  INFO      =======================================================
+2026-07-08 18:27:39,521  INFO      
+=======================================================
+2026-07-08 18:27:39,522  INFO        Retraining: GLD
+2026-07-08 18:27:39,522  INFO        2026-07-08 18:27
+2026-07-08 18:27:39,522  INFO      =======================================================
+2026-07-08 18:27:39,530  INFO      [GLD] Current fitness: 0.4189
+2026-07-08 18:27:39,531  INFO      [GLD] Backed up to GLD_chromosome_20260708_182739.csv
+2026-07-08 18:27:39,532  INFO      [GLD] Deleted old backup: GLD_chromosome_20260707_011540.csv
+2026-07-08 18:27:40,354  INFO      [GLD] Downloading fresh data...
+2026-07-08 18:27:40,944  INFO      [GLD] Computing indicators on 1635 rows...
+2026-07-08 18:27:40,968  INFO      [GLD] Running GA (400 gen × 150 pop)...
+2026-07-08 18:28:44,295  INFO      [GLD] New fitness   : 0.4447
+2026-07-08 18:28:44,295  INFO      [GLD] Total return  : +1469.82%
+2026-07-08 18:28:44,295  INFO      [GLD] Win rate      : 68.00%
+2026-07-08 18:28:44,295  INFO      [GLD] Trades        : 25
+2026-07-08 18:28:44,295  INFO      [GLD] Max drawdown  : 24.37%
+2026-07-08 18:28:44,295  INFO      [GLD] New fitness 0.4447 — accepting (force retrain mode)
+2026-07-08 18:28:44,300  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-08 18:28:54,301  INFO      
+=======================================================
+2026-07-08 18:28:54,302  INFO        Retraining: SPY
+2026-07-08 18:28:54,302  INFO        2026-07-08 18:28
+2026-07-08 18:28:54,302  INFO      =======================================================
+2026-07-08 18:28:54,307  INFO      [SPY] Current fitness: 1.0441
+2026-07-08 18:28:54,309  INFO      [SPY] Backed up to SPY_chromosome_20260708_182854.csv
+2026-07-08 18:28:54,311  INFO      [SPY] Deleted old backup: SPY_chromosome_20260707_011603.csv
+2026-07-08 18:28:54,311  INFO      [SPY] Downloading fresh data...
+2026-07-08 18:28:54,598  INFO      [SPY] Computing indicators on 1635 rows...
+2026-07-08 18:28:54,607  INFO      [SPY] Running GA (400 gen × 150 pop)...
+2026-07-08 18:29:57,283  INFO      [SPY] New fitness   : 1.0484
+2026-07-08 18:29:57,284  INFO      [SPY] Total return  : +1679.21%
+2026-07-08 18:29:57,284  INFO      [SPY] Win rate      : 63.64%
+2026-07-08 18:29:57,284  INFO      [SPY] Trades        : 22
+2026-07-08 18:29:57,284  INFO      [SPY] Max drawdown  : 17.33%
+2026-07-08 18:29:57,284  INFO      [SPY] New fitness 1.0484 — accepting (force retrain mode)
+2026-07-08 18:29:57,288  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-08 18:30:07,288  INFO      
+=======================================================
+2026-07-08 18:30:07,289  INFO        Retraining: NVDA
+2026-07-08 18:30:07,289  INFO        2026-07-08 18:30
+2026-07-08 18:30:07,289  INFO      =======================================================
+2026-07-08 18:30:07,306  INFO      [NVDA] Current fitness: 0.3773
+2026-07-08 18:30:07,309  INFO      [NVDA] Backed up to NVDA_chromosome_20260708_183007.csv
+2026-07-08 18:30:07,310  INFO      [NVDA] Deleted old backup: NVDA_chromosome_20260707_011636.csv
+2026-07-08 18:30:07,310  INFO      [NVDA] Downloading fresh data...
+2026-07-08 18:30:07,757  INFO      [NVDA] Computing indicators on 4151 rows...
+2026-07-08 18:30:07,768  INFO      [NVDA] Running GA (400 gen × 150 pop)...
+2026-07-08 18:32:19,208  INFO      [NVDA] New fitness   : 0.3837
+2026-07-08 18:32:19,209  INFO      [NVDA] Total return  : +3425626355.04%
+2026-07-08 18:32:19,209  INFO      [NVDA] Win rate      : 56.58%
+2026-07-08 18:32:19,209  INFO      [NVDA] Trades        : 152
+2026-07-08 18:32:19,209  INFO      [NVDA] Max drawdown  : 33.28%
+2026-07-08 18:32:19,209  INFO      [NVDA] New fitness 0.3837 — accepting (force retrain mode)
+2026-07-08 18:32:19,213  INFO      [NVDA] Chromosome saved — retrain complete
+2026-07-08 18:32:29,214  INFO      
+=======================================================
+2026-07-08 18:32:29,214  INFO        Retraining: QQQ
+2026-07-08 18:32:29,215  INFO        2026-07-08 18:32
+2026-07-08 18:32:29,215  INFO      =======================================================
+2026-07-08 18:32:29,222  INFO      [QQQ] Current fitness: 0.4398
+2026-07-08 18:32:29,223  INFO      [QQQ] Backed up to QQQ_chromosome_20260708_183229.csv
+2026-07-08 18:32:29,225  INFO      [QQQ] Deleted old backup: QQQ_chromosome_20260707_011810.csv
+2026-07-08 18:32:29,225  INFO      [QQQ] Downloading fresh data...
+2026-07-08 18:32:29,795  INFO      [QQQ] Computing indicators on 4151 rows...
+2026-07-08 18:32:29,803  INFO      [QQQ] Running GA (400 gen × 150 pop)...
+2026-07-08 18:34:55,552  INFO      [QQQ] New fitness   : 0.4359
+2026-07-08 18:34:55,552  INFO      [QQQ] Total return  : +73851.52%
+2026-07-08 18:34:55,552  INFO      [QQQ] Win rate      : 59.68%
+2026-07-08 18:34:55,552  INFO      [QQQ] Trades        : 62
+2026-07-08 18:34:55,552  INFO      [QQQ] Max drawdown  : 30.58%
+2026-07-08 18:34:55,552  INFO      [QQQ] New fitness 0.4359 — accepting (force retrain mode)
+2026-07-08 18:34:55,556  INFO      [QQQ] Chromosome saved — retrain complete
+2026-07-08 18:35:05,557  INFO      
+=======================================================
+2026-07-08 18:35:05,557  INFO        Retraining: TSLA
+2026-07-08 18:35:05,557  INFO        2026-07-08 18:35
+2026-07-08 18:35:05,558  INFO      =======================================================
+2026-07-08 18:35:05,565  INFO      [TSLA] Current fitness: 0.3304
+2026-07-08 18:35:05,567  INFO      [TSLA] Backed up to TSLA_chromosome_20260708_183505.csv
+2026-07-08 18:35:05,567  INFO      [TSLA] Deleted old backup: TSLA_chromosome_20260707_011910.csv
+2026-07-08 18:35:05,568  INFO      [TSLA] Downloading fresh data...
+2026-07-08 18:35:05,914  INFO      [TSLA] Computing indicators on 4029 rows...
+2026-07-08 18:35:05,922  INFO      [TSLA] Running GA (400 gen × 150 pop)...
+2026-07-08 18:37:05,185  INFO      [TSLA] New fitness   : 0.3384
+2026-07-08 18:37:05,185  INFO      [TSLA] Total return  : +36332682801.88%
+2026-07-08 18:37:05,185  INFO      [TSLA] Win rate      : 40.83%
+2026-07-08 18:37:05,185  INFO      [TSLA] Trades        : 240
+2026-07-08 18:37:05,185  INFO      [TSLA] Max drawdown  : 49.05%
+2026-07-08 18:37:05,186  INFO      [TSLA] New fitness 0.3384 — accepting (force retrain mode)
+2026-07-08 18:37:05,190  INFO      [TSLA] Chromosome saved — retrain complete
+2026-07-08 18:37:15,190  INFO      
+=======================================================
+2026-07-08 18:37:15,191  INFO        Retraining: MSFT
+2026-07-08 18:37:15,191  INFO        2026-07-08 18:37
+2026-07-08 18:37:15,191  INFO      =======================================================
+2026-07-08 18:37:15,199  INFO      [MSFT] Current fitness: 0.3644
+2026-07-08 18:37:15,202  INFO      [MSFT] Backed up to MSFT_chromosome_20260708_183715.csv
+2026-07-08 18:37:15,203  INFO      [MSFT] Deleted old backup: MSFT_chromosome_20260707_012031.csv
+2026-07-08 18:37:15,203  INFO      [MSFT] Downloading fresh data...
+2026-07-08 18:37:15,668  INFO      [MSFT] Computing indicators on 4151 rows...
+2026-07-08 18:37:15,677  INFO      [MSFT] Running GA (400 gen × 150 pop)...
+2026-07-08 18:39:47,136  INFO      [MSFT] New fitness   : 0.3573
+2026-07-08 18:39:47,136  INFO      [MSFT] Total return  : +363650.51%
+2026-07-08 18:39:47,136  INFO      [MSFT] Win rate      : 53.06%
+2026-07-08 18:39:47,136  INFO      [MSFT] Trades        : 98
+2026-07-08 18:39:47,136  INFO      [MSFT] Max drawdown  : 44.21%
+2026-07-08 18:39:47,136  INFO      [MSFT] New fitness 0.3573 — accepting (force retrain mode)
+2026-07-08 18:39:47,142  INFO      [MSFT] Chromosome saved — retrain complete
+2026-07-08 18:39:57,142  INFO      
+=======================================================
+2026-07-08 18:39:57,143  INFO        Retraining: AMZN
+2026-07-08 18:39:57,143  INFO        2026-07-08 18:39
+2026-07-08 18:39:57,143  INFO      =======================================================
+2026-07-08 18:39:57,152  INFO      [AMZN] Current fitness: 0.3663
+2026-07-08 18:39:57,156  INFO      [AMZN] Backed up to AMZN_chromosome_20260708_183957.csv
+2026-07-08 18:39:57,157  INFO      [AMZN] Deleted old backup: AMZN_chromosome_20260707_012231.csv
+2026-07-08 18:39:57,158  INFO      [AMZN] Downloading fresh data...
+2026-07-08 18:39:57,560  INFO      [AMZN] Computing indicators on 4151 rows...
+2026-07-08 18:39:57,569  INFO      [AMZN] Running GA (400 gen × 150 pop)...
+2026-07-08 18:42:12,524  INFO      [AMZN] New fitness   : 0.3855
+2026-07-08 18:42:12,524  INFO      [AMZN] Total return  : +1540942.85%
+2026-07-08 18:42:12,524  INFO      [AMZN] Win rate      : 54.00%
+2026-07-08 18:42:12,524  INFO      [AMZN] Trades        : 100
+2026-07-08 18:42:12,524  INFO      [AMZN] Max drawdown  : 37.18%
+2026-07-08 18:42:12,524  INFO      [AMZN] New fitness 0.3855 — accepting (force retrain mode)
+2026-07-08 18:42:12,528  INFO      [AMZN] Chromosome saved — retrain complete
+2026-07-08 18:42:22,529  INFO      
+=======================================================
+2026-07-08 18:42:22,529  INFO        Retraining: META
+2026-07-08 18:42:22,529  INFO        2026-07-08 18:42
+2026-07-08 18:42:22,529  INFO      =======================================================
+2026-07-08 18:42:22,538  INFO      [META] Current fitness: 0.3751
+2026-07-08 18:42:22,539  INFO      [META] Backed up to META_chromosome_20260708_184222.csv
+2026-07-08 18:42:22,540  INFO      [META] Deleted old backup: META_chromosome_20260707_012417.csv
+2026-07-08 18:42:22,540  INFO      [META] Downloading fresh data...
+2026-07-08 18:42:23,023  INFO      [META] Computing indicators on 3552 rows...
+2026-07-08 18:42:23,032  INFO      [META] Running GA (400 gen × 150 pop)...
+2026-07-08 18:44:13,465  INFO      [META] New fitness   : 0.3927
+2026-07-08 18:44:13,465  INFO      [META] Total return  : +1942088.78%
+2026-07-08 18:44:13,466  INFO      [META] Win rate      : 55.42%
+2026-07-08 18:44:13,466  INFO      [META] Trades        : 83
+2026-07-08 18:44:13,466  INFO      [META] Max drawdown  : 35.42%
+2026-07-08 18:44:13,466  INFO      [META] New fitness 0.3927 — accepting (force retrain mode)
+2026-07-08 18:44:13,470  INFO      [META] Chromosome saved — retrain complete
+2026-07-08 18:44:23,471  INFO      
+=======================================================
+2026-07-08 18:44:23,471  INFO        Retraining: AAPL
+2026-07-08 18:44:23,471  INFO        2026-07-08 18:44
+2026-07-08 18:44:23,472  INFO      =======================================================
+2026-07-08 18:44:23,479  INFO      [AAPL] Current fitness: 0.4343
+2026-07-08 18:44:23,481  INFO      [AAPL] Backed up to AAPL_chromosome_20260708_184423.csv
+2026-07-08 18:44:23,482  INFO      [AAPL] Deleted old backup: AAPL_chromosome_20260707_012556.csv
+2026-07-08 18:44:23,482  INFO      [AAPL] Downloading fresh data...
+2026-07-08 18:44:23,990  INFO      [AAPL] Computing indicators on 4151 rows...
+2026-07-08 18:44:24,001  INFO      [AAPL] Running GA (400 gen × 150 pop)...
+2026-07-08 18:46:16,876  INFO      [AAPL] New fitness   : 0.4542
+2026-07-08 18:46:16,877  INFO      [AAPL] Total return  : +322170.15%
+2026-07-08 18:46:16,877  INFO      [AAPL] Win rate      : 59.02%
+2026-07-08 18:46:16,877  INFO      [AAPL] Trades        : 61
+2026-07-08 18:46:16,877  INFO      [AAPL] Max drawdown  : 35.60%
+2026-07-08 18:46:16,877  INFO      [AAPL] New fitness 0.4542 — accepting (force retrain mode)
+2026-07-08 18:46:16,881  INFO      [AAPL] Chromosome saved — retrain complete
+2026-07-08 18:46:26,882  INFO      
+=======================================================
+2026-07-08 18:46:26,882  INFO        RETRAIN SUMMARY
+2026-07-08 18:46:26,882  INFO      =======================================================
+2026-07-08 18:46:26,882  INFO        GLD          [OK] Updated
+2026-07-08 18:46:26,883  INFO        SPY          [OK] Updated
+2026-07-08 18:46:26,883  INFO        NVDA         [OK] Updated
+2026-07-08 18:46:26,883  INFO        QQQ          [OK] Updated
+2026-07-08 18:46:26,883  INFO        TSLA         [OK] Updated
+2026-07-08 18:46:26,883  INFO        MSFT         [OK] Updated
+2026-07-08 18:46:26,883  INFO        AMZN         [OK] Updated
+2026-07-08 18:46:26,883  INFO        META         [OK] Updated
+2026-07-08 18:46:26,883  INFO        AAPL         [OK] Updated
+2026-07-08 18:46:26,883  INFO        Total time: 18.8 minutes
+2026-07-08 18:46:26,883  INFO      =======================================================
+2026-07-08 19:06:32,546  INFO      
+=======================================================
+2026-07-08 19:06:32,546  INFO        WEEKLY AUTO-RETRAIN STARTING
+2026-07-08 19:06:32,546  INFO        2026-07-08 19:06
+2026-07-08 19:06:32,546  INFO      =======================================================
+2026-07-08 19:06:32,550  INFO      
+=======================================================
+2026-07-08 19:06:32,550  INFO        Retraining: GLD
+2026-07-08 19:06:32,550  INFO        2026-07-08 19:06
+2026-07-08 19:06:32,551  INFO      =======================================================
+2026-07-08 19:06:32,559  INFO      [GLD] Current fitness: 0.4447
+2026-07-08 19:06:32,560  INFO      [GLD] Backed up to GLD_chromosome_20260708_190632.csv
+2026-07-08 19:06:32,561  INFO      [GLD] Deleted old backup: GLD_chromosome_20260707_014244.csv
+2026-07-08 19:06:35,977  INFO      [GLD] Downloading fresh data...
+2026-07-08 19:06:37,967  INFO      [GLD] Computing indicators on 1635 rows...
+2026-07-08 19:06:37,988  INFO      [GLD] Running GA (400 gen × 150 pop)...
+2026-07-08 19:13:41,289  INFO      [GLD] New fitness   : 0.8950
+2026-07-08 19:13:41,289  INFO      [GLD] Total return  : +887.84%
+2026-07-08 19:13:41,289  INFO      [GLD] Win rate      : 70.83%
+2026-07-08 19:13:41,289  INFO      [GLD] Trades        : 24
+2026-07-08 19:13:41,290  INFO      [GLD] Max drawdown  : 36.69%
+2026-07-08 19:13:41,290  INFO      [GLD] New fitness 0.8950 — accepting (force retrain mode)
+2026-07-08 19:13:41,300  INFO      [GLD] Chromosome saved — retrain complete
+2026-07-08 19:13:51,303  INFO      
+=======================================================
+2026-07-08 19:13:51,304  INFO        Retraining: SPY
+2026-07-08 19:13:51,304  INFO        2026-07-08 19:13
+2026-07-08 19:13:51,304  INFO      =======================================================
+2026-07-08 19:13:51,311  INFO      [SPY] Current fitness: 1.0484
+2026-07-08 19:13:51,314  INFO      [SPY] Backed up to SPY_chromosome_20260708_191351.csv
+2026-07-08 19:13:51,314  INFO      [SPY] Deleted old backup: SPY_chromosome_20260707_014310.csv
+2026-07-08 19:13:51,314  INFO      [SPY] Downloading fresh data...
+2026-07-08 19:13:51,712  INFO      [SPY] Computing indicators on 1635 rows...
+2026-07-08 19:13:51,719  INFO      [SPY] Running GA (400 gen × 150 pop)...
+2026-07-08 19:20:24,239  INFO      [SPY] New fitness   : 0.9274
+2026-07-08 19:20:24,239  INFO      [SPY] Total return  : +1184.94%
+2026-07-08 19:20:24,239  INFO      [SPY] Win rate      : 82.35%
+2026-07-08 19:20:24,239  INFO      [SPY] Trades        : 17
+2026-07-08 19:20:24,239  INFO      [SPY] Max drawdown  : 13.24%
+2026-07-08 19:20:24,239  INFO      [SPY] New fitness 0.9274 — accepting (force retrain mode)
+2026-07-08 19:20:24,243  INFO      [SPY] Chromosome saved — retrain complete
+2026-07-08 19:20:34,244  INFO      
+=======================================================
+2026-07-08 19:20:34,244  INFO        Retraining: NVDA
+2026-07-08 19:20:34,244  INFO        2026-07-08 19:20
+2026-07-08 19:20:34,244  INFO      =======================================================
+2026-07-08 19:20:34,252  INFO      [NVDA] Current fitness: 0.3837
+2026-07-08 19:20:34,253  INFO      [NVDA] Backed up to NVDA_chromosome_20260708_192034.csv
+2026-07-08 19:20:34,254  INFO      [NVDA] Deleted old backup: NVDA_chromosome_20260707_014341.csv
+2026-07-08 19:20:34,254  INFO      [NVDA] Downloading fresh data...
+2026-07-08 19:20:34,623  INFO      [NVDA] Computing indicators on 4151 rows...
+2026-07-08 19:20:34,632  INFO      [NVDA] Running GA (400 gen × 150 pop)...
+2026-07-08 19:27:44,697  INFO      [NVDA] New fitness   : 0.8161
+2026-07-08 19:27:44,698  INFO      [NVDA] Total return  : +155289.02%
+2026-07-08 19:27:44,698  INFO      [NVDA] Win rate      : 52.86%
+2026-07-08 19:27:44,698  INFO      [NVDA] Trades        : 70
+2026-07-08 19:27:44,698  INFO      [NVDA] Max drawdown  : 40.52%
+2026-07-08 19:27:44,698  INFO      [NVDA] New fitness 0.8161 — accepting (force retrain mode)
+2026-07-08 19:27:44,702  INFO      [NVDA] Chromosome saved — retrain complete
+2026-07-08 19:27:54,703  INFO      
+=======================================================
+2026-07-08 19:27:54,703  INFO        Retraining: QQQ
+2026-07-08 19:27:54,703  INFO        2026-07-08 19:27
+2026-07-08 19:27:54,703  INFO      =======================================================
+2026-07-08 19:27:54,712  INFO      [QQQ] Current fitness: 0.4359
+2026-07-08 19:27:54,713  INFO      [QQQ] Backed up to QQQ_chromosome_20260708_192754.csv
+2026-07-08 19:27:54,714  INFO      [QQQ] Deleted old backup: QQQ_chromosome_20260707_014512.csv
+2026-07-08 19:27:54,714  INFO      [QQQ] Downloading fresh data...
+2026-07-08 19:27:55,088  INFO      [QQQ] Computing indicators on 4151 rows...
+2026-07-08 19:27:55,098  INFO      [QQQ] Running GA (400 gen × 150 pop)...
+2026-07-08 19:39:05,509  INFO      [QQQ] New fitness   : 0.8422
+2026-07-08 19:39:05,509  INFO      [QQQ] Total return  : +114163.71%
+2026-07-08 19:39:05,509  INFO      [QQQ] Win rate      : 57.81%
+2026-07-08 19:39:05,509  INFO      [QQQ] Trades        : 64
+2026-07-08 19:39:05,510  INFO      [QQQ] Max drawdown  : 31.59%
+2026-07-08 19:39:05,510  INFO      [QQQ] New fitness 0.8422 — accepting (force retrain mode)
+2026-07-08 19:39:05,514  INFO      [QQQ] Chromosome saved — retrain complete
+2026-07-08 19:39:15,515  INFO      
+=======================================================
+2026-07-08 19:39:15,515  INFO        Retraining: TSLA
+2026-07-08 19:39:15,515  INFO        2026-07-08 19:39
+2026-07-08 19:39:15,515  INFO      =======================================================
+2026-07-08 19:39:15,524  INFO      [TSLA] Current fitness: 0.3384
+2026-07-08 19:39:15,525  INFO      [TSLA] Backed up to TSLA_chromosome_20260708_193915.csv
+2026-07-08 19:39:15,525  INFO      [TSLA] Deleted old backup: TSLA_chromosome_20260707_014712.csv
+2026-07-08 19:39:15,525  INFO      [TSLA] Downloading fresh data...
+2026-07-08 19:39:16,036  INFO      [TSLA] Computing indicators on 4029 rows...
+2026-07-08 19:39:16,045  INFO      [TSLA] Running GA (400 gen × 150 pop)...
+2026-07-08 19:48:15,528  INFO      [TSLA] New fitness   : 0.6077
+2026-07-08 19:48:15,528  INFO      [TSLA] Total return  : +11291174.84%
+2026-07-08 19:48:15,528  INFO      [TSLA] Win rate      : 41.18%
+2026-07-08 19:48:15,528  INFO      [TSLA] Trades        : 153
+2026-07-08 19:48:15,528  INFO      [TSLA] Max drawdown  : 56.91%
+2026-07-08 19:48:15,528  INFO      [TSLA] New fitness 0.6077 — accepting (force retrain mode)
+2026-07-08 19:48:15,532  INFO      [TSLA] Chromosome saved — retrain complete
+2026-07-08 19:48:25,533  INFO      
+=======================================================
+2026-07-08 19:48:25,534  INFO        Retraining: MSFT
+2026-07-08 19:48:25,534  INFO        2026-07-08 19:48
+2026-07-08 19:48:25,534  INFO      =======================================================
+2026-07-08 19:48:25,545  INFO      [MSFT] Current fitness: 0.3573
+2026-07-08 19:48:25,546  INFO      [MSFT] Backed up to MSFT_chromosome_20260708_194825.csv
+2026-07-08 19:48:25,548  INFO      [MSFT] Deleted old backup: MSFT_chromosome_20260707_014847.csv
+2026-07-08 19:48:25,548  INFO      [MSFT] Downloading fresh data...
+2026-07-08 19:48:25,971  INFO      [MSFT] Computing indicators on 4151 rows...
+2026-07-08 19:48:25,980  INFO      [MSFT] Running GA (400 gen × 150 pop)...
+2026-07-08 20:00:02,313  INFO      [MSFT] New fitness   : 0.5336
+2026-07-08 20:00:02,313  INFO      [MSFT] Total return  : +188288.58%
+2026-07-08 20:00:02,313  INFO      [MSFT] Win rate      : 48.04%
+2026-07-08 20:00:02,314  INFO      [MSFT] Trades        : 102
+2026-07-08 20:00:02,314  INFO      [MSFT] Max drawdown  : 53.00%
+2026-07-08 20:00:02,314  INFO      [MSFT] New fitness 0.5336 — accepting (force retrain mode)
+2026-07-08 20:00:02,319  INFO      [MSFT] Chromosome saved — retrain complete
+2026-07-08 20:00:12,319  INFO      
+=======================================================
+2026-07-08 20:00:12,320  INFO        Retraining: AMZN
+2026-07-08 20:00:12,320  INFO        2026-07-08 20:00
+2026-07-08 20:00:12,320  INFO      =======================================================
+2026-07-08 20:00:12,328  INFO      [AMZN] Current fitness: 0.3855
+2026-07-08 20:00:12,330  INFO      [AMZN] Backed up to AMZN_chromosome_20260708_200012.csv
+2026-07-08 20:00:12,331  INFO      [AMZN] Deleted old backup: AMZN_chromosome_20260707_015051.csv
+2026-07-08 20:00:12,331  INFO      [AMZN] Downloading fresh data...
+2026-07-08 20:00:12,773  INFO      [AMZN] Computing indicators on 4151 rows...
+2026-07-08 20:00:12,781  INFO      [AMZN] Running GA (400 gen × 150 pop)...
+2026-07-08 20:10:22,546  INFO      [AMZN] New fitness   : 0.6320
+2026-07-08 20:10:22,546  INFO      [AMZN] Total return  : +1051574.62%
+2026-07-08 20:10:22,546  INFO      [AMZN] Win rate      : 54.74%
+2026-07-08 20:10:22,546  INFO      [AMZN] Trades        : 95
+2026-07-08 20:10:22,546  INFO      [AMZN] Max drawdown  : 37.18%
+2026-07-08 20:10:22,546  INFO      [AMZN] New fitness 0.6320 — accepting (force retrain mode)
+2026-07-08 20:10:22,550  INFO      [AMZN] Chromosome saved — retrain complete
+2026-07-08 20:10:32,551  INFO      
+=======================================================
+2026-07-08 20:10:32,551  INFO        Retraining: META
+2026-07-08 20:10:32,551  INFO        2026-07-08 20:10
+2026-07-08 20:10:32,551  INFO      =======================================================
+2026-07-08 20:10:32,558  INFO      [META] Current fitness: 0.3927
+2026-07-08 20:10:32,560  INFO      [META] Backed up to META_chromosome_20260708_201032.csv
+2026-07-08 20:10:32,561  INFO      [META] Deleted old backup: META_chromosome_20260707_015245.csv
+2026-07-08 20:10:32,561  INFO      [META] Downloading fresh data...
+2026-07-08 20:10:32,950  INFO      [META] Computing indicators on 3552 rows...
+2026-07-08 20:10:32,959  INFO      [META] Running GA (400 gen × 150 pop)...
+2026-07-08 20:20:45,727  INFO      [META] New fitness   : 0.5805
+2026-07-08 20:20:45,727  INFO      [META] Total return  : +178603.23%
+2026-07-08 20:20:45,727  INFO      [META] Win rate      : 48.05%
+2026-07-08 20:20:45,728  INFO      [META] Trades        : 77
+2026-07-08 20:20:45,728  INFO      [META] Max drawdown  : 37.60%
+2026-07-08 20:20:45,728  INFO      [META] New fitness 0.5805 — accepting (force retrain mode)
+2026-07-08 20:20:45,732  INFO      [META] Chromosome saved — retrain complete
+2026-07-08 20:20:55,732  INFO      
+=======================================================
+2026-07-08 20:20:55,733  INFO        Retraining: AAPL
+2026-07-08 20:20:55,733  INFO        2026-07-08 20:20
+2026-07-08 20:20:55,733  INFO      =======================================================
+2026-07-08 20:20:55,741  INFO      [AAPL] Current fitness: 0.4542
+2026-07-08 20:20:55,747  INFO      [AAPL] Backed up to AAPL_chromosome_20260708_202055.csv
+2026-07-08 20:20:55,748  INFO      [AAPL] Deleted old backup: AAPL_chromosome_20260707_015420.csv
+2026-07-08 20:20:55,748  INFO      [AAPL] Downloading fresh data...
+2026-07-08 20:20:56,170  INFO      [AAPL] Computing indicators on 4151 rows...
+2026-07-08 20:20:56,178  INFO      [AAPL] Running GA (400 gen × 150 pop)...
+2026-07-08 20:30:18,760  INFO      [AAPL] New fitness   : 0.6936
+2026-07-08 20:30:18,760  INFO      [AAPL] Total return  : +355448.74%
+2026-07-08 20:30:18,760  INFO      [AAPL] Win rate      : 50.00%
+2026-07-08 20:30:18,760  INFO      [AAPL] Trades        : 78
+2026-07-08 20:30:18,760  INFO      [AAPL] Max drawdown  : 35.60%
+2026-07-08 20:30:18,760  INFO      [AAPL] New fitness 0.6936 — accepting (force retrain mode)
+2026-07-08 20:30:18,764  INFO      [AAPL] Chromosome saved — retrain complete
+2026-07-08 20:30:28,765  INFO      
+=======================================================
+2026-07-08 20:30:28,765  INFO        RETRAIN SUMMARY
+2026-07-08 20:30:28,765  INFO      =======================================================
+2026-07-08 20:30:28,765  INFO        GLD          [OK] Updated
+2026-07-08 20:30:28,765  INFO        SPY          [OK] Updated
+2026-07-08 20:30:28,765  INFO        NVDA         [OK] Updated
+2026-07-08 20:30:28,765  INFO        QQQ          [OK] Updated
+2026-07-08 20:30:28,765  INFO        TSLA         [OK] Updated
+2026-07-08 20:30:28,765  INFO        MSFT         [OK] Updated
+2026-07-08 20:30:28,765  INFO        AMZN         [OK] Updated
+2026-07-08 20:30:28,765  INFO        META         [OK] Updated
+2026-07-08 20:30:28,765  INFO        AAPL         [OK] Updated
+2026-07-08 20:30:28,765  INFO        Total time: 83.9 minutes
+2026-07-08 20:30:28,766  INFO      =======================================================

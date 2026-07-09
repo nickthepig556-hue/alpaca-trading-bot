@@ -85,8 +85,8 @@ def generate_bot_signals(df_scaled: pd.DataFrame,
         scores    = (condition * w).sum(axis=1) / max(w_sum, 1e-9)
 
         signals = pd.Series(0, index=df_scaled.index)
-        signals[scores > 0.35] = 1
-        signals[scores < 0.20] = -1
+        signals[scores > 0.55] = 1
+        signals[scores < 0.35] = -1
         return signals
 
 
@@ -97,95 +97,109 @@ def generate_bot_signals(df_scaled: pd.DataFrame,
 def simulate_strategy(close: np.ndarray,
                        signals: np.ndarray,
                        stop_loss_pct: float   = 0.05,
-                       take_profit_pct: float = 0.50,
+                       take_profit_pct: float = 0.15,
                        starting_equity: float = 100_000.0) -> dict:
     """
-    Simulate bot strategy on historical data.
-
-    Parameters
-    ----------
-    close           : array of closing prices
-    signals         : array of 1 (long), -1 (short), 0 (hold)
-    stop_loss_pct   : fraction stop-loss
-    take_profit_pct : fraction take-profit
-    starting_equity : starting portfolio value
-
-    Returns
-    -------
-    dict with equity_curve, trades, stats
+    Realistic long-only simulation matching actual bot behaviour.
+    Uses trailing stops, wider stops, and only exits losers on sell signal.
     """
-    n         = len(close)
-    equity    = np.full(n, starting_equity)
-    in_pos    = False
-    entry     = 0.0
-    direction = 1
-    trades    = []
+    n            = len(close)
+    equity       = np.full(n, starting_equity, dtype=float)
+    in_pos       = False
+    entry        = 0.0
+    peak_price   = 0.0
+    trail_active = False
+    trail_stop   = 0.0
+    entry_idx    = 0
+    trades       = []
 
     for i in range(1, n):
         sig = int(signals[i])
 
         if not in_pos:
-            # Only go LONG — never short ETFs/stocks on backtest
             if sig == 1:
-                in_pos    = True
-                entry     = close[i]
-                direction = 1
+                in_pos = True; direction = 1
+                entry = close[i]; peak_price = close[i]
+                trail_active = False
+                trail_stop = entry * (1 - stop_loss_pct)
+                entry_idx = i
+            elif sig == -1 and allow_short:
+                in_pos = True; direction = -1
+                entry = close[i]; peak_price = close[i]
+                trail_active = False
+                trail_stop = entry * (1 + stop_loss_pct)
+                entry_idx = i
+            equity[i] = equity[i-1]
         else:
-            # Check stop/take-profit
-            raw_ret = (close[i] - entry) / entry * direction
-            closed  = False
-            reason  = ""
+            current = close[i]
+            raw_ret = (current - entry) / entry * direction
 
-            if raw_ret <= -stop_loss_pct:
-                closed = True
-                reason = "stop-loss"
-            elif raw_ret >= take_profit_pct:
-                closed = True
-                reason = "take-profit"
-            elif sig == -1:
-                closed = True
-                reason = "signal-exit"
+            # Trailing stop
+            if direction == 1 and current > entry * (1 + stop_loss_pct):
+                trail_active = True
+            elif direction == -1 and current < entry * (1 - stop_loss_pct):
+                trail_active = True
+            if trail_active:
+                if direction == 1 and current > peak_price:
+                    peak_price = current
+                    trail_stop = peak_price * (1 - stop_loss_pct * 1.5)
+                elif direction == -1 and current < peak_price:
+                    peak_price = current
+                    trail_stop = peak_price * (1 + stop_loss_pct * 1.5)
+
+            closed = False; reason = ""
+
+            if trail_active:
+                if direction == 1 and current <= trail_stop:
+                    closed = True; reason = "trailing-stop"
+                elif direction == -1 and current >= trail_stop:
+                    closed = True; reason = "trailing-stop"
+            if not closed:
+                if raw_ret <= -stop_loss_pct:
+                    closed = True; reason = "stop-loss"
+                elif raw_ret >= take_profit_pct:
+                    closed = True; reason = "take-profit"
+                elif (i - entry_idx) >= max_hold_days:
+                    closed = True; reason = "max-hold"
+                elif direction == 1 and s == -1 and raw_ret > 0:
+                    closed = True; reason = "signal-exit"
+                elif direction == 1 and s == -1 and raw_ret > 0:
+                    closed = True; reason = "signal-exit"
 
             if closed:
-                pnl_pct = raw_ret
-                pnl_amt = equity[i-1] * pnl_pct
+                pnl_amt = equity[i-1] * raw_ret
                 trades.append({
-                    "entry_idx"  : int(np.where(close == entry)[0][-1]) if entry in close else i-1,
+                    "entry_idx"  : entry_idx,
                     "exit_idx"   : i,
                     "entry_price": round(float(entry), 4),
-                    "exit_price" : round(float(close[i]), 4),
+                    "exit_price" : round(float(current), 4),
                     "direction"  : "long" if direction == 1 else "short",
-                    "pnl_pct"   : round(float(pnl_pct) * 100, 3),
+                    "pnl_pct"   : round(float(raw_ret) * 100, 3),
                     "pnl_amt"   : round(float(pnl_amt), 2),
                     "reason"    : reason,
                 })
                 equity[i] = equity[i-1] + pnl_amt
-                in_pos    = False
+                in_pos       = False
+                trail_active = False
             else:
-                # Mark to market
-                mtm       = (close[i] - close[i-1]) / close[i-1] * direction
-                equity[i] = equity[i-1] * (1 + mtm)
+                equity[i] = equity[i-1] * (1 + (close[i] / close[i-1] - 1) * direction)
 
-        if not in_pos and i > 0:
-            equity[i] = equity[i-1]  if equity[i] == starting_equity else equity[i]
-
-    # Close any open position at end
     if in_pos:
-        raw_ret = (close[-1] - entry) / entry * direction
-        pnl_amt = equity[-2] * raw_ret
+        ret     = (close[-1] - entry) / entry
+        pnl_amt = equity[-2] * ret
         trades.append({
-            "entry_idx"  : -1,
+            "entry_idx"  : entry_idx,
             "exit_idx"   : n - 1,
             "entry_price": round(float(entry), 4),
             "exit_price" : round(float(close[-1]), 4),
-            "direction"  : "long" if direction == 1 else "short",
-            "pnl_pct"   : round(float(raw_ret) * 100, 3),
+            "direction"  : "long",
+            "pnl_pct"   : round(float(ret) * 100, 3),
             "pnl_amt"   : round(float(pnl_amt), 2),
             "reason"    : "end-of-period",
         })
         equity[-1] = equity[-2] + pnl_amt
 
-    return {"equity": equity, "trades": trades}
+    return {"equity": equity.tolist(), "trades": trades}
 
 
 def simulate_buy_and_hold(close: np.ndarray,
@@ -285,7 +299,8 @@ def run_backtest(ticker: str,
                  start_date: str,
                  end_date: str   = None,
                  stop_loss_pct: float   = 0.05,
-                 take_profit_pct: float = 0.50,
+                 take_profit_pct: float = 0.25,
+                 allow_short: bool = False,
                  starting_equity: float = 100_000.0) -> dict:
     """
     Full backtest pipeline:

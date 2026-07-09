@@ -2937,3 +2937,38 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 17:02:40,066  INFO        NVDA [long] price=204.15  stop=193.48  trailing=202.02  target=205.33  P&L=+465.80
 2026-07-08 17:03:40,338  INFO        NVDA [long] price=204.15  stop=193.48  trailing=202.02  target=205.33  P&L=+466.12
 2026-07-08 17:04:40,593  INFO        NVDA [long] price=204.15  stop=193.48  trailing=202.02  target=205.33  P&L=+459.00
+2026-07-08 17:05:40,846  INFO        NVDA [long] price=204.15  stop=193.48  trailing=202.02  target=205.33  P&L=+463.31
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,883  INFO      [NVDA] Process exiting
+2026-07-08 17:06:00,884  INFO      [NVDA] Process started  PID=85748
+2026-07-08 17:06:00,886  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:06:00,887  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:00,887  INFO         Mode    : PAPER
+2026-07-08 17:06:00,887  INFO         Ticker  : NVDA
+2026-07-08 17:06:00,887  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-08 17:06:00,887  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:00,893  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:01,082  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,434  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,439  INFO      [NVDA] Process exiting
+2026-07-08 17:22:43,998  INFO      [NVDA] Process started  PID=101208
+2026-07-08 17:22:44,001  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:22:44,001  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:44,001  INFO         Mode    : PAPER
+2026-07-08 17:22:44,001  INFO         Ticker  : NVDA
+2026-07-08 17:22:44,001  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-08 17:22:44,001  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:44,002  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:48,379  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,724  INFO      [NVDA] Process exiting
+2026-07-08 18:16:55,607  INFO      [NVDA] Process started  PID=114056
+2026-07-08 18:16:55,612  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 18:16:55,612  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:16:55,612  INFO         Mode    : PAPER
+2026-07-08 18:16:55,612  INFO         Ticker  : NVDA
+2026-07-08 18:16:55,612  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-08 18:16:55,612  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:16:55,622  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-08 18:16:55,815  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:16:56,012  INFO      Market closed. Next open in 60 min. Sleeping...

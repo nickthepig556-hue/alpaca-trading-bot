@@ -2931,3 +2931,38 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 17:02:39,872  INFO        QQQ [long] price=711.28  stop=699.28  trailing=inactive  target=742.10  P&L=-197.19
 2026-07-08 17:03:40,144  INFO        QQQ [long] price=711.28  stop=699.28  trailing=inactive  target=742.10  P&L=-188.74
 2026-07-08 17:04:40,416  INFO        QQQ [long] price=711.28  stop=699.28  trailing=inactive  target=742.10  P&L=-182.24
+2026-07-08 17:05:40,631  INFO        QQQ [long] price=711.28  stop=699.28  trailing=inactive  target=742.10  P&L=-187.44
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,883  INFO      [QQQ] Process exiting
+2026-07-08 17:06:02,877  INFO      [QQQ] Process started  PID=155968
+2026-07-08 17:06:02,880  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:06:02,880  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:02,880  INFO         Mode    : PAPER
+2026-07-08 17:06:02,880  INFO         Ticker  : QQQ
+2026-07-08 17:06:02,880  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-08 17:06:02,880  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:02,887  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:03,153  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,434  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,437  INFO      [QQQ] Process exiting
+2026-07-08 17:22:45,999  INFO      [QQQ] Process started  PID=163936
+2026-07-08 17:22:46,002  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:22:46,002  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:46,002  INFO         Mode    : PAPER
+2026-07-08 17:22:46,002  INFO         Ticker  : QQQ
+2026-07-08 17:22:46,002  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-08 17:22:46,002  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:46,003  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:53,002  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,724  INFO      [QQQ] Process exiting
+2026-07-08 18:16:57,653  INFO      [QQQ] Process started  PID=154136
+2026-07-08 18:16:57,661  INFO      [QQQ] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 18:16:57,663  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:16:57,665  INFO         Mode    : PAPER
+2026-07-08 18:16:57,665  INFO         Ticker  : QQQ
+2026-07-08 18:16:57,665  INFO         Chromosome : QQQ_best_chromosome.csv
+2026-07-08 18:16:57,666  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:16:57,676  INFO      Chromosome loaded from QQQ_best_chromosome.csv  (34 genes)
+2026-07-08 18:16:57,871  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:16:58,064  INFO      Market closed. Next open in 60 min. Sleeping...

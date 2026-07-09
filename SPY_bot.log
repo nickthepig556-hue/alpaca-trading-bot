@@ -6645,3 +6645,38 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 17:02:40,251  INFO        SPY [long] price=745.29  stop=730.77  trailing=inactive  target=764.16  P&L=+187.09
 2026-07-08 17:03:40,504  INFO        SPY [long] price=745.29  stop=730.77  trailing=inactive  target=764.16  P&L=+184.33
 2026-07-08 17:04:40,757  INFO        SPY [long] price=745.29  stop=730.77  trailing=inactive  target=764.16  P&L=+184.33
+2026-07-08 17:05:40,977  INFO        SPY [long] price=745.29  stop=730.77  trailing=inactive  target=764.16  P&L=+176.74
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,883  INFO      [SPY] Process exiting
+2026-07-08 17:06:00,678  INFO      [SPY] Process started  PID=150020
+2026-07-08 17:06:00,686  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-08 17:06:00,686  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:00,686  INFO         Mode    : PAPER
+2026-07-08 17:06:00,686  INFO         Ticker  : SPY
+2026-07-08 17:06:00,686  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-08 17:06:00,686  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:00,692  INFO      Chromosome loaded from SPY_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:00,909  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,435  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,436  INFO      [SPY] Process exiting
+2026-07-08 17:22:42,032  INFO      [SPY] Process started  PID=92680
+2026-07-08 17:22:42,035  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-08 17:22:42,035  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:42,035  INFO         Mode    : PAPER
+2026-07-08 17:22:42,036  INFO         Ticker  : SPY
+2026-07-08 17:22:42,036  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-08 17:22:42,036  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:42,037  INFO      Chromosome loaded from SPY_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:42,394  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,725  INFO      [SPY] Process exiting
+2026-07-08 18:16:53,557  INFO      [SPY] Process started  PID=161764
+2026-07-08 18:16:53,560  INFO      [SPY] Config loaded — max alloc 40%  stop 1.5%
+2026-07-08 18:16:53,560  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:16:53,561  INFO         Mode    : PAPER
+2026-07-08 18:16:53,561  INFO         Ticker  : SPY
+2026-07-08 18:16:53,561  INFO         Chromosome : SPY_best_chromosome.csv
+2026-07-08 18:16:53,561  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:16:53,570  INFO      Chromosome loaded from SPY_best_chromosome.csv  (34 genes)
+2026-07-08 18:16:53,783  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:16:53,970  INFO      Market closed. Next open in 60 min. Sleeping...

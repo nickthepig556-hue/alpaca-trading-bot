@@ -1889,3 +1889,37 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 15:01:01,902  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 16:01:02,134  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 17:01:02,360  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,883  INFO      [TSLA] Process exiting
+2026-07-08 17:06:04,850  INFO      [TSLA] Process started  PID=72952
+2026-07-08 17:06:04,852  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 17:06:04,852  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:04,853  INFO         Mode    : PAPER
+2026-07-08 17:06:04,853  INFO         Ticker  : TSLA
+2026-07-08 17:06:04,853  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-08 17:06:04,853  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:04,861  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:05,056  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,435  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,438  INFO      [TSLA] Process exiting
+2026-07-08 17:22:48,015  INFO      [TSLA] Process started  PID=144144
+2026-07-08 17:22:48,018  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 17:22:48,018  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:48,018  INFO         Mode    : PAPER
+2026-07-08 17:22:48,018  INFO         Ticker  : TSLA
+2026-07-08 17:22:48,018  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-08 17:22:48,018  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:48,020  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:48,789  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,725  INFO      [TSLA] Process exiting
+2026-07-08 18:16:59,447  INFO      [TSLA] Process started  PID=159392
+2026-07-08 18:16:59,449  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-08 18:16:59,449  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:16:59,449  INFO         Mode    : PAPER
+2026-07-08 18:16:59,449  INFO         Ticker  : TSLA
+2026-07-08 18:16:59,449  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-08 18:16:59,450  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:16:59,456  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-08 18:16:59,652  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:16:59,870  INFO      Market closed. Next open in 60 min. Sleeping...

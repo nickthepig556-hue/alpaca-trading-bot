@@ -151,6 +151,13 @@ body{background:#000;color:#f0f0ff;font-family:'Space Grotesk',system-ui,sans-se
       <input class="form-input" type="number" id="bt-equity" value="100000" min="1000">
     </div>
     <div class="form-group">
+      <label class="form-label">Allow shorts</label>
+      <select class="form-select" id="bt-short">
+        <option value="false">Long only (ETFs)</option>
+        <option value="true">Long + Short (stocks/crypto)</option>
+      </select>
+    </div>
+    <div class="form-group">
       <label class="form-label">&nbsp;</label>
       <button class="btn btn-accent" id="run-btn" onclick="runBacktest()">
         <i class="ti ti-player-play"></i> Run backtest
@@ -284,7 +291,8 @@ async function runBacktest() {
     const r = await fetch(`${API}/backtest/run`, {
       method: 'POST', headers,
       body: JSON.stringify({ticker, start_date: start, end_date: end,
-                            starting_equity: equity})
+                            starting_equity: equity,
+                            allow_short: document.getElementById('bt-short').value === 'true'})
     });
 
     clearInterval(prog);

@@ -2868,3 +2868,38 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 17:02:39,906  INFO        AMZN [long] price=243.56  stop=240.10  trailing=inactive  target=254.80  P&L=-68.16
 2026-07-08 17:03:40,150  INFO        AMZN [long] price=243.56  stop=240.10  trailing=inactive  target=254.80  P&L=-68.16
 2026-07-08 17:04:40,379  INFO        AMZN [long] price=243.56  stop=240.10  trailing=inactive  target=254.80  P&L=-68.16
+2026-07-08 17:05:40,629  INFO        AMZN [long] price=243.56  stop=240.10  trailing=inactive  target=254.80  P&L=-68.16
+2026-07-08 17:05:51,878  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:05:51,882  INFO      [AMZN] Process exiting
+2026-07-08 17:06:08,881  INFO      [AMZN] Process started  PID=98928
+2026-07-08 17:06:08,884  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:06:08,884  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:06:08,884  INFO         Mode    : PAPER
+2026-07-08 17:06:08,884  INFO         Ticker  : AMZN
+2026-07-08 17:06:08,884  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-08 17:06:08,884  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:06:08,892  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-08 17:06:09,093  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 17:22:36,434  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 17:22:36,437  INFO      [AMZN] Process exiting
+2026-07-08 17:22:52,015  INFO      [AMZN] Process started  PID=156376
+2026-07-08 17:22:52,019  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 17:22:52,020  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 17:22:52,020  INFO         Mode    : PAPER
+2026-07-08 17:22:52,020  INFO         Ticker  : AMZN
+2026-07-08 17:22:52,020  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-08 17:22:52,020  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 17:22:52,022  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-08 17:22:55,242  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 18:16:47,721  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-08 18:16:47,724  INFO      [AMZN] Process exiting
+2026-07-08 18:17:03,502  INFO      [AMZN] Process started  PID=99452
+2026-07-08 18:17:03,504  INFO      [AMZN] Config loaded — max alloc 35%  stop 2.0%
+2026-07-08 18:17:03,505  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-08 18:17:03,505  INFO         Mode    : PAPER
+2026-07-08 18:17:03,505  INFO         Ticker  : AMZN
+2026-07-08 18:17:03,505  INFO         Chromosome : AMZN_best_chromosome.csv
+2026-07-08 18:17:03,505  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-08 18:17:03,511  INFO      Chromosome loaded from AMZN_best_chromosome.csv  (34 genes)
+2026-07-08 18:17:03,708  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 19:17:03,935  INFO      Market closed. Next open in 60 min. Sleeping...

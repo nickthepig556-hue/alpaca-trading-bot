@@ -56,6 +56,9 @@ TRADING_MODE = os.getenv("TRADING_MODE", "paper").lower()   # "paper" or "live"
 TICKER = "GLD"
 CHROMOSOME_FILE = f"{TICKER}_best_chromosome.csv"
 
+# Tickers that should NEVER go short (long-biased assets)
+LONG_ONLY_TICKERS = {'SPY', 'QQQ', 'GLD', 'IWM', 'DIA', 'VTI'}
+
 BOT_CONFIG = {
     # Position sizing
     'min_allocation_pct'  : 0.05,   # 5 %  minimum position when GA confidence is low
@@ -65,6 +68,10 @@ BOT_CONFIG = {
     # Concurrent position limits
     'max_concurrent_positions': 5,    # never open more than 5 at once
     'min_cash_reserve_pct'    : 0.20, # always keep 20% cash
+
+    # Short selling
+    'allow_short'   : True,   # overridden per-ticker via LONG_ONLY_TICKERS
+    'max_hold_days' : 90,     # force exit after 90 days to prevent forever-holds
 
     # Risk management
     'stop_loss_pct'       : 0.05,   # 5 % stop-loss below entry
@@ -562,6 +569,9 @@ def run_daily_signal(trading_client: TradingClient,
 
     cancel_open_orders(trading_client, TICKER)
 
+    # Override allow_short for long-only tickers (ETFs, gold)
+    allow_short = config.get('allow_short', True) and TICKER not in LONG_ONLY_TICKERS
+
     # ── Compute GA signal ──────────────────────────────────────────────────
     bars = fetch_recent_bars(data_client, TICKER, config['lookback_days'])
     signal, confidence = compute_signal(bars, chrom)
@@ -608,6 +618,9 @@ def run_daily_signal(trading_client: TradingClient,
 
     # ── SELL signal ───────────────────────────────────────────────────────
     elif signal == -1:
+        if not allow_short:
+            log.info(f"Short signal ignored — {TICKER} is long-only")
+            return
         if position and position['side'] == 'long':
             # Flip: close long first
             log.info("Flipping long → short: closing long position")
