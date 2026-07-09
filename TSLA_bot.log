@@ -1923,3 +1923,457 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 18:16:59,456  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
 2026-07-08 18:16:59,652  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 19:16:59,870  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 20:17:00,117  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 21:17:00,331  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 22:17:00,527  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 23:17:00,714  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 00:17:00,904  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 01:17:01,100  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 02:17:01,284  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 03:17:01,474  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 04:17:01,739  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 05:17:01,927  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 06:17:02,130  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 07:17:02,322  INFO      Market closed. Next open in 13 min. Sleeping...
+2026-07-09 07:30:04,340  INFO      Market open — waiting 300s before first signal...
+2026-07-09 07:35:04,341  INFO      =======================================================
+2026-07-09 07:35:04,342  INFO      Daily signal run  [2026-07-09 07:35]
+2026-07-09 07:35:04,343  INFO      =======================================================
+2026-07-09 07:35:06,135  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 07:35:06,430  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 07:35:06,613  INFO      Portfolio value : $99,608.45
+2026-07-09 07:35:06,613  INFO      Current price   : $391.94
+2026-07-09 07:35:06,613  INFO      Open position   : None
+2026-07-09 07:35:06,752  INFO      Max positions reached (8/5) — skipping
+2026-07-09 07:35:06,752  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 07:40:06,943  INFO      Market open — waiting 300s before first signal...
+2026-07-09 07:45:06,944  INFO      =======================================================
+2026-07-09 07:45:06,944  INFO      Daily signal run  [2026-07-09 07:45]
+2026-07-09 07:45:06,944  INFO      =======================================================
+2026-07-09 07:45:07,489  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 07:45:07,799  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 07:45:08,033  INFO      Portfolio value : $99,750.84
+2026-07-09 07:45:08,033  INFO      Current price   : $395.43
+2026-07-09 07:45:08,033  INFO      Open position   : None
+2026-07-09 07:45:08,224  INFO      Max positions reached (7/5) — skipping
+2026-07-09 07:45:08,225  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 07:50:08,433  INFO      Market open — waiting 300s before first signal...
+2026-07-09 07:55:08,434  INFO      =======================================================
+2026-07-09 07:55:08,435  INFO      Daily signal run  [2026-07-09 07:55]
+2026-07-09 07:55:08,435  INFO      =======================================================
+2026-07-09 07:55:08,834  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 07:55:09,062  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 07:55:09,200  INFO      Portfolio value : $99,921.42
+2026-07-09 07:55:09,200  INFO      Current price   : $393.67
+2026-07-09 07:55:09,201  INFO      Open position   : None
+2026-07-09 07:55:09,336  INFO      Max positions reached (7/5) — skipping
+2026-07-09 07:55:09,337  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:00:09,676  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:05:09,677  INFO      =======================================================
+2026-07-09 08:05:09,677  INFO      Daily signal run  [2026-07-09 08:05]
+2026-07-09 08:05:09,678  INFO      =======================================================
+2026-07-09 08:05:10,185  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:05:10,488  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 08:05:10,656  INFO      Portfolio value : $99,832.13
+2026-07-09 08:05:10,656  INFO      Current price   : $398.08
+2026-07-09 08:05:10,656  INFO      Open position   : None
+2026-07-09 08:05:10,786  INFO      Max positions reached (7/5) — skipping
+2026-07-09 08:05:10,786  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:10:10,975  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:15:10,976  INFO      =======================================================
+2026-07-09 08:15:10,976  INFO      Daily signal run  [2026-07-09 08:15]
+2026-07-09 08:15:10,976  INFO      =======================================================
+2026-07-09 08:15:11,385  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:15:11,543  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 08:15:11,684  INFO      Portfolio value : $99,312.80
+2026-07-09 08:15:11,684  INFO      Current price   : $393.44
+2026-07-09 08:15:11,684  INFO      Open position   : None
+2026-07-09 08:15:11,814  INFO      Max positions reached (6/5) — skipping
+2026-07-09 08:15:11,814  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:20:12,001  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:25:12,001  INFO      =======================================================
+2026-07-09 08:25:12,002  INFO      Daily signal run  [2026-07-09 08:25]
+2026-07-09 08:25:12,002  INFO      =======================================================
+2026-07-09 08:25:12,371  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:25:12,589  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 08:25:12,790  INFO      Portfolio value : $99,211.32
+2026-07-09 08:25:12,791  INFO      Current price   : $393.09
+2026-07-09 08:25:12,791  INFO      Open position   : None
+2026-07-09 08:25:13,036  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:25:13,037  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:30:13,278  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:35:13,279  INFO      =======================================================
+2026-07-09 08:35:13,279  INFO      Daily signal run  [2026-07-09 08:35]
+2026-07-09 08:35:13,279  INFO      =======================================================
+2026-07-09 08:35:13,677  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:35:13,880  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 08:35:14,006  INFO      Portfolio value : $99,332.65
+2026-07-09 08:35:14,006  INFO      Current price   : $393.13
+2026-07-09 08:35:14,006  INFO      Open position   : None
+2026-07-09 08:35:14,207  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:35:14,208  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:40:14,395  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:45:14,396  INFO      =======================================================
+2026-07-09 08:45:14,396  INFO      Daily signal run  [2026-07-09 08:45]
+2026-07-09 08:45:14,396  INFO      =======================================================
+2026-07-09 08:45:14,811  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:45:14,996  INFO      Signal: BUY  |  Confidence: 0.466
+2026-07-09 08:45:15,250  INFO      Portfolio value : $99,394.27
+2026-07-09 08:45:15,251  INFO      Current price   : $394.25
+2026-07-09 08:45:15,251  INFO      Open position   : None
+2026-07-09 08:45:15,390  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:45:15,390  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:50:15,594  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:55:15,594  INFO      =======================================================
+2026-07-09 08:55:15,595  INFO      Daily signal run  [2026-07-09 08:55]
+2026-07-09 08:55:15,595  INFO      =======================================================
+2026-07-09 08:55:15,939  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:55:16,150  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 08:55:16,273  INFO      Portfolio value : $99,379.58
+2026-07-09 08:55:16,273  INFO      Current price   : $395.33
+2026-07-09 08:55:16,273  INFO      Open position   : None
+2026-07-09 08:55:16,398  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:55:16,398  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:00:16,587  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:05:16,587  INFO      =======================================================
+2026-07-09 09:05:16,587  INFO      Daily signal run  [2026-07-09 09:05]
+2026-07-09 09:05:16,587  INFO      =======================================================
+2026-07-09 09:05:17,024  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:05:17,230  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:05:17,352  INFO      Portfolio value : $99,576.49
+2026-07-09 09:05:17,352  INFO      Current price   : $396.20
+2026-07-09 09:05:17,352  INFO      Open position   : None
+2026-07-09 09:05:17,483  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:05:17,483  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:10:17,682  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:15:17,683  INFO      =======================================================
+2026-07-09 09:15:17,683  INFO      Daily signal run  [2026-07-09 09:15]
+2026-07-09 09:15:17,683  INFO      =======================================================
+2026-07-09 09:15:18,076  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:15:18,403  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:15:18,532  INFO      Portfolio value : $99,704.73
+2026-07-09 09:15:18,533  INFO      Current price   : $395.29
+2026-07-09 09:15:18,533  INFO      Open position   : None
+2026-07-09 09:15:18,672  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:15:18,673  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:20:18,861  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:25:18,861  INFO      =======================================================
+2026-07-09 09:25:18,862  INFO      Daily signal run  [2026-07-09 09:25]
+2026-07-09 09:25:18,862  INFO      =======================================================
+2026-07-09 09:25:19,235  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:25:19,437  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:25:19,577  INFO      Portfolio value : $99,854.43
+2026-07-09 09:25:19,577  INFO      Current price   : $395.54
+2026-07-09 09:25:19,578  INFO      Open position   : None
+2026-07-09 09:25:19,717  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:25:19,717  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:30:19,914  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:35:19,915  INFO      =======================================================
+2026-07-09 09:35:19,915  INFO      Daily signal run  [2026-07-09 09:35]
+2026-07-09 09:35:19,916  INFO      =======================================================
+2026-07-09 09:35:20,296  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:35:20,536  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:35:20,655  INFO      Portfolio value : $99,834.90
+2026-07-09 09:35:20,655  INFO      Current price   : $396.10
+2026-07-09 09:35:20,655  INFO      Open position   : None
+2026-07-09 09:35:20,780  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:35:20,780  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:40:20,981  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:45:20,982  INFO      =======================================================
+2026-07-09 09:45:20,982  INFO      Daily signal run  [2026-07-09 09:45]
+2026-07-09 09:45:20,982  INFO      =======================================================
+2026-07-09 09:45:21,370  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:45:21,576  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:45:21,701  INFO      Portfolio value : $99,911.69
+2026-07-09 09:45:21,702  INFO      Current price   : $397.17
+2026-07-09 09:45:21,702  INFO      Open position   : None
+2026-07-09 09:45:21,849  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:45:21,850  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:50:22,051  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:55:22,054  INFO      =======================================================
+2026-07-09 09:55:22,054  INFO      Daily signal run  [2026-07-09 09:55]
+2026-07-09 09:55:22,054  INFO      =======================================================
+2026-07-09 09:55:22,407  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:55:22,586  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 09:55:22,712  INFO      Portfolio value : $99,884.32
+2026-07-09 09:55:22,713  INFO      Current price   : $399.33
+2026-07-09 09:55:22,713  INFO      Open position   : None
+2026-07-09 09:55:22,850  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:55:22,850  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:00:23,051  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:05:23,051  INFO      =======================================================
+2026-07-09 10:05:23,052  INFO      Daily signal run  [2026-07-09 10:05]
+2026-07-09 10:05:23,052  INFO      =======================================================
+2026-07-09 10:05:23,436  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:05:23,621  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:05:23,741  INFO      Portfolio value : $99,968.12
+2026-07-09 10:05:23,741  INFO      Current price   : $400.10
+2026-07-09 10:05:23,741  INFO      Open position   : None
+2026-07-09 10:05:23,871  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:05:23,872  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:10:24,170  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:15:24,171  INFO      =======================================================
+2026-07-09 10:15:24,172  INFO      Daily signal run  [2026-07-09 10:15]
+2026-07-09 10:15:24,172  INFO      =======================================================
+2026-07-09 10:15:24,689  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:15:24,902  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:15:25,026  INFO      Portfolio value : $99,958.56
+2026-07-09 10:15:25,026  INFO      Current price   : $401.40
+2026-07-09 10:15:25,027  INFO      Open position   : None
+2026-07-09 10:15:25,157  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:15:25,158  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:20:25,345  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:25:25,347  INFO      =======================================================
+2026-07-09 10:25:25,353  INFO      Daily signal run  [2026-07-09 10:25]
+2026-07-09 10:25:25,354  INFO      =======================================================
+2026-07-09 10:25:25,797  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:25:25,942  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:25:26,063  INFO      Portfolio value : $99,979.58
+2026-07-09 10:25:26,065  INFO      Current price   : $399.28
+2026-07-09 10:25:26,065  INFO      Open position   : None
+2026-07-09 10:25:26,201  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:25:26,202  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:30:26,395  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:35:26,395  INFO      =======================================================
+2026-07-09 10:35:26,395  INFO      Daily signal run  [2026-07-09 10:35]
+2026-07-09 10:35:26,395  INFO      =======================================================
+2026-07-09 10:35:26,769  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:35:26,977  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:35:27,122  INFO      Portfolio value : $99,956.53
+2026-07-09 10:35:27,123  INFO      Current price   : $398.61
+2026-07-09 10:35:27,123  INFO      Open position   : None
+2026-07-09 10:35:27,250  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:35:27,251  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:40:27,461  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:45:27,463  INFO      =======================================================
+2026-07-09 10:45:27,471  INFO      Daily signal run  [2026-07-09 10:45]
+2026-07-09 10:45:27,471  INFO      =======================================================
+2026-07-09 10:45:27,866  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:45:28,089  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:45:28,218  INFO      Portfolio value : $100,012.09
+2026-07-09 10:45:28,219  INFO      Current price   : $401.30
+2026-07-09 10:45:28,219  INFO      Open position   : None
+2026-07-09 10:45:28,359  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:45:28,359  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:50:28,547  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:55:28,548  INFO      =======================================================
+2026-07-09 10:55:28,548  INFO      Daily signal run  [2026-07-09 10:55]
+2026-07-09 10:55:28,548  INFO      =======================================================
+2026-07-09 10:55:28,920  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:55:29,137  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 10:55:29,261  INFO      Portfolio value : $99,937.16
+2026-07-09 10:55:29,261  INFO      Current price   : $401.52
+2026-07-09 10:55:29,261  INFO      Open position   : None
+2026-07-09 10:55:29,387  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:55:29,387  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:00:29,786  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:05:29,786  INFO      =======================================================
+2026-07-09 11:05:29,787  INFO      Daily signal run  [2026-07-09 11:05]
+2026-07-09 11:05:29,787  INFO      =======================================================
+2026-07-09 11:05:30,191  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:05:30,356  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:05:30,480  INFO      Portfolio value : $99,994.27
+2026-07-09 11:05:30,480  INFO      Current price   : $403.70
+2026-07-09 11:05:30,481  INFO      Open position   : None
+2026-07-09 11:05:30,618  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:05:30,619  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:10:30,803  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:15:30,807  INFO      =======================================================
+2026-07-09 11:15:30,808  INFO      Daily signal run  [2026-07-09 11:15]
+2026-07-09 11:15:30,808  INFO      =======================================================
+2026-07-09 11:15:31,231  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:15:31,491  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:15:31,629  INFO      Portfolio value : $100,114.34
+2026-07-09 11:15:31,629  INFO      Current price   : $403.74
+2026-07-09 11:15:31,629  INFO      Open position   : None
+2026-07-09 11:15:31,788  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:15:31,789  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:20:31,985  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:25:31,986  INFO      =======================================================
+2026-07-09 11:25:31,986  INFO      Daily signal run  [2026-07-09 11:25]
+2026-07-09 11:25:31,986  INFO      =======================================================
+2026-07-09 11:25:32,342  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:25:32,516  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:25:32,637  INFO      Portfolio value : $100,133.58
+2026-07-09 11:25:32,637  INFO      Current price   : $404.70
+2026-07-09 11:25:32,638  INFO      Open position   : None
+2026-07-09 11:25:32,767  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:25:32,767  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:30:32,965  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:35:32,968  INFO      =======================================================
+2026-07-09 11:35:32,971  INFO      Daily signal run  [2026-07-09 11:35]
+2026-07-09 11:35:32,971  INFO      =======================================================
+2026-07-09 11:35:33,429  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:35:33,685  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:35:33,833  INFO      Portfolio value : $100,152.00
+2026-07-09 11:35:33,834  INFO      Current price   : $404.32
+2026-07-09 11:35:33,834  INFO      Open position   : None
+2026-07-09 11:35:34,026  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:35:34,027  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:40:34,232  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:45:34,232  INFO      =======================================================
+2026-07-09 11:45:34,233  INFO      Daily signal run  [2026-07-09 11:45]
+2026-07-09 11:45:34,233  INFO      =======================================================
+2026-07-09 11:45:34,651  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:45:34,858  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:45:35,008  INFO      Portfolio value : $100,192.61
+2026-07-09 11:45:35,008  INFO      Current price   : $404.20
+2026-07-09 11:45:35,008  INFO      Open position   : None
+2026-07-09 11:45:35,148  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:45:35,148  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:50:35,380  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:55:35,381  INFO      =======================================================
+2026-07-09 11:55:35,381  INFO      Daily signal run  [2026-07-09 11:55]
+2026-07-09 11:55:35,381  INFO      =======================================================
+2026-07-09 11:55:35,761  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:55:35,964  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 11:55:36,128  INFO      Portfolio value : $100,225.06
+2026-07-09 11:55:36,128  INFO      Current price   : $404.70
+2026-07-09 11:55:36,128  INFO      Open position   : None
+2026-07-09 11:55:36,259  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:55:36,260  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:00:36,459  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:05:36,460  INFO      =======================================================
+2026-07-09 12:05:36,461  INFO      Daily signal run  [2026-07-09 12:05]
+2026-07-09 12:05:36,461  INFO      =======================================================
+2026-07-09 12:05:36,879  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:05:37,085  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 12:05:37,221  INFO      Portfolio value : $100,197.66
+2026-07-09 12:05:37,221  INFO      Current price   : $404.36
+2026-07-09 12:05:37,221  INFO      Open position   : None
+2026-07-09 12:05:37,352  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:05:37,352  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:10:37,620  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:15:37,620  INFO      =======================================================
+2026-07-09 12:15:37,621  INFO      Daily signal run  [2026-07-09 12:15]
+2026-07-09 12:15:37,621  INFO      =======================================================
+2026-07-09 12:15:39,027  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:15:39,227  INFO      Signal: BUY  |  Confidence: 0.579
+2026-07-09 12:15:39,365  INFO      Portfolio value : $100,192.35
+2026-07-09 12:15:39,366  INFO      Current price   : $406.05
+2026-07-09 12:15:39,366  INFO      Open position   : None
+2026-07-09 12:15:39,518  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:15:39,518  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:20:39,722  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:25:39,723  INFO      =======================================================
+2026-07-09 12:25:39,724  INFO      Daily signal run  [2026-07-09 12:25]
+2026-07-09 12:25:39,724  INFO      =======================================================
+2026-07-09 12:25:40,084  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:25:40,300  INFO      Signal: BUY  |  Confidence: 0.635
+2026-07-09 12:25:40,555  INFO      Portfolio value : $100,130.17
+2026-07-09 12:25:40,555  INFO      Current price   : $407.00
+2026-07-09 12:25:40,555  INFO      Open position   : None
+2026-07-09 12:25:40,689  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:25:40,689  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:30:40,883  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:35:40,884  INFO      =======================================================
+2026-07-09 12:35:40,884  INFO      Daily signal run  [2026-07-09 12:35]
+2026-07-09 12:35:40,885  INFO      =======================================================
+2026-07-09 12:35:41,282  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:35:41,453  INFO      Signal: BUY  |  Confidence: 0.635
+2026-07-09 12:35:41,587  INFO      Portfolio value : $100,113.13
+2026-07-09 12:35:41,587  INFO      Current price   : $406.60
+2026-07-09 12:35:41,587  INFO      Open position   : None
+2026-07-09 12:35:41,756  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:35:41,756  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:40:41,954  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:45:41,955  INFO      =======================================================
+2026-07-09 12:45:41,955  INFO      Daily signal run  [2026-07-09 12:45]
+2026-07-09 12:45:41,956  INFO      =======================================================
+2026-07-09 12:45:42,333  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:45:42,534  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 12:45:42,669  INFO      Portfolio value : $100,147.19
+2026-07-09 12:45:42,670  INFO      Current price   : $406.80
+2026-07-09 12:45:42,670  INFO      Open position   : None
+2026-07-09 12:45:42,805  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:45:42,805  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:50:43,048  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:55:43,049  INFO      =======================================================
+2026-07-09 12:55:43,049  INFO      Daily signal run  [2026-07-09 12:55]
+2026-07-09 12:55:43,049  INFO      =======================================================
+2026-07-09 12:55:43,429  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:55:43,605  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 12:55:43,728  INFO      Portfolio value : $100,067.29
+2026-07-09 12:55:43,728  INFO      Current price   : $407.59
+2026-07-09 12:55:43,728  INFO      Open position   : None
+2026-07-09 12:55:43,875  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:55:43,876  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:00:44,117  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:05:44,117  INFO      =======================================================
+2026-07-09 13:05:44,118  INFO      Daily signal run  [2026-07-09 13:05]
+2026-07-09 13:05:44,118  INFO      =======================================================
+2026-07-09 13:05:44,488  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:05:44,731  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 13:05:44,856  INFO      Portfolio value : $100,042.93
+2026-07-09 13:05:44,856  INFO      Current price   : $406.87
+2026-07-09 13:05:44,856  INFO      Open position   : None
+2026-07-09 13:05:44,987  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:05:44,987  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:10:45,179  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:15:45,180  INFO      =======================================================
+2026-07-09 13:15:45,180  INFO      Daily signal run  [2026-07-09 13:15]
+2026-07-09 13:15:45,180  INFO      =======================================================
+2026-07-09 13:15:45,519  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:15:45,680  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 13:15:45,806  INFO      Portfolio value : $100,037.22
+2026-07-09 13:15:45,807  INFO      Current price   : $406.45
+2026-07-09 13:15:45,807  INFO      Open position   : None
+2026-07-09 13:15:45,934  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:15:45,934  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:20:46,121  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:25:46,122  INFO      =======================================================
+2026-07-09 13:25:46,122  INFO      Daily signal run  [2026-07-09 13:25]
+2026-07-09 13:25:46,122  INFO      =======================================================
+2026-07-09 13:25:46,511  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:25:46,735  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 13:25:46,859  INFO      Portfolio value : $100,085.88
+2026-07-09 13:25:46,859  INFO      Current price   : $406.11
+2026-07-09 13:25:46,859  INFO      Open position   : None
+2026-07-09 13:25:46,995  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:25:46,996  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:30:47,185  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:35:47,185  INFO      =======================================================
+2026-07-09 13:35:47,186  INFO      Daily signal run  [2026-07-09 13:35]
+2026-07-09 13:35:47,186  INFO      =======================================================
+2026-07-09 13:35:47,575  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:35:47,756  INFO      Signal: BUY  |  Confidence: 0.649
+2026-07-09 13:35:47,894  INFO      Portfolio value : $100,093.13
+2026-07-09 13:35:47,894  INFO      Current price   : $406.23
+2026-07-09 13:35:47,894  INFO      Open position   : None
+2026-07-09 13:35:48,037  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:35:48,038  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:40:48,227  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:45:48,228  INFO      =======================================================
+2026-07-09 13:45:48,228  INFO      Daily signal run  [2026-07-09 13:45]
+2026-07-09 13:45:48,228  INFO      =======================================================
+2026-07-09 13:45:48,673  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:45:48,862  INFO      Signal: BUY  |  Confidence: 0.594
+2026-07-09 13:45:48,995  INFO      Portfolio value : $100,112.69
+2026-07-09 13:45:48,996  INFO      Current price   : $404.82
+2026-07-09 13:45:48,996  INFO      Open position   : None
+2026-07-09 13:45:49,177  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:45:49,178  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:50:49,414  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:55:49,415  INFO      =======================================================
+2026-07-09 13:55:49,415  INFO      Daily signal run  [2026-07-09 13:55]
+2026-07-09 13:55:49,415  INFO      =======================================================
+2026-07-09 13:55:49,860  INFO      Fetched 70 bars for TSLA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:55:50,049  INFO      Signal: BUY  |  Confidence: 0.594
+2026-07-09 13:55:50,167  INFO      Portfolio value : $100,129.29
+2026-07-09 13:55:50,167  INFO      Current price   : $405.55
+2026-07-09 13:55:50,167  INFO      Open position   : None
+2026-07-09 13:55:50,305  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:55:50,305  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 14:00:50,505  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 15:00:50,705  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 16:00:50,902  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:00:51,124  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:21:41,646  INFO      [TSLA] Process started  PID=3676
+2026-07-09 17:21:41,649  INFO      [TSLA] Config loaded — max alloc 28%  stop 2.5%
+2026-07-09 17:21:41,649  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-09 17:21:41,649  INFO         Mode    : PAPER
+2026-07-09 17:21:41,649  INFO         Ticker  : TSLA
+2026-07-09 17:21:41,649  INFO         Chromosome : TSLA_best_chromosome.csv
+2026-07-09 17:21:41,649  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-09 17:21:41,657  INFO      Chromosome loaded from TSLA_best_chromosome.csv  (34 genes)
+2026-07-09 17:21:41,848  INFO      Market closed. Next open in 60 min. Sleeping...

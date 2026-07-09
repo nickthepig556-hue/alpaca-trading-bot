@@ -2316,3 +2316,834 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-08 18:13:08,525  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
 2026-07-08 18:13:08,525  INFO      [ES] Signal complete. Sleeping 600s...
 2026-07-08 18:16:47,721  INFO      [ES] Futures bot stopped by user
+2026-07-08 18:17:15,549  INFO      [FUTURES BOT] Starting: ES (E-mini S&P 500 Futures)
+2026-07-08 18:17:15,549  INFO        Mode       : PAPER
+2026-07-08 18:17:15,549  INFO        Max leverage: 20.0x
+2026-07-08 18:17:15,549  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-08 18:17:15,551  INFO        Evolved leverage: 4.1x
+2026-07-08 18:17:15,551  INFO        Stop width: 6.4%
+2026-07-08 18:17:15,551  INFO      [ES] Bot running — checking every 10 minutes
+2026-07-08 18:17:15,551  INFO      [ES] ── Signal check 18:17 ──
+2026-07-08 18:17:15,898  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 18:17:16,449  INFO      [ES] Portfolio=$99,578.89  Price=$7529.25  Position=None
+2026-07-08 18:17:16,449  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,937)
+2026-07-08 18:17:16,449  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 18:17:16,449  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 18:27:16,450  INFO      [ES] ── Signal check 18:27 ──
+2026-07-08 18:27:16,760  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 18:27:17,368  INFO      [ES] Portfolio=$99,486.18  Price=$7530.50  Position=None
+2026-07-08 18:27:17,369  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,923)
+2026-07-08 18:27:17,369  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 18:27:17,369  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 18:37:17,370  INFO      [ES] ── Signal check 18:37 ──
+2026-07-08 18:37:17,537  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 18:37:18,006  INFO      [ES] Portfolio=$99,527.32  Price=$7530.75  Position=None
+2026-07-08 18:37:18,006  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,929)
+2026-07-08 18:37:18,006  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 18:37:18,007  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 18:47:18,007  INFO      [ES] ── Signal check 18:47 ──
+2026-07-08 18:47:18,187  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 18:47:18,647  INFO      [ES] Portfolio=$99,523.84  Price=$7535.00  Position=None
+2026-07-08 18:47:18,647  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,929)
+2026-07-08 18:47:18,647  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 18:47:18,647  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 18:57:18,648  INFO      [ES] ── Signal check 18:57 ──
+2026-07-08 18:57:18,813  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 18:57:19,274  INFO      [ES] Portfolio=$99,359.79  Price=$7534.00  Position=None
+2026-07-08 18:57:19,274  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,904)
+2026-07-08 18:57:19,274  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 18:57:19,274  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:07:19,275  INFO      [ES] ── Signal check 19:07 ──
+2026-07-08 19:07:19,483  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:07:20,010  INFO      [ES] Portfolio=$99,286.35  Price=$7530.00  Position=None
+2026-07-08 19:07:20,010  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,893)
+2026-07-08 19:07:20,010  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:07:20,010  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:17:20,010  INFO      [ES] ── Signal check 19:17 ──
+2026-07-08 19:17:20,259  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:17:20,749  INFO      [ES] Portfolio=$99,437.65  Price=$7532.75  Position=None
+2026-07-08 19:17:20,749  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,916)
+2026-07-08 19:17:20,749  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:17:20,749  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:27:20,749  INFO      [ES] ── Signal check 19:27 ──
+2026-07-08 19:27:20,945  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:27:21,504  INFO      [ES] Portfolio=$99,458.95  Price=$7533.25  Position=None
+2026-07-08 19:27:21,504  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,919)
+2026-07-08 19:27:21,504  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:27:21,504  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:37:21,505  INFO      [ES] ── Signal check 19:37 ──
+2026-07-08 19:37:21,669  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:37:22,200  INFO      [ES] Portfolio=$99,453.18  Price=$7531.25  Position=None
+2026-07-08 19:37:22,201  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,918)
+2026-07-08 19:37:22,201  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:37:22,201  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:47:22,201  INFO      [ES] ── Signal check 19:47 ──
+2026-07-08 19:47:22,387  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:47:22,926  INFO      [ES] Portfolio=$99,481.42  Price=$7534.50  Position=None
+2026-07-08 19:47:22,927  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,922)
+2026-07-08 19:47:22,927  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:47:22,927  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 19:57:22,927  INFO      [ES] ── Signal check 19:57 ──
+2026-07-08 19:57:23,112  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 19:57:23,650  INFO      [ES] Portfolio=$99,226.39  Price=$7536.50  Position=None
+2026-07-08 19:57:23,650  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,884)
+2026-07-08 19:57:23,650  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 19:57:23,650  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:07:23,651  INFO      [ES] ── Signal check 20:07 ──
+2026-07-08 20:07:23,836  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:07:24,336  INFO      [ES] Portfolio=$99,261.98  Price=$7529.75  Position=None
+2026-07-08 20:07:24,337  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,889)
+2026-07-08 20:07:24,337  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:07:24,337  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:17:24,337  INFO      [ES] ── Signal check 20:17 ──
+2026-07-08 20:17:24,512  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:17:25,022  INFO      [ES] Portfolio=$99,559.84  Price=$7532.25  Position=None
+2026-07-08 20:17:25,023  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,934)
+2026-07-08 20:17:25,023  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:17:25,023  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:27:25,023  INFO      [ES] ── Signal check 20:27 ──
+2026-07-08 20:27:25,207  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:27:25,682  INFO      [ES] Portfolio=$99,552.60  Price=$7538.50  Position=None
+2026-07-08 20:27:25,682  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,933)
+2026-07-08 20:27:25,683  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:27:25,683  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:37:25,684  INFO      [ES] ── Signal check 20:37 ──
+2026-07-08 20:37:25,922  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:37:26,515  INFO      [ES] Portfolio=$99,443.11  Price=$7538.50  Position=None
+2026-07-08 20:37:26,515  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,916)
+2026-07-08 20:37:26,515  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:37:26,515  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:47:26,516  INFO      [ES] ── Signal check 20:47 ──
+2026-07-08 20:47:26,713  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:47:27,235  INFO      [ES] Portfolio=$99,322.64  Price=$7534.50  Position=None
+2026-07-08 20:47:27,236  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,898)
+2026-07-08 20:47:27,236  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:47:27,236  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 20:57:27,237  INFO      [ES] ── Signal check 20:57 ──
+2026-07-08 20:57:27,390  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 20:57:27,847  INFO      [ES] Portfolio=$99,204.72  Price=$7531.00  Position=None
+2026-07-08 20:57:27,848  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,881)
+2026-07-08 20:57:27,848  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 20:57:27,848  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:07:27,848  INFO      [ES] ── Signal check 21:07 ──
+2026-07-08 21:07:28,026  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:07:28,605  INFO      [ES] Portfolio=$99,154.85  Price=$7530.00  Position=None
+2026-07-08 21:07:28,605  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,873)
+2026-07-08 21:07:28,605  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:07:28,605  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:17:28,607  INFO      [ES] ── Signal check 21:17 ──
+2026-07-08 21:17:28,827  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:17:29,284  INFO      [ES] Portfolio=$99,056.95  Price=$7528.25  Position=None
+2026-07-08 21:17:29,284  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,859)
+2026-07-08 21:17:29,285  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:17:29,285  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:27:29,286  INFO      [ES] ── Signal check 21:27 ──
+2026-07-08 21:27:29,473  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:27:29,974  INFO      [ES] Portfolio=$99,187.25  Price=$7527.25  Position=None
+2026-07-08 21:27:29,974  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,878)
+2026-07-08 21:27:29,974  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:27:29,974  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:37:29,975  INFO      [ES] ── Signal check 21:37 ──
+2026-07-08 21:37:30,165  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:37:30,690  INFO      [ES] Portfolio=$99,324.26  Price=$7534.75  Position=None
+2026-07-08 21:37:30,690  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,899)
+2026-07-08 21:37:30,690  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:37:30,691  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:47:30,691  INFO      [ES] ── Signal check 21:47 ──
+2026-07-08 21:47:30,874  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:47:31,418  INFO      [ES] Portfolio=$99,399.02  Price=$7537.25  Position=None
+2026-07-08 21:47:31,418  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,910)
+2026-07-08 21:47:31,418  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:47:31,419  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 21:57:31,420  INFO      [ES] ── Signal check 21:57 ──
+2026-07-08 21:57:31,556  INFO      [ES] Signal: LONG  |  Confidence: 0.570  |  Leverage: 1.59x
+2026-07-08 21:57:32,059  INFO      [ES] Portfolio=$99,421.70  Price=$7538.00  Position=None
+2026-07-08 21:57:32,059  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.6x, exposure=$14,913)
+2026-07-08 21:57:32,059  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 21:57:32,059  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:07:32,060  INFO      [ES] ── Signal check 22:07 ──
+2026-07-08 22:07:32,234  INFO      [ES] Signal: LONG  |  Confidence: 0.596  |  Leverage: 1.62x
+2026-07-08 22:07:32,660  WARNING   [ES] Could not get price — skipping
+2026-07-08 22:07:32,660  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:17:32,661  INFO      [ES] ── Signal check 22:17 ──
+2026-07-08 22:17:32,861  INFO      [ES] Signal: LONG  |  Confidence: 0.596  |  Leverage: 1.62x
+2026-07-08 22:17:33,292  WARNING   [ES] Could not get price — skipping
+2026-07-08 22:17:33,293  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:27:33,293  INFO      [ES] ── Signal check 22:27 ──
+2026-07-08 22:27:33,508  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 22:27:33,952  INFO      [ES] Portfolio=$99,325.62  Price=$7538.75  Position=None
+2026-07-08 22:27:33,953  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,899)
+2026-07-08 22:27:33,953  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 22:27:33,953  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:37:33,954  INFO      [ES] ── Signal check 22:37 ──
+2026-07-08 22:37:34,139  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 22:37:34,578  INFO      [ES] Portfolio=$99,515.93  Price=$7536.00  Position=None
+2026-07-08 22:37:34,578  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,927)
+2026-07-08 22:37:34,578  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 22:37:34,578  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:47:34,579  INFO      [ES] ── Signal check 22:47 ──
+2026-07-08 22:47:34,743  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 22:47:35,176  INFO      [ES] Portfolio=$99,559.46  Price=$7542.00  Position=None
+2026-07-08 22:47:35,177  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,934)
+2026-07-08 22:47:35,177  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 22:47:35,177  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 22:57:35,185  INFO      [ES] ── Signal check 22:57 ──
+2026-07-08 22:57:35,318  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 22:57:35,703  INFO      [ES] Portfolio=$99,652.19  Price=$7542.75  Position=None
+2026-07-08 22:57:35,703  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,948)
+2026-07-08 22:57:35,703  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 22:57:35,703  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:07:35,703  INFO      [ES] ── Signal check 23:07 ──
+2026-07-08 23:07:35,885  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:07:36,314  INFO      [ES] Portfolio=$99,602.46  Price=$7545.75  Position=None
+2026-07-08 23:07:36,315  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,940)
+2026-07-08 23:07:36,315  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:07:36,315  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:17:36,316  INFO      [ES] ── Signal check 23:17 ──
+2026-07-08 23:17:36,460  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:17:36,857  INFO      [ES] Portfolio=$99,751.07  Price=$7541.50  Position=None
+2026-07-08 23:17:36,858  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,963)
+2026-07-08 23:17:36,858  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:17:36,858  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:27:36,859  INFO      [ES] ── Signal check 23:27 ──
+2026-07-08 23:27:37,036  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:27:38,460  INFO      [ES] Portfolio=$99,651.80  Price=$7544.75  Position=None
+2026-07-08 23:27:38,460  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,948)
+2026-07-08 23:27:38,460  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:27:38,460  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:37:38,462  INFO      [ES] ── Signal check 23:37 ──
+2026-07-08 23:37:38,666  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:37:39,096  INFO      [ES] Portfolio=$99,605.42  Price=$7542.75  Position=None
+2026-07-08 23:37:39,096  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,941)
+2026-07-08 23:37:39,096  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:37:39,096  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:47:39,097  INFO      [ES] ── Signal check 23:47 ──
+2026-07-08 23:47:39,308  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:47:39,768  INFO      [ES] Portfolio=$99,734.97  Price=$7542.50  Position=None
+2026-07-08 23:47:39,769  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,960)
+2026-07-08 23:47:39,769  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:47:39,769  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-08 23:57:39,770  INFO      [ES] ── Signal check 23:57 ──
+2026-07-08 23:57:39,988  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-08 23:57:40,418  INFO      [ES] Portfolio=$99,908.02  Price=$7546.75  Position=None
+2026-07-08 23:57:40,418  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,986)
+2026-07-08 23:57:40,418  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-08 23:57:40,418  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:07:40,419  INFO      [ES] ── Signal check 00:07 ──
+2026-07-09 00:07:40,605  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:07:41,024  INFO      [ES] Portfolio=$99,950.43  Price=$7550.50  Position=None
+2026-07-09 00:07:41,024  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,993)
+2026-07-09 00:07:41,024  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:07:41,025  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:17:41,025  INFO      [ES] ── Signal check 00:17 ──
+2026-07-09 00:17:41,182  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:17:41,565  INFO      [ES] Portfolio=$100,095.77  Price=$7547.75  Position=None
+2026-07-09 00:17:41,567  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,014)
+2026-07-09 00:17:41,567  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:17:41,567  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:27:41,567  INFO      [ES] ── Signal check 00:27 ──
+2026-07-09 00:27:41,748  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:27:42,172  INFO      [ES] Portfolio=$100,140.66  Price=$7552.25  Position=None
+2026-07-09 00:27:42,172  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,021)
+2026-07-09 00:27:42,172  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:27:42,172  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:37:42,172  INFO      [ES] ── Signal check 00:37 ──
+2026-07-09 00:37:42,364  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:37:42,786  INFO      [ES] Portfolio=$100,090.21  Price=$7552.00  Position=None
+2026-07-09 00:37:42,786  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,014)
+2026-07-09 00:37:42,786  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:37:42,786  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:47:42,787  INFO      [ES] ── Signal check 00:47 ──
+2026-07-09 00:47:42,971  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:47:43,399  INFO      [ES] Portfolio=$100,075.72  Price=$7551.50  Position=None
+2026-07-09 00:47:43,400  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,011)
+2026-07-09 00:47:43,400  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:47:43,400  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 00:57:43,400  INFO      [ES] ── Signal check 00:57 ──
+2026-07-09 00:57:43,570  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 00:57:44,021  INFO      [ES] Portfolio=$100,051.04  Price=$7550.25  Position=None
+2026-07-09 00:57:44,021  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,008)
+2026-07-09 00:57:44,021  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 00:57:44,021  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:07:44,022  INFO      [ES] ── Signal check 01:07 ──
+2026-07-09 01:07:44,238  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:07:44,672  INFO      [ES] Portfolio=$100,071.50  Price=$7548.75  Position=None
+2026-07-09 01:07:44,672  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,011)
+2026-07-09 01:07:44,672  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:07:44,672  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:17:44,673  INFO      [ES] ── Signal check 01:17 ──
+2026-07-09 01:17:44,851  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:17:45,248  INFO      [ES] Portfolio=$100,111.98  Price=$7550.50  Position=None
+2026-07-09 01:17:45,248  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,017)
+2026-07-09 01:17:45,248  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:17:45,248  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:27:45,248  INFO      [ES] ── Signal check 01:27 ──
+2026-07-09 01:27:45,425  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:27:45,865  INFO      [ES] Portfolio=$100,093.25  Price=$7553.50  Position=None
+2026-07-09 01:27:45,865  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,014)
+2026-07-09 01:27:45,865  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:27:45,865  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:37:45,865  INFO      [ES] ── Signal check 01:37 ──
+2026-07-09 01:37:46,213  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:37:46,966  INFO      [ES] Portfolio=$100,065.23  Price=$7552.75  Position=None
+2026-07-09 01:37:46,966  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,010)
+2026-07-09 01:37:46,967  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:37:46,967  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:47:46,967  INFO      [ES] ── Signal check 01:47 ──
+2026-07-09 01:47:47,156  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:47:47,586  INFO      [ES] Portfolio=$100,165.63  Price=$7549.75  Position=None
+2026-07-09 01:47:47,588  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,025)
+2026-07-09 01:47:47,588  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:47:47,588  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 01:57:47,589  INFO      [ES] ── Signal check 01:57 ──
+2026-07-09 01:57:47,766  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 01:57:48,171  INFO      [ES] Portfolio=$100,146.69  Price=$7555.75  Position=None
+2026-07-09 01:57:48,171  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,022)
+2026-07-09 01:57:48,171  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 01:57:48,171  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:07:48,172  INFO      [ES] ── Signal check 02:07 ──
+2026-07-09 02:07:48,403  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:07:48,833  INFO      [ES] Portfolio=$100,237.67  Price=$7553.00  Position=None
+2026-07-09 02:07:48,833  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,036)
+2026-07-09 02:07:48,834  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:07:48,834  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:17:48,834  INFO      [ES] ── Signal check 02:17 ──
+2026-07-09 02:17:49,046  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:17:49,482  INFO      [ES] Portfolio=$100,241.38  Price=$7556.50  Position=None
+2026-07-09 02:17:49,482  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,036)
+2026-07-09 02:17:49,482  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:17:49,482  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:27:49,483  INFO      [ES] ── Signal check 02:27 ──
+2026-07-09 02:27:49,673  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:27:50,112  INFO      [ES] Portfolio=$100,164.19  Price=$7556.25  Position=None
+2026-07-09 02:27:50,112  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,025)
+2026-07-09 02:27:50,112  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:27:50,113  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:37:50,116  INFO      [ES] ── Signal check 02:37 ──
+2026-07-09 02:37:50,275  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:37:50,733  INFO      [ES] Portfolio=$100,019.09  Price=$7554.00  Position=None
+2026-07-09 02:37:50,733  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,003)
+2026-07-09 02:37:50,733  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:37:50,734  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:47:50,734  INFO      [ES] ── Signal check 02:47 ──
+2026-07-09 02:47:51,011  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:47:51,447  INFO      [ES] Portfolio=$99,807.49  Price=$7548.00  Position=None
+2026-07-09 02:47:51,448  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,971)
+2026-07-09 02:47:51,448  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:47:51,448  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 02:57:51,449  INFO      [ES] ── Signal check 02:57 ──
+2026-07-09 02:57:51,636  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 02:57:52,026  INFO      [ES] Portfolio=$99,859.27  Price=$7543.00  Position=None
+2026-07-09 02:57:52,026  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,979)
+2026-07-09 02:57:52,026  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 02:57:52,026  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:07:52,027  INFO      [ES] ── Signal check 03:07 ──
+2026-07-09 03:07:52,389  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:07:52,841  INFO      [ES] Portfolio=$99,807.52  Price=$7544.75  Position=None
+2026-07-09 03:07:52,841  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,971)
+2026-07-09 03:07:52,841  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:07:52,841  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:17:52,842  INFO      [ES] ── Signal check 03:17 ──
+2026-07-09 03:17:53,039  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:17:53,485  INFO      [ES] Portfolio=$99,783.33  Price=$7542.50  Position=None
+2026-07-09 03:17:53,485  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,967)
+2026-07-09 03:17:53,485  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:17:53,485  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:27:53,485  INFO      [ES] ── Signal check 03:27 ──
+2026-07-09 03:27:53,630  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:27:54,206  INFO      [ES] Portfolio=$99,809.42  Price=$7541.50  Position=None
+2026-07-09 03:27:54,206  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,971)
+2026-07-09 03:27:54,207  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:27:54,207  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:37:54,207  INFO      [ES] ── Signal check 03:37 ──
+2026-07-09 03:37:54,355  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:37:54,778  INFO      [ES] Portfolio=$99,737.69  Price=$7542.00  Position=None
+2026-07-09 03:37:54,778  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,961)
+2026-07-09 03:37:54,778  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:37:54,779  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:47:54,780  INFO      [ES] ── Signal check 03:47 ──
+2026-07-09 03:47:54,956  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:47:55,387  INFO      [ES] Portfolio=$99,725.57  Price=$7538.50  Position=None
+2026-07-09 03:47:55,387  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,959)
+2026-07-09 03:47:55,387  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:47:55,387  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 03:57:55,388  INFO      [ES] ── Signal check 03:57 ──
+2026-07-09 03:57:55,545  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 03:57:55,953  INFO      [ES] Portfolio=$99,825.34  Price=$7539.00  Position=None
+2026-07-09 03:57:55,954  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,974)
+2026-07-09 03:57:55,954  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 03:57:55,954  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:07:55,954  INFO      [ES] ── Signal check 04:07 ──
+2026-07-09 04:07:56,134  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:07:56,615  INFO      [ES] Portfolio=$99,835.21  Price=$7541.75  Position=None
+2026-07-09 04:07:56,615  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,975)
+2026-07-09 04:07:56,615  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:07:56,615  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:17:56,621  INFO      [ES] ── Signal check 04:17 ──
+2026-07-09 04:17:56,818  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:17:57,237  INFO      [ES] Portfolio=$99,815.19  Price=$7540.50  Position=None
+2026-07-09 04:17:57,237  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,972)
+2026-07-09 04:17:57,238  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:17:57,238  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:27:57,238  INFO      [ES] ── Signal check 04:27 ──
+2026-07-09 04:27:57,449  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:27:57,878  INFO      [ES] Portfolio=$99,759.41  Price=$7543.25  Position=None
+2026-07-09 04:27:57,879  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,964)
+2026-07-09 04:27:57,879  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:27:57,879  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:37:57,882  INFO      [ES] ── Signal check 04:37 ──
+2026-07-09 04:37:58,102  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:37:58,605  INFO      [ES] Portfolio=$99,775.60  Price=$7540.50  Position=None
+2026-07-09 04:37:58,605  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,966)
+2026-07-09 04:37:58,605  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:37:58,605  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:47:58,607  INFO      [ES] ── Signal check 04:47 ──
+2026-07-09 04:47:58,805  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:47:59,249  INFO      [ES] Portfolio=$99,581.89  Price=$7540.25  Position=None
+2026-07-09 04:47:59,250  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,937)
+2026-07-09 04:47:59,250  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:47:59,250  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 04:57:59,251  INFO      [ES] ── Signal check 04:57 ──
+2026-07-09 04:57:59,433  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 04:57:59,828  INFO      [ES] Portfolio=$99,390.75  Price=$7535.00  Position=None
+2026-07-09 04:57:59,831  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,909)
+2026-07-09 04:57:59,831  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 04:57:59,831  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:07:59,832  INFO      [ES] ── Signal check 05:07 ──
+2026-07-09 05:08:00,040  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:08:00,477  INFO      [ES] Portfolio=$99,469.33  Price=$7530.75  Position=None
+2026-07-09 05:08:00,478  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,920)
+2026-07-09 05:08:00,478  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:08:00,478  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:18:00,478  INFO      [ES] ── Signal check 05:18 ──
+2026-07-09 05:18:00,643  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:18:01,076  INFO      [ES] Portfolio=$99,551.37  Price=$7532.50  Position=None
+2026-07-09 05:18:01,076  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,933)
+2026-07-09 05:18:01,076  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:18:01,076  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:28:01,077  INFO      [ES] ── Signal check 05:28 ──
+2026-07-09 05:28:01,244  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:28:01,762  INFO      [ES] Portfolio=$99,539.57  Price=$7536.25  Position=None
+2026-07-09 05:28:01,762  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,931)
+2026-07-09 05:28:01,763  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:28:01,763  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:38:01,763  INFO      [ES] ── Signal check 05:38 ──
+2026-07-09 05:38:01,945  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:38:02,378  INFO      [ES] Portfolio=$99,573.10  Price=$7537.00  Position=None
+2026-07-09 05:38:02,380  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,936)
+2026-07-09 05:38:02,380  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:38:02,380  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:48:02,380  INFO      [ES] ── Signal check 05:48 ──
+2026-07-09 05:48:02,556  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:48:02,979  INFO      [ES] Portfolio=$99,736.70  Price=$7537.25  Position=None
+2026-07-09 05:48:02,979  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,961)
+2026-07-09 05:48:02,979  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:48:02,979  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 05:58:02,980  INFO      [ES] ── Signal check 05:58 ──
+2026-07-09 05:58:03,164  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 05:58:03,592  INFO      [ES] Portfolio=$99,748.44  Price=$7544.25  Position=None
+2026-07-09 05:58:03,593  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,962)
+2026-07-09 05:58:03,593  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 05:58:03,593  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:08:03,594  INFO      [ES] ── Signal check 06:08 ──
+2026-07-09 06:08:03,799  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:08:04,266  INFO      [ES] Portfolio=$99,748.58  Price=$7543.75  Position=None
+2026-07-09 06:08:04,267  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,962)
+2026-07-09 06:08:04,267  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:08:04,268  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:18:04,269  INFO      [ES] ── Signal check 06:18 ──
+2026-07-09 06:18:04,424  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:18:04,875  INFO      [ES] Portfolio=$99,727.98  Price=$7546.50  Position=None
+2026-07-09 06:18:04,875  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,959)
+2026-07-09 06:18:04,876  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:18:04,876  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:28:04,876  INFO      [ES] ── Signal check 06:28 ──
+2026-07-09 06:28:05,046  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:28:05,532  INFO      [ES] Portfolio=$99,771.82  Price=$7546.75  Position=None
+2026-07-09 06:28:05,533  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,966)
+2026-07-09 06:28:05,533  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:28:05,533  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:38:05,534  INFO      [ES] ── Signal check 06:38 ──
+2026-07-09 06:38:05,734  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:38:06,202  INFO      [ES] Portfolio=$99,957.42  Price=$7549.75  Position=None
+2026-07-09 06:38:06,202  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,994)
+2026-07-09 06:38:06,202  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:38:06,202  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:48:06,203  INFO      [ES] ── Signal check 06:48 ──
+2026-07-09 06:48:06,377  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:48:06,838  INFO      [ES] Portfolio=$99,713.97  Price=$7553.50  Position=None
+2026-07-09 06:48:06,839  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,957)
+2026-07-09 06:48:06,839  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:48:06,839  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 06:58:06,840  INFO      [ES] ── Signal check 06:58 ──
+2026-07-09 06:58:07,048  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 06:58:07,521  INFO      [ES] Portfolio=$99,659.88  Price=$7544.75  Position=None
+2026-07-09 06:58:07,521  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,949)
+2026-07-09 06:58:07,521  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 06:58:07,522  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:08:07,522  INFO      [ES] ── Signal check 07:08 ──
+2026-07-09 07:08:07,712  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:08:08,149  INFO      [ES] Portfolio=$99,577.91  Price=$7545.00  Position=None
+2026-07-09 07:08:08,150  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,937)
+2026-07-09 07:08:08,150  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:08:08,150  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:18:08,151  INFO      [ES] ── Signal check 07:18 ──
+2026-07-09 07:18:08,319  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:18:08,753  INFO      [ES] Portfolio=$99,741.47  Price=$7546.25  Position=None
+2026-07-09 07:18:08,754  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,961)
+2026-07-09 07:18:08,754  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:18:08,754  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:28:08,755  INFO      [ES] ── Signal check 07:28 ──
+2026-07-09 07:28:08,945  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:28:09,363  INFO      [ES] Portfolio=$99,560.45  Price=$7546.50  Position=None
+2026-07-09 07:28:09,364  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,934)
+2026-07-09 07:28:09,364  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:28:09,364  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:38:09,365  INFO      [ES] ── Signal check 07:38 ──
+2026-07-09 07:38:09,556  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:38:10,068  INFO      [ES] Portfolio=$99,735.38  Price=$7546.50  Position=None
+2026-07-09 07:38:10,068  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,960)
+2026-07-09 07:38:10,068  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:38:10,068  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:48:10,068  INFO      [ES] ── Signal check 07:48 ──
+2026-07-09 07:48:10,242  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:48:10,676  INFO      [ES] Portfolio=$99,795.78  Price=$7554.25  Position=None
+2026-07-09 07:48:10,676  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,969)
+2026-07-09 07:48:10,676  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:48:10,676  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 07:58:10,676  INFO      [ES] ── Signal check 07:58 ──
+2026-07-09 07:58:10,885  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 07:58:11,371  INFO      [ES] Portfolio=$99,883.86  Price=$7558.75  Position=None
+2026-07-09 07:58:11,372  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,983)
+2026-07-09 07:58:11,372  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 07:58:11,372  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:08:11,372  INFO      [ES] ── Signal check 08:08 ──
+2026-07-09 08:08:11,548  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:08:12,015  INFO      [ES] Portfolio=$99,706.68  Price=$7563.00  Position=None
+2026-07-09 08:08:12,015  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,956)
+2026-07-09 08:08:12,015  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:08:12,015  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:18:12,016  INFO      [ES] ── Signal check 08:18 ──
+2026-07-09 08:18:12,204  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:18:12,634  INFO      [ES] Portfolio=$99,142.96  Price=$7557.25  Position=None
+2026-07-09 08:18:12,634  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,871)
+2026-07-09 08:18:12,635  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:18:12,635  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:28:12,636  INFO      [ES] ── Signal check 08:28 ──
+2026-07-09 08:28:12,882  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:28:13,472  INFO      [ES] Portfolio=$99,311.84  Price=$7537.50  Position=None
+2026-07-09 08:28:13,473  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,897)
+2026-07-09 08:28:13,473  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:28:13,473  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:38:13,473  INFO      [ES] ── Signal check 08:38 ──
+2026-07-09 08:38:13,672  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:38:14,152  INFO      [ES] Portfolio=$99,311.25  Price=$7549.75  Position=None
+2026-07-09 08:38:14,152  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,897)
+2026-07-09 08:38:14,152  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:38:14,153  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:48:14,153  INFO      [ES] ── Signal check 08:48 ──
+2026-07-09 08:48:14,371  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:48:14,803  INFO      [ES] Portfolio=$99,387.02  Price=$7551.25  Position=None
+2026-07-09 08:48:14,803  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,908)
+2026-07-09 08:48:14,803  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:48:14,803  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 08:58:14,803  INFO      [ES] ── Signal check 08:58 ──
+2026-07-09 08:58:15,137  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 08:58:15,902  INFO      [ES] Portfolio=$99,455.18  Price=$7554.75  Position=None
+2026-07-09 08:58:15,905  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,918)
+2026-07-09 08:58:15,905  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 08:58:15,905  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:08:15,906  INFO      [ES] ── Signal check 09:08 ──
+2026-07-09 09:08:16,107  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:08:16,564  INFO      [ES] Portfolio=$99,605.35  Price=$7559.75  Position=None
+2026-07-09 09:08:16,565  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,941)
+2026-07-09 09:08:16,565  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:08:16,565  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:18:16,566  INFO      [ES] ── Signal check 09:18 ──
+2026-07-09 09:18:16,757  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:18:17,192  INFO      [ES] Portfolio=$99,673.50  Price=$7567.50  Position=None
+2026-07-09 09:18:17,192  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,951)
+2026-07-09 09:18:17,192  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:18:17,193  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:28:17,193  INFO      [ES] ── Signal check 09:28 ──
+2026-07-09 09:28:17,372  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:28:17,856  INFO      [ES] Portfolio=$99,890.97  Price=$7566.25  Position=None
+2026-07-09 09:28:17,856  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,984)
+2026-07-09 09:28:17,856  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:28:17,856  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:38:17,857  INFO      [ES] ── Signal check 09:38 ──
+2026-07-09 09:38:18,044  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:38:18,563  INFO      [ES] Portfolio=$99,849.11  Price=$7574.50  Position=None
+2026-07-09 09:38:18,572  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,977)
+2026-07-09 09:38:18,573  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:38:18,573  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:48:18,573  INFO      [ES] ── Signal check 09:48 ──
+2026-07-09 09:48:18,756  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:48:19,231  INFO      [ES] Portfolio=$99,903.86  Price=$7573.00  Position=None
+2026-07-09 09:48:19,231  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,986)
+2026-07-09 09:48:19,231  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:48:19,231  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 09:58:19,232  INFO      [ES] ── Signal check 09:58 ──
+2026-07-09 09:58:19,432  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 09:58:19,901  INFO      [ES] Portfolio=$99,897.73  Price=$7575.00  Position=None
+2026-07-09 09:58:19,902  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,985)
+2026-07-09 09:58:19,902  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 09:58:19,902  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:08:19,902  INFO      [ES] ── Signal check 10:08 ──
+2026-07-09 10:08:20,079  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:08:20,558  INFO      [ES] Portfolio=$99,964.02  Price=$7575.00  Position=None
+2026-07-09 10:08:20,558  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,995)
+2026-07-09 10:08:20,558  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:08:20,558  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:18:20,559  INFO      [ES] ── Signal check 10:18 ──
+2026-07-09 10:18:20,734  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:18:21,258  INFO      [ES] Portfolio=$99,941.90  Price=$7580.50  Position=None
+2026-07-09 10:18:21,258  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,991)
+2026-07-09 10:18:21,258  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:18:21,258  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:28:21,259  INFO      [ES] ── Signal check 10:28 ──
+2026-07-09 10:28:21,467  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:28:21,906  INFO      [ES] Portfolio=$99,949.69  Price=$7580.50  Position=None
+2026-07-09 10:28:21,906  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,992)
+2026-07-09 10:28:21,906  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:28:21,906  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:38:21,907  INFO      [ES] ── Signal check 10:38 ──
+2026-07-09 10:38:22,195  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:38:22,614  INFO      [ES] Portfolio=$99,946.61  Price=$7582.00  Position=None
+2026-07-09 10:38:22,614  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,992)
+2026-07-09 10:38:22,614  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:38:22,614  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:48:22,615  INFO      [ES] ── Signal check 10:48 ──
+2026-07-09 10:48:22,976  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:48:23,409  INFO      [ES] Portfolio=$99,961.54  Price=$7580.00  Position=None
+2026-07-09 10:48:23,409  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,994)
+2026-07-09 10:48:23,409  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:48:23,410  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 10:58:23,410  INFO      [ES] ── Signal check 10:58 ──
+2026-07-09 10:58:23,582  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 10:58:24,067  INFO      [ES] Portfolio=$99,905.43  Price=$7580.00  Position=None
+2026-07-09 10:58:24,067  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$14,986)
+2026-07-09 10:58:24,067  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 10:58:24,067  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:08:24,068  INFO      [ES] ── Signal check 11:08 ──
+2026-07-09 11:08:24,233  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:08:24,723  INFO      [ES] Portfolio=$100,059.09  Price=$7578.00  Position=None
+2026-07-09 11:08:24,723  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,009)
+2026-07-09 11:08:24,723  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:08:24,723  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:18:24,726  INFO      [ES] ── Signal check 11:18 ──
+2026-07-09 11:18:24,936  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:18:25,397  INFO      [ES] Portfolio=$100,101.93  Price=$7586.75  Position=None
+2026-07-09 11:18:25,397  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,015)
+2026-07-09 11:18:25,397  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:18:25,397  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:28:25,398  INFO      [ES] ── Signal check 11:28 ──
+2026-07-09 11:28:25,575  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:28:25,965  INFO      [ES] Portfolio=$100,160.00  Price=$7589.25  Position=None
+2026-07-09 11:28:25,966  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,024)
+2026-07-09 11:28:25,966  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:28:25,966  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:38:25,968  INFO      [ES] ── Signal check 11:38 ──
+2026-07-09 11:38:26,180  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:38:26,628  INFO      [ES] Portfolio=$100,187.83  Price=$7592.25  Position=None
+2026-07-09 11:38:26,629  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,028)
+2026-07-09 11:38:26,629  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:38:26,629  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:48:26,630  INFO      [ES] ── Signal check 11:48 ──
+2026-07-09 11:48:26,813  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:48:27,249  INFO      [ES] Portfolio=$100,226.06  Price=$7593.00  Position=None
+2026-07-09 11:48:27,249  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,034)
+2026-07-09 11:48:27,250  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:48:27,250  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 11:58:27,251  INFO      [ES] ── Signal check 11:58 ──
+2026-07-09 11:58:27,486  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 11:58:27,967  INFO      [ES] Portfolio=$100,209.53  Price=$7593.75  Position=None
+2026-07-09 11:58:27,967  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,031)
+2026-07-09 11:58:27,968  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 11:58:27,968  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:08:27,969  INFO      [ES] ── Signal check 12:08 ──
+2026-07-09 12:08:28,168  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:08:28,657  INFO      [ES] Portfolio=$100,200.02  Price=$7591.50  Position=None
+2026-07-09 12:08:28,658  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,030)
+2026-07-09 12:08:28,658  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:08:28,658  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:18:28,659  INFO      [ES] ── Signal check 12:18 ──
+2026-07-09 12:18:28,879  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:18:29,364  INFO      [ES] Portfolio=$100,157.52  Price=$7591.75  Position=None
+2026-07-09 12:18:29,365  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,024)
+2026-07-09 12:18:29,365  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:18:29,365  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:28:29,366  INFO      [ES] ── Signal check 12:28 ──
+2026-07-09 12:28:29,563  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:28:30,100  INFO      [ES] Portfolio=$100,112.07  Price=$7591.25  Position=None
+2026-07-09 12:28:30,100  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,017)
+2026-07-09 12:28:30,100  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:28:30,101  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:38:30,102  INFO      [ES] ── Signal check 12:38 ──
+2026-07-09 12:38:30,316  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:38:30,745  INFO      [ES] Portfolio=$100,125.14  Price=$7587.50  Position=None
+2026-07-09 12:38:30,745  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,019)
+2026-07-09 12:38:30,745  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:38:30,745  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:48:30,746  INFO      [ES] ── Signal check 12:48 ──
+2026-07-09 12:48:30,972  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:48:31,442  INFO      [ES] Portfolio=$100,154.06  Price=$7587.25  Position=None
+2026-07-09 12:48:31,442  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,023)
+2026-07-09 12:48:31,442  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:48:31,442  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 12:58:31,443  INFO      [ES] ── Signal check 12:58 ──
+2026-07-09 12:58:31,631  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 12:58:32,090  INFO      [ES] Portfolio=$100,069.85  Price=$7587.50  Position=None
+2026-07-09 12:58:32,090  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,010)
+2026-07-09 12:58:32,090  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 12:58:32,091  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:08:32,091  INFO      [ES] ── Signal check 13:08 ──
+2026-07-09 13:08:32,288  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:08:32,764  INFO      [ES] Portfolio=$100,045.64  Price=$7584.50  Position=None
+2026-07-09 13:08:32,764  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,007)
+2026-07-09 13:08:32,765  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:08:32,765  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:18:32,765  INFO      [ES] ── Signal check 13:18 ──
+2026-07-09 13:18:32,953  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:18:33,523  INFO      [ES] Portfolio=$100,120.99  Price=$7581.25  Position=None
+2026-07-09 13:18:33,524  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,018)
+2026-07-09 13:18:33,524  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:18:33,524  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:28:33,524  INFO      [ES] ── Signal check 13:28 ──
+2026-07-09 13:28:33,693  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:28:34,189  INFO      [ES] Portfolio=$100,081.62  Price=$7587.25  Position=None
+2026-07-09 13:28:34,189  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,012)
+2026-07-09 13:28:34,190  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:28:34,190  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:38:34,190  INFO      [ES] ── Signal check 13:38 ──
+2026-07-09 13:38:34,400  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:38:34,856  INFO      [ES] Portfolio=$100,094.22  Price=$7585.50  Position=None
+2026-07-09 13:38:34,856  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,014)
+2026-07-09 13:38:34,856  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:38:34,856  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:48:34,857  INFO      [ES] ── Signal check 13:48 ──
+2026-07-09 13:48:35,077  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:48:35,551  INFO      [ES] Portfolio=$100,141.86  Price=$7586.00  Position=None
+2026-07-09 13:48:35,551  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,021)
+2026-07-09 13:48:35,551  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:48:35,551  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 13:58:35,552  INFO      [ES] ── Signal check 13:58 ──
+2026-07-09 13:58:35,762  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 13:58:36,202  INFO      [ES] Portfolio=$100,178.70  Price=$7587.25  Position=None
+2026-07-09 13:58:36,202  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,027)
+2026-07-09 13:58:36,202  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 13:58:36,203  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:08:36,203  INFO      [ES] ── Signal check 14:08 ──
+2026-07-09 14:08:36,371  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:08:36,829  INFO      [ES] Portfolio=$100,193.07  Price=$7588.25  Position=None
+2026-07-09 14:08:36,829  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,029)
+2026-07-09 14:08:36,830  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:08:36,830  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:18:36,831  INFO      [ES] ── Signal check 14:18 ──
+2026-07-09 14:18:36,997  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:18:37,418  INFO      [ES] Portfolio=$100,153.05  Price=$7590.75  Position=None
+2026-07-09 14:18:37,418  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,023)
+2026-07-09 14:18:37,418  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:18:37,419  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:28:37,419  INFO      [ES] ── Signal check 14:28 ──
+2026-07-09 14:28:37,641  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:28:38,089  INFO      [ES] Portfolio=$100,115.44  Price=$7589.50  Position=None
+2026-07-09 14:28:38,089  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,017)
+2026-07-09 14:28:38,089  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:28:38,089  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:38:38,090  INFO      [ES] ── Signal check 14:38 ──
+2026-07-09 14:38:38,262  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:38:38,752  INFO      [ES] Portfolio=$100,138.77  Price=$7587.00  Position=None
+2026-07-09 14:38:38,752  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,021)
+2026-07-09 14:38:38,752  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:38:38,752  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:48:38,752  INFO      [ES] ── Signal check 14:48 ──
+2026-07-09 14:48:38,935  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:48:39,391  INFO      [ES] Portfolio=$100,126.27  Price=$7589.50  Position=None
+2026-07-09 14:48:39,392  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,019)
+2026-07-09 14:48:39,392  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:48:39,392  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 14:58:39,393  INFO      [ES] ── Signal check 14:58 ──
+2026-07-09 14:58:39,577  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 14:58:40,023  INFO      [ES] Portfolio=$100,128.28  Price=$7588.00  Position=None
+2026-07-09 14:58:40,024  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,019)
+2026-07-09 14:58:40,024  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 14:58:40,024  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:08:40,028  INFO      [ES] ── Signal check 15:08 ──
+2026-07-09 15:08:40,199  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:08:40,642  INFO      [ES] Portfolio=$100,138.27  Price=$7586.25  Position=None
+2026-07-09 15:08:40,642  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,021)
+2026-07-09 15:08:40,642  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:08:40,643  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:18:40,644  INFO      [ES] ── Signal check 15:18 ──
+2026-07-09 15:18:40,840  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:18:41,308  INFO      [ES] Portfolio=$100,110.76  Price=$7586.25  Position=None
+2026-07-09 15:18:41,308  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,017)
+2026-07-09 15:18:41,308  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:18:41,308  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:28:41,309  INFO      [ES] ── Signal check 15:28 ──
+2026-07-09 15:28:41,525  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:28:41,968  INFO      [ES] Portfolio=$100,101.44  Price=$7586.25  Position=None
+2026-07-09 15:28:41,969  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,015)
+2026-07-09 15:28:41,969  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:28:41,969  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:38:41,969  INFO      [ES] ── Signal check 15:38 ──
+2026-07-09 15:38:42,145  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:38:42,669  INFO      [ES] Portfolio=$100,143.06  Price=$7586.25  Position=None
+2026-07-09 15:38:42,669  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,021)
+2026-07-09 15:38:42,669  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:38:42,669  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:48:42,670  INFO      [ES] ── Signal check 15:48 ──
+2026-07-09 15:48:42,835  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:48:43,321  INFO      [ES] Portfolio=$100,093.12  Price=$7586.25  Position=None
+2026-07-09 15:48:43,321  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,014)
+2026-07-09 15:48:43,321  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:48:43,321  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 15:58:43,321  INFO      [ES] ── Signal check 15:58 ──
+2026-07-09 15:58:43,466  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 15:58:43,945  INFO      [ES] Portfolio=$100,105.29  Price=$7586.25  Position=None
+2026-07-09 15:58:43,946  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,016)
+2026-07-09 15:58:43,946  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 15:58:43,946  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:08:43,947  INFO      [ES] ── Signal check 16:08 ──
+2026-07-09 16:08:44,165  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:08:44,659  INFO      [ES] Portfolio=$100,158.14  Price=$7586.25  Position=None
+2026-07-09 16:08:44,659  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,024)
+2026-07-09 16:08:44,660  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:08:44,660  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:18:44,660  INFO      [ES] ── Signal check 16:18 ──
+2026-07-09 16:18:44,856  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:18:45,495  INFO      [ES] Portfolio=$100,111.86  Price=$7587.25  Position=None
+2026-07-09 16:18:45,497  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,017)
+2026-07-09 16:18:45,497  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:18:45,497  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:28:45,498  INFO      [ES] ── Signal check 16:28 ──
+2026-07-09 16:28:45,692  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:28:46,171  INFO      [ES] Portfolio=$100,057.31  Price=$7586.50  Position=None
+2026-07-09 16:28:46,171  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,009)
+2026-07-09 16:28:46,171  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:28:46,171  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:38:46,171  INFO      [ES] ── Signal check 16:38 ──
+2026-07-09 16:38:46,339  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:38:46,847  INFO      [ES] Portfolio=$100,067.95  Price=$7584.50  Position=None
+2026-07-09 16:38:46,847  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,010)
+2026-07-09 16:38:46,847  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:38:46,847  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:48:46,848  INFO      [ES] ── Signal check 16:48 ──
+2026-07-09 16:48:47,013  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:48:47,433  INFO      [ES] Portfolio=$100,065.28  Price=$7585.50  Position=None
+2026-07-09 16:48:47,434  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,010)
+2026-07-09 16:48:47,434  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:48:47,434  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 16:58:47,435  INFO      [ES] ── Signal check 16:58 ──
+2026-07-09 16:58:47,643  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 16:58:48,342  INFO      [ES] Portfolio=$100,077.25  Price=$7585.75  Position=None
+2026-07-09 16:58:48,342  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,012)
+2026-07-09 16:58:48,342  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 16:58:48,342  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 17:08:48,342  INFO      [ES] ── Signal check 17:08 ──
+2026-07-09 17:08:48,614  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 17:08:49,165  INFO      [ES] Portfolio=$100,102.22  Price=$7586.50  Position=None
+2026-07-09 17:08:49,166  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,015)
+2026-07-09 17:08:49,166  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 17:08:49,166  INFO      [ES] Signal complete. Sleeping 600s...

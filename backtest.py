@@ -97,8 +97,10 @@ def generate_bot_signals(df_scaled: pd.DataFrame,
 def simulate_strategy(close: np.ndarray,
                        signals: np.ndarray,
                        stop_loss_pct: float   = 0.05,
-                       take_profit_pct: float = 0.15,
-                       starting_equity: float = 100_000.0) -> dict:
+                       take_profit_pct: float = 0.25,
+                       starting_equity: float = 100_000.0,
+                       allow_short: bool = False,
+                       max_hold_days: int = 90) -> dict:
     """
     Realistic long-only simulation matching actual bot behaviour.
     Uses trailing stops, wider stops, and only exits losers on sell signal.
@@ -161,9 +163,9 @@ def simulate_strategy(close: np.ndarray,
                     closed = True; reason = "take-profit"
                 elif (i - entry_idx) >= max_hold_days:
                     closed = True; reason = "max-hold"
-                elif direction == 1 and s == -1 and raw_ret > 0:
+                elif direction == 1 and sig == -1 and raw_ret > 0:
                     closed = True; reason = "signal-exit"
-                elif direction == 1 and s == -1 and raw_ret > 0:
+                elif direction == -1 and sig == 1 and raw_ret < 0:
                     closed = True; reason = "signal-exit"
 
             if closed:
@@ -361,7 +363,8 @@ def run_backtest(ticker: str,
 
     # Simulate
     bot_result = simulate_strategy(
-        close, signals, stop_loss_pct, take_profit_pct, starting_equity
+        close, signals, stop_loss_pct, take_profit_pct, starting_equity,
+        allow_short=allow_short, max_hold_days=90
     )
     bnh_equity = simulate_buy_and_hold(close, starting_equity)
 

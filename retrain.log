@@ -2696,3 +2696,54 @@ ValueError: window must be an integer 0 or greater
 2026-07-08 20:30:28,765  INFO        AAPL         [OK] Updated
 2026-07-08 20:30:28,765  INFO        Total time: 83.9 minutes
 2026-07-08 20:30:28,766  INFO      =======================================================
+2026-07-08 20:39:09,954  INFO      
+=======================================================
+2026-07-08 20:39:09,955  INFO        Retraining: BTC/USD
+2026-07-08 20:39:09,955  INFO        2026-07-08 20:39
+2026-07-08 20:39:09,955  INFO      =======================================================
+2026-07-08 20:39:09,955  INFO      [BTC/USD] Current fitness: 0.0000
+2026-07-08 20:39:10,767  INFO      [BTC/USD] Downloading fresh data...
+2026-07-08 20:39:11,189  INFO      [BTC/USD] Computing indicators on 4312 rows...
+2026-07-08 20:39:11,211  INFO      [BTC/USD] Running GA (400 gen × 150 pop)...
+2026-07-08 20:49:31,378  INFO      [BTC/USD] New fitness   : 0.5274
+2026-07-08 20:49:31,378  INFO      [BTC/USD] Total return  : +68460468.82%
+2026-07-08 20:49:31,378  INFO      [BTC/USD] Win rate      : 46.43%
+2026-07-08 20:49:31,378  INFO      [BTC/USD] Trades        : 140
+2026-07-08 20:49:31,378  INFO      [BTC/USD] Max drawdown  : 41.21%
+2026-07-08 20:49:31,378  INFO      [BTC/USD] New fitness 0.5274 — accepting (force retrain mode)
+2026-07-08 20:49:31,385  ERROR     [BTC/USD] Retrain failed: [WinError 3] The system cannot find the path specified
+Traceback (most recent call last):
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\shutil.py", line 922, in move
+    os.rename(src, real_dst)
+    ~~~~~~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\nickt\\alpaca-trading-bot\\BTC-USD_best_chromosome.csv' -> 'C:\\Users\\nickt\\alpaca-trading-bot\\BTC\\USD_best_chromosome.csv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\retrain.py", line 183, in retrain_ticker
+    shutil.move(str(new_path), str(expected))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\shutil.py", line 942, in move
+    copy_function(src, real_dst)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\AppData\Local\Python\pythoncore-3.14-64\Lib\shutil.py", line 514, in copy2
+    _winapi.CopyFile2(src_, dst_, flags)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified
+2026-07-08 20:53:59,381  INFO      
+=======================================================
+2026-07-08 20:53:59,381  INFO        Retraining: BTC/USD
+2026-07-08 20:53:59,381  INFO        2026-07-08 20:53
+2026-07-08 20:53:59,381  INFO      =======================================================
+2026-07-08 20:53:59,381  INFO      [BTC/USD] Current fitness: 0.0000
+2026-07-08 20:54:00,156  INFO      [BTC/USD] Downloading fresh data...
+2026-07-08 20:54:00,599  INFO      [BTC/USD] Computing indicators on 4312 rows...
+2026-07-08 20:54:00,623  INFO      [BTC/USD] Running GA (400 gen × 150 pop)...
+2026-07-08 21:04:31,329  INFO      [BTC/USD] New fitness   : 0.5274
+2026-07-08 21:04:31,329  INFO      [BTC/USD] Total return  : +68460468.82%
+2026-07-08 21:04:31,329  INFO      [BTC/USD] Win rate      : 46.43%
+2026-07-08 21:04:31,329  INFO      [BTC/USD] Trades        : 140
+2026-07-08 21:04:31,329  INFO      [BTC/USD] Max drawdown  : 41.21%
+2026-07-08 21:04:31,329  INFO      [BTC/USD] New fitness 0.5274 — accepting (force retrain mode)
+2026-07-08 21:04:31,334  INFO      [BTC/USD] Chromosome saved — retrain complete

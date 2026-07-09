@@ -2972,3 +2972,462 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-08 18:16:55,622  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
 2026-07-08 18:16:55,815  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-08 19:16:56,012  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 20:16:56,210  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 21:16:56,399  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 22:16:56,588  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-08 23:16:56,780  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 00:16:56,961  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 01:16:57,175  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 02:16:57,358  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 03:16:57,553  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 04:16:57,741  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 05:16:58,030  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 06:16:58,222  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 07:16:58,533  INFO      Market closed. Next open in 13 min. Sleeping...
+2026-07-09 07:30:04,268  INFO      Market open — waiting 300s before first signal...
+2026-07-09 07:35:04,269  INFO      =======================================================
+2026-07-09 07:35:04,269  INFO      Daily signal run  [2026-07-09 07:35]
+2026-07-09 07:35:04,270  INFO      =======================================================
+2026-07-09 07:35:06,168  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 07:35:06,432  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 07:35:06,577  INFO      Portfolio value : $99,608.45
+2026-07-09 07:35:06,577  INFO      Current price   : $203.52
+2026-07-09 07:35:06,577  INFO      Open position   : {'qty': 83, 'side': 'long', 'entry_price': 197.377911, 'market_value': 16880.54, 'unrealised_pl': 498.173387}
+2026-07-09 07:35:06,578  INFO      BUY signal — already long, monitoring existing position
+2026-07-09 07:35:06,578  INFO      Monitoring NVDA  |  entry=197.38  stop=193.43  target=205.27
+2026-07-09 07:36:06,819  INFO        NVDA [long] price=203.10  stop=193.43  trailing=200.06  target=205.27  P&L=+475.76
+2026-07-09 07:37:07,058  INFO        NVDA [long] price=202.62  stop=193.43  trailing=200.06  target=205.27  P&L=+433.43
+2026-07-09 07:38:07,520  INFO        NVDA [long] price=202.82  stop=193.43  trailing=200.06  target=205.27  P&L=+451.69
+2026-07-09 07:39:07,833  INFO        NVDA [long] price=202.77  stop=193.43  trailing=200.06  target=205.27  P&L=+448.37
+2026-07-09 07:40:08,139  INFO        NVDA [long] price=202.35  stop=193.43  trailing=200.06  target=205.27  P&L=+414.34
+2026-07-09 07:41:08,387  INFO        NVDA [long] price=202.00  stop=193.43  trailing=200.06  target=205.27  P&L=+389.44
+2026-07-09 07:42:08,628  INFO        NVDA [long] price=201.87  stop=193.43  trailing=200.06  target=205.27  P&L=+370.77
+2026-07-09 07:43:08,882  INFO        NVDA [long] price=201.73  stop=193.43  trailing=200.06  target=205.27  P&L=+363.71
+2026-07-09 07:44:09,212  INFO        NVDA [long] price=201.99  stop=193.43  trailing=200.06  target=205.27  P&L=+381.14
+2026-07-09 07:45:09,500  INFO        NVDA [long] price=201.57  stop=193.43  trailing=200.06  target=205.27  P&L=+354.58
+2026-07-09 07:46:09,754  INFO        NVDA [long] price=201.80  stop=193.43  trailing=200.06  target=205.27  P&L=+369.52
+2026-07-09 07:47:10,042  INFO        NVDA [long] price=201.76  stop=193.43  trailing=200.06  target=205.27  P&L=+369.52
+2026-07-09 07:48:10,268  INFO        NVDA [long] price=202.12  stop=193.43  trailing=200.06  target=205.27  P&L=+397.75
+2026-07-09 07:49:10,517  INFO        NVDA [long] price=201.95  stop=193.43  trailing=200.06  target=205.27  P&L=+375.33
+2026-07-09 07:50:10,812  INFO        NVDA [long] price=201.93  stop=193.43  trailing=200.06  target=205.27  P&L=+380.31
+2026-07-09 07:51:11,060  INFO        NVDA [long] price=202.06  stop=193.43  trailing=200.06  target=205.27  P&L=+388.61
+2026-07-09 07:52:11,346  INFO        NVDA [long] price=202.54  stop=193.43  trailing=200.06  target=205.27  P&L=+426.79
+2026-07-09 07:53:11,606  INFO        NVDA [long] price=202.45  stop=193.43  trailing=200.06  target=205.27  P&L=+420.15
+2026-07-09 07:54:11,939  INFO        NVDA [long] price=202.36  stop=193.43  trailing=200.06  target=205.27  P&L=+416.00
+2026-07-09 07:55:12,176  INFO        NVDA [long] price=202.21  stop=193.43  trailing=200.06  target=205.27  P&L=+401.06
+2026-07-09 07:56:12,403  INFO        NVDA [long] price=202.17  stop=193.43  trailing=200.06  target=205.27  P&L=+398.52
+2026-07-09 07:57:12,636  INFO        NVDA [long] price=201.97  stop=193.43  trailing=200.06  target=205.27  P&L=+379.48
+2026-07-09 07:58:12,856  INFO        NVDA [long] price=201.92  stop=193.43  trailing=200.06  target=205.27  P&L=+375.33
+2026-07-09 07:59:13,112  INFO        NVDA [long] price=201.74  stop=193.43  trailing=200.06  target=205.27  P&L=+364.54
+2026-07-09 08:00:13,360  INFO        NVDA [long] price=201.92  stop=193.43  trailing=200.06  target=205.27  P&L=+378.65
+2026-07-09 08:01:13,604  INFO        NVDA [long] price=201.65  stop=193.43  trailing=200.06  target=205.27  P&L=+357.90
+2026-07-09 08:02:13,872  INFO        NVDA [long] price=201.46  stop=193.43  trailing=200.06  target=205.27  P&L=+339.23
+2026-07-09 08:03:14,269  INFO        NVDA [long] price=201.01  stop=193.43  trailing=200.06  target=205.27  P&L=+303.95
+2026-07-09 08:04:14,532  INFO        NVDA [long] price=201.28  stop=193.43  trailing=200.06  target=205.27  P&L=+322.21
+2026-07-09 08:05:14,771  INFO        NVDA [long] price=201.01  stop=193.43  trailing=200.06  target=205.27  P&L=+301.46
+2026-07-09 08:06:15,015  INFO        NVDA [long] price=201.03  stop=193.43  trailing=200.06  target=205.27  P&L=+303.12
+2026-07-09 08:07:15,428  INFO        NVDA [long] price=200.58  stop=193.43  trailing=200.06  target=205.27  P&L=+263.28
+2026-07-09 08:08:15,651  INFO        NVDA [long] price=200.40  stop=193.43  trailing=200.06  target=205.27  P&L=+248.76
+2026-07-09 08:09:15,907  INFO        NVDA [long] price=200.07  stop=193.43  trailing=200.06  target=205.27  P&L=+225.93
+2026-07-09 08:10:16,209  INFO        NVDA [long] price=199.90  stop=193.43  trailing=200.06  target=205.27  P&L=+210.16
+2026-07-09 08:10:16,209  WARNING   [STOP] TRAILING STOP at 199.90
+2026-07-09 08:10:16,345  INFO      [CLOSE] SELL (trailing-stop): 83 x NVDA  [id=cba262c7-36ee-4759-8978-bbcd22937627]
+2026-07-09 08:10:16,345  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:15:16,543  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:20:16,544  INFO      =======================================================
+2026-07-09 08:20:16,545  INFO      Daily signal run  [2026-07-09 08:20]
+2026-07-09 08:20:16,545  INFO      =======================================================
+2026-07-09 08:20:17,008  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:20:17,213  INFO      Signal: BUY  |  Confidence: 0.429
+2026-07-09 08:20:17,393  INFO      Portfolio value : $98,972.13
+2026-07-09 08:20:17,394  INFO      Current price   : $199.54
+2026-07-09 08:20:17,394  INFO      Open position   : None
+2026-07-09 08:20:17,528  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:20:17,528  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:25:17,812  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:30:17,813  INFO      =======================================================
+2026-07-09 08:30:17,814  INFO      Daily signal run  [2026-07-09 08:30]
+2026-07-09 08:30:17,814  INFO      =======================================================
+2026-07-09 08:30:18,168  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:30:18,405  INFO      Signal: BUY  |  Confidence: 0.465
+2026-07-09 08:30:18,527  INFO      Portfolio value : $99,351.68
+2026-07-09 08:30:18,527  INFO      Current price   : $200.08
+2026-07-09 08:30:18,527  INFO      Open position   : None
+2026-07-09 08:30:18,671  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:30:18,671  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:35:18,859  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:40:18,860  INFO      =======================================================
+2026-07-09 08:40:18,861  INFO      Daily signal run  [2026-07-09 08:40]
+2026-07-09 08:40:18,861  INFO      =======================================================
+2026-07-09 08:40:19,284  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:40:19,517  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 08:40:19,654  INFO      Portfolio value : $99,450.58
+2026-07-09 08:40:19,654  INFO      Current price   : $200.44
+2026-07-09 08:40:19,654  INFO      Open position   : None
+2026-07-09 08:40:19,786  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:40:19,787  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:45:19,992  INFO      Market open — waiting 300s before first signal...
+2026-07-09 08:50:19,993  INFO      =======================================================
+2026-07-09 08:50:19,993  INFO      Daily signal run  [2026-07-09 08:50]
+2026-07-09 08:50:19,993  INFO      =======================================================
+2026-07-09 08:50:20,424  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 08:50:20,799  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 08:50:20,921  INFO      Portfolio value : $99,302.65
+2026-07-09 08:50:20,921  INFO      Current price   : $200.96
+2026-07-09 08:50:20,921  INFO      Open position   : None
+2026-07-09 08:50:21,048  INFO      Max positions reached (5/5) — skipping
+2026-07-09 08:50:21,048  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 08:55:21,242  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:00:21,243  INFO      =======================================================
+2026-07-09 09:00:21,243  INFO      Daily signal run  [2026-07-09 09:00]
+2026-07-09 09:00:21,243  INFO      =======================================================
+2026-07-09 09:00:21,737  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:00:21,939  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:00:22,078  INFO      Portfolio value : $99,513.20
+2026-07-09 09:00:22,078  INFO      Current price   : $201.37
+2026-07-09 09:00:22,078  INFO      Open position   : None
+2026-07-09 09:00:22,222  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:00:22,222  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:05:22,415  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:10:22,416  INFO      =======================================================
+2026-07-09 09:10:22,416  INFO      Daily signal run  [2026-07-09 09:10]
+2026-07-09 09:10:22,416  INFO      =======================================================
+2026-07-09 09:10:22,849  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:10:23,072  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:10:23,191  INFO      Portfolio value : $99,655.63
+2026-07-09 09:10:23,191  INFO      Current price   : $201.82
+2026-07-09 09:10:23,192  INFO      Open position   : None
+2026-07-09 09:10:23,317  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:10:23,317  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:15:23,502  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:20:23,503  INFO      =======================================================
+2026-07-09 09:20:23,503  INFO      Daily signal run  [2026-07-09 09:20]
+2026-07-09 09:20:23,503  INFO      =======================================================
+2026-07-09 09:20:24,070  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:20:24,316  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:20:24,473  INFO      Portfolio value : $99,743.71
+2026-07-09 09:20:24,473  INFO      Current price   : $201.36
+2026-07-09 09:20:24,473  INFO      Open position   : None
+2026-07-09 09:20:24,618  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:20:24,618  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:25:24,807  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:30:24,807  INFO      =======================================================
+2026-07-09 09:30:24,808  INFO      Daily signal run  [2026-07-09 09:30]
+2026-07-09 09:30:24,808  INFO      =======================================================
+2026-07-09 09:30:25,241  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:30:25,452  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:30:25,731  INFO      Portfolio value : $99,864.21
+2026-07-09 09:30:25,731  INFO      Current price   : $201.75
+2026-07-09 09:30:25,731  INFO      Open position   : None
+2026-07-09 09:30:25,948  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:30:25,948  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:35:26,143  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:40:26,144  INFO      =======================================================
+2026-07-09 09:40:26,144  INFO      Daily signal run  [2026-07-09 09:40]
+2026-07-09 09:40:26,145  INFO      =======================================================
+2026-07-09 09:40:26,563  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:40:26,770  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:40:26,894  INFO      Portfolio value : $99,872.01
+2026-07-09 09:40:26,894  INFO      Current price   : $201.56
+2026-07-09 09:40:26,894  INFO      Open position   : None
+2026-07-09 09:40:27,016  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:40:27,017  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:45:27,200  INFO      Market open — waiting 300s before first signal...
+2026-07-09 09:50:27,200  INFO      =======================================================
+2026-07-09 09:50:27,200  INFO      Daily signal run  [2026-07-09 09:50]
+2026-07-09 09:50:27,201  INFO      =======================================================
+2026-07-09 09:50:27,587  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 09:50:27,783  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 09:50:27,964  INFO      Portfolio value : $99,917.08
+2026-07-09 09:50:27,965  INFO      Current price   : $201.79
+2026-07-09 09:50:27,966  INFO      Open position   : None
+2026-07-09 09:50:28,095  INFO      Max positions reached (5/5) — skipping
+2026-07-09 09:50:28,095  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 09:55:28,296  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:00:28,296  INFO      =======================================================
+2026-07-09 10:00:28,297  INFO      Daily signal run  [2026-07-09 10:00]
+2026-07-09 10:00:28,297  INFO      =======================================================
+2026-07-09 10:00:28,728  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:00:28,965  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:00:29,157  INFO      Portfolio value : $99,907.84
+2026-07-09 10:00:29,157  INFO      Current price   : $201.79
+2026-07-09 10:00:29,157  INFO      Open position   : None
+2026-07-09 10:00:29,303  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:00:29,303  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:05:29,504  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:10:29,505  INFO      =======================================================
+2026-07-09 10:10:29,506  INFO      Daily signal run  [2026-07-09 10:10]
+2026-07-09 10:10:29,506  INFO      =======================================================
+2026-07-09 10:10:29,951  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:10:30,204  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:10:30,334  INFO      Portfolio value : $99,957.03
+2026-07-09 10:10:30,335  INFO      Current price   : $201.99
+2026-07-09 10:10:30,335  INFO      Open position   : None
+2026-07-09 10:10:30,487  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:10:30,487  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:15:30,674  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:20:30,674  INFO      =======================================================
+2026-07-09 10:20:30,675  INFO      Daily signal run  [2026-07-09 10:20]
+2026-07-09 10:20:30,675  INFO      =======================================================
+2026-07-09 10:20:31,062  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:20:31,309  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:20:31,432  INFO      Portfolio value : $99,934.47
+2026-07-09 10:20:31,434  INFO      Current price   : $202.11
+2026-07-09 10:20:31,434  INFO      Open position   : None
+2026-07-09 10:20:31,563  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:20:31,564  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:25:31,754  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:30:31,755  INFO      =======================================================
+2026-07-09 10:30:31,755  INFO      Daily signal run  [2026-07-09 10:30]
+2026-07-09 10:30:31,755  INFO      =======================================================
+2026-07-09 10:30:32,153  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:30:32,366  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:30:32,491  INFO      Portfolio value : $99,970.41
+2026-07-09 10:30:32,491  INFO      Current price   : $202.29
+2026-07-09 10:30:32,492  INFO      Open position   : None
+2026-07-09 10:30:32,622  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:30:32,622  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:35:32,808  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:40:32,809  INFO      =======================================================
+2026-07-09 10:40:32,809  INFO      Daily signal run  [2026-07-09 10:40]
+2026-07-09 10:40:32,809  INFO      =======================================================
+2026-07-09 10:40:33,206  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:40:33,464  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:40:33,594  INFO      Portfolio value : $99,968.22
+2026-07-09 10:40:33,594  INFO      Current price   : $202.03
+2026-07-09 10:40:33,594  INFO      Open position   : None
+2026-07-09 10:40:33,726  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:40:33,726  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:45:33,933  INFO      Market open — waiting 300s before first signal...
+2026-07-09 10:50:33,934  INFO      =======================================================
+2026-07-09 10:50:33,935  INFO      Daily signal run  [2026-07-09 10:50]
+2026-07-09 10:50:33,935  INFO      =======================================================
+2026-07-09 10:50:34,319  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 10:50:34,523  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 10:50:34,674  INFO      Portfolio value : $99,937.52
+2026-07-09 10:50:34,674  INFO      Current price   : $201.74
+2026-07-09 10:50:34,675  INFO      Open position   : None
+2026-07-09 10:50:34,871  INFO      Max positions reached (5/5) — skipping
+2026-07-09 10:50:34,871  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 10:55:35,069  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:00:35,070  INFO      =======================================================
+2026-07-09 11:00:35,070  INFO      Daily signal run  [2026-07-09 11:00]
+2026-07-09 11:00:35,070  INFO      =======================================================
+2026-07-09 11:00:35,504  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:00:35,718  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:00:35,841  INFO      Portfolio value : $99,947.53
+2026-07-09 11:00:35,841  INFO      Current price   : $201.79
+2026-07-09 11:00:35,841  INFO      Open position   : None
+2026-07-09 11:00:35,970  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:00:35,971  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:05:36,158  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:10:36,159  INFO      =======================================================
+2026-07-09 11:10:36,160  INFO      Daily signal run  [2026-07-09 11:10]
+2026-07-09 11:10:36,160  INFO      =======================================================
+2026-07-09 11:10:36,556  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:10:36,778  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:10:36,902  INFO      Portfolio value : $100,105.87
+2026-07-09 11:10:36,902  INFO      Current price   : $203.17
+2026-07-09 11:10:36,902  INFO      Open position   : None
+2026-07-09 11:10:37,050  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:10:37,050  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:15:37,246  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:20:37,246  INFO      =======================================================
+2026-07-09 11:20:37,247  INFO      Daily signal run  [2026-07-09 11:20]
+2026-07-09 11:20:37,247  INFO      =======================================================
+2026-07-09 11:20:37,711  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:20:37,991  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:20:38,138  INFO      Portfolio value : $100,118.43
+2026-07-09 11:20:38,139  INFO      Current price   : $202.90
+2026-07-09 11:20:38,139  INFO      Open position   : None
+2026-07-09 11:20:38,267  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:20:38,267  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:25:38,469  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:30:38,470  INFO      =======================================================
+2026-07-09 11:30:38,471  INFO      Daily signal run  [2026-07-09 11:30]
+2026-07-09 11:30:38,471  INFO      =======================================================
+2026-07-09 11:30:38,885  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:30:39,092  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:30:39,275  INFO      Portfolio value : $100,193.52
+2026-07-09 11:30:39,276  INFO      Current price   : $202.80
+2026-07-09 11:30:39,276  INFO      Open position   : None
+2026-07-09 11:30:39,416  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:30:39,416  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:35:39,640  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:40:39,642  INFO      =======================================================
+2026-07-09 11:40:39,642  INFO      Daily signal run  [2026-07-09 11:40]
+2026-07-09 11:40:39,642  INFO      =======================================================
+2026-07-09 11:40:40,113  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:40:40,342  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:40:40,474  INFO      Portfolio value : $100,164.01
+2026-07-09 11:40:40,475  INFO      Current price   : $203.24
+2026-07-09 11:40:40,475  INFO      Open position   : None
+2026-07-09 11:40:40,606  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:40:40,606  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:45:40,797  INFO      Market open — waiting 300s before first signal...
+2026-07-09 11:50:40,798  INFO      =======================================================
+2026-07-09 11:50:40,798  INFO      Daily signal run  [2026-07-09 11:50]
+2026-07-09 11:50:40,799  INFO      =======================================================
+2026-07-09 11:50:41,161  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 11:50:41,356  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 11:50:41,481  INFO      Portfolio value : $100,229.52
+2026-07-09 11:50:41,481  INFO      Current price   : $203.31
+2026-07-09 11:50:41,481  INFO      Open position   : None
+2026-07-09 11:50:41,605  INFO      Max positions reached (5/5) — skipping
+2026-07-09 11:50:41,605  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 11:55:41,809  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:00:41,809  INFO      =======================================================
+2026-07-09 12:00:41,810  INFO      Daily signal run  [2026-07-09 12:00]
+2026-07-09 12:00:41,810  INFO      =======================================================
+2026-07-09 12:00:42,232  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:00:42,460  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:00:42,586  INFO      Portfolio value : $100,219.35
+2026-07-09 12:00:42,586  INFO      Current price   : $203.35
+2026-07-09 12:00:42,587  INFO      Open position   : None
+2026-07-09 12:00:42,940  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:00:42,940  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:05:43,154  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:10:43,155  INFO      =======================================================
+2026-07-09 12:10:43,155  INFO      Daily signal run  [2026-07-09 12:10]
+2026-07-09 12:10:43,155  INFO      =======================================================
+2026-07-09 12:10:43,729  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:10:43,999  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:10:44,136  INFO      Portfolio value : $100,182.45
+2026-07-09 12:10:44,136  INFO      Current price   : $203.38
+2026-07-09 12:10:44,137  INFO      Open position   : None
+2026-07-09 12:10:44,275  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:10:44,275  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:15:44,493  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:20:44,494  INFO      =======================================================
+2026-07-09 12:20:44,494  INFO      Daily signal run  [2026-07-09 12:20]
+2026-07-09 12:20:44,494  INFO      =======================================================
+2026-07-09 12:20:44,953  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:20:45,165  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:20:45,296  INFO      Portfolio value : $100,169.86
+2026-07-09 12:20:45,296  INFO      Current price   : $203.15
+2026-07-09 12:20:45,296  INFO      Open position   : None
+2026-07-09 12:20:45,442  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:20:45,442  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:25:45,644  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:30:45,645  INFO      =======================================================
+2026-07-09 12:30:45,645  INFO      Daily signal run  [2026-07-09 12:30]
+2026-07-09 12:30:45,646  INFO      =======================================================
+2026-07-09 12:30:46,036  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:30:46,244  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:30:46,402  INFO      Portfolio value : $100,144.39
+2026-07-09 12:30:46,403  INFO      Current price   : $203.67
+2026-07-09 12:30:46,403  INFO      Open position   : None
+2026-07-09 12:30:46,562  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:30:46,562  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:35:46,755  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:40:46,755  INFO      =======================================================
+2026-07-09 12:40:46,756  INFO      Daily signal run  [2026-07-09 12:40]
+2026-07-09 12:40:46,756  INFO      =======================================================
+2026-07-09 12:40:47,161  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:40:47,398  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:40:47,528  INFO      Portfolio value : $100,123.56
+2026-07-09 12:40:47,528  INFO      Current price   : $203.82
+2026-07-09 12:40:47,528  INFO      Open position   : None
+2026-07-09 12:40:47,668  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:40:47,669  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:45:47,886  INFO      Market open — waiting 300s before first signal...
+2026-07-09 12:50:47,887  INFO      =======================================================
+2026-07-09 12:50:47,887  INFO      Daily signal run  [2026-07-09 12:50]
+2026-07-09 12:50:47,887  INFO      =======================================================
+2026-07-09 12:50:48,280  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 12:50:48,519  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 12:50:48,655  INFO      Portfolio value : $100,135.93
+2026-07-09 12:50:48,655  INFO      Current price   : $203.83
+2026-07-09 12:50:48,655  INFO      Open position   : None
+2026-07-09 12:50:48,802  INFO      Max positions reached (5/5) — skipping
+2026-07-09 12:50:48,802  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 12:55:49,181  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:00:49,182  INFO      =======================================================
+2026-07-09 13:00:49,183  INFO      Daily signal run  [2026-07-09 13:00]
+2026-07-09 13:00:49,183  INFO      =======================================================
+2026-07-09 13:00:49,594  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:00:49,811  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 13:00:49,940  INFO      Portfolio value : $100,068.09
+2026-07-09 13:00:49,940  INFO      Current price   : $203.34
+2026-07-09 13:00:49,940  INFO      Open position   : None
+2026-07-09 13:00:50,072  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:00:50,073  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:05:50,261  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:10:50,262  INFO      =======================================================
+2026-07-09 13:10:50,262  INFO      Daily signal run  [2026-07-09 13:10]
+2026-07-09 13:10:50,262  INFO      =======================================================
+2026-07-09 13:10:50,632  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:10:50,820  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 13:10:51,063  INFO      Portfolio value : $100,049.32
+2026-07-09 13:10:51,063  INFO      Current price   : $203.31
+2026-07-09 13:10:51,063  INFO      Open position   : None
+2026-07-09 13:10:51,199  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:10:51,199  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:15:51,394  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:20:51,395  INFO      =======================================================
+2026-07-09 13:20:51,395  INFO      Daily signal run  [2026-07-09 13:20]
+2026-07-09 13:20:51,395  INFO      =======================================================
+2026-07-09 13:20:51,778  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:20:51,997  INFO      Signal: BUY  |  Confidence: 0.588
+2026-07-09 13:20:52,133  INFO      Portfolio value : $100,118.81
+2026-07-09 13:20:52,134  INFO      Current price   : $204.24
+2026-07-09 13:20:52,134  INFO      Open position   : None
+2026-07-09 13:20:52,263  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:20:52,263  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:25:52,458  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:30:52,459  INFO      =======================================================
+2026-07-09 13:30:52,459  INFO      Daily signal run  [2026-07-09 13:30]
+2026-07-09 13:30:52,459  INFO      =======================================================
+2026-07-09 13:30:52,877  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:30:53,068  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 13:30:53,227  INFO      Portfolio value : $100,057.57
+2026-07-09 13:30:53,227  INFO      Current price   : $203.54
+2026-07-09 13:30:53,227  INFO      Open position   : None
+2026-07-09 13:30:53,368  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:30:53,368  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:35:53,560  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:40:53,561  INFO      =======================================================
+2026-07-09 13:40:53,561  INFO      Daily signal run  [2026-07-09 13:40]
+2026-07-09 13:40:53,561  INFO      =======================================================
+2026-07-09 13:40:53,946  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:40:54,161  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 13:40:54,284  INFO      Portfolio value : $100,109.80
+2026-07-09 13:40:54,285  INFO      Current price   : $203.84
+2026-07-09 13:40:54,285  INFO      Open position   : None
+2026-07-09 13:40:54,418  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:40:54,418  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:45:54,622  INFO      Market open — waiting 300s before first signal...
+2026-07-09 13:50:54,625  INFO      =======================================================
+2026-07-09 13:50:54,626  INFO      Daily signal run  [2026-07-09 13:50]
+2026-07-09 13:50:54,626  INFO      =======================================================
+2026-07-09 13:50:55,049  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 13:50:55,266  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 13:50:55,402  INFO      Portfolio value : $100,083.66
+2026-07-09 13:50:55,402  INFO      Current price   : $203.82
+2026-07-09 13:50:55,402  INFO      Open position   : None
+2026-07-09 13:50:55,596  INFO      Max positions reached (5/5) — skipping
+2026-07-09 13:50:55,596  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 13:55:55,783  INFO      Market open — waiting 300s before first signal...
+2026-07-09 14:00:55,784  INFO      =======================================================
+2026-07-09 14:00:55,784  INFO      Daily signal run  [2026-07-09 14:00]
+2026-07-09 14:00:55,784  INFO      =======================================================
+2026-07-09 14:00:56,157  INFO      Fetched 70 bars for NVDA  (2026-03-30 → 2026-07-09)
+2026-07-09 14:00:56,364  INFO      Signal: BUY  |  Confidence: 0.489
+2026-07-09 14:00:56,488  INFO      Portfolio value : $100,164.36
+2026-07-09 14:00:56,489  INFO      Current price   : $202.78
+2026-07-09 14:00:56,489  INFO      Open position   : None
+2026-07-09 14:00:56,636  INFO      Max positions reached (5/5) — skipping
+2026-07-09 14:00:56,636  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-09 14:05:56,853  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 15:05:57,141  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 16:05:57,330  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:05:57,532  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:21:37,617  INFO      [NVDA] Process started  PID=16392
+2026-07-09 17:21:37,619  INFO      [NVDA] Config loaded — max alloc 35%  stop 2.0%
+2026-07-09 17:21:37,619  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-09 17:21:37,619  INFO         Mode    : PAPER
+2026-07-09 17:21:37,619  INFO         Ticker  : NVDA
+2026-07-09 17:21:37,620  INFO         Chromosome : NVDA_best_chromosome.csv
+2026-07-09 17:21:37,620  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-09 17:21:37,629  INFO      Chromosome loaded from NVDA_best_chromosome.csv  (34 genes)
+2026-07-09 17:21:37,906  INFO      Market closed. Next open in 60 min. Sleeping...

@@ -1042,14 +1042,17 @@ def api_change_password():
 
 @app.route("/api/backtest/run", methods=["POST"])
 def api_backtest_run():
-    data   = request.get_json()
-    ticker = (data or {}).get("ticker", "GLD").upper()
-    start  = (data or {}).get("start_date", "2023-01-01")
-    end    = (data or {}).get("end_date", None)
-    equity = float((data or {}).get("starting_equity", 100000))
+    data        = request.get_json()
+    ticker      = (data or {}).get("ticker", "GLD").upper()
+    start       = (data or {}).get("start_date", "2023-01-01")
+    end         = (data or {}).get("end_date", None)
+    equity      = float((data or {}).get("starting_equity", 100000))
+    allow_short = bool((data or {}).get("allow_short", False))
     try:
         from backtest import run_backtest
-        results = run_backtest(ticker, start, end, starting_equity=equity)
+        results = run_backtest(ticker, start, end,
+                               starting_equity=equity,
+                               allow_short=allow_short)
         return jsonify(results)
     except Exception as e:
         log.error(f"Backtest error: {e}", exc_info=True)

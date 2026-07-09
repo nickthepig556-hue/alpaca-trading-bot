@@ -178,7 +178,7 @@ def retrain_ticker(ticker: str, config: dict) -> bool:
             save_results(result, yf_ticker)
             # Rename to match bot's expected filename if needed
             new_path = PROJECT_DIR / f"{yf_ticker}_best_chromosome.csv"
-            expected = PROJECT_DIR / f"{ticker}_best_chromosome.csv"
+            expected = PROJECT_DIR / f"{ticker.replace('/', '-')}_best_chromosome.csv"
             if new_path != expected and new_path.exists():
                 shutil.move(str(new_path), str(expected))
             log.info(f"[{ticker}] Chromosome saved — retrain complete")
