@@ -3147,3 +3147,29 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 17:08:49,166  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,015)
 2026-07-09 17:08:49,166  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
 2026-07-09 17:08:49,166  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 17:21:57,694  INFO      [FUTURES BOT] Starting: ES (E-mini S&P 500 Futures)
+2026-07-09 17:21:57,694  INFO        Mode       : PAPER
+2026-07-09 17:21:57,694  INFO        Max leverage: 20.0x
+2026-07-09 17:21:57,694  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:21:57,702  INFO        Evolved leverage: 4.1x
+2026-07-09 17:21:57,702  INFO        Stop width: 6.4%
+2026-07-09 17:21:57,702  INFO      [ES] Bot running — checking every 10 minutes
+2026-07-09 17:21:57,702  INFO      [ES] ── Signal check 17:21 ──
+2026-07-09 17:22:05,260  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 17:22:05,799  INFO      [ES] Portfolio=$100,135.16  Price=$7588.50  Position=None
+2026-07-09 17:22:05,799  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,020)
+2026-07-09 17:22:05,799  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 17:22:05,799  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 17:32:05,800  INFO      [ES] ── Signal check 17:32 ──
+2026-07-09 17:32:05,974  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 17:32:06,433  INFO      [ES] Portfolio=$100,145.26  Price=$7589.75  Position=None
+2026-07-09 17:32:06,434  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,022)
+2026-07-09 17:32:06,434  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 17:32:06,434  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 17:42:06,434  INFO      [ES] ── Signal check 17:42 ──
+2026-07-09 17:42:06,599  INFO      [ES] Signal: LONG  |  Confidence: 0.675  |  Leverage: 1.70x
+2026-07-09 17:42:07,115  INFO      [ES] Portfolio=$100,125.84  Price=$7590.75  Position=None
+2026-07-09 17:42:07,115  INFO      Futures position: 1 units  (scale=26.0%, leverage=1.7x, exposure=$15,019)
+2026-07-09 17:42:07,115  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 17:42:07,115  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 17:48:43,936  INFO      [ES] Futures bot stopped by user

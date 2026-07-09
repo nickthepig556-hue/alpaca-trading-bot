@@ -3496,3 +3496,5 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-09 17:21:49,667  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-09 17:21:49,674  INFO      Chromosome loaded from AAPL_best_chromosome.csv  (34 genes)
 2026-07-09 17:21:49,889  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:48:43,936  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-09 17:48:43,940  INFO      [AAPL] Process exiting

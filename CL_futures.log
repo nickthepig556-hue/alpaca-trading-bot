@@ -2771,3 +2771,26 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 17:08:53,476  INFO      [CL] Portfolio=$100,100.84  Price=$71.81  Position=None
 2026-07-09 17:08:53,476  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
 2026-07-09 17:08:53,476  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-09 17:22:03,715  INFO      [FUTURES BOT] Starting: CL (Crude Oil Futures)
+2026-07-09 17:22:03,715  INFO        Mode       : PAPER
+2026-07-09 17:22:03,715  INFO        Max leverage: 15.0x
+2026-07-09 17:22:03,715  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:22:03,722  INFO        Evolved leverage: 3.1x
+2026-07-09 17:22:03,723  INFO        Stop width: 3.1%
+2026-07-09 17:22:03,723  INFO      [CL] Bot running — checking every 10 minutes
+2026-07-09 17:22:03,723  INFO      [CL] ── Signal check 17:22 ──
+2026-07-09 17:22:04,117  INFO      [CL] Signal: SHORT  |  Confidence: 0.321  |  Leverage: 1.00x
+2026-07-09 17:22:04,565  INFO      [CL] Portfolio=$100,135.16  Price=$71.80  Position=None
+2026-07-09 17:22:04,565  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-09 17:22:04,565  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-09 17:32:04,566  INFO      [CL] ── Signal check 17:32 ──
+2026-07-09 17:32:04,710  INFO      [CL] Signal: SHORT  |  Confidence: 0.321  |  Leverage: 1.00x
+2026-07-09 17:32:05,184  INFO      [CL] Portfolio=$100,145.26  Price=$71.82  Position=None
+2026-07-09 17:32:05,184  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-09 17:32:05,184  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-09 17:42:05,185  INFO      [CL] ── Signal check 17:42 ──
+2026-07-09 17:42:05,372  INFO      [CL] Signal: SHORT  |  Confidence: 0.321  |  Leverage: 1.00x
+2026-07-09 17:42:05,814  INFO      [CL] Portfolio=$100,125.84  Price=$71.86  Position=None
+2026-07-09 17:42:05,814  INFO      Risk guard blocked trade: Confidence 0.32 below futures threshold 0.5
+2026-07-09 17:42:05,814  INFO      [CL] Signal complete. Sleeping 600s...
+2026-07-09 17:48:43,936  INFO      [CL] Futures bot stopped by user

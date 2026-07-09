@@ -3124,3 +3124,5 @@
 2026-07-09 17:21:43,652  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-09 17:21:43,660  INFO      Chromosome loaded from MSFT_best_chromosome.csv  (34 genes)
 2026-07-09 17:21:43,845  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:48:43,936  INFO      Bot stopped by user (KeyboardInterrupt)
+2026-07-09 17:48:43,940  INFO      [MSFT] Process exiting

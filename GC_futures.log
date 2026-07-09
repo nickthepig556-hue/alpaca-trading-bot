@@ -2877,3 +2877,26 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 17:08:51,281  INFO      [GC] Portfolio=$100,100.84  Price=$4131.90  Position=None
 2026-07-09 17:08:51,281  INFO      [GC] FLAT signal — no trade
 2026-07-09 17:08:51,281  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 17:22:01,744  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-09 17:22:01,745  INFO        Mode       : PAPER
+2026-07-09 17:22:01,745  INFO        Max leverage: 15.0x
+2026-07-09 17:22:01,745  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:22:01,753  INFO        Evolved leverage: 3.2x
+2026-07-09 17:22:01,753  INFO        Stop width: 5.1%
+2026-07-09 17:22:01,753  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-09 17:22:01,754  INFO      [GC] ── Signal check 17:22 ──
+2026-07-09 17:22:02,142  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-09 17:22:02,594  INFO      [GC] Portfolio=$100,135.16  Price=$4132.90  Position=None
+2026-07-09 17:22:02,594  INFO      [GC] FLAT signal — no trade
+2026-07-09 17:22:02,594  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 17:32:02,595  INFO      [GC] ── Signal check 17:32 ──
+2026-07-09 17:32:02,749  INFO      [GC] Signal: FLAT  |  Confidence: 0.372  |  Leverage: 1.00x
+2026-07-09 17:32:03,254  INFO      [GC] Portfolio=$100,145.26  Price=$4134.20  Position=None
+2026-07-09 17:32:03,254  INFO      [GC] FLAT signal — no trade
+2026-07-09 17:32:03,254  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 17:42:03,255  INFO      [GC] ── Signal check 17:42 ──
+2026-07-09 17:42:03,452  INFO      [GC] Signal: FLAT  |  Confidence: 0.475  |  Leverage: 1.26x
+2026-07-09 17:42:03,912  INFO      [GC] Portfolio=$100,125.84  Price=$4131.50  Position=None
+2026-07-09 17:42:03,912  INFO      [GC] FLAT signal — no trade
+2026-07-09 17:42:03,912  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 17:48:43,936  INFO      [GC] Futures bot stopped by user

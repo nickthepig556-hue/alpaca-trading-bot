@@ -14754,3 +14754,12 @@ alpaca.common.exceptions.APIError: {"message":"subscription does not permit quer
 2026-07-09 17:21:36,118  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
 2026-07-09 17:21:36,125  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
 2026-07-09 17:21:36,472  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 17:48:47,682  INFO      [GLD] Process started  PID=27772
+2026-07-09 17:48:47,685  INFO      [GLD] Config loaded — max alloc 40%  stop 1.5%
+2026-07-09 17:48:47,685  INFO      [BOT] Alpaca GA Trading Bot starting up
+2026-07-09 17:48:47,686  INFO         Mode    : PAPER
+2026-07-09 17:48:47,686  INFO         Ticker  : GLD
+2026-07-09 17:48:47,686  INFO         Chromosome : GLD_best_chromosome.csv
+2026-07-09 17:48:47,686  INFO      Alpaca clients initialised  [[PAPER] PAPER MODE]
+2026-07-09 17:48:47,695  INFO      Chromosome loaded from GLD_best_chromosome.csv  (34 genes)
+2026-07-09 17:48:47,887  INFO      Market closed. Next open in 60 min. Sleeping...

@@ -2771,3 +2771,53 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 17:08:51,088  INFO      [NQ] Portfolio=$100,100.84  Price=$29920.25  Position=None
 2026-07-09 17:08:51,088  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,567)
 2026-07-09 17:08:51,088  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 17:21:59,676  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-09 17:21:59,677  INFO        Mode       : PAPER
+2026-07-09 17:21:59,677  INFO        Max leverage: 20.0x
+2026-07-09 17:21:59,677  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:21:59,685  INFO        Evolved leverage: 2.8x
+2026-07-09 17:21:59,685  INFO        Stop width: 3.1%
+2026-07-09 17:21:59,685  INFO      [NQ] Bot running — checking every 10 minutes
+2026-07-09 17:21:59,685  INFO      [NQ] ── Signal check 17:21 ──
+2026-07-09 17:21:59,730  ERROR     [NQ] Error: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 371, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 156, in compute_futures_signal_live
+    df_ind    = add_indicators(df.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-09 17:21:59,760  INFO      Retrying in 5 minutes...
+2026-07-09 17:26:59,761  INFO      [NQ] ── Signal check 17:26 ──
+2026-07-09 17:27:00,123  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-09 17:27:00,599  INFO      [NQ] Portfolio=$100,173.63  Price=$29937.00  Position=None
+2026-07-09 17:27:00,599  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,575)
+2026-07-09 17:27:00,599  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 17:37:00,600  INFO      [NQ] ── Signal check 17:37 ──
+2026-07-09 17:37:00,903  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-09 17:37:01,593  INFO      [NQ] Portfolio=$100,142.30  Price=$29961.50  Position=None
+2026-07-09 17:37:01,593  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,571)
+2026-07-09 17:37:01,594  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 17:47:01,594  INFO      [NQ] ── Signal check 17:47 ──
+2026-07-09 17:47:01,797  INFO      [NQ] Signal: LONG  |  Confidence: 0.651  |  Leverage: 1.23x
+2026-07-09 17:47:02,303  INFO      [NQ] Portfolio=$100,091.98  Price=$29953.00  Position=None
+2026-07-09 17:47:02,303  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,566)
+2026-07-09 17:47:02,304  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 17:48:43,937  INFO      [NQ] Futures bot stopped by user
