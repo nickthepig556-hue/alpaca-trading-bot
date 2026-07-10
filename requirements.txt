@@ -1,0 +1,11 @@
+﻿alpaca-py
+yfinance
+pandas
+numpy
+scikit-learn
+flask
+flask-cors
+python-dotenv
+requests
+bcrypt
+schedule
