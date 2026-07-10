@@ -3358,3 +3358,2187 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 22:39:31,561  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,020)
 2026-07-09 22:39:31,561  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
 2026-07-09 22:39:31,561  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 22:49:31,562  INFO      [ES] ── Signal check 22:49 ──
+2026-07-09 22:49:31,818  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 22:49:32,396  INFO      [ES] Portfolio=$100,123.35  Price=$7581.00  Position=None
+2026-07-09 22:49:32,396  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,019)
+2026-07-09 22:49:32,396  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 22:49:32,396  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 22:59:32,396  INFO      [ES] ── Signal check 22:59 ──
+2026-07-09 22:59:32,583  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 22:59:33,003  INFO      [ES] Portfolio=$100,053.37  Price=$7580.00  Position=None
+2026-07-09 22:59:33,003  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,008)
+2026-07-09 22:59:33,003  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 22:59:33,003  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:09:36,364  INFO      [ES] ── Signal check 23:09 ──
+2026-07-09 23:09:36,512  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:09:36,927  INFO      [ES] Portfolio=$100,002.64  Price=$7577.50  Position=None
+2026-07-09 23:09:36,927  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,000)
+2026-07-09 23:09:36,928  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:09:36,928  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:19:36,928  INFO      [ES] ── Signal check 23:19 ──
+2026-07-09 23:19:37,113  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:19:37,545  INFO      [ES] Portfolio=$100,043.24  Price=$7576.75  Position=None
+2026-07-09 23:19:37,545  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,006)
+2026-07-09 23:19:37,546  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:19:37,546  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:29:37,547  INFO      [ES] ── Signal check 23:29 ──
+2026-07-09 23:29:37,722  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:29:38,133  INFO      [ES] Portfolio=$100,036.87  Price=$7578.50  Position=None
+2026-07-09 23:29:38,133  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,006)
+2026-07-09 23:29:38,133  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:29:38,133  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:39:38,134  INFO      [ES] ── Signal check 23:39 ──
+2026-07-09 23:39:38,321  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:39:38,751  INFO      [ES] Portfolio=$99,999.36  Price=$7579.00  Position=None
+2026-07-09 23:39:38,752  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,000)
+2026-07-09 23:39:38,752  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:39:38,752  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:49:38,753  INFO      [ES] ── Signal check 23:49 ──
+2026-07-09 23:49:38,898  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:49:39,347  INFO      [ES] Portfolio=$99,989.39  Price=$7577.25  Position=None
+2026-07-09 23:49:39,347  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,998)
+2026-07-09 23:49:39,347  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:49:39,347  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-09 23:59:39,348  INFO      [ES] ── Signal check 23:59 ──
+2026-07-09 23:59:39,495  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-09 23:59:39,913  INFO      [ES] Portfolio=$99,966.94  Price=$7578.75  Position=None
+2026-07-09 23:59:39,914  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,995)
+2026-07-09 23:59:39,914  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-09 23:59:39,914  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:09:39,915  INFO      [ES] ── Signal check 00:09 ──
+2026-07-10 00:09:40,095  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:09:40,524  INFO      [ES] Portfolio=$99,982.20  Price=$7575.75  Position=None
+2026-07-10 00:09:40,525  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,997)
+2026-07-10 00:09:40,525  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:09:40,526  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:19:40,526  INFO      [ES] ── Signal check 00:19 ──
+2026-07-10 00:19:40,694  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:19:41,128  INFO      [ES] Portfolio=$99,959.41  Price=$7577.50  Position=None
+2026-07-10 00:19:41,129  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,994)
+2026-07-10 00:19:41,129  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:19:41,129  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:29:41,129  INFO      [ES] ── Signal check 00:29 ──
+2026-07-10 00:29:41,317  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:29:41,713  INFO      [ES] Portfolio=$99,877.38  Price=$7575.50  Position=None
+2026-07-10 00:29:41,713  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,982)
+2026-07-10 00:29:41,713  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:29:41,713  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:39:41,714  INFO      [ES] ── Signal check 00:39 ──
+2026-07-10 00:39:41,943  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:39:42,356  INFO      [ES] Portfolio=$99,866.13  Price=$7571.75  Position=None
+2026-07-10 00:39:42,356  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,980)
+2026-07-10 00:39:42,356  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:39:42,356  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:49:42,357  INFO      [ES] ── Signal check 00:49 ──
+2026-07-10 00:49:42,567  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:49:42,970  INFO      [ES] Portfolio=$99,908.12  Price=$7571.00  Position=None
+2026-07-10 00:49:42,971  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,986)
+2026-07-10 00:49:42,971  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:49:42,972  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 00:59:42,972  INFO      [ES] ── Signal check 00:59 ──
+2026-07-10 00:59:43,139  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 00:59:43,552  INFO      [ES] Portfolio=$99,898.36  Price=$7573.75  Position=None
+2026-07-10 00:59:43,552  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,985)
+2026-07-10 00:59:43,552  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 00:59:43,552  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:09:43,553  INFO      [ES] ── Signal check 01:09 ──
+2026-07-10 01:09:43,741  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:09:44,174  INFO      [ES] Portfolio=$99,888.11  Price=$7574.75  Position=None
+2026-07-10 01:09:44,174  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,983)
+2026-07-10 01:09:44,174  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:09:44,174  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:19:44,175  INFO      [ES] ── Signal check 01:19 ──
+2026-07-10 01:19:44,340  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:19:44,788  INFO      [ES] Portfolio=$99,902.37  Price=$7575.50  Position=None
+2026-07-10 01:19:44,788  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,985)
+2026-07-10 01:19:44,788  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:19:44,788  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:29:44,789  INFO      [ES] ── Signal check 01:29 ──
+2026-07-10 01:29:44,975  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:29:45,396  INFO      [ES] Portfolio=$99,949.38  Price=$7577.50  Position=None
+2026-07-10 01:29:45,396  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,992)
+2026-07-10 01:29:45,396  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:29:45,397  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:39:45,397  INFO      [ES] ── Signal check 01:39 ──
+2026-07-10 01:39:45,574  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:39:46,015  INFO      [ES] Portfolio=$99,937.02  Price=$7578.25  Position=None
+2026-07-10 01:39:46,015  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,991)
+2026-07-10 01:39:46,015  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:39:46,015  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:49:46,015  INFO      [ES] ── Signal check 01:49 ──
+2026-07-10 01:49:46,188  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:49:46,658  INFO      [ES] Portfolio=$99,827.35  Price=$7578.00  Position=None
+2026-07-10 01:49:46,659  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,974)
+2026-07-10 01:49:46,659  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:49:46,659  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 01:59:46,660  INFO      [ES] ── Signal check 01:59 ──
+2026-07-10 01:59:46,844  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 01:59:47,283  INFO      [ES] Portfolio=$99,823.80  Price=$7572.00  Position=None
+2026-07-10 01:59:47,284  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,974)
+2026-07-10 01:59:47,285  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 01:59:47,285  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:09:47,285  INFO      [ES] ── Signal check 02:09 ──
+2026-07-10 02:09:47,455  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:09:47,860  INFO      [ES] Portfolio=$99,842.98  Price=$7572.25  Position=None
+2026-07-10 02:09:47,860  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,976)
+2026-07-10 02:09:47,860  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:09:47,860  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:19:47,861  INFO      [ES] ── Signal check 02:19 ──
+2026-07-10 02:19:48,017  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:19:48,406  INFO      [ES] Portfolio=$99,921.76  Price=$7575.50  Position=None
+2026-07-10 02:19:48,406  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,988)
+2026-07-10 02:19:48,406  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:19:48,406  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:29:48,407  INFO      [ES] ── Signal check 02:29 ──
+2026-07-10 02:29:48,591  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:29:48,989  INFO      [ES] Portfolio=$99,869.69  Price=$7578.25  Position=None
+2026-07-10 02:29:48,989  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,980)
+2026-07-10 02:29:48,989  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:29:48,989  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:39:48,990  INFO      [ES] ── Signal check 02:39 ──
+2026-07-10 02:39:49,153  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:39:49,637  INFO      [ES] Portfolio=$99,876.49  Price=$7575.25  Position=None
+2026-07-10 02:39:49,637  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,981)
+2026-07-10 02:39:49,638  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:39:49,638  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:49:49,638  INFO      [ES] ── Signal check 02:49 ──
+2026-07-10 02:49:49,806  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:49:50,186  INFO      [ES] Portfolio=$99,867.32  Price=$7575.50  Position=None
+2026-07-10 02:49:50,187  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,980)
+2026-07-10 02:49:50,187  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:49:50,187  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 02:59:50,188  INFO      [ES] ── Signal check 02:59 ──
+2026-07-10 02:59:50,372  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 02:59:50,752  INFO      [ES] Portfolio=$99,828.54  Price=$7575.50  Position=None
+2026-07-10 02:59:50,752  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,974)
+2026-07-10 02:59:50,752  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 02:59:50,753  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:09:50,753  INFO      [ES] ── Signal check 03:09 ──
+2026-07-10 03:09:50,921  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:09:51,421  INFO      [ES] Portfolio=$99,848.82  Price=$7574.75  Position=None
+2026-07-10 03:09:51,421  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,977)
+2026-07-10 03:09:51,421  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:09:51,421  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:19:51,422  INFO      [ES] ── Signal check 03:19 ──
+2026-07-10 03:19:51,554  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:19:51,951  INFO      [ES] Portfolio=$99,977.05  Price=$7578.00  Position=None
+2026-07-10 03:19:51,952  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,997)
+2026-07-10 03:19:51,952  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:19:51,952  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:29:51,953  INFO      [ES] ── Signal check 03:29 ──
+2026-07-10 03:29:52,146  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:29:52,552  INFO      [ES] Portfolio=$99,963.46  Price=$7581.75  Position=None
+2026-07-10 03:29:52,553  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,995)
+2026-07-10 03:29:52,553  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:29:52,553  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:39:52,554  INFO      [ES] ── Signal check 03:39 ──
+2026-07-10 03:39:52,729  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:39:53,150  INFO      [ES] Portfolio=$99,992.06  Price=$7581.50  Position=None
+2026-07-10 03:39:53,150  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,999)
+2026-07-10 03:39:53,150  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:39:53,150  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:49:53,151  INFO      [ES] ── Signal check 03:49 ──
+2026-07-10 03:49:53,326  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:49:53,764  INFO      [ES] Portfolio=$99,952.70  Price=$7582.25  Position=None
+2026-07-10 03:49:53,764  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,993)
+2026-07-10 03:49:53,764  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:49:53,764  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 03:59:53,765  INFO      [ES] ── Signal check 03:59 ──
+2026-07-10 03:59:53,907  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 03:59:54,322  INFO      [ES] Portfolio=$99,977.42  Price=$7580.75  Position=None
+2026-07-10 03:59:54,322  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,997)
+2026-07-10 03:59:54,322  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 03:59:54,322  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:09:54,323  INFO      [ES] ── Signal check 04:09 ──
+2026-07-10 04:09:54,498  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:09:54,885  INFO      [ES] Portfolio=$100,068.45  Price=$7581.00  Position=None
+2026-07-10 04:09:54,885  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,010)
+2026-07-10 04:09:54,885  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:09:54,885  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:19:54,886  INFO      [ES] ── Signal check 04:19 ──
+2026-07-10 04:19:55,050  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:19:55,434  INFO      [ES] Portfolio=$100,023.35  Price=$7585.75  Position=None
+2026-07-10 04:19:55,435  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,004)
+2026-07-10 04:19:55,435  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:19:55,435  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:29:55,436  INFO      [ES] ── Signal check 04:29 ──
+2026-07-10 04:29:55,612  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:29:56,019  INFO      [ES] Portfolio=$100,120.78  Price=$7584.50  Position=None
+2026-07-10 04:29:56,020  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,018)
+2026-07-10 04:29:56,020  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:29:56,020  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:39:56,021  INFO      [ES] ── Signal check 04:39 ──
+2026-07-10 04:39:56,202  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:39:56,625  INFO      [ES] Portfolio=$100,125.22  Price=$7586.25  Position=None
+2026-07-10 04:39:56,626  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,019)
+2026-07-10 04:39:56,626  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:39:56,626  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:49:56,627  INFO      [ES] ── Signal check 04:49 ──
+2026-07-10 04:49:56,896  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:49:57,715  INFO      [ES] Portfolio=$100,137.78  Price=$7588.75  Position=None
+2026-07-10 04:49:57,715  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,021)
+2026-07-10 04:49:57,715  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:49:57,715  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 04:59:57,715  INFO      [ES] ── Signal check 04:59 ──
+2026-07-10 04:59:57,878  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 04:59:58,421  INFO      [ES] Portfolio=$100,135.12  Price=$7588.75  Position=None
+2026-07-10 04:59:58,421  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,020)
+2026-07-10 04:59:58,421  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 04:59:58,421  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 05:09:58,422  INFO      [ES] ── Signal check 05:09 ──
+2026-07-10 05:09:58,623  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 05:09:59,026  INFO      [ES] Portfolio=$100,121.12  Price=$7590.50  Position=None
+2026-07-10 05:09:59,026  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,018)
+2026-07-10 05:09:59,026  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 05:09:59,026  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 05:19:59,027  INFO      [ES] ── Signal check 05:19 ──
+2026-07-10 05:19:59,195  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 05:19:59,657  INFO      [ES] Portfolio=$100,166.35  Price=$7589.75  Position=None
+2026-07-10 05:19:59,657  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,025)
+2026-07-10 05:19:59,657  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 05:19:59,657  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 05:29:59,658  INFO      [ES] ── Signal check 05:29 ──
+2026-07-10 05:29:59,834  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 05:30:00,256  INFO      [ES] Portfolio=$100,068.70  Price=$7590.50  Position=None
+2026-07-10 05:30:00,256  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,010)
+2026-07-10 05:30:00,256  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 05:30:00,256  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 05:40:00,257  INFO      [ES] ── Signal check 05:40 ──
+2026-07-10 05:40:00,415  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 05:40:00,845  INFO      [ES] Portfolio=$99,938.31  Price=$7587.00  Position=None
+2026-07-10 05:40:00,846  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,991)
+2026-07-10 05:40:00,846  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 05:40:00,846  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 05:50:00,846  INFO      [ES] ── Signal check 05:50 ──
+2026-07-10 05:50:01,021  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 05:50:01,450  INFO      [ES] Portfolio=$100,027.70  Price=$7582.00  Position=None
+2026-07-10 05:50:01,450  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,004)
+2026-07-10 05:50:01,450  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 05:50:01,450  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:00:01,450  INFO      [ES] ── Signal check 06:00 ──
+2026-07-10 06:00:01,616  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:00:02,384  INFO      [ES] Portfolio=$99,969.58  Price=$7584.50  Position=None
+2026-07-10 06:00:02,384  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,995)
+2026-07-10 06:00:02,384  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:00:02,384  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:10:02,386  INFO      [ES] ── Signal check 06:10 ──
+2026-07-10 06:10:02,614  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:10:03,025  INFO      [ES] Portfolio=$99,906.31  Price=$7583.50  Position=None
+2026-07-10 06:10:03,025  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,986)
+2026-07-10 06:10:03,025  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:10:03,025  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:20:03,025  INFO      [ES] ── Signal check 06:20 ──
+2026-07-10 06:20:03,232  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:20:03,648  INFO      [ES] Portfolio=$100,059.89  Price=$7580.50  Position=None
+2026-07-10 06:20:03,648  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,009)
+2026-07-10 06:20:03,648  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:20:03,648  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:30:03,649  INFO      [ES] ── Signal check 06:30 ──
+2026-07-10 06:30:03,817  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:30:04,260  INFO      [ES] Portfolio=$100,053.28  Price=$7587.25  Position=None
+2026-07-10 06:30:04,260  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,008)
+2026-07-10 06:30:04,261  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:30:04,261  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:40:04,261  INFO      [ES] ── Signal check 06:40 ──
+2026-07-10 06:40:04,474  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:40:04,909  INFO      [ES] Portfolio=$100,100.15  Price=$7587.75  Position=None
+2026-07-10 06:40:04,910  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,015)
+2026-07-10 06:40:04,910  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:40:04,910  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 06:50:04,911  INFO      [ES] ── Signal check 06:50 ──
+2026-07-10 06:50:05,119  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 06:50:05,582  INFO      [ES] Portfolio=$100,021.01  Price=$7591.75  Position=None
+2026-07-10 06:50:05,582  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,003)
+2026-07-10 06:50:05,582  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 06:50:05,582  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:00:05,582  INFO      [ES] ── Signal check 07:00 ──
+2026-07-10 07:00:05,790  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:00:06,219  INFO      [ES] Portfolio=$99,977.07  Price=$7589.50  Position=None
+2026-07-10 07:00:06,219  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,997)
+2026-07-10 07:00:06,219  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:00:06,219  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:10:06,220  INFO      [ES] ── Signal check 07:10 ──
+2026-07-10 07:10:06,405  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:10:06,887  INFO      [ES] Portfolio=$100,014.52  Price=$7588.25  Position=None
+2026-07-10 07:10:06,887  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,002)
+2026-07-10 07:10:06,887  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:10:06,887  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:20:06,888  INFO      [ES] ── Signal check 07:20 ──
+2026-07-10 07:20:07,094  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:20:07,538  INFO      [ES] Portfolio=$100,032.74  Price=$7589.25  Position=None
+2026-07-10 07:20:07,538  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,005)
+2026-07-10 07:20:07,538  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:20:07,538  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:30:07,539  INFO      [ES] ── Signal check 07:30 ──
+2026-07-10 07:30:07,706  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:30:08,322  INFO      [ES] Portfolio=$99,987.47  Price=$7591.50  Position=None
+2026-07-10 07:30:08,322  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$14,998)
+2026-07-10 07:30:08,322  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:30:08,323  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:40:08,323  INFO      [ES] ── Signal check 07:40 ──
+2026-07-10 07:40:08,480  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:40:08,973  INFO      [ES] Portfolio=$100,122.54  Price=$7593.00  Position=None
+2026-07-10 07:40:08,973  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,018)
+2026-07-10 07:40:08,973  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:40:08,973  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 07:50:08,973  INFO      [ES] ── Signal check 07:50 ──
+2026-07-10 07:50:09,202  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 07:50:09,624  INFO      [ES] Portfolio=$100,287.69  Price=$7595.75  Position=None
+2026-07-10 07:50:09,625  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,043)
+2026-07-10 07:50:09,625  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 07:50:09,625  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 08:00:09,625  INFO      [ES] ── Signal check 08:00 ──
+2026-07-10 08:00:09,830  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:00:10,424  INFO      [ES] Portfolio=$100,282.66  Price=$7601.75  Position=None
+2026-07-10 08:00:10,425  INFO      Futures position: 1 units  (scale=25.5%, leverage=1.7x, exposure=$15,042)
+2026-07-10 08:00:10,425  INFO      [SIGNAL ONLY] LONG 1x ES — index futures require live account
+2026-07-10 08:00:10,425  INFO      [ES] Signal complete. Sleeping 600s...
+2026-07-10 08:10:10,425  INFO      [ES] ── Signal check 08:10 ──
+2026-07-10 08:10:10,612  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:10:10,966  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:10:11,007  INFO      Retrying in 5 minutes...
+2026-07-10 08:15:11,009  INFO      [ES] ── Signal check 08:15 ──
+2026-07-10 08:15:11,194  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:15:11,477  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:15:11,478  INFO      Retrying in 5 minutes...
+2026-07-10 08:20:11,479  INFO      [ES] ── Signal check 08:20 ──
+2026-07-10 08:20:11,665  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:20:11,918  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:20:11,919  INFO      Retrying in 5 minutes...
+2026-07-10 08:25:11,920  INFO      [ES] ── Signal check 08:25 ──
+2026-07-10 08:25:12,106  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:25:12,353  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:25:12,355  INFO      Retrying in 5 minutes...
+2026-07-10 08:30:12,355  INFO      [ES] ── Signal check 08:30 ──
+2026-07-10 08:30:12,551  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:30:12,817  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:30:12,818  INFO      Retrying in 5 minutes...
+2026-07-10 08:35:12,819  INFO      [ES] ── Signal check 08:35 ──
+2026-07-10 08:35:12,972  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:35:13,231  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:35:13,232  INFO      Retrying in 5 minutes...
+2026-07-10 08:40:13,233  INFO      [ES] ── Signal check 08:40 ──
+2026-07-10 08:40:13,427  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:40:13,685  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:40:13,686  INFO      Retrying in 5 minutes...
+2026-07-10 08:45:13,687  INFO      [ES] ── Signal check 08:45 ──
+2026-07-10 08:45:13,850  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:45:14,092  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:45:14,093  INFO      Retrying in 5 minutes...
+2026-07-10 08:50:14,094  INFO      [ES] ── Signal check 08:50 ──
+2026-07-10 08:50:14,282  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:50:14,538  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:50:14,539  INFO      Retrying in 5 minutes...
+2026-07-10 08:55:14,540  INFO      [ES] ── Signal check 08:55 ──
+2026-07-10 08:55:14,731  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 08:55:14,993  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 08:55:14,994  INFO      Retrying in 5 minutes...
+2026-07-10 09:00:14,994  INFO      [ES] ── Signal check 09:00 ──
+2026-07-10 09:00:15,160  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:00:15,420  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:00:15,421  INFO      Retrying in 5 minutes...
+2026-07-10 09:05:15,422  INFO      [ES] ── Signal check 09:05 ──
+2026-07-10 09:05:15,585  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:05:15,853  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:05:15,855  INFO      Retrying in 5 minutes...
+2026-07-10 09:10:15,858  INFO      [ES] ── Signal check 09:10 ──
+2026-07-10 09:10:16,042  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:10:16,308  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:10:16,309  INFO      Retrying in 5 minutes...
+2026-07-10 09:15:16,310  INFO      [ES] ── Signal check 09:15 ──
+2026-07-10 09:15:16,549  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:15:16,801  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:15:16,803  INFO      Retrying in 5 minutes...
+2026-07-10 09:20:16,803  INFO      [ES] ── Signal check 09:20 ──
+2026-07-10 09:20:17,224  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:20:18,169  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:20:18,170  INFO      Retrying in 5 minutes...
+2026-07-10 09:25:18,171  INFO      [ES] ── Signal check 09:25 ──
+2026-07-10 09:25:18,346  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:25:18,595  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:25:18,596  INFO      Retrying in 5 minutes...
+2026-07-10 09:30:18,596  INFO      [ES] ── Signal check 09:30 ──
+2026-07-10 09:30:18,771  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:30:19,040  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:30:19,042  INFO      Retrying in 5 minutes...
+2026-07-10 09:35:19,043  INFO      [ES] ── Signal check 09:35 ──
+2026-07-10 09:35:19,227  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:35:19,590  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:35:19,591  INFO      Retrying in 5 minutes...
+2026-07-10 09:40:19,592  INFO      [ES] ── Signal check 09:40 ──
+2026-07-10 09:40:19,829  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:40:20,142  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:40:20,143  INFO      Retrying in 5 minutes...
+2026-07-10 09:45:20,144  INFO      [ES] ── Signal check 09:45 ──
+2026-07-10 09:45:20,351  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:45:20,672  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:45:20,673  INFO      Retrying in 5 minutes...
+2026-07-10 09:50:20,674  INFO      [ES] ── Signal check 09:50 ──
+2026-07-10 09:50:20,860  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:50:21,182  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:50:21,183  INFO      Retrying in 5 minutes...
+2026-07-10 09:55:21,183  INFO      [ES] ── Signal check 09:55 ──
+2026-07-10 09:55:21,388  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 09:55:21,694  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 09:55:21,695  INFO      Retrying in 5 minutes...
+2026-07-10 10:00:21,696  INFO      [ES] ── Signal check 10:00 ──
+2026-07-10 10:00:21,901  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:00:22,162  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:00:22,163  INFO      Retrying in 5 minutes...
+2026-07-10 10:05:22,164  INFO      [ES] ── Signal check 10:05 ──
+2026-07-10 10:05:22,390  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:05:22,657  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:05:22,658  INFO      Retrying in 5 minutes...
+2026-07-10 10:10:22,659  INFO      [ES] ── Signal check 10:10 ──
+2026-07-10 10:10:22,822  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:10:23,077  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:10:23,078  INFO      Retrying in 5 minutes...
+2026-07-10 10:15:23,078  INFO      [ES] ── Signal check 10:15 ──
+2026-07-10 10:15:23,264  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:15:23,527  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:15:23,528  INFO      Retrying in 5 minutes...
+2026-07-10 10:20:23,528  INFO      [ES] ── Signal check 10:20 ──
+2026-07-10 10:20:23,805  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:20:24,062  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:20:24,063  INFO      Retrying in 5 minutes...
+2026-07-10 10:25:24,064  INFO      [ES] ── Signal check 10:25 ──
+2026-07-10 10:25:24,221  INFO      [ES] Signal: LONG  |  Confidence: 0.621  |  Leverage: 1.73x
+2026-07-10 10:25:24,481  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:25:24,483  INFO      Retrying in 5 minutes...
+2026-07-10 10:30:24,484  INFO      [ES] ── Signal check 10:30 ──
+2026-07-10 10:30:24,669  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:30:25,076  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:30:25,077  INFO      Retrying in 5 minutes...
+2026-07-10 10:35:25,078  INFO      [ES] ── Signal check 10:35 ──
+2026-07-10 10:35:25,295  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:35:25,542  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:35:25,543  INFO      Retrying in 5 minutes...
+2026-07-10 10:40:25,544  INFO      [ES] ── Signal check 10:40 ──
+2026-07-10 10:40:25,766  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:40:26,020  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:40:26,021  INFO      Retrying in 5 minutes...
+2026-07-10 10:45:26,021  INFO      [ES] ── Signal check 10:45 ──
+2026-07-10 10:45:26,200  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:45:26,451  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:45:26,451  INFO      Retrying in 5 minutes...
+2026-07-10 10:50:26,452  INFO      [ES] ── Signal check 10:50 ──
+2026-07-10 10:50:26,637  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:50:26,884  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:50:26,885  INFO      Retrying in 5 minutes...
+2026-07-10 10:55:26,889  INFO      [ES] ── Signal check 10:55 ──
+2026-07-10 10:55:27,076  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 10:55:27,329  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 10:55:27,330  INFO      Retrying in 5 minutes...
+2026-07-10 11:00:27,331  INFO      [ES] ── Signal check 11:00 ──
+2026-07-10 11:00:27,540  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:00:27,802  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:00:27,803  INFO      Retrying in 5 minutes...
+2026-07-10 11:05:27,804  INFO      [ES] ── Signal check 11:05 ──
+2026-07-10 11:05:27,999  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:05:28,249  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:05:28,250  INFO      Retrying in 5 minutes...
+2026-07-10 11:10:28,250  INFO      [ES] ── Signal check 11:10 ──
+2026-07-10 11:10:28,433  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:10:28,804  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:10:28,806  INFO      Retrying in 5 minutes...
+2026-07-10 11:15:28,807  INFO      [ES] ── Signal check 11:15 ──
+2026-07-10 11:15:29,001  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:15:29,264  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:15:29,265  INFO      Retrying in 5 minutes...
+2026-07-10 11:20:29,266  INFO      [ES] ── Signal check 11:20 ──
+2026-07-10 11:20:29,421  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:20:29,670  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:20:29,671  INFO      Retrying in 5 minutes...
+2026-07-10 11:25:29,671  INFO      [ES] ── Signal check 11:25 ──
+2026-07-10 11:25:29,837  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:25:30,094  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:25:30,095  INFO      Retrying in 5 minutes...
+2026-07-10 11:30:30,096  INFO      [ES] ── Signal check 11:30 ──
+2026-07-10 11:30:30,311  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:30:30,584  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:30:30,586  INFO      Retrying in 5 minutes...
+2026-07-10 11:35:30,587  INFO      [ES] ── Signal check 11:35 ──
+2026-07-10 11:35:30,804  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:35:31,053  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:35:31,054  INFO      Retrying in 5 minutes...
+2026-07-10 11:40:31,054  INFO      [ES] ── Signal check 11:40 ──
+2026-07-10 11:40:31,222  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:40:31,502  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:40:31,503  INFO      Retrying in 5 minutes...
+2026-07-10 11:45:31,504  INFO      [ES] ── Signal check 11:45 ──
+2026-07-10 11:45:31,704  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:45:31,973  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:45:31,974  INFO      Retrying in 5 minutes...
+2026-07-10 11:50:31,975  INFO      [ES] ── Signal check 11:50 ──
+2026-07-10 11:50:32,161  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:50:32,419  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:50:32,420  INFO      Retrying in 5 minutes...
+2026-07-10 11:55:32,421  INFO      [ES] ── Signal check 11:55 ──
+2026-07-10 11:55:32,597  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 11:55:32,847  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 11:55:32,848  INFO      Retrying in 5 minutes...
+2026-07-10 12:00:32,849  INFO      [ES] ── Signal check 12:00 ──
+2026-07-10 12:00:33,065  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:00:33,517  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:00:33,519  INFO      Retrying in 5 minutes...
+2026-07-10 12:05:33,520  INFO      [ES] ── Signal check 12:05 ──
+2026-07-10 12:05:33,755  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:05:34,015  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:05:34,017  INFO      Retrying in 5 minutes...
+2026-07-10 12:10:34,018  INFO      [ES] ── Signal check 12:10 ──
+2026-07-10 12:10:34,204  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:10:34,463  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:10:34,465  INFO      Retrying in 5 minutes...
+2026-07-10 12:15:34,466  INFO      [ES] ── Signal check 12:15 ──
+2026-07-10 12:15:34,676  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:15:34,948  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:15:34,949  INFO      Retrying in 5 minutes...
+2026-07-10 12:20:34,950  INFO      [ES] ── Signal check 12:20 ──
+2026-07-10 12:20:35,155  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:20:36,471  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:20:36,474  INFO      Retrying in 5 minutes...
+2026-07-10 12:25:36,474  INFO      [ES] ── Signal check 12:25 ──
+2026-07-10 12:25:36,659  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:25:36,922  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:25:36,923  INFO      Retrying in 5 minutes...
+2026-07-10 12:30:36,924  INFO      [ES] ── Signal check 12:30 ──
+2026-07-10 12:30:37,125  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:30:37,406  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:30:37,407  INFO      Retrying in 5 minutes...
+2026-07-10 12:35:37,408  INFO      [ES] ── Signal check 12:35 ──
+2026-07-10 12:35:37,563  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:35:37,809  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:35:37,810  INFO      Retrying in 5 minutes...
+2026-07-10 12:40:37,811  INFO      [ES] ── Signal check 12:40 ──
+2026-07-10 12:40:38,018  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:40:38,267  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:40:38,268  INFO      Retrying in 5 minutes...
+2026-07-10 12:45:38,268  INFO      [ES] ── Signal check 12:45 ──
+2026-07-10 12:45:38,430  INFO      [ES] Signal: LONG  |  Confidence: 0.669  |  Leverage: 1.79x
+2026-07-10 12:45:38,688  ERROR     [ES] Error: {"message": "unauthorized."}
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/account
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 373, in run_futures_signal
+    portfolio = float(trading_client.get_account().equity)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 474, in get_account
+    response = self.get("/account")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: {"message": "unauthorized."}
+
+2026-07-10 12:45:38,689  INFO      Retrying in 5 minutes...

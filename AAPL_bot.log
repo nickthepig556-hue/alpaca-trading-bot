@@ -3511,3 +3511,2409 @@ TypeError: unsupported format string passed to NoneType.__format__
 2026-07-09 19:49:04,200  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-09 20:49:04,385  INFO      Market closed. Next open in 60 min. Sleeping...
 2026-07-09 21:49:04,579  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 22:49:04,815  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-09 23:49:08,371  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 00:49:08,562  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 01:49:08,750  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 02:49:08,934  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 03:49:09,212  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 04:49:09,483  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 05:49:09,678  INFO      Market closed. Next open in 60 min. Sleeping...
+2026-07-10 06:49:09,884  INFO      Market closed. Next open in 41 min. Sleeping...
+2026-07-10 07:30:05,292  INFO      Market open — waiting 300s before first signal...
+2026-07-10 07:35:05,293  INFO      =======================================================
+2026-07-10 07:35:05,294  INFO      Daily signal run  [2026-07-10 07:35]
+2026-07-10 07:35:05,295  INFO      =======================================================
+2026-07-10 07:35:07,412  INFO      Fetched 70 bars for AAPL  (2026-03-31 → 2026-07-10)
+2026-07-10 07:35:07,659  INFO      Signal: BUY  |  Confidence: 0.862
+2026-07-10 07:35:07,927  INFO      Portfolio value : $100,253.62
+2026-07-10 07:35:07,927  INFO      Current price   : $315.72
+2026-07-10 07:35:07,927  INFO      Open position   : {'qty': 53, 'side': 'long', 'entry_price': 312.433929, 'market_value': 16731.04, 'unrealised_pl': 172.041763}
+2026-07-10 07:35:07,927  INFO      BUY signal — already long, monitoring existing position
+2026-07-10 07:35:07,927  INFO      Monitoring AAPL  |  entry=312.43  stop=306.19  target=324.93
+2026-07-10 07:36:08,216  INFO        AAPL [long] price=316.06  stop=306.19  trailing=inactive  target=324.93  P&L=+193.24
+2026-07-10 07:37:08,450  INFO        AAPL [long] price=316.26  stop=306.19  trailing=inactive  target=324.93  P&L=+202.78
+2026-07-10 07:38:08,698  INFO        AAPL [long] price=315.62  stop=306.19  trailing=inactive  target=324.93  P&L=+169.13
+2026-07-10 07:39:08,947  INFO        AAPL [long] price=315.43  stop=306.19  trailing=inactive  target=324.93  P&L=+161.44
+2026-07-10 07:40:09,178  INFO        AAPL [long] price=314.94  stop=306.19  trailing=inactive  target=324.93  P&L=+132.82
+2026-07-10 07:41:09,455  INFO        AAPL [long] price=315.08  stop=306.19  trailing=inactive  target=324.93  P&L=+146.60
+2026-07-10 07:42:09,711  INFO        AAPL [long] price=314.84  stop=306.19  trailing=inactive  target=324.93  P&L=+128.32
+2026-07-10 07:43:09,975  INFO        AAPL [long] price=314.75  stop=306.19  trailing=inactive  target=324.93  P&L=+123.81
+2026-07-10 07:44:10,232  INFO        AAPL [long] price=314.78  stop=306.19  trailing=inactive  target=324.93  P&L=+125.40
+2026-07-10 07:45:10,533  INFO        AAPL [long] price=314.67  stop=306.19  trailing=inactive  target=324.93  P&L=+120.10
+2026-07-10 07:46:10,766  INFO        AAPL [long] price=314.44  stop=306.19  trailing=inactive  target=324.93  P&L=+106.85
+2026-07-10 07:47:11,325  INFO        AAPL [long] price=314.51  stop=306.19  trailing=inactive  target=324.93  P&L=+109.50
+2026-07-10 07:48:11,560  INFO        AAPL [long] price=314.36  stop=306.19  trailing=inactive  target=324.93  P&L=+97.31
+2026-07-10 07:49:11,782  INFO        AAPL [long] price=314.40  stop=306.19  trailing=inactive  target=324.93  P&L=+103.67
+2026-07-10 07:50:12,005  INFO        AAPL [long] price=314.52  stop=306.19  trailing=inactive  target=324.93  P&L=+108.97
+2026-07-10 07:51:12,252  INFO        AAPL [long] price=314.37  stop=306.19  trailing=inactive  target=324.93  P&L=+102.88
+2026-07-10 07:52:12,537  INFO        AAPL [long] price=314.12  stop=306.19  trailing=inactive  target=324.93  P&L=+89.89
+2026-07-10 07:53:12,787  INFO        AAPL [long] price=314.18  stop=306.19  trailing=inactive  target=324.93  P&L=+94.66
+2026-07-10 07:54:13,054  INFO        AAPL [long] price=314.48  stop=306.19  trailing=inactive  target=324.93  P&L=+108.97
+2026-07-10 07:55:13,331  INFO        AAPL [long] price=314.70  stop=306.19  trailing=inactive  target=324.93  P&L=+120.63
+2026-07-10 07:56:13,712  INFO        AAPL [long] price=314.85  stop=306.19  trailing=inactive  target=324.93  P&L=+125.40
+2026-07-10 07:57:13,966  INFO        AAPL [long] price=315.09  stop=306.19  trailing=inactive  target=324.93  P&L=+140.77
+2026-07-10 07:58:14,449  INFO        AAPL [long] price=314.93  stop=306.19  trailing=inactive  target=324.93  P&L=+132.82
+2026-07-10 07:59:14,690  INFO        AAPL [long] price=314.89  stop=306.19  trailing=inactive  target=324.93  P&L=+129.11
+2026-07-10 08:00:15,052  INFO        AAPL [long] price=314.70  stop=306.19  trailing=inactive  target=324.93  P&L=+117.46
+2026-07-10 08:01:15,361  INFO        AAPL [long] price=313.92  stop=306.19  trailing=inactive  target=324.93  P&L=+78.23
+2026-07-10 08:02:15,580  INFO        AAPL [long] price=314.18  stop=306.19  trailing=inactive  target=324.93  P&L=+96.78
+2026-07-10 08:03:15,804  INFO        AAPL [long] price=314.11  stop=306.19  trailing=inactive  target=324.93  P&L=+90.16
+2026-07-10 08:04:16,014  INFO        AAPL [long] price=313.94  stop=306.19  trailing=inactive  target=324.93  P&L=+80.88
+2026-07-10 08:05:16,224  INFO        AAPL [long] price=313.93  stop=306.19  trailing=inactive  target=324.93  P&L=+79.27
+2026-07-10 08:06:16,474  INFO        AAPL [long] price=314.04  stop=306.19  trailing=inactive  target=324.93  P&L=+85.13
+2026-07-10 08:07:16,844  INFO        AAPL [long] price=313.45  stop=306.19  trailing=inactive  target=324.93  P&L=+54.38
+2026-07-10 08:08:16,966  INFO      Position already closed (possibly by another order)
+2026-07-10 08:08:16,967  INFO      Signal check complete. Sleeping 5 minutes until next check.
+2026-07-10 08:13:17,155  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:13:17,158  INFO      Retrying in 5 minutes...
+2026-07-10 08:18:17,364  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:18:17,365  INFO      Retrying in 5 minutes...
+2026-07-10 08:23:17,595  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:23:17,596  INFO      Retrying in 5 minutes...
+2026-07-10 08:28:17,796  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:28:17,797  INFO      Retrying in 5 minutes...
+2026-07-10 08:33:18,001  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:33:18,003  INFO      Retrying in 5 minutes...
+2026-07-10 08:38:18,202  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:38:18,204  INFO      Retrying in 5 minutes...
+2026-07-10 08:43:18,409  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:43:18,410  INFO      Retrying in 5 minutes...
+2026-07-10 08:48:18,598  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:48:18,599  INFO      Retrying in 5 minutes...
+2026-07-10 08:53:18,831  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:53:18,832  INFO      Retrying in 5 minutes...
+2026-07-10 08:58:19,060  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 08:58:19,061  INFO      Retrying in 5 minutes...
+2026-07-10 09:03:19,280  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:03:19,281  INFO      Retrying in 5 minutes...
+2026-07-10 09:08:19,528  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:08:19,530  INFO      Retrying in 5 minutes...
+2026-07-10 09:13:19,817  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:13:19,818  INFO      Retrying in 5 minutes...
+2026-07-10 09:18:20,047  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:18:20,048  INFO      Retrying in 5 minutes...
+2026-07-10 09:23:21,276  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:23:21,277  INFO      Retrying in 5 minutes...
+2026-07-10 09:28:21,464  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:28:21,465  INFO      Retrying in 5 minutes...
+2026-07-10 09:33:21,728  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:33:21,729  INFO      Retrying in 5 minutes...
+2026-07-10 09:38:22,031  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:38:22,033  INFO      Retrying in 5 minutes...
+2026-07-10 09:43:22,223  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:43:22,224  INFO      Retrying in 5 minutes...
+2026-07-10 09:48:22,449  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:48:22,450  INFO      Retrying in 5 minutes...
+2026-07-10 09:53:22,686  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:53:22,687  INFO      Retrying in 5 minutes...
+2026-07-10 09:58:22,926  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 09:58:22,927  INFO      Retrying in 5 minutes...
+2026-07-10 10:03:23,168  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:03:23,169  INFO      Retrying in 5 minutes...
+2026-07-10 10:08:23,439  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:08:23,439  INFO      Retrying in 5 minutes...
+2026-07-10 10:13:23,769  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:13:23,770  INFO      Retrying in 5 minutes...
+2026-07-10 10:18:23,993  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:18:23,994  INFO      Retrying in 5 minutes...
+2026-07-10 10:23:24,210  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:23:24,210  INFO      Retrying in 5 minutes...
+2026-07-10 10:28:24,436  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:28:24,436  INFO      Retrying in 5 minutes...
+2026-07-10 10:33:24,664  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:33:24,665  INFO      Retrying in 5 minutes...
+2026-07-10 10:38:24,896  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:38:24,897  INFO      Retrying in 5 minutes...
+2026-07-10 10:43:25,118  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:43:25,119  INFO      Retrying in 5 minutes...
+2026-07-10 10:48:25,347  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:48:25,348  INFO      Retrying in 5 minutes...
+2026-07-10 10:53:25,558  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:53:25,559  INFO      Retrying in 5 minutes...
+2026-07-10 10:58:25,755  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 10:58:25,756  INFO      Retrying in 5 minutes...
+2026-07-10 11:03:25,992  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:03:25,993  INFO      Retrying in 5 minutes...
+2026-07-10 11:08:26,297  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:08:26,298  INFO      Retrying in 5 minutes...
+2026-07-10 11:13:26,483  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:13:26,484  INFO      Retrying in 5 minutes...
+2026-07-10 11:18:26,676  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:18:26,677  INFO      Retrying in 5 minutes...
+2026-07-10 11:23:26,872  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:23:26,873  INFO      Retrying in 5 minutes...
+2026-07-10 11:28:27,065  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:28:27,066  INFO      Retrying in 5 minutes...
+2026-07-10 11:33:27,267  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:33:27,267  INFO      Retrying in 5 minutes...
+2026-07-10 11:38:27,557  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:38:27,558  INFO      Retrying in 5 minutes...
+2026-07-10 11:43:27,756  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:43:27,757  INFO      Retrying in 5 minutes...
+2026-07-10 11:48:27,960  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:48:27,962  INFO      Retrying in 5 minutes...
+2026-07-10 11:53:28,224  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:53:28,225  INFO      Retrying in 5 minutes...
+2026-07-10 11:58:28,468  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 11:58:28,469  INFO      Retrying in 5 minutes...
+2026-07-10 12:03:28,716  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:03:28,718  INFO      Retrying in 5 minutes...
+2026-07-10 12:08:28,948  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:08:28,949  INFO      Retrying in 5 minutes...
+2026-07-10 12:13:29,188  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:13:29,188  INFO      Retrying in 5 minutes...
+2026-07-10 12:18:29,413  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:18:29,414  INFO      Retrying in 5 minutes...
+2026-07-10 12:23:29,641  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:23:29,642  INFO      Retrying in 5 minutes...
+2026-07-10 12:28:29,875  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:28:29,882  INFO      Retrying in 5 minutes...
+2026-07-10 12:33:30,082  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:33:30,083  INFO      Retrying in 5 minutes...
+2026-07-10 12:38:30,272  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:38:30,273  INFO      Retrying in 5 minutes...
+2026-07-10 12:43:30,521  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:43:30,522  INFO      Retrying in 5 minutes...
+2026-07-10 12:48:30,727  ERROR     Unexpected error: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 198, in _one_request
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://paper-api.alpaca.markets/v2/clock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 692, in run_bot
+    wait_for_market_open(trading_client)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\alpaca_bot.py", line 545, in wait_for_market_open
+    clock = trading_client.get_clock()
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\trading\client.py", line 431, in get_clock
+    response = self.get("/clock")
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 225, in get
+    return self._request("GET", path, data, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 131, in _request
+    return self._one_request(method, url, opts, retry)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\alpaca\common\rest.py", line 207, in _one_request
+    raise APIError(error, http_error)
+alpaca.common.exceptions.APIError: <html>
+<head><title>401 Authorization Required</title></head>
+<body>
+<center><h1>401 Authorization Required</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+2026-07-10 12:48:30,728  INFO      Retrying in 5 minutes...
