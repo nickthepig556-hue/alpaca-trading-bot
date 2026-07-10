@@ -5,3 +5,4 @@ __pycache__/
 users.db
 login (1).html
 *.db
+*.log
