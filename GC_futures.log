@@ -2900,3 +2900,188 @@ ValueError: operands could not be broadcast together with shapes (53,12) (17,)
 2026-07-09 17:42:03,912  INFO      [GC] FLAT signal — no trade
 2026-07-09 17:42:03,912  INFO      [GC] Signal complete. Sleeping 600s...
 2026-07-09 17:48:43,936  INFO      [GC] Futures bot stopped by user
+2026-07-09 17:49:15,756  INFO      [FUTURES BOT] Starting: GC (Gold Futures)
+2026-07-09 17:49:15,756  INFO        Mode       : PAPER
+2026-07-09 17:49:15,756  INFO        Max leverage: 15.0x
+2026-07-09 17:49:15,756  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:49:15,764  INFO        Evolved leverage: 3.4x
+2026-07-09 17:49:15,764  INFO        Stop width: 3.3%
+2026-07-09 17:49:15,765  INFO      [GC] Bot running — checking every 10 minutes
+2026-07-09 17:49:15,765  INFO      [GC] ── Signal check 17:49 ──
+2026-07-09 17:49:16,144  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 17:49:16,611  INFO      [GC] Portfolio=$100,086.14  Price=$4131.30  Position=None
+2026-07-09 17:49:16,611  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,013)
+2026-07-09 17:49:16,611  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 17:49:16,612  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 17:59:16,612  INFO      [GC] ── Signal check 17:59 ──
+2026-07-09 17:59:21,779  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 17:59:22,379  INFO      [GC] Portfolio=$100,112.09  Price=$4133.10  Position=None
+2026-07-09 17:59:22,379  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,017)
+2026-07-09 17:59:22,379  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 17:59:22,380  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:09:22,380  INFO      [GC] ── Signal check 18:09 ──
+2026-07-09 18:09:22,591  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 18:09:23,086  INFO      [GC] Portfolio=$100,017.13  Price=$4132.40  Position=None
+2026-07-09 18:09:23,086  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,003)
+2026-07-09 18:09:23,086  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:09:23,086  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:19:23,087  INFO      [GC] ── Signal check 18:19 ──
+2026-07-09 18:19:23,293  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 18:19:23,734  INFO      [GC] Portfolio=$99,978.42  Price=$4130.90  Position=None
+2026-07-09 18:19:23,734  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$14,997)
+2026-07-09 18:19:23,734  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:19:23,734  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:29:23,735  INFO      [GC] ── Signal check 18:29 ──
+2026-07-09 18:29:24,002  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 18:29:24,643  INFO      [GC] Portfolio=$99,889.19  Price=$4130.40  Position=None
+2026-07-09 18:29:24,643  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$14,983)
+2026-07-09 18:29:24,644  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:29:24,644  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:39:24,644  INFO      [GC] ── Signal check 18:39 ──
+2026-07-09 18:39:24,788  INFO      [GC] Signal: LONG  |  Confidence: 0.581  |  Leverage: 1.38x
+2026-07-09 18:39:25,282  INFO      [GC] Portfolio=$99,815.95  Price=$4127.90  Position=None
+2026-07-09 18:39:25,283  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$14,972)
+2026-07-09 18:39:25,283  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:39:25,283  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:49:25,283  INFO      [GC] ── Signal check 18:49 ──
+2026-07-09 18:49:25,467  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 18:49:25,999  INFO      [GC] Portfolio=$99,811.17  Price=$4128.30  Position=None
+2026-07-09 18:49:25,999  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,972)
+2026-07-09 18:49:25,999  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:49:25,999  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 18:59:26,000  INFO      [GC] ── Signal check 18:59 ──
+2026-07-09 18:59:26,176  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 18:59:26,734  INFO      [GC] Portfolio=$99,944.14  Price=$4131.90  Position=None
+2026-07-09 18:59:26,735  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,992)
+2026-07-09 18:59:26,735  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 18:59:26,735  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:09:26,736  INFO      [GC] ── Signal check 19:09 ──
+2026-07-09 19:09:26,920  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:09:27,357  INFO      [GC] Portfolio=$99,862.53  Price=$4136.20  Position=None
+2026-07-09 19:09:27,357  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,979)
+2026-07-09 19:09:27,357  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:09:27,358  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:19:27,358  INFO      [GC] ── Signal check 19:19 ──
+2026-07-09 19:19:27,543  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:19:27,995  INFO      [GC] Portfolio=$99,888.79  Price=$4134.60  Position=None
+2026-07-09 19:19:27,995  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,983)
+2026-07-09 19:19:27,995  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:19:27,995  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:29:27,996  INFO      [GC] ── Signal check 19:29 ──
+2026-07-09 19:29:28,223  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:29:28,710  INFO      [GC] Portfolio=$99,907.96  Price=$4135.90  Position=None
+2026-07-09 19:29:28,710  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,986)
+2026-07-09 19:29:28,710  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:29:28,710  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:39:28,710  INFO      [GC] ── Signal check 19:39 ──
+2026-07-09 19:39:28,896  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:39:29,416  INFO      [GC] Portfolio=$99,944.89  Price=$4130.90  Position=None
+2026-07-09 19:39:29,416  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$14,992)
+2026-07-09 19:39:29,416  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:39:29,416  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:49:29,417  INFO      [GC] ── Signal check 19:49 ──
+2026-07-09 19:49:29,713  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:49:30,250  INFO      [GC] Portfolio=$100,119.95  Price=$4124.80  Position=None
+2026-07-09 19:49:30,250  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,018)
+2026-07-09 19:49:30,250  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:49:30,250  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 19:59:30,252  INFO      [GC] ── Signal check 19:59 ──
+2026-07-09 19:59:30,451  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 19:59:30,897  INFO      [GC] Portfolio=$100,098.10  Price=$4122.50  Position=None
+2026-07-09 19:59:30,897  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,015)
+2026-07-09 19:59:30,897  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 19:59:30,897  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:09:30,897  INFO      [GC] ── Signal check 20:09 ──
+2026-07-09 20:09:31,082  INFO      [GC] Signal: LONG  |  Confidence: 0.692  |  Leverage: 1.45x
+2026-07-09 20:09:31,513  INFO      [GC] Portfolio=$100,039.08  Price=$4126.60  Position=None
+2026-07-09 20:09:31,513  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,006)
+2026-07-09 20:09:31,514  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:09:31,514  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:19:31,514  INFO      [GC] ── Signal check 20:19 ──
+2026-07-09 20:19:31,657  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 20:19:32,115  INFO      [GC] Portfolio=$100,051.84  Price=$4134.20  Position=None
+2026-07-09 20:19:32,116  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,008)
+2026-07-09 20:19:32,116  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:19:32,116  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:29:32,116  INFO      [GC] ── Signal check 20:29 ──
+2026-07-09 20:29:32,301  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 20:29:32,748  INFO      [GC] Portfolio=$100,024.70  Price=$4137.20  Position=None
+2026-07-09 20:29:32,748  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,004)
+2026-07-09 20:29:32,749  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:29:32,749  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:39:32,749  INFO      [GC] ── Signal check 20:39 ──
+2026-07-09 20:39:32,946  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 20:39:33,430  INFO      [GC] Portfolio=$100,065.02  Price=$4135.30  Position=None
+2026-07-09 20:39:33,430  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,010)
+2026-07-09 20:39:33,430  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:39:33,430  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:49:33,431  INFO      [GC] ── Signal check 20:49 ──
+2026-07-09 20:49:33,620  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 20:49:34,177  INFO      [GC] Portfolio=$100,162.41  Price=$4133.40  Position=None
+2026-07-09 20:49:34,178  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,024)
+2026-07-09 20:49:34,178  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:49:34,178  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 20:59:34,178  INFO      [GC] ── Signal check 20:59 ──
+2026-07-09 20:59:34,347  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 20:59:34,828  INFO      [GC] Portfolio=$100,231.04  Price=$4134.60  Position=None
+2026-07-09 20:59:34,829  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,035)
+2026-07-09 20:59:34,829  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 20:59:34,829  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:09:34,829  INFO      [GC] ── Signal check 21:09 ──
+2026-07-09 21:09:34,994  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:09:35,432  INFO      [GC] Portfolio=$100,275.92  Price=$4136.70  Position=None
+2026-07-09 21:09:35,432  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,041)
+2026-07-09 21:09:35,432  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:09:35,432  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:19:35,433  INFO      [GC] ── Signal check 21:19 ──
+2026-07-09 21:19:35,616  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:19:36,064  INFO      [GC] Portfolio=$100,251.59  Price=$4142.50  Position=None
+2026-07-09 21:19:36,064  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,038)
+2026-07-09 21:19:36,065  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:19:36,065  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:29:36,065  INFO      [GC] ── Signal check 21:29 ──
+2026-07-09 21:29:36,243  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:29:36,873  INFO      [GC] Portfolio=$100,195.14  Price=$4135.60  Position=None
+2026-07-09 21:29:36,873  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,029)
+2026-07-09 21:29:36,873  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:29:36,873  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:39:36,874  INFO      [GC] ── Signal check 21:39 ──
+2026-07-09 21:39:38,102  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:39:38,859  INFO      [GC] Portfolio=$100,162.91  Price=$4136.00  Position=None
+2026-07-09 21:39:38,859  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,024)
+2026-07-09 21:39:38,859  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:39:38,859  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:49:38,861  INFO      [GC] ── Signal check 21:49 ──
+2026-07-09 21:49:39,043  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:49:39,568  INFO      [GC] Portfolio=$100,168.64  Price=$4133.30  Position=None
+2026-07-09 21:49:39,569  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,025)
+2026-07-09 21:49:39,569  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:49:39,569  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 21:59:39,569  INFO      [GC] ── Signal check 21:59 ──
+2026-07-09 21:59:39,757  INFO      [GC] Signal: LONG  |  Confidence: 0.696  |  Leverage: 1.46x
+2026-07-09 21:59:40,203  INFO      [GC] Portfolio=$100,170.65  Price=$4129.50  Position=None
+2026-07-09 21:59:40,203  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.5x, exposure=$15,026)
+2026-07-09 21:59:40,203  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 21:59:40,203  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 22:09:40,204  INFO      [GC] ── Signal check 22:09 ──
+2026-07-09 22:09:40,387  INFO      [GC] Signal: FLAT  |  Confidence: 0.469  |  Leverage: 1.31x
+2026-07-09 22:09:40,810  WARNING   [GC] Could not get price — skipping
+2026-07-09 22:09:40,810  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 22:19:40,811  INFO      [GC] ── Signal check 22:19 ──
+2026-07-09 22:19:40,985  INFO      [GC] Signal: LONG  |  Confidence: 0.597  |  Leverage: 1.39x
+2026-07-09 22:19:41,399  INFO      [GC] Portfolio=$100,193.63  Price=$4127.10  Position=None
+2026-07-09 22:19:41,399  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,029)
+2026-07-09 22:19:41,399  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 22:19:41,399  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 22:29:41,400  INFO      [GC] ── Signal check 22:29 ──
+2026-07-09 22:29:41,585  INFO      [GC] Signal: LONG  |  Confidence: 0.597  |  Leverage: 1.39x
+2026-07-09 22:29:42,033  INFO      [GC] Portfolio=$100,162.84  Price=$4129.00  Position=None
+2026-07-09 22:29:42,033  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,024)
+2026-07-09 22:29:42,034  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 22:29:42,034  INFO      [GC] Signal complete. Sleeping 600s...
+2026-07-09 22:39:42,034  INFO      [GC] ── Signal check 22:39 ──
+2026-07-09 22:39:42,231  INFO      [GC] Signal: LONG  |  Confidence: 0.597  |  Leverage: 1.39x
+2026-07-09 22:39:42,703  INFO      [GC] Portfolio=$100,127.29  Price=$4125.50  Position=None
+2026-07-09 22:39:42,704  INFO      Futures position: 3 units  (scale=15.1%, leverage=1.4x, exposure=$15,019)
+2026-07-09 22:39:42,704  INFO      [SIGNAL ONLY] LONG 3x GC — index futures require live account
+2026-07-09 22:39:42,704  INFO      [GC] Signal complete. Sleeping 600s...

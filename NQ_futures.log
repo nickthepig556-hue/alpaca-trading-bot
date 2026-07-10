@@ -2821,3 +2821,185 @@ ValueError: window must be an integer 0 or greater
 2026-07-09 17:47:02,303  INFO      Futures position: 0 units  (scale=8.6%, leverage=1.2x, exposure=$10,566)
 2026-07-09 17:47:02,304  INFO      [NQ] Signal complete. Sleeping 600s...
 2026-07-09 17:48:43,937  INFO      [NQ] Futures bot stopped by user
+2026-07-09 17:49:13,696  INFO      [FUTURES BOT] Starting: NQ (E-mini Nasdaq Futures)
+2026-07-09 17:49:13,696  INFO        Mode       : PAPER
+2026-07-09 17:49:13,697  INFO        Max leverage: 20.0x
+2026-07-09 17:49:13,697  INFO        Trading hours: 23h/day (Mon-Fri)
+2026-07-09 17:49:13,705  INFO        Evolved leverage: 4.4x
+2026-07-09 17:49:13,705  INFO        Stop width: 6.4%
+2026-07-09 17:49:13,705  INFO      [NQ] Bot running — checking every 10 minutes
+2026-07-09 17:49:13,705  INFO      [NQ] ── Signal check 17:49 ──
+2026-07-09 17:49:14,069  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 17:49:14,595  INFO      [NQ] Portfolio=$100,087.73  Price=$29954.25  Position=None
+2026-07-09 17:49:14,596  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,013)
+2026-07-09 17:49:14,596  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 17:59:14,596  INFO      [NQ] ── Signal check 17:59 ──
+2026-07-09 17:59:19,615  ERROR     [NQ] Error: window must be an integer 0 or greater
+Traceback (most recent call last):
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 501, in run_futures_bot
+    run_futures_signal(trading_client, ticker, chrom, decoded, risk_guard, cfg)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 371, in run_futures_signal
+    signal, confidence, leverage = compute_futures_signal_live(ticker, chrom)
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\futures_trading.py", line 156, in compute_futures_signal_live
+    df_ind    = add_indicators(df.copy())
+  File "C:\Users\nickt\alpaca-trading-bot\stock_data.py", line 41, in add_indicators
+    df['SMA_200'] = df['Close'].rolling(window=min(200, len(df) - 1)).mean()
+                    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\generic.py", line 12208, in rolling
+    return Rolling(
+        self,
+    ...<7 lines>...
+        method=method,
+    )
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 160, in __init__
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\nickt\alpaca-trading-bot\venv\Lib\site-packages\pandas\core\window\rolling.py", line 2022, in _validate
+    raise ValueError("window must be an integer 0 or greater")
+ValueError: window must be an integer 0 or greater
+2026-07-09 17:59:19,659  INFO      Retrying in 5 minutes...
+2026-07-09 18:04:19,663  INFO      [NQ] ── Signal check 18:04 ──
+2026-07-09 18:04:19,860  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:04:20,359  INFO      [NQ] Portfolio=$100,041.87  Price=$29952.00  Position=None
+2026-07-09 18:04:20,360  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,006)
+2026-07-09 18:04:20,360  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 18:14:20,361  INFO      [NQ] ── Signal check 18:14 ──
+2026-07-09 18:14:20,611  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:14:21,051  INFO      [NQ] Portfolio=$99,966.98  Price=$29908.75  Position=None
+2026-07-09 18:14:21,052  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,995)
+2026-07-09 18:14:21,052  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 18:24:21,053  INFO      [NQ] ── Signal check 18:24 ──
+2026-07-09 18:24:21,311  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:24:21,932  INFO      [NQ] Portfolio=$99,908.68  Price=$29885.25  Position=None
+2026-07-09 18:24:21,932  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,986)
+2026-07-09 18:24:21,932  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 18:34:21,933  INFO      [NQ] ── Signal check 18:34 ──
+2026-07-09 18:34:22,140  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:34:22,639  INFO      [NQ] Portfolio=$99,841.84  Price=$29842.00  Position=None
+2026-07-09 18:34:22,640  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,976)
+2026-07-09 18:34:22,640  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 18:44:22,641  INFO      [NQ] ── Signal check 18:44 ──
+2026-07-09 18:44:22,828  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:44:23,279  INFO      [NQ] Portfolio=$99,843.94  Price=$29810.50  Position=None
+2026-07-09 18:44:23,279  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,977)
+2026-07-09 18:44:23,279  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 18:54:23,280  INFO      [NQ] ── Signal check 18:54 ──
+2026-07-09 18:54:23,497  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 18:54:24,028  INFO      [NQ] Portfolio=$99,882.65  Price=$29826.75  Position=None
+2026-07-09 18:54:24,028  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,982)
+2026-07-09 18:54:24,028  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:04:24,029  INFO      [NQ] ── Signal check 19:04 ──
+2026-07-09 19:04:24,245  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:04:24,742  INFO      [NQ] Portfolio=$99,901.23  Price=$29830.00  Position=None
+2026-07-09 19:04:24,742  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,985)
+2026-07-09 19:04:24,742  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:14:24,743  INFO      [NQ] ── Signal check 19:14 ──
+2026-07-09 19:14:24,927  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:14:25,382  INFO      [NQ] Portfolio=$99,866.45  Price=$29836.50  Position=None
+2026-07-09 19:14:25,383  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,980)
+2026-07-09 19:14:25,383  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:24:25,383  INFO      [NQ] ── Signal check 19:24 ──
+2026-07-09 19:24:25,548  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:24:26,049  INFO      [NQ] Portfolio=$99,914.79  Price=$29839.75  Position=None
+2026-07-09 19:24:26,049  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,987)
+2026-07-09 19:24:26,049  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:34:26,050  INFO      [NQ] ── Signal check 19:34 ──
+2026-07-09 19:34:26,204  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:34:26,675  INFO      [NQ] Portfolio=$99,929.74  Price=$29872.50  Position=None
+2026-07-09 19:34:26,675  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,989)
+2026-07-09 19:34:26,675  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:44:26,676  INFO      [NQ] ── Signal check 19:44 ──
+2026-07-09 19:44:26,851  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:44:27,380  INFO      [NQ] Portfolio=$99,906.49  Price=$29883.75  Position=None
+2026-07-09 19:44:27,380  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$14,986)
+2026-07-09 19:44:27,380  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 19:54:27,380  INFO      [NQ] ── Signal check 19:54 ──
+2026-07-09 19:54:27,598  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 19:54:28,099  INFO      [NQ] Portfolio=$100,091.28  Price=$29890.75  Position=None
+2026-07-09 19:54:28,100  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,014)
+2026-07-09 19:54:28,100  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:04:28,100  INFO      [NQ] ── Signal check 20:04 ──
+2026-07-09 20:04:28,312  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:04:28,772  INFO      [NQ] Portfolio=$100,007.34  Price=$29903.00  Position=None
+2026-07-09 20:04:28,772  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,001)
+2026-07-09 20:04:28,772  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:14:28,773  INFO      [NQ] ── Signal check 20:14 ──
+2026-07-09 20:14:28,963  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:14:29,454  INFO      [NQ] Portfolio=$100,072.31  Price=$29883.75  Position=None
+2026-07-09 20:14:29,454  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,011)
+2026-07-09 20:14:29,455  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:24:29,455  INFO      [NQ] ── Signal check 20:24 ──
+2026-07-09 20:24:29,680  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:24:30,169  INFO      [NQ] Portfolio=$100,016.08  Price=$29877.25  Position=None
+2026-07-09 20:24:30,169  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,002)
+2026-07-09 20:24:30,169  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:34:30,170  INFO      [NQ] ── Signal check 20:34 ──
+2026-07-09 20:34:30,328  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:34:30,892  INFO      [NQ] Portfolio=$100,078.09  Price=$29867.50  Position=None
+2026-07-09 20:34:30,892  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,012)
+2026-07-09 20:34:30,893  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:44:30,894  INFO      [NQ] ── Signal check 20:44 ──
+2026-07-09 20:44:31,088  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:44:32,564  INFO      [NQ] Portfolio=$100,101.98  Price=$29894.75  Position=None
+2026-07-09 20:44:32,564  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,015)
+2026-07-09 20:44:32,564  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 20:54:32,564  INFO      [NQ] ── Signal check 20:54 ──
+2026-07-09 20:54:32,786  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 20:54:33,264  INFO      [NQ] Portfolio=$100,210.75  Price=$29906.75  Position=None
+2026-07-09 20:54:33,264  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,032)
+2026-07-09 20:54:33,264  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:04:33,265  INFO      [NQ] ── Signal check 21:04 ──
+2026-07-09 21:04:33,524  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:04:34,018  INFO      [NQ] Portfolio=$100,248.95  Price=$29936.00  Position=None
+2026-07-09 21:04:34,019  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,037)
+2026-07-09 21:04:34,019  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:14:34,020  INFO      [NQ] ── Signal check 21:14 ──
+2026-07-09 21:14:34,204  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:14:34,689  INFO      [NQ] Portfolio=$100,245.21  Price=$29951.75  Position=None
+2026-07-09 21:14:34,689  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,037)
+2026-07-09 21:14:34,690  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:24:34,690  INFO      [NQ] ── Signal check 21:24 ──
+2026-07-09 21:24:34,867  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:24:35,400  INFO      [NQ] Portfolio=$100,223.45  Price=$29948.25  Position=None
+2026-07-09 21:24:35,400  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,034)
+2026-07-09 21:24:35,400  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:34:35,401  INFO      [NQ] ── Signal check 21:34 ──
+2026-07-09 21:34:35,581  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:34:36,138  INFO      [NQ] Portfolio=$100,157.74  Price=$29926.75  Position=None
+2026-07-09 21:34:36,139  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,024)
+2026-07-09 21:34:36,139  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:44:36,139  INFO      [NQ] ── Signal check 21:44 ──
+2026-07-09 21:44:36,357  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:44:36,893  INFO      [NQ] Portfolio=$100,189.03  Price=$29928.50  Position=None
+2026-07-09 21:44:36,893  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,028)
+2026-07-09 21:44:36,893  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 21:54:36,894  INFO      [NQ] ── Signal check 21:54 ──
+2026-07-09 21:54:37,080  INFO      [NQ] Signal: LONG  |  Confidence: 0.642  |  Leverage: 1.81x
+2026-07-09 21:54:37,768  INFO      [NQ] Portfolio=$100,164.95  Price=$29924.00  Position=None
+2026-07-09 21:54:37,768  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,025)
+2026-07-09 21:54:37,768  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 22:04:37,768  INFO      [NQ] ── Signal check 22:04 ──
+2026-07-09 22:04:37,988  INFO      [NQ] Signal: LONG  |  Confidence: 0.751  |  Leverage: 1.94x
+2026-07-09 22:04:38,424  WARNING   [NQ] Could not get price — skipping
+2026-07-09 22:04:38,424  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 22:14:38,425  INFO      [NQ] ── Signal check 22:14 ──
+2026-07-09 22:14:38,640  INFO      [NQ] Signal: LONG  |  Confidence: 0.751  |  Leverage: 1.94x
+2026-07-09 22:14:39,069  WARNING   [NQ] Could not get price — skipping
+2026-07-09 22:14:39,069  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 22:24:39,069  INFO      [NQ] ── Signal check 22:24 ──
+2026-07-09 22:24:39,277  INFO      [NQ] Signal: LONG  |  Confidence: 0.600  |  Leverage: 1.75x
+2026-07-09 22:24:39,730  INFO      [NQ] Portfolio=$100,160.45  Price=$29947.75  Position=None
+2026-07-09 22:24:39,730  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,024)
+2026-07-09 22:24:39,730  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 22:34:39,730  INFO      [NQ] ── Signal check 22:34 ──
+2026-07-09 22:34:39,916  INFO      [NQ] Signal: LONG  |  Confidence: 0.600  |  Leverage: 1.75x
+2026-07-09 22:34:40,359  INFO      [NQ] Portfolio=$100,124.01  Price=$29921.25  Position=None
+2026-07-09 22:34:40,359  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,019)
+2026-07-09 22:34:40,359  INFO      [NQ] Signal complete. Sleeping 600s...
+2026-07-09 22:44:40,360  INFO      [NQ] ── Signal check 22:44 ──
+2026-07-09 22:44:40,581  INFO      [NQ] Signal: LONG  |  Confidence: 0.600  |  Leverage: 1.75x
+2026-07-09 22:44:41,036  INFO      [NQ] Portfolio=$100,124.73  Price=$29910.00  Position=None
+2026-07-09 22:44:41,036  INFO      Futures position: 0 units  (scale=26.0%, leverage=1.8x, exposure=$15,019)
+2026-07-09 22:44:41,036  INFO      [NQ] Signal complete. Sleeping 600s...
