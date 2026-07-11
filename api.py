@@ -877,7 +877,7 @@ def api_futures_signal():
     ticker = request.args.get("ticker", "").upper()
 
     from futures_bot import (FUTURES_CONFIGS, load_futures_chromosome,
-                              decode_futures_chromosome)
+                              decode_futures_chromosome, FEATURES)
     if ticker not in FUTURES_CONFIGS:
         return jsonify({"error": "Unknown ticker"}), 400
 
@@ -905,8 +905,11 @@ def api_futures_signal():
         thresholds = decoded["thresholds"]
         lev_gene   = decoded["leverage_genes"].mean()
 
-        feats  = ['Close','Volume','SMA_20','SMA_50','SMA_200','RSI',
-                  'MACD','Signal','BB_Upper','BB_Lower','Daily_Return','Volume_Change']
+        # Use the SAME 17-feature list the chromosome was trained/encoded
+        # with (imported from futures_bot.FEATURES), not a hand-typed
+        # subset — a mismatched feature count here throws a numpy
+        # broadcast error and makes every futures signal fail.
+        feats     = FEATURES
         values    = df_scaled[feats].values
         condition = (values > thresholds).astype(float)
         w_sum     = float(weights.sum())
