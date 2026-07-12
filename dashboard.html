@@ -147,10 +147,12 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
 
 <div class="top-bar">
   <div style="display:flex;align-items:center;gap:12px">
+    <a href="dashboard.html" style="text-decoration:none;cursor:pointer;display:flex;align-items:center;gap:12px">
     <span style="font-family:'Courier New',monospace;font-size:16px;font-weight:700;
       background:linear-gradient(135deg,#ff6600,#ffaa00);-webkit-background-clip:text;
       -webkit-text-fill-color:transparent">PROMETHEUS</span>
     <span style="font-size:11px;color:#898781;font-family:'Courier New',monospace;letter-spacing:1px">INVESTMENTS</span>
+    </a>
   </div>
   <div class="top-right">
     <span><span class="conn-dot" id="conn-dot"></span><span id="conn-label" style="font-size:12px;color:#898781">Connecting...</span></span>
@@ -161,6 +163,9 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
     </a>
     <a href="backtest.html" class="btn" style="border-color:#4488ff;color:#4488ff" title="Backtest">
       <i class="ti ti-chart-histogram"></i> Backtest
+    </a>
+    <a href="admin.html" class="btn" id="admin-link" style="border-color:#ff8800;color:#ff8800;display:none" title="Admin panel">
+      <i class="ti ti-shield-lock"></i> Admin
     </a>
     <button class="btn" onclick="openModal()"><i class="ti ti-plus"></i> New bot</button>
     <a href="settings.html" class="btn" title="Account settings"><i class="ti ti-settings"></i></a>
@@ -247,10 +252,9 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
       <label class="form-label">Bot name</label>
       <input type="text" id="f-name" placeholder="Silver bot">
     </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label">Ticker</label>
-        <div style="position:relative">
+    <div class="form-group">
+      <label class="form-label">Ticker</label>
+      <div style="position:relative">
   <input type="text" id="f-ticker-search" placeholder="Search any stock, ETF or crypto..."
          autocomplete="off" oninput="onTickerSearch(this.value)">
   <div id="ticker-results" style="display:none;position:absolute;top:100%;left:0;right:0;
@@ -259,31 +263,10 @@ input:focus,select:focus{outline:none;border-color:#ff6600}
   <div id="ticker-preview" style="display:none;margin-top:8px;padding:10px;
        background:#f4f3ef;border-radius:8px;font-size:12px"></div>
 </div>
-      </div>
-      <div class="form-group">
-        <label class="form-label">Mode</label>
-        <select id="f-mode"><option>Paper</option><option>Live</option></select>
-      </div>
     </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label">GA generations</label>
-        <input type="number" id="f-gens" value="200" min="50" max="500">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Population size</label>
-        <input type="number" id="f-pop" value="100" min="20" max="500">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label">Max allocation %</label>
-        <input type="number" id="f-alloc" value="40" min="5" max="100">
-      </div>
-      <div class="form-group">
-        <label class="form-label">Stop-loss %</label>
-        <input type="number" id="f-stop" value="2" min="0.5" max="20" step="0.5">
-      </div>
+    <div style="font-size:11px;color:#666688;background:#111114;border-radius:8px;padding:10px 12px;margin-bottom:4px">
+      <i class="ti ti-info-circle"></i> GA settings (generations, population), allocation, and stop-loss are
+      auto-tuned based on the ticker's volatility. Manual overrides and Live mode are coming soon.
     </div>
     <div class="modal-footer">
       <button class="btn" onclick="closeModal()">Cancel</button>
@@ -838,9 +821,18 @@ async function fullRefresh() {
 
 // Verify session is still valid before loading data
 fetch(`${API}/auth/me`, {headers:{'Authorization':`Bearer ${SESSION_TOKEN}`,'ngrok-skip-browser-warning':'true'}})
-  .then(r => { 
-    if(r.status === 401) { doLogout(); } 
-    else { fullRefresh(); }
+  .then(r => {
+    if(r.status === 401) { doLogout(); return null; }
+    return r.json().catch(() => null);
+  })
+  .then(d => {
+    // /auth/me returns is_admin as a flat field (confirmed via auth.py's
+    // get_user_profile — SELECT ... is_admin ... FROM users).
+    if (d && d.is_admin) {
+      const adminLink = document.getElementById('admin-link');
+      if (adminLink) adminLink.style.display = '';
+    }
+    fullRefresh();
   })
   .catch(() => { fullRefresh(); });
 
