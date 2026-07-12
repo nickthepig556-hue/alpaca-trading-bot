@@ -187,8 +187,17 @@ def simulate_strategy(close: np.ndarray,
                 equity[i] = equity[i-1] * (1 + (close[i] / close[i-1] - 1) * direction)
 
     if in_pos:
-        ret     = (close[-1] - entry) / entry
-        pnl_amt = equity[-2] * ret
+        # NOTE: equity[-1] is already correct here — the loop above marks
+        # open positions to market every day (see the mark-to-market branch),
+        # including the final day. We must NOT recompute/overwrite it using
+        # the total return since entry, or we double-count the whole trade's
+        # P&L on the last day, producing a large spike in the equity curve.
+        ret = (close[-1] - entry) / entry
+        # Approximate dollar P&L for this still-open trade, for reporting/
+        # stats purposes only — based on equity at entry time, not equity[-2]
+        # which already reflects the accumulated gains from mark-to-market.
+        entry_equity = equity[entry_idx - 1] if entry_idx > 0 else equity[0]
+        pnl_amt = entry_equity * ret
         trades.append({
             "entry_idx"  : entry_idx,
             "exit_idx"   : n - 1,
@@ -199,7 +208,7 @@ def simulate_strategy(close: np.ndarray,
             "pnl_amt"   : round(float(pnl_amt), 2),
             "reason"    : "end-of-period",
         })
-        equity[-1] = equity[-2] + pnl_amt
+        # equity[-1] is left untouched — already correct from the mark-to-market loop
 
     return {"equity": equity.tolist(), "trades": trades}
 

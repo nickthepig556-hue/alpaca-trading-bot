@@ -55,7 +55,15 @@ body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;
   image-rendering:pixelated;
 }
 
-@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+@keyframes bob{
+  /* Counter-rotate by -1 * the ring angle so each bot stays upright and
+     facing the fire regardless of where it sits on the ring, while still
+     bobbing up and down in place. (Animating "transform" fully replaces
+     any other transform on the element, so the counter-rotation has to
+     live inside the keyframes rather than as a separate static rule.) */
+  from{transform:rotate(calc(var(--i)*-60deg)) translateY(0)}
+  to{transform:rotate(calc(var(--i)*-60deg)) translateY(-3px)}
+}
 
 .bot-body{
   width:16px;height:20px;
