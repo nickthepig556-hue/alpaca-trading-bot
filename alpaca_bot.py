@@ -74,9 +74,18 @@ BOT_CONFIG = {
     'max_hold_days' : 90,     # force exit after 90 days to prevent forever-holds
 
     # Risk management
-    'stop_loss_pct'       : 0.05,   # 5 % stop-loss below entry
-    'take_profit_pct'     : 0.50,   # 4 % take-profit above entry
-    'trailing_stop_pct'   : 0.015,  # 1.5 % trailing stop (activated after entry)
+    # These MUST match genetic_algorithm.simulate_trades(), which is the
+    # simulation every chromosome was scored against. When they drift apart the
+    # bot runs an exit policy the GA never optimised for, and the entry signal
+    # stops meaning anything.
+    #
+    # The old 1.5% trailing stop was the damaging one: evaluated every 60s
+    # against 1-minute prices, it closed winners on intraday noise as soon as
+    # they were 5% up, while losers still ran the full 5% to the stop. Small
+    # wins, full-size losses, by construction — no entry signal survives that.
+    'stop_loss_pct'       : 0.05,   # 5 %  stop-loss below entry    (GA: 0.05)
+    'take_profit_pct'     : 0.25,   # 25 % take-profit above entry  (GA: 0.25)
+    'trailing_stop_pct'   : 0.075,  # 7.5 % trailing = stop_loss_pct * 1.5 (GA)
 
     # Timing
     'market_open_delay_s' : 300,    # wait 5 min after open before first order (avoid open volatility)
@@ -443,6 +452,15 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
     peak_price    = entry_price
     trailing_activated = False
 
+    # max_hold_days has been in BOT_CONFIG all along but nothing read it, so a
+    # position that never reached a stop or a target was held indefinitely. The
+    # GA closes anything still open after max_hold_days, so without this the
+    # live bot can sit in a trade the simulation would have exited months ago.
+    # The clock starts when monitoring starts, so restarting the bot resets it
+    # for an already-open position.
+    opened_at  = time.time()
+    max_hold_s = float(config.get('max_hold_days', 0) or 0) * 86400
+
     log.info(f"Monitoring {ticker}  |  entry={entry_price:.2f}  "
              f"stop={stop_price:.2f}  target={target_price:.2f}")
 
@@ -485,6 +503,13 @@ def monitor_position(trading_client, data_client, ticker, entry_price, config, s
                  f"target={target_price:.2f}  P&L={pos['unrealised_pl']:+.2f}")
 
         qty = pos['qty']
+
+        if max_hold_s and (time.time() - opened_at) >= max_hold_s:
+            held = (time.time() - opened_at) / 86400
+            log.warning(f"[EXIT] MAX HOLD reached ({held:.0f} days) at {current_price:.2f}")
+            place_sell(trading_client, ticker, qty, reason="max-hold", side=side)
+            alerter.trade_closed(ticker, side, qty, entry_price, current_price, "max-hold")
+            return True
 
         if side == 'short':
             if current_price >= stop_price:
@@ -619,7 +644,20 @@ def run_daily_signal(trading_client: TradingClient,
     # ── SELL signal ───────────────────────────────────────────────────────
     elif signal == -1:
         if not allow_short:
-            log.info(f"Short signal ignored — {TICKER} is long-only")
+            # We can't open a short here, but a SELL signal is still the strategy
+            # saying "get out". This used to return without touching the
+            # position, so for SPY/QQQ/GLD the sell signal was discarded
+            # entirely and the only way out of a long was a stop or a target —
+            # which is not how the GA scored these chromosomes.
+            if position and position['side'] == 'long':
+                log.info(f"{TICKER} is long-only — closing long on SELL signal")
+                place_sell(trading_client, TICKER, position['qty'],
+                           reason="signal-exit", side="long")
+                alerter.trade_closed(TICKER, "long", position['qty'],
+                                     position['entry_price'], current_price,
+                                     "signal-exit")
+            else:
+                log.info(f"Short signal ignored — {TICKER} is long-only, nothing to close")
             return
         if position and position['side'] == 'long':
             # Flip: close long first
