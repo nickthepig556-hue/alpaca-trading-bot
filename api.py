@@ -1084,4 +1084,4 @@ if __name__ == "__main__":
     print(f"    POST /api/bots/create   {{...config}}")
     print(f"    POST /api/bots/delete   {{\"id\":\"b1\"}}")
     print("="*55 + "\n")
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="127.0.0.1", port=5000, debug=False)
