@@ -67,6 +67,8 @@ from ticker_manager import (
 from user_features import register_user_routes
 from flask import send_from_directory
 from futures_bot import FUTURES_CONFIGS
+from alpaca_trades import (get_trade_counts, counts_for, refresh_now,
+                           shared_symbols, cache_status)
 # ──────────────────────────────────────────────────────────────────────────────
 # CONFIG
 # ──────────────────────────────────────────────────────────────────────────────
@@ -325,22 +327,36 @@ def api_positions():
 def api_bots():
     """Bot list with status, return, and trade count pulled from log file."""
     bots    = load_bot_state()
+    # Trade counts come from Alpaca's order history, which is the only record
+    # that survives a server rebuild. tail_file() only ever sees the last
+    # LOG_TAIL_LINES lines, so it silently undercounts busy bots — it stays
+    # here purely as a fallback for when Alpaca can't be reached.
+    counts  = get_trade_counts(trading_client if alpaca_ok() else None)
     result  = []
     for b in bots:
-        # Count trades and compute a quick return estimate from log
-        lines    = tail_file(b.get("log_file", f"{b['ticker']}_bot.log"))
-        buys     = sum(1 for l in lines if "BUY order" in l)
-        sells    = sum(1 for l in lines if "SELL order" in l)
-        wins     = sum(1 for l in lines if "take-profit" in l.lower())
-        n_trades = sells   # closed trades = sells
+        lines = tail_file(b.get("log_file", f"{b['ticker']}_bot.log"))
+        buys  = sum(1 for l in lines if "BUY order" in l)
+        stats = counts_for(b["ticker"], counts)
+
+        if stats:
+            n_trades, wins = stats["trades"], stats["wins"]
+            win_rate       = stats["win_rate"]
+            source         = "alpaca"
+        else:
+            n_trades = sum(1 for l in lines if "SELL order" in l)
+            wins     = sum(1 for l in lines if "take-profit" in l.lower())
+            win_rate = round(wins / max(n_trades, 1) * 100, 1)
+            source   = "log"
 
         result.append({
             **b,
-            "pid"     : b.get("pid"),
-            "trades"  : n_trades,
-            "buys"    : buys,
-            "wins"    : wins,
-            "win_rate": round(wins / max(n_trades, 1) * 100, 1),
+            "pid"          : b.get("pid"),
+            "trades"       : n_trades,
+            "buys"         : buys,
+            "wins"         : wins,
+            "win_rate"     : win_rate,
+            "trades_source": source,
+            "realised_pnl" : stats["realised_pnl"] if stats else None,
         })
     return jsonify(result)
 
@@ -667,18 +683,69 @@ def api_train_status():
 def api_bots_all():
     """All dynamically configured bots, including pending/training ones."""
     configs = load_all_configs()
+    # See /api/bots above: Alpaca's order history is the source of truth,
+    # log tailing is only the fallback.
+    counts  = get_trade_counts(trading_client if alpaca_ok() else None)
     result  = []
     for bot_id, b in configs.items():
-        lines    = tail_file(b.get("log_file", f"{b['ticker']}_bot.log"))
-        sells    = sum(1 for l in lines if "SELL order" in l or "BUY TO COVER" in l)
-        wins     = sum(1 for l in lines if "take-profit" in l.lower())
+        stats = counts_for(b["ticker"], counts)
+        if stats:
+            sells, wins = stats["trades"], stats["wins"]
+            win_rate    = stats["win_rate"]
+            source      = "alpaca"
+        else:
+            lines    = tail_file(b.get("log_file", f"{b['ticker']}_bot.log"))
+            sells    = sum(1 for l in lines if "SELL order" in l or "BUY TO COVER" in l)
+            wins     = sum(1 for l in lines if "take-profit" in l.lower())
+            win_rate = round(wins / max(sells, 1) * 100, 1)
+            source   = "log"
+
         result.append({
             **b,
-            "trades"  : sells,
-            "wins"    : wins,
-            "win_rate": round(wins / max(sells, 1) * 100, 1),
+            "trades"       : sells,
+            "wins"         : wins,
+            "win_rate"     : win_rate,
+            "trades_source": source,
+            "realised_pnl" : stats["realised_pnl"] if stats else None,
         })
     return jsonify(result)
+
+
+# ── /api/trades/summary ──────────────────────────────────────────────────────
+@app.route("/api/trades/summary")
+def api_trades_summary():
+    """
+    Every symbol Alpaca has ever filled an order for, with closed-trade
+    counts, win rate and realised P&L. ?refresh=1 forces a re-fetch.
+
+    `shared` lists symbols that more than one bot claims — the spot BTC bot
+    and the BTC futures bot trade the same symbol on the same account, so
+    their counts are the same trades seen twice, not two separate sets.
+    """
+    client = trading_client if alpaca_ok() else None
+    if request.args.get("refresh") == "1":
+        counts = refresh_now(client)
+    else:
+        counts = get_trade_counts(client)
+
+    tickers = [b["ticker"] for b in load_bot_state()]
+    tickers += [b["ticker"] for b in load_all_configs().values()]
+    try:
+        tickers += list(FUTURES_CONFIGS.keys())
+    except Exception:
+        pass
+
+    return jsonify({
+        "counts" : counts,
+        "totals" : {
+            "trades"      : sum(c["trades"] for c in counts.values()),
+            "wins"        : sum(c["wins"] for c in counts.values()),
+            "losses"      : sum(c["losses"] for c in counts.values()),
+            "realised_pnl": round(sum(c["realised_pnl"] for c in counts.values()), 2),
+        },
+        "shared" : shared_symbols(tickers),
+        "cache"  : cache_status(),
+    })
 
 
 # ── /api/bots/delete_dynamic ─────────────────────────────────────────────────

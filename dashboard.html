@@ -458,16 +458,23 @@ function renderPositionsTab() {
 async function loadBots() {
   document.getElementById('bots-spinner').style.display = 'inline-block';
   try {
-    const [spotBots, futuresList] = await Promise.all([
+    const [spotBots, futuresList, summary] = await Promise.all([
       api('/bots/all'),
       api('/futures/list').catch(() => []),
+      // Futures bots aren't in bot_configs.json, so their trade counts come
+      // straight from Alpaca's order history rather than from /bots/all.
+      api('/trades/summary').catch(() => null),
     ]);
+    const tradeCounts = (summary && summary.counts) || {};
+    const symKey = t => String(t || '').toUpperCase().replace(/[\/\- ]/g, '');
     const futuresBots = (futuresList || [])
       .filter(f => f.trained)
       .map(f => ({
         id: 'futures_' + f.ticker.replace('/','_'),
         name: f.name, ticker: f.ticker, status: 'running',
-        trades: 0, win_rate: 0, asset_type: 'futures',
+        trades:   (tradeCounts[symKey(f.ticker)] || {}).trades   || 0,
+        win_rate: (tradeCounts[symKey(f.ticker)] || {}).win_rate || 0,
+        asset_type: 'futures',
         is_futures: true, max_leverage: f.max_leverage,
         log_file: f.ticker.replace('/','_') + '_futures.log',
       }));
