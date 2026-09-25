@@ -135,13 +135,6 @@ BOT_CONFIGS = {
     "ga": {}, "risk": {"min_allocation_pct":0.05,"max_allocation_pct":0.35,"weight_threshold":0.3,"stop_loss_pct":0.02,"take_profit_pct":0.04,"trailing_stop_pct":0.015},
     "market_open_delay_s": 300, "intraday_interval_s": 60, "lookback_days": 60, "start_date": "2010-01-01",
 },
-"BTC/USD": {
-    "id": "b1782517946", "name": "BTC bot", "ticker": "BTC/USD",
-    "chromosome_file": "BTC-USD_best_chromosome.csv", "log_file": "BTC_bot.log",
-    "ga": {}, "risk": {"min_allocation_pct":0.03,"max_allocation_pct":0.20,"weight_threshold":0.33,"stop_loss_pct":0.035,"take_profit_pct":0.07,"trailing_stop_pct":0.028},
-    "market_open_delay_s": 0, "intraday_interval_s": 120, "lookback_days": 90, "start_date": "2010-01-01",
-},
-
     "BTC/USD_FUT": {
     "id": "btc_fut", "name": "Bitcoin Futures", "ticker": "BTC/USD",
     "chromosome_file": "BTC_futures_chromosome.csv",
@@ -519,6 +512,21 @@ def main():
                 BOT_CONFIGS[ticker] = cfg
     except Exception as e:
         log.warning(f"Could not load dynamic configs: {e}")
+
+    # Two configs sharing a ticker means two PROCESSES trading one symbol on
+    # one account. They open separate positions, each sized to the full cap,
+    # and each tries to manage a position the other opened. BTC/USD and
+    # BTC/USD_FUT both carried ticker "BTC/USD" and both routed into
+    # run_futures_bot(), which put BTC at 30% of the account against a 15%
+    # cap. Fail loudly rather than let that happen quietly again.
+    _by_ticker = {}
+    for _key, _cfg in BOT_CONFIGS.items():
+        _by_ticker.setdefault(_cfg.get("ticker"), []).append(_key)
+    for _tkr, _keys in _by_ticker.items():
+        if len(_keys) > 1:
+            log.error(f"DUPLICATE TICKER {_tkr!r} configured by {_keys} — these "
+                      f"will run as separate processes on the same symbol and "
+                      f"will each open their own position. Remove one.")
 
     tickers = [args.bot] if args.bot else list(BOT_CONFIGS.keys())
 
