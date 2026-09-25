@@ -330,21 +330,61 @@ def calc_position_size(confidence: float,
 # ORDER MANAGEMENT
 # ──────────────────────────────────────────────────────────────────────────────
 
+def normalise_symbol(symbol) -> str:
+    """
+    Fold every spelling of one instrument into a single key.
+
+    Alpaca takes crypto orders as "BTC/USD" but reports the position as
+    "BTCUSD"; our configs also use "BTC-USD" for Windows-safe filenames.
+    """
+    return str(symbol or "").upper().replace("/", "").replace("-", "").replace(" ", "")
+
+
+def find_position(trading_client, ticker):
+    """
+    Find an open position by normalised symbol, or None if genuinely flat.
+
+    Deliberately does NOT use get_open_position(): that matches on the exact
+    string, and for crypto the slashed form 404s even when the position very
+    much exists. A 404 looks identical to "flat" to the caller, which is how
+    this bot opened a new position on top of one it already held every ten
+    minutes for eleven weeks.
+
+    get_all_positions() returns Alpaca's own symbols, so normalising both
+    sides can't miss regardless of which spelling the config uses.
+    """
+    want = normalise_symbol(ticker)
+    for p in trading_client.get_all_positions():
+        if normalise_symbol(getattr(p, "symbol", "")) == want:
+            return p
+    return None
+
+
 def get_position(trading_client: TradingClient, ticker: str) -> dict | None:
     """Return current position dict including side (long/short), or None if flat."""
+    pos = find_position(trading_client, ticker)
+    if pos is None:
+        return None          # genuinely flat
+
     try:
-        pos = trading_client.get_open_position(ticker)
-        qty = int(pos.qty)
-        side = "long" if qty > 0 else "short"
+        # float, NOT int. Alpaca returns qty as a string and crypto positions
+        # are fractional ("0.4821"); int() raises on that, and the old blanket
+        # except turned the error into "flat" — which makes the bot open
+        # another position on top of one it already holds. See
+        # get_futures_position in futures_trading.py for what that cost.
+        qty = float(pos.qty)
+        if qty == 0:
+            return None
         return {
             'qty'          : abs(qty),
-            'side'         : side,
+            'side'         : "long" if qty > 0 else "short",
             'entry_price'  : float(pos.avg_entry_price),
             'market_value' : float(pos.market_value),
             'unrealised_pl': float(pos.unrealized_pl),
         }
-    except Exception:
-        return None
+    except Exception as e:
+        log.error(f"{ticker}: position exists but could not be read: {e}")
+        raise
 
 
 def get_portfolio_value(trading_client: TradingClient) -> float:

@@ -189,10 +189,15 @@ def calc_futures_position(confidence: float,
                            portfolio_value: float,
                            current_price: float,
                            decoded: dict,
-                           risk_guard: FuturesRiskGuard) -> int:
+                           risk_guard: FuturesRiskGuard,
+                           allow_fractional: bool = False) -> float:
     """
     Calculate number of contracts/units for a futures position.
     Applies GA-evolved position scale + leverage, capped by risk guard.
+
+    allow_fractional=True for crypto, which trades in fractions of a unit.
+    Without it the size is floored to a whole unit, which rounds to zero for
+    anything priced above the risk cap.
     """
     allowed, reason = risk_guard.check(confidence, leverage, portfolio_value)
     if not allowed:
@@ -207,34 +212,126 @@ def calc_futures_position(confidence: float,
     max_dollar = portfolio_value * risk_guard.MAX_POSITION_PCT
     leveraged_amount = min(leveraged_amount, max_dollar)
 
-    units = int(leveraged_amount // current_price)
+    # Whole units floor to zero for anything priced above the dollar cap:
+    # 15% of a $134k account is ~$20k, and int(20_000 // 63_000) == 0. That is
+    # why the BTC bot has never placed a single order. Crypto supports
+    # fractional quantities, so size those properly.
+    if allow_fractional:
+        units = round(leveraged_amount / current_price, 6)
+    else:
+        units = float(int(leveraged_amount // current_price))
+
     log.info(f"Futures position: {units} units  "
              f"(scale={position_scale:.1%}, leverage={leverage:.1f}x, "
              f"exposure=${leveraged_amount:,.0f})")
-    return max(units, 0)
+    return max(units, 0.0)
 
 
 # ──────────────────────────────────────────────────────────────────────────────
 # ORDER MANAGEMENT
 # ──────────────────────────────────────────────────────────────────────────────
 
-def get_futures_position(trading_client: TradingClient, ticker: str) -> dict | None:
+def normalise_symbol(symbol) -> str:
+    """
+    Fold every spelling of one instrument into a single key.
+
+    Alpaca takes crypto orders as "BTC/USD" but reports the position as
+    "BTCUSD"; our configs also use "BTC-USD" for Windows-safe filenames.
+    """
+    return str(symbol or "").upper().replace("/", "").replace("-", "").replace(" ", "")
+
+
+def find_position(trading_client, ticker):
+    """
+    Find an open position by normalised symbol, or None if genuinely flat.
+
+    Deliberately does NOT use get_open_position(): that matches on the exact
+    string, and for crypto the slashed form 404s even when the position very
+    much exists. A 404 looks identical to "flat" to the caller, which is how
+    this bot opened a new position on top of one it already held every ten
+    minutes for eleven weeks.
+
+    get_all_positions() returns Alpaca's own symbols, so normalising both
+    sides can't miss regardless of which spelling the config uses.
+    """
+    want = normalise_symbol(ticker)
+    for p in trading_client.get_all_positions():
+        if normalise_symbol(getattr(p, "symbol", "")) == want:
+            return p
+    return None
+
+
+def exposure_at_cap(trading_client, ticker, portfolio_value, risk_guard) -> bool:
+    """
+    True if this symbol is already held at (or near) the position cap.
+
+    A last line of defence that does not rely on the position lookup being
+    correct. Detection has been wrong twice now — once from int() on a
+    fractional quantity, once from the slashed crypto symbol 404ing — and both
+    times the result was unbounded stacking. This bounds it.
+
+    Fails CLOSED: if the check itself errors we refuse the trade rather than
+    assume there is room.
+    """
     try:
-        pos  = trading_client.get_open_position(ticker)
-        qty  = int(pos.qty)
-        side = "long" if qty > 0 else "short"
-        # Use current price for entry since Alpaca reports ES price in points
-        current_price = get_latest_futures_price(ticker)
-        entry = current_price if current_price > 0 else float(pos.avg_entry_price)
+        if not portfolio_value:
+            return False
+        pos = find_position(trading_client, ticker)
+        if pos is None:
+            return False
+        pct = abs(float(pos.market_value)) / float(portfolio_value)
+        if pct >= risk_guard.MAX_POSITION_PCT * 0.95:
+            log.warning(f"[{ticker}] Already {pct:.1%} of portfolio "
+                        f"(cap {risk_guard.MAX_POSITION_PCT:.0%}) — refusing to add")
+            return True
+        return False
+    except Exception as e:
+        log.error(f"[{ticker}] Exposure check failed ({e}) — refusing to trade")
+        return True
+
+
+def get_futures_position(trading_client: TradingClient, ticker: str) -> dict | None:
+    """
+    Read the open position for a ticker, or None if genuinely flat.
+
+    A false None here is the most dangerous failure in this bot:
+    run_futures_signal() only opens a position when it believes there isn't
+    one, and the monitor is only entered through `if pos:`. So a bad read both
+    stacks another position on top AND leaves every one of them unmanaged.
+
+    That is what happened. qty arrives from Alpaca as a string, crypto
+    positions are fractional ("47.882099998"), int() raises on that, and the
+    old bare `except: return None` turned the error into "flat". One ETH
+    position compounded to 95% of the account, against a 15% risk cap, with no
+    stop-loss for eleven weeks.
+    """
+    pos = find_position(trading_client, ticker)
+    if pos is None:
+        return None          # genuinely flat
+
+    try:
+        qty = float(pos.qty)          # float, NOT int: crypto is fractional
+        if qty == 0:
+            return None
         return {
             'qty'          : abs(qty),
-            'side'         : side,
-            'entry_price'  : entry,
+            'side'         : "long" if qty > 0 else "short",
+            # The real average entry price. This used to report the CURRENT
+            # price (a workaround for ES quoting in points), which re-anchored
+            # the stop and target to wherever the market happened to be every
+            # time monitoring restarted — so a losing position could never
+            # show a loss relative to its "entry". ES never places orders
+            # anyway; it's in PAPER_ONLY_TICKERS.
+            'entry_price'  : float(pos.avg_entry_price),
             'market_value' : float(pos.market_value),
             'unrealised_pl': float(pos.unrealized_pl),
         }
-    except Exception:
-        return None
+    except Exception as e:
+        # A position exists but we could not parse it. Returning None would
+        # tell the caller we are flat and it would open another one on top, so
+        # fail loudly and let the bot loop retry instead.
+        log.error(f"[{ticker}] Position exists but could not be read: {e}")
+        raise
 
 
 def place_futures_order(trading_client: TradingClient,
@@ -391,8 +488,9 @@ def run_futures_signal(trading_client: TradingClient,
 
         if position is None:
             qty = calc_futures_position(confidence, leverage, portfolio,
-                                        price, decoded, risk_guard)
-            if qty > 0:
+                                        price, decoded, risk_guard,
+                                        allow_fractional=cfg.get("type") == "crypto")
+            if qty > 0 and not exposure_at_cap(trading_client, ticker, portfolio, risk_guard):
                 oid = place_futures_order(trading_client, ticker, qty, "long", "signal")
                 if oid:
                     alerter.trade_opened(ticker, "long", qty, price, confidence)
@@ -422,8 +520,9 @@ def run_futures_signal(trading_client: TradingClient,
 
         if position is None:
             qty = calc_futures_position(confidence, leverage, portfolio,
-                                        price, decoded, risk_guard)
-            if qty > 0:
+                                        price, decoded, risk_guard,
+                                        allow_fractional=cfg.get("type") == "crypto")
+            if qty > 0 and not exposure_at_cap(trading_client, ticker, portfolio, risk_guard):
                 oid = place_futures_order(trading_client, ticker, qty, "short", "signal")
                 if oid:
                     alerter.trade_opened(ticker, "short", qty, price, confidence)
@@ -446,7 +545,16 @@ def run_futures_signal(trading_client: TradingClient,
     else:
         log.info(f"[{ticker}] FLAT signal — no trade")
         if position:
-            log.info(f"[{ticker}] Holding existing {position['side']} position")
+            # A FLAT signal used to mean "hold and do nothing", which left an
+            # open position with no stop-loss and no take-profit until the
+            # signal happened to change. Monitor it instead, so the evolved
+            # stop and target still apply while we wait.
+            log.info(f"[{ticker}] Holding existing {position['side']} position — monitoring")
+            monitor_futures_position(
+                trading_client, ticker,
+                position['entry_price'], decoded, position['side'],
+                risk_guard, cfg.get("intraday_interval_s", 120)
+            )
 
 
 # ──────────────────────────────────────────────────────────────────────────────
